@@ -13,6 +13,8 @@ import Reviews from "./pages/Reviews";
 import Contact from "./pages/Contact";
 import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
+import QRSpeisekarte from "./pages/QRSpeisekarte";
+import QRCodePage from "./pages/QRCodePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,6 +42,8 @@ const App = () => (
           <Route path="/kontakt" element={<Contact />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/datenschutz" element={<Datenschutz />} />
+          <Route path="/qr-speisekarte" element={<QRSpeisekarte />} />
+          <Route path="/qr-code" element={<QRCodePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
