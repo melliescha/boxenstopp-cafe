@@ -108,9 +108,9 @@ const About = () => {
                   Menschen wohlfühlen. In Hergatz-Wohmbrechts haben wir genau das gefunden.
                 </p>
                 <p>
-                  So entstand zuerst FITES Allgäu — Eugens Fitnessstudio mit kleinen Gruppen und persönlicher
+                  So entstand zuerst FITES Allgäu, Eugens Fitnessstudio mit kleinen Gruppen und persönlicher
                   Betreuung. Und weil zum Wohlfühlen mehr gehört als nur Training, kam das Bistro Boxenstopp
-                  dazu: ein Ort zum Auftanken, Durchatmen und Genießen. Für alle — nicht nur für Sportler.
+                  dazu: ein Ort zum Auftanken, Durchatmen und Genießen. Für alle, nicht nur für Sportler.
                 </p>
               </div>
             </div>
