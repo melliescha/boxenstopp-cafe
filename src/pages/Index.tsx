@@ -11,7 +11,7 @@ const highlights = [
   {
     icon: Map,
     title: "Geheimtipp am Radweg",
-    text: "Direkt an der Leiblachroute & Bodensee-Königssee-Radweg — wer uns findet, kommt wieder",
+    text: "Direkt an der Leiblachroute & Bodensee-Königssee-Radweg. Wer uns findet, kommt wieder.",
   },
   {
     icon: Thermometer,
