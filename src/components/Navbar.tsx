@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 py-3 flex items-center justify-between">
         <Link to="/" aria-label="Startseite" className="flex items-center gap-2">
           <img src={logoIcon} alt="" className="h-[35px] md:h-[45px] w-auto" />
-          <img src={logo} alt="Bistro Boxenstopp" className="h-[35px] md:h-[45px] w-auto" />
+          <img src={logo} alt="Bistro Boxenstopp" className="hidden sm:block h-[35px] md:h-[45px] w-auto" />
         </Link>
 
         <ul className="hidden lg:flex items-center gap-6">

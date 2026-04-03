@@ -5,6 +5,7 @@ import { ReviewCarousel, ReviewSummaryBadges, ReviewCTA } from "@/components/Rev
 import BestsellerSection from "@/components/BestsellerSection";
 import heroBg from "@/assets/hero-bistro.jpg";
 import logoIcon from "@/assets/logo-icon.png";
+import logo from "@/assets/logo-bistro-boxenstopp.png";
 
 const highlights = [
   {
@@ -66,24 +67,19 @@ const Index = () => {
             height={1080}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-primary/60" />
+          <div className="absolute inset-0 bg-black/35" />
         </div>
         <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
           <img
-            src={logoIcon}
-            alt="Bistro Boxenstopp Logo"
-            className="h-20 md:h-28 w-auto mx-auto mb-6 drop-shadow-lg animate-fade-in-up"
+            src={logo}
+            alt="Bistro Boxenstopp"
+            className="w-[250px] sm:w-[320px] md:w-[450px] mx-auto mb-6 drop-shadow-lg animate-fade-in-up brightness-0 invert"
           />
-          <p className="text-warm-gold font-medium tracking-[0.3em] uppercase text-sm mb-4 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-            Bistro & Café
+          <h1 className="sr-only">Bistro Boxenstopp</h1>
+          <p className="font-serif text-xl md:text-2xl text-white/90 mb-8 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
+            Hergatz' bestgehütetes Geheimnis
           </p>
-          <h1 className="font-serif text-5xl md:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            Bistro Boxenstopp
-          </h1>
-          <p className="text-primary-foreground/85 text-lg md:text-xl max-w-xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-            Hergatz' bestgehütetes Geheimnis. Kaffee, Genuss & gute Energie — direkt am Radweg.
-          </p>
-          <div className="animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
+          <div className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             <Link
               to="/speisekarte"
               className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
