@@ -9,6 +9,7 @@ import Menu from "./pages/Menu";
 import About from "./pages/About";
 import Partners from "./pages/Partners";
 import Gallery from "./pages/Gallery";
+import Reviews from "./pages/Reviews";
 import Contact from "./pages/Contact";
 import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/ueber-uns" element={<About />} />
           <Route path="/partner" element={<Partners />} />
           <Route path="/galerie" element={<Gallery />} />
+          <Route path="/bewertungen" element={<Reviews />} />
           <Route path="/kontakt" element={<Contact />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/datenschutz" element={<Datenschutz />} />

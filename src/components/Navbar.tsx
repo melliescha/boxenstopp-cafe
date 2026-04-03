@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Über uns", path: "/ueber-uns" },
   { label: "Unsere Partner", path: "/partner" },
   { label: "Galerie", path: "/galerie" },
+  { label: "Bewertungen", path: "/bewertungen" },
   { label: "Anfahrt & Kontakt", path: "/kontakt" },
 ];
 
@@ -22,7 +23,7 @@ const Navbar = () => {
           Bistro Boxenstopp
         </Link>
 
-        <ul className="hidden lg:flex items-center gap-7">
+        <ul className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) => (
             <li key={link.path}>
               <Link
