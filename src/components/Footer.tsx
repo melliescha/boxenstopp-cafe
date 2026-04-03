@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Star } from "lucide-react";
+import logo from "@/assets/logo-bistro-boxenstopp.png";
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <p className="font-serif text-lg font-semibold mb-2">Bistro Boxenstopp</p>
+            <img src={logo} alt="Bistro Boxenstopp" className="h-[35px] w-auto brightness-0 invert mb-2" />
             <p className="text-primary-foreground/60 text-sm">
               Teil von{" "}
               <a

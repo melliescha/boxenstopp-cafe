@@ -278,9 +278,7 @@ const FlipbookMenu = () => {
             <Page className="bg-primary">
               <div className="flex flex-col items-center justify-center h-full text-center bg-primary rounded-sm p-6">
                 <div className="w-16 h-px bg-warm-gold mb-5" />
-                <p className="font-serif text-xl sm:text-2xl font-bold text-primary-foreground mb-3">
-                  Danke für deinen<br />Boxenstopp!
-                </p>
+                <img src={logo} alt="Bistro Boxenstopp" className="h-10 sm:h-14 w-auto mx-auto brightness-0 invert mb-3" />
                 <div className="text-primary-foreground/60 text-xs space-y-1 mb-4">
                   <p>Südhang 1, 88145 Hergatz</p>
                   <p className="mt-2">Mo–Fr: 15:00–20:00 Uhr</p>
