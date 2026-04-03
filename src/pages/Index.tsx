@@ -74,7 +74,7 @@ const Index = () => {
             src={logo}
             alt="Bistro Boxenstopp"
             className="w-[250px] sm:w-[320px] md:w-[450px] mx-auto mb-6 drop-shadow-lg animate-fade-in-up"
-            style={{ mixBlendMode: "multiply", filter: "brightness(0) invert(1)" }}
+            style={{ filter: "brightness(0) invert(1)", mixBlendMode: "screen" }}
           />
           <h1 className="sr-only">Bistro Boxenstopp</h1>
           <p className="font-serif text-xl md:text-2xl text-white/90 mb-8 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
