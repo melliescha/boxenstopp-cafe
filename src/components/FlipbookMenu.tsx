@@ -129,7 +129,7 @@ const FlipbookMenu = () => {
               <div className="flex flex-col items-center justify-center h-full text-center bg-primary rounded-sm p-6">
                 <div className="w-16 h-px bg-warm-gold mb-6" />
                 <p className="text-warm-gold tracking-[0.3em] uppercase text-xs mb-4">Bistro & Café</p>
-                <img src={logo} alt="Bistro Boxenstopp" className="h-16 sm:h-20 w-auto mx-auto brightness-0 invert mb-3" />
+                <h2 className="font-serif text-2xl sm:text-3xl font-bold text-primary-foreground mb-3">Bistro Boxenstopp</h2>
                 <div className="w-10 h-px bg-warm-gold my-4" />
                 <p className="font-serif-italic text-primary-foreground/80 text-lg">Speisekarte</p>
                 <div className="mt-8 w-32 h-32 rounded-full overflow-hidden ring-2 ring-warm-gold/30">
