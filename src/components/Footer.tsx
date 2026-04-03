@@ -74,6 +74,25 @@ const Footer = () => {
           <Link to="/widerruf" className="hover:text-primary-foreground transition-colors">Widerrufsbelehrung</Link>
           <span>© {new Date().getFullYear()} Bistro Boxenstopp</span>
         </div>
+
+        {/* Agency Credit */}
+        <div className="border-t border-primary-foreground/5 mt-6 pt-5 text-center">
+          <p className="text-[12px] leading-relaxed" style={{ color: "#fef4ec", opacity: 0.5 }}>
+            Dir gefällt diese Website? Du brauchst Sichtbarkeit für dein lokales Unternehmen?
+          </p>
+          <a
+            href="https://optivantaagency.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[13px] font-medium hover:underline transition-all inline-block mt-1"
+            style={{ color: "#b8943e" }}
+          >
+            Jetzt Gespräch vereinbaren →
+          </a>
+          <p className="text-[10px] mt-1.5" style={{ color: "#fef4ec", opacity: 0.3 }}>
+            Webdesign by Optivanta
+          </p>
+        </div>
       </div>
     </footer>
   );
