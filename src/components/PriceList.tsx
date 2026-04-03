@@ -35,7 +35,7 @@ const categories: PriceCategory[] = [
     emoji: "☕",
     title: "Milchkaffee-Varianten",
     items: [
-      { name: "★ Boxenstopp Spezial", price: "4,90 €", note: "Kollagen Latte Macchiato mit einer Prise Salz und Rohkakao — unsere Hausspezialität", featured: true },
+      { name: "★ Boxenstopp Spezial", price: "4,90 €", note: "Kollagen Latte Macchiato mit einer Prise Salz und Rohkakao, unsere Hausspezialität", featured: true },
       { name: "Caffè Latte (Milchkaffee)", price: "2,40 € – 3,40 €", note: "Barista Qualität" },
       { name: "Cappuccino", price: "2,40 € – 3,40 €", note: "Barista Qualität" },
       { name: "Cappuccino Schoko oder Vanille", price: "2,60 € – 3,60 €", note: "Barista Qualität" },
@@ -207,7 +207,7 @@ const PriceList = () => {
       <div className="mt-14 text-center">
         <div className="divider-bronze mb-6" />
         <p className="text-muted-foreground text-sm italic leading-relaxed">
-          Mit jedem Kaffee unterstützt du die Cup&Cino Foundation — 1 Cent pro Tasse für soziale Projekte.
+          Mit jedem Kaffee unterstützt du die Cup&Cino Foundation: 1 Cent pro Tasse für soziale Projekte.
         </p>
       </div>
     </div>

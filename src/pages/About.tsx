@@ -13,15 +13,15 @@ const founders = [
     name: "Helena Schall",
     role: "Gastgeberin & gute Seele",
     image: founderHelena,
-    alt: "Helena Schall — Gastgeberin des Bistro Boxenstopp",
-    text: "Helena sorgt dafür, dass sich jeder Gast wie zu Hause fühlt. Sie kümmert sich um alles, was das Bistro ausmacht — vom frischen Kaffee bis zum warmen Empfang.",
+    alt: "Helena Schall, Gastgeberin des Bistro Boxenstopp",
+    text: "Helena sorgt dafür, dass sich jeder Gast wie zu Hause fühlt. Sie kümmert sich um alles, was das Bistro ausmacht: vom frischen Kaffee bis zum warmen Empfang.",
   },
   {
     name: "Eugen Schall",
     role: "Gründer, Trainer & Gastgeber",
     image: founderEugen,
-    alt: "Eugen Schall — Gründer und Gastgeber des Bistro Boxenstopp",
-    text: "Eugen ist zertifizierter Fitness-Trainer mit über 10 Jahren Erfahrung und das Herz hinter FITES Allgäu. Seine Vision: Fitness und Genuss unter einem Dach — in einer Atmosphäre, die sich anfühlt wie bei Freunden.",
+    alt: "Eugen Schall, Gründer und Gastgeber des Bistro Boxenstopp",
+    text: "Eugen ist zertifizierter Fitness-Trainer mit über 10 Jahren Erfahrung und das Herz hinter FITES Allgäu. Seine Vision: Fitness und Genuss unter einem Dach, in einer Atmosphäre, die sich anfühlt wie bei Freunden.",
   },
 ];
 
@@ -65,15 +65,15 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Wir sind Helena und Eugen Schall — und das Bistro Boxenstopp ist unser Herzensprojekt.
+                  Wir sind Helena und Eugen Schall, und das Bistro Boxenstopp ist unser Herzensprojekt.
                 </p>
                 <p>
                   Angefangen hat alles 2019, als wir noch in Überlingen am Bodensee lebten. Über Friedrichshafen
                   hat es uns immer weiter Richtung Berge gezogen. Bei einem Wanderausflug ins Allgäu haben wir
-                  zum ersten Mal die Stadt Wangen besucht — und uns sofort heimisch gefühlt.
+                  zum ersten Mal die Stadt Wangen besucht, und uns sofort heimisch gefühlt.
                 </p>
                 <p>
-                  Die Idylle, die freundlichen Menschen, die Natur — das war es. Hier wollten wir leben,
+                  Die Idylle, die freundlichen Menschen, die Natur: das war es. Hier wollten wir leben,
                   Wurzeln schlagen und unseren Traum verwirklichen.
                 </p>
               </div>
@@ -108,9 +108,9 @@ const About = () => {
                   Menschen wohlfühlen. In Hergatz-Wohmbrechts haben wir genau das gefunden.
                 </p>
                 <p>
-                  So entstand zuerst FITES Allgäu — Eugens Fitnessstudio mit kleinen Gruppen und persönlicher
+                  So entstand zuerst FITES Allgäu, Eugens Fitnessstudio mit kleinen Gruppen und persönlicher
                   Betreuung. Und weil zum Wohlfühlen mehr gehört als nur Training, kam das Bistro Boxenstopp
-                  dazu: ein Ort zum Auftanken, Durchatmen und Genießen. Für alle — nicht nur für Sportler.
+                  dazu: ein Ort zum Auftanken, Durchatmen und Genießen. Für alle, nicht nur für Sportler.
                 </p>
               </div>
             </div>
@@ -124,12 +124,12 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Der Name ist Programm: Bei uns machst du einen kurzen Boxenstopp — ob auf der Radtour,
+                  Der Name ist Programm: Bei uns machst du einen kurzen Boxenstopp, ob auf der Radtour,
                   nach dem Training oder einfach, weil du Lust auf guten Kaffee hast.
                 </p>
                 <p>
                   Wir liegen direkt an der Leiblachroute und am Bodensee-Königssee-Radweg. Ja, man muss uns
-                  erstmal finden — aber genau das macht uns besonders. Wer einmal da war, kommt wieder. Versprochen.
+                  erstmal finden, aber genau das macht uns besonders. Wer einmal da war, kommt wieder. Versprochen.
                 </p>
               </div>
             </div>
@@ -187,7 +187,7 @@ const About = () => {
             Bei uns gibt's keinen Dresscode, keine Reservierungspflicht und keine Formalitäten.
           </p>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-2">
-            Komm wie du bist — ob in Radlerhose, Trainingskleidung oder Sonntagsoutfit.
+            Komm wie du bist, ob in Radlerhose, Trainingskleidung oder Sonntagsoutfit.
           </p>
           <p className="text-lg md:text-xl font-medium text-foreground mb-8">
             Wir freuen uns auf dich.

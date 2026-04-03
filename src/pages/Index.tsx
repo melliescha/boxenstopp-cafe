@@ -11,12 +11,12 @@ const highlights = [
   {
     icon: Map,
     title: "Geheimtipp am Radweg",
-    text: "Direkt an der Leiblachroute & Bodensee-Königssee-Radweg — wer uns findet, kommt wieder",
+    text: "Direkt an der Leiblachroute & Bodensee-Königssee-Radweg. Wer uns findet, kommt wieder.",
   },
   {
     icon: Thermometer,
     title: "Kühle Terrasse",
-    text: "Selbst bei 30°C genießt du bei uns angenehme 25°C im Schatten — die perfekte Erfrischung",
+    text: "Selbst bei 30°C genießt du bei uns angenehme 25°C im Schatten: die perfekte Erfrischung.",
   },
   {
     icon: ShowerHead,
@@ -34,7 +34,7 @@ const whyUs = [
   {
     icon: Sun,
     title: "Versteckt & besonders",
-    text: "Kein Straßenlärm, keine Hektik. Bei uns genießt du in aller Ruhe — umgeben von Allgäuer Natur.",
+    text: "Kein Straßenlärm, keine Hektik. Bei uns genießt du in aller Ruhe, umgeben von Allgäuer Natur.",
   },
   {
     icon: Users,
@@ -62,7 +62,7 @@ const Index = () => {
         <div className="absolute inset-0">
           <img
             src={heroBg}
-            alt="Bistro Boxenstopp – gemütliches Café-Interieur mit Kaffee und Gebäck"
+            alt="Bistro Boxenstopp, gemütliches Café-Interieur mit Kaffee und Gebäck"
             width={1920}
             height={1080}
             className="w-full h-full object-cover"
@@ -96,7 +96,7 @@ const Index = () => {
           <div className="divider-bronze mb-6" />
           <p className="text-lg leading-relaxed text-muted-foreground mb-4">
             Zugegeben: Man muss uns erstmal finden. Das Bistro Boxenstopp liegt versteckt in einer
-            ruhigen Wohnsiedlung in Hergatz-Wohmbrechts — aber genau das macht uns aus.
+            ruhigen Wohnsiedlung in Hergatz-Wohmbrechts, aber genau das macht uns aus.
           </p>
           <p className="text-lg leading-relaxed text-muted-foreground">
             Wer den Weg zu uns findet, wird belohnt: mit richtig gutem Kaffee, frischen Flammkuchen,
@@ -131,7 +131,7 @@ const Index = () => {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-center mb-12">
-            Ein Bistro, das man nicht erwartet — und nicht mehr vergisst
+            Ein Bistro, das man nicht erwartet, und nicht mehr vergisst
           </h2>
           <div className="space-y-8">
             {whyUs.map((item) => (

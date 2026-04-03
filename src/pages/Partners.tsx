@@ -5,13 +5,13 @@ const partners = [
   {
     icon: Coffee,
     name: "Cup&Cino",
-    text: "Unsere Kaffeespezialitäten kommen von Cup&Cino — einem Unternehmen, das für erstklassige Bohnen und innovative Kaffeekonzepte steht. Von Espresso bis Matcha Latte: Jede Tasse wird frisch mit dem Cup&Cino-System zubereitet.",
-    highlight: "☕ Cup&Cino Foundation — Mit jedem Kaffee, den du bei uns trinkst, geht 1 Cent an die Cup&Cino Foundation. So unterstützt du mit deinem Boxenstopp soziale Projekte weltweit.",
+    text: "Unsere Kaffeespezialitäten kommen von Cup&Cino, einem Unternehmen, das für erstklassige Bohnen und innovative Kaffeekonzepte steht. Von Espresso bis Matcha Latte: Jede Tasse wird frisch mit dem Cup&Cino-System zubereitet.",
+    highlight: "☕ Cup&Cino Foundation: Mit jedem Kaffee, den du bei uns trinkst, geht 1 Cent an die Cup&Cino Foundation. So unterstützt du mit deinem Boxenstopp soziale Projekte weltweit.",
   },
   {
     icon: ChefHat,
     name: "Perplex",
-    text: "Unsere Gourmet-Flammkuchen kommen von Perplex — frisch, hochwertig und mit Liebe zum Detail. Wechselnde Sorten sorgen dafür, dass es nie langweilig wird.",
+    text: "Unsere Gourmet-Flammkuchen kommen von Perplex, frisch, hochwertig und mit Liebe zum Detail. Wechselnde Sorten sorgen dafür, dass es nie langweilig wird.",
   },
   {
     icon: Dumbbell,
@@ -21,7 +21,7 @@ const partners = [
   {
     icon: HeartHandshake,
     name: "FITES Allgäu",
-    text: "Das Bistro Boxenstopp ist Teil von FITES Allgäu — dem Fitnessstudio direkt nebenan. Wer nach dem Kaffee Lust auf Bewegung bekommt, ist herzlich willkommen.",
+    text: "Das Bistro Boxenstopp ist Teil von FITES Allgäu, dem Fitnessstudio direkt nebenan. Wer nach dem Kaffee Lust auf Bewegung bekommt, ist herzlich willkommen.",
     link: { href: "https://www.fites-allgaeu.com", label: "Mehr über FITES" },
   },
 ];

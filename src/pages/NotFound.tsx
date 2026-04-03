@@ -17,7 +17,7 @@ const NotFound = () => {
           <img src={logoIcon} alt="Bistro Boxenstopp" className="h-28 md:h-36 w-auto mx-auto mb-8 opacity-80" />
           <h1 className="font-serif text-5xl md:text-6xl font-bold text-foreground mb-4">404</h1>
           <p className="text-muted-foreground text-lg mb-8">
-            Hier gibt's leider nichts — aber im Bistro schon!
+            Hier gibt's leider nichts, aber im Bistro schon!
           </p>
           <Link
             to="/"

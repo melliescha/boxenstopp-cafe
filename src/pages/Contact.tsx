@@ -11,12 +11,12 @@ const tips = [
   {
     icon: Bike,
     title: "Mit dem Rad",
-    text: "Wir liegen direkt an der Leiblachroute und am Bodensee-Königssee-Radweg. Tipp: Nach der Abfahrt Richtung Wohmbrechts — du siehst uns auf der linken Seite. Duschen und E-Bike-Ladestation vorhanden!",
+    text: "Wir liegen direkt an der Leiblachroute und am Bodensee-Königssee-Radweg. Tipp: Nach der Abfahrt Richtung Wohmbrechts, du siehst uns auf der linken Seite. Duschen und E-Bike-Ladestation vorhanden!",
   },
   {
     icon: Car,
     title: "Mit dem Auto",
-    text: "Von der B32 Ausfahrt Hergatz, dann Richtung Wohmbrechts. In der Siedlung Südhang 1 — kostenlose Parkplätze direkt am Haus. Gib 'Südhang 1, 88145 Hergatz' ins Navi ein.",
+    text: "Von der B32 Ausfahrt Hergatz, dann Richtung Wohmbrechts. In der Siedlung Südhang 1, kostenlose Parkplätze direkt am Haus. Gib 'Südhang 1, 88145 Hergatz' ins Navi ein.",
   },
   {
     icon: Footprints,
@@ -44,11 +44,11 @@ const Contact = () => {
             </h1>
             <div className="divider-bronze mb-8" />
             <p className="font-serif text-xl italic text-foreground mb-4">
-              Ja, wir sind ein bisschen versteckt — aber genau deshalb lohnt sich der Weg.
+              Ja, wir sind ein bisschen versteckt, aber genau deshalb lohnt sich der Weg.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Das Bistro Boxenstopp liegt in einer ruhigen Wohnsiedlung in Hergatz-Wohmbrechts.
-              Keine große Straße, kein Schild an der Hauptstraße — aber dafür Ruhe, Natur und
+              Keine große Straße, kein Schild an der Hauptstraße, aber dafür Ruhe, Natur und
               echte Gastfreundschaft. Hier ist die Wegbeschreibung:
             </p>
           </div>

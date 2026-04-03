@@ -24,10 +24,10 @@ const images: GalleryImage[] = [
   { src: galleryInterior, alt: "Warme Atmosphäre im Bistro mit Holzmöbeln und Pflanzen", category: "innen" },
   { src: bistroTerrace, alt: "Unsere Terrasse im Sommer mit Blick ins Allgäu", category: "aussen" },
   { src: galleryLandscape, alt: "Blick auf die Allgäuer Landschaft von der Terrasse", category: "aussen" },
-  { src: galleryEntrance, alt: "Willkommen im Bistro Boxenstopp — Eingangsbereich", category: "aussen" },
+  { src: galleryEntrance, alt: "Willkommen im Bistro Boxenstopp, Eingangsbereich", category: "aussen" },
   { src: galleryCappuccino, alt: "Frischer Cappuccino von Cup&Cino mit Latte Art", category: "essen" },
   { src: galleryFlammkuchen, alt: "Gourmet-Flammkuchen frisch aus dem Ofen", category: "essen" },
-  { src: foodSpread, alt: "Unsere Auswahl — Flammkuchen, Matcha Latte und frisches Baguette", category: "essen" },
+  { src: foodSpread, alt: "Unsere Auswahl: Flammkuchen, Matcha Latte und frisches Baguette", category: "essen" },
 ];
 
 const tabs: { label: string; value: Category }[] = [
@@ -53,7 +53,7 @@ const Gallery = () => {
               Einblicke ins Bistro Boxenstopp
             </h1>
             <div className="divider-bronze mb-4" />
-            <p className="text-muted-foreground">Mach dir selbst ein Bild — so sieht's bei uns aus.</p>
+            <p className="text-muted-foreground">Mach dir selbst ein Bild. So sieht's bei uns aus.</p>
           </div>
 
           {/* Filter tabs */}

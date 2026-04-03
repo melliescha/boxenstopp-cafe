@@ -141,7 +141,7 @@ const FlipbookMenu = () => {
 
             {/* Page 2: Coffee image */}
             <Page>
-              <ImagePage src={galleryCappuccino} alt="Latte Art — Kaffeegenuss im Bistro Boxenstopp" />
+              <ImagePage src={galleryCappuccino} alt="Latte Art, Kaffeegenuss im Bistro Boxenstopp" />
             </Page>
 
             {/* Page 3: Coffee Classics + Milk Coffee */}
@@ -202,7 +202,7 @@ const FlipbookMenu = () => {
 
             {/* Page 7: Baguettes */}
             <Page>
-              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Frisch belegt — unsere Baguettes</p>
+              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Frisch belegt: unsere Baguettes</p>
               <SectionTitle title="Baguettes" />
               <FlipMenuItem item={{ name: "Fitness Baguette-Premium", price: "6,80 €", note: "Körnerbaguette mit Hähnchenbrustschinken & Gouda" }} />
               <FlipMenuItem item={{ name: "Grillgemüse Baguette-Premium", price: "6,80 €", note: "Zucchini, Champignons, Tomaten, Mozzarella" }} />
@@ -214,7 +214,7 @@ const FlipbookMenu = () => {
 
             {/* Page 8: Rustic breads */}
             <Page>
-              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Handgemacht — unsere rustikalen Brote</p>
+              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Handgemacht: unsere rustikalen Brote</p>
               <SectionTitle title="Rustikale Brote" />
               <FlipMenuItem item={{ name: "Holzfällerbrot-Rustikal", price: "7,40 €", note: "Schwarzbrot mit Knoblauchbutter, Käse, Speck & Zwiebeln" }} />
               <FlipMenuItem item={{ name: "Tomaten Mozzarella Brot", price: "7,40 €", note: "Weizenbrot mit Basilikum, Mozzarella & Tomaten" }} />
@@ -234,7 +234,7 @@ const FlipbookMenu = () => {
 
             {/* Page 11: Flammkuchen & Pizza */}
             <Page>
-              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Aus dem Ofen — Flammkuchen & Snacks</p>
+              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Aus dem Ofen: Flammkuchen & Snacks</p>
               <SectionTitle title="Flammkuchen" subtitle="Von unserem Partner Perplex" />
               <FlipMenuItem item={{ name: "Elsässer Art", price: "6,30 €", note: "Speck und Zwiebeln" }} />
               <FlipMenuItem item={{ name: "Griechische Art", price: "6,30 €", note: "Peperoni, Hirtenkäse, bunter Pfeffer" }} />
@@ -286,7 +286,7 @@ const FlipbookMenu = () => {
                   <p>So: 11:00–16:00 Uhr</p>
                 </div>
                 <p className="text-primary-foreground/50 text-xs mb-3">
-                  Teil von FITES Allgäu — www.fites-allgaeu.com
+                  Teil von FITES Allgäu, www.fites-allgaeu.com
                 </p>
                 <div className="w-10 h-px bg-warm-gold my-2" />
                 <p className="text-warm-gold text-[11px] font-medium mb-2">
