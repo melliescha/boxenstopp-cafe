@@ -127,14 +127,14 @@ const categories: PriceCategory[] = [
 ];
 
 const ItemRow = ({ item }: { item: PriceItem }) => (
-  <li>
+  <li className={item.featured ? "bg-bronze/5 -mx-3 px-3 py-2 rounded-lg border border-bronze/20" : ""}>
     <div className="flex items-baseline justify-between gap-2">
-      <span className="text-foreground font-medium text-sm sm:text-base">{item.name}</span>
+      <span className={`text-sm sm:text-base ${item.featured ? "text-foreground font-bold" : "text-foreground font-medium"}`}>{item.name}</span>
       <span className="flex-1 border-b border-dotted border-bronze/30 mx-2 min-w-[1.5rem]" />
       <span className="text-bronze font-semibold whitespace-nowrap text-sm sm:text-base">{item.price}</span>
     </div>
     {item.note && (
-      <p className="text-muted-foreground text-xs mt-0.5 italic">{item.note}</p>
+      <p className={`text-xs mt-0.5 italic ${item.featured ? "text-bronze" : "text-muted-foreground"}`}>{item.note}</p>
     )}
   </li>
 );

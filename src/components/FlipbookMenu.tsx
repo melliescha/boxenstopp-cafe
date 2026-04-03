@@ -178,7 +178,7 @@ const FlipbookMenu = () => {
               <SectionTitle title="Wohlfühlgetränke" />
               <FlipMenuItem item={{ name: "Kakao", price: "2,00 – 3,20 €" }} />
               <FlipMenuItem item={{ name: "Latte Vanilla", price: "2,00 – 3,20 €" }} />
-              <FlipMenuItem item={{ name: "Matcha-Latte", price: "3,50 – 3,80 €" }} />
+              <FlipMenuItem item={{ name: "Matcha-Latte", price: "3,50 – 3,80 €", note: "auch vegan mit Pflanzenmilch" }} />
               <FlipMenuItem item={{ name: "Tee (nach Wahl)", price: "1,80 €", note: "in Bio-Qualität" }} />
 
               <div className="mt-4">

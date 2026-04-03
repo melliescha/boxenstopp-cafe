@@ -105,6 +105,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Bestseller */}
+      <BestsellerSection />
+
       {/* Highlights – 2x2 grid */}
       <section className="py-20 bg-secondary/50">
         <div className="container mx-auto px-6">
