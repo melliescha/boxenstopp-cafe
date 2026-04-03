@@ -1,5 +1,6 @@
 import { Printer } from "lucide-react";
 import logoIcon from "@/assets/logo-icon.png";
+import logo from "@/assets/logo-bistro-boxenstopp.png";
 
 interface PriceItem {
   name: string;
