@@ -234,7 +234,7 @@ const FlipbookMenu = () => {
 
             {/* Page 11: Flammkuchen & Pizza */}
             <Page>
-              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Aus dem Ofen — Flammkuchen & Snacks</p>
+              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Aus dem Ofen: Flammkuchen & Snacks</p>
               <SectionTitle title="Flammkuchen" subtitle="Von unserem Partner Perplex" />
               <FlipMenuItem item={{ name: "Elsässer Art", price: "6,30 €", note: "Speck und Zwiebeln" }} />
               <FlipMenuItem item={{ name: "Griechische Art", price: "6,30 €", note: "Peperoni, Hirtenkäse, bunter Pfeffer" }} />
