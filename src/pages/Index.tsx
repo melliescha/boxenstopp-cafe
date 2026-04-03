@@ -34,7 +34,7 @@ const whyUs = [
   {
     icon: Sun,
     title: "Versteckt & besonders",
-    text: "Kein Straßenlärm, keine Hektik. Bei uns genießt du in aller Ruhe — umgeben von Allgäuer Natur.",
+    text: "Kein Straßenlärm, keine Hektik. Bei uns genießt du in aller Ruhe, umgeben von Allgäuer Natur.",
   },
   {
     icon: Users,
