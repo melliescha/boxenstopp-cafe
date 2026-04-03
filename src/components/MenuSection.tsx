@@ -1,51 +1,43 @@
-import { Coffee, Croissant, Salad, Wine } from "lucide-react";
+import { Coffee, UtensilsCrossed, GlassWater, Dumbbell } from "lucide-react";
 
 const categories = [
   {
     icon: Coffee,
-    title: "Kaffee & Getränke",
+    title: "Kaffee & Matcha",
+    subtitle: "Partner: Cup&Cino",
+    items: ["Espresso", "Cappuccino", "Latte Macchiato", "Matcha Latte", "Kakao"],
+  },
+  {
+    icon: UtensilsCrossed,
+    title: "Essen",
+    subtitle: "Frisch & lecker",
     items: [
-      { name: "Espresso", price: "2,50 €" },
-      { name: "Cappuccino", price: "3,80 €" },
-      { name: "Latte Macchiato", price: "4,20 €" },
-      { name: "Hausgemachte Limo", price: "3,50 €" },
+      "Frische Baguettes (verschiedene Beläge)",
+      "Gourmet-Flammkuchen (wechselnde Sorten)",
+      "Tagesgebäck (Muffins, Kuchen – je nach Verfügbarkeit)",
     ],
   },
   {
-    icon: Croissant,
-    title: "Frühstück",
-    items: [
-      { name: "Croissant mit Butter & Marmelade", price: "3,90 €" },
-      { name: "Boxenstopp-Frühstück", price: "9,90 €" },
-      { name: "Avocado-Toast", price: "7,50 €" },
-      { name: "Granola Bowl", price: "6,80 €" },
-    ],
+    icon: GlassWater,
+    title: "Erfrischungen",
+    subtitle: "Kalt & prickelnd",
+    items: ["Apfelschorle", "Alkoholfreies Bier", "Wasser still/medium", "Softdrinks"],
   },
   {
-    icon: Salad,
-    title: "Mittags & Snacks",
+    icon: Dumbbell,
+    title: "Herbalife Nutrition",
+    subtitle: "Power für den Körper",
     items: [
-      { name: "Tagessuppe", price: "5,50 €" },
-      { name: "Caesar Salad", price: "8,90 €" },
-      { name: "Club Sandwich", price: "9,50 €" },
-      { name: "Quiche Lorraine", price: "7,90 €" },
-    ],
-  },
-  {
-    icon: Wine,
-    title: "Kuchen & Süßes",
-    items: [
-      { name: "Käsekuchen", price: "4,50 €" },
-      { name: "Schokoladentorte", price: "4,90 €" },
-      { name: "Apfelstrudel", price: "5,20 €" },
-      { name: "Tiramisu", price: "5,50 €" },
+      "Protein-Shake (verschiedene Geschmacksrichtungen)",
+      "Herbalife Tee",
+      "Protein-Riegel",
     ],
   },
 ];
 
 const MenuSection = () => {
   return (
-    <section id="menu" className="py-24 bg-secondary">
+    <section id="menu" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-accent font-medium tracking-[0.2em] uppercase text-sm mb-2">Unsere Auswahl</p>
@@ -55,18 +47,20 @@ const MenuSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {categories.map((cat) => (
             <div key={cat.title} className="bg-card rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center gap-3 mb-2">
                 <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
                   <cat.icon className="w-5 h-5 text-accent" />
                 </div>
-                <h3 className="font-serif text-xl font-semibold text-foreground">{cat.title}</h3>
+                <div>
+                  <h3 className="font-serif text-xl font-semibold text-foreground">{cat.title}</h3>
+                </div>
               </div>
-              <ul className="space-y-4">
+              <p className="text-muted-foreground text-xs mb-5 ml-[3.25rem]">{cat.subtitle}</p>
+              <ul className="space-y-3">
                 {cat.items.map((item) => (
-                  <li key={item.name} className="flex items-baseline justify-between gap-2">
-                    <span className="text-foreground font-medium">{item.name}</span>
-                    <span className="flex-1 border-b border-dashed border-border mx-2 min-w-[2rem]" />
-                    <span className="text-accent font-semibold whitespace-nowrap">{item.price}</span>
+                  <li key={item} className="flex items-center gap-2 text-foreground">
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
+                    <span className="text-sm">{item}</span>
                   </li>
                 ))}
               </ul>

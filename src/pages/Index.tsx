@@ -1,18 +1,24 @@
+import WelcomeBanner from "@/components/WelcomeBanner";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import MenuSection from "@/components/MenuSection";
 import AboutSection from "@/components/AboutSection";
-import ContactSection from "@/components/ContactSection";
+import CyclistSection from "@/components/CyclistSection";
+import MenuSection from "@/components/MenuSection";
+import HoursSection from "@/components/HoursSection";
+import DirectionsSection from "@/components/DirectionsSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <WelcomeBanner />
       <Navbar />
       <HeroSection />
-      <MenuSection />
       <AboutSection />
-      <ContactSection />
+      <CyclistSection />
+      <MenuSection />
+      <HoursSection />
+      <DirectionsSection />
       <Footer />
     </div>
   );

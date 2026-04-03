@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Poppins', 'sans-serif'],
         serif: ['Playfair Display', 'serif'],
       },
       colors: {
@@ -50,6 +50,10 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        wood: {
+          DEFAULT: "hsl(var(--wood))",
+          foreground: "hsl(var(--wood-foreground))",
         },
         "warm-gold": {
           DEFAULT: "hsl(var(--warm-gold))",

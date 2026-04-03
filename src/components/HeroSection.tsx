@@ -6,12 +6,12 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroBg}
-          alt="Boxenstopp Bistro Innenansicht"
+          alt="Bistro Boxenstopp Innenansicht mit Kaffee und Gebäck"
           width={1920}
           height={1080}
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-foreground/60" />
+        <div className="absolute inset-0 bg-primary/65" />
       </div>
 
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
@@ -19,10 +19,10 @@ const HeroSection = () => {
           Bistro & Café
         </p>
         <h1 className="font-serif text-5xl md:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
-          Boxenstopp
+          Bistro Boxenstopp
         </h1>
-        <p className="text-primary-foreground/80 text-lg md:text-xl max-w-xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-          Dein gemütlicher Zwischenstopp – für besten Kaffee, frische Küche und eine entspannte Auszeit.
+        <p className="text-primary-foreground/85 text-lg md:text-xl max-w-xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+          Dein Boxenstopp beim Eugen – Tank Energie auf, ob nach dem Workout oder auf der Radtour.
         </p>
         <div className="animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
           <a
