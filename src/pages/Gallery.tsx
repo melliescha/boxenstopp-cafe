@@ -27,7 +27,7 @@ const images: GalleryImage[] = [
   { src: galleryEntrance, alt: "Willkommen im Bistro Boxenstopp, Eingangsbereich", category: "aussen" },
   { src: galleryCappuccino, alt: "Frischer Cappuccino von Cup&Cino mit Latte Art", category: "essen" },
   { src: galleryFlammkuchen, alt: "Gourmet-Flammkuchen frisch aus dem Ofen", category: "essen" },
-  { src: foodSpread, alt: "Unsere Auswahl — Flammkuchen, Matcha Latte und frisches Baguette", category: "essen" },
+  { src: foodSpread, alt: "Unsere Auswahl: Flammkuchen, Matcha Latte und frisches Baguette", category: "essen" },
 ];
 
 const tabs: { label: string; value: Category }[] = [
