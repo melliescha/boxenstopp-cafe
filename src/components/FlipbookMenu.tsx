@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { forwardRef } from "react";
 
 import galleryCappuccino from "@/assets/gallery-cappuccino.jpg";
+import logo from "@/assets/logo-bistro-boxenstopp.png";
 import menuMatchaPastries from "@/assets/menu-matcha-pastries.jpg";
 import menuBaguette from "@/assets/menu-baguette.jpg";
 import menuRusticBread from "@/assets/menu-rustic-bread.jpg";
