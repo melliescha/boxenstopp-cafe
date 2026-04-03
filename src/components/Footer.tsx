@@ -70,8 +70,6 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/10 pt-6 flex flex-wrap justify-center gap-4 text-xs text-primary-foreground/40">
           <Link to="/impressum" className="hover:text-primary-foreground transition-colors">Impressum</Link>
           <Link to="/datenschutz" className="hover:text-primary-foreground transition-colors">Datenschutz</Link>
-          <Link to="/agb" className="hover:text-primary-foreground transition-colors">AGB</Link>
-          <Link to="/widerruf" className="hover:text-primary-foreground transition-colors">Widerrufsbelehrung</Link>
           <span>© {new Date().getFullYear()} Bistro Boxenstopp</span>
         </div>
 

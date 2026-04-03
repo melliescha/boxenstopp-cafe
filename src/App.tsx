@@ -13,9 +13,6 @@ import Reviews from "./pages/Reviews";
 import Contact from "./pages/Contact";
 import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
-import Gutscheine from "./pages/Gutscheine";
-import AGB from "./pages/AGB";
-import Widerruf from "./pages/Widerruf";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -39,13 +36,10 @@ const App = () => (
           <Route path="/ueber-uns" element={<About />} />
           <Route path="/partner" element={<Partners />} />
           <Route path="/galerie" element={<Gallery />} />
-          <Route path="/gutscheine" element={<Gutscheine />} />
           <Route path="/bewertungen" element={<Reviews />} />
           <Route path="/kontakt" element={<Contact />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/datenschutz" element={<Datenschutz />} />
-          <Route path="/agb" element={<AGB />} />
-          <Route path="/widerruf" element={<Widerruf />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
