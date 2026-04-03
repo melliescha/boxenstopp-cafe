@@ -1,12 +1,13 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
-import PriceList from "@/components/PriceList";
+import MenuTileView from "@/components/MenuTileView";
 import FlipbookMenu from "@/components/FlipbookMenu";
+import { Download } from "lucide-react";
 
-type Tab = "preisliste" | "karte";
+type Tab = "karte" | "flipbook";
 
 const Menu = () => {
-  const [tab, setTab] = useState<Tab>("preisliste");
+  const [tab, setTab] = useState<Tab>("karte");
 
   return (
     <Layout>
@@ -21,16 +22,6 @@ const Menu = () => {
             {/* Tab switcher */}
             <div className="inline-flex rounded-lg border border-bronze/40 overflow-hidden no-print">
               <button
-                onClick={() => setTab("preisliste")}
-                className={`font-serif text-sm sm:text-base px-5 sm:px-8 py-2.5 transition-colors ${
-                  tab === "preisliste"
-                    ? "bg-bronze text-bronze-foreground"
-                    : "bg-transparent text-bronze hover:bg-bronze/10"
-                }`}
-              >
-                Preisliste
-              </button>
-              <button
                 onClick={() => setTab("karte")}
                 className={`font-serif text-sm sm:text-base px-5 sm:px-8 py-2.5 transition-colors ${
                   tab === "karte"
@@ -40,12 +31,36 @@ const Menu = () => {
               >
                 Unsere Karte
               </button>
+              <button
+                onClick={() => setTab("flipbook")}
+                className={`font-serif text-sm sm:text-base px-5 sm:px-8 py-2.5 transition-colors ${
+                  tab === "flipbook"
+                    ? "bg-bronze text-bronze-foreground"
+                    : "bg-transparent text-bronze hover:bg-bronze/10"
+                }`}
+              >
+                Speisekarte zum Blättern
+              </button>
             </div>
           </div>
 
+          {/* Flipbook toolbar */}
+          {tab === "flipbook" && (
+            <div className="flex justify-end mb-4 no-print">
+              <a
+                href="/speisekarte.pdf"
+                download="Speisekarte-Bistro-Boxenstopp.pdf"
+                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors border border-border rounded-lg px-4 py-2"
+              >
+                <Download size={16} />
+                Als PDF herunterladen
+              </a>
+            </div>
+          )}
+
           {/* Tab content */}
-          {tab === "preisliste" && <PriceList />}
-          {tab === "karte" && <FlipbookMenu />}
+          {tab === "karte" && <MenuTileView />}
+          {tab === "flipbook" && <FlipbookMenu />}
 
           {/* Review hint */}
           <div className="mt-16 max-w-2xl mx-auto no-print">
