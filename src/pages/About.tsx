@@ -70,7 +70,7 @@ const About = () => {
                 <p>
                   Angefangen hat alles 2019, als wir noch in Überlingen am Bodensee lebten. Über Friedrichshafen
                   hat es uns immer weiter Richtung Berge gezogen. Bei einem Wanderausflug ins Allgäu haben wir
-                  zum ersten Mal die Stadt Wangen besucht — und uns sofort heimisch gefühlt.
+                  zum ersten Mal die Stadt Wangen besucht, und uns sofort heimisch gefühlt.
                 </p>
                 <p>
                   Die Idylle, die freundlichen Menschen, die Natur — das war es. Hier wollten wir leben,
