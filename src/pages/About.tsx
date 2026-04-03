@@ -65,7 +65,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Wir sind Helena und Eugen Schall — und das Bistro Boxenstopp ist unser Herzensprojekt.
+                  Wir sind Helena und Eugen Schall, und das Bistro Boxenstopp ist unser Herzensprojekt.
                 </p>
                 <p>
                   Angefangen hat alles 2019, als wir noch in Überlingen am Bodensee lebten. Über Friedrichshafen
