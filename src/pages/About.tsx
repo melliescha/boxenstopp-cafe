@@ -129,7 +129,7 @@ const About = () => {
                 </p>
                 <p>
                   Wir liegen direkt an der Leiblachroute und am Bodensee-Königssee-Radweg. Ja, man muss uns
-                  erstmal finden — aber genau das macht uns besonders. Wer einmal da war, kommt wieder. Versprochen.
+                  erstmal finden, aber genau das macht uns besonders. Wer einmal da war, kommt wieder. Versprochen.
                 </p>
               </div>
             </div>
