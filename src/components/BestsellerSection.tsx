@@ -39,7 +39,7 @@ const bestsellers: Bestseller[] = [
     image: bestsellerFlammkuchen,
     alt: "Flammkuchen Lachs und Lauch",
     name: "Flammkuchen Lachs & Lauch",
-    description: "Unser beliebtester Flammkuchen — mit Flammkuchencreme, Lachs und Lauch",
+    description: "Unser beliebtester Flammkuchen, mit Flammkuchencreme, Lachs und Lauch",
     price: "7,30 €",
     badge: "🔥 Beliebtestes Gericht",
     badgeColor: "bg-orange-600/85",
