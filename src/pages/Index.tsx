@@ -79,7 +79,7 @@ const Index = () => {
           <p className="font-serif text-xl md:text-2xl text-white/90 mb-8 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
             Hergatz' bestgehütetes Geheimnis
           </p>
-          <div className="animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
+          <div className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             <Link
               to="/speisekarte"
               className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"

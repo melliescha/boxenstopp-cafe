@@ -157,7 +157,10 @@ const PriceList = () => {
 
       {/* Header */}
       <div className="text-center mb-14">
-        <img src={logoIcon} alt="Bistro Boxenstopp" className="h-16 w-auto mx-auto mb-4 hidden print:block" />
+        <div className="hidden print:flex items-center justify-center gap-3 mb-4">
+          <img src={logoIcon} alt="" className="h-14 w-auto" />
+          <img src={logo} alt="Bistro Boxenstopp" className="h-14 w-auto" />
+        </div>
         <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">Preisliste</h2>
         <div className="divider-bronze" />
       </div>
