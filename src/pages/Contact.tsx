@@ -44,7 +44,7 @@ const Contact = () => {
             </h1>
             <div className="divider-bronze mb-8" />
             <p className="font-serif text-xl italic text-foreground mb-4">
-              Ja, wir sind ein bisschen versteckt — aber genau deshalb lohnt sich der Weg.
+              Ja, wir sind ein bisschen versteckt, aber genau deshalb lohnt sich der Weg.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Das Bistro Boxenstopp liegt in einer ruhigen Wohnsiedlung in Hergatz-Wohmbrechts.
