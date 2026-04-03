@@ -124,7 +124,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Der Name ist Programm: Bei uns machst du einen kurzen Boxenstopp — ob auf der Radtour,
+                  Der Name ist Programm: Bei uns machst du einen kurzen Boxenstopp, ob auf der Radtour,
                   nach dem Training oder einfach, weil du Lust auf guten Kaffee hast.
                 </p>
                 <p>
