@@ -48,7 +48,7 @@ const Contact = () => {
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Das Bistro Boxenstopp liegt in einer ruhigen Wohnsiedlung in Hergatz-Wohmbrechts.
-              Keine große Straße, kein Schild an der Hauptstraße — aber dafür Ruhe, Natur und
+              Keine große Straße, kein Schild an der Hauptstraße, aber dafür Ruhe, Natur und
               echte Gastfreundschaft. Hier ist die Wegbeschreibung:
             </p>
           </div>

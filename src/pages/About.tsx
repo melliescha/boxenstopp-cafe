@@ -187,7 +187,7 @@ const About = () => {
             Bei uns gibt's keinen Dresscode, keine Reservierungspflicht und keine Formalitäten.
           </p>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-2">
-            Komm wie du bist — ob in Radlerhose, Trainingskleidung oder Sonntagsoutfit.
+            Komm wie du bist, ob in Radlerhose, Trainingskleidung oder Sonntagsoutfit.
           </p>
           <p className="text-lg md:text-xl font-medium text-foreground mb-8">
             Wir freuen uns auf dich.

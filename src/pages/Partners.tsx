@@ -21,7 +21,7 @@ const partners = [
   {
     icon: HeartHandshake,
     name: "FITES Allgäu",
-    text: "Das Bistro Boxenstopp ist Teil von FITES Allgäu — dem Fitnessstudio direkt nebenan. Wer nach dem Kaffee Lust auf Bewegung bekommt, ist herzlich willkommen.",
+    text: "Das Bistro Boxenstopp ist Teil von FITES Allgäu, dem Fitnessstudio direkt nebenan. Wer nach dem Kaffee Lust auf Bewegung bekommt, ist herzlich willkommen.",
     link: { href: "https://www.fites-allgaeu.com", label: "Mehr über FITES" },
   },
 ];

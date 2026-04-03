@@ -62,7 +62,7 @@ const Index = () => {
         <div className="absolute inset-0">
           <img
             src={heroBg}
-            alt="Bistro Boxenstopp – gemütliches Café-Interieur mit Kaffee und Gebäck"
+            alt="Bistro Boxenstopp, gemütliches Café-Interieur mit Kaffee und Gebäck"
             width={1920}
             height={1080}
             className="w-full h-full object-cover"

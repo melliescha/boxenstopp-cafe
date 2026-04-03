@@ -206,7 +206,7 @@ export const ReviewCTA = () => {
         </div>
 
         <p className="text-primary-foreground/50 text-xs italic mt-6">
-          Es dauert nur 30 Sekunden — und bedeutet uns die Welt. Danke! 💛
+          Es dauert nur 30 Sekunden und bedeutet uns die Welt. Danke! 💛
         </p>
       </div>
     </section>

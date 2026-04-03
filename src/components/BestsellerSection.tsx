@@ -57,7 +57,7 @@ const bestsellers: Bestseller[] = [
     image: bestsellerShake,
     alt: "Bunter Herbalife Nährshake mit Früchten",
     name: "Nährshake",
-    description: "Vitaminreich, lecker und in vielen Geschmacksrichtungen — ideal nach dem Sport",
+    description: "Vitaminreich, lecker und in vielen Geschmacksrichtungen. Ideal nach dem Sport.",
     price: "2,50 € – 4,50 €",
     badge: "💚 Nach dem Sport",
     badgeColor: "bg-emerald-600/85",

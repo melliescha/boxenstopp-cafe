@@ -286,7 +286,7 @@ const FlipbookMenu = () => {
                   <p>So: 11:00–16:00 Uhr</p>
                 </div>
                 <p className="text-primary-foreground/50 text-xs mb-3">
-                  Teil von FITES Allgäu — www.fites-allgaeu.com
+                  Teil von FITES Allgäu, www.fites-allgaeu.com
                 </p>
                 <div className="w-10 h-px bg-warm-gold my-2" />
                 <p className="text-warm-gold text-[11px] font-medium mb-2">
