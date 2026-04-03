@@ -11,7 +11,7 @@ const partners = [
   {
     icon: ChefHat,
     name: "Perplex",
-    text: "Unsere Gourmet-Flammkuchen kommen von Perplex — frisch, hochwertig und mit Liebe zum Detail. Wechselnde Sorten sorgen dafür, dass es nie langweilig wird.",
+    text: "Unsere Gourmet-Flammkuchen kommen von Perplex, frisch, hochwertig und mit Liebe zum Detail. Wechselnde Sorten sorgen dafür, dass es nie langweilig wird.",
   },
   {
     icon: Dumbbell,
