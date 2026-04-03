@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock, Bike, Car, Footprints } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Bike, Car, Footprints, Navigation } from "lucide-react";
 import Layout from "@/components/Layout";
 
 const hours = [
@@ -11,17 +11,23 @@ const tips = [
   {
     icon: Bike,
     title: "Mit dem Rad",
-    text: "Wir liegen direkt an der Leiblachroute und am Bodensee-Königssee-Radweg. E-Bike-Ladestation vorhanden!",
+    text: "Wir liegen direkt an der Leiblachroute und am Bodensee-Königssee-Radweg. Tipp: Nach der Abfahrt Richtung Wohmbrechts — du siehst uns auf der linken Seite. Duschen und E-Bike-Ladestation vorhanden!",
   },
   {
     icon: Car,
     title: "Mit dem Auto",
-    text: "Von der B32 Ausfahrt Hergatz, Richtung Wohmbrechts. Kostenlose Parkplätze direkt am Haus.",
+    text: "Von der B32 Ausfahrt Hergatz, dann Richtung Wohmbrechts. In der Siedlung Südhang 1 — kostenlose Parkplätze direkt am Haus. Gib 'Südhang 1, 88145 Hergatz' ins Navi ein.",
   },
   {
     icon: Footprints,
     title: "Zu Fuß",
     text: "Perfekt als Ziel für eine Wanderung durch das Westallgäu. Direkt am Ortsrand von Wohmbrechts.",
+  },
+  {
+    icon: Navigation,
+    title: "Tipp: Google Maps",
+    text: "Am einfachsten findest du uns über Google Maps. Suche nach 'Bistro Boxenstopp Hergatz' oder klicke direkt hier:",
+    hasButton: true,
   },
 ];
 
@@ -30,19 +36,27 @@ const Contact = () => {
     <Layout>
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
+          {/* Hidden gem intro */}
+          <div className="text-center mb-16 max-w-2xl mx-auto">
             <p className="text-bronze font-medium tracking-[0.2em] uppercase text-sm mb-2">Besuche uns</p>
             <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-4">
               Anfahrt & Kontakt
             </h1>
-            <div className="divider-bronze" />
+            <div className="divider-bronze mb-8" />
+            <p className="font-serif text-xl italic text-foreground mb-4">
+              Ja, wir sind ein bisschen versteckt — aber genau deshalb lohnt sich der Weg.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Das Bistro Boxenstopp liegt in einer ruhigen Wohnsiedlung in Hergatz-Wohmbrechts.
+              Keine große Straße, kein Schild an der Hauptstraße — aber dafür Ruhe, Natur und
+              echte Gastfreundschaft. Hier ist die Wegbeschreibung:
+            </p>
           </div>
 
           {/* Contact + Map */}
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
             <div>
               <h2 className="font-serif text-2xl font-bold text-foreground mb-6">So findest du uns</h2>
-
               <div className="space-y-5">
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-bronze mt-1 flex-shrink-0" />
@@ -52,7 +66,6 @@ const Contact = () => {
                     <p>88145 Hergatz (Ortsteil Wohmbrechts)</p>
                   </div>
                 </div>
-
                 <div className="flex items-start gap-3">
                   <Phone className="w-5 h-5 text-bronze mt-1 flex-shrink-0" />
                   <div className="text-muted-foreground text-sm">
@@ -60,7 +73,6 @@ const Contact = () => {
                     <p>08385 XXXXXX</p>
                   </div>
                 </div>
-
                 <div className="flex items-start gap-3">
                   <Mail className="w-5 h-5 text-bronze mt-1 flex-shrink-0" />
                   <div className="text-muted-foreground text-sm">
@@ -68,7 +80,6 @@ const Contact = () => {
                     <p>info@bistro-boxenstopp.de</p>
                   </div>
                 </div>
-
                 <div className="flex items-start gap-3">
                   <Clock className="w-5 h-5 text-bronze mt-1 flex-shrink-0" />
                   <div className="text-sm">
@@ -83,7 +94,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-
             <div className="rounded-xl overflow-hidden shadow-md min-h-[350px]">
               <iframe
                 title="Bistro Boxenstopp Standort auf Google Maps"
@@ -98,10 +108,10 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Travel tips */}
+          {/* Travel tips – 4 cards in 2x2 */}
           <div className="max-w-4xl mx-auto">
             <h2 className="font-serif text-2xl font-bold text-foreground text-center mb-10">Anfahrt-Tipps</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {tips.map((tip) => (
                 <div key={tip.title} className="bg-card rounded-xl p-7 text-center border border-border/50 shadow-sm">
                   <div className="w-12 h-12 rounded-full bg-bronze/10 flex items-center justify-center mx-auto mb-4">
@@ -109,6 +119,16 @@ const Contact = () => {
                   </div>
                   <h3 className="font-serif text-lg font-semibold text-foreground mb-2">{tip.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{tip.text}</p>
+                  {tip.hasButton && (
+                    <a
+                      href="#google-maps"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block mt-4 bg-accent text-accent-foreground px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+                    >
+                      In Google Maps öffnen
+                    </a>
+                  )}
                 </div>
               ))}
             </div>
