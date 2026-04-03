@@ -46,6 +46,18 @@ const Menu = () => {
           {/* Tab content */}
           {tab === "preisliste" && <PriceList />}
           {tab === "karte" && <FlipbookMenu />}
+
+          {/* Review hint */}
+          <div className="mt-16 max-w-2xl mx-auto no-print">
+            <div className="bg-warm-gold/10 border border-warm-gold/30 rounded-xl p-5 text-center">
+              <p className="text-foreground text-sm">
+                Dein Lieblingsprodukt? Erzähl anderen davon →{" "}
+                <a href="#google-review" className="text-bronze font-semibold hover:underline">
+                  Auf Google bewerten
+                </a>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </Layout>
