@@ -268,24 +268,27 @@ const FlipbookMenu = () => {
             {/* Page 14: Back cover */}
             <Page className="bg-primary">
               <div className="flex flex-col items-center justify-center h-full text-center bg-primary rounded-sm p-6">
-                <div className="w-16 h-px bg-warm-gold mb-6" />
-                <p className="font-serif text-xl sm:text-2xl font-bold text-primary-foreground mb-4">
+                <div className="w-16 h-px bg-warm-gold mb-5" />
+                <p className="font-serif text-xl sm:text-2xl font-bold text-primary-foreground mb-3">
                   Danke für deinen<br />Boxenstopp!
                 </p>
-                <div className="text-primary-foreground/60 text-xs space-y-1 mb-6">
+                <div className="text-primary-foreground/60 text-xs space-y-1 mb-4">
                   <p>Südhang 1, 88145 Hergatz</p>
                   <p className="mt-2">Mo–Fr: 15:00–20:00 Uhr</p>
                   <p>Sa: 10:30–15:30 Uhr</p>
                   <p>So: 11:00–16:00 Uhr</p>
                 </div>
-                <p className="text-primary-foreground/50 text-xs mb-4">
+                <p className="text-primary-foreground/50 text-xs mb-3">
                   Teil von FITES Allgäu — www.fites-allgaeu.com
                 </p>
-                <div className="w-10 h-px bg-warm-gold my-3" />
+                <div className="w-10 h-px bg-warm-gold my-2" />
+                <p className="text-warm-gold text-[11px] font-medium mb-2">
+                  Hat's geschmeckt? Bewerte uns auf Google ⭐
+                </p>
                 <p className="text-primary-foreground/50 text-[10px] italic">
                   Mit jedem Kaffee unterstützt du die Cup&Cino Foundation ☕
                 </p>
-                <div className="w-16 h-px bg-warm-gold mt-6" />
+                <div className="w-16 h-px bg-warm-gold mt-4" />
               </div>
             </Page>
           </HTMLFlipBook>
