@@ -4,6 +4,7 @@ interface PriceItem {
   name: string;
   price: string;
   note?: string;
+  featured?: boolean;
 }
 
 interface SubSection {
