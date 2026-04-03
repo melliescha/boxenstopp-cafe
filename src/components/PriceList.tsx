@@ -4,6 +4,7 @@ interface PriceItem {
   name: string;
   price: string;
   note?: string;
+  featured?: boolean;
 }
 
 interface SubSection {
@@ -32,6 +33,7 @@ const categories: PriceCategory[] = [
     emoji: "☕",
     title: "Milchkaffee-Varianten",
     items: [
+      { name: "★ Boxenstopp Spezial", price: "4,90 €", note: "Kollagen Latte Macchiato mit einer Prise Salz und Rohkakao — unsere Hausspezialität", featured: true },
       { name: "Caffè Latte (Milchkaffee)", price: "2,40 € – 3,40 €", note: "Barista Qualität" },
       { name: "Cappuccino", price: "2,40 € – 3,40 €", note: "Barista Qualität" },
       { name: "Cappuccino Schoko oder Vanille", price: "2,60 € – 3,60 €", note: "Barista Qualität" },
@@ -45,7 +47,8 @@ const categories: PriceCategory[] = [
     items: [
       { name: "Kakao", price: "2,00 € – 3,20 €" },
       { name: "Latte Vanilla", price: "2,00 € – 3,20 €" },
-      { name: "Matcha-Latte", price: "3,50 € – 3,80 €" },
+      { name: "Matcha-Latte", price: "3,50 € – 3,80 €", note: "auch vegan mit Pflanzenmilch" },
+      { name: "Vegan Matcha Latte", price: "3,50 € – 3,80 €", note: "100% vegan mit Pflanzenmilch" },
       { name: "Tee (nach Wahl)", price: "1,80 €", note: "in Bio-Qualität" },
     ],
   },
@@ -124,14 +127,14 @@ const categories: PriceCategory[] = [
 ];
 
 const ItemRow = ({ item }: { item: PriceItem }) => (
-  <li>
+  <li className={item.featured ? "bg-bronze/5 -mx-3 px-3 py-2 rounded-lg border border-bronze/20" : ""}>
     <div className="flex items-baseline justify-between gap-2">
-      <span className="text-foreground font-medium text-sm sm:text-base">{item.name}</span>
+      <span className={`text-sm sm:text-base ${item.featured ? "text-foreground font-bold" : "text-foreground font-medium"}`}>{item.name}</span>
       <span className="flex-1 border-b border-dotted border-bronze/30 mx-2 min-w-[1.5rem]" />
       <span className="text-bronze font-semibold whitespace-nowrap text-sm sm:text-base">{item.price}</span>
     </div>
     {item.note && (
-      <p className="text-muted-foreground text-xs mt-0.5 italic">{item.note}</p>
+      <p className={`text-xs mt-0.5 italic ${item.featured ? "text-bronze" : "text-muted-foreground"}`}>{item.note}</p>
     )}
   </li>
 );

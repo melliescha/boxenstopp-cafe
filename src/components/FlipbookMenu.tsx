@@ -152,7 +152,17 @@ const FlipbookMenu = () => {
               <FlipMenuItem item={{ name: "Americano", price: "2,20 – 2,60 €", note: "Barista Qualität" }} />
               <FlipMenuItem item={{ name: "Caffè Crema", price: "2,20 – 3,20 €", note: "Barista Qualität" }} />
 
-              <div className="mt-4">
+              {/* Signature Drink Feature Box */}
+              <div className="mt-3 border-2 border-warm-gold/50 rounded-lg p-3 bg-[hsl(43,55%,48%)]/5">
+                <p className="text-warm-gold text-[10px] font-semibold tracking-wider uppercase mb-1">⭐ Unsere Hausspezialität</p>
+                <div className="flex items-baseline justify-between gap-1">
+                  <span className="font-serif text-xs sm:text-sm font-bold text-foreground">Boxenstopp Spezial</span>
+                  <span className="text-bronze font-semibold text-xs sm:text-sm">4,90 €</span>
+                </div>
+                <p className="text-bronze text-[10px] sm:text-xs italic mt-0.5">Kollagen Latte Macchiato mit Salz & Rohkakao</p>
+              </div>
+
+              <div className="mt-3">
                 <SectionTitle title="Milchkaffee-Varianten" />
                 <FlipMenuItem item={{ name: "Caffè Latte", price: "2,40 – 3,40 €" }} />
                 <FlipMenuItem item={{ name: "Cappuccino", price: "2,40 – 3,40 €" }} />
@@ -168,7 +178,7 @@ const FlipbookMenu = () => {
               <SectionTitle title="Wohlfühlgetränke" />
               <FlipMenuItem item={{ name: "Kakao", price: "2,00 – 3,20 €" }} />
               <FlipMenuItem item={{ name: "Latte Vanilla", price: "2,00 – 3,20 €" }} />
-              <FlipMenuItem item={{ name: "Matcha-Latte", price: "3,50 – 3,80 €" }} />
+              <FlipMenuItem item={{ name: "Matcha-Latte", price: "3,50 – 3,80 €", note: "auch vegan mit Pflanzenmilch" }} />
               <FlipMenuItem item={{ name: "Tee (nach Wahl)", price: "1,80 €", note: "in Bio-Qualität" }} />
 
               <div className="mt-4">

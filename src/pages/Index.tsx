@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Map, Thermometer, ShowerHead, BatteryCharging, Sun, Users, Bike, Clock } from "lucide-react";
 import Layout from "@/components/Layout";
 import { ReviewCarousel, ReviewSummaryBadges, ReviewCTA } from "@/components/ReviewSection";
+import BestsellerSection from "@/components/BestsellerSection";
 import heroBg from "@/assets/hero-bistro.jpg";
 
 const highlights = [
@@ -103,6 +104,9 @@ const Index = () => {
           <div className="divider-bronze mt-6" />
         </div>
       </section>
+
+      {/* Bestseller */}
+      <BestsellerSection />
 
       {/* Highlights – 2x2 grid */}
       <section className="py-20 bg-secondary/50">
