@@ -46,7 +46,8 @@ const categories: PriceCategory[] = [
     items: [
       { name: "Kakao", price: "2,00 € – 3,20 €" },
       { name: "Latte Vanilla", price: "2,00 € – 3,20 €" },
-      { name: "Matcha-Latte", price: "3,50 € – 3,80 €" },
+      { name: "Matcha-Latte", price: "3,50 € – 3,80 €", note: "auch vegan mit Pflanzenmilch" },
+      { name: "Vegan Matcha Latte", price: "3,50 € – 3,80 €", note: "100% vegan mit Pflanzenmilch" },
       { name: "Tee (nach Wahl)", price: "1,80 €", note: "in Bio-Qualität" },
     ],
   },
