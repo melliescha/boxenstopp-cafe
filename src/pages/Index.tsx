@@ -1,24 +1,47 @@
 import { Link } from "react-router-dom";
-import { Bike, BatteryCharging, Users, Clock } from "lucide-react";
+import { Map, Thermometer, ShowerHead, BatteryCharging, Sun, Users, Bike, Clock } from "lucide-react";
 import Layout from "@/components/Layout";
 import { ReviewCarousel, ReviewSummaryBadges, ReviewCTA } from "@/components/ReviewSection";
 import heroBg from "@/assets/hero-bistro.jpg";
 
 const highlights = [
   {
-    icon: Bike,
-    title: "Direkt am Radweg",
-    text: "An der Leiblachroute & Bodensee-Königssee-Radweg",
+    icon: Map,
+    title: "Geheimtipp am Radweg",
+    text: "Direkt an der Leiblachroute & Bodensee-Königssee-Radweg — wer uns findet, kommt wieder",
+  },
+  {
+    icon: Thermometer,
+    title: "Kühle Terrasse",
+    text: "Selbst bei 30°C genießt du bei uns angenehme 25°C im Schatten — die perfekte Erfrischung",
+  },
+  {
+    icon: ShowerHead,
+    title: "Duschen vorhanden",
+    text: "Als Radfahrer oder nach dem Training: Frisch machen und dann entspannt genießen",
   },
   {
     icon: BatteryCharging,
     title: "E-Bike Ladestation",
-    text: "Lade dein E-Bike auf, während du entspannst",
+    text: "Lade dein E-Bike kostenlos auf, während du bei uns entspannst",
+  },
+];
+
+const whyUs = [
+  {
+    icon: Sun,
+    title: "Versteckt & besonders",
+    text: "Kein Straßenlärm, keine Hektik. Bei uns genießt du in aller Ruhe — umgeben von Allgäuer Natur.",
   },
   {
     icon: Users,
-    title: "Auch ohne Training",
-    text: "Du brauchst keine Mitgliedschaft — jeder ist willkommen",
+    title: "Familiär & persönlich",
+    text: "Helena und Eugen begrüßen dich persönlich. Bei uns bist du Gast, nicht Kunde.",
+  },
+  {
+    icon: Bike,
+    title: "Perfekt für Radfahrer",
+    text: "Terrasse, Duschen, E-Bike-Ladestation und alles was du brauchst, um wieder aufzutanken.",
   },
 ];
 
@@ -51,7 +74,7 @@ const Index = () => {
             Bistro Boxenstopp
           </h1>
           <p className="text-primary-foreground/85 text-lg md:text-xl max-w-xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-            Dein Boxenstopp im Westallgäu — Kaffee, Genuss & gute Energie.
+            Hergatz' bestgehütetes Geheimnis. Kaffee, Genuss & gute Energie — direkt am Radweg.
           </p>
           <div className="animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
             <Link
@@ -68,20 +91,23 @@ const Index = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6 max-w-3xl text-center">
           <div className="divider-bronze mb-6" />
+          <p className="text-lg leading-relaxed text-muted-foreground mb-4">
+            Zugegeben: Man muss uns erstmal finden. Das Bistro Boxenstopp liegt versteckt in einer
+            ruhigen Wohnsiedlung in Hergatz-Wohmbrechts — aber genau das macht uns aus.
+          </p>
           <p className="text-lg leading-relaxed text-muted-foreground">
-            Ob nach dem Workout, auf der Radtour oder einfach so — bei uns tankst du auf.
-            Unser Bistro liegt in Hergatz-Wohmbrechts, direkt an der Leiblachroute und dem
-            Bodensee-Königssee-Radweg. Im Sommer genießt du unsere kühle Terrasse,
-            im Winter wird's bei uns drinnen richtig gemütlich.
+            Wer den Weg zu uns findet, wird belohnt: mit richtig gutem Kaffee, frischen Flammkuchen,
+            einer im Sommer angenehm kühlen Terrasse und echter Allgäuer Gastfreundschaft.
+            Von Helena und Eugen, für alle.
           </p>
           <div className="divider-bronze mt-6" />
         </div>
       </section>
 
-      {/* Highlights */}
+      {/* Highlights – 2x2 grid */}
       <section className="py-20 bg-secondary/50">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {highlights.map((h) => (
               <div key={h.title} className="bg-card rounded-xl p-8 text-center shadow-sm border border-border/50">
                 <div className="w-14 h-14 rounded-full bg-bronze/10 flex items-center justify-center mx-auto mb-5">
@@ -89,6 +115,28 @@ const Index = () => {
                 </div>
                 <h3 className="font-serif text-xl font-semibold text-foreground mb-3">{h.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{h.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Us */}
+      <section className="py-20 bg-primary text-primary-foreground">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-center mb-12">
+            Ein Bistro, das man nicht erwartet — und nicht mehr vergisst
+          </h2>
+          <div className="space-y-8">
+            {whyUs.map((item) => (
+              <div key={item.title} className="flex items-start gap-5">
+                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+                  <item.icon className="w-6 h-6 text-warm-gold" />
+                </div>
+                <div>
+                  <h3 className="font-serif text-xl font-semibold mb-1">{item.title}</h3>
+                  <p className="text-primary-foreground/80 leading-relaxed">{item.text}</p>
+                </div>
               </div>
             ))}
           </div>
