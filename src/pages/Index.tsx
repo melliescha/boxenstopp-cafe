@@ -16,7 +16,7 @@ const highlights = [
   {
     icon: Thermometer,
     title: "Kühle Terrasse",
-    text: "Selbst bei 30°C genießt du bei uns angenehme 25°C im Schatten — die perfekte Erfrischung",
+    text: "Selbst bei 30°C genießt du bei uns angenehme 25°C im Schatten: die perfekte Erfrischung.",
   },
   {
     icon: ShowerHead,
