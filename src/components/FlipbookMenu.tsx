@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { forwardRef } from "react";
 
 import galleryCappuccino from "@/assets/gallery-cappuccino.jpg";
+import logo from "@/assets/logo-bistro-boxenstopp.png";
 import menuMatchaPastries from "@/assets/menu-matcha-pastries.jpg";
 import menuBaguette from "@/assets/menu-baguette.jpg";
 import menuRusticBread from "@/assets/menu-rustic-bread.jpg";
@@ -127,10 +128,8 @@ const FlipbookMenu = () => {
             <Page className="bg-primary">
               <div className="flex flex-col items-center justify-center h-full text-center bg-primary rounded-sm p-6">
                 <div className="w-16 h-px bg-warm-gold mb-6" />
-                <p className="text-warm-gold tracking-[0.3em] uppercase text-xs mb-3">Bistro & Café</p>
-                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-primary-foreground mb-3">
-                  Bistro<br />Boxenstopp
-                </h2>
+                <p className="text-warm-gold tracking-[0.3em] uppercase text-xs mb-4">Bistro & Café</p>
+                <img src={logo} alt="Bistro Boxenstopp" className="h-16 sm:h-20 w-auto mx-auto brightness-0 invert mb-3" />
                 <div className="w-10 h-px bg-warm-gold my-4" />
                 <p className="font-serif-italic text-primary-foreground/80 text-lg">Speisekarte</p>
                 <div className="mt-8 w-32 h-32 rounded-full overflow-hidden ring-2 ring-warm-gold/30">
@@ -279,9 +278,7 @@ const FlipbookMenu = () => {
             <Page className="bg-primary">
               <div className="flex flex-col items-center justify-center h-full text-center bg-primary rounded-sm p-6">
                 <div className="w-16 h-px bg-warm-gold mb-5" />
-                <p className="font-serif text-xl sm:text-2xl font-bold text-primary-foreground mb-3">
-                  Danke für deinen<br />Boxenstopp!
-                </p>
+                <img src={logo} alt="Bistro Boxenstopp" className="h-10 sm:h-14 w-auto mx-auto brightness-0 invert mb-3" />
                 <div className="text-primary-foreground/60 text-xs space-y-1 mb-4">
                   <p>Südhang 1, 88145 Hergatz</p>
                   <p className="mt-2">Mo–Fr: 15:00–20:00 Uhr</p>
