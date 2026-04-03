@@ -35,7 +35,7 @@ const categories: PriceCategory[] = [
     emoji: "☕",
     title: "Milchkaffee-Varianten",
     items: [
-      { name: "★ Boxenstopp Spezial", price: "4,90 €", note: "Kollagen Latte Macchiato mit einer Prise Salz und Rohkakao — unsere Hausspezialität", featured: true },
+      { name: "★ Boxenstopp Spezial", price: "4,90 €", note: "Kollagen Latte Macchiato mit einer Prise Salz und Rohkakao, unsere Hausspezialität", featured: true },
       { name: "Caffè Latte (Milchkaffee)", price: "2,40 € – 3,40 €", note: "Barista Qualität" },
       { name: "Cappuccino", price: "2,40 € – 3,40 €", note: "Barista Qualität" },
       { name: "Cappuccino Schoko oder Vanille", price: "2,60 € – 3,60 €", note: "Barista Qualität" },
