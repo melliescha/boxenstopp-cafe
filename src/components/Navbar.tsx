@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Über uns", path: "/ueber-uns" },
   { label: "Unsere Partner", path: "/partner" },
   { label: "Galerie", path: "/galerie" },
+  { label: "Gutscheine", path: "/gutscheine" },
   { label: "Bewertungen", path: "/bewertungen" },
   { label: "Anfahrt & Kontakt", path: "/kontakt" },
 ];

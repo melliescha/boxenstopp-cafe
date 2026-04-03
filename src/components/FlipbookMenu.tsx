@@ -274,7 +274,38 @@ const FlipbookMenu = () => {
               <ImagePage src={menuShakes} alt="Bunte Protein-Shakes und frisches Obst" />
             </Page>
 
-            {/* Page 14: Back cover */}
+            {/* Page 14: Allergen Legend */}
+            <Page>
+              <h3 className="font-serif text-sm sm:text-base font-bold text-foreground mb-3">Allergen- und Zusatzstoffinformationen</h3>
+              <div className="text-[9px] sm:text-[10px] space-y-0.5 mb-3">
+                <p className="font-medium text-foreground mb-1">Allergene:</p>
+                {[
+                  "A – Glutenhaltiges Getreide", "B – Krebstiere", "C – Eier", "D – Fisch",
+                  "E – Erdnüsse", "F – Soja", "G – Milch / Laktose", "H – Schalenfrüchte",
+                  "I – Sellerie", "J – Senf", "K – Sesam", "L – Schwefeldioxid / Sulfite",
+                  "M – Lupinen", "N – Weichtiere",
+                ].map((a) => (
+                  <p key={a} className="text-muted-foreground">{a}</p>
+                ))}
+              </div>
+              <div className="text-[9px] sm:text-[10px] space-y-0.5">
+                <p className="font-medium text-foreground mb-1">Zusatzstoffe:</p>
+                {[
+                  "1 – mit Farbstoff", "2 – mit Konservierungsstoff", "3 – mit Antioxidationsmittel",
+                  "4 – mit Geschmacksverstärker", "5 – geschwefelt", "6 – geschwärzt",
+                  "7 – gewachst", "8 – mit Phosphat", "9 – mit Süßungsmittel",
+                  "10 – enthält Phenylalaninquelle", "11 – koffeinhaltig", "12 – chininhaltig",
+                ].map((a) => (
+                  <p key={a} className="text-muted-foreground">{a}</p>
+                ))}
+              </div>
+              <p className="text-[8px] sm:text-[9px] text-muted-foreground italic mt-2">
+                Alle Angaben ohne Gewähr. Bitte sprich uns bei Allergien direkt an.
+              </p>
+              <PageNumber num={11} />
+            </Page>
+
+            {/* Page 15: Back cover */}
             <Page className="bg-primary">
               <div className="flex flex-col items-center justify-center h-full text-center bg-primary rounded-sm p-6">
                 <div className="w-16 h-px bg-warm-gold mb-5" />
