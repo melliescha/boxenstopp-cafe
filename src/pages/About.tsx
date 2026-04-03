@@ -48,6 +48,11 @@ const About = () => {
         </div>
       </section>
 
+      {/* Logo divider */}
+      <div className="py-8 flex justify-center bg-background">
+        <img src={logoIcon} alt="Bistro Boxenstopp" className="h-16 md:h-20 w-auto opacity-80" />
+      </div>
+
       {/* Story blocks */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6 max-w-5xl space-y-20">
