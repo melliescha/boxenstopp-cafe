@@ -96,7 +96,7 @@ const Index = () => {
           <div className="divider-bronze mb-6" />
           <p className="text-lg leading-relaxed text-muted-foreground mb-4">
             Zugegeben: Man muss uns erstmal finden. Das Bistro Boxenstopp liegt versteckt in einer
-            ruhigen Wohnsiedlung in Hergatz-Wohmbrechts — aber genau das macht uns aus.
+            ruhigen Wohnsiedlung in Hergatz-Wohmbrechts, aber genau das macht uns aus.
           </p>
           <p className="text-lg leading-relaxed text-muted-foreground">
             Wer den Weg zu uns findet, wird belohnt: mit richtig gutem Kaffee, frischen Flammkuchen,
