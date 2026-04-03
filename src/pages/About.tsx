@@ -73,7 +73,7 @@ const About = () => {
                   zum ersten Mal die Stadt Wangen besucht, und uns sofort heimisch gefühlt.
                 </p>
                 <p>
-                  Die Idylle, die freundlichen Menschen, die Natur — das war es. Hier wollten wir leben,
+                  Die Idylle, die freundlichen Menschen, die Natur: das war es. Hier wollten wir leben,
                   Wurzeln schlagen und unseren Traum verwirklichen.
                 </p>
               </div>
