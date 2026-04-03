@@ -1,26 +1,120 @@
-import WelcomeBanner from "@/components/WelcomeBanner";
-import Navbar from "@/components/Navbar";
-import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
-import CyclistSection from "@/components/CyclistSection";
-import MenuSection from "@/components/MenuSection";
-import HoursSection from "@/components/HoursSection";
-import DirectionsSection from "@/components/DirectionsSection";
-import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
+import { Bike, BatteryCharging, Users, Clock } from "lucide-react";
+import Layout from "@/components/Layout";
+import heroBg from "@/assets/hero-bistro.jpg";
+
+const highlights = [
+  {
+    icon: Bike,
+    title: "Direkt am Radweg",
+    text: "An der Leiblachroute & Bodensee-Königssee-Radweg",
+  },
+  {
+    icon: BatteryCharging,
+    title: "E-Bike Ladestation",
+    text: "Lade dein E-Bike auf, während du entspannst",
+  },
+  {
+    icon: Users,
+    title: "Auch ohne Training",
+    text: "Du brauchst keine Mitgliedschaft — jeder ist willkommen",
+  },
+];
+
+const hours = [
+  { days: "Mo – Fr", time: "15:00 – 20:00 Uhr" },
+  { days: "Samstag", time: "10:30 – 15:30 Uhr" },
+  { days: "Sonntag", time: "11:00 – 16:00 Uhr" },
+];
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
-      <WelcomeBanner />
-      <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <CyclistSection />
-      <MenuSection />
-      <HoursSection />
-      <DirectionsSection />
-      <Footer />
-    </div>
+    <Layout>
+      {/* Hero */}
+      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src={heroBg}
+            alt="Bistro Boxenstopp – gemütliches Café-Interieur mit Kaffee und Gebäck"
+            width={1920}
+            height={1080}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-primary/60" />
+        </div>
+        <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
+          <p className="text-warm-gold font-medium tracking-[0.3em] uppercase text-sm mb-4 animate-fade-in-up">
+            Bistro & Café
+          </p>
+          <h1 className="font-serif text-5xl md:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
+            Bistro Boxenstopp
+          </h1>
+          <p className="text-primary-foreground/85 text-lg md:text-xl max-w-xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+            Dein Boxenstopp im Westallgäu — Kaffee, Genuss & gute Energie.
+          </p>
+          <div className="animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
+            <Link
+              to="/speisekarte"
+              className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
+            >
+              Speisekarte ansehen
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Welcome */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-6 max-w-3xl text-center">
+          <div className="divider-bronze mb-6" />
+          <p className="text-lg leading-relaxed text-muted-foreground">
+            Ob nach dem Workout, auf der Radtour oder einfach so — bei uns tankst du auf.
+            Unser Bistro liegt in Hergatz-Wohmbrechts, direkt an der Leiblachroute und dem
+            Bodensee-Königssee-Radweg. Im Sommer genießt du unsere kühle Terrasse,
+            im Winter wird's bei uns drinnen richtig gemütlich.
+          </p>
+          <div className="divider-bronze mt-6" />
+        </div>
+      </section>
+
+      {/* Highlights */}
+      <section className="py-20 bg-secondary/50">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            {highlights.map((h) => (
+              <div key={h.title} className="bg-card rounded-xl p-8 text-center shadow-sm border border-border/50">
+                <div className="w-14 h-14 rounded-full bg-bronze/10 flex items-center justify-center mx-auto mb-5">
+                  <h.icon className="w-7 h-7 text-bronze" />
+                </div>
+                <h3 className="font-serif text-xl font-semibold text-foreground mb-3">{h.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{h.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Opening Hours */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-md mx-auto text-center">
+            <div className="w-14 h-14 rounded-full bg-bronze/10 flex items-center justify-center mx-auto mb-5">
+              <Clock className="w-7 h-7 text-bronze" />
+            </div>
+            <h2 className="font-serif text-3xl font-bold text-foreground mb-8">Öffnungszeiten</h2>
+            <div className="space-y-4">
+              {hours.map((h) => (
+                <div key={h.days} className="flex justify-between items-center text-base">
+                  <span className="font-medium text-foreground">{h.days}</span>
+                  <span className="text-muted-foreground">{h.time}</span>
+                </div>
+              ))}
+            </div>
+            <div className="divider-bronze mt-8" />
+          </div>
+        </div>
+      </section>
+    </Layout>
   );
 };
 

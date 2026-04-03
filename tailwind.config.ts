@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
+        sans: ['Lato', 'sans-serif'],
         serif: ['Playfair Display', 'serif'],
       },
       colors: {
@@ -43,6 +43,14 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
+        bronze: {
+          DEFAULT: "hsl(var(--bronze))",
+          foreground: "hsl(var(--bronze-foreground))",
+        },
+        wood: {
+          DEFAULT: "hsl(var(--wood))",
+          foreground: "hsl(var(--wood-foreground))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
@@ -50,10 +58,6 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
-        },
-        wood: {
-          DEFAULT: "hsl(var(--wood))",
-          foreground: "hsl(var(--wood-foreground))",
         },
         "warm-gold": {
           DEFAULT: "hsl(var(--warm-gold))",
