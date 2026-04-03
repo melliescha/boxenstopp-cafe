@@ -75,7 +75,7 @@ const Index = () => {
             alt=""
             className="w-20 md:w-28 mx-auto mb-4 drop-shadow-lg animate-fade-in-up"
           />
-          <h1 className="sr-only">Bistro Boxenstopp</h1>
+          <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-2 animate-fade-in-up drop-shadow-lg">Bistro Boxenstopp</h1>
           <p className="font-serif text-xl md:text-2xl text-white/90 mb-8 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
             Hergatz' bestgehütetes Geheimnis
           </p>

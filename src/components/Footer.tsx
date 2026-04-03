@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <img src={logo} alt="Bistro Boxenstopp" className="h-[35px] w-auto brightness-0 invert mb-2" />
+            <span className="font-serif text-xl font-bold text-primary-foreground">Bistro Boxenstopp</span>
             <p className="text-primary-foreground/60 text-sm">
               Teil von{" "}
               <a
