@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
+import logoIcon from "@/assets/logo-icon.png";
 import aboutHero from "@/assets/about-hero-family.jpg";
 import aboutBodensee from "@/assets/about-bodensee.jpg";
 import aboutCafe from "@/assets/about-cafe-interior.jpg";
