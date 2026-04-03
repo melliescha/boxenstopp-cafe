@@ -5,7 +5,7 @@ import { ReviewCarousel, ReviewSummaryBadges, ReviewCTA } from "@/components/Rev
 import BestsellerSection from "@/components/BestsellerSection";
 import heroBg from "@/assets/hero-bistro.jpg";
 import logoIcon from "@/assets/logo-icon.png";
-import logo from "@/assets/logo-bistro-boxenstopp.png";
+
 
 const highlights = [
   {
