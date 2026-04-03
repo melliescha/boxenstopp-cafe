@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo-bistro-boxenstopp.png";
 import logoIcon from "@/assets/logo-icon.png";
 
 const navLinks = [
