@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Star } from "lucide-react";
-import logo from "@/assets/logo-bistro-boxenstopp.png";
 
 const Footer = () => {
   return (
