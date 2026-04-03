@@ -214,7 +214,7 @@ const FlipbookMenu = () => {
 
             {/* Page 8: Rustic breads */}
             <Page>
-              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Handgemacht — unsere rustikalen Brote</p>
+              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Handgemacht: unsere rustikalen Brote</p>
               <SectionTitle title="Rustikale Brote" />
               <FlipMenuItem item={{ name: "Holzfällerbrot-Rustikal", price: "7,40 €", note: "Schwarzbrot mit Knoblauchbutter, Käse, Speck & Zwiebeln" }} />
               <FlipMenuItem item={{ name: "Tomaten Mozzarella Brot", price: "7,40 €", note: "Weizenbrot mit Basilikum, Mozzarella & Tomaten" }} />
