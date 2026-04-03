@@ -53,7 +53,7 @@ const Gallery = () => {
               Einblicke ins Bistro Boxenstopp
             </h1>
             <div className="divider-bronze mb-4" />
-            <p className="text-muted-foreground">Mach dir selbst ein Bild — so sieht's bei uns aus.</p>
+            <p className="text-muted-foreground">Mach dir selbst ein Bild. So sieht's bei uns aus.</p>
           </div>
 
           {/* Filter tabs */}

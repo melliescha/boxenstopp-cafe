@@ -141,7 +141,7 @@ const FlipbookMenu = () => {
 
             {/* Page 2: Coffee image */}
             <Page>
-              <ImagePage src={galleryCappuccino} alt="Latte Art — Kaffeegenuss im Bistro Boxenstopp" />
+              <ImagePage src={galleryCappuccino} alt="Latte Art, Kaffeegenuss im Bistro Boxenstopp" />
             </Page>
 
             {/* Page 3: Coffee Classics + Milk Coffee */}

@@ -207,7 +207,7 @@ const PriceList = () => {
       <div className="mt-14 text-center">
         <div className="divider-bronze mb-6" />
         <p className="text-muted-foreground text-sm italic leading-relaxed">
-          Mit jedem Kaffee unterstützt du die Cup&Cino Foundation — 1 Cent pro Tasse für soziale Projekte.
+          Mit jedem Kaffee unterstützt du die Cup&Cino Foundation: 1 Cent pro Tasse für soziale Projekte.
         </p>
       </div>
     </div>

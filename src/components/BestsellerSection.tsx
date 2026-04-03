@@ -28,7 +28,7 @@ const bestsellers: Bestseller[] = [
   },
   {
     image: bestsellerSpezial,
-    alt: "Boxenstopp Spezial — Kollagen Latte Macchiato",
+    alt: "Boxenstopp Spezial, Kollagen Latte Macchiato",
     name: "Boxenstopp Spezial",
     description: "Kollagen Latte Macchiato mit einer Prise Salz und Rohkakao, unser Signature Drink",
     price: "4,90 €",
