@@ -1,4 +1,5 @@
 import { Printer } from "lucide-react";
+import logoIcon from "@/assets/logo-icon.png";
 
 interface PriceItem {
   name: string;
@@ -155,6 +156,7 @@ const PriceList = () => {
 
       {/* Header */}
       <div className="text-center mb-14">
+        <img src={logoIcon} alt="Bistro Boxenstopp" className="h-16 w-auto mx-auto mb-4 hidden print:block" />
         <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">Preisliste</h2>
         <div className="divider-bronze" />
       </div>

@@ -4,6 +4,7 @@ import Layout from "@/components/Layout";
 import { ReviewCarousel, ReviewSummaryBadges, ReviewCTA } from "@/components/ReviewSection";
 import BestsellerSection from "@/components/BestsellerSection";
 import heroBg from "@/assets/hero-bistro.jpg";
+import logoIcon from "@/assets/logo-icon.png";
 
 const highlights = [
   {
@@ -68,10 +69,15 @@ const Index = () => {
           <div className="absolute inset-0 bg-primary/60" />
         </div>
         <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
-          <p className="text-warm-gold font-medium tracking-[0.3em] uppercase text-sm mb-4 animate-fade-in-up">
+          <img
+            src={logoIcon}
+            alt="Bistro Boxenstopp Logo"
+            className="h-20 md:h-28 w-auto mx-auto mb-6 drop-shadow-lg animate-fade-in-up"
+          />
+          <p className="text-warm-gold font-medium tracking-[0.3em] uppercase text-sm mb-4 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
             Bistro & Café
           </p>
-          <h1 className="font-serif text-5xl md:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
+          <h1 className="font-serif text-5xl md:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
             Bistro Boxenstopp
           </h1>
           <p className="text-primary-foreground/85 text-lg md:text-xl max-w-xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>

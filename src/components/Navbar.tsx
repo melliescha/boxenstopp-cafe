@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo-bistro-boxenstopp.png";
+import logoIcon from "@/assets/logo-icon.png";
 
 const navLinks = [
   { label: "Startseite", path: "/" },
@@ -20,7 +21,8 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 py-3 flex items-center justify-between">
-        <Link to="/" aria-label="Startseite">
+        <Link to="/" aria-label="Startseite" className="flex items-center gap-2">
+          <img src={logoIcon} alt="" className="h-[35px] md:h-[45px] w-auto" />
           <img src={logo} alt="Bistro Boxenstopp" className="h-[35px] md:h-[45px] w-auto" />
         </Link>
 

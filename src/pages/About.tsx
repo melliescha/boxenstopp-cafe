@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
+import logoIcon from "@/assets/logo-icon.png";
 import aboutHero from "@/assets/about-hero-family.jpg";
 import aboutBodensee from "@/assets/about-bodensee.jpg";
 import aboutCafe from "@/assets/about-cafe-interior.jpg";
@@ -46,6 +47,11 @@ const About = () => {
           </p>
         </div>
       </section>
+
+      {/* Logo divider */}
+      <div className="py-8 flex justify-center bg-background">
+        <img src={logoIcon} alt="Bistro Boxenstopp" className="h-16 md:h-20 w-auto opacity-80" />
+      </div>
 
       {/* Story blocks */}
       <section className="py-16 md:py-24 bg-background">
