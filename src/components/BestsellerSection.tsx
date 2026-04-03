@@ -21,7 +21,7 @@ const bestsellers: Bestseller[] = [
     image: bestsellerMatcha,
     alt: "Vegan Matcha Latte mit Latte Art",
     name: "Vegan Matcha Latte",
-    description: "Unser cremiger Matcha — mit pflanzlicher Milch, 100% vegan",
+    description: "Unser cremiger Matcha, mit pflanzlicher Milch, 100% vegan",
     price: "3,50 € – 3,80 €",
     badge: "🌱 Vegan",
     badgeColor: "bg-green-600/85",
