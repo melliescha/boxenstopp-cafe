@@ -16,7 +16,7 @@ const tips = [
   {
     icon: Car,
     title: "Mit dem Auto",
-    text: "Von der B32 Ausfahrt Hergatz, dann Richtung Wohmbrechts. In der Siedlung Südhang 1 — kostenlose Parkplätze direkt am Haus. Gib 'Südhang 1, 88145 Hergatz' ins Navi ein.",
+    text: "Von der B32 Ausfahrt Hergatz, dann Richtung Wohmbrechts. In der Siedlung Südhang 1, kostenlose Parkplätze direkt am Haus. Gib 'Südhang 1, 88145 Hergatz' ins Navi ein.",
   },
   {
     icon: Footprints,
