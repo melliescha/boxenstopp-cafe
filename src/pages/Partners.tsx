@@ -5,8 +5,8 @@ const partners = [
   {
     icon: Coffee,
     name: "Cup&Cino",
-    text: "Unsere Kaffeespezialitäten kommen von Cup&Cino — einem Unternehmen, das für erstklassige Bohnen und innovative Kaffeekonzepte steht. Von Espresso bis Matcha Latte: Jede Tasse wird frisch mit dem Cup&Cino-System zubereitet.",
-    highlight: "☕ Cup&Cino Foundation — Mit jedem Kaffee, den du bei uns trinkst, geht 1 Cent an die Cup&Cino Foundation. So unterstützt du mit deinem Boxenstopp soziale Projekte weltweit.",
+    text: "Unsere Kaffeespezialitäten kommen von Cup&Cino, einem Unternehmen, das für erstklassige Bohnen und innovative Kaffeekonzepte steht. Von Espresso bis Matcha Latte: Jede Tasse wird frisch mit dem Cup&Cino-System zubereitet.",
+    highlight: "☕ Cup&Cino Foundation: Mit jedem Kaffee, den du bei uns trinkst, geht 1 Cent an die Cup&Cino Foundation. So unterstützt du mit deinem Boxenstopp soziale Projekte weltweit.",
   },
   {
     icon: ChefHat,
