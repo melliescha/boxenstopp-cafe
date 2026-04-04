@@ -29,20 +29,20 @@ const About = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="relative h-72 md:h-[28rem] overflow-hidden">
+      <section className="relative h-[50vh] md:h-[60vh] overflow-hidden">
         <img
           src={aboutHero}
-          alt="Gemütliche Atmosphäre im Bistro Boxenstopp"
-          className="w-full h-full object-cover"
+          alt="Familie Schall vor Allgäuer Bergpanorama"
+          className="w-full h-full object-cover object-top"
           width={1920}
           height={800}
         />
-        <div className="absolute inset-0 bg-primary/50" />
+        <div className="absolute inset-0 bg-black/30" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-          <h1 className="font-serif text-4xl md:text-6xl font-bold text-primary-foreground mb-4">
+          <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-4">
             Zwei Bodensee-Kinder, ein Allgäuer Traum
           </h1>
-          <p className="text-primary-foreground/85 text-lg md:text-xl max-w-xl">
+          <p className="text-white/85 text-lg md:text-xl max-w-xl">
             Die Geschichte hinter dem Bistro Boxenstopp
           </p>
         </div>
