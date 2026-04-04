@@ -5,7 +5,6 @@ import { ReviewCarousel, ReviewSummaryBadges, ReviewCTA } from "@/components/Rev
 import BestsellerSection from "@/components/BestsellerSection";
 import heroBg from "@/assets/hero-bistro.jpg";
 import heroLogoSchriftzug from "@/assets/hero-logo-schriftzug.png";
-import logoIcon from "@/assets/logo-icon.png";
 
 
 const highlights = [
@@ -59,40 +58,38 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
+      <section className="relative overflow-hidden">
+        <div className="relative">
           <img
             src={heroBg}
             alt="Bistro Boxenstopp, gemütliches Café-Interieur mit Kaffee und Gebäck"
             width={1920}
             height={1080}
-            className="w-full h-full object-cover"
+            className="w-full h-auto object-cover"
           />
-          <div className="absolute inset-0 bg-black/35" />
-        </div>
-        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <img
-            src={logoIcon}
-            alt=""
-            className="w-20 md:w-28 mx-auto mb-4 drop-shadow-lg animate-fade-in-up"
-          />
-          <img
-            src={heroLogoSchriftzug}
-            alt="Bistro Boxenstopp"
-            className="w-full md:w-[85%] max-w-4xl mx-auto mb-6 animate-fade-in-up rounded-xl shadow-2xl"
-          />
-          <p className="font-serif text-xl md:text-2xl text-white/90 mb-8 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
-            Hergatz' bestgehütetes Geheimnis
-          </p>
-          <div className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-            <Link
-              to="/speisekarte"
-              className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
-            >
-              Speisekarte ansehen
-            </Link>
+          <div className="absolute inset-0 bg-black/15" />
+          <div className="absolute inset-0 flex items-center justify-center px-6">
+            <img
+              src={heroLogoSchriftzug}
+              alt="Bistro Boxenstopp"
+              className="w-[65%] max-w-2xl animate-fade-in-up"
+              style={{ mixBlendMode: "multiply" }}
+            />
           </div>
         </div>
+      </section>
+
+      {/* Slogan + CTA */}
+      <section className="py-10 bg-background text-center">
+        <p className="font-serif text-xl md:text-2xl text-muted-foreground mb-6">
+          Hergatz' bestgehütetes Geheimnis
+        </p>
+        <Link
+          to="/speisekarte"
+          className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
+        >
+          Speisekarte ansehen
+        </Link>
       </section>
 
       {/* Welcome */}
