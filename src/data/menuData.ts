@@ -514,7 +514,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Apfel- und Fruchtschorle",
     price: "2,25 €",
     description: "Bei Mitnahme zzgl. Pfand",
-    category: "Getränke",
+    category: "Erfrischungsgetränke",
     volume: "0,33l",
   },
   {
