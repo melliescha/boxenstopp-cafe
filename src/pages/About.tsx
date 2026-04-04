@@ -14,7 +14,7 @@ const founders = [
     role: "Gastgeberin & gute Seele",
     image: founderHelena,
     alt: "Helena Schall, Gastgeberin des Bistro Boxenstopp",
-    objectPosition: "center top",
+    objectPosition: "center 20%",
     text: "Helena sorgt dafür, dass sich jeder Gast wie zu Hause fühlt. Sie kümmert sich um alles, was das Bistro ausmacht: vom frischen Kaffee bis zum warmen Empfang.",
   },
   {
@@ -22,7 +22,7 @@ const founders = [
     role: "Gründer, Trainer & Gastgeber",
     image: founderEugen,
     alt: "Eugen Schall, Gründer und Gastgeber des Bistro Boxenstopp",
-    objectPosition: "center top",
+    objectPosition: "center 20%",
     text: "Eugen ist zertifizierter Fitness-Trainer mit über 10 Jahren Erfahrung und das Herz hinter FITES Allgäu. Seine Vision: Fitness und Genuss unter einem Dach, in einer Atmosphäre, die sich anfühlt wie bei Freunden.",
   },
 ];
