@@ -201,7 +201,14 @@ const ProductDetailOverlay = ({ product, onClose }: Props) => {
                   </p>
                 </div>
               ) : (
-                <p className="italic">[Allergene werden noch ergänzt]</p>
+                <div className="space-y-2">
+                  <span className="text-xs border rounded-full px-3 py-1.5 font-medium inline-flex items-center gap-1 bg-green-100 text-green-800 border-green-300">
+                    ✅ Keine deklarationspflichtigen Allergene
+                  </span>
+                  <p className="text-xs italic">
+                    Bei Fragen zu Allergenen sprich uns bitte direkt an.
+                  </p>
+                </div>
               )}
             </AccordionSection>
 
