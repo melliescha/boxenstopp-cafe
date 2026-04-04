@@ -21,6 +21,7 @@ const founders = [
     role: "Gründer, Trainer & Gastgeber",
     image: founderEugen,
     alt: "Eugen Schall, Gründer und Gastgeber des Bistro Boxenstopp",
+    objectPosition: "center top",
     text: "Eugen ist zertifizierter Fitness-Trainer mit über 10 Jahren Erfahrung und das Herz hinter FITES Allgäu. Seine Vision: Fitness und Genuss unter einem Dach, in einer Atmosphäre, die sich anfühlt wie bei Freunden.",
   },
 ];
