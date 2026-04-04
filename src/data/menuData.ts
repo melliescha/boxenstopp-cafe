@@ -51,6 +51,7 @@ import cappuccinoImage from "@/assets/cappuccino.png";
 import cappuccinoSchokoImage from "@/assets/cappuccino-schoko.png";
 import caffeLatteImage from "@/assets/caffe-latte.png";
 import latteMacchiatoImage from "@/assets/latte-macchiato.png";
+import boxenstoppSpezialImage from "@/assets/boxenstopp-spezial.png";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
@@ -109,6 +110,7 @@ export const menuProducts: MenuProduct[] = [
     badge: "⭐ Hausspezialität",
     featured: true,
     origin: "In Zusammenarbeit mit Cup&Cino: Barista-Qualität",
+    image: boxenstoppSpezialImage,
   },
   {
     id: "caffe-latte",
