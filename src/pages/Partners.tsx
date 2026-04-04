@@ -101,9 +101,7 @@ const Partners = () => {
             </div>
             {/* Text right */}
             <div>
-              <div className="w-24 h-12 rounded-lg border border-bronze/30 flex items-center justify-center mb-6">
-                <span className="text-xs text-bronze font-medium">LOGO</span>
-              </div>
+              <img src={cupcinoLogo} alt="Cup&Cino Logo" className="h-12 mb-6 rounded" loading="lazy" />
               <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
                 Kaffeesystem der Spitzenklasse
               </span>
