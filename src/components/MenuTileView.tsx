@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, Link } from "react-router-dom";
 import { menuProducts, menuCategories, type MenuProduct } from "@/data/menuData";
 import ProductDetailOverlay from "@/components/ProductDetailOverlay";
 
@@ -105,6 +105,15 @@ const MenuTileView = () => {
         <p className="text-muted-foreground text-xs">
           Alle Allergen- und Zutateinformationen findest du in der jeweiligen Produktansicht.
           Bei Fragen sprich uns gerne direkt an.
+        </p>
+      </div>
+
+      {/* Photo disclaimer */}
+      <div className="mt-6 max-w-3xl mx-auto rounded-lg border p-4 flex items-start gap-3" style={{ backgroundColor: '#ede0d0', borderColor: '#9e7c4e' }}>
+        <span className="text-base mt-0.5" style={{ color: '#9e7c4e' }}>ℹ️</span>
+        <p className="italic" style={{ fontSize: '13px', color: '#6b4a2e' }}>
+          Bitte beachten Sie, dass es sich bei den abgebildeten Fotos lediglich um Beispielbilder und idealisierte Produktdarstellungen handelt, um Ihnen eine Vorstellung vom jeweiligen Produkt zu geben. Die Produkte können in der Realität optisch abweichen. Wenn Sie einen echten Eindruck bekommen möchten, besuchen Sie gerne unsere{' '}
+          <Link to="/galerie" className="underline font-medium" style={{ color: '#9e7c4e' }}>Galerie</Link>. Vielen Dank für Ihr Verständnis.
         </p>
       </div>
 

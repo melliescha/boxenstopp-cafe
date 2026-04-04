@@ -1,4 +1,5 @@
 import { X, Share2, ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 import { MenuProduct } from "@/data/menuData";
 import { useState } from "react";
 
@@ -246,8 +247,14 @@ const ProductDetailOverlay = ({ product, onClose }: Props) => {
             )}
           </div>
 
+          {/* Photo disclaimer */}
+          <p className="mt-4 italic text-muted-foreground" style={{ fontSize: '11px' }}>
+            Beispielfoto — das tatsächliche Produkt kann optisch abweichen. Echte Eindrücke findest du in unserer{' '}
+            <Link to="/galerie" className="underline" style={{ color: '#9e7c4e' }}>Galerie</Link>.
+          </p>
+
           {/* Bottom bar */}
-          <div className="mt-5 pt-4 border-t border-bronze/20 flex items-center justify-between">
+          <div className="mt-4 pt-4 border-t border-bronze/20 flex items-center justify-between">
             <span className="text-[11px] text-muted-foreground">
               100% Transparenz: Wir zeigen dir, was drin ist.
             </span>

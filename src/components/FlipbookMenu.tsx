@@ -302,6 +302,9 @@ const FlipbookMenu = () => {
               <p className="text-[8px] sm:text-[9px] text-muted-foreground italic mt-2">
                 Alle Angaben ohne Gewähr. Bitte sprich uns bei Allergien direkt an.
               </p>
+              <p className="text-[7px] sm:text-[8px] text-muted-foreground/70 italic mt-2">
+                Beispielfotos — die tatsächlichen Produkte können optisch abweichen.
+              </p>
               <PageNumber num={11} />
             </Page>
 
