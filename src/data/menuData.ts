@@ -209,6 +209,7 @@ export const menuProducts: MenuProduct[] = [
       { label: "Mittel", price: "2,60 €" },
       { label: "Groß", price: "3,20 €" },
     ],
+    image: kakaoImage,
   },
   {
     id: "latte-vanilla",
