@@ -58,14 +58,14 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="relative">
+      <section className="relative overflow-hidden h-[50vh]">
+        <div className="relative h-full">
           <img
             src={heroBg}
             alt="Bistro Boxenstopp, gemütliches Café-Interieur mit Kaffee und Gebäck"
             width={1920}
             height={1080}
-            className="w-full h-auto object-cover"
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/35" />
           <div className="absolute inset-0 flex items-center justify-center px-6 z-10">
@@ -73,16 +73,16 @@ const Index = () => {
               <img
                 src={heroLogoSchriftzug}
                 alt="Bistro Boxenstopp"
-                className="w-[80%] max-w-[600px] mx-auto mb-2 animate-fade-in-up rounded-xl shadow-2xl"
+                className="w-[90%] max-w-[700px] mx-auto mb-2.5 animate-fade-in-up rounded-xl shadow-2xl"
               />
-              <p className="font-serif text-base text-white mb-2 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
+              <p className="font-serif text-white mb-2.5 animate-fade-in-up" style={{ animationDelay: "0.15s", fontSize: "22px", fontWeight: 500 }}>
                 Hergatz' bestgehütetes Geheimnis
               </p>
               <div className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
                 <Link
                   to="/speisekarte"
-                  className="inline-block px-6 py-2 rounded-lg font-medium text-white text-sm hover:opacity-90 transition-opacity"
-                  style={{ backgroundColor: "#b8943e" }}
+                  className="inline-block rounded-lg font-medium text-white hover:opacity-90 transition-opacity"
+                  style={{ backgroundColor: "#b8943e", padding: "14px 36px", fontSize: "18px" }}
                 >
                   Speisekarte ansehen
                 </Link>
