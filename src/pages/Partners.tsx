@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { Droplets, Building2, GraduationCap, Handshake, Leaf, Zap, ShieldCheck, Globe, Award, FlaskConical, Dumbbell } from "lucide-react";
 import flammkuchenPartner from "@/assets/flammkuchen-partner.png";
+import herbalifelogo from "@/assets/herbalife-logo.png";
 
 const Partners = () => {
   return (
