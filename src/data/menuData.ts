@@ -52,6 +52,7 @@ import cappuccinoSchokoImage from "@/assets/cappuccino-schoko.png";
 import caffeLatteImage from "@/assets/caffe-latte.png";
 import latteMacchiatoImage from "@/assets/latte-macchiato.png";
 import boxenstoppSpezialImage from "@/assets/boxenstopp-spezial.png";
+import kakaoImage from "@/assets/kakao.png";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
@@ -208,6 +209,7 @@ export const menuProducts: MenuProduct[] = [
       { label: "Mittel", price: "2,60 €" },
       { label: "Groß", price: "3,20 €" },
     ],
+    image: kakaoImage,
   },
   {
     id: "latte-vanilla",
