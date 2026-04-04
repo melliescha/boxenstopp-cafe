@@ -64,11 +64,15 @@ const MenuTileView = () => {
             onClick={() => openProduct(product)}
             className="bg-card rounded-xl border border-bronze/15 overflow-hidden text-left transition-all duration-200 hover:-translate-y-1 hover:shadow-lg group"
           >
-            {/* Image placeholder */}
+            {/* Image */}
             <div className="relative aspect-square bg-secondary/40">
-              <div className="w-full h-full flex items-center justify-center text-muted-foreground/20 group-hover:text-muted-foreground/30 transition-colors">
-                <span className="text-4xl">📷</span>
-              </div>
+              {product.image ? (
+                <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center text-muted-foreground/20 group-hover:text-muted-foreground/30 transition-colors">
+                  <span className="text-4xl">📷</span>
+                </div>
+              )}
               {product.badge && (
                 <span
                   className="absolute top-2 left-2 text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full"
