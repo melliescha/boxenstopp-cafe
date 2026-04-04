@@ -132,6 +132,7 @@ const About = () => {
                 alt="Terrasse des Bistro Boxenstopp mit Radfahrern"
                 loading="lazy"
                 className="rounded-xl shadow-md w-full h-64 md:h-80 object-cover"
+                style={{ objectPosition: 'center 30%' }}
               />
             </div>
           </div>
