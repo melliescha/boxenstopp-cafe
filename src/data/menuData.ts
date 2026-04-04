@@ -67,6 +67,7 @@ import schwarzwaelderBaguetteImage from "@/assets/schwarzwaelder-laugen-baguette
 import affogatoImage from "@/assets/affogato.png";
 import raclettebrotImage from "@/assets/raclettebrot-rustikal.jpg";
 import holzfaellerbrotImage from "@/assets/holzfaellerbrot-rustikal.jpg";
+import tomatenMozzarellaBrotImage from "@/assets/tomaten-mozzarella-brot.jpg";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
