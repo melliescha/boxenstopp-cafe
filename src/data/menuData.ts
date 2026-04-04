@@ -566,17 +566,30 @@ export const menuProducts: MenuProduct[] = [
     allergens: "11",
     origin: "Herbalife Nutrition: Seed to Feed Qualitätskontrolle",
   },
-  // Herbalife
+  // Shakes
   {
     id: "protein-shake",
-    name: "Protein-Shake Herbalife",
+    name: "Protein-Shake",
     price: "2,50 € – 4,50 €",
-    description: "Nährshakes mit Vitaminen",
+    description: "Verschiedene Geschmacksrichtungen",
     category: "Shakes",
     allergens: "F,G",
     variants: [
       { label: "Klein", price: "2,50 €" },
       { label: "Groß", price: "4,50 €" },
+    ],
+    origin: "Herbalife Nutrition: Seed to Feed Qualitätskontrolle",
+  },
+  {
+    id: "naehrshake",
+    name: "Nährshake mit Vitaminen",
+    price: "3,50 € – 5,00 €",
+    description: "Vollwertiger Shake mit Vitaminen und Mineralstoffen",
+    category: "Shakes",
+    allergens: "F,G",
+    variants: [
+      { label: "Klein", price: "3,50 €" },
+      { label: "Groß", price: "5,00 €" },
     ],
     origin: "Herbalife Nutrition: Seed to Feed Qualitätskontrolle",
   },
