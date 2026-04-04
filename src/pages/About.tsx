@@ -33,7 +33,8 @@ const About = () => {
         <img
           src={aboutHero}
           alt="Familie Schall vor Allgäuer Bergpanorama"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover"
+          style={{ objectPosition: 'center 35%' }}
           width={1920}
           height={800}
         />
