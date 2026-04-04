@@ -64,6 +64,7 @@ import grillgemueseBaguetteImage from "@/assets/grillgemuese-baguette.png";
 import fitnessBaguetteImage from "@/assets/fitness-baguette.png";
 import herbalifeTeeImage from "@/assets/herbalife-tee.png";
 import schwarzwaelderBaguetteImage from "@/assets/schwarzwaelder-laugen-baguette.png";
+import affogatoImage from "@/assets/affogato.png";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
