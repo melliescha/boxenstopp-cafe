@@ -41,7 +41,7 @@ const About = () => {
         <div className="absolute inset-0 bg-black/30" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
           <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-4">
-            Zwei Bodensee-Kinder, ein Allgäuer Traum
+            Eine Familie, ein Traum, unsere Wahlheimat Allgäu
           </h1>
           <p className="text-white/85 text-lg md:text-xl max-w-xl">
             Die Geschichte hinter dem Bistro Boxenstopp
@@ -66,16 +66,10 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Wir sind Helena und Eugen Schall, und das Bistro Boxenstopp ist unser Herzensprojekt.
+                  Wir sind Helena und Eugen, eigentlich vom Bodensee. Eugen arbeitet bereits seit 15 Jahren in Hergensweiler, und so haben wir die Region nach und nach kennengelernt. Wir verbrachten immer mehr Zeit im Allgäu, auf Wanderungen, in den Thermen, auf Fahrradtouren. Und nach und nach haben wir uns verliebt. Vor allem in das Städtchen Wangen.
                 </p>
                 <p>
-                  Angefangen hat alles 2019, als wir noch in Überlingen am Bodensee lebten. Über Friedrichshafen
-                  hat es uns immer weiter Richtung Berge gezogen. Bei einem Wanderausflug ins Allgäu haben wir
-                  zum ersten Mal die Stadt Wangen besucht, und uns sofort heimisch gefühlt.
-                </p>
-                <p>
-                  Die Idylle, die freundlichen Menschen, die Natur: das war es. Hier wollten wir leben,
-                  Wurzeln schlagen und unseren Traum verwirklichen.
+                  Es war für uns nicht nur die Natur, es waren vor allem die herzlichen Menschen und die Idylle, die das Allgäu so besonders machen. Irgendwann stand fest: Hier möchten wir hinziehen, Wurzeln schlagen und uns den Traum vom Eigenheim und der Selbstständigkeit erfüllen.
                 </p>
               </div>
             </div>
@@ -105,13 +99,13 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Unser Traum war immer: ein eigenes Zuhause, Selbstständigkeit und ein Ort, an dem sich
-                  Menschen wohlfühlen. In Hergatz-Wohmbrechts haben wir genau das gefunden.
+                  Wir träumten nicht nur von einem Zuhause mit Garten und Ruhe für unsere Kinder, sondern auch von einem Ort für die Gemeinschaft.
                 </p>
                 <p>
-                  So entstand zuerst FITES Allgäu, Eugens Fitnessstudio mit kleinen Gruppen und persönlicher
-                  Betreuung. Und weil zum Wohlfühlen mehr gehört als nur Training, kam das Bistro Boxenstopp
-                  dazu: ein Ort zum Auftanken, Durchatmen und Genießen. Für alle, nicht nur für Sportler.
+                  Helena und Eugen sind die Foodies und Hobbyköche in der Familie und träumten schon immer von einer eigenen Gastronomie. Und was unsere ganze Familie immer verbunden hat, war der gemeinsame Sport, von Thaiboxen über Fußball bis hin zu Wanderungen haben wir alles zusammen als Familie gemacht.
+                </p>
+                <p>
+                  Genau so einen Ort wollten wir auch für andere schaffen: einen Ort der Bewegung und einen Ort der Gemeinschaft. So wurde die Idee geboren, Eugen eröffnet als Personal Trainer sein eigenes Studio, und Helena leitet das Bistro. Für die Gemeinschaft.
                 </p>
               </div>
             </div>
@@ -125,12 +119,10 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Der Name ist Programm: Bei uns machst du einen kurzen Boxenstopp, ob auf der Radtour,
-                  nach dem Training oder einfach, weil du Lust auf guten Kaffee hast.
+                  Der Name ist Programm. Du machst bei uns einen Boxenstopp, egal ob du gerade eine Pause bei deiner Fahrradtour brauchst, auf einer Wanderung bist, auf dem Weg nach Hause von der Arbeit nochmal innehalten willst, oder einfach einen Boxenstopp vom Alltag brauchst.
                 </p>
-                <p>
-                  Wir liegen direkt an der Leiblachroute und am Bodensee-Königssee-Radweg. Ja, man muss uns
-                  erstmal finden, aber genau das macht uns besonders. Wer einmal da war, kommt wieder. Versprochen.
+                <p className="font-serif italic text-lg md:text-xl text-center" style={{ color: '#9e7c4e' }}>
+                  Der Boxenstopp ist die Pause, die du dir verdient hast.
                 </p>
               </div>
             </div>
