@@ -454,6 +454,7 @@ export const menuProducts: MenuProduct[] = [
     category: "Herzhaft & Ofenfrisch",
     allergens: "A,G",
     origin: perplexOrigin,
+    image: fitnessBaguetteImage,
   },
   {
     id: "grillgemuese-baguette",
