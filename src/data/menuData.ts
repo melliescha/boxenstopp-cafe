@@ -32,15 +32,12 @@ export interface MenuProduct {
 export const menuCategories = [
   "Alle",
   "Kaffee",
-  "Milchkaffee",
-  "Wohlfühlgetränke",
+  "Heiße Getränke",
+  "Erfrischungsgetränke",
   "Süßes",
-  "Baguettes",
-  "Rustikale Brote",
-  "Flammkuchen",
+  "Herzhaft & Ofenfrisch",
   "Snacks",
-  "Getränke",
-  "Herbalife",
+  "Shakes",
 ];
 
 const perplexOrigin = "Von unserem Partner Perplex: Pizza & Baguette Deutschland GmbH, seit über 33 Jahren. Ohne Gentechnik hergestellt gemäß Codexrichtlinie. Kontrolle durch agroVet GmbH.";
