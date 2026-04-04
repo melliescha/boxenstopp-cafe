@@ -67,6 +67,7 @@ const Index = () => {
             width={1920}
             height={1080}
             className="w-full h-full object-cover"
+            style={{ objectPosition: "center 75%" }}
           />
           <div className="absolute inset-0 bg-black/35" />
           <div className="absolute inset-0 flex items-center justify-center px-6 z-10">
