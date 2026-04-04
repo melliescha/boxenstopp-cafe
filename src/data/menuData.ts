@@ -110,6 +110,7 @@ export const menuProducts: MenuProduct[] = [
     badge: "⭐ Hausspezialität",
     featured: true,
     origin: "In Zusammenarbeit mit Cup&Cino: Barista-Qualität",
+    image: boxenstoppSpezialImage,
   },
   {
     id: "caffe-latte",
