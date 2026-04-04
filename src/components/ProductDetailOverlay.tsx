@@ -212,22 +212,27 @@ const ProductDetailOverlay = ({ product, onClose }: Props) => {
               )}
             </AccordionSection>
 
-            <AccordionSection title="Nährwerte pro 100g" defaultOpen={!!hasRealNutrition}>
+            <AccordionSection title="Geschätzte Nährwerte pro Portion" defaultOpen={!!hasRealNutrition}>
               {hasRealNutrition ? (
-                <div className="rounded-lg overflow-hidden border border-border">
-                  {product.nutrition!.map((row, i) => (
-                    <div
-                      key={row.label}
-                      className={`flex justify-between px-3 py-2 text-xs ${
-                        i % 2 === 0 ? "bg-card" : "bg-secondary/30"
-                      }`}
-                    >
-                      <span className={`${row.indent ? "pl-3 text-muted-foreground" : "font-medium text-foreground"}`}>
-                        {row.label}
-                      </span>
-                      <span className="font-medium text-foreground">{row.value}</span>
-                    </div>
-                  ))}
+                <div className="space-y-3">
+                  <div className="rounded-lg overflow-hidden border border-border">
+                    {product.nutrition!.map((row, i) => (
+                      <div
+                        key={row.label}
+                        className={`flex justify-between px-3 py-2 text-xs ${
+                          i % 2 === 0 ? "bg-card" : "bg-secondary/30"
+                        }`}
+                      >
+                        <span className={`${row.indent ? "pl-3 text-muted-foreground" : "font-medium text-foreground"}`}>
+                          {row.label}
+                        </span>
+                        <span className="font-medium text-foreground">{row.value}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-xs italic text-muted-foreground">
+                    ⚠ Nährwerte sind Schätzwerte und können je nach Zubereitung und Portionsgröße abweichen.
+                  </p>
                 </div>
               ) : (
                 <p className="italic">[Nährwerte werden noch ergänzt]</p>
