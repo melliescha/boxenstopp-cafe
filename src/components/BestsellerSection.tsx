@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import bestsellerMatcha from "@/assets/bestseller-matcha.jpg";
+import bestsellerMatcha from "@/assets/vegan-matcha.png";
 import bestsellerSpezial from "@/assets/boxenstopp-spezial.png";
 import bestsellerFlammkuchen from "@/assets/flammkuchen-lachs.png";
 import bestsellerHolzfaellerbrot from "@/assets/bestseller-holzfaellerbrot.jpg";
