@@ -636,6 +636,7 @@ export const menuProducts: MenuProduct[] = [
       { label: "Eiweiß", value: "5,8 g" },
       { label: "Salz", value: "0,71 g" },
     ],
+    image: flammkuchenMediterranImage,
   },
   {
     id: "flammkuchen-lachs",
