@@ -50,6 +50,7 @@ import flatWhiteImage from "@/assets/flat-white.png";
 import cappuccinoImage from "@/assets/cappuccino.png";
 import cappuccinoSchokoImage from "@/assets/cappuccino-schoko.png";
 import caffeLatteImage from "@/assets/caffe-latte.png";
+import latteMacchiatoImage from "@/assets/latte-macchiato.png";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
