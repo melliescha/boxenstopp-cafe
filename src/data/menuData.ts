@@ -597,7 +597,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Protein-Chips (nach Wahl)",
     price: "2,40 €",
     description: "Proteinreicher Snack",
-    category: "Herbalife",
+    category: "Snacks",
     origin: "Herbalife Nutrition: Seed to Feed Qualitätskontrolle",
   },
 ];
