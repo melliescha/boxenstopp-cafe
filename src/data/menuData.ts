@@ -45,6 +45,7 @@ const perplexOrigin = "Von unserem Partner Perplex: Pizza & Baguette Deutschland
 
 import espressoImage from "@/assets/espresso.png";
 import caffeCremaImage from "@/assets/caffe-crema.png";
+import americanoImage from "@/assets/americano.png";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
