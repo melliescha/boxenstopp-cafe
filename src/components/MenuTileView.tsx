@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, Link } from "react-router-dom";
 import { menuProducts, menuCategories, type MenuProduct } from "@/data/menuData";
 import ProductDetailOverlay from "@/components/ProductDetailOverlay";
 
