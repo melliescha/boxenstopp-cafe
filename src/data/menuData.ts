@@ -48,6 +48,7 @@ import caffeCremaImage from "@/assets/caffe-crema.png";
 import americanoImage from "@/assets/americano.png";
 import flatWhiteImage from "@/assets/flat-white.png";
 import cappuccinoImage from "@/assets/cappuccino.png";
+import cappuccinoSchokoImage from "@/assets/cappuccino-schoko.png";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
@@ -149,6 +150,7 @@ export const menuProducts: MenuProduct[] = [
       { label: "Groß", price: "3,60 €" },
     ],
     origin: "In Zusammenarbeit mit Cup&Cino: Barista-Qualität",
+    image: cappuccinoSchokoImage,
   },
   {
     id: "latte-macchiato",
