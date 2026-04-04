@@ -34,7 +34,7 @@ const About = () => {
           src={aboutHero}
           alt="Familie Schall vor Allgäuer Bergpanorama"
           className="w-full h-full object-cover"
-          style={{ objectPosition: 'center 35%' }}
+          style={{ objectPosition: 'center 25%' }}
           width={1920}
           height={800}
         />
