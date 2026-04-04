@@ -48,6 +48,7 @@ import caffeCremaImage from "@/assets/caffe-crema.png";
 import americanoImage from "@/assets/americano.png";
 import flatWhiteImage from "@/assets/flat-white.png";
 import cappuccinoImage from "@/assets/cappuccino.png";
+import cappuccinoSchokoImage from "@/assets/cappuccino-schoko.png";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
