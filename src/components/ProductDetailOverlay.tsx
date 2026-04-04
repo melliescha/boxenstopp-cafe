@@ -87,7 +87,10 @@ const ProductDetailOverlay = ({ product, onClose }: Props) => {
           {product.badge && (
             <span
               className="absolute top-3 left-3 text-xs font-semibold px-3 py-1 rounded-full"
-              style={{ backgroundColor: "#b8943e", color: "#fff" }}
+              style={{
+                backgroundColor: product.badge.includes("Kinder") ? "rgba(234, 145, 50, 0.85)" : "#b8943e",
+                color: "#fff",
+              }}
             >
               {product.badge}
             </span>
