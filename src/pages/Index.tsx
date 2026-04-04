@@ -58,6 +58,7 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero */}
+      {/* Hero */}
       <section className="relative overflow-hidden h-[50vh]">
         <div className="relative h-full">
           <img
@@ -69,26 +70,29 @@ const Index = () => {
           />
           <div className="absolute inset-0 bg-black/35" />
           <div className="absolute inset-0 flex items-center justify-center px-6 z-10">
-            <div className="text-center">
-              <img
-                src={heroLogoSchriftzug}
-                alt="Bistro Boxenstopp"
-                className="w-[90%] max-w-[700px] mx-auto mb-2.5 animate-fade-in-up rounded-xl shadow-2xl"
-              />
-              <p className="font-serif text-white mb-2.5 animate-fade-in-up" style={{ animationDelay: "0.15s", fontSize: "22px", fontWeight: 500 }}>
-                Hergatz' bestgehütetes Geheimnis
-              </p>
-              <div className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-                <Link
-                  to="/speisekarte"
-                  className="inline-block rounded-lg font-medium text-white hover:opacity-90 transition-opacity"
-                  style={{ backgroundColor: "#b8943e", padding: "14px 36px", fontSize: "18px" }}
-                >
-                  Speisekarte ansehen
-                </Link>
-              </div>
-            </div>
+            <img
+              src={heroLogoSchriftzug}
+              alt="Bistro Boxenstopp"
+              className="w-[90%] max-w-[700px] animate-fade-in-up"
+              style={{ mixBlendMode: "multiply" }}
+            />
           </div>
+        </div>
+      </section>
+
+      {/* Slogan + CTA */}
+      <section className="py-8 text-center" style={{ backgroundColor: "#fef4ec" }}>
+        <p className="font-serif" style={{ color: "#164472", fontSize: "22px", fontWeight: 500 }}>
+          Hergatz' bestgehütetes Geheimnis
+        </p>
+        <div style={{ marginTop: "12px" }}>
+          <Link
+            to="/speisekarte"
+            className="inline-block rounded-lg font-medium text-white hover:opacity-90 transition-opacity"
+            style={{ backgroundColor: "#b8943e", padding: "14px 36px", fontSize: "18px" }}
+          >
+            Speisekarte ansehen
+          </Link>
         </div>
       </section>
 
