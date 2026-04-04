@@ -177,9 +177,7 @@ const Partners = () => {
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* Text left */}
             <div className="order-2 md:order-1">
-              <div className="w-24 h-12 rounded-lg border border-bronze/30 flex items-center justify-center mb-6">
-                <span className="text-xs text-bronze font-medium">LOGO</span>
-              </div>
+              <img src={herbalifelogo} alt="Herbalife Nutrition Logo" className="h-12 mb-6" loading="lazy" />
               <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
                 Seit über 20 Jahren in der Familie
               </span>
