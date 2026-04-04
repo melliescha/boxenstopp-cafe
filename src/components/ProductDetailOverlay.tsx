@@ -81,9 +81,13 @@ const ProductDetailOverlay = ({ product, onClose }: Props) => {
       <div className="relative z-10 bg-card w-full sm:max-w-[600px] sm:rounded-xl rounded-t-2xl max-h-[90vh] overflow-y-auto animate-slide-up shadow-2xl">
         {/* Image */}
         <div className="relative aspect-[4/3] bg-secondary/50 sm:rounded-t-xl rounded-t-2xl overflow-hidden">
-          <div className="w-full h-full flex items-center justify-center text-muted-foreground/30">
-            <span className="text-6xl">📷</span>
-          </div>
+          {product.image ? (
+            <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center text-muted-foreground/30">
+              <span className="text-6xl">📷</span>
+            </div>
+          )}
           {product.badge && (
             <span
               className="absolute top-3 left-3 text-xs font-semibold px-3 py-1 rounded-full"
