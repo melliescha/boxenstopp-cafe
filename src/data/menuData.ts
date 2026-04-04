@@ -522,7 +522,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Wasser still/medium/spritzig",
     price: "1,75 €",
     description: "Bei Mitnahme zzgl. Pfand",
-    category: "Getränke",
+    category: "Erfrischungsgetränke",
     volume: "0,5l",
   },
   {
