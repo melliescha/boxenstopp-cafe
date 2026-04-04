@@ -108,6 +108,15 @@ const MenuTileView = () => {
         </p>
       </div>
 
+      {/* Photo disclaimer */}
+      <div className="mt-6 max-w-3xl mx-auto rounded-lg border p-4 flex items-start gap-3" style={{ backgroundColor: '#ede0d0', borderColor: '#9e7c4e' }}>
+        <span className="text-base mt-0.5" style={{ color: '#9e7c4e' }}>ℹ️</span>
+        <p className="italic" style={{ fontSize: '13px', color: '#6b4a2e' }}>
+          Bitte beachten Sie, dass es sich bei den abgebildeten Fotos lediglich um Beispielbilder und idealisierte Produktdarstellungen handelt, um Ihnen eine Vorstellung vom jeweiligen Produkt zu geben. Die Produkte können in der Realität optisch abweichen. Wenn Sie einen echten Eindruck bekommen möchten, besuchen Sie gerne unsere{' '}
+          <Link to="/galerie" className="underline font-medium" style={{ color: '#9e7c4e' }}>Galerie</Link>. Vielen Dank für Ihr Verständnis.
+        </p>
+      </div>
+
       {/* Product detail overlay */}
       {selectedProduct && (
         <ProductDetailOverlay product={selectedProduct} onClose={closeProduct} />
