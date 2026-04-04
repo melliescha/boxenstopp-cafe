@@ -4,6 +4,7 @@ import flammkuchenPartner from "@/assets/flammkuchen-partner.png";
 import herbalifelogo from "@/assets/herbalife-logo.png";
 import herbalifePartner from "@/assets/herbalife-partner.jpg";
 import perplexLogo from "@/assets/perplex-logo.jpg";
+import cupcinoLogo from "@/assets/cupcino-logo.jpg";
 
 const Partners = () => {
   return (
