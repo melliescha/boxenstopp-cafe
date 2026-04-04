@@ -1,3 +1,14 @@
+export interface NutritionInfo {
+  label: string;
+  value: string;
+  indent?: boolean;
+}
+
+export interface AdditiveInfo {
+  code: string;
+  name: string;
+}
+
 export interface MenuProduct {
   id: string;
   name: string;
@@ -10,6 +21,12 @@ export interface MenuProduct {
   featured?: boolean;
   variants?: { label: string; price: string }[];
   origin?: string;
+  composition?: string;
+  ingredients?: string;
+  nutrition?: NutritionInfo[];
+  additives?: AdditiveInfo[];
+  traceWarning?: string;
+  gmoFree?: boolean;
 }
 
 export const menuCategories = [
@@ -25,6 +42,8 @@ export const menuCategories = [
   "Getränke",
   "Herbalife",
 ];
+
+const perplexOrigin = "Von unserem Partner Perplex: Pizza & Baguette Deutschland GmbH, seit über 33 Jahren. Ohne Gentechnik hergestellt gemäß Codexrichtlinie. Kontrolle durch agroVet GmbH.";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
@@ -233,7 +252,7 @@ export const menuProducts: MenuProduct[] = [
     description: "Körnerbaguette mit Hähnchenbrustschinken und Gouda",
     category: "Baguettes",
     allergens: "A,G",
-    origin: "Von unserem Partner Perplex: über 33 Jahre Erfahrung",
+    origin: perplexOrigin,
   },
   {
     id: "grillgemuese-baguette",
@@ -242,7 +261,7 @@ export const menuProducts: MenuProduct[] = [
     description: "Mit Zucchini, Champignons, Tomaten, Paprika, Mozzarella und Kräutersauce",
     category: "Baguettes",
     allergens: "A,G",
-    origin: "Von unserem Partner Perplex: über 33 Jahre Erfahrung",
+    origin: perplexOrigin,
   },
   {
     id: "schwarzwaelder-baguette",
@@ -251,7 +270,7 @@ export const menuProducts: MenuProduct[] = [
     description: "Hausgemachte Laugenbaguette mit rohem Schinken und Gouda",
     category: "Baguettes",
     allergens: "A,G",
-    origin: "Von unserem Partner Perplex: über 33 Jahre Erfahrung",
+    origin: perplexOrigin,
   },
   {
     id: "thunfisch-baguette",
@@ -260,7 +279,7 @@ export const menuProducts: MenuProduct[] = [
     description: "Mit Thunfisch, Zwiebeln, Gouda und Béchamelsauce",
     category: "Baguettes",
     allergens: "A,D,G",
-    origin: "Von unserem Partner Perplex: über 33 Jahre Erfahrung",
+    origin: perplexOrigin,
   },
   {
     id: "tomate-mozzarella-baguette",
@@ -269,7 +288,20 @@ export const menuProducts: MenuProduct[] = [
     description: "Mit getrockneten Tomaten, Basilikum und Béchamel-Tomatensauce",
     category: "Baguettes",
     allergens: "A,G",
-    origin: "Von unserem Partner Perplex: über 33 Jahre Erfahrung",
+    origin: perplexOrigin,
+    composition: "47% Baguette, 20% Béchamel-Tomatensoße, 20% Mozzarella, 12% halbgetrocknete Tomaten",
+    ingredients: "Weizenmehl, Tomaten, Mozzarella, Trinkwasser, Sahne, Jodsalz (Speisesalz, Kaliumjodat), Basilikum, Hefe, pasteurisierter Rahm, Zucker, Pfeffer.",
+    traceWarning: "Kann Spuren von Fisch und Sesamsamen enthalten.",
+    nutrition: [
+      { label: "Brennwert", value: "940 kJ / 223 kcal" },
+      { label: "Fett", value: "7,1 g" },
+      { label: "davon gesättigte Fettsäuren", value: "4,2 g", indent: true },
+      { label: "Kohlenhydrate", value: "28,3 g" },
+      { label: "davon Zucker", value: "2,5 g", indent: true },
+      { label: "Ballaststoffe", value: "2,3 g" },
+      { label: "Eiweiß", value: "10,5 g" },
+      { label: "Salz", value: "1,47 g" },
+    ],
   },
   // Rustikale Brote
   {
@@ -278,9 +310,26 @@ export const menuProducts: MenuProduct[] = [
     price: "7,40 €",
     description: "Schwarzbrot mit Knoblauchbutter, Käse, Speck, Zwiebeln und Schnittlauch",
     category: "Rustikale Brote",
-    allergens: "A,G",
+    allergens: "A,F,G",
     badge: "🔥 Beliebt",
-    origin: "Von unserem Partner Perplex: über 33 Jahre Erfahrung",
+    origin: perplexOrigin,
+    composition: "59% Schwarzbrot mit Butter, 15% Speck, 15% Käse, 5% Zwiebel",
+    ingredients: "Wasser, Roggenmehl, Käse, 13% Schweinebauch, Weizenmehl, Zwiebeln, Butter, Knoblauch, Speisesalz (Salz, Kaliumjodid), Sonnenblumenöl, Schnittlauch, Backhefe, Backmittel (Maisquellmehl, Säuerungsmittel (Citronensäure, Milchsäure), Emulgator Lecithine (Soja)), Gewürze, Konservierungsstoff (Natriumnitrit), Zucker, Tomatenpulver, Pfeffer, Aroma, Stabilisator (Natriumdiphosphat), Rauch, Dextrose.",
+    additives: [
+      { code: "2", name: "mit Konservierungsstoff (Natriumnitrit)" },
+      { code: "8", name: "mit Phosphat (Natriumdiphosphat)" },
+    ],
+    traceWarning: "Kann Spuren von Fisch und Senf enthalten.",
+    gmoFree: true,
+    nutrition: [
+      { label: "Brennwert", value: "1.127 kJ / 270 kcal" },
+      { label: "Fett", value: "15 g" },
+      { label: "davon gesättigte Fettsäuren", value: "7,2 g", indent: true },
+      { label: "Kohlenhydrate", value: "23 g" },
+      { label: "davon Zucker", value: "1,6 g", indent: true },
+      { label: "Eiweiß", value: "9,4 g" },
+      { label: "Salz", value: "1,8 g" },
+    ],
   },
   {
     id: "tomaten-mozzarella-brot",
@@ -288,8 +337,21 @@ export const menuProducts: MenuProduct[] = [
     price: "7,40 €",
     description: "Weizenbrot mit Basilikum, Mozzarella und Tomaten",
     category: "Rustikale Brote",
-    allergens: "A,G",
-    origin: "Von unserem Partner Perplex: über 33 Jahre Erfahrung",
+    allergens: "A,F,G",
+    origin: perplexOrigin,
+    composition: "62% Brot mit Butter, 18,9% Mozzarella, 16,8% Tomaten",
+    ingredients: "Weizenmehl, Wasser, Mozzarella, Tomaten, Butter, Roggenmehl, Basilikum, Speisesalz jodiert (Salz, Kaliumjodid), Backhefe, Backmittel (Maisquellmehl, Säuerungsmittel (Citronensäure, Milchsäure), Dextrose, Emulgator Lecithine (Soja)), Gluten, Weizenmalzmehl, Knoblauch, Zucker, Chili.",
+    traceWarning: "Kann Spuren von Fisch und Senf enthalten.",
+    gmoFree: true,
+    nutrition: [
+      { label: "Brennwert", value: "1.063 kJ / 254 kcal" },
+      { label: "Fett", value: "11 g" },
+      { label: "davon gesättigte Fettsäuren", value: "6,8 g", indent: true },
+      { label: "Kohlenhydrate", value: "27 g" },
+      { label: "davon Zucker", value: "3,2 g", indent: true },
+      { label: "Eiweiß", value: "10 g" },
+      { label: "Salz", value: "1,1 g" },
+    ],
   },
   {
     id: "raclettebrot",
@@ -298,7 +360,7 @@ export const menuProducts: MenuProduct[] = [
     description: "Schwarzbrot mit Knoblauchbutter, Raclettekäse und Lauch",
     category: "Rustikale Brote",
     allergens: "A,G",
-    origin: "Von unserem Partner Perplex: über 33 Jahre Erfahrung",
+    origin: perplexOrigin,
   },
   // Flammkuchen
   {
@@ -308,7 +370,25 @@ export const menuProducts: MenuProduct[] = [
     description: "Flammkuchencreme, Speck und Zwiebeln",
     category: "Flammkuchen",
     allergens: "A,G",
-    origin: "Von unserem Partner Perplex: über 33 Jahre Erfahrung",
+    origin: perplexOrigin,
+    composition: "39% Flammkuchenboden, 37% Flammkuchensoße, 13% Speck, 11% Zwiebeln",
+    ingredients: "Sauerrahm (28% Fett im Milchanteil), Weizenmehl, Trinkwasser, Schweinebauch, Zwiebeln, Rapsöl, jodiertes Speisesalz (Speisesalz, Kaliumjodat), Zucker, Gewürze, Konservierungsstoff (Natriumnitrit), Knoblauch, Gewürzextrakte, Tomatenpulver, Antioxidationsmittel (Ascorbinsäure), Raucharoma, Stabilisator (Diphosphate), Aromen, Hefe, Muskatnuss, Rauch.",
+    additives: [
+      { code: "2", name: "mit Konservierungsstoff (Natriumnitrit)" },
+      { code: "3", name: "mit Antioxidationsmittel (Ascorbinsäure)" },
+      { code: "8", name: "mit Phosphat (Diphosphate)" },
+    ],
+    traceWarning: "Kann Spuren von Fisch enthalten.",
+    gmoFree: true,
+    nutrition: [
+      { label: "Brennwert", value: "1.114 kJ / 268 kcal" },
+      { label: "Fett", value: "18,6 g" },
+      { label: "davon gesättigte Fettsäuren", value: "7,0 g", indent: true },
+      { label: "Kohlenhydrate", value: "18,9 g" },
+      { label: "davon Zucker", value: "1,8 g", indent: true },
+      { label: "Eiweiß", value: "5,7 g" },
+      { label: "Salz", value: "0,95 g" },
+    ],
   },
   {
     id: "flammkuchen-griechisch",
@@ -316,8 +396,25 @@ export const menuProducts: MenuProduct[] = [
     price: "6,30 €",
     description: "Flammkuchencreme, Peperoni, Hirtenkäse und bunter Pfeffer",
     category: "Flammkuchen",
-    allergens: "A,G",
-    origin: "Von unserem Partner Perplex: über 33 Jahre Erfahrung",
+    allergens: "A,G,L",
+    origin: perplexOrigin,
+    composition: "39% Flammkuchenboden, 37% Flammkuchensoße, 18% Hirtenkäse (45% Fett i. Tr.), 5% Pepperoni",
+    ingredients: "Sauerrahm (28% Fett im Milchanteil), Weizenmehl, Hirtenkäse, Trinkwasser, Pepperoni, Rapsöl, jodiertes Speisesalz (Speisesalz, Kaliumjodat), Pfeffer, Zucker, Paprika, Petersilie, Rosa Beeren, Hefe, Konservierungsstoff (Natriumbenzoat), Muskatnuss, Zitronensäure, Essigsäure, Antioxidationsmittel (Kaliummetabisulfit).",
+    additives: [
+      { code: "2", name: "mit Konservierungsstoff (Natriumbenzoat)" },
+      { code: "3", name: "mit Antioxidationsmittel (Kaliummetabisulfit)" },
+    ],
+    traceWarning: "Kann Spuren von Fisch enthalten.",
+    gmoFree: true,
+    nutrition: [
+      { label: "Brennwert", value: "1.087 kJ / 261 kcal" },
+      { label: "Fett", value: "16,9 g" },
+      { label: "davon gesättigte Fettsäuren", value: "7,5 g", indent: true },
+      { label: "Kohlenhydrate", value: "19,0 g" },
+      { label: "davon Zucker", value: "2,0 g", indent: true },
+      { label: "Eiweiß", value: "7,8 g" },
+      { label: "Salz", value: "1,20 g" },
+    ],
   },
   {
     id: "flammkuchen-mediterran",
@@ -326,7 +423,20 @@ export const menuProducts: MenuProduct[] = [
     description: "Flammkuchencreme, Hirtenkäse, gegrillte Paprika, Zucchini",
     category: "Flammkuchen",
     allergens: "A,G",
-    origin: "Von unserem Partner Perplex: über 33 Jahre Erfahrung",
+    origin: perplexOrigin,
+    composition: "34% Flammkuchenboden, 32% Flammkuchensoße, 9% Hirtenkäse (45% Fett i. Tr.), 9% Zucchini gegrillt",
+    ingredients: "Sauerrahm (28% Fett im Milchanteil), Weizenmehl, Paprika, Trinkwasser, Zucchini, Hirtenkäse, Rapsöl, Rosmarin, Thymian, jodiertes Speisesalz (Speisesalz, Kaliumjodat), Sonnenblumenöl, Zucker, Hefe, Muskatnuss.",
+    traceWarning: "Kann Spuren von Fisch enthalten.",
+    gmoFree: true,
+    nutrition: [
+      { label: "Brennwert", value: "909 kJ / 218 kcal" },
+      { label: "Fett", value: "13,4 g" },
+      { label: "davon gesättigte Fettsäuren", value: "5,5 g", indent: true },
+      { label: "Kohlenhydrate", value: "17,6 g" },
+      { label: "davon Zucker", value: "2,8 g", indent: true },
+      { label: "Eiweiß", value: "5,8 g" },
+      { label: "Salz", value: "0,71 g" },
+    ],
   },
   {
     id: "flammkuchen-lachs",
@@ -336,7 +446,20 @@ export const menuProducts: MenuProduct[] = [
     category: "Flammkuchen",
     allergens: "A,D,G",
     badge: "🔥 Beliebt",
-    origin: "Von unserem Partner Perplex: über 33 Jahre Erfahrung",
+    origin: perplexOrigin,
+    composition: "38% Flammkuchenboden, 36% Flammkuchensoße, 21% Lachs (Salmo Salar), 5% Lauch",
+    ingredients: "Sauerrahm (28% Fett im Milchanteil), Weizenmehl, Lachs, Trinkwasser, Lauch, Sonnenblumenöl, Jodsalz (Speisesalz, Kaliumjodat), Zucker, Hefe, Muskatnuss.",
+    traceWarning: "Kann Spuren von Fisch enthalten.",
+    gmoFree: true,
+    nutrition: [
+      { label: "Brennwert", value: "1.054 kJ / 253 kcal" },
+      { label: "Fett", value: "15,6 g" },
+      { label: "davon gesättigte Fettsäuren", value: "5,1 g", indent: true },
+      { label: "Kohlenhydrate", value: "18,8 g" },
+      { label: "davon Zucker", value: "1,5 g", indent: true },
+      { label: "Eiweiß", value: "8,7 g" },
+      { label: "Salz", value: "0,92 g" },
+    ],
   },
   // Snacks
   {
@@ -346,6 +469,21 @@ export const menuProducts: MenuProduct[] = [
     description: "Pizzasauce, Käse und Kirschtomaten",
     category: "Snacks",
     allergens: "A,G",
+    origin: perplexOrigin,
+    composition: "68% Pizzaboden mit Soße, 20% Gouda, 10% Kirschtomaten",
+    ingredients: "Weizenmehl, Käse, Trinkwasser, Kirschtomaten, Tomaten, Sonnenblumenöl, Jodsalz (Speisesalz, Kaliumjodat), Basilikum, Knoblauch, Zucker, Weizenmalzmehl, Oregano, Acerolapulver, Weizengluten, Hefe.",
+    traceWarning: "Kann Spuren von Fisch enthalten.",
+    gmoFree: true,
+    nutrition: [
+      { label: "Brennwert", value: "898 kJ / 214 kcal" },
+      { label: "Fett", value: "7,1 g" },
+      { label: "davon gesättigte Fettsäuren", value: "3,7 g", indent: true },
+      { label: "Kohlenhydrate", value: "26,2 g" },
+      { label: "davon Zucker", value: "0,9 g", indent: true },
+      { label: "Ballaststoffe", value: "1,7 g" },
+      { label: "Eiweiß", value: "10,3 g" },
+      { label: "Salz", value: "1,26 g" },
+    ],
   },
   {
     id: "pizzasnack-salami",
@@ -354,6 +492,24 @@ export const menuProducts: MenuProduct[] = [
     description: "Pizzasauce, Käse und Salami",
     category: "Snacks",
     allergens: "A,G",
+    origin: perplexOrigin,
+    composition: "74% Pizzaboden mit Soße, 13% Gouda, 13% Salami",
+    ingredients: "Weizenmehl, Trinkwasser, Käse, Tomaten, Schweinefleisch, Rindfleisch, Speck, Jodsalz (Speisesalz, Kaliumjodat), Sonnenblumenöl, Zucker, Weizenmalzmehl, Oregano, Gewürze, Weizengluten, Acerolapulver, Hefe, Antioxidationsmittel (Natriumascorbat, Rosmarinextrakt), Gewürzextrakt, Konservierungsstoff (Natriumnitrit), Dextrose, Rote Bete-Saftkonzentrat.",
+    additives: [
+      { code: "2", name: "mit Konservierungsstoff (Natriumnitrit)" },
+      { code: "3", name: "mit Antioxidationsmittel (Natriumascorbat, Rosmarinextrakt)" },
+    ],
+    traceWarning: "Kann Spuren von Fisch enthalten.",
+    gmoFree: true,
+    nutrition: [
+      { label: "Brennwert", value: "1.042 kJ / 248 kcal" },
+      { label: "Fett", value: "9,6 g" },
+      { label: "davon gesättigte Fettsäuren", value: "4,6 g", indent: true },
+      { label: "Kohlenhydrate", value: "28,0 g" },
+      { label: "davon Zucker", value: "0,5 g", indent: true },
+      { label: "Eiweiß", value: "11,6 g" },
+      { label: "Salz", value: "1,80 g" },
+    ],
   },
   // Getränke
   {
