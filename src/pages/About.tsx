@@ -102,7 +102,7 @@ const About = () => {
                   Wir träumten nicht nur von einem Zuhause mit Garten und Ruhe für unsere Kinder, sondern auch von einem Ort für die Gemeinschaft.
                 </p>
                 <p>
-                  Helena und Eugen sind die Foodies und Hobbyköche in der Familie und träumten schon immer von einer eigenen Gastronomie. Und was unsere ganze Familie immer verbunden hat, war der gemeinsame Sport, von Thaiboxen über Fußball bis hin zu Wanderungen haben wir alles zusammen als Familie gemacht.
+                  Unsere Tochter Melanie und Eugen sind die Foodies und Hobbyköche in der Familie und träumten schon immer von einer eigenen Gastronomie. Und was unsere ganze Familie immer verbunden hat, war der gemeinsame Sport, von Thaiboxen über Fußball bis hin zu Wanderungen haben wir alles zusammen als Familie gemacht.
                 </p>
                 <p>
                   Genau so einen Ort wollten wir auch für andere schaffen: einen Ort der Bewegung und einen Ort der Gemeinschaft. So wurde die Idee geboren, Eugen eröffnet als Personal Trainer sein eigenes Studio, und Helena leitet das Bistro. Für die Gemeinschaft.
