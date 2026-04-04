@@ -41,7 +41,7 @@ const About = () => {
         <div className="absolute inset-0 bg-black/30" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
           <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-4">
-            Zwei Bodensee-Kinder, ein Allgäuer Traum
+            Eine Familie, ein Traum, unsere Wahlheimat Allgäu
           </h1>
           <p className="text-white/85 text-lg md:text-xl max-w-xl">
             Die Geschichte hinter dem Bistro Boxenstopp
