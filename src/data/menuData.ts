@@ -66,6 +66,7 @@ import herbalifeTeeImage from "@/assets/herbalife-tee.png";
 import schwarzwaelderBaguetteImage from "@/assets/schwarzwaelder-laugen-baguette.png";
 import affogatoImage from "@/assets/affogato.png";
 import raclettebrotImage from "@/assets/raclettebrot-rustikal.jpg";
+import holzfaellerbrotImage from "@/assets/holzfaellerbrot-rustikal.jpg";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
@@ -523,6 +524,7 @@ export const menuProducts: MenuProduct[] = [
     allergens: "A,F,G",
     badge: "🔥 Beliebt",
     origin: perplexOrigin,
+    image: holzfaellerbrotImage,
     composition: "59% Schwarzbrot mit Butter, 15% Speck, 15% Käse, 5% Zwiebel",
     ingredients: "Wasser, Roggenmehl, Käse, 13% Schweinebauch, Weizenmehl, Zwiebeln, Butter, Knoblauch, Speisesalz (Salz, Kaliumjodid), Sonnenblumenöl, Schnittlauch, Backhefe, Backmittel (Maisquellmehl, Säuerungsmittel (Citronensäure, Milchsäure), Emulgator Lecithine (Soja)), Gewürze, Konservierungsstoff (Natriumnitrit), Zucker, Tomatenpulver, Pfeffer, Aroma, Stabilisator (Natriumdiphosphat), Rauch, Dextrose.",
     additives: [
