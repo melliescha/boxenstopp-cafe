@@ -590,7 +590,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Energy Herbalife LIFTOFF",
     price: "3,50 €",
     description: "Energiedrink",
-    category: "Heiße Getränke",
+    category: "Erfrischungsgetränke",
     allergens: "11",
     origin: "Herbalife Nutrition: Seed to Feed Qualitätskontrolle",
   },
