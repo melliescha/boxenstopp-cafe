@@ -441,6 +441,7 @@ export const menuProducts: MenuProduct[] = [
     description: "Espresso mit Vanilleeis",
     category: "Süßes",
     allergens: "G,11",
+    image: affogatoImage,
   },
   {
     id: "obst",
