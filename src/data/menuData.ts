@@ -235,6 +235,7 @@ export const menuProducts: MenuProduct[] = [
     price: "1,80 €",
     description: "In Bio-Qualität",
     category: "Heiße Getränke",
+    image: teeImage,
   },
   {
     id: "herbalife-tee",
