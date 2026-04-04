@@ -546,7 +546,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Electrolyte Herbalife-24",
     price: "2,90 €",
     description: "Isotonisches Sportgetränk",
-    category: "Getränke",
+    category: "Erfrischungsgetränke",
     origin: "Herbalife Nutrition: Seed to Feed Qualitätskontrolle",
   },
   {
