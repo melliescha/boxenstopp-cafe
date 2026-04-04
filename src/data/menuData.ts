@@ -52,6 +52,7 @@ import cappuccinoSchokoImage from "@/assets/cappuccino-schoko.png";
 import caffeLatteImage from "@/assets/caffe-latte.png";
 import latteMacchiatoImage from "@/assets/latte-macchiato.png";
 import boxenstoppSpezialImage from "@/assets/boxenstopp-spezial.png";
+import kakaoImage from "@/assets/kakao.png";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
