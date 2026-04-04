@@ -3,6 +3,7 @@ import { Droplets, Building2, GraduationCap, Handshake, Leaf, Zap, ShieldCheck, 
 import flammkuchenPartner from "@/assets/flammkuchen-partner.png";
 import herbalifelogo from "@/assets/herbalife-logo.png";
 import herbalifePartner from "@/assets/herbalife-partner.jpg";
+import perplexLogo from "@/assets/perplex-logo.jpg";
 
 const Partners = () => {
   return (
