@@ -397,6 +397,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Herbalife Tee",
     price: "2,50 €",
     description: "Kräutertee mit Grüntee-Extrakt",
+    image: herbalifeTeeImage,
     category: "Heiße Getränke",
     additives: [
       { code: "11", name: "koffeinhaltig" },
