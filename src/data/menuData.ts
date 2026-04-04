@@ -55,6 +55,7 @@ import boxenstoppSpezialImage from "@/assets/boxenstopp-spezial.png";
 import kakaoImage from "@/assets/kakao.png";
 import veganMatchaImage from "@/assets/vegan-matcha.png";
 import latteVanillaImage from "@/assets/latte-vanilla.png";
+import teeImage from "@/assets/tee.png";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
