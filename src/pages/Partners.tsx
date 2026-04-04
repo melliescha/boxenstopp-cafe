@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { Droplets, Building2, GraduationCap, Handshake, Leaf, Zap, ShieldCheck, Globe, Award, FlaskConical, Dumbbell } from "lucide-react";
 import flammkuchenPartner from "@/assets/flammkuchen-partner.png";
 import herbalifelogo from "@/assets/herbalife-logo.png";
+import herbalifePartner from "@/assets/herbalife-partner.jpg";
 
 const Partners = () => {
   return (
@@ -204,9 +205,12 @@ const Partners = () => {
             </div>
             {/* Image right */}
             <div className="order-1 md:order-2">
-              <div className="aspect-[4/3] rounded-2xl bg-secondary/60 flex items-center justify-center shadow-lg">
-                <span className="text-muted-foreground text-sm">Bunte Shakes, frisches Obst, sportliche Atmosphäre</span>
-              </div>
+              <img
+                src={herbalifePartner}
+                alt="Herbalife Nutrition – Shakes und sportliche Atmosphäre"
+                className="w-full aspect-[4/3] object-cover rounded-2xl shadow-lg"
+                loading="lazy"
+              />
             </div>
           </div>
 
