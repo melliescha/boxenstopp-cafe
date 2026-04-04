@@ -53,6 +53,7 @@ import caffeLatteImage from "@/assets/caffe-latte.png";
 import latteMacchiatoImage from "@/assets/latte-macchiato.png";
 import boxenstoppSpezialImage from "@/assets/boxenstopp-spezial.png";
 import kakaoImage from "@/assets/kakao.png";
+import veganMatchaImage from "@/assets/vegan-matcha.png";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
@@ -196,6 +197,7 @@ export const menuProducts: MenuProduct[] = [
     category: "Heiße Getränke",
     allergens: "F",
     badge: "🌱 Vegan",
+    image: veganMatchaImage,
   },
   {
     id: "kakao",
