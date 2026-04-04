@@ -2,22 +2,22 @@ import { X, Share2, ChevronDown } from "lucide-react";
 import { MenuProduct } from "@/data/menuData";
 import { useState } from "react";
 
-const allergenMap: Record<string, { icon: string; name: string }> = {
-  A: { icon: "🌾", name: "Glutenhaltiges Getreide" },
-  B: { icon: "🦐", name: "Krebstiere" },
-  C: { icon: "🥚", name: "Eier" },
-  D: { icon: "🐟", name: "Fisch" },
-  E: { icon: "🥜", name: "Erdnüsse" },
-  F: { icon: "🫘", name: "Soja" },
-  G: { icon: "🥛", name: "Milch / Laktose" },
-  H: { icon: "🌰", name: "Schalenfrüchte" },
-  I: { icon: "🥬", name: "Sellerie" },
-  J: { icon: "🟡", name: "Senf" },
-  K: { icon: "🫘", name: "Sesam" },
-  L: { icon: "🧪", name: "Schwefeldioxid / Sulfite" },
-  M: { icon: "🌿", name: "Lupinen" },
-  N: { icon: "🐚", name: "Weichtiere" },
-  "11": { icon: "☕", name: "Koffeinhaltig" },
+const allergenMap: Record<string, { icon: string; name: string; color: string }> = {
+  A: { icon: "🌾", name: "Glutenhaltiges Getreide", color: "bg-orange-100 text-orange-800 border-orange-300" },
+  B: { icon: "🦐", name: "Krebstiere", color: "bg-red-100 text-red-800 border-red-300" },
+  C: { icon: "🥚", name: "Eier", color: "bg-yellow-100 text-yellow-800 border-yellow-300" },
+  D: { icon: "🐟", name: "Fisch", color: "bg-teal-100 text-teal-800 border-teal-300" },
+  E: { icon: "🥜", name: "Erdnüsse", color: "bg-amber-100 text-amber-800 border-amber-300" },
+  F: { icon: "🫘", name: "Soja", color: "bg-green-100 text-green-800 border-green-300" },
+  G: { icon: "🥛", name: "Milch / Laktose", color: "bg-blue-100 text-blue-800 border-blue-300" },
+  H: { icon: "🌰", name: "Schalenfrüchte", color: "bg-amber-100 text-amber-800 border-amber-300" },
+  I: { icon: "🥬", name: "Sellerie", color: "bg-lime-100 text-lime-800 border-lime-300" },
+  J: { icon: "🟡", name: "Senf", color: "bg-yellow-100 text-yellow-800 border-yellow-300" },
+  K: { icon: "🫘", name: "Sesam", color: "bg-stone-100 text-stone-800 border-stone-300" },
+  L: { icon: "⚗️", name: "Schwefeldioxid / Sulfite", color: "bg-purple-100 text-purple-800 border-purple-300" },
+  M: { icon: "🌿", name: "Lupinen", color: "bg-emerald-100 text-emerald-800 border-emerald-300" },
+  N: { icon: "🐚", name: "Weichtiere", color: "bg-cyan-100 text-cyan-800 border-cyan-300" },
+  "11": { icon: "☕", name: "Koffeinhaltig", color: "bg-stone-100 text-stone-800 border-stone-300" },
 };
 
 interface Props {
@@ -67,6 +67,9 @@ const ProductDetailOverlay = ({ product, onClose }: Props) => {
   const parsedAllergens = product.allergens
     ? product.allergens.split(",").map((a) => a.trim())
     : [];
+
+  const hasRealIngredients = !!product.ingredients;
+  const hasRealNutrition = product.nutrition && product.nutrition.length > 0;
 
   return (
     <div className="fixed inset-0 z-[70] flex items-end sm:items-center justify-center">
@@ -122,7 +125,7 @@ const ProductDetailOverlay = ({ product, onClose }: Props) => {
                     key={v.label}
                     className="text-xs border border-bronze/30 rounded-lg px-3 py-1.5 text-foreground"
                   >
-                    {v.label} — {v.price}
+                    {v.label} · {v.price}
                   </span>
                 ))}
               </div>
@@ -131,26 +134,69 @@ const ProductDetailOverlay = ({ product, onClose }: Props) => {
 
           {/* Accordion sections */}
           <div className="mt-2">
-            <AccordionSection title="Zutaten & Inhaltsstoffe">
-              <p className="italic">[Zutaten werden noch ergänzt]</p>
+            <AccordionSection title="Zutaten & Inhaltsstoffe" defaultOpen={hasRealIngredients}>
+              {hasRealIngredients ? (
+                <div className="space-y-3">
+                  {product.composition && (
+                    <div className="bg-secondary/40 rounded-lg p-3">
+                      <p className="text-xs font-semibold text-foreground mb-1">Zusammensetzung:</p>
+                      <p className="text-xs">{product.composition}</p>
+                    </div>
+                  )}
+                  <div>
+                    <p className="text-xs font-semibold text-foreground mb-1">Zutaten:</p>
+                    <p className="text-xs leading-relaxed">{product.ingredients}</p>
+                  </div>
+                </div>
+              ) : (
+                <p className="italic">[Zutaten werden noch ergänzt]</p>
+              )}
             </AccordionSection>
 
             <AccordionSection title="Allergene" defaultOpen={parsedAllergens.length > 0}>
               {parsedAllergens.length > 0 ? (
-                <div className="space-y-1.5">
-                  {parsedAllergens.map((code) => {
-                    const info = allergenMap[code];
-                    return info ? (
-                      <p key={code}>
-                        {info.icon} <span className="font-medium">{code}</span> — {info.name}
-                      </p>
-                    ) : (
-                      <p key={code}>
-                        <span className="font-medium">{code}</span> — [wird noch ergänzt]
-                      </p>
-                    );
-                  })}
-                  <p className="text-xs italic mt-2">
+                <div className="space-y-3">
+                  <div className="flex flex-wrap gap-2">
+                    {parsedAllergens.map((code) => {
+                      const info = allergenMap[code];
+                      if (!info) return (
+                        <span key={code} className="text-xs border rounded-full px-3 py-1 font-medium">
+                          {code}
+                        </span>
+                      );
+                      return (
+                        <span
+                          key={code}
+                          className={`text-xs border rounded-full px-3 py-1.5 font-medium inline-flex items-center gap-1 ${info.color}`}
+                        >
+                          {info.icon} {code} · {info.name}
+                        </span>
+                      );
+                    })}
+                  </div>
+
+                  {/* Additives */}
+                  {product.additives && product.additives.length > 0 && (
+                    <div>
+                      <p className="text-xs font-semibold text-foreground mb-1">Zusatzstoffe:</p>
+                      <div className="space-y-0.5">
+                        {product.additives.map((a) => (
+                          <p key={a.code} className="text-xs">
+                            <span className="font-medium">{a.code}</span> · {a.name}
+                          </p>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Trace warning */}
+                  {product.traceWarning && (
+                    <p className="text-xs italic text-muted-foreground">
+                      {product.traceWarning}
+                    </p>
+                  )}
+
+                  <p className="text-xs italic mt-1">
                     Bei Fragen zu Allergenen sprich uns bitte direkt an.
                   </p>
                 </div>
@@ -159,8 +205,26 @@ const ProductDetailOverlay = ({ product, onClose }: Props) => {
               )}
             </AccordionSection>
 
-            <AccordionSection title="Nährwerte">
-              <p className="italic">[Nährwerte werden noch ergänzt]</p>
+            <AccordionSection title="Nährwerte pro 100g" defaultOpen={!!hasRealNutrition}>
+              {hasRealNutrition ? (
+                <div className="rounded-lg overflow-hidden border border-border">
+                  {product.nutrition!.map((row, i) => (
+                    <div
+                      key={row.label}
+                      className={`flex justify-between px-3 py-2 text-xs ${
+                        i % 2 === 0 ? "bg-card" : "bg-secondary/30"
+                      }`}
+                    >
+                      <span className={`${row.indent ? "pl-3 text-muted-foreground" : "font-medium text-foreground"}`}>
+                        {row.label}
+                      </span>
+                      <span className="font-medium text-foreground">{row.value}</span>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <p className="italic">[Nährwerte werden noch ergänzt]</p>
+              )}
             </AccordionSection>
 
             {product.origin && (
