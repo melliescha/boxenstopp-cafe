@@ -345,6 +345,7 @@ export const menuProducts: MenuProduct[] = [
     description: "Vanille-Milchgetränk",
     category: "Heiße Getränke",
     allergens: "G",
+    badge: "🧒 Kinder-Liebling",
     variants: [
       { label: "Klein", price: "2,00 €" },
       { label: "Mittel", price: "2,60 €" },
