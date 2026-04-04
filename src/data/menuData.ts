@@ -66,6 +66,7 @@ import herbalifeTeeImage from "@/assets/herbalife-tee.png";
 import schwarzwaelderBaguetteImage from "@/assets/schwarzwaelder-laugen-baguette.png";
 import affogatoImage from "@/assets/affogato.png";
 import raclettebrotImage from "@/assets/raclettebrot-rustikal.jpg";
+import holzfaellerbrotImage from "@/assets/holzfaellerbrot-rustikal.jpg";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
