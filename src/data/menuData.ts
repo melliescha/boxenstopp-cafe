@@ -122,6 +122,7 @@ export const menuProducts: MenuProduct[] = [
       { label: "Groß", price: "3,40 €" },
     ],
     origin: "In Zusammenarbeit mit Cup&Cino: Barista-Qualität",
+    image: caffeLatteImage,
   },
   {
     id: "cappuccino",
