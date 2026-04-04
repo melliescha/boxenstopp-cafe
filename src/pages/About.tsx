@@ -99,13 +99,13 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Unser Traum war immer: ein eigenes Zuhause, Selbstständigkeit und ein Ort, an dem sich
-                  Menschen wohlfühlen. In Hergatz-Wohmbrechts haben wir genau das gefunden.
+                  Wir träumten nicht nur von einem Zuhause mit Garten und Ruhe für unsere Kinder, sondern auch von einem Ort für die Gemeinschaft.
                 </p>
                 <p>
-                  So entstand zuerst FITES Allgäu, Eugens Fitnessstudio mit kleinen Gruppen und persönlicher
-                  Betreuung. Und weil zum Wohlfühlen mehr gehört als nur Training, kam das Bistro Boxenstopp
-                  dazu: ein Ort zum Auftanken, Durchatmen und Genießen. Für alle, nicht nur für Sportler.
+                  Helena und Eugen sind die Foodies und Hobbyköche in der Familie und träumten schon immer von einer eigenen Gastronomie. Und was unsere ganze Familie immer verbunden hat, war der gemeinsame Sport, von Thaiboxen über Fußball bis hin zu Wanderungen haben wir alles zusammen als Familie gemacht.
+                </p>
+                <p>
+                  Genau so einen Ort wollten wir auch für andere schaffen: einen Ort der Bewegung und einen Ort der Gemeinschaft. So wurde die Idee geboren, Eugen eröffnet als Personal Trainer sein eigenes Studio, und Helena leitet das Bistro. Für die Gemeinschaft.
                 </p>
               </div>
             </div>
