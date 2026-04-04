@@ -58,6 +58,7 @@ import latteVanillaImage from "@/assets/latte-vanilla.png";
 import teeImage from "@/assets/tee.png";
 import flammkuchenLachsImage from "@/assets/flammkuchen-lachs.png";
 import flammkuchenElsaesserImage from "@/assets/flammkuchen-elsaesser.png";
+import flammkuchenMediterranImage from "@/assets/flammkuchen-mediterran.png";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
@@ -635,6 +636,7 @@ export const menuProducts: MenuProduct[] = [
       { label: "Eiweiß", value: "5,8 g" },
       { label: "Salz", value: "0,71 g" },
     ],
+    image: flammkuchenMediterranImage,
   },
   {
     id: "flammkuchen-lachs",
