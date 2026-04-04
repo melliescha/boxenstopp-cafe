@@ -530,7 +530,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Säfte (verschiedene Sorten)",
     price: "2,50 €",
     description: "Fruchtige Auswahl",
-    category: "Getränke",
+    category: "Erfrischungsgetränke",
     volume: "0,25l",
   },
   {
