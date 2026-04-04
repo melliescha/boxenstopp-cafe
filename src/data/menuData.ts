@@ -27,6 +27,7 @@ export interface MenuProduct {
   additives?: AdditiveInfo[];
   traceWarning?: string;
   gmoFree?: boolean;
+  image?: string;
 }
 
 export const menuCategories = [
