@@ -85,7 +85,7 @@ const Index = () => {
         <p className="font-serif" style={{ color: "#164472", fontSize: "28px", fontWeight: 500 }}>
           Hergatz' bestgehütetes Geheimnis
         </p>
-        <div style={{ marginTop: "8px" }}>
+        <div style={{ marginTop: "24px" }}>
           <Link
             to="/speisekarte"
             className="inline-block rounded-lg font-medium text-white hover:opacity-90 transition-opacity"
