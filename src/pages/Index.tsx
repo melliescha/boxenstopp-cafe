@@ -4,7 +4,7 @@ import Layout from "@/components/Layout";
 import { ReviewCarousel, ReviewSummaryBadges, ReviewCTA } from "@/components/ReviewSection";
 import BestsellerSection from "@/components/BestsellerSection";
 import heroBg from "@/assets/hero-bistro.jpg";
-import logoIcon from "@/assets/logo-icon.png";
+import heroLogoSchriftzug from "@/assets/hero-logo-schriftzug.png";
 
 
 const highlights = [
@@ -71,11 +71,10 @@ const Index = () => {
         </div>
         <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
           <img
-            src={logoIcon}
-            alt=""
-            className="w-20 md:w-28 mx-auto mb-4 drop-shadow-lg animate-fade-in-up"
+            src={heroLogoSchriftzug}
+            alt="Bistro Boxenstopp"
+            className="w-[70%] md:w-[50%] max-w-xl mx-auto mb-6 drop-shadow-lg animate-fade-in-up brightness-0 invert"
           />
-          <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-2 animate-fade-in-up drop-shadow-lg">Bistro Boxenstopp</h1>
           <p className="font-serif text-xl md:text-2xl text-white/90 mb-8 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
             Hergatz' bestgehütetes Geheimnis
           </p>
