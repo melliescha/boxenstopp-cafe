@@ -21,6 +21,7 @@ const founders = [
     role: "Gründer, Trainer & Gastgeber",
     image: founderEugen,
     alt: "Eugen Schall, Gründer und Gastgeber des Bistro Boxenstopp",
+    objectPosition: "center top",
     text: "Eugen ist zertifizierter Fitness-Trainer mit über 10 Jahren Erfahrung und das Herz hinter FITES Allgäu. Seine Vision: Fitness und Genuss unter einem Dach, in einer Atmosphäre, die sich anfühlt wie bei Freunden.",
   },
 ];
@@ -156,12 +157,13 @@ const About = () => {
                 key={f.name}
                 className="bg-card rounded-xl p-8 text-center border border-bronze/20 shadow-sm"
               >
-                <div className="w-36 h-36 rounded-full mx-auto mb-6 overflow-hidden ring-4 ring-bronze/30">
+                <div className="w-36 h-36 rounded-full mx-auto mb-6 overflow-hidden" style={{ border: '3px solid #9e7c4e' }}>
                   <img
                     src={f.image}
                     alt={f.alt}
                     loading="lazy"
                     className="w-full h-full object-cover"
+                    style={{ objectPosition: f.objectPosition || 'center center' }}
                   />
                 </div>
                 <h3 className="font-serif text-2xl font-bold text-foreground mb-1">{f.name}</h3>
