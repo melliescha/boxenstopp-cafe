@@ -73,7 +73,7 @@ const Index = () => {
               <img
                 src={heroLogoSchriftzug}
                 alt="Bistro Boxenstopp"
-                className="w-[65%] max-w-2xl mx-auto mb-2 animate-fade-in-up rounded-xl shadow-2xl"
+                className="w-[80%] max-w-[600px] mx-auto mb-2 animate-fade-in-up rounded-xl shadow-2xl"
               />
               <p className="font-serif text-base text-white mb-2 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
                 Hergatz' bestgehütetes Geheimnis
