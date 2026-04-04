@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { Droplets, Building2, GraduationCap, Handshake, Leaf, Zap, ShieldCheck, Globe, Award, FlaskConical, Dumbbell } from "lucide-react";
+import flammkuchenPartner from "@/assets/flammkuchen-partner.png";
 
 const Partners = () => {
   return (
@@ -50,9 +51,12 @@ const Partners = () => {
             </div>
             {/* Image right */}
             <div className="order-1 md:order-2">
-              <div className="aspect-[4/3] rounded-2xl bg-secondary/60 flex items-center justify-center shadow-lg">
-                <span className="text-muted-foreground text-sm">Flammkuchen, goldbraun, frisch aus dem Ofen</span>
-              </div>
+              <img
+                src={flammkuchenPartner}
+                alt="Vier verschiedene Flammkuchen auf Holzbrettern"
+                className="w-full aspect-[4/3] object-cover rounded-2xl shadow-lg"
+                loading="lazy"
+              />
             </div>
           </div>
 
