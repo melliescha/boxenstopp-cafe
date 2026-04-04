@@ -59,6 +59,7 @@ import teeImage from "@/assets/tee.png";
 import flammkuchenLachsImage from "@/assets/flammkuchen-lachs.png";
 import flammkuchenElsaesserImage from "@/assets/flammkuchen-elsaesser.png";
 import flammkuchenMediterranImage from "@/assets/flammkuchen-mediterran.png";
+import flammkuchenGriechischImage from "@/assets/flammkuchen-griechisch.png";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
