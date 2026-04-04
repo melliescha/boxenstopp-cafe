@@ -67,7 +67,7 @@ const Index = () => {
             height={1080}
             className="w-full h-auto object-cover"
           />
-          <div className="absolute inset-0 bg-black/35" />
+          <div className="absolute inset-0 bg-black/15" />
           <div className="absolute inset-0 flex items-center justify-center px-6">
             <img
               src={heroLogoSchriftzug}
