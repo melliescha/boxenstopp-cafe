@@ -76,7 +76,10 @@ const MenuTileView = () => {
               {product.badge && (
                 <span
                   className="absolute top-2 left-2 text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full"
-                  style={{ backgroundColor: "#b8943e", color: "#fff" }}
+                  style={{
+                    backgroundColor: product.badge.includes("Kinder") ? "rgba(234, 145, 50, 0.85)" : "#b8943e",
+                    color: "#fff",
+                  }}
                 >
                   {product.badge}
                 </span>
