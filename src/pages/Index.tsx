@@ -70,12 +70,17 @@ const Index = () => {
           />
           <div className="absolute inset-0 bg-black/35" />
         </div>
-        <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
+        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+          <img
+            src={logoIcon}
+            alt=""
+            className="w-20 md:w-28 mx-auto mb-4 drop-shadow-lg animate-fade-in-up"
+          />
           <img
             src={heroLogoSchriftzug}
             alt="Bistro Boxenstopp"
-            className="w-[90%] md:w-[75%] max-w-3xl mx-auto mb-6 animate-fade-in-up"
-            style={{ filter: "invert(1) drop-shadow(0 4px 24px rgba(0,0,0,0.5))", mixBlendMode: "screen" }}
+            className="w-full md:w-[85%] max-w-4xl mx-auto mb-6 animate-fade-in-up"
+            style={{ mixBlendMode: "screen", filter: "invert(1)" }}
           />
           <p className="font-serif text-xl md:text-2xl text-white/90 mb-8 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
             Hergatz' bestgehütetes Geheimnis
