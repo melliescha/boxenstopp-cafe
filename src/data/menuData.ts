@@ -577,7 +577,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Proteinriegel (nach Wahl)",
     price: "2,50 € – 3,90 €",
     description: "Verschiedene Geschmacksrichtungen",
-    category: "Herbalife",
+    category: "Snacks",
     variants: [
       { label: "Standard", price: "2,50 €" },
       { label: "Premium", price: "3,90 €" },
