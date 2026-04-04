@@ -72,8 +72,7 @@ const Index = () => {
             <img
               src={heroLogoSchriftzug}
               alt="Bistro Boxenstopp"
-              className="w-[65%] max-w-2xl animate-fade-in-up"
-              style={{ mixBlendMode: "multiply" }}
+              className="w-[65%] max-w-2xl animate-fade-in-up relative z-10 rounded-xl shadow-2xl"
             />
           </div>
         </div>
