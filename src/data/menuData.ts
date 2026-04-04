@@ -56,6 +56,7 @@ import kakaoImage from "@/assets/kakao.png";
 import veganMatchaImage from "@/assets/vegan-matcha.png";
 import latteVanillaImage from "@/assets/latte-vanilla.png";
 import teeImage from "@/assets/tee.png";
+import flammkuchenLachsImage from "@/assets/flammkuchen-lachs.png";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
