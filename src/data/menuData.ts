@@ -44,6 +44,7 @@ export const menuCategories = [
 const perplexOrigin = "Von unserem Partner Perplex: Pizza & Baguette Deutschland GmbH, seit über 33 Jahren. Ohne Gentechnik hergestellt gemäß Codexrichtlinie. Kontrolle durch agroVet GmbH.";
 
 import espressoImage from "@/assets/espresso.png";
+import caffeCremaImage from "@/assets/caffe-crema.png";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
