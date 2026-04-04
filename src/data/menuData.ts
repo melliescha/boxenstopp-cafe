@@ -196,6 +196,7 @@ export const menuProducts: MenuProduct[] = [
     category: "Heiße Getränke",
     allergens: "F",
     badge: "🌱 Vegan",
+    image: veganMatchaImage,
   },
   {
     id: "kakao",
