@@ -81,15 +81,15 @@ const Index = () => {
       </section>
 
       {/* Slogan + CTA */}
-      <section className="py-8 text-center" style={{ backgroundColor: "#fef4ec" }}>
-        <p className="font-serif" style={{ color: "#164472", fontSize: "22px", fontWeight: 500 }}>
+      <section className="text-center" style={{ backgroundColor: "#fef4ec", paddingTop: "16px", paddingBottom: "20px" }}>
+        <p className="font-serif" style={{ color: "#164472", fontSize: "28px", fontWeight: 500 }}>
           Hergatz' bestgehütetes Geheimnis
         </p>
-        <div style={{ marginTop: "12px" }}>
+        <div style={{ marginTop: "8px" }}>
           <Link
             to="/speisekarte"
             className="inline-block rounded-lg font-medium text-white hover:opacity-90 transition-opacity"
-            style={{ backgroundColor: "#b8943e", padding: "14px 36px", fontSize: "18px" }}
+            style={{ backgroundColor: "#b8943e", padding: "10px 24px", fontSize: "14px" }}
           >
             Speisekarte ansehen
           </Link>
@@ -97,9 +97,9 @@ const Index = () => {
       </section>
 
       {/* Welcome */}
-      <section className="py-20 bg-background">
+      <section className="py-6 bg-background">
         <div className="container mx-auto px-6 max-w-3xl text-center">
-          <div className="divider-bronze mb-6" />
+          <div className="divider-bronze mb-4" />
           <p className="text-lg leading-relaxed text-muted-foreground mb-4">
             Zugegeben: Man muss uns erstmal finden. Das Bistro Boxenstopp liegt versteckt in einer
             ruhigen Wohnsiedlung in Hergatz-Wohmbrechts, aber genau das macht uns aus.
@@ -109,7 +109,7 @@ const Index = () => {
             einer im Sommer angenehm kühlen Terrasse und echter Allgäuer Gastfreundschaft.
             Von Helena und Eugen, für alle.
           </p>
-          <div className="divider-bronze mt-6" />
+          <div className="divider-bronze mt-4" />
         </div>
       </section>
 
