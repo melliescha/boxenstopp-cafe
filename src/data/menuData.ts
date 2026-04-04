@@ -538,7 +538,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Alkoholfreies Bier",
     price: "3,00 €",
     description: "Nach Wahl",
-    category: "Getränke",
+    category: "Erfrischungsgetränke",
     volume: "0,33l",
   },
   {
