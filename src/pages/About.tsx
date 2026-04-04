@@ -119,12 +119,10 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Der Name ist Programm: Bei uns machst du einen kurzen Boxenstopp, ob auf der Radtour,
-                  nach dem Training oder einfach, weil du Lust auf guten Kaffee hast.
+                  Der Name ist Programm. Du machst bei uns einen Boxenstopp, egal ob du gerade eine Pause bei deiner Fahrradtour brauchst, auf einer Wanderung bist, auf dem Weg nach Hause von der Arbeit nochmal innehalten willst, oder einfach einen Boxenstopp vom Alltag brauchst.
                 </p>
-                <p>
-                  Wir liegen direkt an der Leiblachroute und am Bodensee-Königssee-Radweg. Ja, man muss uns
-                  erstmal finden, aber genau das macht uns besonders. Wer einmal da war, kommt wieder. Versprochen.
+                <p className="font-serif italic text-lg md:text-xl text-center" style={{ color: '#9e7c4e' }}>
+                  Der Boxenstopp ist die Pause, die du dir verdient hast.
                 </p>
               </div>
             </div>
