@@ -59,7 +59,7 @@ const Index = () => {
     <Layout>
       {/* Hero */}
       {/* Hero */}
-      <section className="relative overflow-hidden h-[50vh]">
+      <section className="relative overflow-hidden h-[55vh]">
         <div className="relative h-full">
           <img
             src={heroBg}
