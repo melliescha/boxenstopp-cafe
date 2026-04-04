@@ -73,15 +73,15 @@ const Index = () => {
               <img
                 src={heroLogoSchriftzug}
                 alt="Bistro Boxenstopp"
-                className="w-[65%] max-w-2xl mx-auto mb-6 animate-fade-in-up rounded-xl shadow-2xl"
+                className="w-[65%] max-w-2xl mx-auto mb-2 animate-fade-in-up rounded-xl shadow-2xl"
               />
-              <p className="font-serif text-xl md:text-2xl text-white mb-6 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
+              <p className="font-serif text-base text-white mb-2 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
                 Hergatz' bestgehütetes Geheimnis
               </p>
               <div className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
                 <Link
                   to="/speisekarte"
-                  className="inline-block px-8 py-3 rounded-lg font-medium text-white hover:opacity-90 transition-opacity"
+                  className="inline-block px-6 py-2 rounded-lg font-medium text-white text-sm hover:opacity-90 transition-opacity"
                   style={{ backgroundColor: "#b8943e" }}
                 >
                   Speisekarte ansehen
