@@ -66,16 +66,10 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Wir sind Helena und Eugen Schall, und das Bistro Boxenstopp ist unser Herzensprojekt.
+                  Wir sind Helena und Eugen, eigentlich vom Bodensee. Eugen arbeitet bereits seit 15 Jahren in Hergensweiler, und so haben wir die Region nach und nach kennengelernt. Wir verbrachten immer mehr Zeit im Allgäu, auf Wanderungen, in den Thermen, auf Fahrradtouren. Und nach und nach haben wir uns verliebt. Vor allem in das Städtchen Wangen.
                 </p>
                 <p>
-                  Angefangen hat alles 2019, als wir noch in Überlingen am Bodensee lebten. Über Friedrichshafen
-                  hat es uns immer weiter Richtung Berge gezogen. Bei einem Wanderausflug ins Allgäu haben wir
-                  zum ersten Mal die Stadt Wangen besucht, und uns sofort heimisch gefühlt.
-                </p>
-                <p>
-                  Die Idylle, die freundlichen Menschen, die Natur: das war es. Hier wollten wir leben,
-                  Wurzeln schlagen und unseren Traum verwirklichen.
+                  Es war für uns nicht nur die Natur, es waren vor allem die herzlichen Menschen und die Idylle, die das Allgäu so besonders machen. Irgendwann stand fest: Hier möchten wir hinziehen, Wurzeln schlagen und uns den Traum vom Eigenheim und der Selbstständigkeit erfüllen.
                 </p>
               </div>
             </div>
