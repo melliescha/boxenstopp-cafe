@@ -43,7 +43,7 @@ const About = () => {
           <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-4">
             Eine Familie, ein Traum, unsere Wahlheimat Allgäu
           </h1>
-          <p className="text-white/85 text-lg md:text-xl max-w-xl">
+          <p className="text-white/85 text-lg md:text-xl max-w-xl mx-auto">
             Die Geschichte hinter dem Bistro Boxenstopp
           </p>
         </div>
