@@ -589,7 +589,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Müsliriegel Expressmahlzeit",
     price: "3,90 €",
     description: "Vollwertige Zwischenmahlzeit",
-    category: "Herbalife",
+    category: "Snacks",
     origin: "Herbalife Nutrition: Seed to Feed Qualitätskontrolle",
   },
   {
