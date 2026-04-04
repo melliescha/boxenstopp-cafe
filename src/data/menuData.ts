@@ -564,7 +564,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Protein-Shake Herbalife",
     price: "2,50 € – 4,50 €",
     description: "Nährshakes mit Vitaminen",
-    category: "Herbalife",
+    category: "Shakes",
     allergens: "F,G",
     variants: [
       { label: "Klein", price: "2,50 €" },
