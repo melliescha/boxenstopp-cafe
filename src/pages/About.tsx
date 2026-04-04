@@ -14,6 +14,7 @@ const founders = [
     role: "Gastgeberin & gute Seele",
     image: founderHelena,
     alt: "Helena Schall, Gastgeberin des Bistro Boxenstopp",
+    objectPosition: "center top",
     text: "Helena sorgt dafür, dass sich jeder Gast wie zu Hause fühlt. Sie kümmert sich um alles, was das Bistro ausmacht: vom frischen Kaffee bis zum warmen Empfang.",
   },
   {
