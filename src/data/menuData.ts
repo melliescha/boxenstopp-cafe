@@ -89,6 +89,7 @@ export const menuProducts: MenuProduct[] = [
       { label: "XL", price: "3,20 €" },
     ],
     origin: "In Zusammenarbeit mit Cup&Cino: Barista-Qualität",
+    image: caffeCremaImage,
   },
   // Milchkaffee
   {
