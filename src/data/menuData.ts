@@ -67,6 +67,7 @@ import schwarzwaelderBaguetteImage from "@/assets/schwarzwaelder-laugen-baguette
 import affogatoImage from "@/assets/affogato.png";
 import raclettebrotImage from "@/assets/raclettebrot-rustikal.jpg";
 import holzfaellerbrotImage from "@/assets/holzfaellerbrot-rustikal.jpg";
+import tomatenMozzarellaBrotImage from "@/assets/tomaten-mozzarella-brot.jpg";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
@@ -551,6 +552,7 @@ export const menuProducts: MenuProduct[] = [
     category: "Herzhaft & Ofenfrisch",
     allergens: "A,F,G",
     origin: perplexOrigin,
+    image: tomatenMozzarellaBrotImage,
     composition: "62% Brot mit Butter, 18,9% Mozzarella, 16,8% Tomaten",
     ingredients: "Weizenmehl, Wasser, Mozzarella, Tomaten, Butter, Roggenmehl, Basilikum, Speisesalz jodiert (Salz, Kaliumjodid), Backhefe, Backmittel (Maisquellmehl, Säuerungsmittel (Citronensäure, Milchsäure), Dextrose, Emulgator Lecithine (Soja)), Gluten, Weizenmalzmehl, Knoblauch, Zucker, Chili.",
     traceWarning: "Kann Spuren von Fisch und Senf enthalten.",
