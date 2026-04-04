@@ -39,7 +39,7 @@ const About = () => {
           height={800}
         />
         <div className="absolute inset-0 bg-black/30" />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+        <div className="absolute left-1/2 -translate-x-1/2 bottom-[15%] text-center px-6 w-full">
           <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-4">
             Eine Familie, ein Traum, unsere Wahlheimat Allgäu
           </h1>
