@@ -4,7 +4,7 @@ import Layout from "@/components/Layout";
 import { ReviewCarousel, ReviewSummaryBadges, ReviewCTA } from "@/components/ReviewSection";
 import BestsellerSection from "@/components/BestsellerSection";
 import heroBg from "@/assets/hero-bistro.jpg";
-import logoIcon from "@/assets/logo-icon.png";
+import heroLogoSchriftzug from "@/assets/hero-logo-schriftzug.png";
 
 
 const highlights = [
