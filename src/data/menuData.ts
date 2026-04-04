@@ -209,6 +209,14 @@ export const menuProducts: MenuProduct[] = [
     description: "In Bio-Qualität",
     category: "Heiße Getränke",
   },
+  {
+    id: "herbalife-tee",
+    name: "Herbalife Tee",
+    price: "2,50 €",
+    description: "Kräutertee mit Grüntee-Extrakt",
+    category: "Heiße Getränke",
+    origin: "Herbalife Nutrition: Seed to Feed Qualitätskontrolle",
+  },
   // Süßes
   {
     id: "donut",
