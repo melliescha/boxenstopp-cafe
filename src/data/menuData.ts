@@ -47,6 +47,7 @@ import espressoImage from "@/assets/espresso.png";
 import caffeCremaImage from "@/assets/caffe-crema.png";
 import americanoImage from "@/assets/americano.png";
 import flatWhiteImage from "@/assets/flat-white.png";
+import cappuccinoImage from "@/assets/cappuccino.png";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
@@ -133,6 +134,7 @@ export const menuProducts: MenuProduct[] = [
       { label: "Groß", price: "3,40 €" },
     ],
     origin: "In Zusammenarbeit mit Cup&Cino: Barista-Qualität",
+    image: cappuccinoImage,
   },
   {
     id: "cappuccino-schoko-vanille",
