@@ -62,6 +62,7 @@ import flammkuchenMediterranImage from "@/assets/flammkuchen-mediterran.png";
 import flammkuchenGriechischImage from "@/assets/flammkuchen-griechisch.png";
 import grillgemueseBaguetteImage from "@/assets/grillgemuese-baguette.png";
 import fitnessBaguetteImage from "@/assets/fitness-baguette.png";
+import herbalifeTeeImage from "@/assets/herbalife-tee.png";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
@@ -396,6 +397,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Herbalife Tee",
     price: "2,50 €",
     description: "Kräutertee mit Grüntee-Extrakt",
+    image: herbalifeTeeImage,
     category: "Heiße Getränke",
     additives: [
       { code: "11", name: "koffeinhaltig" },
