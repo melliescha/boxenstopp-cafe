@@ -67,28 +67,29 @@ const Index = () => {
             height={1080}
             className="w-full h-auto object-cover"
           />
-          <div className="absolute inset-0 bg-black/15" />
-          <div className="absolute inset-0 flex items-center justify-center px-6">
-            <img
-              src={heroLogoSchriftzug}
-              alt="Bistro Boxenstopp"
-              className="w-[65%] max-w-2xl animate-fade-in-up relative z-10 rounded-xl shadow-2xl"
-            />
+          <div className="absolute inset-0 bg-black/35" />
+          <div className="absolute inset-0 flex items-center justify-center px-6 z-10">
+            <div className="text-center">
+              <img
+                src={heroLogoSchriftzug}
+                alt="Bistro Boxenstopp"
+                className="w-[65%] max-w-2xl mx-auto mb-6 animate-fade-in-up rounded-xl shadow-2xl"
+              />
+              <p className="font-serif text-xl md:text-2xl text-white mb-6 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
+                Hergatz' bestgehütetes Geheimnis
+              </p>
+              <div className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+                <Link
+                  to="/speisekarte"
+                  className="inline-block px-8 py-3 rounded-lg font-medium text-white hover:opacity-90 transition-opacity"
+                  style={{ backgroundColor: "#b8943e" }}
+                >
+                  Speisekarte ansehen
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-
-      {/* Slogan + CTA */}
-      <section className="py-10 bg-background text-center">
-        <p className="font-serif text-xl md:text-2xl text-muted-foreground mb-6">
-          Hergatz' bestgehütetes Geheimnis
-        </p>
-        <Link
-          to="/speisekarte"
-          className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
-        >
-          Speisekarte ansehen
-        </Link>
       </section>
 
       {/* Welcome */}
