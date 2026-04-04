@@ -60,6 +60,7 @@ import flammkuchenLachsImage from "@/assets/flammkuchen-lachs.png";
 import flammkuchenElsaesserImage from "@/assets/flammkuchen-elsaesser.png";
 import flammkuchenMediterranImage from "@/assets/flammkuchen-mediterran.png";
 import flammkuchenGriechischImage from "@/assets/flammkuchen-griechisch.png";
+import grillgemueseBaguetteImage from "@/assets/grillgemuese-baguette.png";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
@@ -461,6 +462,7 @@ export const menuProducts: MenuProduct[] = [
     category: "Herzhaft & Ofenfrisch",
     allergens: "A,G",
     origin: perplexOrigin,
+    image: grillgemueseBaguetteImage,
   },
   {
     id: "schwarzwaelder-baguette",
