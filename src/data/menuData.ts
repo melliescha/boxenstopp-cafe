@@ -168,6 +168,7 @@ export const menuProducts: MenuProduct[] = [
       { label: "Groß", price: "3,80 €" },
     ],
     origin: "In Zusammenarbeit mit Cup&Cino: Barista-Qualität",
+    image: latteMacchiatoImage,
   },
   {
     id: "flat-white",
