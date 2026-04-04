@@ -63,6 +63,7 @@ import flammkuchenGriechischImage from "@/assets/flammkuchen-griechisch.png";
 import grillgemueseBaguetteImage from "@/assets/grillgemuese-baguette.png";
 import fitnessBaguetteImage from "@/assets/fitness-baguette.png";
 import herbalifeTeeImage from "@/assets/herbalife-tee.png";
+import schwarzwaelderBaguetteImage from "@/assets/schwarzwaelder-laugen-baguette.png";
 
 export const menuProducts: MenuProduct[] = [
   // Kaffee Klassiker
@@ -473,6 +474,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Schwarzwälder Laugen Baguette",
     price: "7,40 €",
     description: "Hausgemachte Laugenbaguette mit rohem Schinken und Gouda",
+    image: schwarzwaelderBaguetteImage,
     category: "Herzhaft & Ofenfrisch",
     allergens: "A,G",
     origin: perplexOrigin,
