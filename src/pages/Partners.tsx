@@ -95,9 +95,12 @@ const Partners = () => {
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* Image left */}
             <div>
-              <div className="aspect-[4/3] rounded-2xl bg-secondary/60 flex items-center justify-center shadow-lg">
-                <span className="text-muted-foreground text-sm">Nahaufnahme Latte Art, dampfende Tasse</span>
-              </div>
+              <img
+                src={cupcinoPartnerImg}
+                alt="Cup&Cino Kaffeegenuss"
+                className="w-full aspect-[4/3] object-cover object-center rounded-2xl shadow-lg"
+                loading="lazy"
+              />
             </div>
             {/* Text right */}
             <div>
