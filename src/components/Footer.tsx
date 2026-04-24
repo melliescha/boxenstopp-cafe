@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="text-sm text-primary-foreground/70">
             <p>Südhang 1</p>
             <p>88145 Hergatz</p>
-            <p className="mt-2">info@bistro-boxenstopp.de</p>
+            <p className="mt-2"><a href="mailto:fit.es@icloud.com" className="hover:text-bronze transition-colors">fit.es@icloud.com</a></p>
           </div>
 
           <div className="flex md:justify-end items-start gap-3">
