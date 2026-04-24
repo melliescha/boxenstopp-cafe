@@ -128,7 +128,7 @@ const Contact = () => {
                   <p className="text-muted-foreground text-sm leading-relaxed">{tip.text}</p>
                   {tip.hasButton && (
                     <a
-                      href="#google-maps"
+                      href="https://www.google.com/maps/search/?api=1&query=S%C3%BCdhang+1%2C+88145+Hergatz"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block mt-4 bg-accent text-accent-foreground px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
