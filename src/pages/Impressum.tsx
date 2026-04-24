@@ -10,29 +10,30 @@ const Impressum = () => {
             <div>
               <p className="font-medium text-foreground mb-2">Angaben gemäß § 5 DDG:</p>
               <p>
-                [Name des Betreibers]<br />
+                Inhaber: Eugen Schall<br />
                 Bistro Boxenstopp<br />
                 Südhang 1<br />
-                88145 Hergatz
+                88145 Hergatz<br />
+                Deutschland
               </p>
             </div>
 
             <div>
               <p className="font-medium text-foreground mb-2">Kontakt:</p>
               <p>
-                Telefon: [PLATZHALTER]<br />
-                E-Mail: [PLATZHALTER]
+                Telefon: 0171 6226201<br />
+                E-Mail: fit.es@icloud.com
               </p>
             </div>
 
             <div>
-              <p className="font-medium text-foreground mb-2">Umsatzsteuer-ID:</p>
-              <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: [PLATZHALTER]</p>
+              <p className="font-medium text-foreground mb-2">Rechtsform:</p>
+              <p>Einzelunternehmen</p>
             </div>
 
             <div>
-              <p className="font-medium text-foreground mb-2">Aufsichtsbehörde:</p>
-              <p>[Zuständiges Landratsamt / Ordnungsamt — PLATZHALTER]</p>
+              <p className="font-medium text-foreground mb-2">Inhaltlich verantwortlich gemäß § 18 Abs. 2 MStV:</p>
+              <p>Eugen Schall, Anschrift wie oben</p>
             </div>
 
             <div>
@@ -42,20 +43,6 @@ const Impressum = () => {
                 Verbraucherschlichtungsstelle teilzunehmen.
               </p>
             </div>
-
-            <div className="bg-warm-gold/10 border border-warm-gold/30 rounded-lg p-4 mt-8">
-              <p className="text-sm italic text-foreground">
-                Dieser Text ist ein Platzhalter. Bitte durch ein rechtssicheres Impressum ersetzen
-                (z.B. über{" "}
-                <a href="https://www.impressum-generator.de" target="_blank" rel="noopener noreferrer" className="text-bronze underline">
-                  impressum-generator.de
-                </a>).
-              </p>
-            </div>
-
-            <p className="text-xs text-muted-foreground/60 mt-8">
-              Stand: [Datum]. Diese Seite wird regelmäßig aktualisiert.
-            </p>
           </div>
         </div>
       </section>
