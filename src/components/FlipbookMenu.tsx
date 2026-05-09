@@ -3,14 +3,8 @@ import HTMLFlipBook from "react-pageflip";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { forwardRef } from "react";
 
-import galleryCappuccino from "@/assets/gallery-cappuccino.jpg";
-
-import menuMatchaPastries from "@/assets/menu-matcha-pastries.jpg";
 import menuBaguette from "@/assets/baguettes-hero.png";
-import menuRusticBread from "@/assets/menu-rustic-bread-rotated.jpg";
-import galleryFlammkuchen from "@/assets/gallery-flammkuchen.jpg";
-import menuShakes from "@/assets/menu-shakes.jpg";
-import heroBistro from "@/assets/hero-bistro.jpg";
+
 
 // Page wrapper for react-pageflip (requires forwardRef)
 const Page = forwardRef<HTMLDivElement, { children: React.ReactNode; className?: string }>(
