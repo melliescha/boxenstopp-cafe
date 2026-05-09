@@ -54,6 +54,63 @@ const hours = [
   { days: "Sonntag", time: "11:00 – 16:00 Uhr" },
 ];
 
+const ReviewCTASection = () => {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) setVisible(true); },
+      { threshold: 0.2 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section
+      ref={ref}
+      className="py-16 md:py-20"
+      style={{ background: "linear-gradient(135deg, hsl(210 68% 27%), hsl(200 45% 20%))" }}
+    >
+      <div className="container mx-auto px-6 text-center">
+        <h3 className={`font-serif text-2xl md:text-3xl font-bold text-primary-foreground mb-3 ${visible ? "animate-fade-in-up" : "opacity-0"}`}>
+          Hat's dir geschmeckt? Erzähl's weiter! ☕
+        </h3>
+        <p className={`text-primary-foreground/70 text-sm mb-8 max-w-md mx-auto ${visible ? "animate-fade-in-up" : "opacity-0"}`} style={{ animationDelay: "0.1s" }}>
+          Deine Bewertung hilft anderen Radfahrern und Genießern, uns zu finden.
+        </p>
+
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="#google-review"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`inline-flex items-center justify-center gap-2 bg-card text-primary px-7 py-3 rounded-lg font-medium hover:ring-2 hover:ring-warm-gold/50 transition-all ${visible ? "animate-fade-in-up" : "opacity-0"}`}
+          >
+            Auf Google bewerten
+          </a>
+          <a
+            href="#tripadvisor"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`inline-flex items-center justify-center gap-2 bg-card text-primary px-7 py-3 rounded-lg font-medium hover:ring-2 hover:ring-warm-gold/50 transition-all ${visible ? "animate-fade-in-up" : "opacity-0"}`}
+            style={{ animationDelay: "0.2s" }}
+          >
+            Auf TripAdvisor bewerten
+          </a>
+        </div>
+
+        <p className={`text-primary-foreground/50 text-xs italic mt-6 ${visible ? "animate-fade-in-up" : "opacity-0"}`} style={{ animationDelay: "0.3s" }}>
+          Es dauert nur 30 Sekunden und bedeutet uns die Welt. Danke! 💛
+        </p>
+      </div>
+    </section>
+  );
+};
+
 const Index = () => {
   return (
     <Layout>
