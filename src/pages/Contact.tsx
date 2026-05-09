@@ -11,7 +11,7 @@ const tips = [
   {
     icon: Bike,
     title: "Mit dem Rad",
-    text: "Wir liegen direkt an der Leiblachroute und am Bodensee-Königssee-Radweg. Tipp: Nach der Abfahrt Richtung Wohmbrechts, du siehst uns auf der linken Seite. Duschen und E-Bike-Ladestation vorhanden!",
+    text: "Wir liegen direkt an der Leiblachroute und am Bodensee-Königssee-Radweg. Tipp: Nach der Abfahrt Richtung Wohmbrechts, du siehst uns auf der linken Seite. Duschen, Trinkwasser und WC vorhanden!",
   },
   {
     icon: Car,
