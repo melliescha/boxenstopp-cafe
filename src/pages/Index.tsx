@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { Map, Thermometer, ShowerHead, BatteryCharging, Sun, Users, Bike, Clock } from "lucide-react";
 import Layout from "@/components/Layout";
