@@ -21,7 +21,7 @@ const highlights = [
   {
     icon: ShowerHead,
     title: "Duschen vorhanden",
-    text: "Als Radfahrer oder nach dem Training: Frisch machen und dann entspannt genießen",
+    text: "Frisch machen nach der Radtour oder dem Training, gegen kleine Gebühr. Hinweis: Aktuell nur Damendusche verfügbar, die Herrendusche befindet sich noch im Umbau.",
   },
   {
     icon: BatteryCharging,
