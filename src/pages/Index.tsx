@@ -176,23 +176,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Reviews */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-8">
-            <p className="text-bronze font-medium tracking-[0.2em] uppercase text-sm mb-2">Stimmen unserer Gäste</p>
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">Das sagen unsere Gäste</h2>
-            <div className="divider-bronze mb-6" />
-            <ReviewSummaryBadges />
-          </div>
-          <div className="mt-10">
-            <ReviewCarousel />
-          </div>
-        </div>
-      </section>
-
-      {/* Review CTA */}
-      <ReviewCTA />
     </Layout>
   );
 };
