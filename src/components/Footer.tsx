@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, Star } from "lucide-react";
+import { Instagram, Facebook } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -49,23 +49,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Review reminder */}
-        <div className="text-center mb-6 text-sm text-primary-foreground/50">
-          <span>⭐ Zufrieden? Bewerte uns auf </span>
-          <a href="#google-review" className="text-warm-gold hover:underline">Google</a>
-          <span> oder </span>
-          <a href="#tripadvisor" className="text-warm-gold hover:underline">TripAdvisor</a>
-        </div>
-
-        <div className="flex justify-center mb-6">
-          <a
-            href="#google-review"
-            className="inline-flex items-center gap-2 bg-warm-gold text-warm-gold-foreground px-5 py-2 rounded-lg font-medium text-sm hover:opacity-90 transition-opacity"
-          >
-            <Star size={16} />
-            Auf Google bewerten
-          </a>
-        </div>
 
         <div className="border-t border-primary-foreground/10 pt-6 flex flex-wrap justify-center gap-4 text-xs text-primary-foreground/40">
           <Link to="/impressum" className="hover:text-primary-foreground transition-colors">Impressum</Link>
