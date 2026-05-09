@@ -25,8 +25,8 @@ const highlights = [
   },
   {
     icon: BatteryCharging,
-    title: "E-Bike Ladestation",
-    text: "Lade dein E-Bike kostenlos auf, während du bei uns entspannst",
+    title: "Steckdosen zum Aufladen",
+    text: "Bei uns lädst nicht nur du auf, sondern auch dein Handy, dein Navi und sogar dein E-Bike. Steckdosen findest du bei uns kostenlos.",
   },
 ];
 
