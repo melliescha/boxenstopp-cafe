@@ -3,13 +3,6 @@ import { X } from "lucide-react";
 import Layout from "@/components/Layout";
 
 import heroBistro from "@/assets/hero-bistro.jpg";
-import bistroTerrace from "@/assets/bistro-terrace.jpg";
-import foodSpread from "@/assets/food-spread.jpg";
-import galleryCappuccino from "@/assets/gallery-cappuccino.jpg";
-import galleryFlammkuchen from "@/assets/gallery-flammkuchen.jpg";
-import galleryLandscape from "@/assets/gallery-landscape.jpg";
-import galleryInterior from "@/assets/gallery-interior.jpg";
-import galleryEntrance from "@/assets/gallery-entrance.jpg";
 
 type Category = "all" | "innen" | "aussen" | "essen";
 
@@ -21,13 +14,6 @@ interface GalleryImage {
 
 const images: GalleryImage[] = [
   { src: heroBistro, alt: "Gemütlicher Innenbereich des Bistro Boxenstopp", category: "innen" },
-  { src: galleryInterior, alt: "Warme Atmosphäre im Bistro mit Holzmöbeln und Pflanzen", category: "innen" },
-  { src: bistroTerrace, alt: "Unsere Terrasse im Sommer mit Blick ins Allgäu", category: "aussen" },
-  { src: galleryLandscape, alt: "Blick auf die Allgäuer Landschaft von der Terrasse", category: "aussen" },
-  { src: galleryEntrance, alt: "Willkommen im Bistro Boxenstopp, Eingangsbereich", category: "aussen" },
-  { src: galleryCappuccino, alt: "Frischer Cappuccino von Cup&Cino mit Latte Art", category: "essen" },
-  { src: galleryFlammkuchen, alt: "Gourmet-Flammkuchen frisch aus dem Ofen", category: "essen" },
-  { src: foodSpread, alt: "Unsere Auswahl: Flammkuchen, Matcha Latte und frisches Baguette", category: "essen" },
 ];
 
 const tabs: { label: string; value: Category }[] = [
@@ -74,22 +60,28 @@ const Gallery = () => {
           </div>
 
           {/* Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
-            {filtered.map((img, i) => (
-              <button
-                key={img.alt}
-                onClick={() => setLightbox(i)}
-                className="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group cursor-pointer aspect-[4/3]"
-              >
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  loading="lazy"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </button>
-            ))}
-          </div>
+          {filtered.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+              {filtered.map((img, i) => (
+                <button
+                  key={img.alt}
+                  onClick={() => setLightbox(i)}
+                  className="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group cursor-pointer aspect-[4/3]"
+                >
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </button>
+              ))}
+            </div>
+          ) : (
+            <p className="text-center text-muted-foreground italic">
+              In dieser Kategorie sind aktuell noch keine Bilder vorhanden.
+            </p>
+          )}
         </div>
       </section>
 
