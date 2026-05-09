@@ -177,6 +177,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Review CTA */}
+      <ReviewCTASection />
+
     </Layout>
   );
 };
