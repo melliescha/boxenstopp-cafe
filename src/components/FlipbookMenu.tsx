@@ -126,16 +126,8 @@ const FlipbookMenu = () => {
                 <h2 className="font-serif text-2xl sm:text-3xl font-bold text-primary-foreground mb-3">Bistro Boxenstopp</h2>
                 <div className="w-10 h-px bg-warm-gold my-4" />
                 <p className="font-serif-italic text-primary-foreground/80 text-lg">Speisekarte</p>
-                <div className="mt-8 w-32 h-32 rounded-full overflow-hidden ring-2 ring-warm-gold/30">
-                  <img src={galleryCappuccino} alt="Kaffeetasse" className="w-full h-full object-cover" />
-                </div>
                 <div className="w-16 h-px bg-warm-gold mt-6" />
               </div>
-            </Page>
-
-            {/* Page 2: Coffee image */}
-            <Page>
-              <ImagePage src={galleryCappuccino} alt="Latte Art, Kaffeegenuss im Bistro Boxenstopp" />
             </Page>
 
             {/* Page 3: Coffee Classics + Milk Coffee */}
@@ -184,11 +176,6 @@ const FlipbookMenu = () => {
               <PageNumber num={3} />
             </Page>
 
-            {/* Page 5: Matcha + Pastries image */}
-            <Page>
-              <ImagePage src={menuMatchaPastries} alt="Matcha Latte mit frischem Gebäck" />
-            </Page>
-
             {/* Page 6: Baguette image */}
             <Page>
               <ImagePage src={menuBaguette} alt="Frisch belegtes Baguette" />
@@ -214,16 +201,6 @@ const FlipbookMenu = () => {
               <FlipMenuItem item={{ name: "Tomaten Mozzarella Brot", price: "7,40 €", note: "Weizenbrot mit Basilikum, Mozzarella & Tomaten" }} />
               <FlipMenuItem item={{ name: "Raclettebrot-Rustikal", price: "7,70 €", note: "Schwarzbrot mit Raclettekäse, Lauch & Gewürze" }} />
               <PageNumber num={6} />
-            </Page>
-
-            {/* Page 9: Rustic bread image */}
-            <Page>
-              <ImagePage src={menuRusticBread} alt="Rustikales Brot auf Holzbrett" />
-            </Page>
-
-            {/* Page 10: Flammkuchen image */}
-            <Page>
-              <ImagePage src={galleryFlammkuchen} alt="Flammkuchen frisch aus dem Ofen" />
             </Page>
 
             {/* Page 11: Flammkuchen & Pizza */}
@@ -261,11 +238,6 @@ const FlipbookMenu = () => {
                 <FlipMenuItem item={{ name: "Protein-Chips", price: "2,40 €" }} />
               </div>
               <PageNumber num={9} />
-            </Page>
-
-            {/* Page 13: Shakes image */}
-            <Page>
-              <ImagePage src={menuShakes} alt="Bunte Protein-Shakes und frisches Obst" />
             </Page>
 
             {/* Page 14: Allergen Legend */}
