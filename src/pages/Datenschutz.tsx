@@ -164,23 +164,61 @@ const Datenschutz = () => {
           <Divider />
 
           <Section>
-            <H2>3. Hosting</H2>
+            <H2>3. Hosting und Plattform</H2>
+            <H3>3.1 Hosting (Cloudflare)</H3>
             <P>
-              Diese Website wird gehostet bei Lovable AB, Sveavägen 27, 111 34 Stockholm, Schweden.
+              Die Auslieferung dieser Website an Besucher erfolgt über die Server von Cloudflare,
+              Inc., 101 Townsend Street, San Francisco, CA 94107, USA. Ansprechpartner für den
+              europäischen Wirtschaftsraum ist die Cloudflare Germany GmbH, Rosental 7, c/o
+              Mindspace, 80331 München.
             </P>
             <P>
-              Lovable verarbeitet beim Aufruf unserer Website verschiedene Daten, um die Website
-              auszuliefern (z. B. IP-Adresse, Browsertyp, Zugriffszeitpunkt). Die Verarbeitung
-              erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer
-              technisch fehlerfreien Darstellung und Optimierung unserer Website).
+              Cloudflare verarbeitet beim Aufruf unserer Website verschiedene Daten, um die
+              Website auszuliefern, gegen Angriffe zu schützen und eine schnelle Bereitstellung
+              sicherzustellen (z. B. IP-Adresse, Browsertyp, Zugriffszeitpunkt, HTTP-Header,
+              Referrer).
             </P>
             <P>
-              Mit dem Hosting-Anbieter wurde ein Auftragsverarbeitungsvertrag gemäß Art. 28 DSGVO
-              geschlossen.
+              Mit Cloudflare wurde ein Auftragsverarbeitungsvertrag (Data Processing Addendum)
+              gemäß Art. 28 DSGVO geschlossen.
             </P>
             <P>
-              Da Schweden Mitglied der Europäischen Union ist, findet keine Datenübermittlung in
-              ein Drittland statt.
+              Drittlandtransfer: Cloudflare verarbeitet Daten unter anderem in den USA. Cloudflare
+              nimmt am EU-US Data Privacy Framework teil. Damit besteht ein
+              Angemessenheitsbeschluss der Europäischen Kommission gem. Art. 45 DSGVO. Ergänzend
+              werden EU-Standardvertragsklauseln gem. Art. 46 Abs. 2 lit. c DSGVO eingesetzt.
+            </P>
+            <P>
+              Weitere Informationen: <ExtLink href="https://www.cloudflare.com/de-de/privacypolicy/">https://www.cloudflare.com/de-de/privacypolicy/</ExtLink>
+            </P>
+            <H3>3.2 Plattform / Website-Erstellung (Lovable)</H3>
+            <P>
+              Die Inhalte und der Code dieser Website werden über die Plattform Lovable erstellt
+              und verwaltet. Anbieter ist Lovable Labs Incorporated (USA), mit europäischem
+              Vertreter Lovable Labs AB, Regeringsgatan 25, 111 53 Stockholm, Schweden.
+            </P>
+            <P>
+              Bei der Erstellung und Pflege der Website durch uns werden Daten auf den Servern von
+              Lovable verarbeitet. Beim Aufruf der ausgelieferten Website durch Besucher findet im
+              Regelfall kein direkter Datenkontakt mit Lovable statt, da die Auslieferung über
+              Cloudflare erfolgt.
+            </P>
+            <P>
+              Mit Lovable wurde ein Auftragsverarbeitungsvertrag (Data Processing Agreement) gemäß
+              Art. 28 DSGVO geschlossen.
+            </P>
+            <P>
+              Drittlandtransfer: Lovable Labs Incorporated hat seinen Sitz in den USA. Die
+              Datenübermittlung erfolgt auf Grundlage von EU-Standardvertragsklauseln gem. Art. 46
+              Abs. 2 lit. c DSGVO.
+            </P>
+            <P>
+              Weitere Informationen: <ExtLink href="https://lovable.dev/privacy">https://lovable.dev/privacy</ExtLink>
+            </P>
+            <P>
+              Rechtsgrundlage für beide Verarbeitungen: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes
+              Interesse an einer technisch fehlerfreien Darstellung, schnellen Auslieferung und
+              Sicherheit unserer Website).
             </P>
           </Section>
 
@@ -448,8 +486,8 @@ const Datenschutz = () => {
             <H3>14.2 Recht auf Berichtigung (Art. 16 DSGVO)</H3>
             <P>
               Sie haben ein Recht auf Berichtigung und/oder Vervollständigung gegenüber dem
-              Verantwortlichen, sofern die verarbeiteten personenbezogenen Daten, die Sie
-              betreffen, unrichtig oder unvollständig sind.
+              Verantwortlichen, sofern die verarbeiteten personenbezogenen Daten, die Sie betreffen,
+              unrichtig oder unvollständig sind.
             </P>
             <H3>14.3 Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</H3>
             <P>
@@ -458,9 +496,8 @@ const Datenschutz = () => {
             </P>
             <H3>14.4 Recht auf Löschung (Art. 17 DSGVO)</H3>
             <P>
-              Sie können vom Verantwortlichen verlangen, dass die Sie betreffenden
-              personenbezogenen Daten unverzüglich gelöscht werden, sofern einer der gesetzlichen
-              Gründe zutrifft.
+              Sie können vom Verantwortlichen verlangen, dass die Sie betreffenden personenbezogenen
+              Daten unverzüglich gelöscht werden, sofern einer der gesetzlichen Gründe zutrifft.
             </P>
             <H3>14.5 Recht auf Unterrichtung (Art. 19 DSGVO)</H3>
             <P>
@@ -492,21 +529,19 @@ const Datenschutz = () => {
               Unbeschadet eines anderweitigen verwaltungsrechtlichen oder gerichtlichen
               Rechtsbehelfs steht Ihnen das Recht auf Beschwerde bei einer Aufsichtsbehörde zu.
             </P>
-            <P>Zuständige Aufsichtsbehörde für uns:</P>
+            <P>
+              Zuständige Aufsichtsbehörde für uns:
+            </P>
             <P>
               Bayerisches Landesamt für Datenschutzaufsicht (BayLDA)<br />
               Promenade 18<br />
               91522 Ansbach<br />
-              Telefon:{" "}
-              <SimpleLink href="tel:+499811800930">+49 (0) 981 180093-0</SimpleLink>
-              <br />
-              E-Mail:{" "}
-              <SimpleLink href="mailto:poststelle@lda.bayern.de">
-                poststelle@lda.bayern.de
-              </SimpleLink>
-              <br />
+              Telefon: +49 (0) 981 180093-0<br />
+              E-Mail: poststelle@lda.bayern.de<br />
               Web:{" "}
-              <ExtLink href="https://www.lda.bayern.de">https://www.lda.bayern.de</ExtLink>
+              <ExtLink href="https://www.lda.bayern.de">
+                https://www.lda.bayern.de
+              </ExtLink>
             </P>
           </Section>
 
