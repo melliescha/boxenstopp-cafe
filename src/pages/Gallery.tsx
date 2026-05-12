@@ -32,9 +32,9 @@ const images: GalleryImage[] = [
   { src: innenThekeUebersicht, alt: "Übersicht der Theke mit Kaffeemaschine und stimmungsvoller Beleuchtung", category: "innen" },
   { src: essenTomateMozzarella, alt: "Unser vegetarisches Holzfällerbrot mit Tomate, Mozzarella und frischem Basilikum", category: "essen" },
   { src: essenBaguetteTomate, alt: "Premium Baguette mit Tomate, Mozzarella und Basilikum", category: "essen" },
-  { src: essenBaguetteSalami, alt: "Knuspriges Baguette mit Salami und Basilikum, dazu Allgäuer Apfel-Kirsch-Schorle", category: "essen" },
+  { src: essenBaguetteSalami, alt: "Pizzasnack für den kleinen Hunger – mit Salami und Basilikum, dazu Allgäuer Apfel-Kirsch-Schorle", category: "essen" },
   { src: essenFlammkuchenLachs, alt: "Flammkuchen mit Lachs, Lauch und Schnittlauch, serviert mit Orangensaft", category: "essen" },
-  { src: essenFlammkuchenGemuese, alt: "Vegetarischer Flammkuchen mit Feta, Paprika, Zucchini und frischen Kräutern", category: "essen" },
+  { src: essenFlammkuchenGemuese, alt: "Unser mediterraner Flammkuchen mit Feta, Paprika, Zucchini und frischen Kräutern", category: "essen" },
 ];
 
 const tabs: { label: string; value: Category }[] = [
