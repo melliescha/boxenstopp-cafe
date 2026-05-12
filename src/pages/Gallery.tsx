@@ -4,6 +4,11 @@ import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 
 import heroBistro from "@/assets/hero-bistro.jpg";
+import essenTomateMozzarella from "@/assets/gallery/essen-flammkuchen-tomate-mozzarella.jpg";
+import essenBaguetteTomate from "@/assets/gallery/essen-baguette-tomate-mozzarella.jpg";
+import essenBaguetteSalami from "@/assets/gallery/essen-baguette-salami-schorle.jpg";
+import essenFlammkuchenLachs from "@/assets/gallery/essen-flammkuchen-lachs.jpg";
+import essenFlammkuchenGemuese from "@/assets/gallery/essen-flammkuchen-gemuese-feta.jpg";
 
 type Category = "all" | "innen" | "aussen" | "essen";
 
@@ -15,6 +20,11 @@ interface GalleryImage {
 
 const images: GalleryImage[] = [
   { src: heroBistro, alt: "Gemütlicher Innenbereich des Bistro Boxenstopp", category: "innen" },
+  { src: essenTomateMozzarella, alt: "Hausgemachter Flammkuchen mit Tomate, Mozzarella und frischem Basilikum", category: "essen" },
+  { src: essenBaguetteTomate, alt: "Überbackenes Baguette mit Tomate, Mozzarella und Basilikum", category: "essen" },
+  { src: essenBaguetteSalami, alt: "Knuspriges Baguette mit Salami und Basilikum, dazu Allgäuer Apfel-Kirsch-Schorle", category: "essen" },
+  { src: essenFlammkuchenLachs, alt: "Flammkuchen mit Lachs, Lauch und Schnittlauch, serviert mit Orangensaft", category: "essen" },
+  { src: essenFlammkuchenGemuese, alt: "Vegetarischer Flammkuchen mit Feta, Paprika, Zucchini und frischen Kräutern", category: "essen" },
 ];
 
 const tabs: { label: string; value: Category }[] = [
