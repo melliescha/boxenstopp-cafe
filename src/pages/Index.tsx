@@ -50,7 +50,9 @@ const whyUs = [
 ];
 
 const hours = [
-  { days: "Mo – Fr", time: "15:00 – 20:00 Uhr" },
+  { days: "Montag", time: "15:00 – 20:00 Uhr" },
+  { days: "Dienstag", time: "Ruhetag" },
+  { days: "Mittwoch – Freitag", time: "15:00 – 20:00 Uhr" },
   { days: "Samstag", time: "10:30 – 15:30 Uhr" },
   { days: "Sonntag", time: "11:00 – 16:00 Uhr" },
 ];
