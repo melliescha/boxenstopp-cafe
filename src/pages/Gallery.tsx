@@ -9,6 +9,11 @@ import essenBaguetteTomate from "@/assets/gallery/essen-baguette-tomate-mozzarel
 import essenBaguetteSalami from "@/assets/gallery/essen-baguette-salami-schorle.jpg";
 import essenFlammkuchenLachs from "@/assets/gallery/essen-flammkuchen-lachs.jpg";
 import essenFlammkuchenGemuese from "@/assets/gallery/essen-flammkuchen-gemuese-feta.jpg";
+import innenSitzbereich from "@/assets/gallery/innen-sitzbereich-tische.jpg";
+import innenTheke from "@/assets/gallery/innen-theke-bedienung.jpg";
+import innenBilderwand from "@/assets/gallery/innen-bilderwand-ledersessel.jpg";
+import innenShaker from "@/assets/gallery/innen-shaker-snacks.jpg";
+import innenThekeUebersicht from "@/assets/gallery/innen-theke-uebersicht.jpg";
 
 type Category = "all" | "innen" | "aussen" | "essen";
 
@@ -20,6 +25,11 @@ interface GalleryImage {
 
 const images: GalleryImage[] = [
   { src: heroBistro, alt: "Gemütlicher Innenbereich des Bistro Boxenstopp", category: "innen" },
+  { src: innenSitzbereich, alt: "Heller Sitzbereich mit Holztischen und modernen Stühlen im Bistro Boxenstopp", category: "innen" },
+  { src: innenTheke, alt: "Helena bedient einen Gast an der Theke des Bistro Boxenstopp", category: "innen" },
+  { src: innenBilderwand, alt: "Bilderwand mit Sport-Motiven und gemütliche Ledersessel im Innenbereich", category: "innen" },
+  { src: innenShaker, alt: "Goldener Shaker und Snacks an der Theke vor dem Herbalife-Regal", category: "innen" },
+  { src: innenThekeUebersicht, alt: "Übersicht der Theke mit Kaffeemaschine und stimmungsvoller Beleuchtung", category: "innen" },
   { src: essenTomateMozzarella, alt: "Hausgemachter Flammkuchen mit Tomate, Mozzarella und frischem Basilikum", category: "essen" },
   { src: essenBaguetteTomate, alt: "Überbackenes Baguette mit Tomate, Mozzarella und Basilikum", category: "essen" },
   { src: essenBaguetteSalami, alt: "Knuspriges Baguette mit Salami und Basilikum, dazu Allgäuer Apfel-Kirsch-Schorle", category: "essen" },
