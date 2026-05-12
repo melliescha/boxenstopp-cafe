@@ -1,5 +1,6 @@
 import { MapPin, Phone, Mail, Clock, Bike, Car, Footprints, Navigation } from "lucide-react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 const hours = [
   { days: "Mo – Fr", time: "15:00 – 20:00 Uhr" },
@@ -34,6 +35,7 @@ const tips = [
 const Contact = () => {
   return (
     <Layout>
+      <SEO title="Kontakt & Anfahrt | Bistro Boxenstopp Hergatz" description="So finden Sie uns: Südhang 1, 88145 Hergatz. Öffnungszeiten, Telefon, E-Mail und Anfahrt mit Rad, Auto oder zu Fuß zum Bistro Boxenstopp." path="/kontakt" />
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6">
           {/* Hidden gem intro */}

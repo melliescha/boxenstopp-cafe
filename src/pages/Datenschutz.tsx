@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 const navy = "#164472";
 const bronze = "#9E7C4E";
@@ -76,6 +77,7 @@ const Section = ({ children }: { children: React.ReactNode }) => (
 const Datenschutz = () => {
   return (
     <Layout>
+      <SEO title="Datenschutzerklärung | Bistro Boxenstopp Hergatz" description="Informationen zum Datenschutz und zur Verarbeitung personenbezogener Daten auf der Website des Bistro Boxenstopp in Hergatz." path="/datenschutz" />
       <section style={{ backgroundColor: cream, paddingTop: 80, paddingBottom: 80 }}>
         <div className="mx-auto" style={{ maxWidth: 720, paddingLeft: 24, paddingRight: 24 }}>
           <h1

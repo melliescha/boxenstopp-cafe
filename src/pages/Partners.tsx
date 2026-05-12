@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Droplets, Building2, GraduationCap, Handshake, Leaf, Zap, ShieldCheck, Globe, Award, FlaskConical, Dumbbell } from "lucide-react";
 import flammkuchenPartner from "@/assets/flammkuchen-partner.png";
 import herbalifelogo from "@/assets/herbalife-logo.png";
@@ -10,6 +11,7 @@ import cupcinoPartnerImg from "@/assets/cupcino-partner.jpg";
 const Partners = () => {
   return (
     <Layout>
+      <SEO title="Unsere Partner | Bistro Boxenstopp Hergatz" description="Wir arbeiten mit ausgewählten Partnern wie Herbalife Nutrition, Cupcino und regionalen Lieferanten zusammen – für höchste Qualität in unserem Bistro." path="/partner" />
       {/* Hero / Intro */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6 max-w-4xl text-center">

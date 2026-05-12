@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { Map, Thermometer, ShowerHead, BatteryCharging, Sun, Users, Bike, Clock } from "lucide-react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import BestsellerSection from "@/components/BestsellerSection";
 import heroBg from "@/assets/hero-bistro.jpg";
 import heroLogoSchriftzug from "@/assets/hero-logo-schriftzug.png";
@@ -114,6 +115,7 @@ const ReviewCTASection = () => {
 const Index = () => {
   return (
     <Layout>
+      <SEO title="Bistro Boxenstopp Hergatz | Café & Bistro am Radweg im Westallgäu" description="Bistro Boxenstopp in Hergatz – Kaffee, Flammkuchen & Herbalife-Shakes direkt an der Leiblachroute und am Bodensee-Königssee-Radweg. E-Bike-Ladestation & Terrasse." path="/" />
       {/* Hero */}
       {/* Hero */}
       <section className="relative overflow-hidden h-[55vh]">
