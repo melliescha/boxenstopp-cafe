@@ -24,7 +24,7 @@ interface GalleryImage {
 }
 
 const images: GalleryImage[] = [
-  { src: heroBistro, alt: "Gemütlicher Innenbereich des Bistro Boxenstopp", category: "innen" },
+  { src: heroBistro, alt: "Sonnige Terrasse des Bistro Boxenstopp im Außenbereich", category: "aussen" },
   { src: innenSitzbereich, alt: "Heller Sitzbereich mit Holztischen und modernen Stühlen im Bistro Boxenstopp", category: "innen" },
   { src: innenTheke, alt: "Helena bedient einen Gast an der Theke des Bistro Boxenstopp", category: "innen" },
   { src: innenBilderwand, alt: "Bilderwand mit Sport-Motiven und gemütliche Ledersessel im Innenbereich", category: "innen" },
