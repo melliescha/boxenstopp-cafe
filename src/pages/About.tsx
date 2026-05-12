@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import logoIcon from "@/assets/logo-icon.png";
 import aboutHero from "@/assets/about-hero-family.jpg";
 import aboutBodensee from "@/assets/about-bodensee.jpg";
@@ -30,6 +31,7 @@ const founders = [
 const About = () => {
   return (
     <Layout>
+      <SEO title="Über uns | Familie Schall – Bistro Boxenstopp Hergatz" description="Lernen Sie Helena, Eugen und das Team kennen. Erfahren Sie die Geschichte hinter dem Bistro Boxenstopp in Hergatz im schönen Westallgäu." path="/ueber-uns" />
       {/* Hero */}
       <section className="relative h-[50vh] md:h-[60vh] overflow-hidden">
         <img

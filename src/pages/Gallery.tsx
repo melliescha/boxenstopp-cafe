@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { X } from "lucide-react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 import heroBistro from "@/assets/hero-bistro.jpg";
 
@@ -31,6 +32,7 @@ const Gallery = () => {
 
   return (
     <Layout>
+      <SEO title="Galerie | Eindrücke vom Bistro Boxenstopp Hergatz" description="Bilder vom Bistro Boxenstopp: gemütliches Ambiente, sonnige Terrasse, leckere Flammkuchen und Kaffeegenuss am Radweg im Westallgäu." path="/galerie" />
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
