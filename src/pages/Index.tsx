@@ -7,6 +7,7 @@ import BestsellerSection from "@/components/BestsellerSection";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import heroBg from "@/assets/hero-bistro.jpg";
 import heroLogoSchriftzug from "@/assets/hero-logo-schriftzug.png";
+import { socialLinks } from "@/config/social";
 
 
 const highlights = [
