@@ -26,59 +26,55 @@
       "@context": "https://schema.org",
       "@type": "CafeOrCoffeeShop",
       "name": "Bistro Boxenstopp",
-      "image": "/og-logo.png",
+      "image": "https://bistro-boxenstopp.de/og-image.jpg",
       "url": "https://bistro-boxenstopp.de",
       "telephone": "",
       "email": "fit.es@icloud.com",
+      "priceRange": "€",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Südhang 1",
         "addressLocality": "Hergatz",
         "postalCode": "88145",
+        "addressRegion": "Bayern",
         "addressCountry": "DE"
       },
-      "servesCuisine": ["Café", "Bistro", "Flammkuchen"],
-      "amenityFeature": [
-        { "@type": "LocationFeatureSpecification", "name": "E-Bike Ladestation", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Terrasse", "value": true }
-      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "47.6489",
+        "longitude": "9.8520"
+      },
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Monday",
+          "dayOfWeek": ["Monday"],
           "opens": "15:00",
           "closes": "20:00"
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Wednesday",
+          "dayOfWeek": ["Wednesday", "Thursday", "Friday"],
           "opens": "15:00",
           "closes": "20:00"
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Thursday",
-          "opens": "15:00",
-          "closes": "20:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Friday",
-          "opens": "15:00",
-          "closes": "20:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
+          "dayOfWeek": ["Saturday"],
           "opens": "10:30",
           "closes": "15:30"
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Sunday",
+          "dayOfWeek": ["Sunday"],
           "opens": "11:00",
           "closes": "16:00"
         }
+      ],
+      "servesCuisine": ["Flammkuchen", "Pizza", "Barista-Kaffee", "Proteinshakes"],
+      "description": "Bistro Boxenstopp in Hergatz im Westallgäu – Barista-Kaffee, handgemachte Flammkuchen und Proteinshakes direkt am Bodensee-Königssee-Radweg und an der Leiblachroute.",
+      "sameAs": [
+        "https://www.facebook.com/[EUER-FACEBOOK]",
+        "https://www.instagram.com/[EUER-INSTAGRAM]"
       ]
     }
     </script>
