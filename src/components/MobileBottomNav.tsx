@@ -15,10 +15,10 @@ const MobileBottomNav = () => {
       <ul className="grid grid-cols-3">
         <li>
           <a
-            href="tel:+491717622620"
+            href="tel:+491716226201"
             className="flex flex-col items-center justify-center gap-1 py-3 min-h-[60px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warm-gold focus-visible:ring-inset"
             style={{ color: "#FEF4EC" }}
-            aria-label="Bistro Boxenstopp anrufen unter 0171 7622620"
+            aria-label="Bistro Boxenstopp anrufen unter 0171 6226201"
           >
             <Phone className="w-5 h-5" aria-hidden="true" />
             <span className="text-xs font-medium">Anrufen</span>

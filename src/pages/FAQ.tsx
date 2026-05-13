@@ -81,7 +81,7 @@ const FAQ = () => {
           </h1>
           <div className="divider-bronze mb-5" />
           <p className="text-base md:text-lg" style={{ color: "#6B4A2E" }}>
-            Alle Antworten rund um euren Besuch bei uns. Falls eine Frage fehlt, ruft uns einfach an: 0171 7622620.
+            Alle Antworten rund um euren Besuch bei uns. Falls eine Frage fehlt, ruft uns einfach an: 0171 6226201.
           </p>
 
           {/* Search */}
@@ -143,7 +143,7 @@ const FAQ = () => {
             <div className="space-y-12 min-w-0">
               {filteredBlocks.length === 0 && (
                 <p className="text-center italic" style={{ color: "#6B4A2E" }}>
-                  Keine Treffer für „{query}". Versuch ein anderes Stichwort oder ruf uns an: 0171 7622620.
+                  Keine Treffer für „{query}". Versuch ein anderes Stichwort oder ruf uns an: 0171 6226201.
                 </p>
               )}
 
