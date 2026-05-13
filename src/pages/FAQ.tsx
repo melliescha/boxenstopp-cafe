@@ -179,6 +179,25 @@ const FAQ = () => {
                       </AccordionItem>
                     ))}
                   </Accordion>
+
+                  {block.id === "unsere-partner" && (
+                    <div
+                      className="mt-5 rounded-xl p-5 md:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
+                      style={{ backgroundColor: "#FEF4EC", border: "1px solid #9E7C4E" }}
+                    >
+                      <p className="text-sm md:text-base" style={{ color: "#6B4A2E" }}>
+                        Mehr Hintergründe zu Cup&amp;Cino, Herbalife und Perplex findet ihr auf unserer Partner-Seite.
+                      </p>
+                      <Link
+                        to="/partner"
+                        className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full font-medium whitespace-nowrap min-h-[44px] hover:opacity-90 transition-opacity"
+                        style={{ backgroundColor: "#164472", color: "#FEF4EC" }}
+                      >
+                        Mehr über unsere Partner
+                        <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                      </Link>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
