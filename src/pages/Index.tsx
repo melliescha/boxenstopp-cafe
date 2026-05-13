@@ -203,6 +203,11 @@ const Index = () => {
           "closes": "16:00",
         },
       ],
+      "sameAs": [
+        "https://www.instagram.com/bistro.boxenstopp/",
+        "https://www.tripadvisor.ch/Restaurant_Review-g7074590-d34214130-Reviews-FITES_Cafe_Boxenstopp-Hergatz_Swabia_Bavaria.html",
+        "https://share.google/z2I9vHthpnC8Ys52e",
+      ],
     };
     const lbScript = document.createElement("script");
     lbScript.type = "application/ld+json";
