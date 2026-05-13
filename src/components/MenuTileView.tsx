@@ -73,16 +73,25 @@ const MenuTileView = () => {
                   <span className="text-4xl">📷</span>
                 </div>
               )}
-              {product.badge && (
-                <span
-                  className="absolute top-2 left-2 text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full"
-                  style={{
-                    backgroundColor: product.badge.includes("Kinder") ? "rgba(234, 145, 50, 0.85)" : "#b8943e",
-                    color: "#fff",
-                  }}
-                >
-                  {product.badge}
-                </span>
+              {(product.badges?.length ? product.badges : product.badge ? [product.badge] : []).length > 0 && (
+                <div className="absolute top-2 left-2 flex flex-col gap-1 items-start">
+                  {(product.badges?.length ? product.badges : [product.badge!]).map((b) => (
+                    <span
+                      key={b}
+                      className="text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full"
+                      style={{
+                        backgroundColor: b.includes("Vegetarisch") || b.includes("Vegan")
+                          ? "rgba(106, 142, 60, 0.9)"
+                          : b.includes("Kinder")
+                          ? "rgba(234, 145, 50, 0.85)"
+                          : "#b8943e",
+                        color: "#fff",
+                      }}
+                    >
+                      {b}
+                    </span>
+                  ))}
+                </div>
               )}
             </div>
             {/* Info */}
