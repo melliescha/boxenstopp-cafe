@@ -30,9 +30,39 @@ const founders = [
 ];
 
 const About = () => {
+  useEffect(() => {
+    const personSchema = {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Eugen Schall",
+      "jobTitle": "Trainer, Ernährungsberater, Personaltrainer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "FITES Allgäu & Bistro Boxenstopp",
+      },
+      "description": "Über 30 Jahre Erfahrung als Trainer und Ernährungsberater. Inhaber des FITES Allgäu Fitnessstudios und Mitgründer des Bistro Boxenstopp in Hergatz.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Hergatz",
+        "addressRegion": "Bayern",
+        "postalCode": "88145",
+        "addressCountry": "DE",
+      },
+    };
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "person-schema-eugen";
+    script.textContent = JSON.stringify(personSchema);
+    document.head.appendChild(script);
+    return () => {
+      const existing = document.head.querySelector('script[id="person-schema-eugen"]');
+      if (existing) document.head.removeChild(existing);
+    };
+  }, []);
+
   return (
     <Layout>
-      <SEO title="Über uns – Bistro Boxenstopp im Westallgäu" description="Familiengeführtes Bistro in Hergatz/Wohmbrechts – ein gemütlicher Stopp für Radfahrer, Sportler und Allgäu-Genießer." path="/ueber-uns" />
+      <SEO title="Über uns | Eugen, Helena & Melanie Schall vom Bistro Boxenstopp Hergatz" description="Hinter dem Bistro Boxenstopp im Westallgäu steht die Familie Schall: bodenständig, ehrlich, mit Leidenschaft für gute Küche und Gemeinschaft. Lernt uns kennen." path="/ueber-uns" />
       {/* Hero */}
       <section className="relative h-[50vh] md:h-[60vh] overflow-hidden">
         <img
