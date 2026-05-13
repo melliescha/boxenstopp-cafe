@@ -101,8 +101,8 @@ const FAQ = () => {
 
       {/* Content */}
       <section className="py-12 md:py-16 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-[260px_1fr] gap-6 lg:gap-10 max-w-6xl mx-auto">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-[260px_1fr] gap-6 lg:gap-10 max-w-6xl mx-auto min-w-0">
             {/* TOC: horizontal scroll on mobile, sticky sidebar on desktop */}
             <aside className="lg:sticky lg:top-24 lg:self-start min-w-0">
               <div
