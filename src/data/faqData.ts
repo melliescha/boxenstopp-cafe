@@ -166,7 +166,7 @@ export const faqBlocks: FaqBlock[] = [
       },
       {
         question: "Sind Familien mit Kindern willkommen?",
-        answer: "Auf jeden Fall! Kommt gerne vorbei.",
+        answer: "Auf jeden Fall! Kommt gerne vorbei. Wir haben auch einen Kinderhochstuhl vorhanden.",
       },
       {
         question: "Dürfen Hunde mit?",
