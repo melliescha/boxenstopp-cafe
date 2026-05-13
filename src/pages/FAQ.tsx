@@ -101,12 +101,12 @@ const FAQ = () => {
 
       {/* Content */}
       <section className="py-12 md:py-16 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-[260px_1fr] gap-10 max-w-6xl mx-auto">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-[260px_1fr] gap-6 lg:gap-10 max-w-6xl mx-auto min-w-0">
             {/* TOC: horizontal scroll on mobile, sticky sidebar on desktop */}
-            <aside className="lg:sticky lg:top-24 lg:self-start">
+            <aside className="lg:sticky lg:top-24 lg:self-start min-w-0">
               <div
-                className="rounded-xl p-4 lg:p-5"
+                className="rounded-xl p-3 lg:p-5"
                 style={{ backgroundColor: "#FEF4EC", border: "1px solid #EDE0D0" }}
               >
                 <h2
@@ -115,16 +115,20 @@ const FAQ = () => {
                 >
                   Themen
                 </h2>
-                <nav>
-                  <ul className="flex lg:flex-col gap-2 overflow-x-auto lg:overflow-visible -mx-1 px-1 lg:mx-0 lg:px-0 pb-1 lg:pb-0">
+                <nav aria-label="FAQ Themen">
+                  <ul
+                    className="flex lg:flex-col gap-2 lg:gap-1 overflow-x-auto lg:overflow-visible -mx-3 lg:mx-0 px-3 lg:px-0 pb-1 lg:pb-0 snap-x snap-mandatory lg:snap-none"
+                    style={{ WebkitOverflowScrolling: "touch", scrollbarWidth: "thin" }}
+                  >
                     {faqBlocks.map((b) => (
-                      <li key={b.id} className="shrink-0 lg:shrink">
+                      <li key={b.id} className="shrink-0 lg:shrink snap-start">
                         <button
+                          type="button"
                           onClick={() => handleNav(b.id)}
-                          className="text-left whitespace-nowrap lg:whitespace-normal text-sm font-medium px-3 py-2 rounded-lg transition-colors w-full hover:bg-white"
+                          className="text-left whitespace-nowrap lg:whitespace-normal text-sm font-medium px-3 py-2 min-h-[44px] rounded-lg transition-colors w-full hover:bg-white focus-visible:bg-white"
                           style={{ color: "#164472" }}
                         >
-                          <span className="mr-2">{b.icon}</span>
+                          <span className="mr-2" aria-hidden="true">{b.icon}</span>
                           {b.title}
                         </button>
                       </li>
@@ -135,7 +139,7 @@ const FAQ = () => {
             </aside>
 
             {/* Blocks */}
-            <div className="space-y-12">
+            <div className="space-y-12 min-w-0">
               {filteredBlocks.length === 0 && (
                 <p className="text-center italic" style={{ color: "#6B4A2E" }}>
                   Keine Treffer für „{query}". Versuch ein anderes Stichwort oder ruf uns an: 0171 7622620.
@@ -154,7 +158,7 @@ const FAQ = () => {
                   <Accordion
                     type="single"
                     collapsible
-                    className="bg-white rounded-xl px-5 md:px-6 shadow-sm"
+                    className="bg-white rounded-xl px-3 sm:px-5 md:px-6 shadow-sm"
                     style={{ border: "1px solid #EDE0D0" }}
                   >
                     {block.items.map((item, idx) => (
