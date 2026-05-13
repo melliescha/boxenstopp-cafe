@@ -41,6 +41,8 @@ const SEO = ({ title, description, path, image = DEFAULT_IMAGE, type = "website"
 
     document.title = title;
     setMeta('meta[name="description"]', "content", description);
+    setMeta('meta[http-equiv="content-language"]', "content", "de");
+    setMeta('meta[name="language"]', "content", "de");
     setLink("canonical", url);
 
     // Open Graph
