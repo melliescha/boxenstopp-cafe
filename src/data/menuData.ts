@@ -18,6 +18,7 @@ export interface MenuProduct {
   allergens?: string;
   volume?: string;
   badge?: string;
+  badges?: string[];
   featured?: boolean;
   variants?: { label: string; price: string }[];
   origin?: string;
@@ -37,7 +38,6 @@ export const menuCategories = [
   "Erfrischungsgetränke",
   "Süßes",
   "Herzhaft & Ofenfrisch",
-  "Snacks",
   "Shakes",
 ];
 
