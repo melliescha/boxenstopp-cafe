@@ -36,6 +36,8 @@ import aussenHausFrontStrasse from "@/assets/aussenansicht-haus.jpg";
 import aussenHausSeitlichWiese from "@/assets/gallery/aussen-haus-seitlich-wiese.jpg";
 import aussenFitesGarageReifen from "@/assets/gallery/aussen-fites-garage-reifen.jpg";
 import aussenStrasseKreuzungHaus from "@/assets/gallery/aussen-strasse-kreuzung-haus.jpg";
+import essenBaguetteTomateMozzarella from "@/assets/gallery/essen-baguette-tomate-mozzarella.jpg";
+import essenBaguetteSalamiSchorle from "@/assets/gallery/essen-baguette-salami-schorle.jpg";
 
 type Category = "all" | "innen" | "aussen" | "essen";
 
@@ -79,6 +81,8 @@ const images: GalleryImage[] = [
   { src: essenZweiFlammkuchenTomateSpeck, alt: "Zwei Flammkuchen – mediterran mit Tomate und Basilikum sowie klassisch mit Speck", category: "essen" },
   { src: essenCornettoMax, alt: "Cornetto Max Eishörnchen auf dem Terrassentisch mit gelben Frühlingsblumen", category: "essen" },
   { src: essenFlammkuchenLachsLauch, alt: "Flammkuchen mit Lachs, Lauch und Petersilie, dazu Orangensaft auf der Terrasse", category: "essen" },
+  { src: essenBaguetteTomateMozzarella, alt: "Gourmet Baguette Tomate Mozzarella mit frischem Basilikum auf der Terrasse", category: "essen" },
+  { src: essenBaguetteSalamiSchorle, alt: "Gourmet Baguette mit Apfelschorle auf dem Terrassentisch", category: "essen" },
 ];
 
 const tabs: { label: string; value: Category }[] = [
