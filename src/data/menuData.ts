@@ -450,10 +450,42 @@ export const menuProducts: MenuProduct[] = [
     description: "Frisches Obst",
     category: "Süßes",
   },
-  // Rustikale Brote
+  // Gourmet Baguettes
+  {
+    id: "thunfisch-baguette",
+    name: "Thunfisch Baguette-Gourmet",
+    price: "6,20 €",
+    description: "Mit Thunfisch, Zwiebeln, Gouda und Béchamelsauce",
+    category: "Herzhaft & Ofenfrisch",
+    allergens: "A,D,G",
+    origin: perplexOrigin,
+  },
+  {
+    id: "tomate-mozzarella-baguette",
+    name: "Tomate Mozzarella Baguette-Gourmet",
+    price: "6,20 €",
+    description: "Mit getrockneten Tomaten, Basilikum und Béchamel-Tomatensauce",
+    category: "Herzhaft & Ofenfrisch",
+    allergens: "A,G",
+    origin: perplexOrigin,
+    composition: "47% Baguette, 20% Béchamel-Tomatensoße, 20% Mozzarella, 12% halbgetrocknete Tomaten",
+    ingredients: "Weizenmehl, Tomaten, Mozzarella, Trinkwasser, Sahne, Jodsalz (Speisesalz, Kaliumjodat), Basilikum, Hefe, pasteurisierter Rahm, Zucker, Pfeffer.",
+    traceWarning: "Kann Spuren von Fisch und Sesamsamen enthalten.",
+    nutrition: [
+      { label: "Brennwert", value: "940 kJ / 223 kcal" },
+      { label: "Fett", value: "7,1 g" },
+      { label: "davon gesättigte Fettsäuren", value: "4,2 g", indent: true },
+      { label: "Kohlenhydrate", value: "28,3 g" },
+      { label: "davon Zucker", value: "2,5 g", indent: true },
+      { label: "Ballaststoffe", value: "2,3 g" },
+      { label: "Eiweiß", value: "10,5 g" },
+      { label: "Salz", value: "1,47 g" },
+    ],
+  },
+  // Holzfällerbrote
   {
     id: "holzfaellerbrot",
-    name: "Holzfällerbrot-Rustikal",
+    name: "Holzfällerbrot Speck",
     price: "7,40 €",
     description: "Schwarzbrot mit Knoblauchbutter, Käse, Speck, Zwiebeln und Schnittlauch",
     category: "Herzhaft & Ofenfrisch",
@@ -481,7 +513,7 @@ export const menuProducts: MenuProduct[] = [
   },
   {
     id: "tomaten-mozzarella-brot",
-    name: "Tomaten Mozzarella Brot",
+    name: "Holzfällerbrot Tomate Mozzarella",
     price: "7,40 €",
     description: "Weizenbrot mit Basilikum, Mozzarella und Tomaten",
     category: "Herzhaft & Ofenfrisch",
@@ -504,7 +536,7 @@ export const menuProducts: MenuProduct[] = [
   },
   {
     id: "raclettebrot",
-    name: "Raclettebrot-Rustikal",
+    name: "Holzfällerbrot Raclette",
     price: "7,70 €",
     description: "Schwarzbrot mit Knoblauchbutter, Raclettekäse und Lauch",
     category: "Herzhaft & Ofenfrisch",
