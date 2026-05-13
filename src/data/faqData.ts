@@ -110,7 +110,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Habt ihr glutenfreie Optionen?",
         answer:
-          "Bei einzelnen Produkten ja. Sprecht uns bitte direkt an, wir beraten euch gerne und ehrlich, was wir für euch haben.",
+          "Aktuell leider nicht. Sprecht uns gerne direkt an, wir beraten euch ehrlich was wir für euch tun können. Wichtig ist uns aber, ganz offen zu sein: Wir können keine zöliakiegerechten Speisen anbieten, weil es in unserer Küche zu Kreuzkontamination kommen kann. Wenn ihr also unter Zöliakie leidet, möchten wir euch nicht in Sicherheit wiegen, die wir nicht garantieren können.",
       },
       {
         question: "Was ist mit Allergien?",
