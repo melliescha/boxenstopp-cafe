@@ -231,6 +231,38 @@ const About = () => {
           <div className="divider-bronze mt-8" />
         </div>
       </section>
+
+      {/* Partner CTA */}
+      <section className="pb-16 md:pb-20 bg-background">
+        <div className="container mx-auto px-6 max-w-3xl">
+          <div
+            className="rounded-2xl p-8 md:p-12 text-center shadow-sm"
+            style={{ backgroundColor: "#FEF4EC", border: "1px solid #9E7C4E" }}
+          >
+            <h2
+              className="font-serif text-2xl md:text-3xl font-bold mb-4"
+              style={{ color: "#164472" }}
+            >
+              Wer hinter unseren Produkten steht
+            </h2>
+            <p
+              className="leading-relaxed mb-8 max-w-xl mx-auto"
+              style={{ color: "#6B4A2E" }}
+            >
+              Ein Bistro ist nur so gut wie seine Partner. Wir arbeiten ausschließlich
+              mit Unternehmen zusammen, die unsere Philosophie teilen: ehrliche
+              Zutaten, faire Qualität, klare Werte. Lernt sie kennen.
+            </p>
+            <Link
+              to="/partner"
+              className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 rounded-full font-semibold shadow-sm hover:opacity-90 transition-opacity min-h-[48px]"
+              style={{ backgroundColor: "#164472", color: "#FEF4EC" }}
+            >
+              Unsere Partner und Lieferanten kennenlernen →
+            </Link>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 };
