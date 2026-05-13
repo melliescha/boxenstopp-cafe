@@ -71,11 +71,18 @@ const categories: PriceCategory[] = [
     title: "Herzhafte Backwaren",
     subsections: [
       {
-        subtitle: "Rustikale Brote",
+        subtitle: "Gourmet Baguettes",
         items: [
-          { name: "Holzfällerbrot-Rustikal", price: "7,40 €", note: "Handgemachtes Schwarzbrot mit Knoblauchbutter, Käse, Speck, Zwiebeln, Schnittlauch und Gewürzen", allergens: "A,G" },
-          { name: "Tomaten Mozzarella Brot-Rustikal", price: "7,40 €", note: "Handgemachtes Weizenbrot mit Basilikum, Mozzarella, Tomaten und Gewürzen", allergens: "A,G" },
-          { name: "Raclettebrot-Rustikal", price: "7,70 €", note: "Handgemachtes Schwarzbrot mit Knoblauchbutter, Raclettekäse, Lauch und Gewürze", allergens: "A,G" },
+          { name: "Thunfisch Baguette-Gourmet", price: "6,20 €", note: "Baguette nach französischer Art mit Thunfisch, Zwiebeln, Gouda, Kräuter und einer Béchamelsauce", allergens: "A,D,G" },
+          { name: "Tomate Mozzarella Baguette-Gourmet", price: "6,20 €", note: "Baguette nach französischer Art mit getrockneten Tomaten, Basilikum und einer Béchamel-Tomatensauce", allergens: "A,G" },
+        ],
+      },
+      {
+        subtitle: "Holzfällerbrote",
+        items: [
+          { name: "Holzfällerbrot Speck", price: "7,40 €", note: "Handgemachtes Schwarzbrot mit Knoblauchbutter, Käse, Speck, Zwiebeln, Schnittlauch und Gewürzen", allergens: "A,G" },
+          { name: "Holzfällerbrot Tomate Mozzarella", price: "7,40 €", note: "Handgemachtes Weizenbrot mit Basilikum, Mozzarella, Tomaten und Gewürzen", allergens: "A,G" },
+          { name: "Holzfällerbrot Raclette", price: "7,70 €", note: "Handgemachtes Schwarzbrot mit Knoblauchbutter, Raclettekäse, Lauch und Gewürze", allergens: "A,G" },
         ],
       },
       {
