@@ -215,7 +215,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Habt ihr Parkplätze?",
         answer:
-          "Ja, 5 Gästeparkplätze direkt am Haus, plus weitere öffentliche Parkplätze in der Nähe. Parken ist also kein Thema.",
+          "Ja, wir haben 6 Kundenparkplätze und 4 öffentliche Parkplätze direkt am Haus. Parken ist also kein Thema.",
       },
       {
         question: "Welche Zahlungsmöglichkeiten habt ihr?",
