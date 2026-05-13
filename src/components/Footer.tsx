@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Phone, MapPin, Clock } from "lucide-react";
+import { TripAdvisorIcon, GoogleIcon } from "@/components/icons/SocialIcons";
+import { socialLinks, facebookEnabled } from "@/config/social";
 
 const Footer = () => {
   return (
