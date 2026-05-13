@@ -301,7 +301,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Wer steht hinter dem Bistro?",
         answer:
-          "Wir sind Eugen, Helena und Melanie Schall. Eine Familie, die sich vor einigen Jahren in das Westallgäu verliebt hat. Wir kamen vom Bodensee, haben hier unser Grundstück gekauft und Hergatz zu unserem Zuhause gemacht. Was uns hierhergezogen hat: die Ruhe, die Landschaft, die Bodenständigkeit der Menschen. Wir leben hier, wir bauen hier, wir wollen hier alt werden. Das Bistro Boxenstopp ist unser Beitrag zur Gemeinde, eingerichtet mit dem Wunsch, dass es bald euer Stammplatz wird.",
+          "Wir sind Eugen und Helena Schall. Eine Familie, die sich vor einigen Jahren in das Westallgäu verliebt hat. Wir kamen vom Bodensee, haben hier unser Grundstück gekauft und Hergatz zu unserem Zuhause gemacht. Was uns hierhergezogen hat: die Ruhe, die Landschaft, die Bodenständigkeit der Menschen. Wir leben hier, wir bauen hier, wir wollen hier alt werden. Das Bistro Boxenstopp ist unser Beitrag zur Gemeinde, eingerichtet mit dem Wunsch, dass es bald euer Stammplatz wird.",
       },
       {
         question: "Holzfällerbrot? Das macht doch jeder. Was ist daran besonders?",
@@ -346,7 +346,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Gehört da nicht das Fitnessstudio dazu? Werde ich da mit Werbung zugemüllt?",
         answer:
-          "Nein. Im Bistro Boxenstopp findet ihr keinen Flyer-Stapel \"Werde Mitglied bei FITES\" auf eurem Tisch. Wir trennen das ganz klar: oben Fitness, unten Bistro. Wer sich für FITES interessiert, fragt uns. Wer nicht, kriegt einen Kaffee und seine Ruhe. Versprochen.",
+          "Nein. Im Bistro Boxenstopp zwingt euch keiner 10 Liegestütze zu machen bevor euch ein Kaffee serviert wird. Wer sich für FITES interessiert, fragt uns. Wer nicht, kriegt einen Kaffee und seine Ruhe. Versprochen.",
       },
       {
         question: "Ist das wieder so ein \"Konzept-Laden\" mit Schickimicki?",
@@ -366,7 +366,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Ich vertraue Ketten und großen Marken eh nicht. Wer steht hinter euch?",
         answer:
-          "Wir sind keine Kette, sondern ein Familienbetrieb in Hergatz: Eugen, Helena und Melanie Schall. Eugen ist seit über 20 Jahren als Trainer, Ernährungsberater und Personaltrainer tätig. Wir kümmern uns gemeinsam um das Bistro, das Marketing und die Gäste. Wir entscheiden alles selbst, nichts wird von einer Zentrale vorgegeben. Wenn ihr ein Anliegen habt: kommt zu uns, nicht zu einer Hotline.",
+          "Wir sind keine Kette, sondern ein Familienbetrieb in Hergatz: Eugen und Helena Schall. Eugen ist seit über 20 Jahren als Trainer, Ernährungsberater und Personaltrainer tätig. Wir kümmern uns gemeinsam um das Bistro, das Marketing und die Gäste. Wir entscheiden alles selbst, nichts wird von einer Zentrale vorgegeben. Wenn ihr ein Anliegen habt: kommt zu uns, nicht zu einer Hotline.",
       },
       {
         question: "Versteht ihr Allgäuerisch oder muss ich Hochdeutsch reden bei euch?",
