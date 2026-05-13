@@ -21,6 +21,11 @@ import getraenkMatchaLatte from "@/assets/gallery/getraenk-matcha-latte.jpg";
 import getraenkZweiCappuccino from "@/assets/gallery/getraenk-zwei-cappuccino.jpg";
 import essenLatteDonutMuffin from "@/assets/gallery/essen-latte-macchiato-donut-muffin.jpg";
 import aussenTerrasseSchirm from "@/assets/aussenterrasse.jpg";
+import aussenTerrasseEingang from "@/assets/gallery/aussen-terrasse-eingang.jpg";
+import aussenTerrasseSchild from "@/assets/gallery/aussen-terrasse-schild.jpg";
+import aussenFitesFassade from "@/assets/gallery/aussen-fites-fassade.jpg";
+import aussenTreppeBank from "@/assets/gallery/aussen-treppe-bank.jpg";
+import aussenSitzplatzSchirm from "@/assets/gallery/aussen-sitzplatz-schirm.jpg";
 
 type Category = "all" | "innen" | "aussen" | "essen";
 
@@ -33,6 +38,11 @@ interface GalleryImage {
 const images: GalleryImage[] = [
   { src: heroBistro, alt: "Sonnige Terrasse des Bistro Boxenstopp im Außenbereich", category: "aussen" },
   { src: aussenTerrasseSchirm, alt: "Außenterrasse mit Sonnenschirm, Holztischen und Loungemöbeln vor Natursteinmauer", category: "aussen" },
+  { src: aussenTerrasseEingang, alt: "Blick von der Treppe auf die Terrasse mit Sonnenschirm und Eingangsbereich", category: "aussen" },
+  { src: aussenTerrasseSchild, alt: "Terrasse mit Café-Boxenstopp-Schild, Steinmauer und Frühlingsblumen", category: "aussen" },
+  { src: aussenFitesFassade, alt: "FITES-Fassade mit gepflegtem Steingarten und Holzbank", category: "aussen" },
+  { src: aussenTreppeBank, alt: "Treppe zum Eingang mit gemütlicher Holzbank am Bistro Boxenstopp", category: "aussen" },
+  { src: aussenSitzplatzSchirm, alt: "Sitzplatz mit Sonnenschirm, Lounge-Sessel und Holztischen vor Natursteinmauer", category: "aussen" },
   { src: innenSitzbereich, alt: "Heller Sitzbereich mit Holztischen und modernen Stühlen im Bistro Boxenstopp", category: "innen" },
   { src: innenTheke, alt: "Helena bedient einen Gast an der Theke des Bistro Boxenstopp", category: "innen" },
   { src: innenBilderwand, alt: "Bilderwand mit Sport-Motiven und gemütliche Ledersessel im Innenbereich", category: "innen" },
