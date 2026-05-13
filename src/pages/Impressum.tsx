@@ -29,7 +29,7 @@ const Block = ({ title, children }: { title: string; children: React.ReactNode }
 const Impressum = () => {
   return (
     <Layout>
-      <SEO title="Impressum | Bistro Boxenstopp Hergatz" description="Impressum und Anbieterkennzeichnung gemäß § 5 DDG für das Bistro Boxenstopp – FITES, Eugen Schall, Hergatz." path="/impressum" />
+      <SEO title="Impressum – Bistro Boxenstopp" description="Impressum und Anbieterkennzeichnung." path="/impressum" />
       <section style={{ backgroundColor: cream, paddingTop: 80, paddingBottom: 80 }}>
         <div className="mx-auto px-6" style={{ maxWidth: 720 }}>
           <h1
