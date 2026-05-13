@@ -139,7 +139,7 @@ const FAQ = () => {
             </aside>
 
             {/* Blocks */}
-            <div className="space-y-12">
+            <div className="space-y-12 min-w-0">
               {filteredBlocks.length === 0 && (
                 <p className="text-center italic" style={{ color: "#6B4A2E" }}>
                   Keine Treffer für „{query}". Versuch ein anderes Stichwort oder ruf uns an: 0171 7622620.
