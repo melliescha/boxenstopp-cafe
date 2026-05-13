@@ -22,6 +22,7 @@ import treppeImg from "@/assets/treppe.jpg";
 import eingangImg from "@/assets/eingang.jpg";
 import aussenterrasseImg from "@/assets/aussenterrasse.jpg";
 import fahrradstaenderImg from "@/assets/fahrradstaender.jpg";
+import aussenansichtHausImg from "@/assets/aussenansicht-haus.jpg";
 import {
   Accordion,
   AccordionContent,
