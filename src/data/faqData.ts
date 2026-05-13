@@ -171,7 +171,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Dürfen Hunde mit?",
         answer:
-          "Im Außenbereich, also auf der Terrasse, sind eure Vierbeiner herzlich willkommen.",
+          "Ja, Hunde sind bei uns im Innen- und Außenbereich herzlich willkommen. Wir sind tierfreundlich.",
       },
     ],
   },
