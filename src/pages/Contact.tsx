@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
+import parkplaetzeImg from "@/assets/parkplaetze.jpg";
 import {
   Accordion,
   AccordionContent,
@@ -64,7 +65,7 @@ const placeholders = [
   { icon: Navigation, caption: "Die Treppe führt euch direkt zu uns" },
   { icon: DoorOpen, caption: "Unser Eingang" },
   { icon: Trees, caption: "Unsere Außenterrasse mit Schatten und Schirm" },
-  { icon: ParkingCircle, caption: "5 Gästeparkplätze direkt am Haus" },
+  { icon: ParkingCircle, caption: "5 Gästeparkplätze direkt am Haus", image: parkplaetzeImg },
   { icon: Bike, caption: "Fahrradständer am Eingang, direkt am Bodensee-Königssee-Radweg" },
 ];
 
@@ -424,10 +425,19 @@ const Contact = () => {
                   aria-label={`Bild vergrößern: ${p.caption}`}
                 >
                   <div
-                    className="aspect-[4/3] flex items-center justify-center"
+                    className="aspect-[4/3] flex items-center justify-center overflow-hidden"
                     style={{ backgroundColor: CREAM }}
                   >
-                    <Icon className="w-16 h-16" style={{ color: BRONZE }} aria-hidden="true" />
+                    {p.image ? (
+                      <img
+                        src={p.image}
+                        alt={p.caption}
+                        loading="lazy"
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <Icon className="w-16 h-16" style={{ color: BRONZE }} aria-hidden="true" />
+                    )}
                   </div>
                   <div className="p-4">
                     <p className="text-sm" style={{ color: WARM_BROWN }}>
@@ -453,17 +463,27 @@ const Contact = () => {
                 Vorschau zum Bild: {placeholders[lightbox].caption}
               </DialogDescription>
               <div
-                className="aspect-[4/3] flex items-center justify-center rounded-lg"
+                className="aspect-[4/3] flex items-center justify-center rounded-lg overflow-hidden"
                 style={{ backgroundColor: CREAM }}
               >
-                {(() => {
-                  const Icon = placeholders[lightbox].icon;
-                  return <Icon className="w-32 h-32" style={{ color: BRONZE }} aria-hidden="true" />;
-                })()}
+                {placeholders[lightbox].image ? (
+                  <img
+                    src={placeholders[lightbox].image}
+                    alt={placeholders[lightbox].caption}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  (() => {
+                    const Icon = placeholders[lightbox].icon;
+                    return <Icon className="w-32 h-32" style={{ color: BRONZE }} aria-hidden="true" />;
+                  })()
+                )}
               </div>
-              <p className="text-sm text-muted-foreground text-center">
-                Foto folgt – Platzhalter
-              </p>
+              {!placeholders[lightbox].image && (
+                <p className="text-sm text-muted-foreground text-center">
+                  Foto folgt – Platzhalter
+                </p>
+              )}
             </>
           )}
         </DialogContent>
