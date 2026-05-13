@@ -8,7 +8,7 @@ interface SEOProps {
 }
 
 const SITE_URL = "https://bistro-boxenstopp.de";
-const DEFAULT_IMAGE = "/og-logo.png";
+const DEFAULT_IMAGE = "https://bistro-boxenstopp.de/og-image.jpg";
 
 const setMeta = (selector: string, attr: string, value: string) => {
   let el = document.head.querySelector<HTMLMetaElement>(selector);
