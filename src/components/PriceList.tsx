@@ -73,8 +73,10 @@ const categories: PriceCategory[] = [
       {
         subtitle: "Gourmet Baguettes",
         items: [
-          { name: "Thunfisch Baguette-Gourmet", price: "6,20 €", note: "Baguette nach französischer Art mit Thunfisch, Zwiebeln, Gouda, Kräuter und einer Béchamelsauce", allergens: "A,D,G" },
-          { name: "Tomate Mozzarella Baguette-Gourmet", price: "6,20 €", note: "Baguette nach französischer Art mit getrockneten Tomaten, Basilikum und einer Béchamel-Tomatensauce", allergens: "A,G" },
+          { name: "Gourmet Baguette Thunfisch", price: "6,20 €", note: "Baguette nach französischer Art mit Thunfisch, Zwiebeln, Gouda, Kräuter und einer Béchamelsauce", allergens: "A,D,G" },
+          { name: "Gourmet Baguette Tomate Mozzarella", price: "6,20 €", note: "Baguette nach französischer Art mit getrockneten Tomaten, Basilikum und einer Béchamel-Tomatensauce", allergens: "A,G" },
+          { name: "Gourmet Baguette Provence", price: "6,20 €", note: "Zutaten folgen in Kürze" },
+          { name: "Gourmet Baguette Rustikal", price: "6,20 €", note: "Zutaten folgen in Kürze" },
         ],
       },
       {

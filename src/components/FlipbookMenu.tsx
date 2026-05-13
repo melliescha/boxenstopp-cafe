@@ -180,8 +180,10 @@ const FlipbookMenu = () => {
             <Page>
               <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Frisch belegt: unsere Gourmet Baguettes</p>
               <SectionTitle title="Gourmet Baguettes" />
-              <FlipMenuItem item={{ name: "Thunfisch Baguette-Gourmet", price: "6,20 €", note: "Thunfisch, Zwiebeln, Gouda & Béchamelsauce" }} />
-              <FlipMenuItem item={{ name: "Tomate Mozzarella Baguette-Gourmet", price: "6,20 €", note: "Getrocknete Tomaten, Basilikum & Béchamel" }} />
+              <FlipMenuItem item={{ name: "Gourmet Baguette Thunfisch", price: "6,20 €", note: "Thunfisch, Zwiebeln, Gouda & Béchamelsauce" }} />
+              <FlipMenuItem item={{ name: "Gourmet Baguette Tomate Mozzarella", price: "6,20 €", note: "Getrocknete Tomaten, Basilikum & Béchamel" }} />
+              <FlipMenuItem item={{ name: "Gourmet Baguette Provence", price: "6,20 €", note: "Zutaten folgen" }} />
+              <FlipMenuItem item={{ name: "Gourmet Baguette Rustikal", price: "6,20 €", note: "Zutaten folgen" }} />
               <PageNumber num={5} />
             </Page>
 

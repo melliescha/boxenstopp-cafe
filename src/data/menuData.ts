@@ -453,7 +453,7 @@ export const menuProducts: MenuProduct[] = [
   // Gourmet Baguettes
   {
     id: "thunfisch-baguette",
-    name: "Thunfisch Baguette-Gourmet",
+    name: "Gourmet Baguette Thunfisch",
     price: "6,20 €",
     description: "Mit Thunfisch, Zwiebeln, Gouda und Béchamelsauce",
     category: "Herzhaft & Ofenfrisch",
@@ -462,7 +462,7 @@ export const menuProducts: MenuProduct[] = [
   },
   {
     id: "tomate-mozzarella-baguette",
-    name: "Tomate Mozzarella Baguette-Gourmet",
+    name: "Gourmet Baguette Tomate Mozzarella",
     price: "6,20 €",
     description: "Mit getrockneten Tomaten, Basilikum und Béchamel-Tomatensauce",
     category: "Herzhaft & Ofenfrisch",
@@ -481,6 +481,22 @@ export const menuProducts: MenuProduct[] = [
       { label: "Eiweiß", value: "10,5 g" },
       { label: "Salz", value: "1,47 g" },
     ],
+  },
+  {
+    id: "provence-baguette",
+    name: "Gourmet Baguette Provence",
+    price: "6,20 €",
+    description: "Zutaten folgen in Kürze",
+    category: "Herzhaft & Ofenfrisch",
+    origin: perplexOrigin,
+  },
+  {
+    id: "rustikal-baguette",
+    name: "Gourmet Baguette Rustikal",
+    price: "6,20 €",
+    description: "Zutaten folgen in Kürze",
+    category: "Herzhaft & Ofenfrisch",
+    origin: perplexOrigin,
   },
   // Holzfällerbrote
   {
