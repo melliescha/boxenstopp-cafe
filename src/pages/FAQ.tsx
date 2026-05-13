@@ -158,7 +158,7 @@ const FAQ = () => {
                   <Accordion
                     type="single"
                     collapsible
-                    className="bg-white rounded-xl px-5 md:px-6 shadow-sm"
+                    className="bg-white rounded-xl px-3 sm:px-5 md:px-6 shadow-sm"
                     style={{ border: "1px solid #EDE0D0" }}
                   >
                     {block.items.map((item, idx) => (
