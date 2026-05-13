@@ -4,6 +4,7 @@ import { Map, Thermometer, ShowerHead, BatteryCharging, Sun, Users, Bike, Clock 
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import BestsellerSection from "@/components/BestsellerSection";
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import heroBg from "@/assets/hero-bistro.jpg";
 import heroLogoSchriftzug from "@/assets/hero-logo-schriftzug.png";
 
@@ -55,6 +56,29 @@ const hours = [
   { days: "Mittwoch – Freitag", time: "15:00 – 20:00 Uhr" },
   { days: "Samstag", time: "10:30 – 15:30 Uhr" },
   { days: "Sonntag", time: "11:00 – 16:00 Uhr" },
+];
+
+const faqs = [
+  {
+    question: "Wo befindet sich das Bistro Boxenstopp?",
+    answer: "Das Bistro Boxenstopp liegt in Hergatz/Wohmbrechts im Westallgäu, Südhang 1, direkt am Bodensee-Königssee-Radweg und an der Leiblachroute. Wir sind ein idealer Stopp für Radfahrer und Sportler.",
+  },
+  {
+    question: "Was bietet das Bistro Boxenstopp an?",
+    answer: "Wir servieren Barista-Kaffee von Cup&Cino, handgemachte Flammkuchen, frische Pizza-Snacks, Baguettes, wechselnde Backwaren, Matcha, alkoholfreies Bier sowie Herbalife-Proteinshakes, Iso-Drinks und Elektrolyte für Sportler.",
+  },
+  {
+    question: "Was ist der Boxenstopp Spezial?",
+    answer: "Unser Signature-Drink: ein Kollagen Latte Macchiato mit Roh-Kakao und Meersalz – einzigartig im Allgäu.",
+  },
+  {
+    question: "Ist das Bistro Boxenstopp gut für Radfahrer geeignet?",
+    answer: "Ja, wir liegen direkt am Bodensee-Königssee-Radweg und an der Leiblachroute. Radfahrer können bei uns eine entspannte Pause machen, sich stärken und mit Energie weiterfahren.",
+  },
+  {
+    question: "Gehört das Bistro zum Fitnessstudio FITES?",
+    answer: "Ja, das Bistro Boxenstopp befindet sich im Gebäude des FITES Allgäu Fitnessstudios in Hergatz – ideal für eine Stärkung nach dem Training.",
+  },
 ];
 
 const ReviewCTASection = () => {
@@ -115,6 +139,30 @@ const ReviewCTASection = () => {
 };
 
 const Index = () => {
+  useEffect(() => {
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqs.map((faq) => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer,
+        },
+      })),
+    };
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "faq-schema";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const existing = document.head.querySelector('script[id="faq-schema"]');
+      if (existing) document.head.removeChild(existing);
+    };
+  }, []);
+
   return (
     <Layout>
       <SEO title="Bistro Boxenstopp Hergatz | Café & Bistro am Radweg im Westallgäu" description="Bistro Boxenstopp in Hergatz – Kaffee, Flammkuchen & Herbalife-Shakes direkt an der Leiblachroute und am Bodensee-Königssee-Radweg. E-Bike-Ladestation & Terrasse." path="/" />
@@ -235,6 +283,25 @@ const Index = () => {
             </div>
             <div className="divider-bronze mt-8" />
           </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-20 bg-secondary/50">
+        <div className="container mx-auto px-6 max-w-3xl">
+          <h2 className="font-serif text-3xl font-bold text-center text-foreground mb-10">Häufig gestellte Fragen</h2>
+          <Accordion type="single" collapsible className="bg-card rounded-xl px-6 shadow-sm border border-border/50">
+            {faqs.map((faq, idx) => (
+              <AccordionItem key={idx} value={`faq-${idx}`}>
+                <AccordionTrigger className="text-left font-medium text-foreground">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground leading-relaxed">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </section>
 
