@@ -277,9 +277,9 @@ const FlipbookMenu = () => {
                 <p className="font-serif text-lg sm:text-xl font-bold text-primary-foreground mb-3">Bistro Boxenstopp</p>
                 <div className="text-primary-foreground/60 text-xs space-y-1 mb-4">
                   <p>Südhang 1, 88145 Hergatz</p>
-                  <p className="mt-2">Mo–Fr: 15:00–20:00 Uhr</p>
-                  <p>Sa: 10:30–15:30 Uhr</p>
-                  <p>So: 11:00–16:00 Uhr</p>
+                  <p className="mt-2">Mo, Mi–Fr: 15:00–20:00 Uhr</p>
+                  <p>Sa: 10:30–15:30 Uhr · So: 11:00–16:00 Uhr</p>
+                  <p>Di: Ruhetag</p>
                 </div>
                 <p className="text-primary-foreground/50 text-xs mb-3">
                   Teil von FITES Allgäu, www.fites-allgaeu.com
