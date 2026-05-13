@@ -36,9 +36,9 @@ const Menu = () => {
           "description": "Ofenfrische Speisen von unserem Partner Perplex, handbelegt",
           "hasMenuItem": [
             {"@type": "MenuItem", "name": "Flammkuchen", "description": "Verschiedene Sorten, ofenfrisch"},
-            {"@type": "MenuItem", "name": "Holzfällerbrot Speck", "description": "Schwarzbrot mit Knoblauchbutter, Käse, Speck, Zwiebeln und Schnittlauch"},
-            {"@type": "MenuItem", "name": "Holzfällerbrot Tomate Mozzarella"},
-            {"@type": "MenuItem", "name": "Holzfällerbrot Raclette"},
+            {"@type": "MenuItem", "name": "Hüttenbrot Speck", "description": "Schwarzbrot mit Knoblauchbutter, Käse, Speck, Zwiebeln und Schnittlauch"},
+            {"@type": "MenuItem", "name": "Hüttenbrot Tomate Mozzarella"},
+            {"@type": "MenuItem", "name": "Hüttenbrot Raclette"},
             {"@type": "MenuItem", "name": "Gourmet Baguette"},
             {"@type": "MenuItem", "name": "Pizza-Snack", "description": "Kleiner Hunger, kleiner Preis"},
             

@@ -80,11 +80,11 @@ const categories: PriceCategory[] = [
         ],
       },
       {
-        subtitle: "Holzfällerbrote",
+        subtitle: "Hüttenbrote",
         items: [
-          { name: "Holzfällerbrot Speck", price: "7,40 €", note: "Handgemachtes Schwarzbrot mit Knoblauchbutter, Käse, Speck, Zwiebeln, Schnittlauch und Gewürzen", allergens: "A,G" },
-          { name: "Holzfällerbrot Tomate Mozzarella", price: "7,40 €", note: "Handgemachtes Weizenbrot mit Basilikum, Mozzarella, Tomaten und Gewürzen", allergens: "A,G" },
-          { name: "Holzfällerbrot Raclette", price: "7,70 €", note: "Handgemachtes Schwarzbrot mit Knoblauchbutter, Raclettekäse, Lauch und Gewürze", allergens: "A,G" },
+          { name: "Hüttenbrot Speck", price: "7,40 €", note: "Handgemachtes Schwarzbrot mit Knoblauchbutter, Käse, Speck, Zwiebeln, Schnittlauch und Gewürzen", allergens: "A,G" },
+          { name: "Hüttenbrot Tomate Mozzarella", price: "7,40 €", note: "Handgemachtes Weizenbrot mit Basilikum, Mozzarella, Tomaten und Gewürzen", allergens: "A,G" },
+          { name: "Hüttenbrot Raclette", price: "7,70 €", note: "Handgemachtes Schwarzbrot mit Knoblauchbutter, Raclettekäse, Lauch und Gewürze", allergens: "A,G" },
         ],
       },
       {

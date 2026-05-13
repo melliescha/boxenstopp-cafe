@@ -187,13 +187,13 @@ const FlipbookMenu = () => {
               <PageNumber num={5} />
             </Page>
 
-            {/* Page 8: Holzfällerbrote */}
+            {/* Page 8: Hüttenbrote */}
             <Page>
-              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Handgemacht: unsere Holzfällerbrote</p>
-              <SectionTitle title="Holzfällerbrote" />
-              <FlipMenuItem item={{ name: "Holzfällerbrot Speck", price: "7,40 €", note: "Schwarzbrot mit Knoblauchbutter, Käse, Speck & Zwiebeln" }} />
-              <FlipMenuItem item={{ name: "Holzfällerbrot Tomate Mozzarella", price: "7,40 €", note: "Weizenbrot mit Basilikum, Mozzarella & Tomaten" }} />
-              <FlipMenuItem item={{ name: "Holzfällerbrot Raclette", price: "7,70 €", note: "Schwarzbrot mit Raclettekäse, Lauch & Gewürze" }} />
+              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Handgemacht: unsere Hüttenbrote</p>
+              <SectionTitle title="Hüttenbrote" />
+              <FlipMenuItem item={{ name: "Hüttenbrot Speck", price: "7,40 €", note: "Schwarzbrot mit Knoblauchbutter, Käse, Speck & Zwiebeln" }} />
+              <FlipMenuItem item={{ name: "Hüttenbrot Tomate Mozzarella", price: "7,40 €", note: "Weizenbrot mit Basilikum, Mozzarella & Tomaten" }} />
+              <FlipMenuItem item={{ name: "Hüttenbrot Raclette", price: "7,70 €", note: "Schwarzbrot mit Raclettekäse, Lauch & Gewürze" }} />
               <PageNumber num={6} />
             </Page>
 

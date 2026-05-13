@@ -64,7 +64,7 @@ const images: GalleryImage[] = [
   { src: innenThekeUebersicht, alt: "Übersicht der Theke mit Kaffeemaschine und stimmungsvoller Beleuchtung", category: "innen" },
   { src: innenLedersesselPflanze, alt: "Gemütliche Sitzecke mit schwarzen Ledersesseln vor dekorativer 3D-Wand", category: "innen" },
   { src: innenBartischeBilderwand, alt: "Bartische mit Lederhockern, Pizzasnack und Bilderwand mit Sport-Motiven", category: "innen" },
-  { src: essenTomateMozzarella, alt: "Unser vegetarisches Holzfällerbrot mit Tomate, Mozzarella und frischem Basilikum", category: "essen" },
+  { src: essenTomateMozzarella, alt: "Unser vegetarisches Hüttenbrot mit Tomate, Mozzarella und frischem Basilikum", category: "essen" },
   { src: essenFlammkuchenLachs, alt: "Flammkuchen mit Lachs, Lauch und Schnittlauch, serviert mit Orangensaft", category: "essen" },
   { src: essenFlammkuchenGemuese, alt: "Unser mediterraner Flammkuchen mit Feta, Paprika, Zucchini und frischen Kräutern", category: "essen" },
   { src: essenEisSchokoHimbeere, alt: "Cremiges Schoko-Himbeer-Eis am Stiel mit Schokoladenhülle in der Frühlingssonne", category: "essen" },

@@ -68,7 +68,7 @@ const faqs = [
   {
     question: "Muss ich Fitnessmitglied sein, um ins Bistro zu kommen?",
     answer:
-      "Auf gar keinen Fall! Wir sind ein eigenständiges Bistro. Du kannst einfach auf einen Kaffee, einen Flammkuchen oder unser Holzfällerbrot vorbeikommen, ohne jemals ein Fitnessstudio von innen zu sehen. Versprochen.",
+      "Auf gar keinen Fall! Wir sind ein eigenständiges Bistro. Du kannst einfach auf einen Kaffee, einen Flammkuchen oder unser Hüttenbrot vorbeikommen, ohne jemals ein Fitnessstudio von innen zu sehen. Versprochen.",
   },
   {
     question: "Bin ich hier richtig, wenn ich einfach nur Kaffee will?",
@@ -159,7 +159,7 @@ const Index = () => {
       "@id": "https://bistro-boxenstopp.de/#bistro",
       "name": "Bistro Boxenstopp",
       "alternateName": "Bistro Boxenstopp Hergatz",
-      "description": "Bistro im Westallgäu mit Barista-Kaffee, Flammkuchen, Holzfällerbrot und Proteinshakes. Direkt am Bodensee-Königssee-Radweg und an der Leiblachroute in Hergatz/Wohmbrechts.",
+      "description": "Bistro im Westallgäu mit Barista-Kaffee, Flammkuchen, Hüttenbrot und Proteinshakes. Direkt am Bodensee-Königssee-Radweg und an der Leiblachroute in Hergatz/Wohmbrechts.",
       "url": "https://bistro-boxenstopp.de",
       "telephone": "+4917176226201",
       "priceRange": "€€",
@@ -226,8 +226,8 @@ const Index = () => {
   return (
     <Layout>
       <SEO
-        title="Bistro Boxenstopp Hergatz | Barista-Kaffee, Flammkuchen & Holzfällerbrot im Westallgäu"
-        description="Euer Stopp am Bodensee-Königssee-Radweg in Hergatz: Barista-Kaffee, ofenfrische Flammkuchen, herzhaftes Holzfällerbrot und der legendäre Boxenstopp Spezial."
+        title="Bistro Boxenstopp Hergatz | Barista-Kaffee, Flammkuchen & Hüttenbrot im Westallgäu"
+        description="Euer Stopp am Bodensee-Königssee-Radweg in Hergatz: Barista-Kaffee, ofenfrische Flammkuchen, herzhaftes Hüttenbrot und der legendäre Boxenstopp Spezial."
         path="/"
         type="restaurant.restaurant"
       />

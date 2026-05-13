@@ -24,7 +24,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Muss ich Fitnessmitglied bei FITES sein, um ins Bistro zu kommen?",
         answer:
-          "Auf gar keinen Fall! Wir sind ein eigenständiges Bistro. Du kannst einfach auf einen Kaffee, einen Flammkuchen oder unser Holzfällerbrot vorbeikommen, ohne jemals ein Fitnessstudio von innen zu sehen. Versprochen.",
+          "Auf gar keinen Fall! Wir sind ein eigenständiges Bistro. Du kannst einfach auf einen Kaffee, einen Flammkuchen oder unser Hüttenbrot vorbeikommen, ohne jemals ein Fitnessstudio von innen zu sehen. Versprochen.",
       },
       {
         question: "Wie finde ich rein? Wo ist der Eingang?",
@@ -39,7 +39,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Ist das nicht eigentlich nur ein Ort für Sportler?",
         answer:
-          "Verstehen wir total, dass das so ankommt. Antwort: nein. Wir sind ein gemütliches Bistro für ALLE. Nachbarn, Radfahrer, Spaziergänger, Familien, Pendler. Sportler sind natürlich auch dabei, aber wir sind kein Fitness Café. Wir sind ein Bistro mit Kaffee, Flammkuchen und Holzfällerbrot.",
+          "Verstehen wir total, dass das so ankommt. Antwort: nein. Wir sind ein gemütliches Bistro für ALLE. Nachbarn, Radfahrer, Spaziergänger, Familien, Pendler. Sportler sind natürlich auch dabei, aber wir sind kein Fitness Café. Wir sind ein Bistro mit Kaffee, Flammkuchen und Hüttenbrot.",
       },
     ],
   },
@@ -56,7 +56,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Hieß das nicht früher \"Café Boxenstopp\"? Warum jetzt \"Bistro\"?",
         answer:
-          "Genau, wir haben uns weiterentwickelt. Davor hatten wir nur Kaffee und Nährshakes. Heute servieren wir auch herzhafte Snacks wie Flammkuchen und unser Holzfällerbrot. Damit der Name unsere Karte besser widerspiegelt, ist aus dem Café ein Bistro geworden.",
+          "Genau, wir haben uns weiterentwickelt. Davor hatten wir nur Kaffee und Nährshakes. Heute servieren wir auch herzhafte Snacks wie Flammkuchen und unser Hüttenbrot. Damit der Name unsere Karte besser widerspiegelt, ist aus dem Café ein Bistro geworden.",
       },
       {
         question: "Was ist denn der \"Boxenstopp Spezial\"?",
@@ -64,9 +64,9 @@ export const faqBlocks: FaqBlock[] = [
           "Das ist unser Signature Drink und ehrlich gesagt das, was wir selbst jeden Tag trinken: ein Kollagen Latte Macchiato mit Roh Kakao und Meersalz. Klingt erstmal ungewöhnlich, aber probiert's. Wir dachten, was uns so gut schmeckt, schmeckt unseren Gästen auch.",
       },
       {
-        question: "Was ist euer Holzfällerbrot?",
+        question: "Was ist euer Hüttenbrot?",
         answer:
-          "Unsere absolute Spezialität: Holzfällerbrot Speck, ein herzhaftes Schwarzbrot belegt mit Knoblauchbutter, Käse, Speck, Zwiebeln und frischem Schnittlauch. Deftig, kräftig, ehrlich. Genau das Richtige nach Radtour, Spaziergang oder einfach gegen den Hunger.",
+          "Unsere absolute Spezialität: Hüttenbrot Speck, ein herzhaftes Schwarzbrot belegt mit Knoblauchbutter, Käse, Speck, Zwiebeln und frischem Schnittlauch. Deftig, kräftig, ehrlich. Genau das Richtige nach Radtour, Spaziergang oder einfach gegen den Hunger.",
       },
       {
         question: "Ihr seid ein Fitnessstudio. Wie passt da Flammkuchen rein?",
@@ -125,7 +125,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Was empfehlt IHR eigentlich?",
         answer:
-          "Unser Lieblings Trio: Kaffee von Cup&Cino (wir trinken doppelt so viel Kaffee seit der Eröffnung), das Holzfällerbrot und natürlich der Boxenstopp Spezial. Das ist, was wir selbst jeden Tag bestellen.",
+          "Unser Lieblings Trio: Kaffee von Cup&Cino (wir trinken doppelt so viel Kaffee seit der Eröffnung), das Hüttenbrot und natürlich der Boxenstopp Spezial. Das ist, was wir selbst jeden Tag bestellen.",
       },
       {
         question: "Was kostet ein Kaffee bei euch ungefähr?",
@@ -203,7 +203,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Bietet ihr auch Recovery nach dem Workout im FITES?",
         answer:
-          "Klar, wer oben trainiert, kommt unten zur Erholung. Mit Kaffee, Shake oder Holzfällerbrot. Ganz wie du magst.",
+          "Klar, wer oben trainiert, kommt unten zur Erholung. Mit Kaffee, Shake oder Hüttenbrot. Ganz wie du magst.",
       },
     ],
   },
@@ -304,7 +304,7 @@ export const faqBlocks: FaqBlock[] = [
           "Wir sind Eugen und Helena Schall. Eine Familie, die sich vor einigen Jahren in das Westallgäu verliebt hat. Wir kamen vom Bodensee, haben hier unser Grundstück gekauft und Hergatz zu unserem Zuhause gemacht. Was uns hierhergezogen hat: die Ruhe, die Landschaft, die Bodenständigkeit der Menschen. Wir leben hier, wir bauen hier, wir wollen hier alt werden. Das Bistro Boxenstopp ist unser Beitrag zur Gemeinde, eingerichtet mit dem Wunsch, dass es bald euer Stammplatz wird.",
       },
       {
-        question: "Holzfällerbrot? Das macht doch jeder. Was ist daran besonders?",
+        question: "Hüttenbrot? Das macht doch jeder. Was ist daran besonders?",
         answer:
           "Ehrlich gesagt: Wir machen das Brot nicht selbst, das kommt ofenfrisch und handbelegt von unserem Partner Perplex. Klingt simpel, aber wenn ihr es einmal probiert habt, garantieren wir euch: ihr kommt wieder. Simpel, deftig, einfach nur gut.",
       },
@@ -341,7 +341,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Im Sommer 2025 eröffnet und schon wieder Namensänderung. Wirkt unsicher.",
         answer:
-          "Stimmt, das könnte so wirken. Unsere Wahrheit: Wir haben uns weiterentwickelt. Erst Café mit Kaffee und Shakes, dann gemerkt: unsere Gäste wollen mehr Auswahl. Also Flammkuchen und Holzfällerbrot dazu, und damit der Name zur Karte passt: aus Café wurde Bistro. Das ist kein Strategiewechsel, sondern Wachstum. Ein junges Unternehmen, das sich anpasst und seine Gäste ernst nimmt, das ist gesund, nicht unsicher.",
+          "Stimmt, das könnte so wirken. Unsere Wahrheit: Wir haben uns weiterentwickelt. Erst Café mit Kaffee und Shakes, dann gemerkt: unsere Gäste wollen mehr Auswahl. Also Flammkuchen und Hüttenbrot dazu, und damit der Name zur Karte passt: aus Café wurde Bistro. Das ist kein Strategiewechsel, sondern Wachstum. Ein junges Unternehmen, das sich anpasst und seine Gäste ernst nimmt, das ist gesund, nicht unsicher.",
       },
       {
         question: "Gehört da nicht das Fitnessstudio dazu? Werde ich da mit Werbung zugemüllt?",
