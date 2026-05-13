@@ -21,6 +21,7 @@ import parkplaetzeImg from "@/assets/parkplaetze.jpg";
 import treppeImg from "@/assets/treppe.jpg";
 import eingangImg from "@/assets/eingang.jpg";
 import aussenterrasseImg from "@/assets/aussenterrasse.jpg";
+import fahrradstaenderImg from "@/assets/fahrradstaender.jpg";
 import {
   Accordion,
   AccordionContent,
@@ -69,7 +70,7 @@ const placeholders = [
   { icon: DoorOpen, caption: "Unser Eingang", image: eingangImg },
   { icon: Trees, caption: "Unsere Außenterrasse mit Schatten und Schirm", image: aussenterrasseImg },
   { icon: ParkingCircle, caption: "5 Gästeparkplätze direkt am Haus", image: parkplaetzeImg },
-  { icon: Bike, caption: "Fahrradständer am Eingang, direkt am Bodensee-Königssee-Radweg" },
+  { icon: Bike, caption: "Fahrradständer am Eingang, direkt am Bodensee-Königssee-Radweg", image: fahrradstaenderImg },
 ];
 
 const Contact = () => {
