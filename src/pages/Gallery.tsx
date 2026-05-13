@@ -28,6 +28,12 @@ import aussenTreppeBank from "@/assets/gallery/aussen-treppe-bank.jpg";
 import aussenSitzplatzSchirm from "@/assets/gallery/aussen-sitzplatz-schirm.jpg";
 import innenLedersesselPflanze from "@/assets/gallery/innen-ledersessel-pflanze.jpg";
 import innenBartischeBilderwand from "@/assets/gallery/innen-bartische-bilderwand.jpg";
+import essenFlammkuchenSpeckMeckatzer from "@/assets/gallery/essen-flammkuchen-speck-meckatzer.jpg";
+import essenLatteMuffinDonutTerrasse from "@/assets/gallery/essen-latte-muffin-donut-terrasse.jpg";
+import essenFlammkuchenSpeckPerplex from "@/assets/gallery/essen-flammkuchen-speck-perplex.jpg";
+import essenZweiFlammkuchenTomateSpeck from "@/assets/gallery/essen-zwei-flammkuchen-tomate-speck.jpg";
+import essenCornettoMax from "@/assets/gallery/essen-cornetto-max.jpg";
+import essenFlammkuchenLachsLauch from "@/assets/gallery/essen-flammkuchen-lachs-lauch.jpg";
 
 type Category = "all" | "innen" | "aussen" | "essen";
 
@@ -63,6 +69,12 @@ const images: GalleryImage[] = [
   { src: getraenkMatchaLatte, alt: "Matcha Latte im Cup&Cino Glas vor sonniger Steinmauer", category: "essen" },
   { src: getraenkZweiCappuccino, alt: "Zwei Cup&Cino Cappuccinos mit Wasser und Frühlingsblumen vor dem FITES-Fenster", category: "essen" },
   { src: essenLatteDonutMuffin, alt: "Zwei Latte Macchiato mit Donut und Heidelbeer-Muffin auf der Terrasse", category: "essen" },
+  { src: essenFlammkuchenSpeckMeckatzer, alt: "Herzhafter Flammkuchen mit Speck und Schnittlauch, dazu ein alkoholfreies Meckatzer Hell auf der Terrasse", category: "essen" },
+  { src: essenLatteMuffinDonutTerrasse, alt: "Zwei Cup&Cino Latte Macchiato mit Heidelbeer-Muffin und Donut auf der sonnigen Terrasse", category: "essen" },
+  { src: essenFlammkuchenSpeckPerplex, alt: "Flammkuchen mit Speck und Schnittlauch auf Perplex-Holzbrett im Innenbereich", category: "essen" },
+  { src: essenZweiFlammkuchenTomateSpeck, alt: "Zwei Flammkuchen – mediterran mit Tomate und Basilikum sowie klassisch mit Speck", category: "essen" },
+  { src: essenCornettoMax, alt: "Cornetto Max Eishörnchen auf dem Terrassentisch mit gelben Frühlingsblumen", category: "essen" },
+  { src: essenFlammkuchenLachsLauch, alt: "Flammkuchen mit Lachs, Lauch und Petersilie, dazu Orangensaft auf der Terrasse", category: "essen" },
 ];
 
 const tabs: { label: string; value: Category }[] = [
