@@ -150,6 +150,7 @@ const ReviewCTASection = () => {
 
 const Index = () => {
   useEffect(() => {
+    // FAQPage schema
     const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -162,14 +163,75 @@ const Index = () => {
         },
       })),
     };
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.id = "faq-schema";
-    script.textContent = JSON.stringify(faqSchema);
-    document.head.appendChild(script);
+    const faqScript = document.createElement("script");
+    faqScript.type = "application/ld+json";
+    faqScript.id = "faq-schema";
+    faqScript.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(faqScript);
+
+    // LocalBusiness / CafeOrCoffeeShop schema
+    const localBusinessSchema = {
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      "@id": "https://bistro-boxenstopp.de/#bistro",
+      "name": "Bistro Boxenstopp",
+      "alternateName": "Bistro Boxenstopp Hergatz",
+      "description": "Bistro im Westallgäu mit Barista-Kaffee, Flammkuchen, Holzfällerbrot und Proteinshakes. Direkt am Bodensee-Königssee-Radweg und an der Leiblachroute in Hergatz/Wohmbrechts.",
+      "url": "https://bistro-boxenstopp.de",
+      "telephone": "+4917176226201",
+      "priceRange": "€€",
+      "image": "https://bistro-boxenstopp.de/og-image.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Südhang 1",
+        "addressLocality": "Hergatz",
+        "addressRegion": "Bayern",
+        "postalCode": "88145",
+        "addressCountry": "DE",
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "47.6489",
+        "longitude": "9.8520",
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Monday",
+          "opens": "15:00",
+          "closes": "20:00",
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Wednesday", "Thursday", "Friday"],
+          "opens": "15:00",
+          "closes": "20:00",
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "10:30",
+          "closes": "15:30",
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "11:00",
+          "closes": "16:00",
+        },
+      ],
+    };
+    const lbScript = document.createElement("script");
+    lbScript.type = "application/ld+json";
+    lbScript.id = "local-business-schema";
+    lbScript.textContent = JSON.stringify(localBusinessSchema);
+    document.head.appendChild(lbScript);
+
     return () => {
-      const existing = document.head.querySelector('script[id="faq-schema"]');
-      if (existing) document.head.removeChild(existing);
+      const existingFaq = document.head.querySelector('script[id="faq-schema"]');
+      if (existingFaq) document.head.removeChild(existingFaq);
+      const existingLb = document.head.querySelector('script[id="local-business-schema"]');
+      if (existingLb) document.head.removeChild(existingLb);
     };
   }, []);
 
