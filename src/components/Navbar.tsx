@@ -6,12 +6,10 @@ import logoIcon from "@/assets/logo-icon.png";
 const navLinks = [
   { label: "Startseite", path: "/" },
   { label: "Speisekarte", path: "/speisekarte" },
-  { label: "Über uns", path: "/ueber-uns" },
-  { label: "Unsere Partner", path: "/partner" },
-  { label: "Galerie", path: "/galerie" },
-  { label: "Bewertungen", path: "/bewertungen" },
   { label: "Anfahrt & Kontakt", path: "/kontakt" },
   { label: "FAQ", path: "/faq" },
+  { label: "Galerie", path: "/galerie" },
+  { label: "Über uns", path: "/ueber-uns" },
 ];
 
 const Navbar = () => {
