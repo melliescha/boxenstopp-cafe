@@ -66,7 +66,7 @@ const nearby = [
 ];
 
 const placeholders = [
-  { icon: Home, caption: "Außenansicht unseres Hauses am Südhang 1" },
+  { icon: Home, caption: "Außenansicht unseres Hauses am Südhang 1", image: aussenansichtHausImg },
   { icon: Navigation, caption: "Die Treppe führt euch direkt zu uns", image: treppeImg },
   { icon: DoorOpen, caption: "Unser Eingang", image: eingangImg },
   { icon: Trees, caption: "Unsere Außenterrasse mit Schatten und Schirm", image: aussenterrasseImg },
