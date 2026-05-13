@@ -463,17 +463,27 @@ const Contact = () => {
                 Vorschau zum Bild: {placeholders[lightbox].caption}
               </DialogDescription>
               <div
-                className="aspect-[4/3] flex items-center justify-center rounded-lg"
+                className="aspect-[4/3] flex items-center justify-center rounded-lg overflow-hidden"
                 style={{ backgroundColor: CREAM }}
               >
-                {(() => {
-                  const Icon = placeholders[lightbox].icon;
-                  return <Icon className="w-32 h-32" style={{ color: BRONZE }} aria-hidden="true" />;
-                })()}
+                {placeholders[lightbox].image ? (
+                  <img
+                    src={placeholders[lightbox].image}
+                    alt={placeholders[lightbox].caption}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  (() => {
+                    const Icon = placeholders[lightbox].icon;
+                    return <Icon className="w-32 h-32" style={{ color: BRONZE }} aria-hidden="true" />;
+                  })()
+                )}
               </div>
-              <p className="text-sm text-muted-foreground text-center">
-                Foto folgt – Platzhalter
-              </p>
+              {!placeholders[lightbox].image && (
+                <p className="text-sm text-muted-foreground text-center">
+                  Foto folgt – Platzhalter
+                </p>
+              )}
             </>
           )}
         </DialogContent>
