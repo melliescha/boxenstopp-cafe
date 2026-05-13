@@ -4,7 +4,7 @@ import SEO from "@/components/SEO";
 const Reviews = () => {
   return (
     <Layout>
-      <SEO title="Bewertungen | Bistro Boxenstopp Hergatz" description="Was unsere Gäste sagen: Lesen Sie Bewertungen zum Bistro Boxenstopp in Hergatz auf Google und TripAdvisor – oder hinterlassen Sie selbst eine Rezension." path="/bewertungen" />
+      <SEO title="Bewertungen – Bistro Boxenstopp Hergatz" description="Was Gäste über das Bistro Boxenstopp in Hergatz im Westallgäu sagen." path="/bewertungen" />
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6 text-center max-w-2xl">
           <p className="text-bronze font-medium tracking-[0.2em] uppercase text-sm mb-2">Feedback</p>

@@ -165,7 +165,7 @@ const Index = () => {
 
   return (
     <Layout>
-      <SEO title="Bistro Boxenstopp Hergatz | Café & Bistro am Radweg im Westallgäu" description="Bistro Boxenstopp in Hergatz – Kaffee, Flammkuchen & Herbalife-Shakes direkt an der Leiblachroute und am Bodensee-Königssee-Radweg. E-Bike-Ladestation & Terrasse." path="/" />
+      <SEO title="Bistro Boxenstopp Hergatz – Barista-Kaffee, Flammkuchen & Proteinshakes im Westallgäu" description="Euer Stopp am Bodensee-Königssee-Radweg in Hergatz: Barista-Kaffee von Cup&Cino, handgemachte Flammkuchen, Proteinshakes und der legendäre Boxenstopp-Spezial. Direkt im FITES Allgäu." path="/" />
       {/* Hero */}
       {/* Hero */}
       <section className="relative overflow-hidden h-[55vh]">

@@ -37,7 +37,7 @@ const tips = [
 const Contact = () => {
   return (
     <Layout>
-      <SEO title="Kontakt & Anfahrt | Bistro Boxenstopp Hergatz" description="So finden Sie uns: Südhang 1, 88145 Hergatz. Öffnungszeiten, Telefon, E-Mail und Anfahrt mit Rad, Auto oder zu Fuß zum Bistro Boxenstopp." path="/kontakt" />
+      <SEO title="Kontakt & Anfahrt – Bistro Boxenstopp Hergatz" description="So findet ihr uns: Südhang 1, 88145 Hergatz. Direkt am Bodensee-Königssee-Radweg im Westallgäu." path="/kontakt" />
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6">
           {/* Hidden gem intro */}

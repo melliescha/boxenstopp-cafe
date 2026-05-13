@@ -52,7 +52,7 @@ const Gallery = () => {
 
   return (
     <Layout>
-      <SEO title="Galerie | Eindrücke vom Bistro Boxenstopp Hergatz" description="Bilder vom Bistro Boxenstopp: gemütliches Ambiente, sonnige Terrasse, leckere Flammkuchen und Kaffeegenuss am Radweg im Westallgäu." path="/galerie" />
+      <SEO title="Galerie – Bistro Boxenstopp Hergatz" description="Eindrücke aus unserem Bistro im Allgäu: Kaffeespezialitäten, Flammkuchen, Atmosphäre." path="/galerie" />
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">

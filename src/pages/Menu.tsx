@@ -12,7 +12,7 @@ const Menu = () => {
 
   return (
     <Layout>
-      <SEO title="Speisekarte | Bistro Boxenstopp Hergatz" description="Unsere Speisekarte: Flammkuchen, Kaffeespezialitäten, hausgemachte Kuchen und Herbalife-Shakes – frisch zubereitet im Bistro Boxenstopp in Hergatz." path="/speisekarte" />
+      <SEO title="Speisekarte – Bistro Boxenstopp Hergatz" description="Unsere Karte: Flammkuchen, Pizza-Snacks, Baguettes, Barista-Kaffee, Matcha, Proteinshakes, alkoholfreies Bier und der berühmte Boxenstopp-Spezial mit Kollagen." path="/speisekarte" />
       <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-6">
           {/* Page title */}
