@@ -136,23 +136,43 @@ const Footer = () => {
           </div>
           <div className="flex items-center gap-3">
             <a
-              href="https://www.instagram.com/fites.allgaeu"
+              href={socialLinks.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
+              className="w-11 h-11 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-warm-gold hover:scale-110 transition-all"
               aria-label="Instagram"
             >
               <Instagram size={18} />
             </a>
             <a
-              href="https://www.facebook.com/share/1CE6CEvvEr/"
+              href={socialLinks.tripadvisor}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
-              aria-label="Facebook"
+              className="w-11 h-11 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-warm-gold hover:scale-110 transition-all"
+              aria-label="TripAdvisor"
             >
-              <Facebook size={18} />
+              <TripAdvisorIcon size={18} />
             </a>
+            <a
+              href={socialLinks.googleMaps}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-11 h-11 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-warm-gold hover:scale-110 transition-all"
+              aria-label="Google Maps Profil"
+            >
+              <GoogleIcon size={18} />
+            </a>
+            {facebookEnabled && (
+              <a
+                href={socialLinks.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-11 h-11 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-warm-gold hover:scale-110 transition-all"
+                aria-label="Facebook"
+              >
+                <Facebook size={18} />
+              </a>
+            )}
           </div>
         </div>
 
