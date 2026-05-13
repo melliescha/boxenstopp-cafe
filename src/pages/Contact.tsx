@@ -22,6 +22,7 @@ import treppeImg from "@/assets/treppe.jpg";
 import eingangImg from "@/assets/eingang.jpg";
 import aussenterrasseImg from "@/assets/aussenterrasse.jpg";
 import fahrradstaenderImg from "@/assets/fahrradstaender.jpg";
+import aussenansichtHausImg from "@/assets/aussenansicht-haus.jpg";
 import {
   Accordion,
   AccordionContent,
@@ -65,7 +66,7 @@ const nearby = [
 ];
 
 const placeholders = [
-  { icon: Home, caption: "Außenansicht unseres Hauses am Südhang 1" },
+  { icon: Home, caption: "Außenansicht unseres Hauses am Südhang 1", image: aussenansichtHausImg },
   { icon: Navigation, caption: "Die Treppe führt euch direkt zu uns", image: treppeImg },
   { icon: DoorOpen, caption: "Unser Eingang", image: eingangImg },
   { icon: Trees, caption: "Unsere Außenterrasse mit Schatten und Schirm", image: aussenterrasseImg },
