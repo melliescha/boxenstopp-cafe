@@ -3,7 +3,7 @@ import HTMLFlipBook from "react-pageflip";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { forwardRef } from "react";
 
-import menuBaguette from "@/assets/baguettes-hero.png";
+
 
 
 // Page wrapper for react-pageflip (requires forwardRef)
@@ -174,23 +174,6 @@ const FlipbookMenu = () => {
                 <FlipMenuItem item={{ name: "Obst (verschiedenes)", price: "0,50 €" }} />
               </div>
               <PageNumber num={3} />
-            </Page>
-
-            {/* Page 6: Baguette image */}
-            <Page>
-              <ImagePage src={menuBaguette} alt="Frisch belegtes Baguette" />
-            </Page>
-
-            {/* Page 7: Baguettes */}
-            <Page>
-              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Frisch belegt: unsere Baguettes</p>
-              <SectionTitle title="Baguettes" />
-              <FlipMenuItem item={{ name: "Fitness Baguette-Premium", price: "6,80 €", note: "Körnerbaguette mit Hähnchenbrustschinken & Gouda" }} />
-              <FlipMenuItem item={{ name: "Grillgemüse Baguette-Premium", price: "6,80 €", note: "Zucchini, Champignons, Tomaten, Mozzarella" }} />
-              <FlipMenuItem item={{ name: "Schwarzwälder Laugen-Premium", price: "7,40 €", note: "Laugenbaguette mit rohem Schinken & Gouda" }} />
-              <FlipMenuItem item={{ name: "Thunfisch Baguette-Gourmet", price: "6,20 €", note: "Thunfisch, Zwiebeln, Gouda & Béchamelsauce" }} />
-              <FlipMenuItem item={{ name: "Tomate Mozzarella-Gourmet", price: "6,20 €", note: "Getrocknete Tomaten, Basilikum & Béchamel" }} />
-              <PageNumber num={5} />
             </Page>
 
             {/* Page 8: Rustic breads */}

@@ -93,7 +93,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Wer ist Perplex und warum nicht selbstgemacht?",
         answer:
-          "Perplex ist unser Partner für Flammkuchen und Baguettes. Warum? Weil sie genau unsere Philosophie teilen: keine Massenware mit unnötigen Zusatzstoffen, sondern ehrliche Zutaten. Selbstgemacht klingt schön, aber Perplex liefert eine Qualität, die wir alleine in der Küche nicht so konstant hinbekommen würden. Und das schmeckt ihr.",
+          "Perplex ist unser Partner für Flammkuchen. Warum? Weil sie genau unsere Philosophie teilen: keine Massenware mit unnötigen Zusatzstoffen, sondern ehrliche Zutaten. Selbstgemacht klingt schön, aber Perplex liefert eine Qualität, die wir alleine in der Küche nicht so konstant hinbekommen würden. Und das schmeckt ihr.",
       },
     ],
   },

@@ -47,10 +47,10 @@ const Partners = () => {
                   Was als Idee begann, feinste Tiefkühlbackwaren für Profis zu schaffen, ist heute eine Marke, der Gastronomie, Hotellerie und Handel in ganz Deutschland vertrauen. Seit über 33 Jahren steht Perplex für Leidenschaft, Handwerk und kompromisslose Qualität.
                 </p>
                 <p>
-                  Ihre Produzenten sind keine anonymen Fabriken, sondern Manufakturen mit Herz. Hier wird noch von Hand belegt, abgeschmeckt und verfeinert, und mit moderner Technik perfektioniert. Ob Flammkuchen, Baguette oder Snack: Jedes Produkt ist einfach in der Zubereitung und authentisch im Geschmack.
+                  Ihre Produzenten sind keine anonymen Fabriken, sondern Manufakturen mit Herz. Hier wird noch von Hand belegt, abgeschmeckt und verfeinert, und mit moderner Technik perfektioniert. Ob Flammkuchen oder Snack: Jedes Produkt ist einfach in der Zubereitung und authentisch im Geschmack.
                 </p>
                 <p>
-                  Für uns bedeutet das: Wenn du bei uns einen Flammkuchen oder ein Baguette bestellst, bekommst du ein Produkt, hinter dem über drei Jahrzehnte Erfahrung stehen.
+                  Für uns bedeutet das: Wenn du bei uns einen Flammkuchen bestellst, bekommst du ein Produkt, hinter dem über drei Jahrzehnte Erfahrung stehen.
                 </p>
               </div>
             </div>
