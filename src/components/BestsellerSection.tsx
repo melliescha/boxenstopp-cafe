@@ -46,8 +46,8 @@ const bestsellers: Bestseller[] = [
   },
   {
     image: bestsellerHolzfaellerbrot,
-    alt: "Holzfällerbrot rustikal auf Holzbrett",
-    name: "Holzfällerbrot",
+    alt: "Hüttenbrot rustikal auf Holzbrett",
+    name: "Hüttenbrot",
     description: "Handgemachtes Schwarzbrot mit Knoblauchbutter, Käse, Speck, Zwiebeln und Schnittlauch",
     price: "7,40 €",
     badge: "💪 Sattmacher",

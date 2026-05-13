@@ -499,10 +499,10 @@ export const menuProducts: MenuProduct[] = [
     category: "Herzhaft & Ofenfrisch",
     origin: perplexOrigin,
   },
-  // Holzfällerbrote
+  // Hüttenbrote
   {
     id: "holzfaellerbrot",
-    name: "Holzfällerbrot Speck",
+    name: "Hüttenbrot Speck",
     price: "7,40 €",
     description: "Schwarzbrot mit Knoblauchbutter, Käse, Speck, Zwiebeln und Schnittlauch",
     category: "Herzhaft & Ofenfrisch",
@@ -530,7 +530,7 @@ export const menuProducts: MenuProduct[] = [
   },
   {
     id: "tomaten-mozzarella-brot",
-    name: "Holzfällerbrot Tomate Mozzarella",
+    name: "Hüttenbrot Tomate Mozzarella",
     price: "7,40 €",
     description: "Weizenbrot mit Basilikum, Mozzarella und Tomaten",
     category: "Herzhaft & Ofenfrisch",
@@ -554,7 +554,7 @@ export const menuProducts: MenuProduct[] = [
   },
   {
     id: "raclettebrot",
-    name: "Holzfällerbrot Raclette",
+    name: "Hüttenbrot Raclette",
     price: "7,70 €",
     description: "Schwarzbrot mit Knoblauchbutter, Raclettekäse und Lauch",
     category: "Herzhaft & Ofenfrisch",
