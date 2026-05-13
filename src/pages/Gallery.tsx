@@ -5,8 +5,6 @@ import SEO from "@/components/SEO";
 
 import heroBistro from "@/assets/hero-bistro.jpg";
 import essenTomateMozzarella from "@/assets/gallery/essen-flammkuchen-tomate-mozzarella.jpg";
-import essenBaguetteTomate from "@/assets/gallery/essen-baguette-tomate-mozzarella.jpg";
-import essenBaguetteSalami from "@/assets/gallery/essen-baguette-salami-schorle.jpg";
 import essenFlammkuchenLachs from "@/assets/gallery/essen-flammkuchen-lachs.jpg";
 import essenFlammkuchenGemuese from "@/assets/gallery/essen-flammkuchen-gemuese-feta.jpg";
 import innenSitzbereich from "@/assets/gallery/innen-sitzbereich-tische.jpg";
@@ -67,8 +65,6 @@ const images: GalleryImage[] = [
   { src: innenLedersesselPflanze, alt: "Gemütliche Sitzecke mit schwarzen Ledersesseln vor dekorativer 3D-Wand", category: "innen" },
   { src: innenBartischeBilderwand, alt: "Bartische mit Lederhockern, Pizzasnack und Bilderwand mit Sport-Motiven", category: "innen" },
   { src: essenTomateMozzarella, alt: "Unser vegetarisches Holzfällerbrot mit Tomate, Mozzarella und frischem Basilikum", category: "essen" },
-  { src: essenBaguetteTomate, alt: "Premium Baguette mit Tomate, Mozzarella und Basilikum", category: "essen" },
-  { src: essenBaguetteSalami, alt: "Pizzasnack für den kleinen Hunger – mit Salami und Basilikum, dazu Allgäuer Apfel-Kirsch-Schorle", category: "essen" },
   { src: essenFlammkuchenLachs, alt: "Flammkuchen mit Lachs, Lauch und Schnittlauch, serviert mit Orangensaft", category: "essen" },
   { src: essenFlammkuchenGemuese, alt: "Unser mediterraner Flammkuchen mit Feta, Paprika, Zucchini und frischen Kräutern", category: "essen" },
   { src: essenEisSchokoHimbeere, alt: "Cremiges Schoko-Himbeer-Eis am Stiel mit Schokoladenhülle in der Frühlingssonne", category: "essen" },
