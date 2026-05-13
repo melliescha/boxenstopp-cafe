@@ -26,6 +26,8 @@ import aussenTerrasseSchild from "@/assets/gallery/aussen-terrasse-schild.jpg";
 import aussenFitesFassade from "@/assets/gallery/aussen-fites-fassade.jpg";
 import aussenTreppeBank from "@/assets/gallery/aussen-treppe-bank.jpg";
 import aussenSitzplatzSchirm from "@/assets/gallery/aussen-sitzplatz-schirm.jpg";
+import innenLedersesselPflanze from "@/assets/gallery/innen-ledersessel-pflanze.jpg";
+import innenBartischeBilderwand from "@/assets/gallery/innen-bartische-bilderwand.jpg";
 
 type Category = "all" | "innen" | "aussen" | "essen";
 
@@ -48,6 +50,8 @@ const images: GalleryImage[] = [
   { src: innenBilderwand, alt: "Bilderwand mit Sport-Motiven und gemütliche Ledersessel im Innenbereich", category: "innen" },
   { src: innenShaker, alt: "Goldener Shaker und Snacks an der Theke vor dem Herbalife-Regal", category: "innen" },
   { src: innenThekeUebersicht, alt: "Übersicht der Theke mit Kaffeemaschine und stimmungsvoller Beleuchtung", category: "innen" },
+  { src: innenLedersesselPflanze, alt: "Gemütliche Sitzecke mit schwarzen Ledersesseln vor dekorativer 3D-Wand", category: "innen" },
+  { src: innenBartischeBilderwand, alt: "Bartische mit Lederhockern, Pizzasnack und Bilderwand mit Sport-Motiven", category: "innen" },
   { src: essenTomateMozzarella, alt: "Unser vegetarisches Holzfällerbrot mit Tomate, Mozzarella und frischem Basilikum", category: "essen" },
   { src: essenBaguetteTomate, alt: "Premium Baguette mit Tomate, Mozzarella und Basilikum", category: "essen" },
   { src: essenBaguetteSalami, alt: "Pizzasnack für den kleinen Hunger – mit Salami und Basilikum, dazu Allgäuer Apfel-Kirsch-Schorle", category: "essen" },
