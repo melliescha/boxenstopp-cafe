@@ -71,16 +71,6 @@ const categories: PriceCategory[] = [
     title: "Herzhafte Backwaren",
     subsections: [
       {
-        subtitle: "Baguettes",
-        items: [
-          { name: "Fitness Baguette-Premium", price: "6,80 €", note: "Körnerbaguette nach französischer Art mit Hähnchenbrustschinken und Gouda", allergens: "A,G" },
-          { name: "Grillgemüse Baguette-Premium", price: "6,80 €", note: "Baguette nach französischer Art mit Zucchini, Champignons, Tomaten, Paprika rot/gelb, Mozzarella und Kräutersauce", allergens: "A,G" },
-          { name: "Schwarzwälder Laugen Baguette-Premium", price: "7,40 €", note: "Hausgemachte Laugenbaguette mit rohem Schinken und Gouda", allergens: "A,G" },
-          { name: "Thunfisch Baguette-Gourmet", price: "6,20 €", note: "Baguette nach französischer Art mit Thunfisch, Zwiebeln, Gouda, Kräuter und einer Béchamelsauce", allergens: "A,D,G" },
-          { name: "Tomate Mozzarella Baguette-Gourmet", price: "6,20 €", note: "Baguette nach französischer Art mit getrockneten Tomaten, Basilikum und einer Béchamel-Tomatensauce", allergens: "A,G" },
-        ],
-      },
-      {
         subtitle: "Rustikale Brote",
         items: [
           { name: "Holzfällerbrot-Rustikal", price: "7,40 €", note: "Handgemachtes Schwarzbrot mit Knoblauchbutter, Käse, Speck, Zwiebeln, Schnittlauch und Gewürzen", allergens: "A,G" },
