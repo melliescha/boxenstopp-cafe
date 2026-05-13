@@ -20,6 +20,7 @@ import SEO from "@/components/SEO";
 import parkplaetzeImg from "@/assets/parkplaetze.jpg";
 import treppeImg from "@/assets/treppe.jpg";
 import eingangImg from "@/assets/eingang.jpg";
+import aussenterrasseImg from "@/assets/aussenterrasse.jpg";
 import {
   Accordion,
   AccordionContent,
@@ -66,7 +67,7 @@ const placeholders = [
   { icon: Home, caption: "Außenansicht unseres Hauses am Südhang 1" },
   { icon: Navigation, caption: "Die Treppe führt euch direkt zu uns", image: treppeImg },
   { icon: DoorOpen, caption: "Unser Eingang", image: eingangImg },
-  { icon: Trees, caption: "Unsere Außenterrasse mit Schatten und Schirm" },
+  { icon: Trees, caption: "Unsere Außenterrasse mit Schatten und Schirm", image: aussenterrasseImg },
   { icon: ParkingCircle, caption: "5 Gästeparkplätze direkt am Haus", image: parkplaetzeImg },
   { icon: Bike, caption: "Fahrradständer am Eingang, direkt am Bodensee-Königssee-Radweg" },
 ];

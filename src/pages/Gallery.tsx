@@ -20,6 +20,7 @@ import essenCappuccinoMuffinDonut from "@/assets/gallery/essen-cappuccino-muffin
 import getraenkMatchaLatte from "@/assets/gallery/getraenk-matcha-latte.jpg";
 import getraenkZweiCappuccino from "@/assets/gallery/getraenk-zwei-cappuccino.jpg";
 import essenLatteDonutMuffin from "@/assets/gallery/essen-latte-macchiato-donut-muffin.jpg";
+import aussenTerrasseSchirm from "@/assets/aussenterrasse.jpg";
 
 type Category = "all" | "innen" | "aussen" | "essen";
 
@@ -31,6 +32,7 @@ interface GalleryImage {
 
 const images: GalleryImage[] = [
   { src: heroBistro, alt: "Sonnige Terrasse des Bistro Boxenstopp im Außenbereich", category: "aussen" },
+  { src: aussenTerrasseSchirm, alt: "Außenterrasse mit Sonnenschirm, Holztischen und Loungemöbeln vor Natursteinmauer", category: "aussen" },
   { src: innenSitzbereich, alt: "Heller Sitzbereich mit Holztischen und modernen Stühlen im Bistro Boxenstopp", category: "innen" },
   { src: innenTheke, alt: "Helena bedient einen Gast an der Theke des Bistro Boxenstopp", category: "innen" },
   { src: innenBilderwand, alt: "Bilderwand mit Sport-Motiven und gemütliche Ledersessel im Innenbereich", category: "innen" },
