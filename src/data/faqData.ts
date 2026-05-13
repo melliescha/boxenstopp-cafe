@@ -88,7 +88,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Herbalife? Wir sind skeptisch...",
         answer:
-          "Verstehen wir, wir hören das oft. Die Marke polarisiert. Unsere Antwort: Wir nutzen Herbalife seit über 30 Jahren selbst. Eugen ist deshalb sogar VIP Berater. Was uns überzeugt: extrem wenige Zusatzstoffe, sehr viele Vitamine im Mahlzeitenshake (was die meisten anderen Mahlzeitenshakes nicht haben, die haben oft viele Farbstoffe und kaum Vitamine), und der Geschmack ist natürlich, nicht künstlich. Probiert's einfach selbst.",
+          "Verstehen wir, wir hören das oft. Die Marke polarisiert. Unsere Antwort: Wir nutzen Herbalife seit über 20 Jahren selbst. Eugen ist deshalb sogar VIP Berater. Was uns überzeugt: extrem wenige Zusatzstoffe, sehr viele Vitamine im Mahlzeitenshake (was die meisten anderen Mahlzeitenshakes nicht haben, die haben oft viele Farbstoffe und kaum Vitamine), und der Geschmack ist natürlich, nicht künstlich. Probiert's einfach selbst.",
       },
       {
         question: "Wer ist Perplex und warum nicht selbstgemacht?",
