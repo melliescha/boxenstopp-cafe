@@ -425,10 +425,19 @@ const Contact = () => {
                   aria-label={`Bild vergrößern: ${p.caption}`}
                 >
                   <div
-                    className="aspect-[4/3] flex items-center justify-center"
+                    className="aspect-[4/3] flex items-center justify-center overflow-hidden"
                     style={{ backgroundColor: CREAM }}
                   >
-                    <Icon className="w-16 h-16" style={{ color: BRONZE }} aria-hidden="true" />
+                    {p.image ? (
+                      <img
+                        src={p.image}
+                        alt={p.caption}
+                        loading="lazy"
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <Icon className="w-16 h-16" style={{ color: BRONZE }} aria-hidden="true" />
+                    )}
                   </div>
                   <div className="p-4">
                     <p className="text-sm" style={{ color: WARM_BROWN }}>
