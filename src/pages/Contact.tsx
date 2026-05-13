@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
+import parkplaetzeImg from "@/assets/parkplaetze.jpg";
 import {
   Accordion,
   AccordionContent,
