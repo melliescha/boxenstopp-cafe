@@ -10,6 +10,60 @@ type Tab = "karte" | "flipbook";
 const Menu = () => {
   const [tab, setTab] = useState<Tab>("karte");
 
+  useEffect(() => {
+    const menuSchema = {
+      "@context": "https://schema.org",
+      "@type": "Menu",
+      "name": "Speisekarte Bistro Boxenstopp",
+      "inLanguage": "de",
+      "hasMenuSection": [
+        {
+          "@type": "MenuSection",
+          "name": "Kaffeespezialitäten",
+          "description": "Barista-Kaffee von Cup&Cino in Spitzenqualität",
+          "hasMenuItem": [
+            {"@type": "MenuItem", "name": "Espresso"},
+            {"@type": "MenuItem", "name": "Cappuccino"},
+            {"@type": "MenuItem", "name": "Latte Macchiato"},
+            {"@type": "MenuItem", "name": "Café Crème"},
+            {"@type": "MenuItem", "name": "Boxenstopp Spezial", "description": "Kollagen Latte Macchiato mit Roh-Kakao und Meersalz, unser Signature Drink"},
+            {"@type": "MenuItem", "name": "Matcha Latte", "description": "Mit Hafermilch optional"},
+          ],
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Herzhaft",
+          "description": "Ofenfrische Speisen von unserem Partner Perplex, handbelegt",
+          "hasMenuItem": [
+            {"@type": "MenuItem", "name": "Flammkuchen", "description": "Verschiedene Sorten, ofenfrisch"},
+            {"@type": "MenuItem", "name": "Holzfällerbrot Rustikal", "description": "Schwarzbrot mit Knoblauchbutter, Käse, Speck, Zwiebeln und Schnittlauch"},
+            {"@type": "MenuItem", "name": "Pizza-Snack", "description": "Kleiner Hunger, kleiner Preis"},
+            {"@type": "MenuItem", "name": "Baguette"},
+          ],
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Sportler-Drinks",
+          "description": "Energie für vor, während und nach dem Workout",
+          "hasMenuItem": [
+            {"@type": "MenuItem", "name": "Herbalife Protein-Shake"},
+            {"@type": "MenuItem", "name": "Herbalife Nähr-Shake"},
+            {"@type": "MenuItem", "name": "Iso-Mineralgetränke"},
+          ],
+        },
+      ],
+    };
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "menu-schema";
+    script.textContent = JSON.stringify(menuSchema);
+    document.head.appendChild(script);
+    return () => {
+      const existing = document.head.querySelector('script[id="menu-schema"]');
+      if (existing) document.head.removeChild(existing);
+    };
+  }, []);
+
   return (
     <Layout>
       <SEO title="Speisekarte – Bistro Boxenstopp Hergatz" description="Unsere Karte: Flammkuchen, Pizza-Snacks, Baguettes, Barista-Kaffee, Matcha, Proteinshakes, alkoholfreies Bier und der berühmte Boxenstopp-Spezial mit Kollagen." path="/speisekarte" />
