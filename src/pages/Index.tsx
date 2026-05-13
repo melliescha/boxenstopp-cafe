@@ -7,6 +7,7 @@ import BestsellerSection from "@/components/BestsellerSection";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import heroBg from "@/assets/hero-bistro.jpg";
 import heroLogoSchriftzug from "@/assets/hero-logo-schriftzug.png";
+import { socialLinks } from "@/config/social";
 
 
 const highlights = [
@@ -110,39 +111,21 @@ const ReviewCTASection = () => {
     <section
       ref={ref}
       className="py-16 md:py-20"
-      style={{ background: "linear-gradient(135deg, hsl(210 68% 27%), hsl(200 45% 20%))" }}
+      style={{ backgroundColor: "#FEF4EC", borderTop: "1px solid #9E7C4E33", borderBottom: "1px solid #9E7C4E33" }}
     >
-      <div className="container mx-auto px-6 text-center">
-        <h3 className={`font-serif text-2xl md:text-3xl font-bold text-primary-foreground mb-3 ${visible ? "animate-fade-in-up" : "opacity-0"}`}>
-          Hat's dir geschmeckt? Erzähl's weiter! ☕
-        </h3>
-        <p className={`text-primary-foreground/70 text-sm mb-8 max-w-md mx-auto ${visible ? "animate-fade-in-up" : "opacity-0"}`} style={{ animationDelay: "0.1s" }}>
-          Deine Bewertung hilft anderen Radfahrern und Genießern, uns zu finden.
+      <div className="container mx-auto px-6 text-center max-w-2xl">
+        <p className={`font-serif text-2xl md:text-3xl font-bold mb-6 ${visible ? "animate-fade-in-up" : "opacity-0"}`} style={{ color: "#164472" }}>
+          Wart ihr schon bei uns? Wir freuen uns über eure Bewertung.
         </p>
-
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a
-            href="#google-review"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`inline-flex items-center justify-center gap-2 bg-card text-primary px-7 py-3 rounded-lg font-medium hover:ring-2 hover:ring-warm-gold/50 transition-all ${visible ? "animate-fade-in-up" : "opacity-0"}`}
-          >
-            Auf Google bewerten
-          </a>
-          <a
-            href="#tripadvisor"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`inline-flex items-center justify-center gap-2 bg-card text-primary px-7 py-3 rounded-lg font-medium hover:ring-2 hover:ring-warm-gold/50 transition-all ${visible ? "animate-fade-in-up" : "opacity-0"}`}
-            style={{ animationDelay: "0.2s" }}
-          >
-            Auf TripAdvisor bewerten
-          </a>
-        </div>
-
-        <p className={`text-primary-foreground/50 text-xs italic mt-6 ${visible ? "animate-fade-in-up" : "opacity-0"}`} style={{ animationDelay: "0.3s" }}>
-          Es dauert nur 30 Sekunden und bedeutet uns die Welt. Danke! 💛
-        </p>
+        <a
+          href={socialLinks.googleReview}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`inline-flex items-center justify-center gap-2 w-full sm:w-auto rounded-lg font-medium text-white hover:opacity-90 transition-opacity ${visible ? "animate-fade-in-up" : "opacity-0"}`}
+          style={{ backgroundColor: "#9E7C4E", padding: "14px 32px", minHeight: "48px", fontSize: "15px" }}
+        >
+          Auf Google bewerten
+        </a>
       </div>
     </section>
   );
@@ -219,6 +202,11 @@ const Index = () => {
           "opens": "11:00",
           "closes": "16:00",
         },
+      ],
+      "sameAs": [
+        "https://www.instagram.com/bistro.boxenstopp/",
+        "https://www.tripadvisor.ch/Restaurant_Review-g7074590-d34214130-Reviews-FITES_Cafe_Boxenstopp-Hergatz_Swabia_Bavaria.html",
+        "https://share.google/z2I9vHthpnC8Ys52e",
       ],
     };
     const lbScript = document.createElement("script");

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram, Facebook } from "lucide-react";
 import logoIcon from "@/assets/logo-icon.png";
+import { socialLinks, facebookEnabled } from "@/config/social";
 
 const navLinks = [
   { label: "Startseite", path: "/" },
@@ -51,16 +52,38 @@ const Navbar = () => {
           })}
         </ul>
 
-        <button
-          type="button"
-          className="lg:hidden text-foreground inline-flex items-center justify-center w-11 h-11 rounded-md hover:bg-muted/50"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label={isOpen ? "Menü schließen" : "Menü öffnen"}
-          aria-expanded={isOpen}
-          aria-controls="mobile-menu"
-        >
-          {isOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
-        </button>
+        <div className="flex items-center gap-1">
+          <a
+            href={socialLinks.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram Bistro Boxenstopp"
+            className="hidden sm:inline-flex items-center justify-center w-11 h-11 rounded-full text-muted-foreground hover:text-bronze hover:scale-110 transition-all"
+          >
+            <Instagram size={20} aria-hidden="true" />
+          </a>
+          {facebookEnabled && (
+            <a
+              href={socialLinks.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook Bistro Boxenstopp"
+              className="hidden sm:inline-flex items-center justify-center w-11 h-11 rounded-full text-muted-foreground hover:text-bronze hover:scale-110 transition-all"
+            >
+              <Facebook size={20} aria-hidden="true" />
+            </a>
+          )}
+          <button
+            type="button"
+            className="lg:hidden text-foreground inline-flex items-center justify-center w-11 h-11 rounded-md hover:bg-muted/50"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? "Menü schließen" : "Menü öffnen"}
+            aria-expanded={isOpen}
+            aria-controls="mobile-menu"
+          >
+            {isOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
+          </button>
+        </div>
       </nav>
 
       {isOpen && (
