@@ -88,16 +88,25 @@ const ProductDetailOverlay = ({ product, onClose }: Props) => {
               <span className="text-6xl">📷</span>
             </div>
           )}
-          {product.badge && (
-            <span
-              className="absolute top-3 left-3 text-xs font-semibold px-3 py-1 rounded-full"
-              style={{
-                backgroundColor: product.badge.includes("Kinder") ? "rgba(234, 145, 50, 0.85)" : "#b8943e",
-                color: "#fff",
-              }}
-            >
-              {product.badge}
-            </span>
+          {(product.badges?.length ? product.badges : product.badge ? [product.badge] : []).length > 0 && (
+            <div className="absolute top-3 left-3 flex flex-col gap-1 items-start">
+              {(product.badges?.length ? product.badges : [product.badge!]).map((b) => (
+                <span
+                  key={b}
+                  className="text-xs font-semibold px-3 py-1 rounded-full"
+                  style={{
+                    backgroundColor: b.includes("Vegetarisch") || b.includes("Vegan")
+                      ? "rgba(106, 142, 60, 0.9)"
+                      : b.includes("Kinder")
+                      ? "rgba(234, 145, 50, 0.85)"
+                      : "#b8943e",
+                    color: "#fff",
+                  }}
+                >
+                  {b}
+                </span>
+              ))}
+            </div>
           )}
           <button
             onClick={onClose}
