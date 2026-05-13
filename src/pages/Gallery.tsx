@@ -34,6 +34,10 @@ import essenFlammkuchenSpeckPerplex from "@/assets/gallery/essen-flammkuchen-spe
 import essenZweiFlammkuchenTomateSpeck from "@/assets/gallery/essen-zwei-flammkuchen-tomate-speck.jpg";
 import essenCornettoMax from "@/assets/gallery/essen-cornetto-max.jpg";
 import essenFlammkuchenLachsLauch from "@/assets/gallery/essen-flammkuchen-lachs-lauch.jpg";
+import aussenHausFrontStrasse from "@/assets/aussenansicht-haus.jpg";
+import aussenHausSeitlichWiese from "@/assets/gallery/aussen-haus-seitlich-wiese.jpg";
+import aussenFitesGarageReifen from "@/assets/gallery/aussen-fites-garage-reifen.jpg";
+import aussenStrasseKreuzungHaus from "@/assets/gallery/aussen-strasse-kreuzung-haus.jpg";
 
 type Category = "all" | "innen" | "aussen" | "essen";
 
@@ -51,6 +55,10 @@ const images: GalleryImage[] = [
   { src: aussenFitesFassade, alt: "FITES-Fassade mit gepflegtem Steingarten und Holzbank", category: "aussen" },
   { src: aussenTreppeBank, alt: "Treppe zum Eingang mit gemütlicher Holzbank am Bistro Boxenstopp", category: "aussen" },
   { src: aussenSitzplatzSchirm, alt: "Sitzplatz mit Sonnenschirm, Lounge-Sessel und Holztischen vor Natursteinmauer", category: "aussen" },
+  { src: aussenHausFrontStrasse, alt: "Außenansicht unseres Hauses am Südhang 1 mit Doppelgarage und Eingangsbereich", category: "aussen" },
+  { src: aussenHausSeitlichWiese, alt: "Seitliche Außenansicht des Hauses mit Wiese und blauem Himmel", category: "aussen" },
+  { src: aussenFitesGarageReifen, alt: "FITES-Studio mit Garage, Traktorreifen und Outdoor-Trainingsbereich", category: "aussen" },
+  { src: aussenStrasseKreuzungHaus, alt: "Anfahrt zum Bistro Boxenstopp – Blick von der Kreuzung auf das Haus am Südhang 1", category: "aussen" },
   { src: innenSitzbereich, alt: "Heller Sitzbereich mit Holztischen und modernen Stühlen im Bistro Boxenstopp", category: "innen" },
   { src: innenTheke, alt: "Helena bedient einen Gast an der Theke des Bistro Boxenstopp", category: "innen" },
   { src: innenBilderwand, alt: "Bilderwand mit Sport-Motiven und gemütliche Ledersessel im Innenbereich", category: "innen" },
