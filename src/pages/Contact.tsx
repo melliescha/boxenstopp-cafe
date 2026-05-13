@@ -65,7 +65,7 @@ const placeholders = [
   { icon: Navigation, caption: "Die Treppe führt euch direkt zu uns" },
   { icon: DoorOpen, caption: "Unser Eingang" },
   { icon: Trees, caption: "Unsere Außenterrasse mit Schatten und Schirm" },
-  { icon: ParkingCircle, caption: "5 Gästeparkplätze direkt am Haus" },
+  { icon: ParkingCircle, caption: "5 Gästeparkplätze direkt am Haus", image: parkplaetzeImg },
   { icon: Bike, caption: "Fahrradständer am Eingang, direkt am Bodensee-Königssee-Radweg" },
 ];
 
