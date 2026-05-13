@@ -66,7 +66,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Was ist euer Holzfällerbrot?",
         answer:
-          "Unsere absolute Spezialität: Holzfällerbrot Rustikal, ein herzhaftes Schwarzbrot belegt mit Knoblauchbutter, Käse, Speck, Zwiebeln und frischem Schnittlauch. Deftig, kräftig, ehrlich. Genau das Richtige nach Radtour, Spaziergang oder einfach gegen den Hunger.",
+          "Unsere absolute Spezialität: Holzfällerbrot Speck, ein herzhaftes Schwarzbrot belegt mit Knoblauchbutter, Käse, Speck, Zwiebeln und frischem Schnittlauch. Deftig, kräftig, ehrlich. Genau das Richtige nach Radtour, Spaziergang oder einfach gegen den Hunger.",
       },
       {
         question: "Ihr seid ein Fitnessstudio. Wie passt da Flammkuchen rein?",
