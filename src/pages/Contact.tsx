@@ -19,6 +19,7 @@ import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import parkplaetzeImg from "@/assets/parkplaetze.jpg";
 import treppeImg from "@/assets/treppe.jpg";
+import eingangImg from "@/assets/eingang.jpg";
 import {
   Accordion,
   AccordionContent,
