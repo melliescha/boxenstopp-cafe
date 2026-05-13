@@ -18,6 +18,7 @@ import {
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import parkplaetzeImg from "@/assets/parkplaetze.jpg";
+import treppeImg from "@/assets/treppe.jpg";
 import {
   Accordion,
   AccordionContent,
@@ -62,7 +63,7 @@ const nearby = [
 
 const placeholders = [
   { icon: Home, caption: "Außenansicht unseres Hauses am Südhang 1" },
-  { icon: Navigation, caption: "Die Treppe führt euch direkt zu uns" },
+  { icon: Navigation, caption: "Die Treppe führt euch direkt zu uns", image: treppeImg },
   { icon: DoorOpen, caption: "Unser Eingang" },
   { icon: Trees, caption: "Unsere Außenterrasse mit Schatten und Schirm" },
   { icon: ParkingCircle, caption: "5 Gästeparkplätze direkt am Haus", image: parkplaetzeImg },
