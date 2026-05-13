@@ -84,6 +84,11 @@ const faqs = [
     answer:
       "Montag: 15:00–20:00 Uhr. Dienstag: Ruhetag. Mittwoch–Freitag: 15:00–20:00 Uhr. Samstag: 10:30–15:30 Uhr. Sonntag: 11:00–16:00 Uhr.",
   },
+  {
+    question: "Ihr seid doch die mit der ewigen Baustelle. Wirkt absolut unseriös, oder?",
+    answer:
+      "Wir wissen, dass wir bekannt sind als \"die mit der ewigen Baustelle\". Und das ist ein Thema, das uns sehr schmerzt. Es gibt viele Spekulationen und wilde Theorien, was dahintersteckt. Die Wahrheit? Eigentlich nicht viel. Wir haben am Bodensee gelebt, uns ins Allgäu verliebt, hier unser Grundstück gekauft und dachten: das wird unser großes Glück, in einem Jahr ziehen wir ein. Dann kam alles anders. Keine wilden Theorien, einfach das Leben. Wer kennt schon eine Baustelle, wo alles glatt läuft? Nur hatten wir eben den Worst Case erwischt. Manchmal kann man alles richtig machen und es läuft trotzdem schief. So ist das. Wir leben mittlerweile einige Jahre hier, kennen jede Straße in Hergatz und Wohmbrechts und sind angekommen, auch wenn das Haus es noch nicht ganz ist. Aber genau deshalb sind wir heute hier: weil wir nicht aufgegeben haben. Das Bistro Boxenstopp ist der erste Schritt, dass aus unserem Traum mehr wird als nur eine Baustelle. Wir bauen weiter, Stück für Stück, mit jedem Gast der zu uns findet.",
+  },
 ];
 
 const ReviewCTASection = () => {
