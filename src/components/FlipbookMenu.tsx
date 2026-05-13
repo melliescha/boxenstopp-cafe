@@ -164,6 +164,7 @@ const FlipbookMenu = () => {
               <FlipMenuItem item={{ name: "Kakao", price: "2,00 – 3,20 €", note: "🧒 Kinder-Liebling" }} />
               <FlipMenuItem item={{ name: "Latte Vanilla", price: "2,00 – 3,20 €", note: "🧒 Kinder-Liebling" }} />
               <FlipMenuItem item={{ name: "Matcha-Latte", price: "3,50 – 3,80 €", note: "auch vegan mit Pflanzenmilch" }} />
+              <FlipMenuItem item={{ name: "Vegan Matcha Latte", price: "3,50 – 3,80 €", note: "100% vegan mit Pflanzenmilch" }} />
               <FlipMenuItem item={{ name: "Tee (nach Wahl)", price: "1,80 €", note: "in Bio-Qualität" }} />
 
               <div className="mt-4">
@@ -231,6 +232,7 @@ const FlipbookMenu = () => {
                 <FlipMenuItem item={{ name: "Electrolyte", price: "2,90 €" }} />
                 <FlipMenuItem item={{ name: "Energy LIFTOFF", price: "3,50 €" }} />
                 <FlipMenuItem item={{ name: "Proteinriegel", price: "2,50 – 3,90 €" }} />
+                <FlipMenuItem item={{ name: "Müsliriegel Expressmahlzeit", price: "3,90 €" }} />
                 <FlipMenuItem item={{ name: "Protein-Chips", price: "2,40 €" }} />
               </div>
               <PageNumber num={9} />
