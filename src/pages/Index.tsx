@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { Map, Thermometer, ShowerHead, BatteryCharging, Sun, Users, Bike, Clock } from "lucide-react";
+import { Map, Thermometer, ShowerHead, BatteryCharging, Sun, Users, Bike, Clock, ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import BestsellerSection from "@/components/BestsellerSection";
@@ -60,24 +60,29 @@ const hours = [
 
 const faqs = [
   {
-    question: "Wo befindet sich das Bistro Boxenstopp?",
-    answer: "Das Bistro Boxenstopp liegt in Hergatz/Wohmbrechts im Westallgäu, Südhang 1, direkt am Bodensee-Königssee-Radweg und an der Leiblachroute. Wir sind ein idealer Stopp für Radfahrer und Sportler.",
+    question: "Ist das ein Privatgrundstück? Darf ich da überhaupt hin?",
+    answer:
+      "Ja, ihr dürft! Das Gebäude ist gleichzeitig unser Einfamilienhaus, das verwirrt viele. Außen führt eine Treppe nach unten zur Terrasse und zum Eingang. Genau da kommt ihr rein. Auf dem Schild seht ihr „Bistro Boxenstopp\" und „FITES Allgäu\" – beides ist im selben Gebäude. Einfach die Treppe runter, Türe auf, willkommen!",
   },
   {
-    question: "Was bietet das Bistro Boxenstopp an?",
-    answer: "Wir servieren Barista-Kaffee von Cup&Cino, handgemachte Flammkuchen, frische Pizza-Snacks, Baguettes, wechselnde Backwaren, Matcha, alkoholfreies Bier sowie Herbalife-Proteinshakes, Iso-Drinks und Elektrolyte für Sportler.",
+    question: "Muss ich Fitnessmitglied sein, um ins Bistro zu kommen?",
+    answer:
+      "Auf gar keinen Fall! Wir sind ein eigenständiges Bistro. Du kannst einfach auf einen Kaffee, einen Flammkuchen oder unser Holzfällerbrot vorbeikommen, ohne jemals ein Fitnessstudio von innen zu sehen. Versprochen.",
   },
   {
-    question: "Was ist der Boxenstopp Spezial?",
-    answer: "Unser Signature-Drink: ein Kollagen Latte Macchiato mit Roh-Kakao und Meersalz – einzigartig im Allgäu.",
+    question: "Bin ich hier richtig, wenn ich einfach nur Kaffee will?",
+    answer:
+      "Absolut, du bist sogar GENAU richtig. Unser Name kommt nicht zufällig „Boxenstopp\". Egal ob nach der Arbeit, nach einer Radtour, einem Spaziergang durch Hergatz oder einfach so – wir sind dein Stopp zum Durchatmen.",
   },
   {
-    question: "Ist das Bistro Boxenstopp gut für Radfahrer geeignet?",
-    answer: "Ja, wir liegen direkt am Bodensee-Königssee-Radweg und an der Leiblachroute. Radfahrer können bei uns eine entspannte Pause machen, sich stärken und mit Energie weiterfahren.",
+    question: "Wie finde ich rein?",
+    answer:
+      "Wir liegen am Südhang 1 in Hergatz / Wohmbrechts. Von außen seht ihr eine Treppe, die nach unten führt – die kommt euch direkt zu uns. Folgt einfach den Schildern „Bistro Boxenstopp\". Wir freuen uns auf euch.",
   },
   {
-    question: "Gehört das Bistro zum Fitnessstudio FITES?",
-    answer: "Ja, das Bistro Boxenstopp befindet sich im Gebäude des FITES Allgäu Fitnessstudios in Hergatz – ideal für eine Stärkung nach dem Training.",
+    question: "Wann habt ihr offen?",
+    answer:
+      "Montag: 15:00–20:00 Uhr. Dienstag: Ruhetag. Mittwoch–Freitag: 15:00–20:00 Uhr. Samstag: 10:30–15:30 Uhr. Sonntag: 11:00–16:00 Uhr.",
   },
 ];
 
@@ -286,22 +291,47 @@ const Index = () => {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="py-20 bg-secondary/50">
+      {/* FAQ – Bevor du kommst */}
+      <section className="py-20" style={{ backgroundColor: "#FEF4EC" }}>
         <div className="container mx-auto px-6 max-w-3xl">
-          <h2 className="font-serif text-3xl font-bold text-center text-foreground mb-10">Häufig gestellte Fragen</h2>
-          <Accordion type="single" collapsible className="bg-card rounded-xl px-6 shadow-sm border border-border/50">
+          <div className="text-center mb-10">
+            <p className="font-medium tracking-[0.2em] uppercase text-sm mb-2" style={{ color: "#9E7C4E" }}>
+              FAQ
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold" style={{ color: "#164472" }}>
+              Bevor du kommst, die wichtigsten Antworten
+            </h2>
+            <div className="divider-bronze mt-4" />
+          </div>
+
+          <Accordion
+            type="single"
+            collapsible
+            className="bg-white rounded-xl px-6 shadow-sm"
+            style={{ border: "1px solid #EDE0D0" }}
+          >
             {faqs.map((faq, idx) => (
               <AccordionItem key={idx} value={`faq-${idx}`}>
-                <AccordionTrigger className="text-left font-medium text-foreground">
+                <AccordionTrigger className="text-left font-medium hover:no-underline" style={{ color: "#164472" }}>
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed">
+                <AccordionContent className="leading-relaxed text-base" style={{ color: "#6B4A2E" }}>
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
+
+          <div className="text-center mt-8">
+            <Link
+              to="/faq"
+              className="inline-flex items-center gap-2 rounded-lg font-medium text-white hover:opacity-90 transition-opacity"
+              style={{ backgroundColor: "#B8943E", padding: "12px 28px", fontSize: "15px" }}
+            >
+              Alle Fragen ansehen
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </section>
 
