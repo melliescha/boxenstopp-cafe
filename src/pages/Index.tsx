@@ -58,6 +58,29 @@ const hours = [
   { days: "Sonntag", time: "11:00 – 16:00 Uhr" },
 ];
 
+const faqs = [
+  {
+    question: "Wo befindet sich das Bistro Boxenstopp?",
+    answer: "Das Bistro Boxenstopp liegt in Hergatz/Wohmbrechts im Westallgäu, Südhang 1, direkt am Bodensee-Königssee-Radweg und an der Leiblachroute. Wir sind ein idealer Stopp für Radfahrer und Sportler.",
+  },
+  {
+    question: "Was bietet das Bistro Boxenstopp an?",
+    answer: "Wir servieren Barista-Kaffee von Cup&Cino, handgemachte Flammkuchen, frische Pizza-Snacks, Baguettes, wechselnde Backwaren, Matcha, alkoholfreies Bier sowie Herbalife-Proteinshakes, Iso-Drinks und Elektrolyte für Sportler.",
+  },
+  {
+    question: "Was ist der Boxenstopp Spezial?",
+    answer: "Unser Signature-Drink: ein Kollagen Latte Macchiato mit Roh-Kakao und Meersalz – einzigartig im Allgäu.",
+  },
+  {
+    question: "Ist das Bistro Boxenstopp gut für Radfahrer geeignet?",
+    answer: "Ja, wir liegen direkt am Bodensee-Königssee-Radweg und an der Leiblachroute. Radfahrer können bei uns eine entspannte Pause machen, sich stärken und mit Energie weiterfahren.",
+  },
+  {
+    question: "Gehört das Bistro zum Fitnessstudio FITES?",
+    answer: "Ja, das Bistro Boxenstopp befindet sich im Gebäude des FITES Allgäu Fitnessstudios in Hergatz – ideal für eine Stärkung nach dem Training.",
+  },
+];
+
 const ReviewCTASection = () => {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
