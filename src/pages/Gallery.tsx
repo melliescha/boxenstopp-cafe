@@ -14,6 +14,12 @@ import innenTheke from "@/assets/gallery/innen-theke-bedienung.jpg";
 import innenBilderwand from "@/assets/gallery/innen-bilderwand-ledersessel.jpg";
 import innenShaker from "@/assets/gallery/innen-shaker-snacks.jpg";
 import innenThekeUebersicht from "@/assets/gallery/innen-theke-uebersicht.jpg";
+import essenEisSchokoHimbeere from "@/assets/gallery/essen-eis-schoko-himbeere.jpg";
+import essenEisHoernchenMango from "@/assets/gallery/essen-eis-hoernchen-mango.jpg";
+import essenCappuccinoMuffinDonut from "@/assets/gallery/essen-cappuccino-muffin-donut.jpg";
+import getraenkMatchaLatte from "@/assets/gallery/getraenk-matcha-latte.jpg";
+import getraenkZweiCappuccino from "@/assets/gallery/getraenk-zwei-cappuccino.jpg";
+import essenLatteDonutMuffin from "@/assets/gallery/essen-latte-macchiato-donut-muffin.jpg";
 
 type Category = "all" | "innen" | "aussen" | "essen";
 
@@ -35,6 +41,12 @@ const images: GalleryImage[] = [
   { src: essenBaguetteSalami, alt: "Pizzasnack für den kleinen Hunger – mit Salami und Basilikum, dazu Allgäuer Apfel-Kirsch-Schorle", category: "essen" },
   { src: essenFlammkuchenLachs, alt: "Flammkuchen mit Lachs, Lauch und Schnittlauch, serviert mit Orangensaft", category: "essen" },
   { src: essenFlammkuchenGemuese, alt: "Unser mediterraner Flammkuchen mit Feta, Paprika, Zucchini und frischen Kräutern", category: "essen" },
+  { src: essenEisSchokoHimbeere, alt: "Cremiges Schoko-Himbeer-Eis am Stiel mit Schokoladenhülle in der Frühlingssonne", category: "essen" },
+  { src: essenEisHoernchenMango, alt: "Eishörnchen mit Mango und weißer Schokolade vor sonniger Allgäuer Kulisse", category: "essen" },
+  { src: essenCappuccinoMuffinDonut, alt: "Cup&Cino Cappuccino mit Schoko-Muffin und Donut auf der Terrasse", category: "essen" },
+  { src: getraenkMatchaLatte, alt: "Matcha Latte im Cup&Cino Glas vor sonniger Steinmauer", category: "essen" },
+  { src: getraenkZweiCappuccino, alt: "Zwei Cup&Cino Cappuccinos mit Wasser und Frühlingsblumen vor dem FITES-Fenster", category: "essen" },
+  { src: essenLatteDonutMuffin, alt: "Zwei Latte Macchiato mit Donut und Heidelbeer-Muffin auf der Terrasse", category: "essen" },
 ];
 
 const tabs: { label: string; value: Category }[] = [
