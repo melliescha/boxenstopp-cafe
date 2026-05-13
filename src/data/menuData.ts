@@ -690,7 +690,7 @@ export const menuProducts: MenuProduct[] = [
   {
     id: "pizzasnack-salami",
     name: "Pizzasnack Salami",
-    price: "3,50 €",
+    price: "3,80 €",
     description: "Pizzasauce, Käse und Salami",
     category: "Snacks",
     allergens: "A,G",
@@ -712,6 +712,24 @@ export const menuProducts: MenuProduct[] = [
       { label: "Eiweiß", value: "11,6 g" },
       { label: "Salz", value: "1,80 g" },
     ],
+  },
+  {
+    id: "pizzetta-salami",
+    name: "Pizzetta Salami",
+    price: "3,95 €",
+    description: "Tomatensauce, Käse und Salami",
+    category: "Snacks",
+    allergens: "A,G",
+    origin: perplexOrigin,
+  },
+  {
+    id: "pizzetta-margherita",
+    name: "Pizzetta Margherita",
+    price: "3,60 €",
+    description: "Tomatensauce und Käse",
+    category: "Snacks",
+    allergens: "A,G",
+    origin: perplexOrigin,
   },
   // Getränke
   {
