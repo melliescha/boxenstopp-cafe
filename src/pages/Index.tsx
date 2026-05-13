@@ -237,7 +237,12 @@ const Index = () => {
 
   return (
     <Layout>
-      <SEO title="Bistro Boxenstopp Hergatz – Barista-Kaffee, Flammkuchen & Proteinshakes im Westallgäu" description="Euer Stopp am Bodensee-Königssee-Radweg in Hergatz: Barista-Kaffee von Cup&Cino, handgemachte Flammkuchen, Proteinshakes und der legendäre Boxenstopp-Spezial. Direkt im FITES Allgäu." path="/" />
+      <SEO
+        title="Bistro Boxenstopp Hergatz | Barista-Kaffee, Flammkuchen & Holzfällerbrot im Westallgäu"
+        description="Euer Stopp am Bodensee-Königssee-Radweg in Hergatz: Barista-Kaffee, ofenfrische Flammkuchen, herzhaftes Holzfällerbrot und der legendäre Boxenstopp Spezial."
+        path="/"
+        type="restaurant.restaurant"
+      />
       {/* Hero */}
       {/* Hero */}
       <section className="relative overflow-hidden h-[55vh]">
