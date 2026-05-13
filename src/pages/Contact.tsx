@@ -36,6 +36,12 @@ const EMAIL = "fit.es@icloud.com";
 const MAPS_DIRECTIONS =
   "https://www.google.com/maps/dir/?api=1&destination=S%C3%BCdhang+1%2C+88145+Hergatz";
 
+const NAVY = "#164472";
+const BRONZE = "#9E7C4E";
+const CREAM = "#FEF4EC";
+const WARM_BROWN = "#6B4A2E";
+const BORDER = "#EDE0D0";
+
 const hours = [
   { days: "Montag", time: "15:00 – 20:00 Uhr" },
   { days: "Dienstag", time: "Ruhetag" },
@@ -104,190 +110,179 @@ const Contact = () => {
       />
 
       {/* SECTION 1: HERO */}
-      <section className="py-14 md:py-20 bg-background">
-        <div className="container mx-auto px-6 text-center max-w-3xl">
-          <p className="text-bronze font-medium tracking-[0.2em] uppercase text-sm mb-3">
-            Anfahrt & Kontakt
-          </p>
-          <h1 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-4">
-            Findet uns im Westallgäu
+      <section className="bg-background" style={{ paddingTop: 56, paddingBottom: 40 }}>
+        <div className="container mx-auto px-6 max-w-4xl text-center">
+          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-3" style={{ color: NAVY }}>
+            Findet uns
           </h1>
-          <div className="divider-bronze mb-6" />
-          <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
-            Euer Boxenstopp am Bodensee-Königssee-Radweg in Hergatz.
+          <p className="text-base md:text-lg" style={{ color: BRONZE }}>
+            Euer Boxenstopp im Westallgäu, direkt am Bodensee-Königssee-Radweg
           </p>
         </div>
       </section>
 
-      {/* SECTION 2: KONTAKTDATEN */}
-      <section className="pb-12 md:pb-16" style={{ backgroundColor: "#FEF4EC" }}>
-        <div className="container mx-auto px-6 max-w-5xl pt-12 md:pt-16">
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Adresse */}
-            <div
-              className="bg-white rounded-2xl p-6 md:p-7 shadow-sm"
-              style={{ border: "1px solid #EDE0D0" }}
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <MapPin className="w-5 h-5" style={{ color: "#9E7C4E" }} aria-hidden="true" />
-                <h2 className="font-serif text-xl font-bold" style={{ color: "#164472" }}>
-                  Adresse
-                </h2>
-              </div>
-              <address className="not-italic text-foreground leading-relaxed">
-                <p className="font-medium">Bistro Boxenstopp</p>
-                <p className="text-muted-foreground">Südhang 1</p>
-                <p className="text-muted-foreground">88145 Hergatz / Wohmbrechts</p>
-                <p className="text-muted-foreground">Bayern, Deutschland</p>
-              </address>
-            </div>
-
-            {/* Telefon */}
-            <div
-              className="bg-white rounded-2xl p-6 md:p-7 shadow-sm"
-              style={{ border: "1px solid #EDE0D0" }}
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <Phone className="w-5 h-5" style={{ color: "#9E7C4E" }} aria-hidden="true" />
-                <h2 className="font-serif text-xl font-bold" style={{ color: "#164472" }}>
-                  Telefon
-                </h2>
-              </div>
-              <a
-                href={`tel:${PHONE_LINK}`}
-                className="inline-block text-lg md:text-xl font-medium text-foreground hover:text-bronze transition-colors py-2"
-                aria-label={`Bistro Boxenstopp anrufen: ${PHONE_DISPLAY}`}
+      {/* SECTION 2: TWO-COLUMN MAGAZINE */}
+      <section className="bg-background pb-16 md:pb-20">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-start">
+            {/* MOBILE: Map first via order */}
+            <div className="order-1 lg:order-2">
+              <div
+                className="overflow-hidden shadow-md w-full"
+                style={{
+                  borderRadius: 12,
+                  height: "min(70vh, 520px)",
+                  minHeight: 280,
+                }}
               >
-                {PHONE_DISPLAY}
-              </a>
-              <p className="text-sm text-muted-foreground mt-1">
-                Direkt anrufen für Reservierung & Fragen
-              </p>
-            </div>
-
-            {/* E-Mail */}
-            <div
-              className="bg-white rounded-2xl p-6 md:p-7 shadow-sm"
-              style={{ border: "1px solid #EDE0D0" }}
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <Mail className="w-5 h-5" style={{ color: "#9E7C4E" }} aria-hidden="true" />
-                <h2 className="font-serif text-xl font-bold" style={{ color: "#164472" }}>
-                  E-Mail
-                </h2>
+                <iframe
+                  title="Bistro Boxenstopp Standort auf Google Maps"
+                  src="https://www.google.com/maps?q=S%C3%BCdhang+1%2C+88145+Hergatz&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0, display: "block" }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
-              <a
-                href={`mailto:${EMAIL}`}
-                className="inline-block text-base md:text-lg font-medium text-foreground hover:text-bronze transition-colors break-all py-2"
-              >
-                {EMAIL}
-              </a>
-            </div>
-
-            {/* Web */}
-            <div
-              className="bg-white rounded-2xl p-6 md:p-7 shadow-sm"
-              style={{ border: "1px solid #EDE0D0" }}
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <Globe className="w-5 h-5" style={{ color: "#9E7C4E" }} aria-hidden="true" />
-                <h2 className="font-serif text-xl font-bold" style={{ color: "#164472" }}>
-                  Website
-                </h2>
-              </div>
-              <a
-                href="https://bistro-boxenstopp.de"
-                className="inline-block text-base md:text-lg font-medium text-foreground hover:text-bronze transition-colors py-2"
-              >
-                bistro-boxenstopp.de
-              </a>
-            </div>
-          </div>
-
-          {/* Öffnungszeiten */}
-          <div
-            className="bg-white rounded-2xl p-6 md:p-7 shadow-sm mt-6"
-            style={{ border: "1px solid #EDE0D0" }}
-          >
-            <div className="flex items-center gap-3 mb-4">
-              <Clock className="w-5 h-5" style={{ color: "#9E7C4E" }} aria-hidden="true" />
-              <h2 className="font-serif text-xl font-bold" style={{ color: "#164472" }}>
-                Öffnungszeiten
-              </h2>
-            </div>
-            <ul className="divide-y" style={{ borderColor: "#EDE0D0" }}>
-              {hours.map((h) => (
-                <li
-                  key={h.days}
-                  className="flex justify-between items-center py-2.5 border-b last:border-0 gap-4"
-                  style={{ borderColor: "#EDE0D0" }}
+              <div className="mt-4">
+                <a
+                  href={MAPS_DIRECTIONS}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 font-medium hover:underline underline-offset-4 min-h-[44px]"
+                  style={{ color: NAVY }}
                 >
-                  <span className="font-medium text-foreground">{h.days}</span>
-                  <span className="text-muted-foreground text-right">{h.time}</span>
-                </li>
-              ))}
-            </ul>
+                  Route in Google Maps öffnen
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+
+            {/* LEFT: Contact typography */}
+            <div className="order-2 lg:order-1 space-y-10">
+              {/* Adresse */}
+              <div>
+                <p
+                  className="font-sans uppercase tracking-[0.2em] text-xs font-semibold mb-3"
+                  style={{ color: BRONZE }}
+                >
+                  Adresse
+                </p>
+                <address className="not-italic">
+                  <p
+                    className="font-serif text-2xl md:text-3xl font-bold leading-tight"
+                    style={{ color: NAVY }}
+                  >
+                    Bistro Boxenstopp
+                  </p>
+                  <p className="text-lg mt-2" style={{ color: WARM_BROWN }}>
+                    Südhang 1
+                  </p>
+                  <p className="text-lg" style={{ color: WARM_BROWN }}>
+                    88145 Hergatz / Wohmbrechts
+                  </p>
+                </address>
+              </div>
+
+              {/* Kontakt */}
+              <div>
+                <p
+                  className="font-sans uppercase tracking-[0.2em] text-xs font-semibold mb-4"
+                  style={{ color: BRONZE }}
+                >
+                  Kontakt
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-center gap-3">
+                    <Phone className="w-5 h-5 flex-shrink-0" style={{ color: BRONZE }} aria-hidden="true" />
+                    <a
+                      href={`tel:${PHONE_LINK}`}
+                      className="text-lg font-medium hover:underline underline-offset-4"
+                      style={{ color: NAVY }}
+                      aria-label={`Bistro Boxenstopp anrufen: ${PHONE_DISPLAY}`}
+                    >
+                      {PHONE_DISPLAY}
+                    </a>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <Mail className="w-5 h-5 flex-shrink-0" style={{ color: BRONZE }} aria-hidden="true" />
+                    <a
+                      href={`mailto:${EMAIL}`}
+                      className="text-lg font-medium hover:underline underline-offset-4 break-all"
+                      style={{ color: NAVY }}
+                    >
+                      {EMAIL}
+                    </a>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <Globe className="w-5 h-5 flex-shrink-0" style={{ color: BRONZE }} aria-hidden="true" />
+                    <a
+                      href="https://bistro-boxenstopp.de"
+                      className="text-lg font-medium hover:underline underline-offset-4"
+                      style={{ color: NAVY }}
+                    >
+                      bistro-boxenstopp.de
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Öffnungszeiten */}
+              <div>
+                <p
+                  className="font-sans uppercase tracking-[0.2em] text-xs font-semibold mb-4"
+                  style={{ color: BRONZE }}
+                >
+                  <span className="inline-flex items-center gap-2">
+                    <Clock className="w-4 h-4" aria-hidden="true" />
+                    Öffnungszeiten
+                  </span>
+                </p>
+                <ul>
+                  {hours.map((h) => (
+                    <li
+                      key={h.days}
+                      className="flex justify-between items-baseline gap-4 py-2 border-b last:border-0"
+                      style={{ borderColor: BORDER }}
+                    >
+                      <span className="font-medium" style={{ color: NAVY }}>
+                        {h.days}
+                      </span>
+                      <span style={{ color: WARM_BROWN }}>{h.time}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 3: GOOGLE MAPS */}
-      <section className="py-12 md:py-16 bg-background">
-        <div className="container mx-auto px-6 max-w-5xl">
-          <h2
-            className="font-serif text-2xl md:text-3xl font-bold text-center mb-8"
-            style={{ color: "#164472" }}
-          >
-            Unser Standort
-          </h2>
-          <div
-            className="rounded-2xl overflow-hidden shadow-md w-full"
-            style={{ minHeight: "300px", height: "min(60vh, 450px)" }}
-          >
-            <iframe
-              title="Bistro Boxenstopp Standort auf Google Maps"
-              src="https://www.google.com/maps?q=S%C3%BCdhang+1%2C+88145+Hergatz&output=embed"
-              width="100%"
-              height="100%"
-              style={{ border: 0, minHeight: "300px" }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
-          <div className="text-center mt-6">
-            <a
-              href={MAPS_DIRECTIONS}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium text-white shadow-sm hover:opacity-90 transition-opacity min-h-[44px]"
-              style={{ backgroundColor: "#164472" }}
-            >
-              <Navigation className="w-4 h-4" aria-hidden="true" />
-              Route in Google Maps öffnen
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 4: ANFAHRT-DETAILS */}
-      <section className="py-12 md:py-16" style={{ backgroundColor: "#FEF4EC" }}>
+      {/* SECTION 3: ANFAHRT-DETAILS */}
+      <section className="py-14 md:py-20" style={{ backgroundColor: CREAM }}>
         <div className="container mx-auto px-6 max-w-3xl">
-          <h2
-            className="font-serif text-2xl md:text-3xl font-bold text-center mb-8"
-            style={{ color: "#164472" }}
-          >
-            So kommt ihr zu uns
-          </h2>
+          <div className="text-center mb-10">
+            <p
+              className="font-sans uppercase tracking-[0.2em] text-xs font-semibold mb-3"
+              style={{ color: BRONZE }}
+            >
+              Anfahrt
+            </p>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold" style={{ color: NAVY }}>
+              So kommt ihr zu uns
+            </h2>
+          </div>
           <Accordion type="single" collapsible className="space-y-3">
             <AccordionItem
               value="auto"
               className="bg-white rounded-xl px-5 border"
-              style={{ borderColor: "#EDE0D0" }}
+              style={{ borderColor: BORDER }}
             >
               <AccordionTrigger className="hover:no-underline py-4">
-                <span className="flex items-center gap-3 font-serif text-lg" style={{ color: "#164472" }}>
-                  <Car className="w-5 h-5" style={{ color: "#9E7C4E" }} aria-hidden="true" />
+                <span className="flex items-center gap-3 font-serif text-lg" style={{ color: NAVY }}>
+                  <Car className="w-5 h-5" style={{ color: BRONZE }} aria-hidden="true" />
                   Mit dem Auto
                 </span>
               </AccordionTrigger>
@@ -302,11 +297,11 @@ const Contact = () => {
             <AccordionItem
               value="rad"
               className="bg-white rounded-xl px-5 border"
-              style={{ borderColor: "#EDE0D0" }}
+              style={{ borderColor: BORDER }}
             >
               <AccordionTrigger className="hover:no-underline py-4">
-                <span className="flex items-center gap-3 font-serif text-lg" style={{ color: "#164472" }}>
-                  <Bike className="w-5 h-5" style={{ color: "#9E7C4E" }} aria-hidden="true" />
+                <span className="flex items-center gap-3 font-serif text-lg" style={{ color: NAVY }}>
+                  <Bike className="w-5 h-5" style={{ color: BRONZE }} aria-hidden="true" />
                   Mit dem Rad
                 </span>
               </AccordionTrigger>
@@ -321,11 +316,11 @@ const Contact = () => {
             <AccordionItem
               value="bahn"
               className="bg-white rounded-xl px-5 border"
-              style={{ borderColor: "#EDE0D0" }}
+              style={{ borderColor: BORDER }}
             >
               <AccordionTrigger className="hover:no-underline py-4">
-                <span className="flex items-center gap-3 font-serif text-lg" style={{ color: "#164472" }}>
-                  <Bus className="w-5 h-5" style={{ color: "#9E7C4E" }} aria-hidden="true" />
+                <span className="flex items-center gap-3 font-serif text-lg" style={{ color: NAVY }}>
+                  <Bus className="w-5 h-5" style={{ color: BRONZE }} aria-hidden="true" />
                   Mit Bus und Bahn
                 </span>
               </AccordionTrigger>
@@ -338,39 +333,45 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* SECTION 5: ENTFERNUNGEN */}
-      <section className="py-12 md:py-16 bg-background">
+      {/* SECTION 4: ENTFERNUNGEN */}
+      <section className="py-14 md:py-20 bg-background">
         <div className="container mx-auto px-6 max-w-3xl">
-          <h2
-            className="font-serif text-2xl md:text-3xl font-bold text-center mb-8"
-            style={{ color: "#164472" }}
-          >
-            Entfernungen aus den Nachbarorten
-          </h2>
-          <ul
-            className="bg-white rounded-2xl shadow-sm divide-y overflow-hidden"
-            style={{ border: "1px solid #EDE0D0", borderColor: "#EDE0D0" }}
-          >
+          <div className="text-center mb-10">
+            <p
+              className="font-sans uppercase tracking-[0.2em] text-xs font-semibold mb-3"
+              style={{ color: BRONZE }}
+            >
+              Aus der Region
+            </p>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold" style={{ color: NAVY }}>
+              Entfernungen aus den Nachbarorten
+            </h2>
+          </div>
+          <ul>
             {nearby.map((n) => (
               <li
                 key={n.from}
-                className="flex justify-between items-center px-5 py-4 gap-4"
-                style={{ borderColor: "#EDE0D0" }}
+                className="flex justify-between items-baseline gap-4 py-4 border-b"
+                style={{ borderColor: BORDER }}
               >
-                <span className="font-medium text-foreground">Aus {n.from}</span>
-                <span className="text-muted-foreground text-sm text-right">{n.info}</span>
+                <span className="font-medium" style={{ color: NAVY }}>
+                  Aus {n.from}
+                </span>
+                <span className="text-sm text-right" style={{ color: WARM_BROWN }}>
+                  {n.info}
+                </span>
               </li>
             ))}
           </ul>
         </div>
       </section>
 
-      {/* SECTION 6: VERTRAUENS-BOX */}
-      <section className="py-12 md:py-16" style={{ backgroundColor: "#FEF4EC" }}>
+      {/* SECTION 5: VERTRAUENS-BOX */}
+      <section className="py-14 md:py-20" style={{ backgroundColor: CREAM }}>
         <div className="container mx-auto px-6 max-w-3xl">
           <div
-            className="rounded-2xl p-6 md:p-8 flex items-start gap-4 shadow-sm"
-            style={{ backgroundColor: "#FEF4EC", border: "2px solid #9E7C4E" }}
+            className="rounded-2xl p-6 md:p-8 flex items-start gap-4"
+            style={{ backgroundColor: "#FFFFFF", border: `2px solid ${BRONZE}` }}
           >
             <Lightbulb
               className="w-7 h-7 flex-shrink-0 mt-0.5"
@@ -378,13 +379,10 @@ const Contact = () => {
               aria-hidden="true"
             />
             <div>
-              <h2
-                className="font-serif text-xl font-bold mb-3"
-                style={{ color: "#164472" }}
-              >
+              <h2 className="font-serif text-xl font-bold mb-3" style={{ color: NAVY }}>
                 Hinweis zum Eingang
               </h2>
-              <p className="text-base leading-relaxed" style={{ color: "#6B4A2E" }}>
+              <p className="text-base leading-relaxed" style={{ color: WARM_BROWN }}>
                 Wir sind etwas versteckt. Das Bistro liegt im Erdgeschoss unseres
                 Wohnhauses. Außen führt eine Treppe nach unten direkt zur Terrasse
                 und zum Eingang. Folgt einfach den Schildern „Bistro Boxenstopp".
@@ -396,17 +394,20 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* SECTION 7: BILDER-GALERIE */}
-      <section className="py-12 md:py-16 bg-background">
+      {/* SECTION 6: BILDER-GALERIE */}
+      <section className="py-14 md:py-20 bg-background">
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="text-center mb-10">
-            <h2
-              className="font-serif text-2xl md:text-3xl font-bold mb-3"
-              style={{ color: "#164472" }}
+            <p
+              className="font-sans uppercase tracking-[0.2em] text-xs font-semibold mb-3"
+              style={{ color: BRONZE }}
             >
+              Wegweiser
+            </p>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold mb-3" style={{ color: NAVY }}>
               So findet ihr uns
             </h2>
-            <p className="text-muted-foreground">
+            <p style={{ color: WARM_BROWN }}>
               Ein kleiner Wegweiser für euren ersten Besuch
             </p>
           </div>
@@ -418,22 +419,20 @@ const Contact = () => {
                   key={i}
                   type="button"
                   onClick={() => setLightbox(i)}
-                  className="text-left bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-bronze"
-                  style={{ border: "1px solid #EDE0D0" }}
+                  className="text-left bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition-shadow focus:outline-none focus:ring-2"
+                  style={{ border: `1px solid ${BORDER}` }}
                   aria-label={`Bild vergrößern: ${p.caption}`}
                 >
                   <div
                     className="aspect-[4/3] flex items-center justify-center"
-                    style={{ backgroundColor: "#FEF4EC" }}
+                    style={{ backgroundColor: CREAM }}
                   >
-                    <Icon
-                      className="w-16 h-16"
-                      style={{ color: "#9E7C4E" }}
-                      aria-hidden="true"
-                    />
+                    <Icon className="w-16 h-16" style={{ color: BRONZE }} aria-hidden="true" />
                   </div>
                   <div className="p-4">
-                    <p className="text-sm text-foreground">{p.caption}</p>
+                    <p className="text-sm" style={{ color: WARM_BROWN }}>
+                      {p.caption}
+                    </p>
                   </div>
                 </button>
               );
@@ -447,7 +446,7 @@ const Contact = () => {
         <DialogContent className="max-w-2xl">
           {lightbox !== null && (
             <>
-              <DialogTitle className="font-serif text-xl" style={{ color: "#164472" }}>
+              <DialogTitle className="font-serif text-xl" style={{ color: NAVY }}>
                 {placeholders[lightbox].caption}
               </DialogTitle>
               <DialogDescription className="sr-only">
@@ -455,13 +454,11 @@ const Contact = () => {
               </DialogDescription>
               <div
                 className="aspect-[4/3] flex items-center justify-center rounded-lg"
-                style={{ backgroundColor: "#FEF4EC" }}
+                style={{ backgroundColor: CREAM }}
               >
                 {(() => {
                   const Icon = placeholders[lightbox].icon;
-                  return (
-                    <Icon className="w-32 h-32" style={{ color: "#9E7C4E" }} aria-hidden="true" />
-                  );
+                  return <Icon className="w-32 h-32" style={{ color: BRONZE }} aria-hidden="true" />;
                 })()}
               </div>
               <p className="text-sm text-muted-foreground text-center">
@@ -472,20 +469,20 @@ const Contact = () => {
         </DialogContent>
       </Dialog>
 
-      {/* SECTION 8: CALL TO ACTION */}
-      <section className="py-14 md:py-20" style={{ backgroundColor: "#164472" }}>
+      {/* SECTION 7: CALL TO ACTION */}
+      <section className="py-14 md:py-20" style={{ backgroundColor: NAVY }}>
         <div className="container mx-auto px-6 max-w-3xl text-center">
-          <h2 className="font-serif text-2xl md:text-4xl font-bold mb-3" style={{ color: "#FEF4EC" }}>
+          <h2 className="font-serif text-2xl md:text-4xl font-bold mb-3" style={{ color: CREAM }}>
             Reservierung oder Fragen?
           </h2>
-          <p className="mb-8 text-base md:text-lg" style={{ color: "#FEF4EC", opacity: 0.9 }}>
+          <p className="mb-8 text-base md:text-lg" style={{ color: CREAM, opacity: 0.9 }}>
             Ruft uns einfach an, wir freuen uns auf euch.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={`tel:${PHONE_LINK}`}
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-semibold shadow-sm hover:opacity-90 transition-opacity min-h-[52px] text-base"
-              style={{ backgroundColor: "#B8943E", color: "#164472" }}
+              style={{ backgroundColor: "#B8943E", color: NAVY }}
               aria-label={`Anrufen: ${PHONE_DISPLAY}`}
             >
               <Phone className="w-5 h-5" aria-hidden="true" />
@@ -494,7 +491,7 @@ const Contact = () => {
             <a
               href={`mailto:${EMAIL}`}
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-semibold border-2 hover:opacity-90 transition-opacity min-h-[52px] text-base"
-              style={{ borderColor: "#FEF4EC", color: "#FEF4EC" }}
+              style={{ borderColor: CREAM, color: CREAM }}
             >
               <Mail className="w-5 h-5" aria-hidden="true" />
               Per E-Mail schreiben
