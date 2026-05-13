@@ -70,7 +70,7 @@ const placeholders = [
   { icon: Navigation, caption: "Die Treppe führt euch direkt zu uns", image: treppeImg },
   { icon: DoorOpen, caption: "Unser Eingang", image: eingangImg },
   { icon: Trees, caption: "Unsere Außenterrasse mit Schatten und Schirm", image: aussenterrasseImg },
-  { icon: ParkingCircle, caption: "5 Gästeparkplätze direkt am Haus", image: parkplaetzeImg },
+  { icon: ParkingCircle, caption: "6 Kundenparkplätze und 4 öffentliche Parkplätze am Haus", image: parkplaetzeImg },
   { icon: Bike, caption: "Fahrradständer am Eingang, direkt am Bodensee-Königssee-Radweg", image: fahrradstaenderImg },
 ];
 
@@ -295,8 +295,8 @@ const Contact = () => {
               <AccordionContent className="text-muted-foreground leading-relaxed">
                 Von Lindau über A96 Richtung Wangen, Ausfahrt Hergatz. Folgt der
                 Beschilderung Richtung Wohmbrechts. Wir liegen am Südhang 1.
-                5 kostenlose Gästeparkplätze direkt am Haus, weitere öffentliche
-                Parkplätze in der Nähe.
+                6 Kundenparkplätze und 4 öffentliche Parkplätze direkt am Haus.
+                Parken ist also kein Thema.
               </AccordionContent>
             </AccordionItem>
 
