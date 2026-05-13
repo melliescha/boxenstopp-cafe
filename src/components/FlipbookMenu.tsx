@@ -176,13 +176,22 @@ const FlipbookMenu = () => {
               <PageNumber num={3} />
             </Page>
 
-            {/* Page 8: Rustic breads */}
+            {/* Page 7: Gourmet Baguettes */}
             <Page>
-              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Handgemacht: unsere rustikalen Brote</p>
-              <SectionTitle title="Rustikale Brote" />
-              <FlipMenuItem item={{ name: "Holzfällerbrot-Rustikal", price: "7,40 €", note: "Schwarzbrot mit Knoblauchbutter, Käse, Speck & Zwiebeln" }} />
-              <FlipMenuItem item={{ name: "Tomaten Mozzarella Brot", price: "7,40 €", note: "Weizenbrot mit Basilikum, Mozzarella & Tomaten" }} />
-              <FlipMenuItem item={{ name: "Raclettebrot-Rustikal", price: "7,70 €", note: "Schwarzbrot mit Raclettekäse, Lauch & Gewürze" }} />
+              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Frisch belegt: unsere Gourmet Baguettes</p>
+              <SectionTitle title="Gourmet Baguettes" />
+              <FlipMenuItem item={{ name: "Thunfisch Baguette-Gourmet", price: "6,20 €", note: "Thunfisch, Zwiebeln, Gouda & Béchamelsauce" }} />
+              <FlipMenuItem item={{ name: "Tomate Mozzarella Baguette-Gourmet", price: "6,20 €", note: "Getrocknete Tomaten, Basilikum & Béchamel" }} />
+              <PageNumber num={5} />
+            </Page>
+
+            {/* Page 8: Holzfällerbrote */}
+            <Page>
+              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Handgemacht: unsere Holzfällerbrote</p>
+              <SectionTitle title="Holzfällerbrote" />
+              <FlipMenuItem item={{ name: "Holzfällerbrot Speck", price: "7,40 €", note: "Schwarzbrot mit Knoblauchbutter, Käse, Speck & Zwiebeln" }} />
+              <FlipMenuItem item={{ name: "Holzfällerbrot Tomate Mozzarella", price: "7,40 €", note: "Weizenbrot mit Basilikum, Mozzarella & Tomaten" }} />
+              <FlipMenuItem item={{ name: "Holzfällerbrot Raclette", price: "7,70 €", note: "Schwarzbrot mit Raclettekäse, Lauch & Gewürze" }} />
               <PageNumber num={6} />
             </Page>
 
