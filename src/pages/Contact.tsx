@@ -36,8 +36,8 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 
-const PHONE_DISPLAY = "0171 7622620";
-const PHONE_LINK = "+4917176226201";
+const PHONE_DISPLAY = "0171 6226201";
+const PHONE_LINK = "+491716226201";
 const EMAIL = "fit.es@icloud.com";
 const MAPS_DIRECTIONS =
   "https://www.google.com/maps/dir/?api=1&destination=S%C3%BCdhang+1%2C+88145+Hergatz";

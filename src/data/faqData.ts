@@ -230,7 +230,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Reservierung, wie geht das?",
         answer:
-          "Am einfachsten per Telefon: 0171 7622620 oder kommt einfach vorbei.",
+          "Am einfachsten per Telefon: 0171 6226201 oder kommt einfach vorbei.",
       },
       {
         question: "Nehmt ihr Gruppen an?",
@@ -267,7 +267,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Wie erreiche ich euch?",
         answer:
-          "Telefon: 0171 7622620. Website: bistro-boxenstopp.de. Adresse: Südhang 1, 88145 Hergatz / Wohmbrechts.",
+          "Telefon: 0171 6226201. Website: bistro-boxenstopp.de. Adresse: Südhang 1, 88145 Hergatz / Wohmbrechts.",
       },
     ],
   },
