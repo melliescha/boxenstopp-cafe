@@ -27,7 +27,7 @@ const QRCodePage = () => {
           </div>
 
           <div className="mt-6">
-            <img src={logoIcon} alt="" className="h-10 w-auto mx-auto mb-2" />
+            <img src={logoIcon} alt="Bistro Boxenstopp Logo" className="h-10 w-auto mx-auto mb-2" />
             <p className="font-serif text-xl font-bold text-foreground">
               Scanne mich für die Speisekarte
             </p>

@@ -6,7 +6,7 @@ const QRSpeisekarte = () => {
     <div className="min-h-screen bg-background flex flex-col">
       {/* Minimal header */}
       <div className="py-4 px-6 flex items-center justify-center gap-2">
-        <img src={logoIcon} alt="" className="h-8 w-auto" />
+        <img src={logoIcon} alt="Bistro Boxenstopp Logo" className="h-8 w-auto" />
         <span className="font-serif text-lg font-bold text-foreground">Speisekarte</span>
       </div>
 

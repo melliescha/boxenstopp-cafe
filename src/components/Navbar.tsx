@@ -25,7 +25,7 @@ const Navbar = () => {
           aria-label="Startseite Bistro Boxenstopp"
           className="flex items-center gap-2 min-h-[44px]"
         >
-          <img src={logoIcon} alt="" className="h-[35px] md:h-[45px] w-auto" />
+          <img src={logoIcon} alt="Bistro Boxenstopp Logo" className="h-[35px] md:h-[45px] w-auto" />
           <span className="hidden sm:block font-serif text-lg md:text-xl font-bold text-primary">
             Bistro Boxenstopp
           </span>
