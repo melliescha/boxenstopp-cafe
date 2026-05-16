@@ -51,36 +51,78 @@
         "longitude": "9.8520"
       },
       "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday"],
-          "opens": "15:00",
-          "closes": "20:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Wednesday", "Thursday", "Friday"],
-          "opens": "15:00",
-          "closes": "20:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Saturday"],
-          "opens": "10:30",
-          "closes": "15:30"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Sunday"],
-          "opens": "11:00",
-          "closes": "16:00"
-        }
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday"], "opens": "15:00", "closes": "20:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday", "Thursday", "Friday"], "opens": "15:00", "closes": "20:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "10:30", "closes": "15:30" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "11:00", "closes": "16:00" }
       ],
-      "servesCuisine": ["Flammkuchen", "Pizza", "Barista-Kaffee", "Proteinshakes"],
+      "servesCuisine": ["Flammkuchen", "Pizza", "Barista-Kaffee", "Proteinshakes", "Hüttenbrot"],
+      "acceptsReservations": "True",
+      "paymentAccepted": "Cash, Credit Card, EC Card, Apple Pay, Google Pay",
+      "currenciesAccepted": "EUR",
+      "smokingAllowed": false,
+      "publicAccess": true,
       "description": "Bistro Boxenstopp in Hergatz im Westallgäu – Barista-Kaffee, handgemachte Flammkuchen und Proteinshakes direkt am Bodensee-Königssee-Radweg und an der Leiblachroute.",
       "sameAs": [
-        "https://www.facebook.com/[EUER-FACEBOOK]",
-        "https://www.instagram.com/[EUER-INSTAGRAM]"
+        "https://www.facebook.com/profile.php?id=61582234436103",
+        "https://www.instagram.com/bistro.boxenstopp"
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wo befindet sich das Bistro Boxenstopp?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Das Bistro Boxenstopp findet ihr in der Südhang 1, 88145 Hergatz im Westallgäu — direkt am Bodensee-Königssee-Radweg und an der Leiblachroute."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wann hat das Bistro Boxenstopp geöffnet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Montag 15:00–20:00 Uhr, Mittwoch bis Freitag 15:00–20:00 Uhr, Samstag 10:30–15:30 Uhr, Sonntag 11:00–16:00 Uhr. Dienstag ist Ruhetag."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was gibt es im Bistro Boxenstopp zu essen und zu trinken?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bei uns gibt es Barista-Kaffee, ofenfrische Flammkuchen, herzhaftes Hüttenbrot, Proteinshakes und den legendären Boxenstopp Spezial."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ist das Bistro Boxenstopp für Radfahrer geeignet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, wir liegen direkt am Bodensee-Königssee-Radweg und an der Leiblachroute — ein idealer Stopp für Radfahrer im Westallgäu."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kann ich im Bistro Boxenstopp reservieren?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, Reservierungen sind telefonisch unter +49 171 6226201 möglich."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche Zahlungsmethoden werden akzeptiert?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wir akzeptieren alle gängigen Zahlungsmethoden: Bar, EC-Karte, Kreditkarte, Apple Pay und Google Pay."
+          }
+        }
       ]
     }
     </script>
@@ -88,6 +130,24 @@
 
   <body>
     <div id="root"></div>
+    <noscript>
+      <h1>Bistro Boxenstopp Hergatz — Barista-Kaffee, Flammkuchen & Hüttenbrot im Westallgäu</h1>
+      <p>Euer Stopp am Bodensee-Königssee-Radweg in Hergatz: Barista-Kaffee, ofenfrische Flammkuchen, herzhaftes Hüttenbrot, Proteinshakes und der legendäre Boxenstopp Spezial. Direkt an der Leiblachroute im schönen Westallgäu.</p>
+      <h2>Adresse</h2>
+      <p>Bistro Boxenstopp<br>Südhang 1<br>88145 Hergatz<br>Bayern, Deutschland</p>
+      <h2>Öffnungszeiten</h2>
+      <ul>
+        <li>Montag: 15:00–20:00 Uhr</li>
+        <li>Dienstag: Ruhetag</li>
+        <li>Mittwoch: 15:00–20:00 Uhr</li>
+        <li>Donnerstag: 15:00–20:00 Uhr</li>
+        <li>Freitag: 15:00–20:00 Uhr</li>
+        <li>Samstag: 10:30–15:30 Uhr</li>
+        <li>Sonntag: 11:00–16:00 Uhr</li>
+      </ul>
+      <h2>Kontakt & Reservierung</h2>
+      <p>Telefon: +49 171 6226201<br>E-Mail: fit.es@icloud.com</p>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
