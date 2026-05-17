@@ -3,12 +3,63 @@ import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import MenuTileView from "@/components/MenuTileView";
 import FlipbookMenu from "@/components/FlipbookMenu";
-import { Download } from "lucide-react";
+import { Download, Loader2 } from "lucide-react";
+import { toast } from "sonner";
 
 type Tab = "karte" | "flipbook";
 
 const Menu = () => {
   const [tab, setTab] = useState<Tab>("karte");
+  const [downloading, setDownloading] = useState(false);
+
+  const handleDownloadPdf = async () => {
+    try {
+      setDownloading(true);
+      const pages = Array.from(
+        document.querySelectorAll<HTMLElement>("[data-flip-page]")
+      );
+      if (pages.length === 0) {
+        toast.error("Keine Seiten gefunden.");
+        return;
+      }
+
+      const [{ default: html2canvas }, { jsPDF }] = await Promise.all([
+        import("html2canvas"),
+        import("jspdf"),
+      ]);
+
+      const pdf = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
+      const pageWidth = pdf.internal.pageSize.getWidth();
+      const pageHeight = pdf.internal.pageSize.getHeight();
+
+      for (let i = 0; i < pages.length; i++) {
+        const el = pages[i];
+        const canvas = await html2canvas(el, {
+          scale: 2,
+          useCORS: true,
+          backgroundColor: "#fef4ec",
+          logging: false,
+        });
+        const imgData = canvas.toDataURL("image/jpeg", 0.92);
+        const ratio = Math.min(pageWidth / canvas.width, pageHeight / canvas.height);
+        const w = canvas.width * ratio;
+        const h = canvas.height * ratio;
+        const x = (pageWidth - w) / 2;
+        const y = (pageHeight - h) / 2;
+        if (i > 0) pdf.addPage();
+        pdf.addImage(imgData, "JPEG", x, y, w, h);
+      }
+
+      pdf.save("Speisekarte-Bistro-Boxenstopp.pdf");
+      toast.success("PDF heruntergeladen");
+    } catch (err) {
+      console.error("PDF download failed", err);
+      toast.error("PDF konnte nicht erstellt werden.");
+    } finally {
+      setDownloading(false);
+    }
+  };
+
 
   useEffect(() => {
     const menuSchema = {
@@ -106,14 +157,15 @@ const Menu = () => {
           {/* Flipbook toolbar */}
           {tab === "flipbook" && (
             <div className="flex justify-end mb-4 no-print">
-              <a
-                href="/speisekarte.pdf"
-                download="Speisekarte-Bistro-Boxenstopp.pdf"
-                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors border border-border rounded-lg px-4 py-2"
+              <button
+                type="button"
+                onClick={handleDownloadPdf}
+                disabled={downloading}
+                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors border border-border rounded-lg px-4 py-2 disabled:opacity-60"
               >
-                <Download size={16} />
-                Als PDF herunterladen
-              </a>
+                {downloading ? <Loader2 size={16} className="animate-spin" /> : <Download size={16} />}
+                {downloading ? "Erstelle PDF…" : "Als PDF herunterladen"}
+              </button>
             </div>
           )}
 
