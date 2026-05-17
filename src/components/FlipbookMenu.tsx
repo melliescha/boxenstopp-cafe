@@ -26,14 +26,32 @@ interface FlipItem {
   name: string;
   price: string;
   note?: string;
+  allergens?: string;
+  sizes?: { label: string; price: string }[];
 }
 
 const FlipMenuItem = ({ item }: { item: FlipItem }) => (
   <div className="mb-2.5">
     <div className="flex items-baseline justify-between gap-1">
-      <span className="font-serif text-xs sm:text-sm font-medium text-foreground">{item.name}</span>
+      <span className="font-serif text-xs sm:text-sm font-medium text-foreground">
+        {item.name}
+        {item.allergens && (
+          <span className="ml-1 text-[9px] sm:text-[10px] text-muted-foreground font-normal">({item.allergens})</span>
+        )}
+      </span>
       <span className="flex-1 border-b border-dotted border-bronze/25 mx-1 min-w-[0.5rem]" />
-      <span className="text-bronze font-semibold whitespace-nowrap text-xs sm:text-sm">{item.price}</span>
+      {item.sizes ? (
+        <span className="text-bronze font-semibold whitespace-nowrap text-[10px] sm:text-xs flex gap-1.5">
+          {item.sizes.map((s) => (
+            <span key={s.label} className="flex flex-col items-end leading-tight">
+              <span className="text-[8px] sm:text-[9px] text-muted-foreground font-normal uppercase tracking-wide">{s.label}</span>
+              <span>{s.price}</span>
+            </span>
+          ))}
+        </span>
+      ) : (
+        <span className="text-bronze font-semibold whitespace-nowrap text-xs sm:text-sm">{item.price}</span>
+      )}
     </div>
     {item.note && <p className="text-muted-foreground text-[10px] sm:text-xs italic mt-0.5">{item.note}</p>}
   </div>
