@@ -157,14 +157,15 @@ const Menu = () => {
           {/* Flipbook toolbar */}
           {tab === "flipbook" && (
             <div className="flex justify-end mb-4 no-print">
-              <a
-                href="/speisekarte.pdf"
-                download="Speisekarte-Bistro-Boxenstopp.pdf"
-                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors border border-border rounded-lg px-4 py-2"
+              <button
+                type="button"
+                onClick={handleDownloadPdf}
+                disabled={downloading}
+                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors border border-border rounded-lg px-4 py-2 disabled:opacity-60"
               >
-                <Download size={16} />
-                Als PDF herunterladen
-              </a>
+                {downloading ? <Loader2 size={16} className="animate-spin" /> : <Download size={16} />}
+                {downloading ? "Erstelle PDF…" : "Als PDF herunterladen"}
+              </button>
             </div>
           )}
 
