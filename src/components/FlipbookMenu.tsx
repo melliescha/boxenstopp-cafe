@@ -184,14 +184,11 @@ const FlipbookMenu = () => {
                 </div>
               ))}
 
-              <div className="mt-1.5 border border-warm-gold/50 rounded px-1.5 py-1 bg-[hsl(43,55%,48%)]/5">
-                <div className="flex items-baseline justify-between gap-1">
-                  <span className="font-serif text-[10px] sm:text-xs font-bold text-foreground">
-                    ⭐ Boxenstopp Spezial <span className="text-[8px] text-muted-foreground font-normal">(G)</span>
-                  </span>
-                  <span className="text-bronze font-semibold text-[10px] sm:text-xs">4,90 €</span>
-                </div>
-                <p className="text-bronze/80 text-[8px] sm:text-[10px] italic leading-tight">Kollagen Latte Macchiato mit Salz & Rohkakao</p>
+              <div className="mt-1 border border-warm-gold/50 rounded px-1.5 py-0.5 bg-[hsl(43,55%,48%)]/5 flex items-baseline justify-between gap-1">
+                <span className="font-serif text-[10px] sm:text-xs font-bold text-foreground">
+                  ⭐ Boxenstopp Spezial <span className="text-[8px] text-muted-foreground font-normal italic">Kollagen Latte Macchiato (G)</span>
+                </span>
+                <span className="text-bronze font-semibold text-[10px] sm:text-xs whitespace-nowrap">4,90 €</span>
               </div>
 
               <h4 className="font-serif-italic text-[13px] sm:text-base font-semibold text-foreground mt-1 mb-0 leading-tight">Wohlfühlgetränke</h4>
