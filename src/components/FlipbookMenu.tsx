@@ -217,17 +217,17 @@ const FlipbookMenu = () => {
             <Page>
               <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Aus dem Ofen: Flammkuchen & Snacks</p>
               <SectionTitle title="Flammkuchen" subtitle="Von unserem Partner Perplex" />
-              <FlipMenuItem item={{ name: "Elsässer Art", price: "6,30 €", note: "Speck und Zwiebeln" }} />
-              <FlipMenuItem item={{ name: "Griechische Art", price: "6,30 €", note: "Peperoni, Hirtenkäse, bunter Pfeffer" }} />
-              <FlipMenuItem item={{ name: "Mediterran", price: "6,30 €", note: "Hirtenkäse, Paprika, Zucchini" }} />
-              <FlipMenuItem item={{ name: "Lachs & Lauch", price: "7,30 €" }} />
+              <FlipMenuItem item={{ name: "Elsässer Art", price: "6,30 €", allergens: "A,G", note: "Speck und Zwiebeln" }} />
+              <FlipMenuItem item={{ name: "Griechische Art", price: "6,30 €", allergens: "A,G,L", note: "Peperoni, Hirtenkäse, bunter Pfeffer" }} />
+              <FlipMenuItem item={{ name: "Mediterran", price: "6,30 €", allergens: "A,G", note: "Hirtenkäse, Paprika, Zucchini" }} />
+              <FlipMenuItem item={{ name: "Lachs & Lauch", price: "7,30 €", allergens: "A,D,G" }} />
 
               <div className="mt-3">
                 <SectionTitle title="Pizzasnacks & Pizzetta" />
-                <FlipMenuItem item={{ name: "Pizzasnack Caprese", price: "3,50 €", note: "Pizzasauce, Käse & Kirschtomaten" }} />
-                <FlipMenuItem item={{ name: "Pizzasnack Salami", price: "3,80 €", note: "Pizzasauce, Käse & Salami" }} />
-                <FlipMenuItem item={{ name: "Pizzetta Margherita", price: "3,60 €", note: "Tomatensauce & Käse" }} />
-                <FlipMenuItem item={{ name: "Pizzetta Salami", price: "3,95 €", note: "Tomatensauce, Käse & Salami" }} />
+                <FlipMenuItem item={{ name: "Pizzasnack Caprese", price: "3,50 €", allergens: "A,G", note: "Pizzasauce, Käse & Kirschtomaten" }} />
+                <FlipMenuItem item={{ name: "Pizzasnack Salami", price: "3,80 €", allergens: "A,G", note: "Pizzasauce, Käse & Salami" }} />
+                <FlipMenuItem item={{ name: "Pizzetta Margherita", price: "3,60 €", allergens: "A,G", note: "Tomatensauce & Käse" }} />
+                <FlipMenuItem item={{ name: "Pizzetta Salami", price: "3,95 €", allergens: "A,G", note: "Tomatensauce, Käse & Salami" }} />
               </div>
               <PageNumber num={8} />
             </Page>
@@ -236,16 +236,16 @@ const FlipbookMenu = () => {
             <Page>
               <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Erfrischung & Energie</p>
               <SectionTitle title="Getränke" />
-              <FlipMenuItem item={{ name: "Apfel-/Fruchtschorle", price: "2,25 €" }} />
-              <FlipMenuItem item={{ name: "Wasser still/med./spritzig", price: "1,75 €" }} />
-              <FlipMenuItem item={{ name: "Säfte", price: "2,50 €" }} />
-              <FlipMenuItem item={{ name: "Alkoholfreies Bier", price: "3,00 €" }} />
+              <FlipMenuItem item={{ name: "Apfel-/Fruchtschorle", price: "2,25 €", note: "0,33 l" }} />
+              <FlipMenuItem item={{ name: "Wasser still/med./spritzig", price: "1,75 €", note: "0,5 l" }} />
+              <FlipMenuItem item={{ name: "Säfte", price: "2,50 €", note: "0,25 l" }} />
+              <FlipMenuItem item={{ name: "Alkoholfreies Bier", price: "3,00 €", note: "0,33 l" }} />
 
               <div className="mt-3">
                 <SectionTitle title="Herbalife Nutrition" />
-                <FlipMenuItem item={{ name: "Shake (versch. Sorten)", price: "2,50 – 4,50 €" }} />
+                <FlipMenuItem item={{ name: "Shake (versch. Sorten)", price: "", allergens: "F,G", sizes: [{ label: "K", price: "2,50 €" }, { label: "G", price: "4,50 €" }] }} />
                 <FlipMenuItem item={{ name: "Electrolyte", price: "2,90 €" }} />
-                <FlipMenuItem item={{ name: "Energy LIFTOFF", price: "3,50 €" }} />
+                <FlipMenuItem item={{ name: "Energy LIFTOFF", price: "3,50 €", allergens: "11" }} />
                 <FlipMenuItem item={{ name: "Proteinriegel", price: "2,50 – 3,90 €" }} />
                 <FlipMenuItem item={{ name: "Müsliriegel Expressmahlzeit", price: "3,90 €" }} />
                 <FlipMenuItem item={{ name: "Protein-Chips", price: "2,40 €" }} />
