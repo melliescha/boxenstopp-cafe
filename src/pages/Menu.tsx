@@ -92,6 +92,19 @@ const Menu = () => {
           const x = (pageWidth - w) / 2;
           const y = (pageHeight - h) / 2;
 
+          console.info("PDF page metrics", {
+            index: i,
+            rectWidth: rect.width,
+            rectHeight: rect.height,
+            canvasWidth: canvas.width,
+            canvasHeight: canvas.height,
+            ratio,
+            x,
+            y,
+            w,
+            h,
+          });
+
           if (i > 0) pdf.addPage();
           pdf.addImage(imgData, "JPEG", x, y, w, h, undefined, "FAST");
         }
