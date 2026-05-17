@@ -225,29 +225,10 @@ const FlipbookMenu = () => {
             <Page>
               <SectionTitle title="Erfrischungsgetränke" />
 
-              <div className="flex items-baseline justify-end gap-0 text-[9px] sm:text-[10px] text-muted-foreground font-semibold uppercase tracking-wide mb-1">
-                <span className="w-14 text-right">S</span>
-                <span className="w-14 text-right">M</span>
-                <span className="w-14 text-right">L</span>
-              </div>
-              {[
-                { name: "Apfel-/Fruchtschorle", prices: ["", "2,25 €", ""], vol: "0,33 l" },
-                { name: "Wasser still/med./spritzig", prices: ["", "", "1,75 €"], vol: "0,5 l" },
-                { name: "Säfte", prices: ["2,50 €", "", ""], vol: "0,25 l" },
-                { name: "Alkoholfreies Bier", prices: ["", "3,00 €", ""], vol: "0,33 l" },
-              ].map((row) => (
-                <div key={row.name} className="flex items-baseline gap-0 mb-1">
-                  <span className="font-serif text-xs sm:text-sm font-medium text-foreground flex-1 min-w-0 truncate">
-                    {row.name}
-                    <span className="ml-1 text-[9px] sm:text-[10px] text-muted-foreground font-normal">({row.vol})</span>
-                  </span>
-                  {row.prices.map((p, i) => (
-                    <span key={i} className="w-14 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
-                      {p || "–"}
-                    </span>
-                  ))}
-                </div>
-              ))}
+              <FlipMenuItem item={{ name: "Apfel-/Fruchtschorle", price: "2,25 €", note: "0,33 l" }} />
+              <FlipMenuItem item={{ name: "Wasser still/med./spritzig", price: "1,75 €", note: "0,5 l" }} />
+              <FlipMenuItem item={{ name: "Säfte", price: "2,50 €", note: "0,25 l" }} />
+              <FlipMenuItem item={{ name: "Alkoholfreies Bier", price: "3,00 €", note: "0,33 l" }} />
 
               <div className="mt-3">
                 <SectionTitle title="Getränke für Sportler" />
