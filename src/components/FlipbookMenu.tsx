@@ -200,11 +200,34 @@ const FlipbookMenu = () => {
             {/* Page 4: Comfort drinks + sweets */}
             <Page>
               <SectionTitle title="Wohlfühlgetränke" />
-              <FlipMenuItem item={{ name: "Kakao", price: "", allergens: "G", note: "🧒 Kinder-Liebling", sizes: [{ label: "K", price: "2,00 €" }, { label: "M", price: "2,60 €" }, { label: "G", price: "3,20 €" }] }} />
-              <FlipMenuItem item={{ name: "Latte Vanilla", price: "", allergens: "G", note: "🧒 Kinder-Liebling", sizes: [{ label: "K", price: "2,00 €" }, { label: "M", price: "2,60 €" }, { label: "G", price: "3,20 €" }] }} />
-              <FlipMenuItem item={{ name: "Matcha-Latte", price: "", allergens: "G", note: "auch vegan mit Pflanzenmilch", sizes: [{ label: "K", price: "3,50 €" }, { label: "G", price: "3,80 €" }] }} />
-              <FlipMenuItem item={{ name: "Vegan Matcha Latte", price: "", allergens: "A", note: "100% vegan mit Pflanzenmilch", sizes: [{ label: "K", price: "3,50 €" }, { label: "G", price: "3,80 €" }] }} />
-              <FlipMenuItem item={{ name: "Tee (nach Wahl)", price: "1,80 €", note: "in Bio-Qualität" }} />
+
+              <div className="flex items-baseline justify-end gap-0 text-[9px] sm:text-[10px] text-muted-foreground font-semibold uppercase tracking-wide mb-1">
+                <span className="w-10 text-right">S</span>
+                <span className="w-10 text-right">M</span>
+                <span className="w-10 text-right">L</span>
+              </div>
+
+              {[
+                { name: "Kakao", allergens: "G", prices: ["2,00 €", "2,60 €", "3,20 €"] },
+                { name: "Latte Vanilla", allergens: "G", prices: ["2,00 €", "2,60 €", "3,20 €"] },
+                { name: "Matcha-Latte", allergens: "G", prices: ["3,50 €", "", "3,80 €"] },
+                { name: "Vegan Matcha Latte", allergens: "A", prices: ["3,50 €", "", "3,80 €"] },
+              ].map((row) => (
+                <div key={row.name} className="flex items-baseline gap-0 mb-1">
+                  <span className="font-serif text-xs sm:text-sm font-medium text-foreground flex-1 min-w-0 truncate">
+                    {row.name}
+                    {row.allergens && (
+                      <span className="ml-1 text-[9px] sm:text-[10px] text-muted-foreground font-normal">({row.allergens})</span>
+                    )}
+                  </span>
+                  {row.prices.map((p, i) => (
+                    <span key={i} className="w-10 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
+                      {p || "–"}
+                    </span>
+                  ))}
+                </div>
+              ))}
+              <FlipMenuItem item={{ name: "Tee (nach Wahl)", price: "1,80 €" }} />
 
               <div className="mt-4">
                 <SectionTitle title="Süßes Gebäck & Dessert" />
