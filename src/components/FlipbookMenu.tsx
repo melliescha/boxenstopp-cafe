@@ -148,17 +148,17 @@ const FlipbookMenu = () => {
               </div>
             </Page>
 
-            {/* Page 3: Coffee */}
+            {/* Page: Heiße Getränke (Kaffee + Wohlfühlgetränke) */}
             <Page>
-              <SectionTitle title="Kaffee" />
+              <h2 className="font-serif text-base sm:text-lg font-bold text-foreground tracking-wide uppercase">Heiße Getränke</h2>
+              <div className="w-10 h-px bg-bronze mt-1 mb-2" />
 
-              {/* Size header row */}
-              <div className="flex items-baseline justify-end gap-0 text-[9px] sm:text-[10px] text-muted-foreground font-semibold uppercase tracking-wide mb-1 pr-0">
-                <span className="w-14 text-right">S</span>
-                <span className="w-14 text-right">M</span>
-                <span className="w-14 text-right">L</span>
+              <h3 className="font-serif-italic text-sm font-semibold text-foreground mb-1">Kaffee</h3>
+              <div className="flex items-baseline justify-end gap-0 text-[8px] sm:text-[9px] text-muted-foreground font-semibold uppercase tracking-wide mb-0.5">
+                <span className="w-12 text-right">S</span>
+                <span className="w-12 text-right">M</span>
+                <span className="w-12 text-right">L</span>
               </div>
-
               {[
                 { name: "Espresso", prices: ["1,90 €", "", "2,30 €"] },
                 { name: "Americano", prices: ["2,20 €", "", "2,60 €"] },
@@ -169,85 +169,74 @@ const FlipbookMenu = () => {
                 { name: "Latte Macchiato", allergens: "G", prices: ["2,60 €", "3,20 €", "3,80 €"] },
                 { name: "Flat White", allergens: "G", prices: ["2,60 €", "", "3,20 €"] },
               ].map((row) => (
-                <div key={row.name} className="flex items-baseline gap-0 mb-1">
-                  <span className="font-serif text-xs sm:text-sm font-medium text-foreground flex-1 min-w-0 truncate">
+                <div key={row.name} className="flex items-baseline gap-0 mb-0.5">
+                  <span className="font-serif text-[11px] sm:text-xs font-medium text-foreground flex-1 min-w-0 truncate">
                     {row.name}
                     {row.allergens && (
-                      <span className="ml-1 text-[9px] sm:text-[10px] text-muted-foreground font-normal">({row.allergens})</span>
+                      <span className="ml-1 text-[8px] sm:text-[9px] text-muted-foreground font-normal">({row.allergens})</span>
                     )}
                   </span>
                   {row.prices.map((p, i) => (
-                    <span key={i} className="w-14 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
+                    <span key={i} className="w-12 text-right text-bronze font-semibold text-[10px] sm:text-[11px] whitespace-nowrap">
                       {p || "–"}
                     </span>
                   ))}
                 </div>
               ))}
 
-              {/* Signature Drink — compact, at the bottom */}
-              <div className="mt-3 border border-warm-gold/50 rounded-md px-2 py-1.5 bg-[hsl(43,55%,48%)]/5">
+              <div className="mt-1.5 border border-warm-gold/50 rounded px-1.5 py-1 bg-[hsl(43,55%,48%)]/5">
                 <div className="flex items-baseline justify-between gap-1">
-                  <span className="font-serif text-[11px] sm:text-xs font-bold text-foreground">
-                    ⭐ Boxenstopp Spezial <span className="text-[9px] text-muted-foreground font-normal">(G)</span>
+                  <span className="font-serif text-[10px] sm:text-[11px] font-bold text-foreground">
+                    ⭐ Boxenstopp Spezial <span className="text-[8px] text-muted-foreground font-normal">(G)</span>
                   </span>
-                  <span className="text-bronze font-semibold text-[11px] sm:text-xs">4,90 €</span>
+                  <span className="text-bronze font-semibold text-[10px] sm:text-[11px]">4,90 €</span>
                 </div>
-                <p className="text-bronze/80 text-[9px] sm:text-[10px] italic leading-tight">Kollagen Latte Macchiato mit Salz & Rohkakao – Hausspezialität</p>
-              </div>
-              <PageNumber num={2} />
-            </Page>
-
-            {/* Page: Wohlfühlgetränke (Heiße Getränke Teil 2) */}
-            <Page>
-              <SectionTitle title="Wohlfühlgetränke" />
-
-              <div className="flex items-baseline justify-end gap-0 text-[9px] sm:text-[10px] text-muted-foreground font-semibold uppercase tracking-wide mb-1">
-                <span className="w-14 text-right">S</span>
-                <span className="w-14 text-right">M</span>
-                <span className="w-14 text-right">L</span>
+                <p className="text-bronze/80 text-[8px] sm:text-[9px] italic leading-tight">Kollagen Latte Macchiato mit Salz & Rohkakao</p>
               </div>
 
+              <h3 className="font-serif-italic text-sm font-semibold text-foreground mt-2 mb-1">Wohlfühlgetränke</h3>
               {[
                 { name: "Kakao", allergens: "G", prices: ["2,00 €", "2,60 €", "3,20 €"] },
                 { name: "Latte Vanilla", allergens: "G", prices: ["2,00 €", "2,60 €", "3,20 €"] },
                 { name: "Matcha-Latte", allergens: "G", prices: ["3,50 €", "", "3,80 €"] },
                 { name: "Vegan Matcha Latte", allergens: "A", prices: ["3,50 €", "", "3,80 €"] },
               ].map((row) => (
-                <div key={row.name} className="flex items-baseline gap-0 mb-1">
-                  <span className="font-serif text-xs sm:text-sm font-medium text-foreground flex-1 min-w-0 truncate">
+                <div key={row.name} className="flex items-baseline gap-0 mb-0.5">
+                  <span className="font-serif text-[11px] sm:text-xs font-medium text-foreground flex-1 min-w-0 truncate">
                     {row.name}
                     {row.allergens && (
-                      <span className="ml-1 text-[9px] sm:text-[10px] text-muted-foreground font-normal">({row.allergens})</span>
+                      <span className="ml-1 text-[8px] sm:text-[9px] text-muted-foreground font-normal">({row.allergens})</span>
                     )}
                   </span>
                   {row.prices.map((p, i) => (
-                    <span key={i} className="w-14 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
+                    <span key={i} className="w-12 text-right text-bronze font-semibold text-[10px] sm:text-[11px] whitespace-nowrap">
                       {p || "–"}
                     </span>
                   ))}
                 </div>
               ))}
-              <FlipMenuItem item={{ name: "Tee (nach Wahl)", price: "1,80 €" }} />
-              <PageNumber num={3} />
+              <div className="flex items-baseline gap-0 mb-0.5">
+                <span className="font-serif text-[11px] sm:text-xs font-medium text-foreground flex-1">Tee (nach Wahl)</span>
+                <span className="text-bronze font-semibold text-[10px] sm:text-[11px]">1,80 €</span>
+              </div>
+              <PageNumber num={2} />
             </Page>
 
-            {/* Page: Erfrischungsgetränke */}
+            {/* Page: Erfrischung + Sportler */}
             <Page>
               <SectionTitle title="Erfrischungsgetränke" />
               <FlipMenuItem item={{ name: "Apfel-/Fruchtschorle", price: "2,25 €", note: "0,33 l" }} />
               <FlipMenuItem item={{ name: "Wasser still/med./spritzig", price: "1,75 €", note: "0,5 l" }} />
               <FlipMenuItem item={{ name: "Säfte", price: "2,50 €", note: "0,25 l" }} />
               <FlipMenuItem item={{ name: "Alkoholfreies Bier", price: "3,00 €", note: "0,33 l" }} />
-              <PageNumber num={4} />
-            </Page>
 
-            {/* Page: Getränke für Sportler */}
-            <Page>
-              <SectionTitle title="Getränke für Sportler" />
-              <FlipMenuItem item={{ name: "Shake (versch. Sorten)", price: "", allergens: "F,G", sizes: [{ label: "K", price: "2,50 €" }, { label: "G", price: "4,50 €" }] }} />
-              <FlipMenuItem item={{ name: "Electrolyte", price: "2,90 €" }} />
-              <FlipMenuItem item={{ name: "Energy LIFTOFF", price: "3,50 €", allergens: "11" }} />
-              <PageNumber num={5} />
+              <div className="mt-3">
+                <SectionTitle title="Getränke für Sportler" />
+                <FlipMenuItem item={{ name: "Shake (versch. Sorten)", price: "", allergens: "F,G", sizes: [{ label: "K", price: "2,50 €" }, { label: "G", price: "4,50 €" }] }} />
+                <FlipMenuItem item={{ name: "Electrolyte", price: "2,90 €" }} />
+                <FlipMenuItem item={{ name: "Energy LIFTOFF", price: "3,50 €", allergens: "11" }} />
+              </div>
+              <PageNumber num={3} />
             </Page>
 
             {/* Page: Gourmet Baguettes & Hüttenbrote */}
@@ -264,7 +253,7 @@ const FlipbookMenu = () => {
                 <FlipMenuItem item={{ name: "Hüttenbrot Tomate Mozzarella", price: "7,40 €", allergens: "A,F,G", note: "Weizenbrot, Basilikum, Mozzarella & Tomaten" }} />
                 <FlipMenuItem item={{ name: "Hüttenbrot Raclette", price: "7,70 €", allergens: "A,G", note: "Schwarzbrot, Raclettekäse, Lauch & Gewürze" }} />
               </div>
-              <PageNumber num={6} />
+              <PageNumber num={4} />
             </Page>
 
             {/* Page: Flammkuchen & Pizza */}
@@ -282,26 +271,24 @@ const FlipbookMenu = () => {
                 <FlipMenuItem item={{ name: "Pizzetta Margherita", price: "3,60 €", allergens: "A,G", note: "Tomatensauce & Käse" }} />
                 <FlipMenuItem item={{ name: "Pizzetta Salami", price: "3,95 €", allergens: "A,G", note: "Tomatensauce, Käse & Salami" }} />
               </div>
-              <PageNumber num={7} />
+              <PageNumber num={5} />
             </Page>
 
-            {/* Page: Snacks */}
+            {/* Page: Snacks + Süßes */}
             <Page>
               <SectionTitle title="Snacks" />
               <FlipMenuItem item={{ name: "Proteinriegel", price: "2,50 – 3,90 €" }} />
               <FlipMenuItem item={{ name: "Müsliriegel Expressmahlzeit", price: "3,90 €" }} />
               <FlipMenuItem item={{ name: "Protein-Chips", price: "2,40 €" }} />
-              <PageNumber num={8} />
-            </Page>
 
-            {/* Page: Süßes Gebäck & Dessert */}
-            <Page>
-              <SectionTitle title="Süßes Gebäck & Dessert" />
-              <FlipMenuItem item={{ name: "Donut (nach Wahl)", price: "1,80 €", allergens: "A,C,G" }} />
-              <FlipMenuItem item={{ name: "Muffin (nach Wahl)", price: "2,50 €", allergens: "A,C,G" }} />
-              <FlipMenuItem item={{ name: "Affogato", price: "3,50 €", allergens: "G", note: "Espresso mit Vanilleeis" }} />
-              <FlipMenuItem item={{ name: "Obst (verschiedenes)", price: "0,50 €" }} />
-              <PageNumber num={9} />
+              <div className="mt-3">
+                <SectionTitle title="Süßes Gebäck & Dessert" />
+                <FlipMenuItem item={{ name: "Donut (nach Wahl)", price: "1,80 €", allergens: "A,C,G" }} />
+                <FlipMenuItem item={{ name: "Muffin (nach Wahl)", price: "2,50 €", allergens: "A,C,G" }} />
+                <FlipMenuItem item={{ name: "Affogato", price: "3,50 €", allergens: "G", note: "Espresso mit Vanilleeis" }} />
+                <FlipMenuItem item={{ name: "Obst (verschiedenes)", price: "0,50 €" }} />
+              </div>
+              <PageNumber num={6} />
             </Page>
 
             {/* Page 14: Allergen Legend */}
