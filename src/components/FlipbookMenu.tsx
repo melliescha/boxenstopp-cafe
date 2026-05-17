@@ -105,17 +105,17 @@ const FlipbookMenu = () => {
           <ChevronRight size={20} />
         </button>
 
-        <div className="flex justify-center px-10 sm:px-0">
+        <div className="flex justify-center px-2 sm:px-0">
           {/* @ts-ignore react-pageflip typing issues */}
           <HTMLFlipBook
             ref={flipBookRef}
-            width={400}
-            height={550}
+            width={380}
+            height={620}
             size="stretch"
-            minWidth={280}
+            minWidth={300}
             maxWidth={500}
-            minHeight={400}
-            maxHeight={700}
+            minHeight={520}
+            maxHeight={820}
             showCover={true}
             onFlip={onFlip}
             onInit={onInit}
