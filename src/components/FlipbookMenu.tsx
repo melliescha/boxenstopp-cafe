@@ -152,7 +152,7 @@ const FlipbookMenu = () => {
             <Page>
               <SectionTitle title="Heiße Getränke" />
 
-              <h4 className="font-serif-italic text-[13px] sm:text-base font-semibold text-foreground mb-0.5 leading-tight">Kaffee</h4>
+              <h4 className="font-serif-italic text-[13px] sm:text-base font-semibold text-foreground mb-0 leading-tight">Kaffee</h4>
               <div className="flex items-baseline justify-end gap-0 text-[8px] sm:text-[10px] text-muted-foreground font-semibold uppercase tracking-wide mb-0.5">
                 <span className="w-11 sm:w-14 text-right">S</span>
                 <span className="w-11 sm:w-14 text-right">M</span>
@@ -194,7 +194,7 @@ const FlipbookMenu = () => {
                 <p className="text-bronze/80 text-[8px] sm:text-[10px] italic leading-tight">Kollagen Latte Macchiato mit Salz & Rohkakao</p>
               </div>
 
-              <h4 className="font-serif-italic text-[13px] sm:text-base font-semibold text-foreground mt-1.5 mb-0.5 leading-tight">Wohlfühlgetränke</h4>
+              <h4 className="font-serif-italic text-[13px] sm:text-base font-semibold text-foreground mt-1 mb-0 leading-tight">Wohlfühlgetränke</h4>
               {[
                 { name: "Kakao", allergens: "G", prices: ["2,00 €", "2,60 €", "3,20 €"] },
                 { name: "Latte Vanilla", allergens: "G", prices: ["2,00 €", "2,60 €", "3,20 €"] },
