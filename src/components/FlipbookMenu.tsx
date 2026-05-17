@@ -31,7 +31,7 @@ interface FlipItem {
 }
 
 const FlipMenuItem = ({ item }: { item: FlipItem }) => (
-  <div className="mb-2.5">
+  <div className="mb-1.5">
     <div className="flex items-baseline justify-between gap-1">
       <span className="font-serif text-xs sm:text-sm font-medium text-foreground">
         {item.name}
@@ -53,15 +53,15 @@ const FlipMenuItem = ({ item }: { item: FlipItem }) => (
         <span className="text-bronze font-semibold whitespace-nowrap text-xs sm:text-sm">{item.price}</span>
       )}
     </div>
-    {item.note && <p className="text-muted-foreground text-[10px] sm:text-xs italic mt-0.5">{item.note}</p>}
+    {item.note && <p className="text-muted-foreground text-[10px] sm:text-xs italic mt-0">{item.note}</p>}
   </div>
 );
 
 const SectionTitle = ({ title, subtitle }: { title: string; subtitle?: string }) => (
-  <div className="mb-4">
+  <div className="mb-2">
     <h3 className="font-serif-italic text-base sm:text-lg md:text-xl font-semibold text-foreground">{title}</h3>
     {subtitle && <p className="text-muted-foreground text-[10px] sm:text-xs mt-0.5">{subtitle}</p>}
-    <div className="w-8 h-px bg-bronze mt-2" />
+    <div className="w-8 h-px bg-bronze mt-1.5" />
   </div>
 );
 
