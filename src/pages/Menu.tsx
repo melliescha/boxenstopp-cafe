@@ -55,8 +55,12 @@ const Menu = () => {
           const rect = el.getBoundingClientRect();
           const clone = el.cloneNode(true) as HTMLElement;
 
+          clone.removeAttribute("style");
           clone.style.transform = "none";
           clone.style.position = "relative";
+          clone.style.display = "block";
+          clone.style.visibility = "visible";
+          clone.style.opacity = "1";
           clone.style.left = "0";
           clone.style.top = "0";
           clone.style.width = `${Math.max(rect.width, 380)}px`;
@@ -76,6 +80,11 @@ const Menu = () => {
 
           exportRoot.appendChild(clone);
 
+          const cloneWidth = Math.max(clone.offsetWidth, clone.scrollWidth, 380);
+          const cloneHeight = Math.max(clone.offsetHeight, clone.scrollHeight, 620);
+          clone.style.width = `${cloneWidth}px`;
+          clone.style.height = `${cloneHeight}px`;
+
           const canvas = await html2canvas(clone, {
             scale: 1.5,
             useCORS: true,
@@ -85,25 +94,16 @@ const Menu = () => {
 
           exportRoot.removeChild(clone);
 
+          if (!canvas.width || !canvas.height) {
+            throw new Error("PDF page render returned empty canvas");
+          }
+
           const imgData = canvas.toDataURL("image/jpeg", 0.82);
           const ratio = Math.min(pageWidth / canvas.width, pageHeight / canvas.height);
-          const w = canvas.width * ratio;
-          const h = canvas.height * ratio;
-          const x = (pageWidth - w) / 2;
-          const y = (pageHeight - h) / 2;
-
-          console.info("PDF page metrics", {
-            index: i,
-            rectWidth: rect.width,
-            rectHeight: rect.height,
-            canvasWidth: canvas.width,
-            canvasHeight: canvas.height,
-            ratio,
-            x,
-            y,
-            w,
-            h,
-          });
+          const w = Math.max(1, canvas.width * ratio);
+          const h = Math.max(1, canvas.height * ratio);
+          const x = Math.max(0, (pageWidth - w) / 2);
+          const y = Math.max(0, (pageHeight - h) / 2);
 
           if (i > 0) pdf.addPage();
           pdf.addImage(imgData, "JPEG", x, y, w, h, undefined, "FAST");
