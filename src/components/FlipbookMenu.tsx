@@ -150,13 +150,18 @@ const FlipbookMenu = () => {
 
             {/* Page 3: Coffee Classics + Milk Coffee */}
             <Page>
-              <SectionTitle title="Kaffee Klassiker" subtitle="In Zusammenarbeit mit Cup&Cino" />
+              <SectionTitle title="Kaffee" subtitle="In Zusammenarbeit mit Cup&Cino" />
               <FlipMenuItem item={{ name: "Espresso", price: "", note: "Barista Qualität", sizes: [{ label: "K", price: "1,90 €" }, { label: "G", price: "2,30 €" }] }} />
               <FlipMenuItem item={{ name: "Americano", price: "", note: "Barista Qualität", sizes: [{ label: "K", price: "2,20 €" }, { label: "G", price: "2,60 €" }] }} />
               <FlipMenuItem item={{ name: "Caffè Crema", price: "", note: "Barista Qualität", sizes: [{ label: "K", price: "2,20 €" }, { label: "M", price: "2,60 €" }, { label: "G", price: "2,90 €" }] }} />
+              <FlipMenuItem item={{ name: "Caffè Latte", price: "", allergens: "G", sizes: [{ label: "K", price: "2,40 €" }, { label: "M", price: "2,90 €" }, { label: "G", price: "3,40 €" }] }} />
+              <FlipMenuItem item={{ name: "Cappuccino", price: "", allergens: "G", sizes: [{ label: "K", price: "2,40 €" }, { label: "M", price: "2,90 €" }, { label: "G", price: "3,40 €" }] }} />
+              <FlipMenuItem item={{ name: "Cappuccino Schoko/Vanille", price: "", allergens: "G", sizes: [{ label: "K", price: "2,60 €" }, { label: "M", price: "3,10 €" }, { label: "G", price: "3,60 €" }] }} />
+              <FlipMenuItem item={{ name: "Latte Macchiato", price: "", allergens: "G", sizes: [{ label: "K", price: "2,60 €" }, { label: "M", price: "3,20 €" }, { label: "G", price: "3,80 €" }] }} />
+              <FlipMenuItem item={{ name: "Flat White", price: "", allergens: "G", sizes: [{ label: "K", price: "2,60 €" }, { label: "G", price: "3,20 €" }] }} />
 
-              {/* Signature Drink — compact */}
-              <div className="mt-2 border border-warm-gold/50 rounded-md px-2 py-1.5 bg-[hsl(43,55%,48%)]/5">
+              {/* Signature Drink — compact, at the bottom */}
+              <div className="mt-3 border border-warm-gold/50 rounded-md px-2 py-1.5 bg-[hsl(43,55%,48%)]/5">
                 <div className="flex items-baseline justify-between gap-1">
                   <span className="font-serif text-[11px] sm:text-xs font-bold text-foreground">
                     ⭐ Boxenstopp Spezial <span className="text-[9px] text-muted-foreground font-normal">(G)</span>
@@ -164,15 +169,6 @@ const FlipbookMenu = () => {
                   <span className="text-bronze font-semibold text-[11px] sm:text-xs">4,90 €</span>
                 </div>
                 <p className="text-bronze/80 text-[9px] sm:text-[10px] italic leading-tight">Kollagen Latte Macchiato mit Salz & Rohkakao – Hausspezialität</p>
-              </div>
-
-              <div className="mt-3">
-                <SectionTitle title="Milchkaffee-Varianten" />
-                <FlipMenuItem item={{ name: "Caffè Latte", price: "", allergens: "G", sizes: [{ label: "K", price: "2,40 €" }, { label: "M", price: "2,90 €" }, { label: "G", price: "3,40 €" }] }} />
-                <FlipMenuItem item={{ name: "Cappuccino", price: "", allergens: "G", sizes: [{ label: "K", price: "2,40 €" }, { label: "M", price: "2,90 €" }, { label: "G", price: "3,40 €" }] }} />
-                <FlipMenuItem item={{ name: "Cappuccino Schoko/Vanille", price: "", allergens: "G", sizes: [{ label: "K", price: "2,60 €" }, { label: "M", price: "3,10 €" }, { label: "G", price: "3,60 €" }] }} />
-                <FlipMenuItem item={{ name: "Latte Macchiato", price: "", allergens: "G", sizes: [{ label: "K", price: "2,60 €" }, { label: "M", price: "3,20 €" }, { label: "G", price: "3,80 €" }] }} />
-                <FlipMenuItem item={{ name: "Flat White", price: "", allergens: "G", sizes: [{ label: "K", price: "2,60 €" }, { label: "G", price: "3,20 €" }] }} />
               </div>
               <PageNumber num={2} />
             </Page>
