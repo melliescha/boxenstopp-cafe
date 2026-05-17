@@ -167,6 +167,7 @@ const FlipbookMenu = () => {
                 { name: "Cappuccino Schoko/Vanille", allergens: "G", prices: ["2,60 €", "3,10 €", "3,60 €"] },
                 { name: "Latte Macchiato", allergens: "G", prices: ["2,60 €", "3,20 €", "3,80 €"] },
                 { name: "Flat White", allergens: "G", prices: ["2,60 €", "", "3,20 €"] },
+                { name: "Affogato (Espresso mit Vanilleeis)", allergens: "G", prices: ["", "", "3,50 €"] },
               ].map((row) => (
                 <div key={row.name} className="flex items-baseline gap-0 mb-1">
                   <span className="font-serif text-xs sm:text-sm font-medium text-foreground flex-1 min-w-0 truncate">
