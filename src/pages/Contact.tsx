@@ -494,6 +494,114 @@ const Contact = () => {
         </DialogContent>
       </Dialog>
 
+      {/* SECTION 6.5: PLANT UNS EIN — ROUTEN */}
+      <section className="py-20 md:py-28" style={{ backgroundColor: "#FDF7EE" }}>
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="text-center mb-12">
+            <p
+              className="font-sans uppercase tracking-[0.2em] text-xs font-semibold mb-3"
+              style={{ color: BRONZE }}
+            >
+              Routen & Touren
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-3" style={{ color: "#164C74" }}>
+              Plant uns ein
+            </h2>
+            <p className="text-base md:text-lg" style={{ color: WARM_BROWN }}>
+              Wir sind euer Stopp auf vielen Routen im Westallgäu
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+            {/* Radfahrer */}
+            <article
+              className="rounded-2xl p-6 md:p-7 bg-white shadow-sm"
+              style={{ border: `1px solid ${BORDER}` }}
+            >
+              <h3 className="font-serif text-xl font-bold mb-5 flex items-center gap-2" style={{ color: "#164C74" }}>
+                <span aria-hidden="true">🚴</span> Radfahrer
+              </h3>
+              <ul className="space-y-3">
+                {[
+                  "Bodensee-Königssee-Radweg (1. Etappe)",
+                  "Allgäuer Käsestraße – Tour „Großes KäseGlück\"",
+                  "Radrunde Allgäu (ADFC 4-Sterne-Qualitätsroute)",
+                  "Bayerisch-Schwäbischer Jakobus-Radpilgerweg",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2 leading-relaxed" style={{ color: WARM_BROWN }}>
+                    <span aria-hidden="true" style={{ color: "#B7943D" }} className="mt-1">✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+
+            {/* Wanderer */}
+            <article
+              className="rounded-2xl p-6 md:p-7 bg-white shadow-sm"
+              style={{ border: `1px solid ${BORDER}` }}
+            >
+              <h3 className="font-serif text-xl font-bold mb-5 flex items-center gap-2" style={{ color: "#164C74" }}>
+                <span aria-hidden="true">🥾</span> Wanderer
+              </h3>
+              <ul className="space-y-3">
+                {[
+                  "Westallgäuer Wasserwege (31 Routen, viele starten direkt am Bahnhof Hergatz)",
+                  "Leiblach-Wanderweg von Hergatz zum Bodensee",
+                  "Münchner Jakobsweg (Endetappe)",
+                  "Bayerisch-Schwäbischer Jakobsweg",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2 leading-relaxed" style={{ color: WARM_BROWN }}>
+                    <span aria-hidden="true" style={{ color: "#B7943D" }} className="mt-1">✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+
+            {/* Spaziergänger */}
+            <article
+              className="rounded-2xl p-6 md:p-7 bg-white shadow-sm"
+              style={{ border: `1px solid ${BORDER}` }}
+            >
+              <h3 className="font-serif text-xl font-bold mb-5 flex items-center gap-2" style={{ color: "#164C74" }}>
+                <span aria-hidden="true">🚶</span> Spaziergänger & Tagesgäste
+              </h3>
+              <ul className="space-y-3">
+                {[
+                  "Rundgang durchs Degermoos (Naturschutzgebiet)",
+                  "Pilger-Spaziergang Maria-Thann (Wallfahrtskirche)",
+                  "Historischer Rundgang Wohmbrechts (St. Georg)",
+                  "Tagestour in die Altstadt Wangen (5 km)",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2 leading-relaxed" style={{ color: WARM_BROWN }}>
+                    <span aria-hidden="true" style={{ color: "#B7943D" }} className="mt-1">✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          </div>
+
+          <div className="mt-12 flex flex-col items-center text-center gap-4">
+            <p className="font-serif text-lg md:text-xl" style={{ color: "#164C74" }}>
+              Plant uns auf Komoot in eure Tour ein
+            </p>
+            <a
+              href="https://www.komoot.com/de-DE/highlight/8386778"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-semibold shadow-sm hover:opacity-90 transition-opacity min-h-[52px] text-base"
+              style={{ backgroundColor: "#B7943D", color: "#164C74" }}
+            >
+              <Route className="w-5 h-5" aria-hidden="true" />
+              Auf Komoot ansehen
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* SECTION 7: CALL TO ACTION */}
       <section className="py-14 md:py-20" style={{ backgroundColor: NAVY }}>
         <div className="container mx-auto px-6 max-w-3xl text-center">
