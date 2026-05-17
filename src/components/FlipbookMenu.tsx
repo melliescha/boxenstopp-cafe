@@ -152,11 +152,11 @@ const FlipbookMenu = () => {
             <Page>
               <SectionTitle title="Heiße Getränke" />
 
-              <h4 className="font-serif-italic text-sm sm:text-base font-semibold text-foreground mb-1">Kaffee</h4>
-              <div className="flex items-baseline justify-end gap-0 text-[9px] sm:text-[10px] text-muted-foreground font-semibold uppercase tracking-wide mb-1">
-                <span className="w-12 sm:w-14 text-right">S</span>
-                <span className="w-12 sm:w-14 text-right">M</span>
-                <span className="w-12 sm:w-14 text-right">L</span>
+              <h4 className="font-serif-italic text-[13px] sm:text-base font-semibold text-foreground mb-0.5 leading-tight">Kaffee</h4>
+              <div className="flex items-baseline justify-end gap-0 text-[8px] sm:text-[10px] text-muted-foreground font-semibold uppercase tracking-wide mb-0.5">
+                <span className="w-11 sm:w-14 text-right">S</span>
+                <span className="w-11 sm:w-14 text-right">M</span>
+                <span className="w-11 sm:w-14 text-right">L</span>
               </div>
               {[
                 { name: "Espresso", prices: ["1,90 €", "", "2,30 €"] },
@@ -167,57 +167,57 @@ const FlipbookMenu = () => {
                 { name: "Cappuccino Schoko/Vanille", allergens: "G", prices: ["2,60 €", "3,10 €", "3,60 €"] },
                 { name: "Latte Macchiato", allergens: "G", prices: ["2,60 €", "3,20 €", "3,80 €"] },
                 { name: "Flat White", allergens: "G", prices: ["2,60 €", "", "3,20 €"] },
-                { name: "Affogato (Espresso mit Vanilleeis)", allergens: "G", prices: ["", "", "3,50 €"] },
+                { name: "Affogato (Espresso m. Vanilleeis)", allergens: "G", prices: ["", "", "3,50 €"] },
               ].map((row) => (
-                <div key={row.name} className="flex items-baseline gap-0 mb-1">
-                  <span className="font-serif text-xs sm:text-sm font-medium text-foreground flex-1 min-w-0 pr-1">
+                <div key={row.name} className="flex items-baseline gap-0 mb-0.5 leading-tight">
+                  <span className="font-serif text-[11px] sm:text-sm font-medium text-foreground flex-1 min-w-0 pr-1">
                     {row.name}
                     {row.allergens && (
-                      <span className="ml-1 text-[9px] sm:text-[10px] text-muted-foreground font-normal">({row.allergens})</span>
+                      <span className="ml-1 text-[8px] sm:text-[10px] text-muted-foreground font-normal">({row.allergens})</span>
                     )}
                   </span>
                   {row.prices.map((p, i) => (
-                    <span key={i} className="w-12 sm:w-14 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
+                    <span key={i} className="w-11 sm:w-14 text-right text-bronze font-semibold text-[10px] sm:text-xs whitespace-nowrap">
                       {p || "–"}
                     </span>
                   ))}
                 </div>
               ))}
 
-              <div className="mt-2 border border-warm-gold/50 rounded px-2 py-1.5 bg-[hsl(43,55%,48%)]/5">
+              <div className="mt-1.5 border border-warm-gold/50 rounded px-1.5 py-1 bg-[hsl(43,55%,48%)]/5">
                 <div className="flex items-baseline justify-between gap-1">
-                  <span className="font-serif text-[11px] sm:text-xs font-bold text-foreground">
-                    ⭐ Boxenstopp Spezial <span className="text-[9px] text-muted-foreground font-normal">(G)</span>
+                  <span className="font-serif text-[10px] sm:text-xs font-bold text-foreground">
+                    ⭐ Boxenstopp Spezial <span className="text-[8px] text-muted-foreground font-normal">(G)</span>
                   </span>
-                  <span className="text-bronze font-semibold text-[11px] sm:text-xs">4,90 €</span>
+                  <span className="text-bronze font-semibold text-[10px] sm:text-xs">4,90 €</span>
                 </div>
-                <p className="text-bronze/80 text-[9px] sm:text-[10px] italic leading-tight">Kollagen Latte Macchiato mit Salz & Rohkakao</p>
+                <p className="text-bronze/80 text-[8px] sm:text-[10px] italic leading-tight">Kollagen Latte Macchiato mit Salz & Rohkakao</p>
               </div>
 
-              <h4 className="font-serif-italic text-sm sm:text-base font-semibold text-foreground mt-3 mb-1">Wohlfühlgetränke</h4>
+              <h4 className="font-serif-italic text-[13px] sm:text-base font-semibold text-foreground mt-1.5 mb-0.5 leading-tight">Wohlfühlgetränke</h4>
               {[
                 { name: "Kakao", allergens: "G", prices: ["2,00 €", "2,60 €", "3,20 €"] },
                 { name: "Latte Vanilla", allergens: "G", prices: ["2,00 €", "2,60 €", "3,20 €"] },
                 { name: "Matcha-Latte", allergens: "G", prices: ["3,50 €", "", "3,80 €"] },
                 { name: "Vegan Matcha Latte", allergens: "A", prices: ["3,50 €", "", "3,80 €"] },
               ].map((row) => (
-                <div key={row.name} className="flex items-baseline gap-0 mb-1">
-                  <span className="font-serif text-xs sm:text-sm font-medium text-foreground flex-1 min-w-0 pr-1">
+                <div key={row.name} className="flex items-baseline gap-0 mb-0.5 leading-tight">
+                  <span className="font-serif text-[11px] sm:text-sm font-medium text-foreground flex-1 min-w-0 pr-1">
                     {row.name}
                     {row.allergens && (
-                      <span className="ml-1 text-[9px] sm:text-[10px] text-muted-foreground font-normal">({row.allergens})</span>
+                      <span className="ml-1 text-[8px] sm:text-[10px] text-muted-foreground font-normal">({row.allergens})</span>
                     )}
                   </span>
                   {row.prices.map((p, i) => (
-                    <span key={i} className="w-12 sm:w-14 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
+                    <span key={i} className="w-11 sm:w-14 text-right text-bronze font-semibold text-[10px] sm:text-xs whitespace-nowrap">
                       {p || "–"}
                     </span>
                   ))}
                 </div>
               ))}
-              <div className="flex items-baseline gap-0 mb-1">
-                <span className="font-serif text-xs sm:text-sm font-medium text-foreground flex-1">Tee (nach Wahl)</span>
-                <span className="text-bronze font-semibold text-[11px] sm:text-xs">1,80 €</span>
+              <div className="flex items-baseline gap-0 mb-0.5 leading-tight">
+                <span className="font-serif text-[11px] sm:text-sm font-medium text-foreground flex-1">Tee (nach Wahl)</span>
+                <span className="text-bronze font-semibold text-[10px] sm:text-xs">1,80 €</span>
               </div>
               <PageNumber num={2} />
             </Page>
