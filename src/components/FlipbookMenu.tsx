@@ -150,7 +150,7 @@ const FlipbookMenu = () => {
 
             {/* Page 3: Coffee Classics + Milk Coffee */}
             <Page>
-              <SectionTitle title="Kaffee" subtitle="In Zusammenarbeit mit Cup&Cino" />
+              <SectionTitle title="Kaffee" />
               <FlipMenuItem item={{ name: "Espresso", price: "", note: "Barista Qualität", sizes: [{ label: "K", price: "1,90 €" }, { label: "G", price: "2,30 €" }] }} />
               <FlipMenuItem item={{ name: "Americano", price: "", note: "Barista Qualität", sizes: [{ label: "K", price: "2,20 €" }, { label: "G", price: "2,60 €" }] }} />
               <FlipMenuItem item={{ name: "Caffè Crema", price: "", note: "Barista Qualität", sizes: [{ label: "K", price: "2,20 €" }, { label: "M", price: "2,60 €" }, { label: "G", price: "2,90 €" }] }} />
@@ -194,7 +194,6 @@ const FlipbookMenu = () => {
 
             {/* Page 5: Gourmet Baguettes & Hüttenbrote (combined) */}
             <Page>
-              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Frisch aufgebacken</p>
               <SectionTitle title="Gourmet Baguettes" />
               <FlipMenuItem item={{ name: "Baguette Thunfisch", price: "6,20 €", allergens: "A,D,G", note: "Thunfisch, Zwiebeln, Gouda & Béchamel" }} />
               <FlipMenuItem item={{ name: "Baguette Tomate Mozzarella", price: "6,20 €", allergens: "A,G", note: "Getr. Tomaten, Basilikum & Béchamel" }} />
@@ -212,8 +211,7 @@ const FlipbookMenu = () => {
 
             {/* Page 11: Flammkuchen & Pizza */}
             <Page>
-              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Aus dem Ofen: Flammkuchen & Snacks</p>
-              <SectionTitle title="Flammkuchen" subtitle="Von unserem Partner Perplex" />
+              <SectionTitle title="Flammkuchen" />
               <FlipMenuItem item={{ name: "Elsässer Art", price: "6,30 €", allergens: "A,G", note: "Speck und Zwiebeln" }} />
               <FlipMenuItem item={{ name: "Griechische Art", price: "6,30 €", allergens: "A,G,L", note: "Peperoni, Hirtenkäse, bunter Pfeffer" }} />
               <FlipMenuItem item={{ name: "Mediterran", price: "6,30 €", allergens: "A,G", note: "Hirtenkäse, Paprika, Zucchini" }} />
