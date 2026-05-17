@@ -187,33 +187,30 @@ const FlipbookMenu = () => {
 
               <div className="mt-4">
                 <SectionTitle title="Süßes Gebäck & Dessert" />
-                <FlipMenuItem item={{ name: "Donut (nach Wahl)", price: "1,80 €" }} />
-                <FlipMenuItem item={{ name: "Muffin (nach Wahl)", price: "2,50 €" }} />
-                <FlipMenuItem item={{ name: "Affogato", price: "3,50 €", note: "Espresso mit Vanilleeis" }} />
+                <FlipMenuItem item={{ name: "Donut (nach Wahl)", price: "1,80 €", allergens: "A,C,G" }} />
+                <FlipMenuItem item={{ name: "Muffin (nach Wahl)", price: "2,50 €", allergens: "A,C,G" }} />
+                <FlipMenuItem item={{ name: "Affogato", price: "3,50 €", allergens: "G", note: "Espresso mit Vanilleeis" }} />
                 <FlipMenuItem item={{ name: "Obst (verschiedenes)", price: "0,50 €" }} />
               </div>
               <PageNumber num={3} />
             </Page>
 
-            {/* Page 7: Gourmet Baguettes */}
+            {/* Page 5: Gourmet Baguettes & Hüttenbrote (combined) */}
             <Page>
-              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Frisch belegt: unsere Gourmet Baguettes</p>
+              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Frisch aufgebacken</p>
               <SectionTitle title="Gourmet Baguettes" />
-              <FlipMenuItem item={{ name: "Gourmet Baguette Thunfisch", price: "6,20 €", note: "Thunfisch, Zwiebeln, Gouda & Béchamelsauce" }} />
-              <FlipMenuItem item={{ name: "Gourmet Baguette Tomate Mozzarella", price: "6,20 €", note: "Getrocknete Tomaten, Basilikum & Béchamel" }} />
-              <FlipMenuItem item={{ name: "Gourmet Baguette Provence", price: "6,20 €", note: "Zutaten folgen" }} />
-              <FlipMenuItem item={{ name: "Gourmet Baguette Rustikal", price: "6,20 €", note: "Zutaten folgen" }} />
-              <PageNumber num={5} />
-            </Page>
+              <FlipMenuItem item={{ name: "Baguette Thunfisch", price: "6,20 €", allergens: "A,D,G", note: "Thunfisch, Zwiebeln, Gouda & Béchamel" }} />
+              <FlipMenuItem item={{ name: "Baguette Tomate Mozzarella", price: "6,20 €", allergens: "A,G", note: "Getr. Tomaten, Basilikum & Béchamel" }} />
+              <FlipMenuItem item={{ name: "Baguette Provence", price: "6,20 €", note: "Zutaten folgen" }} />
+              <FlipMenuItem item={{ name: "Baguette Rustikal", price: "6,20 €", note: "Zutaten folgen" }} />
 
-            {/* Page 8: Hüttenbrote */}
-            <Page>
-              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Handgemacht: unsere Hüttenbrote</p>
-              <SectionTitle title="Hüttenbrote" />
-              <FlipMenuItem item={{ name: "Hüttenbrot Speck", price: "7,40 €", note: "Schwarzbrot mit Knoblauchbutter, Käse, Speck & Zwiebeln" }} />
-              <FlipMenuItem item={{ name: "Hüttenbrot Tomate Mozzarella", price: "7,40 €", note: "Weizenbrot mit Basilikum, Mozzarella & Tomaten" }} />
-              <FlipMenuItem item={{ name: "Hüttenbrot Raclette", price: "7,70 €", note: "Schwarzbrot mit Raclettekäse, Lauch & Gewürze" }} />
-              <PageNumber num={6} />
+              <div className="mt-3">
+                <SectionTitle title="Hüttenbrote" />
+                <FlipMenuItem item={{ name: "Hüttenbrot Speck", price: "7,40 €", allergens: "A,F,G", note: "Schwarzbrot, Knoblauchbutter, Käse, Speck & Zwiebeln" }} />
+                <FlipMenuItem item={{ name: "Hüttenbrot Tomate Mozzarella", price: "7,40 €", allergens: "A,F,G", note: "Weizenbrot, Basilikum, Mozzarella & Tomaten" }} />
+                <FlipMenuItem item={{ name: "Hüttenbrot Raclette", price: "7,70 €", allergens: "A,G", note: "Schwarzbrot, Raclettekäse, Lauch & Gewürze" }} />
+              </div>
+              <PageNumber num={5} />
             </Page>
 
             {/* Page 11: Flammkuchen & Pizza */}
