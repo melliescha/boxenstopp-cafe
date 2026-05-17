@@ -26,14 +26,32 @@ interface FlipItem {
   name: string;
   price: string;
   note?: string;
+  allergens?: string;
+  sizes?: { label: string; price: string }[];
 }
 
 const FlipMenuItem = ({ item }: { item: FlipItem }) => (
   <div className="mb-2.5">
     <div className="flex items-baseline justify-between gap-1">
-      <span className="font-serif text-xs sm:text-sm font-medium text-foreground">{item.name}</span>
+      <span className="font-serif text-xs sm:text-sm font-medium text-foreground">
+        {item.name}
+        {item.allergens && (
+          <span className="ml-1 text-[9px] sm:text-[10px] text-muted-foreground font-normal">({item.allergens})</span>
+        )}
+      </span>
       <span className="flex-1 border-b border-dotted border-bronze/25 mx-1 min-w-[0.5rem]" />
-      <span className="text-bronze font-semibold whitespace-nowrap text-xs sm:text-sm">{item.price}</span>
+      {item.sizes ? (
+        <span className="text-bronze font-semibold whitespace-nowrap text-[10px] sm:text-xs flex gap-1.5">
+          {item.sizes.map((s) => (
+            <span key={s.label} className="flex flex-col items-end leading-tight">
+              <span className="text-[8px] sm:text-[9px] text-muted-foreground font-normal uppercase tracking-wide">{s.label}</span>
+              <span>{s.price}</span>
+            </span>
+          ))}
+        </span>
+      ) : (
+        <span className="text-bronze font-semibold whitespace-nowrap text-xs sm:text-sm">{item.price}</span>
+      )}
     </div>
     {item.note && <p className="text-muted-foreground text-[10px] sm:text-xs italic mt-0.5">{item.note}</p>}
   </div>
@@ -133,15 +151,15 @@ const FlipbookMenu = () => {
             {/* Page 3: Coffee Classics + Milk Coffee */}
             <Page>
               <SectionTitle title="Kaffee Klassiker" subtitle="In Zusammenarbeit mit Cup&Cino" />
-              <FlipMenuItem item={{ name: "Espresso", price: "1,90 – 2,30 €", note: "Barista Qualität" }} />
-              <FlipMenuItem item={{ name: "Americano", price: "2,20 – 2,60 €", note: "Barista Qualität" }} />
-              <FlipMenuItem item={{ name: "Caffè Crema", price: "2,20 – 3,20 €", note: "Barista Qualität" }} />
+              <FlipMenuItem item={{ name: "Espresso", price: "", note: "Barista Qualität", sizes: [{ label: "K", price: "1,90 €" }, { label: "G", price: "2,30 €" }] }} />
+              <FlipMenuItem item={{ name: "Americano", price: "", note: "Barista Qualität", sizes: [{ label: "K", price: "2,20 €" }, { label: "G", price: "2,60 €" }] }} />
+              <FlipMenuItem item={{ name: "Caffè Crema", price: "", note: "Barista Qualität", sizes: [{ label: "K", price: "2,20 €" }, { label: "M", price: "2,60 €" }, { label: "G", price: "2,90 €" }, { label: "XL", price: "3,20 €" }] }} />
 
               {/* Signature Drink Feature Box */}
               <div className="mt-3 border-2 border-warm-gold/50 rounded-lg p-3 bg-[hsl(43,55%,48%)]/5">
                 <p className="text-warm-gold text-[10px] font-semibold tracking-wider uppercase mb-1">⭐ Unsere Hausspezialität</p>
                 <div className="flex items-baseline justify-between gap-1">
-                  <span className="font-serif text-xs sm:text-sm font-bold text-foreground">Boxenstopp Spezial</span>
+                  <span className="font-serif text-xs sm:text-sm font-bold text-foreground">Boxenstopp Spezial <span className="text-[9px] text-muted-foreground font-normal">(G)</span></span>
                   <span className="text-bronze font-semibold text-xs sm:text-sm">4,90 €</span>
                 </div>
                 <p className="text-bronze text-[10px] sm:text-xs italic mt-0.5">Kollagen Latte Macchiato mit Salz & Rohkakao</p>
@@ -149,11 +167,11 @@ const FlipbookMenu = () => {
 
               <div className="mt-3">
                 <SectionTitle title="Milchkaffee-Varianten" />
-                <FlipMenuItem item={{ name: "Caffè Latte", price: "2,40 – 3,40 €" }} />
-                <FlipMenuItem item={{ name: "Cappuccino", price: "2,40 – 3,40 €" }} />
-                <FlipMenuItem item={{ name: "Cappuccino Schoko/Vanille", price: "2,60 – 3,60 €" }} />
-                <FlipMenuItem item={{ name: "Latte Macchiato", price: "2,60 – 3,80 €" }} />
-                <FlipMenuItem item={{ name: "Flat White", price: "2,60 – 3,20 €" }} />
+                <FlipMenuItem item={{ name: "Caffè Latte", price: "", allergens: "G", sizes: [{ label: "K", price: "2,40 €" }, { label: "M", price: "2,90 €" }, { label: "G", price: "3,40 €" }] }} />
+                <FlipMenuItem item={{ name: "Cappuccino", price: "", allergens: "G", sizes: [{ label: "K", price: "2,40 €" }, { label: "M", price: "2,90 €" }, { label: "G", price: "3,40 €" }] }} />
+                <FlipMenuItem item={{ name: "Cappuccino Schoko/Vanille", price: "", allergens: "G", sizes: [{ label: "K", price: "2,60 €" }, { label: "M", price: "3,10 €" }, { label: "G", price: "3,60 €" }] }} />
+                <FlipMenuItem item={{ name: "Latte Macchiato", price: "", allergens: "G", sizes: [{ label: "K", price: "2,60 €" }, { label: "M", price: "3,20 €" }, { label: "G", price: "3,80 €" }] }} />
+                <FlipMenuItem item={{ name: "Flat White", price: "", allergens: "G", sizes: [{ label: "K", price: "2,60 €" }, { label: "G", price: "3,20 €" }] }} />
               </div>
               <PageNumber num={2} />
             </Page>
@@ -161,58 +179,55 @@ const FlipbookMenu = () => {
             {/* Page 4: Comfort drinks + sweets */}
             <Page>
               <SectionTitle title="Wohlfühlgetränke" />
-              <FlipMenuItem item={{ name: "Kakao", price: "2,00 – 3,20 €", note: "🧒 Kinder-Liebling" }} />
-              <FlipMenuItem item={{ name: "Latte Vanilla", price: "2,00 – 3,20 €", note: "🧒 Kinder-Liebling" }} />
-              <FlipMenuItem item={{ name: "Matcha-Latte", price: "3,50 – 3,80 €", note: "auch vegan mit Pflanzenmilch" }} />
-              <FlipMenuItem item={{ name: "Vegan Matcha Latte", price: "3,50 – 3,80 €", note: "100% vegan mit Pflanzenmilch" }} />
+              <FlipMenuItem item={{ name: "Kakao", price: "", allergens: "G", note: "🧒 Kinder-Liebling", sizes: [{ label: "K", price: "2,00 €" }, { label: "M", price: "2,60 €" }, { label: "G", price: "3,20 €" }] }} />
+              <FlipMenuItem item={{ name: "Latte Vanilla", price: "", allergens: "G", note: "🧒 Kinder-Liebling", sizes: [{ label: "K", price: "2,00 €" }, { label: "M", price: "2,60 €" }, { label: "G", price: "3,20 €" }] }} />
+              <FlipMenuItem item={{ name: "Matcha-Latte", price: "", allergens: "G", note: "auch vegan mit Pflanzenmilch", sizes: [{ label: "K", price: "3,50 €" }, { label: "G", price: "3,80 €" }] }} />
+              <FlipMenuItem item={{ name: "Vegan Matcha Latte", price: "", allergens: "A", note: "100% vegan mit Pflanzenmilch", sizes: [{ label: "K", price: "3,50 €" }, { label: "G", price: "3,80 €" }] }} />
               <FlipMenuItem item={{ name: "Tee (nach Wahl)", price: "1,80 €", note: "in Bio-Qualität" }} />
 
               <div className="mt-4">
                 <SectionTitle title="Süßes Gebäck & Dessert" />
-                <FlipMenuItem item={{ name: "Donut (nach Wahl)", price: "1,80 €" }} />
-                <FlipMenuItem item={{ name: "Muffin (nach Wahl)", price: "2,50 €" }} />
-                <FlipMenuItem item={{ name: "Affogato", price: "3,50 €", note: "Espresso mit Vanilleeis" }} />
+                <FlipMenuItem item={{ name: "Donut (nach Wahl)", price: "1,80 €", allergens: "A,C,G" }} />
+                <FlipMenuItem item={{ name: "Muffin (nach Wahl)", price: "2,50 €", allergens: "A,C,G" }} />
+                <FlipMenuItem item={{ name: "Affogato", price: "3,50 €", allergens: "G", note: "Espresso mit Vanilleeis" }} />
                 <FlipMenuItem item={{ name: "Obst (verschiedenes)", price: "0,50 €" }} />
               </div>
               <PageNumber num={3} />
             </Page>
 
-            {/* Page 7: Gourmet Baguettes */}
+            {/* Page 5: Gourmet Baguettes & Hüttenbrote (combined) */}
             <Page>
-              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Frisch belegt: unsere Gourmet Baguettes</p>
+              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Frisch aufgebacken</p>
               <SectionTitle title="Gourmet Baguettes" />
-              <FlipMenuItem item={{ name: "Gourmet Baguette Thunfisch", price: "6,20 €", note: "Thunfisch, Zwiebeln, Gouda & Béchamelsauce" }} />
-              <FlipMenuItem item={{ name: "Gourmet Baguette Tomate Mozzarella", price: "6,20 €", note: "Getrocknete Tomaten, Basilikum & Béchamel" }} />
-              <FlipMenuItem item={{ name: "Gourmet Baguette Provence", price: "6,20 €", note: "Zutaten folgen" }} />
-              <FlipMenuItem item={{ name: "Gourmet Baguette Rustikal", price: "6,20 €", note: "Zutaten folgen" }} />
-              <PageNumber num={5} />
-            </Page>
+              <FlipMenuItem item={{ name: "Baguette Thunfisch", price: "6,20 €", allergens: "A,D,G", note: "Thunfisch, Zwiebeln, Gouda & Béchamel" }} />
+              <FlipMenuItem item={{ name: "Baguette Tomate Mozzarella", price: "6,20 €", allergens: "A,G", note: "Getr. Tomaten, Basilikum & Béchamel" }} />
+              <FlipMenuItem item={{ name: "Baguette Provence", price: "6,20 €", note: "Zutaten folgen" }} />
+              <FlipMenuItem item={{ name: "Baguette Rustikal", price: "6,20 €", note: "Zutaten folgen" }} />
 
-            {/* Page 8: Hüttenbrote */}
-            <Page>
-              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Handgemacht: unsere Hüttenbrote</p>
-              <SectionTitle title="Hüttenbrote" />
-              <FlipMenuItem item={{ name: "Hüttenbrot Speck", price: "7,40 €", note: "Schwarzbrot mit Knoblauchbutter, Käse, Speck & Zwiebeln" }} />
-              <FlipMenuItem item={{ name: "Hüttenbrot Tomate Mozzarella", price: "7,40 €", note: "Weizenbrot mit Basilikum, Mozzarella & Tomaten" }} />
-              <FlipMenuItem item={{ name: "Hüttenbrot Raclette", price: "7,70 €", note: "Schwarzbrot mit Raclettekäse, Lauch & Gewürze" }} />
-              <PageNumber num={6} />
+              <div className="mt-3">
+                <SectionTitle title="Hüttenbrote" />
+                <FlipMenuItem item={{ name: "Hüttenbrot Speck", price: "7,40 €", allergens: "A,F,G", note: "Schwarzbrot, Knoblauchbutter, Käse, Speck & Zwiebeln" }} />
+                <FlipMenuItem item={{ name: "Hüttenbrot Tomate Mozzarella", price: "7,40 €", allergens: "A,F,G", note: "Weizenbrot, Basilikum, Mozzarella & Tomaten" }} />
+                <FlipMenuItem item={{ name: "Hüttenbrot Raclette", price: "7,70 €", allergens: "A,G", note: "Schwarzbrot, Raclettekäse, Lauch & Gewürze" }} />
+              </div>
+              <PageNumber num={5} />
             </Page>
 
             {/* Page 11: Flammkuchen & Pizza */}
             <Page>
               <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Aus dem Ofen: Flammkuchen & Snacks</p>
               <SectionTitle title="Flammkuchen" subtitle="Von unserem Partner Perplex" />
-              <FlipMenuItem item={{ name: "Elsässer Art", price: "6,30 €", note: "Speck und Zwiebeln" }} />
-              <FlipMenuItem item={{ name: "Griechische Art", price: "6,30 €", note: "Peperoni, Hirtenkäse, bunter Pfeffer" }} />
-              <FlipMenuItem item={{ name: "Mediterran", price: "6,30 €", note: "Hirtenkäse, Paprika, Zucchini" }} />
-              <FlipMenuItem item={{ name: "Lachs & Lauch", price: "7,30 €" }} />
+              <FlipMenuItem item={{ name: "Elsässer Art", price: "6,30 €", allergens: "A,G", note: "Speck und Zwiebeln" }} />
+              <FlipMenuItem item={{ name: "Griechische Art", price: "6,30 €", allergens: "A,G,L", note: "Peperoni, Hirtenkäse, bunter Pfeffer" }} />
+              <FlipMenuItem item={{ name: "Mediterran", price: "6,30 €", allergens: "A,G", note: "Hirtenkäse, Paprika, Zucchini" }} />
+              <FlipMenuItem item={{ name: "Lachs & Lauch", price: "7,30 €", allergens: "A,D,G" }} />
 
               <div className="mt-3">
                 <SectionTitle title="Pizzasnacks & Pizzetta" />
-                <FlipMenuItem item={{ name: "Pizzasnack Caprese", price: "3,50 €", note: "Pizzasauce, Käse & Kirschtomaten" }} />
-                <FlipMenuItem item={{ name: "Pizzasnack Salami", price: "3,80 €", note: "Pizzasauce, Käse & Salami" }} />
-                <FlipMenuItem item={{ name: "Pizzetta Margherita", price: "3,60 €", note: "Tomatensauce & Käse" }} />
-                <FlipMenuItem item={{ name: "Pizzetta Salami", price: "3,95 €", note: "Tomatensauce, Käse & Salami" }} />
+                <FlipMenuItem item={{ name: "Pizzasnack Caprese", price: "3,50 €", allergens: "A,G", note: "Pizzasauce, Käse & Kirschtomaten" }} />
+                <FlipMenuItem item={{ name: "Pizzasnack Salami", price: "3,80 €", allergens: "A,G", note: "Pizzasauce, Käse & Salami" }} />
+                <FlipMenuItem item={{ name: "Pizzetta Margherita", price: "3,60 €", allergens: "A,G", note: "Tomatensauce & Käse" }} />
+                <FlipMenuItem item={{ name: "Pizzetta Salami", price: "3,95 €", allergens: "A,G", note: "Tomatensauce, Käse & Salami" }} />
               </div>
               <PageNumber num={8} />
             </Page>
@@ -221,16 +236,16 @@ const FlipbookMenu = () => {
             <Page>
               <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Erfrischung & Energie</p>
               <SectionTitle title="Getränke" />
-              <FlipMenuItem item={{ name: "Apfel-/Fruchtschorle", price: "2,25 €" }} />
-              <FlipMenuItem item={{ name: "Wasser still/med./spritzig", price: "1,75 €" }} />
-              <FlipMenuItem item={{ name: "Säfte", price: "2,50 €" }} />
-              <FlipMenuItem item={{ name: "Alkoholfreies Bier", price: "3,00 €" }} />
+              <FlipMenuItem item={{ name: "Apfel-/Fruchtschorle", price: "2,25 €", note: "0,33 l" }} />
+              <FlipMenuItem item={{ name: "Wasser still/med./spritzig", price: "1,75 €", note: "0,5 l" }} />
+              <FlipMenuItem item={{ name: "Säfte", price: "2,50 €", note: "0,25 l" }} />
+              <FlipMenuItem item={{ name: "Alkoholfreies Bier", price: "3,00 €", note: "0,33 l" }} />
 
               <div className="mt-3">
                 <SectionTitle title="Herbalife Nutrition" />
-                <FlipMenuItem item={{ name: "Shake (versch. Sorten)", price: "2,50 – 4,50 €" }} />
+                <FlipMenuItem item={{ name: "Shake (versch. Sorten)", price: "", allergens: "F,G", sizes: [{ label: "K", price: "2,50 €" }, { label: "G", price: "4,50 €" }] }} />
                 <FlipMenuItem item={{ name: "Electrolyte", price: "2,90 €" }} />
-                <FlipMenuItem item={{ name: "Energy LIFTOFF", price: "3,50 €" }} />
+                <FlipMenuItem item={{ name: "Energy LIFTOFF", price: "3,50 €", allergens: "11" }} />
                 <FlipMenuItem item={{ name: "Proteinriegel", price: "2,50 – 3,90 €" }} />
                 <FlipMenuItem item={{ name: "Müsliriegel Expressmahlzeit", price: "3,90 €" }} />
                 <FlipMenuItem item={{ name: "Protein-Chips", price: "2,40 €" }} />
