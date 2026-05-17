@@ -265,8 +265,8 @@ const FlipbookMenu = () => {
               <SectionTitle title="Gourmet Baguettes" />
               <FlipMenuItem item={{ name: "Baguette Thunfisch", price: "6,20 €", allergens: "A,D,G", note: "Thunfisch, Zwiebeln, Gouda & Béchamel" }} />
               <FlipMenuItem item={{ name: "Baguette Tomate Mozzarella", price: "6,20 €", allergens: "A,G", note: "Getr. Tomaten, Basilikum & Béchamel" }} />
-              <FlipMenuItem item={{ name: "Baguette Provence", price: "6,20 €", allergens: "A,G", note: "Franz. Art mit Schinken, Gouda, Kräuter & Béchamelsauce" }} />
-              <FlipMenuItem item={{ name: "Baguette Rustikal", price: "6,20 €", allergens: "A,G", note: "Franz. Art mit Speck, Lauch, Raclettekäse, Gouda, Kräuter & Béchamelsauce" }} />
+              <FlipMenuItem item={{ name: "Baguette Provence", price: "6,20 €", allergens: "A,G", note: "mit Schinken, Gouda, Kräuter & Béchamelsauce" }} />
+              <FlipMenuItem item={{ name: "Baguette Rustikal", price: "6,20 €", allergens: "A,G", note: "mit Speck, Lauch, Raclettekäse, Gouda, Kräuter & Béchamelsauce" }} />
 
               <div className="mt-3">
                 <SectionTitle title="Hüttenbrote" />
