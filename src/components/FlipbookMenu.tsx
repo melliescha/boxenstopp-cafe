@@ -69,6 +69,8 @@ const ImagePage = ({ src, alt }: { src: string; alt: string }) => (
   <img src={src} alt={alt} className="w-full h-full object-cover rounded-sm" loading="lazy" />
 );
 
+export const FLIPBOOK_EXPORT_PAGE_CLASS = "flipbook-export-page";
+
 const FlipbookMenu = () => {
   const flipBookRef = useRef<any>(null);
   const [currentPage, setCurrentPage] = useState(0);
@@ -137,7 +139,7 @@ const FlipbookMenu = () => {
             renderOnlyPageLengthChange={false}
           >
             {/* Page 1: Cover */}
-            <Page className="bg-primary">
+            <Page className={`bg-primary ${FLIPBOOK_EXPORT_PAGE_CLASS}`}>
               <div className="flex flex-col items-center justify-center h-full text-center bg-primary rounded-sm p-6">
                 <div className="w-16 h-px bg-warm-gold mb-6" />
                 <p className="text-warm-gold tracking-[0.3em] uppercase text-xs mb-4">Bistro & Café</p>
@@ -149,7 +151,7 @@ const FlipbookMenu = () => {
             </Page>
 
             {/* Page: Heiße Getränke (Kaffee + Wohlfühlgetränke) */}
-            <Page>
+            <Page className={FLIPBOOK_EXPORT_PAGE_CLASS}>
               <SectionTitle title="Heiße Getränke" />
 
               <h4 className="font-serif-italic text-[13px] sm:text-base font-semibold text-foreground mb-0 leading-tight">Kaffee</h4>
@@ -220,7 +222,7 @@ const FlipbookMenu = () => {
             </Page>
 
             {/* Page: Erfrischung + Sportler */}
-            <Page>
+            <Page className={FLIPBOOK_EXPORT_PAGE_CLASS}>
               <SectionTitle title="Erfrischungsgetränke" />
 
               <FlipMenuItem item={{ name: "Apfel-/Fruchtschorle (0,33 l)", price: "2,25 €" }} />
