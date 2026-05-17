@@ -224,16 +224,57 @@ const FlipbookMenu = () => {
             {/* Page: Erfrischung + Sportler */}
             <Page>
               <SectionTitle title="Erfrischungsgetränke" />
-              <FlipMenuItem item={{ name: "Apfel-/Fruchtschorle", price: "2,25 €", note: "0,33 l" }} />
-              <FlipMenuItem item={{ name: "Wasser still/med./spritzig", price: "1,75 €", note: "0,5 l" }} />
-              <FlipMenuItem item={{ name: "Säfte", price: "2,50 €", note: "0,25 l" }} />
-              <FlipMenuItem item={{ name: "Alkoholfreies Bier", price: "3,00 €", note: "0,33 l" }} />
+
+              <div className="flex items-baseline justify-end gap-0 text-[9px] sm:text-[10px] text-muted-foreground font-semibold uppercase tracking-wide mb-1">
+                <span className="w-14 text-right">S</span>
+                <span className="w-14 text-right">M</span>
+                <span className="w-14 text-right">L</span>
+              </div>
+              {[
+                { name: "Apfel-/Fruchtschorle", prices: ["", "2,25 €", ""], vol: "0,33 l" },
+                { name: "Wasser still/med./spritzig", prices: ["", "", "1,75 €"], vol: "0,5 l" },
+                { name: "Säfte", prices: ["2,50 €", "", ""], vol: "0,25 l" },
+                { name: "Alkoholfreies Bier", prices: ["", "3,00 €", ""], vol: "0,33 l" },
+              ].map((row) => (
+                <div key={row.name} className="flex items-baseline gap-0 mb-1">
+                  <span className="font-serif text-xs sm:text-sm font-medium text-foreground flex-1 min-w-0 truncate">
+                    {row.name}
+                    <span className="ml-1 text-[9px] sm:text-[10px] text-muted-foreground font-normal">({row.vol})</span>
+                  </span>
+                  {row.prices.map((p, i) => (
+                    <span key={i} className="w-14 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
+                      {p || "–"}
+                    </span>
+                  ))}
+                </div>
+              ))}
 
               <div className="mt-3">
                 <SectionTitle title="Getränke für Sportler" />
-                <FlipMenuItem item={{ name: "Shake (versch. Sorten)", price: "", allergens: "F,G", sizes: [{ label: "K", price: "2,50 €" }, { label: "G", price: "4,50 €" }] }} />
-                <FlipMenuItem item={{ name: "Electrolyte", price: "2,90 €" }} />
-                <FlipMenuItem item={{ name: "Energy LIFTOFF", price: "3,50 €", allergens: "11" }} />
+                <div className="flex items-baseline justify-end gap-0 text-[9px] sm:text-[10px] text-muted-foreground font-semibold uppercase tracking-wide mb-1">
+                  <span className="w-14 text-right">S</span>
+                  <span className="w-14 text-right">M</span>
+                  <span className="w-14 text-right">L</span>
+                </div>
+                {[
+                  { name: "Nährshake (versch. Sorten)", allergens: "F,G", prices: ["2,50 €", "", "4,50 €"] },
+                  { name: "Mineraldrink", prices: ["", "", "2,90 €"] },
+                  { name: "Energy LIFTOFF", allergens: "11", prices: ["", "", "3,50 €"] },
+                ].map((row) => (
+                  <div key={row.name} className="flex items-baseline gap-0 mb-1">
+                    <span className="font-serif text-xs sm:text-sm font-medium text-foreground flex-1 min-w-0 truncate">
+                      {row.name}
+                      {row.allergens && (
+                        <span className="ml-1 text-[9px] sm:text-[10px] text-muted-foreground font-normal">({row.allergens})</span>
+                      )}
+                    </span>
+                    {row.prices.map((p, i) => (
+                      <span key={i} className="w-14 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
+                        {p || "–"}
+                      </span>
+                    ))}
+                  </div>
+                ))}
               </div>
               <PageNumber num={3} />
             </Page>
@@ -243,8 +284,8 @@ const FlipbookMenu = () => {
               <SectionTitle title="Gourmet Baguettes" />
               <FlipMenuItem item={{ name: "Baguette Thunfisch", price: "6,20 €", allergens: "A,D,G", note: "Thunfisch, Zwiebeln, Gouda & Béchamel" }} />
               <FlipMenuItem item={{ name: "Baguette Tomate Mozzarella", price: "6,20 €", allergens: "A,G", note: "Getr. Tomaten, Basilikum & Béchamel" }} />
-              <FlipMenuItem item={{ name: "Baguette Provence", price: "6,20 €", note: "Zutaten folgen" }} />
-              <FlipMenuItem item={{ name: "Baguette Rustikal", price: "6,20 €", note: "Zutaten folgen" }} />
+              <FlipMenuItem item={{ name: "Baguette Provence", price: "6,20 €", allergens: "A,G", note: "Franz. Art mit Schinken, Gouda, Kräuter & Béchamelsauce" }} />
+              <FlipMenuItem item={{ name: "Baguette Rustikal", price: "6,20 €", allergens: "A,G", note: "Franz. Art mit Speck, Lauch, Raclettekäse, Gouda, Kräuter & Béchamelsauce" }} />
 
               <div className="mt-3">
                 <SectionTitle title="Hüttenbrote" />
@@ -267,8 +308,8 @@ const FlipbookMenu = () => {
                 <SectionTitle title="Pizzasnacks & Pizzetta" />
                 <FlipMenuItem item={{ name: "Pizzasnack Caprese", price: "3,50 €", allergens: "A,G", note: "Pizzasauce, Käse & Kirschtomaten" }} />
                 <FlipMenuItem item={{ name: "Pizzasnack Salami", price: "3,80 €", allergens: "A,G", note: "Pizzasauce, Käse & Salami" }} />
-                <FlipMenuItem item={{ name: "Pizzetta Margherita", price: "3,60 €", allergens: "A,G", note: "Tomatensauce & Käse" }} />
-                <FlipMenuItem item={{ name: "Pizzetta Salami", price: "3,95 €", allergens: "A,G", note: "Tomatensauce, Käse & Salami" }} />
+                <FlipMenuItem item={{ name: "Pizzetta Margherita", price: "3,60 €", allergens: "A,G", note: "Ø 19 cm · Tomatensauce & Käse" }} />
+                <FlipMenuItem item={{ name: "Pizzetta Salami", price: "3,95 €", allergens: "A,G", note: "Ø 19 cm · Tomatensauce, Käse & Salami" }} />
               </div>
               <PageNumber num={5} />
             </Page>
