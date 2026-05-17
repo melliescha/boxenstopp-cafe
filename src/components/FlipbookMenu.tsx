@@ -154,9 +154,9 @@ const FlipbookMenu = () => {
 
               {/* Size header row */}
               <div className="flex items-baseline justify-end gap-0 text-[9px] sm:text-[10px] text-muted-foreground font-semibold uppercase tracking-wide mb-1 pr-0">
-                <span className="w-10 text-right">S</span>
-                <span className="w-10 text-right">M</span>
-                <span className="w-10 text-right">L</span>
+                <span className="w-14 text-right">S</span>
+                <span className="w-14 text-right">M</span>
+                <span className="w-14 text-right">L</span>
               </div>
 
               {[
@@ -177,7 +177,7 @@ const FlipbookMenu = () => {
                     )}
                   </span>
                   {row.prices.map((p, i) => (
-                    <span key={i} className="w-10 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
+                    <span key={i} className="w-14 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
                       {p || "–"}
                     </span>
                   ))}
@@ -202,9 +202,9 @@ const FlipbookMenu = () => {
               <SectionTitle title="Wohlfühlgetränke" />
 
               <div className="flex items-baseline justify-end gap-0 text-[9px] sm:text-[10px] text-muted-foreground font-semibold uppercase tracking-wide mb-1">
-                <span className="w-10 text-right">S</span>
-                <span className="w-10 text-right">M</span>
-                <span className="w-10 text-right">L</span>
+                <span className="w-14 text-right">S</span>
+                <span className="w-14 text-right">M</span>
+                <span className="w-14 text-right">L</span>
               </div>
 
               {[
@@ -221,7 +221,7 @@ const FlipbookMenu = () => {
                     )}
                   </span>
                   {row.prices.map((p, i) => (
-                    <span key={i} className="w-10 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
+                    <span key={i} className="w-14 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
                       {p || "–"}
                     </span>
                   ))}
