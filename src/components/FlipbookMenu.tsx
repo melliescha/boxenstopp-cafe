@@ -10,7 +10,7 @@ import { forwardRef } from "react";
 const Page = forwardRef<HTMLDivElement, { children: React.ReactNode; className?: string }>(
   ({ children, className = "" }, ref) => (
     <div ref={ref} className={`bg-[#fef4ec] overflow-hidden ${className}`}>
-      <div className="w-full h-full border border-bronze/20 p-4 sm:p-6 md:p-8 flex flex-col">
+      <div className="w-full h-full border border-bronze/20 px-3 py-3 sm:px-4 sm:py-4 md:px-5 md:py-5 flex flex-col">
         {children}
       </div>
     </div>
