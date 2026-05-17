@@ -148,17 +148,41 @@ const FlipbookMenu = () => {
               </div>
             </Page>
 
-            {/* Page 3: Coffee Classics + Milk Coffee */}
+            {/* Page 3: Coffee */}
             <Page>
               <SectionTitle title="Kaffee" />
-              <FlipMenuItem item={{ name: "Espresso", price: "", note: "Barista Qualität", sizes: [{ label: "K", price: "1,90 €" }, { label: "G", price: "2,30 €" }] }} />
-              <FlipMenuItem item={{ name: "Americano", price: "", note: "Barista Qualität", sizes: [{ label: "K", price: "2,20 €" }, { label: "G", price: "2,60 €" }] }} />
-              <FlipMenuItem item={{ name: "Caffè Crema", price: "", note: "Barista Qualität", sizes: [{ label: "K", price: "2,20 €" }, { label: "M", price: "2,60 €" }, { label: "G", price: "2,90 €" }] }} />
-              <FlipMenuItem item={{ name: "Caffè Latte", price: "", allergens: "G", sizes: [{ label: "K", price: "2,40 €" }, { label: "M", price: "2,90 €" }, { label: "G", price: "3,40 €" }] }} />
-              <FlipMenuItem item={{ name: "Cappuccino", price: "", allergens: "G", sizes: [{ label: "K", price: "2,40 €" }, { label: "M", price: "2,90 €" }, { label: "G", price: "3,40 €" }] }} />
-              <FlipMenuItem item={{ name: "Cappuccino Schoko/Vanille", price: "", allergens: "G", sizes: [{ label: "K", price: "2,60 €" }, { label: "M", price: "3,10 €" }, { label: "G", price: "3,60 €" }] }} />
-              <FlipMenuItem item={{ name: "Latte Macchiato", price: "", allergens: "G", sizes: [{ label: "K", price: "2,60 €" }, { label: "M", price: "3,20 €" }, { label: "G", price: "3,80 €" }] }} />
-              <FlipMenuItem item={{ name: "Flat White", price: "", allergens: "G", sizes: [{ label: "K", price: "2,60 €" }, { label: "G", price: "3,20 €" }] }} />
+
+              {/* Size header row */}
+              <div className="flex items-baseline justify-end gap-0 text-[9px] sm:text-[10px] text-muted-foreground font-semibold uppercase tracking-wide mb-1 pr-0">
+                <span className="w-10 text-right">S</span>
+                <span className="w-10 text-right">M</span>
+                <span className="w-10 text-right">L</span>
+              </div>
+
+              {[
+                { name: "Espresso", prices: ["1,90 €", "", "2,30 €"] },
+                { name: "Americano", prices: ["2,20 €", "", "2,60 €"] },
+                { name: "Caffè Crema", prices: ["2,20 €", "2,60 €", "2,90 €"] },
+                { name: "Caffè Latte", allergens: "G", prices: ["2,40 €", "2,90 €", "3,40 €"] },
+                { name: "Cappuccino", allergens: "G", prices: ["2,40 €", "2,90 €", "3,40 €"] },
+                { name: "Cappuccino Schoko/Vanille", allergens: "G", prices: ["2,60 €", "3,10 €", "3,60 €"] },
+                { name: "Latte Macchiato", allergens: "G", prices: ["2,60 €", "3,20 €", "3,80 €"] },
+                { name: "Flat White", allergens: "G", prices: ["2,60 €", "", "3,20 €"] },
+              ].map((row) => (
+                <div key={row.name} className="flex items-baseline gap-0 mb-1">
+                  <span className="font-serif text-xs sm:text-sm font-medium text-foreground flex-1 min-w-0 truncate">
+                    {row.name}
+                    {row.allergens && (
+                      <span className="ml-1 text-[9px] sm:text-[10px] text-muted-foreground font-normal">({row.allergens})</span>
+                    )}
+                  </span>
+                  {row.prices.map((p, i) => (
+                    <span key={i} className="w-10 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
+                      {p || "–"}
+                    </span>
+                  ))}
+                </div>
+              ))}
 
               {/* Signature Drink — compact, at the bottom */}
               <div className="mt-3 border border-warm-gold/50 rounded-md px-2 py-1.5 bg-[hsl(43,55%,48%)]/5">
