@@ -92,17 +92,17 @@ const FlipbookMenu = () => {
         {/* Nav arrows */}
         <button
           onClick={goPrev}
-          className="no-print absolute left-0 sm:-left-12 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-card border border-bronze/30 flex items-center justify-center text-bronze hover:bg-secondary transition-colors shadow-sm"
+          className="no-print absolute left-1 sm:-left-12 top-1/2 -translate-y-1/2 z-10 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-card/90 backdrop-blur border border-bronze/30 flex items-center justify-center text-bronze hover:bg-secondary transition-colors shadow-md"
           aria-label="Vorherige Seite"
         >
-          <ChevronLeft size={20} />
+          <ChevronLeft size={18} />
         </button>
         <button
           onClick={goNext}
-          className="no-print absolute right-0 sm:-right-12 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-card border border-bronze/30 flex items-center justify-center text-bronze hover:bg-secondary transition-colors shadow-sm"
+          className="no-print absolute right-1 sm:-right-12 top-1/2 -translate-y-1/2 z-10 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-card/90 backdrop-blur border border-bronze/30 flex items-center justify-center text-bronze hover:bg-secondary transition-colors shadow-md"
           aria-label="Nächste Seite"
         >
-          <ChevronRight size={20} />
+          <ChevronRight size={18} />
         </button>
 
         <div className="flex justify-center px-2 sm:px-0">
