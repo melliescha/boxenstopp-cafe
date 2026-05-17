@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, Phone, MapPin, Clock } from "lucide-react";
+import { Instagram, Facebook, Phone, MapPin, Clock, Route } from "lucide-react";
 import { TripAdvisorIcon, GoogleIcon } from "@/components/icons/SocialIcons";
 import { socialLinks, facebookEnabled } from "@/config/social";
 
@@ -161,6 +161,16 @@ const Footer = () => {
               aria-label="Google Maps Profil"
             >
               <GoogleIcon size={18} />
+            </a>
+            <a
+              href={socialLinks.komoot}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 h-11 px-4 rounded-full bg-primary-foreground/10 hover:bg-warm-gold hover:text-primary hover:scale-105 transition-all text-sm font-medium"
+              aria-label="Wir auf Komoot"
+            >
+              <Route size={16} aria-hidden="true" />
+              <span>Komoot</span>
             </a>
             {facebookEnabled && (
               <a
