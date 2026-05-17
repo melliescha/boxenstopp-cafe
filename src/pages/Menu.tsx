@@ -23,34 +23,93 @@ const Menu = () => {
         return;
       }
 
+      await document.fonts?.ready;
+
       const [{ default: html2canvas }, { jsPDF }] = await Promise.all([
         import("html2canvas"),
         import("jspdf"),
       ]);
 
-      const pdf = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
+      const pdf = new jsPDF({
+        orientation: "portrait",
+        unit: "mm",
+        format: "a4",
+        compress: true,
+      });
       const pageWidth = pdf.internal.pageSize.getWidth();
       const pageHeight = pdf.internal.pageSize.getHeight();
+      const exportRoot = document.createElement("div");
 
-      for (let i = 0; i < pages.length; i++) {
-        const el = pages[i];
-        const canvas = await html2canvas(el, {
-          scale: 2,
-          useCORS: true,
-          backgroundColor: "#fef4ec",
-          logging: false,
-        });
-        const imgData = canvas.toDataURL("image/jpeg", 0.92);
-        const ratio = Math.min(pageWidth / canvas.width, pageHeight / canvas.height);
-        const w = canvas.width * ratio;
-        const h = canvas.height * ratio;
-        const x = (pageWidth - w) / 2;
-        const y = (pageHeight - h) / 2;
-        if (i > 0) pdf.addPage();
-        pdf.addImage(imgData, "JPEG", x, y, w, h);
+      exportRoot.setAttribute("aria-hidden", "true");
+      exportRoot.style.position = "fixed";
+      exportRoot.style.left = "-10000px";
+      exportRoot.style.top = "0";
+      exportRoot.style.pointerEvents = "none";
+      exportRoot.style.opacity = "0";
+      exportRoot.style.zIndex = "-1";
+      document.body.appendChild(exportRoot);
+
+      try {
+        for (let i = 0; i < pages.length; i++) {
+          const el = pages[i];
+          const rect = el.getBoundingClientRect();
+          const clone = el.cloneNode(true) as HTMLElement;
+
+          clone.style.transform = "none";
+          clone.style.position = "relative";
+          clone.style.left = "0";
+          clone.style.top = "0";
+          clone.style.width = `${Math.max(rect.width, 380)}px`;
+          clone.style.height = `${Math.max(rect.height, 620)}px`;
+          clone.style.minWidth = clone.style.width;
+          clone.style.maxWidth = clone.style.width;
+          clone.style.minHeight = clone.style.height;
+          clone.style.maxHeight = clone.style.height;
+          clone.style.margin = "0";
+          clone.style.background = "hsl(28 100% 96%)";
+          clone.style.boxShadow = "none";
+          clone.querySelectorAll<HTMLElement>("*").forEach((node) => {
+            node.style.transform = "none";
+            node.style.animation = "none";
+            node.style.transition = "none";
+          });
+
+          exportRoot.appendChild(clone);
+
+          const canvas = await html2canvas(clone, {
+            scale: 1.5,
+            useCORS: true,
+            backgroundColor: "#fef4ec",
+            logging: false,
+          });
+
+          exportRoot.removeChild(clone);
+
+          const imgData = canvas.toDataURL("image/jpeg", 0.82);
+          const ratio = Math.min(pageWidth / canvas.width, pageHeight / canvas.height);
+          const w = canvas.width * ratio;
+          const h = canvas.height * ratio;
+          const x = (pageWidth - w) / 2;
+          const y = (pageHeight - h) / 2;
+
+          if (i > 0) pdf.addPage();
+          pdf.addImage(imgData, "JPEG", x, y, w, h, undefined, "FAST");
+        }
+
+        const blob = pdf.output("blob");
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+
+        link.href = url;
+        link.download = "Speisekarte-Bistro-Boxenstopp.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+      } finally {
+        document.body.removeChild(exportRoot);
       }
 
-      pdf.save("Speisekarte-Bistro-Boxenstopp.pdf");
       toast.success("PDF heruntergeladen");
     } catch (err) {
       console.error("PDF download failed", err);
