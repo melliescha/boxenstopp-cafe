@@ -197,7 +197,7 @@ const FlipbookMenu = () => {
               <PageNumber num={2} />
             </Page>
 
-            {/* Page 4: Comfort drinks + sweets */}
+            {/* Page: Wohlfühlgetränke (Heiße Getränke Teil 2) */}
             <Page>
               <SectionTitle title="Wohlfühlgetränke" />
 
@@ -228,18 +228,29 @@ const FlipbookMenu = () => {
                 </div>
               ))}
               <FlipMenuItem item={{ name: "Tee (nach Wahl)", price: "1,80 €" }} />
-
-              <div className="mt-4">
-                <SectionTitle title="Süßes Gebäck & Dessert" />
-                <FlipMenuItem item={{ name: "Donut (nach Wahl)", price: "1,80 €", allergens: "A,C,G" }} />
-                <FlipMenuItem item={{ name: "Muffin (nach Wahl)", price: "2,50 €", allergens: "A,C,G" }} />
-                <FlipMenuItem item={{ name: "Affogato", price: "3,50 €", allergens: "G", note: "Espresso mit Vanilleeis" }} />
-                <FlipMenuItem item={{ name: "Obst (verschiedenes)", price: "0,50 €" }} />
-              </div>
               <PageNumber num={3} />
             </Page>
 
-            {/* Page 5: Gourmet Baguettes & Hüttenbrote (combined) */}
+            {/* Page: Erfrischungsgetränke */}
+            <Page>
+              <SectionTitle title="Erfrischungsgetränke" />
+              <FlipMenuItem item={{ name: "Apfel-/Fruchtschorle", price: "2,25 €", note: "0,33 l" }} />
+              <FlipMenuItem item={{ name: "Wasser still/med./spritzig", price: "1,75 €", note: "0,5 l" }} />
+              <FlipMenuItem item={{ name: "Säfte", price: "2,50 €", note: "0,25 l" }} />
+              <FlipMenuItem item={{ name: "Alkoholfreies Bier", price: "3,00 €", note: "0,33 l" }} />
+              <PageNumber num={4} />
+            </Page>
+
+            {/* Page: Getränke für Sportler */}
+            <Page>
+              <SectionTitle title="Getränke für Sportler" />
+              <FlipMenuItem item={{ name: "Shake (versch. Sorten)", price: "", allergens: "F,G", sizes: [{ label: "K", price: "2,50 €" }, { label: "G", price: "4,50 €" }] }} />
+              <FlipMenuItem item={{ name: "Electrolyte", price: "2,90 €" }} />
+              <FlipMenuItem item={{ name: "Energy LIFTOFF", price: "3,50 €", allergens: "11" }} />
+              <PageNumber num={5} />
+            </Page>
+
+            {/* Page: Gourmet Baguettes & Hüttenbrote */}
             <Page>
               <SectionTitle title="Gourmet Baguettes" />
               <FlipMenuItem item={{ name: "Baguette Thunfisch", price: "6,20 €", allergens: "A,D,G", note: "Thunfisch, Zwiebeln, Gouda & Béchamel" }} />
@@ -253,10 +264,10 @@ const FlipbookMenu = () => {
                 <FlipMenuItem item={{ name: "Hüttenbrot Tomate Mozzarella", price: "7,40 €", allergens: "A,F,G", note: "Weizenbrot, Basilikum, Mozzarella & Tomaten" }} />
                 <FlipMenuItem item={{ name: "Hüttenbrot Raclette", price: "7,70 €", allergens: "A,G", note: "Schwarzbrot, Raclettekäse, Lauch & Gewürze" }} />
               </div>
-              <PageNumber num={5} />
+              <PageNumber num={6} />
             </Page>
 
-            {/* Page 11: Flammkuchen & Pizza */}
+            {/* Page: Flammkuchen & Pizza */}
             <Page>
               <SectionTitle title="Flammkuchen" />
               <FlipMenuItem item={{ name: "Elsässer Art", price: "6,30 €", allergens: "A,G", note: "Speck und Zwiebeln" }} />
@@ -271,27 +282,25 @@ const FlipbookMenu = () => {
                 <FlipMenuItem item={{ name: "Pizzetta Margherita", price: "3,60 €", allergens: "A,G", note: "Tomatensauce & Käse" }} />
                 <FlipMenuItem item={{ name: "Pizzetta Salami", price: "3,95 €", allergens: "A,G", note: "Tomatensauce, Käse & Salami" }} />
               </div>
+              <PageNumber num={7} />
+            </Page>
+
+            {/* Page: Snacks */}
+            <Page>
+              <SectionTitle title="Snacks" />
+              <FlipMenuItem item={{ name: "Proteinriegel", price: "2,50 – 3,90 €" }} />
+              <FlipMenuItem item={{ name: "Müsliriegel Expressmahlzeit", price: "3,90 €" }} />
+              <FlipMenuItem item={{ name: "Protein-Chips", price: "2,40 €" }} />
               <PageNumber num={8} />
             </Page>
 
-            {/* Page 12: Drinks & Herbalife */}
+            {/* Page: Süßes Gebäck & Dessert */}
             <Page>
-              <p className="text-muted-foreground text-[10px] sm:text-xs italic mb-2">Erfrischung & Energie</p>
-              <SectionTitle title="Getränke" />
-              <FlipMenuItem item={{ name: "Apfel-/Fruchtschorle", price: "2,25 €", note: "0,33 l" }} />
-              <FlipMenuItem item={{ name: "Wasser still/med./spritzig", price: "1,75 €", note: "0,5 l" }} />
-              <FlipMenuItem item={{ name: "Säfte", price: "2,50 €", note: "0,25 l" }} />
-              <FlipMenuItem item={{ name: "Alkoholfreies Bier", price: "3,00 €", note: "0,33 l" }} />
-
-              <div className="mt-3">
-                <SectionTitle title="Herbalife Nutrition" />
-                <FlipMenuItem item={{ name: "Shake (versch. Sorten)", price: "", allergens: "F,G", sizes: [{ label: "K", price: "2,50 €" }, { label: "G", price: "4,50 €" }] }} />
-                <FlipMenuItem item={{ name: "Electrolyte", price: "2,90 €" }} />
-                <FlipMenuItem item={{ name: "Energy LIFTOFF", price: "3,50 €", allergens: "11" }} />
-                <FlipMenuItem item={{ name: "Proteinriegel", price: "2,50 – 3,90 €" }} />
-                <FlipMenuItem item={{ name: "Müsliriegel Expressmahlzeit", price: "3,90 €" }} />
-                <FlipMenuItem item={{ name: "Protein-Chips", price: "2,40 €" }} />
-              </div>
+              <SectionTitle title="Süßes Gebäck & Dessert" />
+              <FlipMenuItem item={{ name: "Donut (nach Wahl)", price: "1,80 €", allergens: "A,C,G" }} />
+              <FlipMenuItem item={{ name: "Muffin (nach Wahl)", price: "2,50 €", allergens: "A,C,G" }} />
+              <FlipMenuItem item={{ name: "Affogato", price: "3,50 €", allergens: "G", note: "Espresso mit Vanilleeis" }} />
+              <FlipMenuItem item={{ name: "Obst (verschiedenes)", price: "0,50 €" }} />
               <PageNumber num={9} />
             </Page>
 
