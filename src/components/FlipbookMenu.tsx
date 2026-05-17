@@ -308,8 +308,8 @@ const FlipbookMenu = () => {
                 <SectionTitle title="Pizzasnacks & Pizzetta" />
                 <FlipMenuItem item={{ name: "Pizzasnack Caprese", price: "3,50 €", allergens: "A,G", note: "Pizzasauce, Käse & Kirschtomaten" }} />
                 <FlipMenuItem item={{ name: "Pizzasnack Salami", price: "3,80 €", allergens: "A,G", note: "Pizzasauce, Käse & Salami" }} />
-                <FlipMenuItem item={{ name: "Pizzetta Margherita", price: "3,60 €", allergens: "A,G", note: "Tomatensauce & Käse" }} />
-                <FlipMenuItem item={{ name: "Pizzetta Salami", price: "3,95 €", allergens: "A,G", note: "Tomatensauce, Käse & Salami" }} />
+                <FlipMenuItem item={{ name: "Pizzetta Margherita", price: "3,60 €", allergens: "A,G", note: "Ø 19 cm · Tomatensauce & Käse" }} />
+                <FlipMenuItem item={{ name: "Pizzetta Salami", price: "3,95 €", allergens: "A,G", note: "Ø 19 cm · Tomatensauce, Käse & Salami" }} />
               </div>
               <PageNumber num={5} />
             </Page>
