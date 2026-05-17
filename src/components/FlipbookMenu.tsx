@@ -154,9 +154,9 @@ const FlipbookMenu = () => {
 
               <h4 className="font-serif-italic text-sm sm:text-base font-semibold text-foreground mb-1">Kaffee</h4>
               <div className="flex items-baseline justify-end gap-0 text-[9px] sm:text-[10px] text-muted-foreground font-semibold uppercase tracking-wide mb-1">
-                <span className="w-14 text-right">S</span>
-                <span className="w-14 text-right">M</span>
-                <span className="w-14 text-right">L</span>
+                <span className="w-12 sm:w-14 text-right">S</span>
+                <span className="w-12 sm:w-14 text-right">M</span>
+                <span className="w-12 sm:w-14 text-right">L</span>
               </div>
               {[
                 { name: "Espresso", prices: ["1,90 €", "", "2,30 €"] },
@@ -170,14 +170,14 @@ const FlipbookMenu = () => {
                 { name: "Affogato (Espresso mit Vanilleeis)", allergens: "G", prices: ["", "", "3,50 €"] },
               ].map((row) => (
                 <div key={row.name} className="flex items-baseline gap-0 mb-1">
-                  <span className="font-serif text-xs sm:text-sm font-medium text-foreground flex-1 min-w-0 truncate">
+                  <span className="font-serif text-xs sm:text-sm font-medium text-foreground flex-1 min-w-0 pr-1">
                     {row.name}
                     {row.allergens && (
                       <span className="ml-1 text-[9px] sm:text-[10px] text-muted-foreground font-normal">({row.allergens})</span>
                     )}
                   </span>
                   {row.prices.map((p, i) => (
-                    <span key={i} className="w-14 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
+                    <span key={i} className="w-12 sm:w-14 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
                       {p || "–"}
                     </span>
                   ))}
@@ -202,14 +202,14 @@ const FlipbookMenu = () => {
                 { name: "Vegan Matcha Latte", allergens: "A", prices: ["3,50 €", "", "3,80 €"] },
               ].map((row) => (
                 <div key={row.name} className="flex items-baseline gap-0 mb-1">
-                  <span className="font-serif text-xs sm:text-sm font-medium text-foreground flex-1 min-w-0 truncate">
+                  <span className="font-serif text-xs sm:text-sm font-medium text-foreground flex-1 min-w-0 pr-1">
                     {row.name}
                     {row.allergens && (
                       <span className="ml-1 text-[9px] sm:text-[10px] text-muted-foreground font-normal">({row.allergens})</span>
                     )}
                   </span>
                   {row.prices.map((p, i) => (
-                    <span key={i} className="w-14 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
+                    <span key={i} className="w-12 sm:w-14 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
                       {p || "–"}
                     </span>
                   ))}
@@ -234,9 +234,9 @@ const FlipbookMenu = () => {
               <div className="mt-3">
                 <SectionTitle title="Getränke für Sportler" />
                 <div className="flex items-baseline justify-end gap-0 text-[9px] sm:text-[10px] text-muted-foreground font-semibold uppercase tracking-wide mb-1">
-                  <span className="w-14 text-right">S</span>
-                  <span className="w-14 text-right">M</span>
-                  <span className="w-14 text-right">L</span>
+                  <span className="w-12 sm:w-14 text-right">S</span>
+                  <span className="w-12 sm:w-14 text-right">M</span>
+                  <span className="w-12 sm:w-14 text-right">L</span>
                 </div>
                 {[
                   { name: "Nährshake (versch. Sorten)", allergens: "F,G", prices: ["2,50 €", "", "4,50 €"] },
@@ -244,14 +244,14 @@ const FlipbookMenu = () => {
                   { name: "Energy LIFTOFF", allergens: "11", prices: ["", "", "3,50 €"] },
                 ].map((row) => (
                   <div key={row.name} className="flex items-baseline gap-0 mb-1">
-                    <span className="font-serif text-xs sm:text-sm font-medium text-foreground flex-1 min-w-0 truncate">
+                    <span className="font-serif text-xs sm:text-sm font-medium text-foreground flex-1 min-w-0 pr-1">
                       {row.name}
                       {row.allergens && (
                         <span className="ml-1 text-[9px] sm:text-[10px] text-muted-foreground font-normal">({row.allergens})</span>
                       )}
                     </span>
                     {row.prices.map((p, i) => (
-                      <span key={i} className="w-14 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
+                      <span key={i} className="w-12 sm:w-14 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
                         {p || "–"}
                       </span>
                     ))}
