@@ -226,10 +226,10 @@ const FlipbookMenu = () => {
             <Page>
               <SectionTitle title="Erfrischungsgetränke" />
 
-              <FlipMenuItem item={{ name: "Apfel-/Fruchtschorle", price: "2,25 €", note: "0,33 l" }} />
-              <FlipMenuItem item={{ name: "Wasser still/med./spritzig", price: "1,75 €", note: "0,5 l" }} />
-              <FlipMenuItem item={{ name: "Säfte", price: "2,50 €", note: "0,25 l" }} />
-              <FlipMenuItem item={{ name: "Alkoholfreies Bier", price: "3,00 €", note: "0,33 l" }} />
+              <FlipMenuItem item={{ name: "Apfel-/Fruchtschorle (0,33 l)", price: "2,25 €" }} />
+              <FlipMenuItem item={{ name: "Wasser still/med./spritzig (0,5 l)", price: "1,75 €" }} />
+              <FlipMenuItem item={{ name: "Säfte (0,25 l)", price: "2,50 €" }} />
+              <FlipMenuItem item={{ name: "Alkoholfreies Bier (0,33 l)", price: "3,00 €" }} />
 
               <div className="mt-3">
                 <SectionTitle title="Getränke für Sportler" />
