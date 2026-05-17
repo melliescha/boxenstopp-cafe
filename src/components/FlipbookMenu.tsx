@@ -150,7 +150,7 @@ const FlipbookMenu = () => {
 
             {/* Page 3: Coffee Classics + Milk Coffee */}
             <Page>
-              <SectionTitle title="Kaffee" subtitle="In Zusammenarbeit mit Cup&Cino" />
+              <SectionTitle title="Kaffee" />
               <FlipMenuItem item={{ name: "Espresso", price: "", note: "Barista Qualität", sizes: [{ label: "K", price: "1,90 €" }, { label: "G", price: "2,30 €" }] }} />
               <FlipMenuItem item={{ name: "Americano", price: "", note: "Barista Qualität", sizes: [{ label: "K", price: "2,20 €" }, { label: "G", price: "2,60 €" }] }} />
               <FlipMenuItem item={{ name: "Caffè Crema", price: "", note: "Barista Qualität", sizes: [{ label: "K", price: "2,20 €" }, { label: "M", price: "2,60 €" }, { label: "G", price: "2,90 €" }] }} />
