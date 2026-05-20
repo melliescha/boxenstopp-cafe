@@ -379,12 +379,13 @@ const Datenschutz = () => {
           <Divider />
 
           <Section>
-            <H2>10. Google Fonts (lokal eingebunden)</H2>
+            <H2>10. Schriftarten (lokal eingebunden)</H2>
             <P>
-              Diese Website nutzt zur einheitlichen Darstellung von Schriftarten sogenannte Web
-              Fonts. Die verwendeten Google Fonts sind lokal eingebunden und werden direkt von
-              unserem Server ausgeliefert. Eine Verbindung zu Servern von Google wird beim Aufruf
-              der Seite nicht hergestellt; Ihre IP-Adresse wird daher nicht an Google übertragen.
+              Diese Website nutzt zur einheitlichen Darstellung von Schriftarten ausschließlich
+              lokal eingebundene Web Fonts (Playfair Display und Lato). Die Schriftdateien werden
+              direkt von unserem Server ausgeliefert. Es besteht keinerlei Verbindung zu Google
+              Fonts, Google CDN oder anderen externen Schrift-Diensten; Ihre IP-Adresse wird
+              dadurch nicht an Dritte übertragen.
             </P>
             <P>
               Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer
