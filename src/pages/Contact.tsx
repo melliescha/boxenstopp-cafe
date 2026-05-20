@@ -77,6 +77,7 @@ const placeholders = [
 
 const Contact = () => {
   const [lightbox, setLightbox] = useState<number | null>(null);
+  const [mapConsent, setMapConsent] = useState(false);
 
   useEffect(() => {
     const placeSchema = {
@@ -135,23 +136,50 @@ const Contact = () => {
             {/* MOBILE: Map first via order */}
             <div className="order-1 lg:order-2">
               <div
-                className="overflow-hidden shadow-md w-full"
+                className="overflow-hidden shadow-md w-full relative"
                 style={{
                   borderRadius: 12,
                   height: "min(70vh, 520px)",
                   minHeight: 280,
+                  backgroundColor: CREAM,
+                  border: `1px solid ${BORDER}`,
                 }}
               >
-                <iframe
-                  title="Bistro Boxenstopp Standort auf Google Maps"
-                  src="https://www.google.com/maps?q=S%C3%BCdhang+1%2C+88145+Hergatz&output=embed"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0, display: "block" }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+                {mapConsent ? (
+                  <iframe
+                    title="Bistro Boxenstopp Standort auf Google Maps"
+                    src="https://www.google.com/maps?q=S%C3%BCdhang+1%2C+88145+Hergatz&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0, display: "block" }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
+                    <MapPin className="w-10 h-10 mb-3" style={{ color: BRONZE }} aria-hidden="true" />
+                    <h3 className="font-serif text-lg font-bold mb-2" style={{ color: NAVY }}>
+                      Karte (Google Maps)
+                    </h3>
+                    <p className="text-sm mb-4 max-w-sm" style={{ color: WARM_BROWN }}>
+                      Beim Laden der Karte werden Daten (u. a. Ihre IP-Adresse) an Google
+                      übertragen. Mit Klick auf „Karte laden" stimmen Sie der Datenübertragung
+                      zu. Mehr in unserer{" "}
+                      <a href="/datenschutz" className="underline" style={{ color: NAVY }}>
+                        Datenschutzerklärung
+                      </a>.
+                    </p>
+                    <button
+                      type="button"
+                      onClick={() => setMapConsent(true)}
+                      className="px-5 py-2.5 rounded-lg font-medium min-h-[44px]"
+                      style={{ backgroundColor: NAVY, color: CREAM }}
+                    >
+                      Karte laden
+                    </button>
+                  </div>
+                )}
               </div>
               <div className="mt-4">
                 <a

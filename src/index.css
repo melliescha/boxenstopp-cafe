@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Lato:wght@300;400;500;600;700&display=swap');
+/* Bunny Fonts – DSGVO-konforme Alternative zu Google Fonts (kein Tracking, EU-Server) */
+@import url('https://fonts.bunny.net/css?family=playfair-display:400i,400,500i,500,600i,600,700i,700|lato:300,400,500,600,700&display=swap');
 
 @tailwind base;
 @tailwind components;
