@@ -348,25 +348,30 @@ const Datenschutz = () => {
           <Divider />
 
           <Section>
-            <H2>9. Google Maps</H2>
+            <H2>9. Google Maps (2-Klick-Lösung)</H2>
             <P>
-              Auf unserer Website (insbesondere auf der Seite „Anfahrt") nutzen wir den Kartendienst
-              Google Maps der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4,
-              Irland („Google").
+              Auf unserer Website (insbesondere auf der Seite „Anfahrt") bieten wir die Anzeige
+              einer Karte über den Dienst Google Maps der Google Ireland Limited, Gordon House,
+              Barrow Street, Dublin 4, Irland („Google") an.
             </P>
             <P>
-              Bei Aufruf einer Seite mit eingebundener Google Maps-Karte werden Daten (u. a. Ihre
-              IP-Adresse) an Server von Google übermittelt und dort gespeichert. Eine Übermittlung
-              in die USA (Google LLC) kann dabei nicht ausgeschlossen werden.
+              Aus Datenschutzgründen wird die Karte <strong>nicht automatisch geladen</strong>.
+              Stattdessen sehen Sie zunächst nur einen Platzhalter mit einem Hinweistext. Erst
+              wenn Sie aktiv auf die Schaltfläche „Karte laden" klicken, wird die Karte
+              nachgeladen und es werden Daten (insbesondere Ihre IP-Adresse, Browserinformationen,
+              ggf. Standort) an Google übermittelt. Eine Übermittlung in die USA (Google LLC)
+              kann dabei nicht ausgeschlossen werden.
             </P>
             <P>
-              Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung über den Cookie-Banner).
-              Die Karte wird erst geladen, nachdem Sie der Nutzung externer Inhalte zugestimmt
-              haben.
+              Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktiven Klick auf
+              „Karte laden"). Solange Sie nicht klicken, werden keinerlei Daten an Google
+              übertragen.
             </P>
             <P>
               Drittlandtransfer: Google nimmt am EU-US Data Privacy Framework teil. Damit besteht
               ein Angemessenheitsbeschluss der Europäischen Kommission gem. Art. 45 DSGVO.
+              Ergänzend werden EU-Standardvertragsklauseln gem. Art. 46 Abs. 2 lit. c DSGVO
+              eingesetzt.
             </P>
             <P>
               Weitere Informationen zum Datenschutz bei Google:{" "}
@@ -396,55 +401,39 @@ const Datenschutz = () => {
           <Divider />
 
           <Section>
-            <H2>11. Google Reviews / Google Bewertungen</H2>
+            <H2>11. Verlinkung zu Google-Diensten und Bewertungsportalen</H2>
             <P>
-              Auf unserer Website binden wir Bewertungen unseres Google Business Profils ein.
-              Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4,
-              Irland.
+              Auf unserer Website verlinken wir auf externe Bewertungs- und Kartendienste
+              (insbesondere Google Business Profil/Google Bewertungen sowie Tripadvisor). Es
+              werden <strong>keine Widgets, iFrames oder Skripte</strong> dieser Anbieter in
+              unsere Seite eingebunden. Beim bloßen Aufruf unserer Website werden daher
+              <strong> keine Daten</strong> an diese Anbieter übertragen.
             </P>
             <P>
-              Bei Aufruf einer Seite mit eingebundenen Google-Bewertungen werden Daten (u. a.
-              IP-Adresse) an Google übertragen.
+              Erst wenn Sie aktiv auf einen solchen Link klicken, werden Sie auf die Seite des
+              jeweiligen Anbieters weitergeleitet. Ab diesem Zeitpunkt gelten die
+              Datenschutzbestimmungen des jeweiligen Anbieters:
             </P>
-            <P>
-              Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Die Inhalte werden erst
-              nach Ihrer Zustimmung im Cookie-Banner geladen.
-            </P>
-            <P>
-              Weitere Informationen:{" "}
-              <ExtLink href="https://policies.google.com/privacy">
-                https://policies.google.com/privacy
-              </ExtLink>
-            </P>
-          </Section>
-
-          <Divider />
-
-          <Section>
-            <H2>12. TripAdvisor Widget</H2>
-            <P>
-              Auf unserer Website binden wir ein Widget von Tripadvisor LLC, 400 1st Avenue,
-              Needham, MA 02494, USA, ein, um Bewertungen unseres Bistros darzustellen.
-            </P>
-            <P>
-              Bei Aufruf einer Seite mit dem Tripadvisor-Widget werden Daten (u. a. IP-Adresse) an
-              Server von Tripadvisor in den USA übertragen.
-            </P>
-            <P>
-              Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Das Widget wird erst nach
-              Ihrer Zustimmung im Cookie-Banner geladen.
-            </P>
-            <P>
-              Drittlandtransfer: Die Übermittlung in die USA erfolgt auf Grundlage von
-              Standardvertragsklauseln gem. Art. 46 Abs. 2 lit. c DSGVO bzw. – soweit zutreffend –
-              auf Basis des EU-US Data Privacy Frameworks.
-            </P>
-            <P>
-              Datenschutzerklärung von Tripadvisor:{" "}
-              <ExtLink href="https://tripadvisor.mediaroom.com/de-privacy-policy">
-                https://tripadvisor.mediaroom.com/de-privacy-policy
-              </ExtLink>
-            </P>
+            <ul style={{ color: warmBrown, fontSize: 16, lineHeight: 1.7, paddingLeft: 24, marginBottom: 14 }}>
+              <li>
+                Google Ireland Limited:{" "}
+                <ExtLink href="https://policies.google.com/privacy">
+                  policies.google.com/privacy
+                </ExtLink>
+              </li>
+              <li>
+                Tripadvisor LLC:{" "}
+                <ExtLink href="https://tripadvisor.mediaroom.com/de-privacy-policy">
+                  tripadvisor.mediaroom.com/de-privacy-policy
+                </ExtLink>
+              </li>
+              <li>
+                Komoot GmbH:{" "}
+                <ExtLink href="https://www.komoot.com/privacy">
+                  komoot.com/privacy
+                </ExtLink>
+              </li>
+            </ul>
           </Section>
 
           <Divider />
