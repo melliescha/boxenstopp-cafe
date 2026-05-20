@@ -1,5 +1,5 @@
-/* Bunny Fonts – DSGVO-konforme Alternative zu Google Fonts (kein Tracking, EU-Server) */
-@import url('https://fonts.bunny.net/css?family=playfair-display:400i,400,500i,500,600i,600,700i,700|lato:300,400,500,600,700&display=swap');
+/* Lokale Schriftarten (DSGVO-konform, kein externer CDN, kein Tracking) */
+@import url('/fonts/fonts.css');
 
 @tailwind base;
 @tailwind components;
