@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
+import VacationNotice from "@/components/VacationNotice";
 import parkplaetzeImg from "@/assets/parkplaetze.jpg";
 import treppeImg from "@/assets/treppe.jpg";
 import eingangImg from "@/assets/eingang.jpg";
