@@ -275,6 +275,7 @@ const Contact = () => {
                     Öffnungszeiten
                   </span>
                 </p>
+                <VacationNotice compact />
                 <ul>
                   {hours.map((h) => (
                     <li
