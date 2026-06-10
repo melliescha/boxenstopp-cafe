@@ -1,13 +1,10 @@
 import { useState } from "react";
 import { X } from "lucide-react";
+import { isVacationActive } from "@/lib/vacation";
 
 const WelcomeBanner = () => {
   const [visible, setVisible] = useState(true);
-
-  // Sommerurlaub: 16.06.2026 – 23.06.2026. Banner verschwindet automatisch ab 24.06.2026.
-  const today = new Date();
-  const vacationEnd = new Date(2026, 5, 24); // 24.06.2026 (Monat 0-indexiert)
-  const isVacation = today < vacationEnd;
+  const isVacation = isVacationActive();
 
   if (!visible) return null;
 

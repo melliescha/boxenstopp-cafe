@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import WelcomeBanner from "./WelcomeBanner";
 import CookieBanner from "./CookieBanner";
 import MobileBottomNav from "./MobileBottomNav";
+import VacationDialog from "./VacationDialog";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
@@ -23,6 +24,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
       <Footer />
       <CookieBanner />
       <MobileBottomNav />
+      <VacationDialog />
     </div>
   );
 };

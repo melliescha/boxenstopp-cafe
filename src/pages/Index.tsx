@@ -8,6 +8,7 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 import heroBg from "@/assets/hero-bistro.jpg";
 import heroLogoSchriftzug from "@/assets/hero-logo-schriftzug.png";
 import { socialLinks } from "@/config/social";
+import VacationNotice from "@/components/VacationNotice";
 
 
 const highlights = [
@@ -338,6 +339,7 @@ const Index = () => {
               <Clock className="w-7 h-7 text-bronze" />
             </div>
             <h2 className="font-serif text-3xl font-bold text-foreground mb-8">Öffnungszeiten</h2>
+            <VacationNotice />
             <div className="space-y-4">
               {hours.map((h) => (
                 <div key={h.days} className="flex justify-between items-center text-base">
