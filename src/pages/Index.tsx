@@ -9,6 +9,7 @@ import heroBg from "@/assets/hero-bistro.jpg";
 import heroLogoSchriftzug from "@/assets/hero-logo-schriftzug.png";
 import { socialLinks } from "@/config/social";
 import VacationNotice from "@/components/VacationNotice";
+import AiBadge from "@/components/AiBadge";
 
 
 const highlights = [
@@ -245,6 +246,7 @@ const Index = () => {
             style={{ objectPosition: "center 25%" }}
           />
           <div className="absolute inset-0 bg-black/35" />
+          <AiBadge variant="overlay" />
           <div className="absolute inset-0 flex items-center justify-center px-6 z-10">
             <img
               src={heroLogoSchriftzug}
