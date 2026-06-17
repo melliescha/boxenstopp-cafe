@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
+import AiBadge from "@/components/AiBadge";
 import logoIcon from "@/assets/logo-icon.png";
 import aboutHero from "@/assets/about-hero-family.jpg";
 import aboutBodensee from "@/assets/about-bodensee.jpg";
@@ -74,6 +75,7 @@ const About = () => {
           height={800}
         />
         <div className="absolute inset-0 bg-black/30" />
+        <AiBadge variant="overlay" />
         <div className="absolute left-1/2 -translate-x-1/2 bottom-[15%] text-center px-6 w-full">
           <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-4">
             Eine Familie, ein Traum, unsere Wahlheimat Allgäu
@@ -127,6 +129,7 @@ const About = () => {
                 loading="lazy"
                 className="rounded-xl shadow-md w-full h-64 md:h-80 object-cover"
               />
+              <AiBadge />
             </div>
             <div>
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
@@ -169,6 +172,7 @@ const About = () => {
                 className="rounded-xl shadow-md w-full h-64 md:h-80 object-cover"
                 style={{ objectPosition: 'center 30%' }}
               />
+              <AiBadge />
             </div>
           </div>
         </div>
