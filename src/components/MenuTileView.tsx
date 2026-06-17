@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useSearchParams, Link } from "react-router-dom";
 import { menuProducts, menuCategories, type MenuProduct } from "@/data/menuData";
 import ProductDetailOverlay from "@/components/ProductDetailOverlay";
+import FitesHint from "@/components/FitesHint";
 
 const MenuTileView = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -55,6 +56,13 @@ const MenuTileView = () => {
           </button>
         ))}
       </div>
+
+      {/* Dezenter FITES-Hinweis: nur bei Shakes-Filter sichtbar (Zielgruppe vorqualifiziert) */}
+      {activeCategory === "Shakes" && (
+        <div className="max-w-2xl mb-6">
+          <FitesHint variant="shake" />
+        </div>
+      )}
 
       {/* Product grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
