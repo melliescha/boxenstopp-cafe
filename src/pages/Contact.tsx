@@ -19,6 +19,7 @@ import {
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import VacationNotice from "@/components/VacationNotice";
+import FitesHint from "@/components/FitesHint";
 import parkplaetzeImg from "@/assets/parkplaetze.jpg";
 import treppeImg from "@/assets/treppe.jpg";
 import eingangImg from "@/assets/eingang.jpg";
@@ -427,6 +428,11 @@ const Contact = () => {
                 Privatgrundstück. Willkommen!
               </p>
             </div>
+          </div>
+
+          {/* Dezenter FITES-Hinweis (Schwester-Marke im selben Haus) */}
+          <div className="mt-6">
+            <FitesHint variant="neighbor" />
           </div>
         </div>
       </section>
