@@ -112,24 +112,8 @@ const Gallery = () => {
             <p className="text-muted-foreground">Mach dir selbst ein Bild. So sieht's bei uns aus.</p>
           </div>
 
-          {/* KI-Hinweis nach EU AI Act (Art. 50) */}
-          <div
-            className="max-w-3xl mx-auto mb-10 rounded-lg px-5 py-4 text-sm leading-relaxed"
-            style={{ backgroundColor: "#FEF4EC", border: "1px solid #EDE0D0", color: "#6B4A2E" }}
-            role="note"
-            aria-label="Hinweis zu KI-generierten Bildern"
-          >
-            <strong style={{ color: "#164472" }}>Hinweis zu KI-generierten Bildern:</strong>{" "}
-            Ein Teil der hier gezeigten Bilder wurde mit Hilfe künstlicher Intelligenz (KI)
-            erstellt oder bearbeitet, um Stimmung, Atmosphäre und Angebot des Bistros zu
-            veranschaulichen. Sie können daher von der tatsächlichen Realität abweichen.
-            Echte Eindrücke vor Ort sind selbstverständlich am schönsten. Weitere Informationen
-            in unserer{" "}
-            <a href="/datenschutz" style={{ color: "#164472", textDecoration: "underline" }}>
-              Datenschutzerklärung
-            </a>
-            .
-          </div>
+
+
 
           {/* Filter tabs */}
           <div className="flex flex-wrap justify-center gap-2 mb-12">
@@ -171,6 +155,22 @@ const Gallery = () => {
               In dieser Kategorie sind aktuell noch keine Bilder vorhanden.
             </p>
           )}
+
+          {/* KI-Hinweis nach EU AI Act (Art. 50) – dezent ganz unten */}
+          <p
+            className="max-w-3xl mx-auto mt-12 text-center text-xs italic text-muted-foreground"
+            role="note"
+          >
+            * Einige Bilder dieser Galerie wurden mit Hilfe künstlicher Intelligenz erstellt oder
+            bearbeitet.{" "}
+            <a
+              href="/datenschutz#ki-hinweis"
+              className="underline hover:text-bronze transition-colors"
+            >
+              Mehr erfahren
+            </a>
+            .
+          </p>
         </div>
       </section>
 
