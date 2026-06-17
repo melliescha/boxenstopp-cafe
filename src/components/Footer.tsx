@@ -186,8 +186,16 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/10 mt-6 pt-6 text-center text-xs text-primary-foreground/40">
-          © {new Date().getFullYear()} Bistro Boxenstopp
+        <div className="border-t border-primary-foreground/10 mt-6 pt-6 text-center text-xs text-primary-foreground/40 space-y-2">
+          <p>
+            Hinweis: Ein Teil der auf dieser Website gezeigten Bilder ist KI-generiert oder
+            KI-bearbeitet (gem. Art. 50 EU AI Act). Mehr dazu in unserer{" "}
+            <Link to="/datenschutz" className="underline hover:text-warm-gold transition-colors">
+              Datenschutzerklärung
+            </Link>
+            .
+          </p>
+          <p>© {new Date().getFullYear()} Bistro Boxenstopp</p>
         </div>
 
         {/* Agency Credit */}

@@ -550,7 +550,37 @@ const Datenschutz = () => {
           <Divider />
 
           <Section>
-            <H2>16. Aktualität und Änderung dieser Datenschutzerklärung</H2>
+            <H2>16. Einsatz von KI-generierten Inhalten (EU AI Act)</H2>
+            <P>
+              Auf dieser Website werden teilweise Bilder, Grafiken und/oder Texte verwendet, die
+              mit Hilfe von Systemen künstlicher Intelligenz (KI) erstellt oder bearbeitet wurden.
+              Dies betrifft insbesondere stimmungsvolle Foto-Eindrücke unseres Bistros, einzelne
+              Speise- und Getränkedarstellungen sowie ergänzende Bildmotive in der Galerie.
+            </P>
+            <P>
+              Wir kennzeichnen solche Inhalte freiwillig und transparent im Sinne von Art. 50 der
+              Verordnung (EU) 2024/1689 („EU AI Act"). KI-generierte oder KI-bearbeitete Bilder
+              können von der tatsächlichen Realität abweichen, dienen ausschließlich
+              illustrativen Zwecken und stellen keine verbindliche Beschreibung unserer Produkte,
+              Räumlichkeiten oder Dienstleistungen dar. Maßgeblich ist stets das tatsächliche
+              Angebot vor Ort.
+            </P>
+            <P>
+              Personenbezogene Daten unserer Gäste werden durch den Einsatz dieser KI-Systeme
+              nicht verarbeitet. Sollten in Einzelfällen reale Fotos durch KI nachbearbeitet
+              worden sein (z.&nbsp;B. Bildoptimierung, Retusche), erfolgt dies ohne Erstellung
+              biometrischer Profile.
+            </P>
+            <P>
+              Bei Fragen zum Einsatz von KI auf dieser Website wenden Sie sich gerne an die im
+              Impressum genannten Kontaktdaten.
+            </P>
+          </Section>
+
+          <Divider />
+
+          <Section>
+            <H2>17. Aktualität und Änderung dieser Datenschutzerklärung</H2>
             <P>
               Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Mai 2026.
             </P>
