@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 
@@ -75,6 +77,17 @@ const Section = ({ children }: { children: React.ReactNode }) => (
 );
 
 const Datenschutz = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (!hash) return;
+    const id = hash.replace("#", "");
+    const el = document.getElementById(id);
+    if (el) {
+      setTimeout(() => el.scrollIntoView({ behavior: "smooth", block: "start" }), 100);
+    }
+  }, [hash]);
+
   return (
     <Layout>
       <SEO title="Datenschutz – Bistro Boxenstopp" description="Datenschutzerklärung gemäß DSGVO." path="/datenschutz" />
