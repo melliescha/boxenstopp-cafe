@@ -260,6 +260,7 @@ const Index = () => {
 
       {/* Slogan + CTA */}
       <section className="text-center" style={{ backgroundColor: "#fef4ec", paddingTop: "16px", paddingBottom: "20px" }}>
+        <h1 className="sr-only">Bistro Boxenstopp Hergatz – Barista-Kaffee, Flammkuchen & Hüttenbrot im Westallgäu</h1>
         <p className="font-serif" style={{ color: "#164472", fontSize: "28px", fontWeight: 500 }}>
           Hergatz' bestgehütetes Geheimnis
         </p>
