@@ -304,7 +304,7 @@ const Index = () => {
                 <div className="w-14 h-14 rounded-full bg-bronze/10 flex items-center justify-center mx-auto mb-5">
                   <h.icon className="w-7 h-7 text-bronze" />
                 </div>
-                <h3 className="font-serif text-xl font-semibold text-foreground mb-3">{h.title}</h3>
+                <h2 className="font-serif text-xl font-semibold text-foreground mb-3">{h.title}</h2>
                 <p className="text-muted-foreground text-sm leading-relaxed">{h.text}</p>
               </div>
             ))}
