@@ -228,8 +228,8 @@ const Index = () => {
   return (
     <Layout>
       <SEO
-        title="Bistro Boxenstopp Hergatz | Barista-Kaffee, Flammkuchen & Hüttenbrot im Westallgäu"
-        description="Euer Stopp am Bodensee-Königssee-Radweg in Hergatz: Barista-Kaffee, ofenfrische Flammkuchen, herzhaftes Hüttenbrot und der legendäre Boxenstopp Spezial."
+        title="Bistro Boxenstopp Hergatz | Kaffee & Flammkuchen"
+        description="Barista-Kaffee, ofenfrische Flammkuchen und Hüttenbrot in Hergatz – Euer Stopp am Bodensee-Königssee-Radweg im Westallgäu."
         path="/"
         type="restaurant.restaurant"
       />
