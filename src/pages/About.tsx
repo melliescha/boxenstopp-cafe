@@ -63,7 +63,7 @@ const About = () => {
 
   return (
     <Layout>
-      <SEO title="Über uns | Eugen, Helena & Melanie Schall vom Bistro Boxenstopp Hergatz" description="Hinter dem Bistro Boxenstopp im Westallgäu steht die Familie Schall: bodenständig, ehrlich, mit Leidenschaft für gute Küche und Gemeinschaft. Lernt uns kennen." path="/ueber-uns" />
+      <SEO title="Über uns – Familie Schall | Bistro Boxenstopp" description="Hinter dem Bistro Boxenstopp im Westallgäu steht die Familie Schall: bodenständig, ehrlich, mit Leidenschaft für gute Küche und Gemeinschaft." path="/ueber-uns" />
       {/* Hero */}
       <section className="relative h-[50vh] md:h-[60vh] overflow-hidden">
         <img

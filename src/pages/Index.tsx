@@ -228,8 +228,8 @@ const Index = () => {
   return (
     <Layout>
       <SEO
-        title="Bistro Boxenstopp Hergatz | Barista-Kaffee, Flammkuchen & Hüttenbrot im Westallgäu"
-        description="Euer Stopp am Bodensee-Königssee-Radweg in Hergatz: Barista-Kaffee, ofenfrische Flammkuchen, herzhaftes Hüttenbrot und der legendäre Boxenstopp Spezial."
+        title="Bistro Boxenstopp Hergatz | Kaffee & Flammkuchen"
+        description="Barista-Kaffee, ofenfrische Flammkuchen und Hüttenbrot in Hergatz – Euer Stopp am Bodensee-Königssee-Radweg im Westallgäu."
         path="/"
         type="restaurant.restaurant"
       />
@@ -260,6 +260,7 @@ const Index = () => {
 
       {/* Slogan + CTA */}
       <section className="text-center" style={{ backgroundColor: "#fef4ec", paddingTop: "16px", paddingBottom: "20px" }}>
+        <h1 className="sr-only">Bistro Boxenstopp Hergatz – Barista-Kaffee, Flammkuchen & Hüttenbrot im Westallgäu</h1>
         <p className="font-serif" style={{ color: "#164472", fontSize: "28px", fontWeight: 500 }}>
           Hergatz' bestgehütetes Geheimnis
         </p>
@@ -303,7 +304,7 @@ const Index = () => {
                 <div className="w-14 h-14 rounded-full bg-bronze/10 flex items-center justify-center mx-auto mb-5">
                   <h.icon className="w-7 h-7 text-bronze" />
                 </div>
-                <h3 className="font-serif text-xl font-semibold text-foreground mb-3">{h.title}</h3>
+                <h2 className="font-serif text-xl font-semibold text-foreground mb-3">{h.title}</h2>
                 <p className="text-muted-foreground text-sm leading-relaxed">{h.text}</p>
               </div>
             ))}

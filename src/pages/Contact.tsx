@@ -114,7 +114,7 @@ const Contact = () => {
   return (
     <Layout>
       <SEO
-        title="Anfahrt & Kontakt | Bistro Boxenstopp Hergatz im Westallgäu"
+        title="Anfahrt & Kontakt | Bistro Boxenstopp"
         description="So findet ihr das Bistro Boxenstopp in Hergatz/Wohmbrechts: Anfahrt mit Auto, Rad oder Bahn. Direkt am Bodensee-Königssee-Radweg und an der Leiblachroute."
         path="/kontakt"
       />
