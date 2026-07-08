@@ -11,7 +11,7 @@ import cupcinoPartnerImg from "@/assets/cupcino-partner.jpg";
 const Partners = () => {
   return (
     <Layout>
-      <SEO title="Unsere Partner | Bistro Boxenstopp" description="Wir arbeiten mit Cup&Cino (Foundation für sauberes Wasser), Herbalife Nutrition und Perplex Pizza & Baguette Deutschland zusammen." path="/partner" />
+      <SEO title="Unsere Partner | Bistro Boxenstopp" description="Wir arbeiten mit Cup&Cino (Foundation für sauberes Wasser), Herbalife Nutrition und Perplex Pizza & Baguette Deutschland zusammen." path="/partner" image="/og/partner.jpg" />
       {/* Hero / Intro */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6 max-w-4xl text-center">
