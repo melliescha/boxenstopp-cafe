@@ -452,6 +452,32 @@ const Datenschutz = () => {
           <Divider />
 
           <Section>
+            <H2>12. Reichweitenanalyse und Tracking (kein Google Analytics)</H2>
+            <P>
+              Auf dieser Website kommen <strong>keine Analyse- oder Tracking-Dienste</strong> zum
+              Einsatz. Insbesondere verwenden wir <strong>kein Google Analytics</strong>, kein
+              Google Tag Manager, keine Facebook-/Meta-Pixel, kein Matomo, kein Hotjar und keine
+              vergleichbaren Werkzeuge zur Erstellung von Nutzungsprofilen oder zur
+              geräteübergreifenden Wiedererkennung.
+            </P>
+            <P>
+              Es werden ausschließlich technisch notwendige Server-Logfiles gemäß Abschnitt 4
+              erhoben. Eine Auswertung des Nutzerverhaltens (z. B. Klickpfade, Verweildauer,
+              A/B-Tests, Conversion-Tracking) findet nicht statt. Es werden keine
+              personenbezogenen Profile erstellt und keine Daten zu Werbezwecken an Dritte
+              weitergegeben.
+            </P>
+            <P>
+              Sollten wir zukünftig ein Analyse-Werkzeug einsetzen, werden wir diese
+              Datenschutzerklärung entsprechend anpassen und – soweit erforderlich – vorab Ihre
+              Einwilligung über den Cookie-Banner einholen (Art. 6 Abs. 1 lit. a DSGVO, § 25
+              Abs. 1 TDDDG).
+            </P>
+          </Section>
+
+          <Divider />
+
+          <Section>
             <H2>13. Social-Media-Profile (Verlinkung)</H2>
             <P>
               Auf unserer Website verlinken wir auf unsere Profile in sozialen Netzwerken (z. B.
