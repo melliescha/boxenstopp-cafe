@@ -11,6 +11,18 @@ import cupcinoLogo from "@/assets/cupcino-logo.jpg";
 import cupcinoPartnerImg from "@/assets/cupcino-partner.jpg";
 
 const Partners = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => element.scrollIntoView({ behavior: "smooth", block: "start" }), 100);
+      }
+    }
+  }, [location]);
+
   return (
     <Layout>
       <SEO title="Unsere Partner | Bistro Boxenstopp" description="Wir arbeiten mit Cup&Cino (Foundation für sauberes Wasser), Herbalife Nutrition und Perplex Pizza & Baguette Deutschland zusammen." path="/partner" image="/og/partner.jpg" />
