@@ -20,6 +20,7 @@ import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import VacationNotice from "@/components/VacationNotice";
 import FitesHint from "@/components/FitesHint";
+import { contactPageSchema } from "@/lib/schema";
 import parkplaetzeImg from "@/assets/parkplaetze.jpg";
 import treppeImg from "@/assets/treppe.jpg";
 import eingangImg from "@/assets/eingang.jpg";
@@ -118,6 +119,7 @@ const Contact = () => {
         description="So findet ihr das Bistro Boxenstopp in Hergatz/Wohmbrechts: Anfahrt mit Auto, Rad oder Bahn. Direkt am Bodensee-Königssee-Radweg und an der Leiblachroute."
         path="/kontakt"
         image="/og/kontakt.jpg"
+        jsonLd={contactPageSchema}
       />
 
       {/* SECTION 1: HERO */}

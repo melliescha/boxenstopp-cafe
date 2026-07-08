@@ -5,6 +5,7 @@ import MenuTileView from "@/components/MenuTileView";
 import FlipbookMenu from "@/components/FlipbookMenu";
 import { Download, Loader2 } from "lucide-react";
 import { toast } from "sonner";
+import { menuPageSchema } from "@/lib/schema";
 
 type Tab = "karte" | "flipbook";
 
@@ -192,7 +193,7 @@ const Menu = () => {
 
   return (
     <Layout>
-      <SEO title="Speisekarte – Bistro Boxenstopp Hergatz" description="Unsere Karte: Flammkuchen, Pizza-Snacks, Brote, Barista-Kaffee, Matcha, Proteinshakes und der berühmte Boxenstopp-Spezial mit Kollagen." path="/speisekarte" image="/og/speisekarte.jpg" />
+      <SEO title="Speisekarte – Bistro Boxenstopp Hergatz" description="Unsere Karte: Flammkuchen, Pizza-Snacks, Brote, Barista-Kaffee, Matcha, Proteinshakes und der berühmte Boxenstopp-Spezial mit Kollagen." path="/speisekarte" image="/og/speisekarte.jpg" jsonLd={menuPageSchema} />
       <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-6">
           {/* Page title */}
