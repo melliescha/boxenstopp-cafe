@@ -65,6 +65,7 @@ const FAQ = () => {
         title="Häufige Fragen | Bistro Boxenstopp Hergatz im Westallgäu"
         description="Alle Antworten rund um euren Besuch im Bistro Boxenstopp: Anfahrt, Öffnungszeiten, Speisen, Partner, Radfahrer Infos und mehr."
         path="/faq"
+        image="/og/faq.jpg"
       />
 
       {/* Hero */}
