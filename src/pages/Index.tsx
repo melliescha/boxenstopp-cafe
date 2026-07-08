@@ -232,6 +232,7 @@ const Index = () => {
         description="Barista-Kaffee, ofenfrische Flammkuchen und Hüttenbrot in Hergatz – Euer Stopp am Bodensee-Königssee-Radweg im Westallgäu."
         path="/"
         type="restaurant.restaurant"
+        jsonLd={localBusinessSchema}
       />
       {/* Hero */}
       {/* Hero */}
