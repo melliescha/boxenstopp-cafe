@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import MenuTileView from "@/components/MenuTileView";
@@ -199,7 +200,10 @@ const Menu = () => {
           {/* Foundation note */}
           <div className="max-w-2xl mx-auto mb-10 text-center">
             <div className="rounded-lg border border-bronze/30 bg-bronze/10 px-5 py-4 text-sm md:text-base font-medium text-bronze">
-              Mit jedem Kaffee unterstützt du die Cup&Cino Foundation: 1 Cent pro Tasse für soziale Projekte. ☕
+              Mit jedem Kaffee unterstützt du die Cup&Cino Foundation: 1 Cent pro Tasse für soziale Projekte. ☕{" "}
+              <Link to="/partner#foundation" className="inline-flex items-center gap-1 font-semibold underline underline-offset-2 hover:text-primary transition-colors whitespace-nowrap">
+                mehr erfahren
+              </Link>
             </div>
           </div>
 

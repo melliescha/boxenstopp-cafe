@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import { Droplets, Building2, GraduationCap, Handshake, Leaf, Zap, ShieldCheck, Globe, Award, FlaskConical, Dumbbell } from "lucide-react";
@@ -9,6 +11,18 @@ import cupcinoLogo from "@/assets/cupcino-logo.jpg";
 import cupcinoPartnerImg from "@/assets/cupcino-partner.jpg";
 
 const Partners = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => element.scrollIntoView({ behavior: "smooth", block: "start" }), 100);
+      }
+    }
+  }, [location]);
+
   return (
     <Layout>
       <SEO title="Unsere Partner | Bistro Boxenstopp" description="Wir arbeiten mit Cup&Cino (Foundation für sauberes Wasser), Herbalife Nutrition und Perplex Pizza & Baguette Deutschland zusammen." path="/partner" image="/og/partner.jpg" />
@@ -128,7 +142,7 @@ const Partners = () => {
       </section>
 
       {/* PARTNER 3: Cup&Cino Foundation — Navy highlight */}
-      <section className="py-16 md:py-24" style={{ background: "linear-gradient(135deg, #164472, #1d5a8a)" }}>
+      <section id="foundation" className="py-16 md:py-24" style={{ background: "linear-gradient(135deg, #164472, #1d5a8a)" }}>
         <div className="container mx-auto px-6 max-w-4xl text-center">
           <p className="text-[#b8943e] font-medium tracking-[0.2em] uppercase text-sm mb-2">☕ Cup&Cino Foundation</p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8" style={{ color: "#fef4ec" }}>
