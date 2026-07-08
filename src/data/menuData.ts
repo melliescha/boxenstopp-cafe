@@ -418,7 +418,7 @@ export const menuProducts: MenuProduct[] = [
       { label: "Salz", value: "0 g" },
     ],
   },
-  // Süßes
+  // Süßspeisen – Gebäck & Dessert
   {
     id: "donut",
     name: "Donut (nach Wahl)",
@@ -451,7 +451,7 @@ export const menuProducts: MenuProduct[] = [
     description: "Frisches Obst",
     category: "Süßspeisen",
   },
-  // Gourmet Baguettes
+  // Herzhaft & Ofenfrisch – Brote & Baguettes
   {
     id: "thunfisch-baguette",
     name: "Gourmet Baguette Thunfisch",
@@ -500,7 +500,7 @@ export const menuProducts: MenuProduct[] = [
     category: "Herzhaft & Ofenfrisch",
     origin: perplexOrigin,
   },
-  // Hüttenbrote
+  // Herzhaft & Ofenfrisch – Hüttenbrote
   {
     id: "holzfaellerbrot",
     name: "Hüttenbrot Speck",
@@ -564,7 +564,7 @@ export const menuProducts: MenuProduct[] = [
     origin: perplexOrigin,
     image: raclettebrotImage,
   },
-  // Flammkuchen
+  // Herzhaft & Ofenfrisch – Flammkuchen
   {
     id: "flammkuchen-elsaesser",
     name: "Flammkuchen Elsässer Art",
@@ -669,7 +669,7 @@ export const menuProducts: MenuProduct[] = [
     ],
     image: flammkuchenLachsImage,
   },
-  // Pizzasnacks & Pizzetta (Für den kleinen Hunger)
+  // Herzhaft & Ofenfrisch – Pizzasnacks & Pizzetta
   {
     id: "pizzasnack-caprese",
     name: "Pizzasnack Caprese",
@@ -741,7 +741,7 @@ export const menuProducts: MenuProduct[] = [
     badges: ["🥖 Für den kleinen Hunger", "🥕 Vegetarisch"],
     origin: perplexOrigin,
   },
-  // Getränke
+  // Kalte Getränke
   {
     id: "apfelschorle",
     name: "Apfel- und Fruchtschorle",
@@ -791,7 +791,7 @@ export const menuProducts: MenuProduct[] = [
     allergens: "11",
     origin: "Herbalife Nutrition: Seed to Feed Qualitätskontrolle",
   },
-  // Shakes
+  // Shakes & Sportnahrung
   {
     id: "protein-shake",
     name: "Protein-Shake",
@@ -846,7 +846,7 @@ export const menuProducts: MenuProduct[] = [
     category: "Shakes & Sportnahrung",
     origin: "Herbalife Nutrition: Seed to Feed Qualitätskontrolle",
   },
-  // Eis & Genuss
+  // Süßspeisen – Eis & Genuss
   {
     id: "cornetto-eis",
     name: "Cornetto Eis",
@@ -879,7 +879,7 @@ export const menuProducts: MenuProduct[] = [
     category: "Süßspeisen",
     badge: "🥡 Auch zum Mitnehmen",
   },
-  // Kalte Signatur Drinks
+  // Kalte Getränke – Signatur Drinks
   {
     id: "ice-matcha-latte",
     name: "Iced Matcha Latte",
@@ -920,7 +920,7 @@ export const menuProducts: MenuProduct[] = [
     category: "Kalte Getränke",
     badge: "🥡 Auch zum Mitnehmen",
   },
-  // Salate & Quark
+  // Salate & Süßspeisen – Quark
   {
     id: "bunter-salat",
     name: "Bunter Salat",
