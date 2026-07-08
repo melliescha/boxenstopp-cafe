@@ -35,15 +35,11 @@ export const menuCategories = [
   "Alle",
   "Kaffee",
   "Heiße Getränke",
-  "Kalte Signatur Drinks",
-  "Erfrischungsgetränke",
+  "Kalte Getränke",
   "Shakes & Sportnahrung",
-  "Flammkuchen",
-  "Brote & Baguettes",
-  "Pizza-Snacks",
-  "Salate & Quark",
-  "Süßes",
-  "Eis & Genuss",
+  "Herzhaft & Ofenfrisch",
+  "Salate",
+  "Süßspeisen",
 ];
 
 const perplexOrigin = "Von unserem Partner Perplex: Pizza & Baguette Deutschland GmbH, seit über 33 Jahren. Ohne Gentechnik hergestellt gemäß Codexrichtlinie. Kontrolle durch agroVet GmbH.";
@@ -422,13 +418,13 @@ export const menuProducts: MenuProduct[] = [
       { label: "Salz", value: "0 g" },
     ],
   },
-  // Süßes
+  // Süßspeisen – Gebäck & Dessert
   {
     id: "donut",
     name: "Donut (nach Wahl)",
     price: "1,80 €",
     description: "Verschiedene Sorten",
-    category: "Süßes",
+    category: "Süßspeisen",
     allergens: "A,C,G",
   },
   {
@@ -436,7 +432,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Muffin (nach Wahl)",
     price: "2,50 €",
     description: "Verschiedene Sorten",
-    category: "Süßes",
+    category: "Süßspeisen",
     allergens: "A,C,G",
   },
   {
@@ -444,7 +440,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Affogato",
     price: "3,50 €",
     description: "Espresso mit Vanilleeis",
-    category: "Süßes",
+    category: "Süßspeisen",
     allergens: "G,11",
     image: affogatoImage,
   },
@@ -453,15 +449,15 @@ export const menuProducts: MenuProduct[] = [
     name: "Obst (verschiedenes)",
     price: "0,50 €",
     description: "Frisches Obst",
-    category: "Süßes",
+    category: "Süßspeisen",
   },
-  // Gourmet Baguettes
+  // Herzhaft & Ofenfrisch – Brote & Baguettes
   {
     id: "thunfisch-baguette",
     name: "Gourmet Baguette Thunfisch",
     price: "6,20 €",
     description: "Mit Thunfisch, Zwiebeln, Gouda und Béchamelsauce",
-    category: "Brote & Baguettes",
+    category: "Herzhaft & Ofenfrisch",
     allergens: "A,D,G",
     origin: perplexOrigin,
   },
@@ -470,7 +466,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Gourmet Baguette Tomate Mozzarella",
     price: "6,20 €",
     description: "Mit getrockneten Tomaten, Basilikum und Béchamel-Tomatensauce",
-    category: "Brote & Baguettes",
+    category: "Herzhaft & Ofenfrisch",
     allergens: "A,G",
     badge: "🥕 Vegetarisch",
     origin: perplexOrigin,
@@ -493,7 +489,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Gourmet Baguette Provence",
     price: "6,20 €",
     description: "Zutaten folgen in Kürze",
-    category: "Brote & Baguettes",
+    category: "Herzhaft & Ofenfrisch",
     origin: perplexOrigin,
   },
   {
@@ -501,16 +497,16 @@ export const menuProducts: MenuProduct[] = [
     name: "Gourmet Baguette Rustikal",
     price: "6,20 €",
     description: "Zutaten folgen in Kürze",
-    category: "Brote & Baguettes",
+    category: "Herzhaft & Ofenfrisch",
     origin: perplexOrigin,
   },
-  // Hüttenbrote
+  // Herzhaft & Ofenfrisch – Hüttenbrote
   {
     id: "holzfaellerbrot",
     name: "Hüttenbrot Speck",
     price: "7,40 €",
     description: "Schwarzbrot mit Knoblauchbutter, Käse, Speck, Zwiebeln und Schnittlauch",
-    category: "Brote & Baguettes",
+    category: "Herzhaft & Ofenfrisch",
     allergens: "A,F,G",
     badge: "🔥 Beliebt",
     origin: perplexOrigin,
@@ -538,7 +534,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Hüttenbrot Tomate Mozzarella",
     price: "7,40 €",
     description: "Weizenbrot mit Basilikum, Mozzarella und Tomaten",
-    category: "Brote & Baguettes",
+    category: "Herzhaft & Ofenfrisch",
     allergens: "A,F,G",
     badge: "🥕 Vegetarisch",
     origin: perplexOrigin,
@@ -562,19 +558,19 @@ export const menuProducts: MenuProduct[] = [
     name: "Hüttenbrot Raclette",
     price: "7,70 €",
     description: "Schwarzbrot mit Knoblauchbutter, Raclettekäse und Lauch",
-    category: "Brote & Baguettes",
+    category: "Herzhaft & Ofenfrisch",
     allergens: "A,G",
     badge: "🥕 Vegetarisch",
     origin: perplexOrigin,
     image: raclettebrotImage,
   },
-  // Flammkuchen
+  // Herzhaft & Ofenfrisch – Flammkuchen
   {
     id: "flammkuchen-elsaesser",
     name: "Flammkuchen Elsässer Art",
     price: "6,30 €",
     description: "Flammkuchencreme, Speck und Zwiebeln",
-    category: "Flammkuchen",
+    category: "Herzhaft & Ofenfrisch",
     allergens: "A,G",
     origin: perplexOrigin,
     composition: "39% Flammkuchenboden, 37% Flammkuchensoße, 13% Speck, 11% Zwiebeln",
@@ -602,7 +598,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Flammkuchen Griechische Art",
     price: "6,30 €",
     description: "Flammkuchencreme, Peperoni, Hirtenkäse und bunter Pfeffer",
-    category: "Flammkuchen",
+    category: "Herzhaft & Ofenfrisch",
     allergens: "A,G,L",
     badge: "🥕 Vegetarisch",
     origin: perplexOrigin,
@@ -630,7 +626,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Flammkuchen Mediterran",
     price: "6,30 €",
     description: "Flammkuchencreme, Hirtenkäse, gegrillte Paprika, Zucchini",
-    category: "Flammkuchen",
+    category: "Herzhaft & Ofenfrisch",
     allergens: "A,G",
     badge: "🥕 Vegetarisch",
     origin: perplexOrigin,
@@ -654,7 +650,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Flammkuchen Lachs & Lauch",
     price: "7,30 €",
     description: "Flammkuchencreme, Lachs und Lauch",
-    category: "Flammkuchen",
+    category: "Herzhaft & Ofenfrisch",
     allergens: "A,D,G",
     badge: "🔥 Beliebt",
     origin: perplexOrigin,
@@ -673,13 +669,13 @@ export const menuProducts: MenuProduct[] = [
     ],
     image: flammkuchenLachsImage,
   },
-  // Pizzasnacks & Pizzetta (Für den kleinen Hunger)
+  // Herzhaft & Ofenfrisch – Pizzasnacks & Pizzetta
   {
     id: "pizzasnack-caprese",
     name: "Pizzasnack Caprese",
     price: "3,50 €",
     description: "Pizzasauce, Käse und Kirschtomaten",
-    category: "Pizza-Snacks",
+    category: "Herzhaft & Ofenfrisch",
     allergens: "A,G",
     badges: ["🥖 Für den kleinen Hunger", "🥕 Vegetarisch"],
     origin: perplexOrigin,
@@ -703,7 +699,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Pizzasnack Salami",
     price: "3,80 €",
     description: "Pizzasauce, Käse und Salami",
-    category: "Pizza-Snacks",
+    category: "Herzhaft & Ofenfrisch",
     allergens: "A,G",
     badge: "🥖 Für den kleinen Hunger",
     origin: perplexOrigin,
@@ -730,7 +726,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Pizzetta Salami",
     price: "3,95 €",
     description: "Tomatensauce, Käse und Salami",
-    category: "Pizza-Snacks",
+    category: "Herzhaft & Ofenfrisch",
     allergens: "A,G",
     badge: "🥖 Für den kleinen Hunger",
     origin: perplexOrigin,
@@ -740,18 +736,18 @@ export const menuProducts: MenuProduct[] = [
     name: "Pizzetta Margherita",
     price: "3,60 €",
     description: "Tomatensauce und Käse",
-    category: "Pizza-Snacks",
+    category: "Herzhaft & Ofenfrisch",
     allergens: "A,G",
     badges: ["🥖 Für den kleinen Hunger", "🥕 Vegetarisch"],
     origin: perplexOrigin,
   },
-  // Getränke
+  // Kalte Getränke
   {
     id: "apfelschorle",
     name: "Apfel- und Fruchtschorle",
     price: "2,25 €",
     description: "Bei Mitnahme zzgl. Pfand",
-    category: "Erfrischungsgetränke",
+    category: "Kalte Getränke",
     volume: "0,33l",
   },
   {
@@ -759,7 +755,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Wasser still/medium/spritzig",
     price: "1,75 €",
     description: "Bei Mitnahme zzgl. Pfand",
-    category: "Erfrischungsgetränke",
+    category: "Kalte Getränke",
     volume: "0,5l",
   },
   {
@@ -767,7 +763,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Säfte (verschiedene Sorten)",
     price: "2,50 €",
     description: "Fruchtige Auswahl",
-    category: "Erfrischungsgetränke",
+    category: "Kalte Getränke",
     volume: "0,25l",
   },
   {
@@ -775,7 +771,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Alkoholfreies Bier",
     price: "3,00 €",
     description: "Nach Wahl",
-    category: "Erfrischungsgetränke",
+    category: "Kalte Getränke",
     volume: "0,33l",
   },
   {
@@ -783,7 +779,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Electrolyte Herbalife-24",
     price: "2,90 €",
     description: "Isotonisches Sportgetränk",
-    category: "Erfrischungsgetränke",
+    category: "Kalte Getränke",
     origin: "Herbalife Nutrition: Seed to Feed Qualitätskontrolle",
   },
   {
@@ -791,11 +787,11 @@ export const menuProducts: MenuProduct[] = [
     name: "Energy Herbalife LIFTOFF",
     price: "3,50 €",
     description: "Energiedrink",
-    category: "Erfrischungsgetränke",
+    category: "Kalte Getränke",
     allergens: "11",
     origin: "Herbalife Nutrition: Seed to Feed Qualitätskontrolle",
   },
-  // Shakes
+  // Shakes & Sportnahrung
   {
     id: "protein-shake",
     name: "Protein-Shake",
@@ -850,13 +846,13 @@ export const menuProducts: MenuProduct[] = [
     category: "Shakes & Sportnahrung",
     origin: "Herbalife Nutrition: Seed to Feed Qualitätskontrolle",
   },
-  // Eis & Genuss
+  // Süßspeisen – Eis & Genuss
   {
     id: "cornetto-eis",
     name: "Cornetto Eis",
     price: "2,50 €",
     description: "Mango & Vanilla in der Waffel",
-    category: "Eis & Genuss",
+    category: "Süßspeisen",
     badge: "🥡 Auch zum Mitnehmen",
   },
   {
@@ -864,7 +860,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Magnum Eis",
     price: "2,00 €",
     description: "Utopia Double Cherry am Stiel",
-    category: "Eis & Genuss",
+    category: "Süßspeisen",
     badge: "🥡 Auch zum Mitnehmen",
   },
   {
@@ -872,7 +868,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Eiskugel",
     price: "1,20 €",
     description: "Schoko, Erdbeere oder Vanille – Kugel im Becher",
-    category: "Eis & Genuss",
+    category: "Süßspeisen",
     badge: "🥡 Auch zum Mitnehmen",
   },
   {
@@ -880,16 +876,16 @@ export const menuProducts: MenuProduct[] = [
     name: "Trio Eisbecher",
     price: "3,00 €",
     description: "Schoko, Erdbeere, Vanille",
-    category: "Eis & Genuss",
+    category: "Süßspeisen",
     badge: "🥡 Auch zum Mitnehmen",
   },
-  // Kalte Signatur Drinks
+  // Kalte Getränke – Signatur Drinks
   {
     id: "ice-matcha-latte",
     name: "Iced Matcha Latte",
     price: "4,50 €",
     description: "Erfrischender Matcha Latte auf Eis",
-    category: "Kalte Signatur Drinks",
+    category: "Kalte Getränke",
     badge: "🥡 Auch zum Mitnehmen",
   },
   {
@@ -897,7 +893,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Fruity Iced Matcha Latte",
     price: "3,70 €",
     description: "Fruchtige Note nach Wahl",
-    category: "Kalte Signatur Drinks",
+    category: "Kalte Getränke",
     badge: "🥡 Auch zum Mitnehmen",
   },
   {
@@ -905,7 +901,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Iced Matcha Latte – Vegan",
     price: "4,50 €",
     description: "Mit Pflanzenmilch, 100% vegan",
-    category: "Kalte Signatur Drinks",
+    category: "Kalte Getränke",
     badges: ["🥡 Auch zum Mitnehmen", "🌱 Vegan"],
   },
   {
@@ -913,7 +909,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Fruity Iced Matcha Latte – Vegan",
     price: "3,70 €",
     description: "Fruchtige Note nach Wahl, mit Pflanzenmilch",
-    category: "Kalte Signatur Drinks",
+    category: "Kalte Getränke",
     badges: ["🥡 Auch zum Mitnehmen", "🌱 Vegan"],
   },
   {
@@ -921,16 +917,16 @@ export const menuProducts: MenuProduct[] = [
     name: "Espresso küsst Orange",
     price: "5,00 €",
     description: "Orangensaft, Espresso, Eiswürfel",
-    category: "Kalte Signatur Drinks",
+    category: "Kalte Getränke",
     badge: "🥡 Auch zum Mitnehmen",
   },
-  // Salate & Quark
+  // Salate & Süßspeisen – Quark
   {
     id: "bunter-salat",
     name: "Bunter Salat",
     price: "3,50 €",
     description: "Wildkräutersalat mit Karotte, Paprika, Tomaten & hausgemachtem Dressing",
-    category: "Salate & Quark",
+    category: "Salate",
     badge: "🥕 Vegetarisch",
   },
   {
@@ -938,7 +934,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Caprese Salat",
     price: "3,50 €",
     description: "Wildkräutersalat mit Tomaten, Mozzarella & hausgemachtem Dressing",
-    category: "Salate & Quark",
+    category: "Salate",
     badge: "🥕 Vegetarisch",
   },
   {
@@ -946,7 +942,7 @@ export const menuProducts: MenuProduct[] = [
     name: "2 in 1 Salat",
     price: "6,00 €",
     description: "Bunter Salat & Caprese Salat auf einem Teller",
-    category: "Salate & Quark",
+    category: "Salate",
     badge: "🥕 Vegetarisch",
   },
   {
@@ -954,7 +950,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Frucht Quark",
     price: "3,00 €",
     description: "Cremig gerührter Quark mit Fruchtpüree & Knuspermüsli nach Wahl",
-    category: "Salate & Quark",
+    category: "Süßspeisen",
     badge: "🥕 Vegetarisch",
   },
 ];
