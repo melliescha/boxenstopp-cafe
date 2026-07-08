@@ -35,7 +35,8 @@ export const menuCategories = [
   "Alle",
   "Kaffee",
   "Heiße Getränke",
-  "Kalte Getränke",
+  "Kalte Signatur Drinks",
+  "Erfrischungsgetränke",
   "Shakes & Sportnahrung",
   "Herzhaft & Ofenfrisch",
   "Salate",
@@ -741,7 +742,7 @@ export const menuProducts: MenuProduct[] = [
     badges: ["🥖 Für den kleinen Hunger", "🥕 Vegetarisch"],
     origin: perplexOrigin,
   },
-  // Kalte Getränke
+  // Erfrischungsgetränke
   {
     id: "apfelschorle",
     name: "Apfel- und Fruchtschorle",
@@ -879,13 +880,13 @@ export const menuProducts: MenuProduct[] = [
     category: "Süßspeisen",
     badge: "🥡 Auch zum Mitnehmen",
   },
-  // Kalte Getränke – Signatur Drinks
+  // Kalte Signatur Drinks
   {
     id: "ice-matcha-latte",
     name: "Iced Matcha Latte",
     price: "4,50 €",
     description: "Erfrischender Matcha Latte auf Eis",
-    category: "Kalte Getränke",
+    category: "Kalte Signatur Drinks",
     badge: "🥡 Auch zum Mitnehmen",
   },
   {
@@ -893,7 +894,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Fruity Iced Matcha Latte",
     price: "3,70 €",
     description: "Fruchtige Note nach Wahl",
-    category: "Kalte Getränke",
+    category: "Kalte Signatur Drinks",
     badge: "🥡 Auch zum Mitnehmen",
   },
   {
@@ -901,7 +902,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Iced Matcha Latte – Vegan",
     price: "4,50 €",
     description: "Mit Pflanzenmilch, 100% vegan",
-    category: "Kalte Getränke",
+    category: "Kalte Signatur Drinks",
     badges: ["🥡 Auch zum Mitnehmen", "🌱 Vegan"],
   },
   {
@@ -909,7 +910,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Fruity Iced Matcha Latte – Vegan",
     price: "3,70 €",
     description: "Fruchtige Note nach Wahl, mit Pflanzenmilch",
-    category: "Kalte Getränke",
+    category: "Kalte Signatur Drinks",
     badges: ["🥡 Auch zum Mitnehmen", "🌱 Vegan"],
   },
   {
@@ -917,7 +918,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Espresso küsst Orange",
     price: "5,00 €",
     description: "Orangensaft, Espresso, Eiswürfel",
-    category: "Kalte Getränke",
+    category: "Kalte Signatur Drinks",
     badge: "🥡 Auch zum Mitnehmen",
   },
   // Salate & Süßspeisen – Quark
