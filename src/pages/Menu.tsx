@@ -196,6 +196,13 @@ const Menu = () => {
       <SEO title="Speisekarte – Bistro Boxenstopp Hergatz" description="Unsere Karte: Flammkuchen, Pizza-Snacks, Brote, Barista-Kaffee, Matcha, Proteinshakes und der berühmte Boxenstopp-Spezial mit Kollagen." path="/speisekarte" image="/og/speisekarte.jpg" jsonLd={menuPageSchema} />
       <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-6">
+          {/* Foundation note */}
+          <div className="max-w-2xl mx-auto mb-10 text-center">
+            <div className="rounded-lg border border-bronze/30 bg-bronze/10 px-5 py-4 text-sm md:text-base font-medium text-bronze">
+              Mit jedem Kaffee unterstützt du die Cup&Cino Foundation: 1 Cent pro Tasse für soziale Projekte. ☕
+            </div>
+          </div>
+
           {/* Page title */}
           <div className="text-center mb-10">
             <p className="text-bronze font-medium tracking-[0.2em] uppercase text-sm mb-2">Unsere Auswahl</p>
