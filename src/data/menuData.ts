@@ -35,7 +35,8 @@ export const menuCategories = [
   "Alle",
   "Kaffee",
   "Heiße Getränke",
-  "Kalte Getränke",
+  "Kalte Signatur Drinks",
+  "Erfrischungsgetränke",
   "Shakes & Sportnahrung",
   "Herzhaft & Ofenfrisch",
   "Salate",
@@ -741,13 +742,13 @@ export const menuProducts: MenuProduct[] = [
     badges: ["🥖 Für den kleinen Hunger", "🥕 Vegetarisch"],
     origin: perplexOrigin,
   },
-  // Kalte Getränke
+  // Erfrischungsgetränke
   {
     id: "apfelschorle",
     name: "Apfel- und Fruchtschorle",
     price: "2,25 €",
     description: "Bei Mitnahme zzgl. Pfand",
-    category: "Kalte Getränke",
+    category: "Erfrischungsgetränke",
     volume: "0,33l",
   },
   {
@@ -755,7 +756,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Wasser still/medium/spritzig",
     price: "1,75 €",
     description: "Bei Mitnahme zzgl. Pfand",
-    category: "Kalte Getränke",
+    category: "Erfrischungsgetränke",
     volume: "0,5l",
   },
   {
@@ -763,7 +764,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Säfte (verschiedene Sorten)",
     price: "2,50 €",
     description: "Fruchtige Auswahl",
-    category: "Kalte Getränke",
+    category: "Erfrischungsgetränke",
     volume: "0,25l",
   },
   {
@@ -771,7 +772,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Alkoholfreies Bier",
     price: "3,00 €",
     description: "Nach Wahl",
-    category: "Kalte Getränke",
+    category: "Erfrischungsgetränke",
     volume: "0,33l",
   },
   {
@@ -779,7 +780,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Electrolyte Herbalife-24",
     price: "2,90 €",
     description: "Isotonisches Sportgetränk",
-    category: "Kalte Getränke",
+    category: "Erfrischungsgetränke",
     origin: "Herbalife Nutrition: Seed to Feed Qualitätskontrolle",
   },
   {
@@ -787,7 +788,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Energy Herbalife LIFTOFF",
     price: "3,50 €",
     description: "Energiedrink",
-    category: "Kalte Getränke",
+    category: "Erfrischungsgetränke",
     allergens: "11",
     origin: "Herbalife Nutrition: Seed to Feed Qualitätskontrolle",
   },
@@ -879,13 +880,13 @@ export const menuProducts: MenuProduct[] = [
     category: "Süßspeisen",
     badge: "🥡 Auch zum Mitnehmen",
   },
-  // Kalte Getränke – Signatur Drinks
+  // Kalte Signatur Drinks
   {
     id: "ice-matcha-latte",
     name: "Iced Matcha Latte",
     price: "4,50 €",
     description: "Erfrischender Matcha Latte auf Eis",
-    category: "Kalte Getränke",
+    category: "Kalte Signatur Drinks",
     badge: "🥡 Auch zum Mitnehmen",
   },
   {
@@ -893,7 +894,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Fruity Iced Matcha Latte",
     price: "3,70 €",
     description: "Fruchtige Note nach Wahl",
-    category: "Kalte Getränke",
+    category: "Kalte Signatur Drinks",
     badge: "🥡 Auch zum Mitnehmen",
   },
   {
@@ -901,7 +902,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Iced Matcha Latte – Vegan",
     price: "4,50 €",
     description: "Mit Pflanzenmilch, 100% vegan",
-    category: "Kalte Getränke",
+    category: "Kalte Signatur Drinks",
     badges: ["🥡 Auch zum Mitnehmen", "🌱 Vegan"],
   },
   {
@@ -909,7 +910,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Fruity Iced Matcha Latte – Vegan",
     price: "3,70 €",
     description: "Fruchtige Note nach Wahl, mit Pflanzenmilch",
-    category: "Kalte Getränke",
+    category: "Kalte Signatur Drinks",
     badges: ["🥡 Auch zum Mitnehmen", "🌱 Vegan"],
   },
   {
@@ -917,7 +918,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Espresso küsst Orange",
     price: "5,00 €",
     description: "Orangensaft, Espresso, Eiswürfel",
-    category: "Kalte Getränke",
+    category: "Kalte Signatur Drinks",
     badge: "🥡 Auch zum Mitnehmen",
   },
   // Salate & Süßspeisen – Quark
