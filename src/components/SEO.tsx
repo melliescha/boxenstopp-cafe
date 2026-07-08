@@ -6,6 +6,7 @@ interface SEOProps {
   path: string;
   image?: string;
   type?: string;
+  jsonLd?: object | object[];
 }
 
 const SITE_URL = "https://bistro-boxenstopp.de";
@@ -34,7 +35,20 @@ const setLink = (rel: string, href: string) => {
   el.setAttribute("href", href);
 };
 
-const SEO = ({ title, description, path, image = DEFAULT_IMAGE, type = "website" }: SEOProps) => {
+const JSONLD_ID = "route-jsonld";
+
+const setJsonLd = (data?: object | object[]) => {
+  const existing = document.getElementById(JSONLD_ID);
+  if (existing) existing.remove();
+  if (!data) return;
+  const script = document.createElement("script");
+  script.type = "application/ld+json";
+  script.id = JSONLD_ID;
+  script.text = JSON.stringify(data);
+  document.head.appendChild(script);
+};
+
+const SEO = ({ title, description, path, image = DEFAULT_IMAGE, type = "website", jsonLd }: SEOProps) => {
   useEffect(() => {
     const url = `${SITE_URL}${path}`;
     const img = image.startsWith("http") ? image : `${SITE_URL}${image}`;
@@ -61,9 +75,14 @@ const SEO = ({ title, description, path, image = DEFAULT_IMAGE, type = "website"
     setMeta('meta[name="twitter:title"]', "content", title);
     setMeta('meta[name="twitter:description"]', "content", description);
     setMeta('meta[name="twitter:image"]', "content", img);
-  }, [title, description, path, image, type]);
+
+    // Per-route JSON-LD (sitewide CafeOrCoffeeShop stays in index.html as default)
+    setJsonLd(jsonLd);
+    return () => setJsonLd(undefined);
+  }, [title, description, path, image, type, jsonLd]);
 
   return null;
 };
 
 export default SEO;
+
