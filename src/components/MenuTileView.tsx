@@ -75,7 +75,7 @@ const MenuTileView = () => {
             {/* Image */}
             <div className="relative aspect-square bg-secondary/40">
               {product.image ? (
-                <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+                <img src={product.image} alt={product.name} loading="lazy" decoding="async" className="w-full h-full object-cover" />
               ) : (
                 <div className="w-full h-full flex items-center justify-center text-muted-foreground/20 group-hover:text-muted-foreground/30 transition-colors">
                   <span className="text-4xl">📷</span>

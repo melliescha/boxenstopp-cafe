@@ -244,6 +244,9 @@ const Index = () => {
             height={1080}
             className="w-full h-full object-cover"
             style={{ objectPosition: "center 25%" }}
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
           />
           <div className="absolute inset-0 bg-black/35" />
           <AiBadge variant="overlay" />
@@ -253,6 +256,11 @@ const Index = () => {
               alt="Bistro Boxenstopp"
               className="w-[90%] max-w-[700px] animate-fade-in-up"
               style={{ mixBlendMode: "multiply" }}
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+              width={700}
+              height={200}
             />
           </div>
         </div>

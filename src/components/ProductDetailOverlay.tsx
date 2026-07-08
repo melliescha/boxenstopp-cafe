@@ -82,7 +82,7 @@ const ProductDetailOverlay = ({ product, onClose }: Props) => {
         {/* Image */}
         <div className="relative aspect-[4/3] bg-secondary/50 sm:rounded-t-xl rounded-t-2xl overflow-hidden">
           {product.image ? (
-            <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+            <img src={product.image} alt={product.name} loading="lazy" decoding="async" className="w-full h-full object-cover" />
           ) : (
             <div className="w-full h-full flex items-center justify-center text-muted-foreground/30">
               <span className="text-6xl">📷</span>
