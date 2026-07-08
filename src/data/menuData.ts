@@ -35,8 +35,11 @@ export const menuCategories = [
   "Alle",
   "Kaffee",
   "Heiße Getränke",
+  "Kalte Signatur Drinks",
   "Erfrischungsgetränke",
+  "Eis & Genuss",
   "Süßes",
+  "Salate & Quark",
   "Herzhaft & Ofenfrisch",
   "Shakes",
 ];
