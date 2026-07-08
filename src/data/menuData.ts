@@ -37,11 +37,13 @@ export const menuCategories = [
   "Heiße Getränke",
   "Kalte Signatur Drinks",
   "Erfrischungsgetränke",
-  "Eis & Genuss",
-  "Süßes",
+  "Shakes & Sportnahrung",
+  "Flammkuchen",
+  "Brote & Baguettes",
+  "Pizza-Snacks",
   "Salate & Quark",
-  "Herzhaft & Ofenfrisch",
-  "Shakes",
+  "Süßes",
+  "Eis & Genuss",
 ];
 
 const perplexOrigin = "Von unserem Partner Perplex: Pizza & Baguette Deutschland GmbH, seit über 33 Jahren. Ohne Gentechnik hergestellt gemäß Codexrichtlinie. Kontrolle durch agroVet GmbH.";
