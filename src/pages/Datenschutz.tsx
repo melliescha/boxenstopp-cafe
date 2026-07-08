@@ -591,25 +591,84 @@ const Datenschutz = () => {
           <Section>
             <H2><span id="ki-hinweis">16. Einsatz von KI-generierten Inhalten (EU AI Act)</span></H2>
             <P>
-              Auf dieser Website werden teilweise Bilder, Grafiken und/oder Texte verwendet, die
-              mit Hilfe von Systemen künstlicher Intelligenz (KI) erstellt oder bearbeitet wurden.
-              Dies betrifft insbesondere stimmungsvolle Foto-Eindrücke unseres Bistros, einzelne
-              Speise- und Getränkedarstellungen sowie ergänzende Bildmotive in der Galerie.
+              Wir kennzeichnen den Einsatz künstlicher Intelligenz auf dieser Website freiwillig
+              und transparent im Sinne von Art. 50 der Verordnung (EU) 2024/1689
+              („EU AI Act"), die für Anbieter und Betreiber von KI-Systemen Transparenzpflichten
+              für künstlich erzeugte oder manipulierte Inhalte vorsieht.
+            </P>
+
+            <H3>16.1 Eingesetzte KI-Werkzeuge</H3>
+            <P>
+              Für Konzeption, Text-Entwürfe, Programmierung und Bildmaterial dieser Website haben
+              wir insbesondere folgende KI-Werkzeuge genutzt:
+            </P>
+            <ul style={{ color: warmBrown, fontSize: 16, lineHeight: 1.7, paddingLeft: 24, marginBottom: 14 }}>
+              <li>
+                <strong>Lovable</strong> (Lovable Labs Inc., USA) – KI-gestützte
+                Webentwicklungsplattform zur Erstellung von Layout, Komponenten und Code.
+              </li>
+              <li>
+                <strong>ChatGPT</strong> (OpenAI, L.L.C., USA) – Sprachmodell für Text-Entwürfe,
+                Formulierungshilfen und Recherche.
+              </li>
+              <li>
+                <strong>Google Gemini</strong> (Google Ireland Ltd. / Google LLC) – Sprachmodell
+                für Text- und Recherche-Unterstützung.
+              </li>
+              <li>
+                <strong>Anthropic Claude</strong> (Anthropic PBC, USA) – Sprachmodell für Texte,
+                Code-Reviews und redaktionelle Unterstützung.
+              </li>
+              <li>
+                <strong>Higgsfield AI</strong> (Higgsfield, Inc., USA) – KI-Bildgenerator für
+                stimmungsvolle Foto-Eindrücke, Produkt- und Ambiente-Bilder.
+              </li>
+            </ul>
+            <P>
+              Sämtliche über diese Werkzeuge verarbeiteten Inhalte stammen aus unserem eigenen
+              redaktionellen Umfeld. Personenbezogene Daten unserer Gäste, Kundinnen und Kunden
+              werden dabei <strong>nicht</strong> in KI-Systeme eingegeben oder zu Trainingszwecken
+              weitergegeben.
+            </P>
+
+            <H3>16.2 Keine Abbildung realer Personen</H3>
+            <P>
+              Bei der Erstellung KI-generierter Bilder – insbesondere über Higgsfield AI – haben
+              wir bewusst darauf geachtet, <strong>keine realen, identifizierbaren Personen</strong>
+              {" "}darzustellen. Auf allen KI-generierten Motiven sind ausschließlich fiktive,
+              nicht existierende Personen, symbolische Silhouetten oder Situationen ohne
+              erkennbare Gesichter zu sehen. Es werden weder Gesichter realer Gäste, Mitarbeitender
+              oder Dritter nachgebildet noch biometrische Merkmale bestimmter Personen
+              verarbeitet. Ein <em>Deepfake</em> im Sinne von Art. 3 Nr. 60 EU AI Act liegt daher
+              nicht vor.
             </P>
             <P>
-              Wir kennzeichnen solche Inhalte freiwillig und transparent im Sinne von Art. 50 der
-              Verordnung (EU) 2024/1689 („EU AI Act"). KI-generierte oder KI-bearbeitete Bilder
-              können von der tatsächlichen Realität abweichen, dienen ausschließlich
-              illustrativen Zwecken und stellen keine verbindliche Beschreibung unserer Produkte,
-              Räumlichkeiten oder Dienstleistungen dar. Maßgeblich ist stets das tatsächliche
-              Angebot vor Ort.
+              Fotos, auf denen die Inhaberfamilie zu sehen ist (z.&nbsp;B. auf der Seite „Über
+              uns"), sind reale Aufnahmen mit ausdrücklicher Einwilligung der abgebildeten
+              Personen (Art. 6 Abs. 1 lit. a DSGVO). Diese wurden nicht durch KI generiert;
+              gelegentliche technische Bildoptimierungen (z.&nbsp;B. Retusche, Farbkorrektur)
+              erfolgen ohne Erstellung biometrischer Profile.
             </P>
+
+            <H3>16.3 Kennzeichnung und Aussagekraft</H3>
             <P>
-              Personenbezogene Daten unserer Gäste werden durch den Einsatz dieser KI-Systeme
-              nicht verarbeitet. Sollten in Einzelfällen reale Fotos durch KI nachbearbeitet
-              worden sein (z.&nbsp;B. Bildoptimierung, Retusche), erfolgt dies ohne Erstellung
-              biometrischer Profile.
+              KI-generierte Bilder auf dieser Website sind mit einem entsprechenden Hinweis
+              („KI-generiert" bzw. Icon) versehen. Sie dienen ausschließlich illustrativen
+              Zwecken und können von der tatsächlichen Realität abweichen. Sie stellen keine
+              verbindliche Beschreibung unserer Produkte, Räumlichkeiten oder Dienstleistungen
+              dar. Maßgeblich ist stets das tatsächliche Angebot vor Ort.
             </P>
+
+            <H3>16.4 Verarbeitung durch die KI-Anbieter</H3>
+            <P>
+              Beim bloßen Aufruf unserer Website findet <strong>keine</strong> Datenübermittlung
+              an die genannten KI-Anbieter statt. Die KI-Werkzeuge werden ausschließlich intern von
+              uns zur Erstellung von Inhalten genutzt. Die Anbieter der eingesetzten Systeme haben
+              ihren Sitz teilweise in den USA. Rechtsgrundlage für die interne Nutzung ist Art. 6
+              Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer effizienten Erstellung und
+              Pflege unserer Website).
+            </P>
+
             <P>
               Bei Fragen zum Einsatz von KI auf dieser Website wenden Sie sich gerne an die im
               Impressum genannten Kontaktdaten.
