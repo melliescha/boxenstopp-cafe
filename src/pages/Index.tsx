@@ -10,6 +10,7 @@ import heroLogoSchriftzug from "@/assets/hero-logo-schriftzug.png";
 import { socialLinks } from "@/config/social";
 import VacationNotice from "@/components/VacationNotice";
 import AiBadge from "@/components/AiBadge";
+import { localBusinessSchema } from "@/lib/schema";
 
 
 const highlights = [
