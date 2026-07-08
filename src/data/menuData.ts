@@ -748,7 +748,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Apfel- und Fruchtschorle",
     price: "2,25 €",
     description: "Bei Mitnahme zzgl. Pfand",
-    category: "Kalte Getränke",
+    category: "Erfrischungsgetränke",
     volume: "0,33l",
   },
   {
@@ -756,7 +756,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Wasser still/medium/spritzig",
     price: "1,75 €",
     description: "Bei Mitnahme zzgl. Pfand",
-    category: "Kalte Getränke",
+    category: "Erfrischungsgetränke",
     volume: "0,5l",
   },
   {
@@ -764,7 +764,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Säfte (verschiedene Sorten)",
     price: "2,50 €",
     description: "Fruchtige Auswahl",
-    category: "Kalte Getränke",
+    category: "Erfrischungsgetränke",
     volume: "0,25l",
   },
   {
@@ -772,7 +772,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Alkoholfreies Bier",
     price: "3,00 €",
     description: "Nach Wahl",
-    category: "Kalte Getränke",
+    category: "Erfrischungsgetränke",
     volume: "0,33l",
   },
   {
@@ -780,7 +780,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Electrolyte Herbalife-24",
     price: "2,90 €",
     description: "Isotonisches Sportgetränk",
-    category: "Kalte Getränke",
+    category: "Erfrischungsgetränke",
     origin: "Herbalife Nutrition: Seed to Feed Qualitätskontrolle",
   },
   {
@@ -788,7 +788,7 @@ export const menuProducts: MenuProduct[] = [
     name: "Energy Herbalife LIFTOFF",
     price: "3,50 €",
     description: "Energiedrink",
-    category: "Kalte Getränke",
+    category: "Erfrischungsgetränke",
     allergens: "11",
     origin: "Herbalife Nutrition: Seed to Feed Qualitätskontrolle",
   },
