@@ -85,6 +85,7 @@ const Reviews = () => {
                   {c.icon}
                 </div>
                 <h2 className="font-serif text-xl font-semibold text-foreground mb-3">{c.title}</h2>
+                {c.rating && <RatingBadge value={c.rating.value} count={c.rating.count} />}
                 <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-1">{c.text}</p>
                 <a
                   href={c.href}
