@@ -886,7 +886,7 @@ export const menuProducts: MenuProduct[] = [
   // Kalte Signatur Drinks
   {
     id: "ice-matcha-latte",
-    name: "Ice Matcha Latte",
+    name: "Iced Matcha Latte",
     price: "4,50 €",
     description: "Erfrischender Matcha Latte auf Eis",
     category: "Kalte Signatur Drinks",
@@ -894,7 +894,7 @@ export const menuProducts: MenuProduct[] = [
   },
   {
     id: "fruity-ice-matcha-latte",
-    name: "Fruity Ice Matcha Latte",
+    name: "Fruity Iced Matcha Latte",
     price: "3,70 €",
     description: "Fruchtige Note nach Wahl",
     category: "Kalte Signatur Drinks",
@@ -902,7 +902,7 @@ export const menuProducts: MenuProduct[] = [
   },
   {
     id: "ice-matcha-latte-vegan",
-    name: "Ice Matcha Latte – Vegan",
+    name: "Iced Matcha Latte – Vegan",
     price: "4,50 €",
     description: "Mit Pflanzenmilch, 100% vegan",
     category: "Kalte Signatur Drinks",
@@ -910,7 +910,7 @@ export const menuProducts: MenuProduct[] = [
   },
   {
     id: "fruity-ice-matcha-latte-vegan",
-    name: "Fruity Ice Matcha Latte – Vegan",
+    name: "Fruity Iced Matcha Latte – Vegan",
     price: "3,70 €",
     description: "Fruchtige Note nach Wahl, mit Pflanzenmilch",
     category: "Kalte Signatur Drinks",
