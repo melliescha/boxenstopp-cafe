@@ -117,8 +117,16 @@ const ReviewCTASection = () => {
       style={{ backgroundColor: "#FEF4EC", borderTop: "1px solid #9E7C4E33", borderBottom: "1px solid #9E7C4E33" }}
     >
       <div className="container mx-auto px-6 text-center max-w-2xl">
-        <p className={`font-serif text-2xl md:text-3xl font-bold mb-6 ${visible ? "animate-fade-in-up" : "opacity-0"}`} style={{ color: "#164472" }}>
+        <p className={`font-serif text-2xl md:text-3xl font-bold mb-4 ${visible ? "animate-fade-in-up" : "opacity-0"}`} style={{ color: "#164472" }}>
           Wart ihr schon bei uns? Wir freuen uns über eure Bewertung.
+        </p>
+        <p
+          className={`text-sm md:text-base mb-6 ${visible ? "animate-fade-in-up" : "opacity-0"}`}
+          style={{ color: "#164472" }}
+          aria-label="5,0 von 5 Sternen auf Google (3 Bewertungen) und TripAdvisor (5 Bewertungen)"
+        >
+          <span aria-hidden="true" style={{ color: "#D4A54A" }}>★★★★★</span>{" "}
+          <strong>5,0</strong> auf Google (3) · <strong>5,0</strong> auf TripAdvisor (5)
         </p>
         <a
           href={socialLinks.googleReview}

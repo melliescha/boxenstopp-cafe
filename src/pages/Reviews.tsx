@@ -1,16 +1,26 @@
-import { Instagram } from "lucide-react";
+import { Instagram, Star } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import { TripAdvisorIcon, GoogleIcon } from "@/components/icons/SocialIcons";
 import { socialLinks } from "@/config/social";
 
-const cards = [
+type Card = {
+  icon: JSX.Element;
+  title: string;
+  text: string;
+  cta: string;
+  href: string;
+  rating?: { value: string; count: number };
+};
+
+const cards: Card[] = [
   {
     icon: <GoogleIcon size={32} />,
     title: "Google Bewertungen",
     text: "Bewertet uns direkt auf Google. Dauert nur 30 Sekunden.",
     cta: "Auf Google bewerten",
     href: socialLinks.googleReview,
+    rating: { value: "5,0", count: 3 },
   },
   {
     icon: <TripAdvisorIcon size={32} style={{ color: "#34E0A1" }} />,
@@ -18,6 +28,7 @@ const cards = [
     text: "Eure Erfahrung auf der Reise-Plattform teilen.",
     cta: "Auf TripAdvisor bewerten",
     href: socialLinks.tripadvisor,
+    rating: { value: "5,0", count: 5 },
   },
   {
     icon: <Instagram size={32} style={{ color: "#E1306C" }} />,
@@ -27,6 +38,19 @@ const cards = [
     href: socialLinks.instagram,
   },
 ];
+
+const RatingBadge = ({ value, count }: { value: string; count: number }) => (
+  <div className="flex items-center justify-center gap-1.5 mb-3" aria-label={`${value} von 5 Sternen bei ${count} Bewertungen`}>
+    <div className="flex" aria-hidden="true">
+      {[0, 1, 2, 3, 4].map((i) => (
+        <Star key={i} size={16} className="fill-warm-gold text-warm-gold" style={{ color: "#D4A54A", fill: "#D4A54A" }} />
+      ))}
+    </div>
+    <span className="text-sm font-semibold text-foreground">{value}</span>
+    <span className="text-sm text-muted-foreground">· {count} {count === 1 ? "Bewertung" : "Bewertungen"}</span>
+  </div>
+);
+
 
 const Reviews = () => {
   return (
@@ -61,6 +85,7 @@ const Reviews = () => {
                   {c.icon}
                 </div>
                 <h2 className="font-serif text-xl font-semibold text-foreground mb-3">{c.title}</h2>
+                {c.rating && <RatingBadge value={c.rating.value} count={c.rating.count} />}
                 <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-1">{c.text}</p>
                 <a
                   href={c.href}
