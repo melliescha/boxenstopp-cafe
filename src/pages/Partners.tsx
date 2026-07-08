@@ -128,7 +128,7 @@ const Partners = () => {
       </section>
 
       {/* PARTNER 3: Cup&Cino Foundation — Navy highlight */}
-      <section className="py-16 md:py-24" style={{ background: "linear-gradient(135deg, #164472, #1d5a8a)" }}>
+      <section id="foundation" className="py-16 md:py-24" style={{ background: "linear-gradient(135deg, #164472, #1d5a8a)" }}>
         <div className="container mx-auto px-6 max-w-4xl text-center">
           <p className="text-[#b8943e] font-medium tracking-[0.2em] uppercase text-sm mb-2">☕ Cup&Cino Foundation</p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8" style={{ color: "#fef4ec" }}>
