@@ -35,6 +35,7 @@ const Reviews = () => {
         title="Bewertungen – Bistro Boxenstopp Hergatz"
         description="Bewertet das Bistro Boxenstopp in Hergatz auf Google, TripAdvisor und Instagram."
         path="/bewertungen"
+        image="/og/bewertungen.jpg"
       />
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6">
