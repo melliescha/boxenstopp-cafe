@@ -103,7 +103,7 @@ const Datenschutz = () => {
             className="font-sans italic"
             style={{ color: warmBrown, fontSize: 14, marginBottom: 40 }}
           >
-            Stand: Mai 2026
+            Stand: Juli 2026
           </p>
 
           <Section>
