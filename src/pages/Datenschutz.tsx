@@ -680,7 +680,7 @@ const Datenschutz = () => {
           <Section>
             <H2>17. Aktualität und Änderung dieser Datenschutzerklärung</H2>
             <P>
-              Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Mai 2026.
+              Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Juli 2026.
             </P>
             <P>
               Durch die Weiterentwicklung unserer Website und Angebote oder aufgrund geänderter
