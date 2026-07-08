@@ -5,6 +5,7 @@ import MenuTileView from "@/components/MenuTileView";
 import FlipbookMenu from "@/components/FlipbookMenu";
 import { Download, Loader2 } from "lucide-react";
 import { toast } from "sonner";
+import { menuPageSchema } from "@/lib/schema";
 
 type Tab = "karte" | "flipbook";
 
