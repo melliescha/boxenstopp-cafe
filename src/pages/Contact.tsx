@@ -15,12 +15,15 @@ import {
   ParkingCircle,
   Lightbulb,
   Route,
+  ShowerHead,
 } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import VacationNotice from "@/components/VacationNotice";
 import FitesHint from "@/components/FitesHint";
+import { isShowerFeatureVisible, shower } from "@/lib/features";
 import { contactPageSchema } from "@/lib/schema";
+
 import parkplaetzeImg from "@/assets/parkplaetze.jpg";
 import treppeImg from "@/assets/treppe.jpg";
 import eingangImg from "@/assets/eingang.jpg";
