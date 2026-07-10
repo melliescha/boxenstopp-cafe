@@ -6,6 +6,8 @@ import SEO from "@/components/SEO";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { Input } from "@/components/ui/input";
 import { faqBlocks, allFaqs } from "@/data/faqData";
+import { isShowerFeatureVisible } from "@/lib/features";
+
 
 const FAQ = () => {
   const [query, setQuery] = useState("");
