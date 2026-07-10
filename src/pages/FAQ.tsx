@@ -12,12 +12,12 @@ import { isShowerFeatureVisible } from "@/lib/features";
 const FAQ = () => {
   const [query, setQuery] = useState("");
 
-  // Inject FAQPage JSON-LD with all 44 Q&As
+  // Inject FAQPage JSON-LD with all visible Q&As
   useEffect(() => {
     const schema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      mainEntity: allFaqs.map((f) => ({
+      mainEntity: visibleFaqs.map((f) => ({
         "@type": "Question",
         name: f.question,
         acceptedAnswer: {
@@ -26,6 +26,7 @@ const FAQ = () => {
         },
       })),
     };
+
     const script = document.createElement("script");
     script.type = "application/ld+json";
     script.id = "faq-page-schema";
