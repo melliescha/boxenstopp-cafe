@@ -1,7 +1,9 @@
 export interface FaqItem {
   question: string;
   answer: string;
+  feature?: string;
 }
+
 
 export interface FaqBlock {
   id: string;
