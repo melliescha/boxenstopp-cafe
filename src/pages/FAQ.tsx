@@ -39,9 +39,21 @@ const FAQ = () => {
 
   const q = query.trim().toLowerCase();
 
+  const visibleFaqs = useMemo(
+    () => (isShowerFeatureVisible() ? allFaqs : allFaqs.filter((f) => f.feature !== "shower")),
+    [],
+  );
+
   const filteredBlocks = useMemo(() => {
-    if (!q) return faqBlocks;
-    return faqBlocks
+    let blocks = faqBlocks;
+    if (!isShowerFeatureVisible()) {
+      blocks = blocks.map((b) => ({
+        ...b,
+        items: b.items.filter((i) => i.feature !== "shower"),
+      }));
+    }
+    if (!q) return blocks;
+    return blocks
       .map((b) => ({
         ...b,
         items: b.items.filter(
@@ -52,6 +64,7 @@ const FAQ = () => {
       }))
       .filter((b) => b.items.length > 0);
   }, [q]);
+
 
   const handleNav = (id: string) => {
     const el = document.getElementById(`block-${id}`);
