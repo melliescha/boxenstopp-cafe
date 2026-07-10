@@ -1,10 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { Map, Thermometer, ShowerHead, BatteryCharging, Sun, Users, Bike, Clock, ArrowRight } from "lucide-react";
+import { isShowerFeatureVisible } from "@/lib/features";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import BestsellerSection from "@/components/BestsellerSection";
+import ShowerSection from "@/components/ShowerSection";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
+
 import heroBg from "@/assets/hero-bistro.jpg";
 import heroLogoSchriftzug from "@/assets/hero-logo-schriftzug.png";
 import { socialLinks } from "@/config/social";
