@@ -7,12 +7,7 @@ import {
   Bike,
   Car,
   Bus,
-  Navigation,
   Globe,
-  Home,
-  DoorOpen,
-  Trees,
-  ParkingCircle,
   Lightbulb,
   Route,
   ShowerHead,
@@ -21,27 +16,16 @@ import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import VacationNotice from "@/components/VacationNotice";
 import FitesHint from "@/components/FitesHint";
+import Wegweiser from "@/components/Wegweiser";
 import { isShowerFeatureVisible, shower } from "@/lib/features";
 import { contactPageSchema } from "@/lib/schema";
-
-import parkplaetzeImg from "@/assets/parkplaetze.jpg";
-import treppeImg from "@/assets/treppe.jpg";
-import eingangImg from "@/assets/eingang.jpg";
-import aussenterrasseImg from "@/assets/aussenterrasse.jpg";
-import fahrradstaenderImg from "@/assets/fahrradstaender.jpg";
-import aussenansichtHausImg from "@/assets/aussenansicht-haus.jpg";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import {
-  Dialog,
-  DialogContent,
-  DialogTitle,
-  DialogDescription,
-} from "@/components/ui/dialog";
+
 
 const PHONE_DISPLAY = "0171 6226201";
 const PHONE_LINK = "+491716226201";
