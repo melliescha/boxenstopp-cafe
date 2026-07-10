@@ -29,9 +29,12 @@ const highlights = [
   },
   {
     icon: ShowerHead,
-    title: "Duschen vorhanden",
-    text: "Frisch machen nach der Radtour oder dem Training, gegen kleine Gebühr. Hinweis: Aktuell nur Damendusche verfügbar, die Herrendusche befindet sich noch im Umbau.",
+    title: isShowerFeatureVisible() ? "Duschen für 3 €" : "Duschen vorhanden",
+    text: isShowerFeatureVisible()
+      ? "Frisch machen nach der Radtour, dem Joggen oder auf der Durchreise. Kinder unter 10 Jahren kostenlos in Begleitung der Eltern."
+      : "Frisch machen nach der Radtour oder dem Training, gegen kleine Gebühr. Hinweis: Aktuell nur Damendusche verfügbar, die Herrendusche befindet sich noch im Umbau.",
   },
+
   {
     icon: BatteryCharging,
     title: "Steckdosen zum Aufladen",
