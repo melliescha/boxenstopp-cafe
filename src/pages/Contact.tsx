@@ -56,14 +56,6 @@ const nearby = [
   { from: "Heimenkirch", info: "ca. 8 km · etwa 10 Min" },
 ];
 
-const placeholders = [
-  { icon: Home, caption: "Außenansicht unseres Hauses am Südhang 1", image: aussenansichtHausImg },
-  { icon: Navigation, caption: "Die Treppe führt euch direkt zu uns", image: treppeImg },
-  { icon: DoorOpen, caption: "Unser Eingang", image: eingangImg },
-  { icon: Trees, caption: "Unsere Außenterrasse mit Schatten und Schirm", image: aussenterrasseImg },
-  { icon: ParkingCircle, caption: "6 Kundenparkplätze und 4 öffentliche Parkplätze am Haus", image: parkplaetzeImg },
-  { icon: Bike, caption: "Fahrradständer am Eingang, direkt am Bodensee-Königssee-Radweg", image: fahrradstaenderImg },
-];
 
 const Contact = () => {
   const [lightbox, setLightbox] = useState<number | null>(null);
