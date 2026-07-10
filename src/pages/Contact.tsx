@@ -15,12 +15,15 @@ import {
   ParkingCircle,
   Lightbulb,
   Route,
+  ShowerHead,
 } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import VacationNotice from "@/components/VacationNotice";
 import FitesHint from "@/components/FitesHint";
+import { isShowerFeatureVisible, shower } from "@/lib/features";
 import { contactPageSchema } from "@/lib/schema";
+
 import parkplaetzeImg from "@/assets/parkplaetze.jpg";
 import treppeImg from "@/assets/treppe.jpg";
 import eingangImg from "@/assets/eingang.jpg";
@@ -354,8 +357,27 @@ const Contact = () => {
               </AccordionContent>
             </AccordionItem>
 
+            {isShowerFeatureVisible() && (
+              <AccordionItem
+                value="dusche"
+                className="bg-white rounded-xl px-5 border"
+                style={{ borderColor: BORDER }}
+              >
+                <AccordionTrigger className="hover:no-underline py-4">
+                  <span className="flex items-center gap-3 font-serif text-lg" style={{ color: NAVY }}>
+                    <ShowerHead className="w-5 h-5" style={{ color: BRONZE }} aria-hidden="true" />
+                    Duschen vor Ort
+                  </span>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground leading-relaxed">
+                  Bei uns könnt ihr für {shower.price} pro Person duschen – perfekt nach der Radtour, dem Joggen, vor der Arbeit oder auf der Durchreise. Kinder unter {shower.kidsAge} Jahren in Begleitung der Eltern sind kostenlos.
+                </AccordionContent>
+              </AccordionItem>
+            )}
+
             <AccordionItem
               value="bahn"
+
               className="bg-white rounded-xl px-5 border"
               style={{ borderColor: BORDER }}
             >

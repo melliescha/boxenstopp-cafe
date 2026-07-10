@@ -6,16 +6,18 @@ import SEO from "@/components/SEO";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { Input } from "@/components/ui/input";
 import { faqBlocks, allFaqs } from "@/data/faqData";
+import { isShowerFeatureVisible } from "@/lib/features";
+
 
 const FAQ = () => {
   const [query, setQuery] = useState("");
 
-  // Inject FAQPage JSON-LD with all 44 Q&As
+  // Inject FAQPage JSON-LD with all visible Q&As
   useEffect(() => {
     const schema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      mainEntity: allFaqs.map((f) => ({
+      mainEntity: visibleFaqs.map((f) => ({
         "@type": "Question",
         name: f.question,
         acceptedAnswer: {
@@ -24,6 +26,7 @@ const FAQ = () => {
         },
       })),
     };
+
     const script = document.createElement("script");
     script.type = "application/ld+json";
     script.id = "faq-page-schema";
@@ -37,9 +40,21 @@ const FAQ = () => {
 
   const q = query.trim().toLowerCase();
 
+  const visibleFaqs = useMemo(
+    () => (isShowerFeatureVisible() ? allFaqs : allFaqs.filter((f) => f.feature !== "shower")),
+    [],
+  );
+
   const filteredBlocks = useMemo(() => {
-    if (!q) return faqBlocks;
-    return faqBlocks
+    let blocks = faqBlocks;
+    if (!isShowerFeatureVisible()) {
+      blocks = blocks.map((b) => ({
+        ...b,
+        items: b.items.filter((i) => i.feature !== "shower"),
+      }));
+    }
+    if (!q) return blocks;
+    return blocks
       .map((b) => ({
         ...b,
         items: b.items.filter(
@@ -50,6 +65,7 @@ const FAQ = () => {
       }))
       .filter((b) => b.items.length > 0);
   }, [q]);
+
 
   const handleNav = (id: string) => {
     const el = document.getElementById(`block-${id}`);

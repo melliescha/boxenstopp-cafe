@@ -1,10 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { Map, Thermometer, ShowerHead, BatteryCharging, Sun, Users, Bike, Clock, ArrowRight } from "lucide-react";
+import { isShowerFeatureVisible } from "@/lib/features";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import BestsellerSection from "@/components/BestsellerSection";
+import ShowerSection from "@/components/ShowerSection";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
+
 import heroBg from "@/assets/hero-bistro.jpg";
 import heroLogoSchriftzug from "@/assets/hero-logo-schriftzug.png";
 import { socialLinks } from "@/config/social";
@@ -26,11 +29,14 @@ const highlights = [
   },
   {
     icon: ShowerHead,
-    title: "Duschen vorhanden",
-    text: "Frisch machen nach der Radtour oder dem Training, gegen kleine Gebühr. Hinweis: Aktuell nur Damendusche verfügbar, die Herrendusche befindet sich noch im Umbau.",
+    title: isShowerFeatureVisible() ? "Duschen für 3 €" : "Duschen vorhanden",
+    text: isShowerFeatureVisible()
+      ? "Frisch machen nach der Radtour, dem Joggen oder auf der Durchreise. Kinder unter 10 Jahren kostenlos in Begleitung der Eltern."
+      : "Frisch machen nach der Radtour oder dem Training, gegen kleine Gebühr. Hinweis: Aktuell nur Damendusche verfügbar, die Herrendusche befindet sich noch im Umbau.",
   },
   {
     icon: BatteryCharging,
+
     title: "Steckdosen zum Aufladen",
     text: "Bei uns lädst nicht nur du auf, sondern auch dein Handy, dein Navi und sogar dein E-Bike. Steckdosen findest du bei uns kostenlos.",
   },
@@ -330,8 +336,12 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Shower promo */}
+      <ShowerSection />
+
       {/* Why Us */}
       <section className="py-20 bg-primary text-primary-foreground">
+
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-center mb-12">
             Ein Bistro, das man nicht erwartet, und nicht mehr vergisst

@@ -1,7 +1,9 @@
 export interface FaqItem {
   question: string;
   answer: string;
+  feature?: string;
 }
+
 
 export interface FaqBlock {
   id: string;
@@ -196,10 +198,17 @@ export const faqBlocks: FaqBlock[] = [
           "Eine offizielle E-Bike Ladestation haben wir noch nicht. ABER ihr dürft gerne unsere Steckdosen nutzen. Einfach fragen, wir machen das möglich.",
       },
       {
+        feature: "shower",
+        question: "Kann ich bei euch duschen?",
+        answer:
+          "Ja, wir bieten Duschen für 3,00 € pro Person an. Perfekt nach der Radtour, dem Joggen, vor der Arbeit oder auf der Durchreise. Kinder unter 10 Jahren in Begleitung der Eltern sind kostenlos.",
+      },
+      {
         question: "Was bietet ihr Sportlern?",
         answer:
           "Wir haben Protein und Nährshakes von Herbalife, Mineral und Isogetränke sowie Energie Riegel. Egal ob nach dem Training, nach der Radtour oder zwischendurch, wir versorgen euch.",
       },
+
       {
         question: "Bietet ihr auch Recovery nach dem Workout im FITES?",
         answer:
