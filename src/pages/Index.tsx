@@ -6,6 +6,8 @@ import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import BestsellerSection from "@/components/BestsellerSection";
 import ShowerSection from "@/components/ShowerSection";
+import Wegweiser from "@/components/Wegweiser";
+
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 
 import heroBg from "@/assets/hero-bistro.jpg";
