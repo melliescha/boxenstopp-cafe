@@ -58,8 +58,8 @@ const nearby = [
 
 
 const Contact = () => {
-  const [lightbox, setLightbox] = useState<number | null>(null);
   const [mapConsent, setMapConsent] = useState(false);
+
 
   useEffect(() => {
     const placeSchema = {
