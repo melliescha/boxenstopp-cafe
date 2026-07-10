@@ -34,9 +34,9 @@ const highlights = [
       ? "Frisch machen nach der Radtour, dem Joggen oder auf der Durchreise. Kinder unter 10 Jahren kostenlos in Begleitung der Eltern."
       : "Frisch machen nach der Radtour oder dem Training, gegen kleine Gebühr. Hinweis: Aktuell nur Damendusche verfügbar, die Herrendusche befindet sich noch im Umbau.",
   },
-
   {
     icon: BatteryCharging,
+
     title: "Steckdosen zum Aufladen",
     text: "Bei uns lädst nicht nur du auf, sondern auch dein Handy, dein Navi und sogar dein E-Bike. Steckdosen findest du bei uns kostenlos.",
   },
