@@ -1,4 +1,4 @@
-import { ShowerHead, Bike, Footprints, Briefcase, Route, Caravan } from "lucide-react";
+import { ShowerHead, Bike, Footprints, Briefcase, Route, Caravan, Euro } from "lucide-react";
 import { isShowerFeatureVisible, shower } from "@/lib/features";
 
 const useCases = [
@@ -26,6 +26,11 @@ const useCases = [
     icon: Caravan,
     label: "Für Camper",
     text: "Wohnmobil-Stopp mit frischer Dusche und gutem Kaffee.",
+  },
+  {
+    icon: Euro,
+    label: `Duschen für ${shower.price} pro Person`,
+    text: `Kinder unter ${shower.kidsAge} Jahren kostenlos in Begleitung der Eltern. Handtuch mitbringen oder bei uns erfragen.`,
   },
 ];
 
