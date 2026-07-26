@@ -51,20 +51,23 @@ const Partners = () => {
             <div className="order-2 md:order-1">
               <img src={perplexLogo} alt="Perplex Logo" className="h-12 mb-6" loading="lazy" />
               <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
-                Seit über 33 Jahren
+                Handgemacht in Deutschland · Seit über 33 Jahren
               </span>
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Perplex: Keine Kompromisse beim Geschmack
+                Perplex: Handgemacht in Deutschland – ehrlich statt Massenware
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Was als Idee begann, feinste Tiefkühlbackwaren für Profis zu schaffen, ist heute eine Marke, der Gastronomie, Hotellerie und Handel in ganz Deutschland vertrauen. Seit über 33 Jahren steht Perplex für Leidenschaft, Handwerk und kompromisslose Qualität.
+                  Klartext vorab: Nahezu jede Gastronomie – von der Pizzeria bis zum Hotel – arbeitet mit vorbereiteten, gekühlten oder tiefgekühlten Komponenten. Das ist Alltag in der Branche, wird nur selten offen gesagt. Wir sagen es. Und wir sagen euch auch, von wem unsere Ware kommt.
                 </p>
                 <p>
-                  Ihre Produzenten sind keine anonymen Fabriken, sondern Manufakturen mit Herz. Hier wird noch von Hand belegt, abgeschmeckt und verfeinert, und mit moderner Technik perfektioniert. Ob Flammkuchen oder Snack: Jedes Produkt ist einfach in der Zubereitung und authentisch im Geschmack.
+                  Unser Partner <strong className="text-foreground">Perplex</strong> ist keine anonyme Industrie&shy;fabrik, sondern eine deutsche Manufaktur mit über 33 Jahren Erfahrung. Jeder Flammkuchen, jedes Baguette wird in Deutschland <strong className="text-foreground">von Hand belegt</strong>, mit frischen Zutaten verfeinert und erst dann schockgefrostet – damit der Geschmack am Ofen bei uns genau so ankommt, wie er die Manufaktur verlassen hat.
                 </p>
                 <p>
-                  Für uns bedeutet das: Wenn du bei uns einen Flammkuchen bestellst, bekommst du ein Produkt, hinter dem über drei Jahrzehnte Erfahrung stehen.
+                  Der Unterschied zu „TK-Ware aus dem Supermarkt": handwerkliche Produktion, kontrollierte Rohstoffe ohne Gentechnik (Codex-Richtlinie, Kontrolle durch agroVet GmbH) und volle Transparenz. Vergleichbar damit, wenn ihr euch zu Hause einen Flammkuchen frisch belegt und für später einfriert – nur eben von Profis mit drei Jahrzehnten Erfahrung.
+                </p>
+                <p className="text-sm italic">
+                  Wir könnten so tun, als würden wir alles selbst kneten. Machen wir aber nicht. Wir stehen zu unserem Partner – weil die Qualität stimmt und weil Ehrlichkeit besser schmeckt als Marketing.
                 </p>
               </div>
             </div>
@@ -81,23 +84,31 @@ const Partners = () => {
 
           {/* Highlight Box */}
           <div className="mt-12 bg-card rounded-xl border border-bronze/20 p-8">
-            <div className="grid sm:grid-cols-3 gap-6">
+            <div className="grid sm:grid-cols-4 gap-6">
+              <div className="text-center sm:text-left">
+                <p className="text-2xl mb-2">🇩🇪</p>
+                <p className="font-serif font-bold text-foreground mb-1">Made in Germany</p>
+                <p className="text-muted-foreground text-sm">Produktion in deutscher Manufaktur</p>
+              </div>
               <div className="text-center sm:text-left">
                 <p className="text-2xl mb-2">🤝</p>
-                <p className="font-serif font-bold text-foreground mb-1">Handwerkliche Produktion</p>
-                <p className="text-muted-foreground text-sm">Von Hand belegt und verfeinert</p>
+                <p className="font-serif font-bold text-foreground mb-1">Von Hand belegt</p>
+                <p className="text-muted-foreground text-sm">Echtes Handwerk, keine Fließbandware</p>
               </div>
               <div className="text-center sm:text-left">
                 <p className="text-2xl mb-2">🌿</p>
-                <p className="font-serif font-bold text-foreground mb-1">Kontrollierte Zutaten</p>
-                <p className="text-muted-foreground text-sm">Hochwertige Rohstoffe, klare Standards</p>
+                <p className="font-serif font-bold text-foreground mb-1">Ohne Gentechnik</p>
+                <p className="text-muted-foreground text-sm">Codex-Richtlinie, kontrolliert von agroVet</p>
               </div>
               <div className="text-center sm:text-left">
-                <p className="text-2xl mb-2">⚡</p>
-                <p className="font-serif font-bold text-foreground mb-1">Einfache Zubereitung</p>
-                <p className="text-muted-foreground text-sm">Schnell servierbar, dauerhaft stabil, geschmacklich auf den Punkt</p>
+                <p className="text-2xl mb-2">👀</p>
+                <p className="font-serif font-bold text-foreground mb-1">Volle Transparenz</p>
+                <p className="text-muted-foreground text-sm">Lieferant und Nährwerte offen gelistet</p>
               </div>
             </div>
+            <p className="mt-6 text-xs text-muted-foreground text-center sm:text-left">
+              Kleiner Reality-Check: Nach Branchenschätzungen setzt ein Großteil der Gastronomie in Deutschland auf vorbereitete oder tiefgekühlte Komponenten. Wir verstecken das nicht – wir wählen den Partner sorgfältig aus.
+            </p>
           </div>
         </div>
       </section>

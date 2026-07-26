@@ -93,9 +93,9 @@ export const faqBlocks: FaqBlock[] = [
           "Verstehen wir, wir hören das oft. Die Marke polarisiert. Unsere Antwort: Wir nutzen Herbalife seit über 20 Jahren selbst. Eugen ist deshalb sogar VIP Berater. Was uns überzeugt: extrem wenige Zusatzstoffe, sehr viele Vitamine im Mahlzeitenshake (was die meisten anderen Mahlzeitenshakes nicht haben, die haben oft viele Farbstoffe und kaum Vitamine), und der Geschmack ist natürlich, nicht künstlich. Probiert's einfach selbst.",
       },
       {
-        question: "Wer ist Perplex und warum nicht selbstgemacht?",
+        question: "Ist Perplex nicht einfach TK-Ware?",
         answer:
-          "Perplex ist unser Partner für Flammkuchen. Warum? Weil sie genau unsere Philosophie teilen: keine Massenware mit unnötigen Zusatzstoffen, sondern ehrliche Zutaten. Selbstgemacht klingt schön, aber Perplex liefert eine Qualität, die wir alleine in der Küche nicht so konstant hinbekommen würden. Und das schmeckt ihr.",
+          "Kurze, ehrliche Antwort: Ja, Perplex-Produkte werden schockgefrostet geliefert – wie in nahezu jeder Gastronomie in Deutschland (Pizzeria, Hotel, Restaurant). Der Unterschied: Perplex ist eine deutsche Manufaktur, die seit über 33 Jahren Flammkuchen, Baguettes & Co. in Deutschland von Hand belegt, mit frischen Zutaten verfeinert und erst danach einfriert – ohne Gentechnik, kontrolliert nach Codex-Richtlinie durch agroVet. Das ist keine anonyme Industrie-TK aus dem Supermarkt, sondern Handwerk aus Deutschland. Wir könnten so tun, als würden wir selbst kneten – tun wir aber nicht. Wir stehen zu unserem Partner.",
       },
     ],
   },
@@ -315,7 +315,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Hüttenbrot? Das macht doch jeder. Was ist daran besonders?",
         answer:
-          "Ehrlich gesagt: Wir machen das Brot nicht selbst, das kommt ofenfrisch und handbelegt von unserem Partner Perplex. Klingt simpel, aber wenn ihr es einmal probiert habt, garantieren wir euch: ihr kommt wieder. Simpel, deftig, einfach nur gut.",
+          "Ehrlich: Wir backen das Brot nicht selbst. Es kommt handbelegt aus einer deutschen Manufaktur (Perplex, seit über 33 Jahren) und wird bei uns ofenfrisch aufgebacken. Klingt simpel, ist es auch – aber wenn ihr's einmal probiert habt, kommt ihr wieder. Simpel, deftig, einfach gut.",
       },
       {
         question: "Ein Café mit Eiweißshakes und Kollagen-Kaffee. Ist das nicht Hipster-Quatsch fürs Instagram?",
@@ -335,7 +335,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Macht ihr selbst was, oder kommt alles aus der Tiefkühltruhe?",
         answer:
-          "Alle unsere ofenfrischen Speisen kommen von unserem Partner Perplex. Auch wenn diese tiefgefroren sind: das ist keine Massenware aus dem Supermarkt. Alles ist handbelegt und hergemacht mit frischen Zutaten. Vergleichbar damit, wenn ihr euch einen Flammkuchen selbst macht und für später einfriert. Ganz ehrlich: Kaum noch ein Restaurant bietet frische Flammkuchen an. Wir sind ehrlich mit euch und listen alle Nährwerte, Inhaltsstoffe und unsere Lieferanten transparent auf.",
+          "Klartext: Unsere ofenfrischen Speisen (Flammkuchen, Pizza, Baguette, Hüttenbrot) kommen von Perplex – einer deutschen Manufaktur, die seit über 33 Jahren in Deutschland von Hand belegt und erst danach schockfrostet. Das ist der Branchen-Standard – nahezu jede Gastronomie, jede Pizzeria, jedes Hotel arbeitet mit vorbereiteten oder tiefgekühlten Komponenten. Der Unterschied ist die Qualität: Handwerk statt Fließband, ohne Gentechnik, kontrolliert durch agroVet. Vergleichbar damit, wenn ihr euch zu Hause einen Flammkuchen frisch belegt und für später einfriert – nur eben von Profis. Wir sind ehrlich damit und listen Lieferanten, Nährwerte und Inhaltsstoffe transparent auf. Was wir vor Ort frisch machen: Salate, Shakes, Kaffee, Iced Drinks, Quark & Toppings.",
       },
       {
         question: "Eugen ist VIP-Berater bei Herbalife. Wollt ihr uns das jetzt verkaufen?",
