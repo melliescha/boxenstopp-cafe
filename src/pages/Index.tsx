@@ -74,7 +74,7 @@ const faqs = [
   {
     question: "Ist das ein Privatgrundstück? Darf ich da überhaupt hin?",
     answer:
-      "Ja, ihr dürft! Das Gebäude ist gleichzeitig unser Einfamilienhaus, das verwirrt viele. Außen führt eine Treppe nach unten zur Terrasse und zum Eingang. Genau da kommt ihr rein. Auf dem Schild seht ihr „Bistro Boxenstopp\" und „FITES Allgäu\" – beides ist im selben Gebäude. Einfach die Treppe runter, Türe auf, willkommen!",
+      "Ja, ihr dürft! Das Gebäude ist gleichzeitig unser Einfamilienhaus, das verwirrt viele. Außen führt eine Treppe nach unten zur Terrasse und zum Eingang. Genau da kommt ihr rein. Auf dem Schild seht ihr „Bistro Boxenstopp\" und „FITES Allgäu\", beides ist im selben Gebäude. Einfach die Treppe runter, Türe auf, willkommen!",
   },
   {
     question: "Muss ich Fitnessmitglied sein, um ins Bistro zu kommen?",
