@@ -169,7 +169,7 @@ const FitesAllgaeu = () => {
       {/* URGENCY BAR */}
       <section className="py-4" style={{ backgroundColor: GOLD }}>
         <div className="container mx-auto px-6 text-center font-semibold" style={{ color: NAVY }}>
-          Aktion endet am 31. Oktober 2026. Ruf einfach an: <a href={`tel:${PHONE_LINK}`} className="underline">{PHONE_DISPLAY}</a>
+          Aktion endet am 31. Dezember 2026. Ruf einfach an: <a href={`tel:${PHONE_LINK}`} className="underline">{PHONE_DISPLAY}</a>
         </div>
       </section>
 
