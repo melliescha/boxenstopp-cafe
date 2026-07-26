@@ -133,7 +133,7 @@ const FitesAllgaeu = () => {
         <div className="relative container mx-auto px-6 py-20 md:py-28 max-w-5xl text-white">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 backdrop-blur-sm" style={{ backgroundColor: "rgba(201,165,92,0.2)", border: `1px solid ${GOLD}` }}>
             <Sparkles className="w-4 h-4" style={{ color: GOLD }} />
-            <span className="text-sm font-semibold tracking-wide" style={{ color: GOLD }}>Nur bis Oktober 2026</span>
+            <span className="text-sm font-semibold tracking-wide" style={{ color: GOLD }}>Nur bis Dezember 2026</span>
           </div>
           <h1 className="font-serif text-4xl md:text-6xl font-bold leading-tight mb-6">
             Kostenloses Probetraining bei FITES Allgäu sichern
