@@ -245,7 +245,7 @@ const Partners = () => {
         </div>
       </section>
 
-      {/* PARTNER 3: Cup&Cino Foundation — Navy highlight */}
+      {/* PARTNER 3: Cup&Cino Foundation, Navy highlight */}
       <section id="foundation" className="py-16 md:py-24" style={{ background: "linear-gradient(135deg, #164472, #1d5a8a)" }}>
         <div className="container mx-auto px-6 max-w-4xl text-center">
           <p className="text-[#b8943e] font-medium tracking-[0.2em] uppercase text-sm mb-2">☕ Cup&Cino Foundation</p>
@@ -329,7 +329,7 @@ const Partners = () => {
             <div className="order-1 md:order-2">
               <img
                 src={herbalifePartner}
-                alt="Herbalife Nutrition – Shakes und sportliche Atmosphäre"
+                alt="Herbalife Nutrition, Shakes und sportliche Atmosphäre"
                 className="w-full aspect-[4/3] object-cover rounded-2xl shadow-lg"
                 loading="lazy"
               />

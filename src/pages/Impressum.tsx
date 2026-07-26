@@ -29,7 +29,7 @@ const Block = ({ title, children }: { title: string; children: React.ReactNode }
 const Impressum = () => {
   return (
     <Layout>
-      <SEO title="Impressum – Bistro Boxenstopp" description="Impressum und Anbieterkennzeichnung." path="/impressum" />
+      <SEO title="Impressum, Bistro Boxenstopp" description="Impressum und Anbieterkennzeichnung." path="/impressum" />
       <section style={{ backgroundColor: cream, paddingTop: 80, paddingBottom: 80 }}>
         <div className="mx-auto px-6" style={{ maxWidth: 720 }}>
           <h1
@@ -48,7 +48,7 @@ const Impressum = () => {
 
           <Block title="Anbieter:">
             Eugen Schall<br />
-            FITES – Bistro Boxenstopp<br />
+            FITES, Bistro Boxenstopp<br />
             (Bistro Boxenstopp ist ein Geschäftszweig des Einzelunternehmens FITES)<br />
             Südhang 1<br />
             88145 Hergatz<br />

@@ -80,7 +80,7 @@ export const menuProducts: MenuProduct[] = [
       { label: "Klein", price: "1,90 €" },
       { label: "Groß", price: "2,30 €" },
     ],
-    composition: "100% Espresso (ca. 25–30 ml)",
+    composition: "100% Espresso (ca. 25 bis 30 ml)",
     ingredients: "Wasser, Kaffeebohnen (Cup&Cino Barista-Qualität)",
     origin: "Kaffeebohnen von Cup&Cino in Barista-Qualität.",
     nutrition: [
@@ -130,7 +130,7 @@ export const menuProducts: MenuProduct[] = [
       { label: "Groß", price: "2,90 €" },
       { label: "XL", price: "3,20 €" },
     ],
-    composition: "100% lang gezogener Kaffee (ca. 120–150 ml)",
+    composition: "100% lang gezogener Kaffee (ca. 120 bis 150 ml)",
     ingredients: "Wasser, Kaffeebohnen (Cup&Cino Barista-Qualität)",
     origin: "Kaffeebohnen von Cup&Cino in Barista-Qualität.",
     nutrition: [
@@ -237,12 +237,12 @@ export const menuProducts: MenuProduct[] = [
     ingredients: "**Vollmilch** (3,5% Fett), Wasser, Kaffeebohnen (Cup&Cino Barista-Qualität), Kakaopulver bzw. Vanillesirup (Zucker, Wasser, natürliches Vanillearoma), Zucker",
     origin: "Kaffeebohnen von Cup&Cino in Barista-Qualität. Frische Vollmilch mit 3,5% Fettgehalt.",
     nutrition: [
-      { label: "Brennwert", value: "ca. 340–370 kJ / 81–88 kcal" },
-      { label: "Fett", value: "3,5–4,0 g" },
-      { label: "davon gesättigte Fettsäuren", value: "2,2–2,5 g", indent: true },
-      { label: "Kohlenhydrate", value: "8,0–8,5 g" },
-      { label: "davon Zucker", value: "7,0–7,5 g", indent: true },
-      { label: "Eiweiß", value: "3,5–3,8 g" },
+      { label: "Brennwert", value: "ca. 340 bis 370 kJ / 81 bis 88 kcal" },
+      { label: "Fett", value: "3,5 bis 4,0 g" },
+      { label: "davon gesättigte Fettsäuren", value: "2,2 bis 2,5 g", indent: true },
+      { label: "Kohlenhydrate", value: "8,0 bis 8,5 g" },
+      { label: "davon Zucker", value: "7,0 bis 7,5 g", indent: true },
+      { label: "Eiweiß", value: "3,5 bis 3,8 g" },
       { label: "Salz", value: "0,1 g" },
     ],
     image: cappuccinoSchokoImage,
@@ -419,7 +419,7 @@ export const menuProducts: MenuProduct[] = [
       { label: "Salz", value: "0 g" },
     ],
   },
-  // Süßspeisen – Gebäck & Dessert
+  // Süßspeisen, Gebäck & Dessert
   {
     id: "donut",
     name: "Donut (nach Wahl)",
@@ -452,7 +452,7 @@ export const menuProducts: MenuProduct[] = [
     description: "Frisches Obst",
     category: "Süßspeisen",
   },
-  // Herzhaft & Ofenfrisch – Brote & Baguettes
+  // Herzhaft & Ofenfrisch, Brote & Baguettes
   {
     id: "thunfisch-baguette",
     name: "Gourmet Baguette Thunfisch",
@@ -501,7 +501,7 @@ export const menuProducts: MenuProduct[] = [
     category: "Herzhaft & Ofenfrisch",
     origin: perplexOrigin,
   },
-  // Herzhaft & Ofenfrisch – Hüttenbrote
+  // Herzhaft & Ofenfrisch, Hüttenbrote
   {
     id: "holzfaellerbrot",
     name: "Hüttenbrot Speck",
@@ -565,7 +565,7 @@ export const menuProducts: MenuProduct[] = [
     origin: perplexOrigin,
     image: raclettebrotImage,
   },
-  // Herzhaft & Ofenfrisch – Flammkuchen
+  // Herzhaft & Ofenfrisch, Flammkuchen
   {
     id: "flammkuchen-elsaesser",
     name: "Flammkuchen Elsässer Art",
@@ -670,7 +670,7 @@ export const menuProducts: MenuProduct[] = [
     ],
     image: flammkuchenLachsImage,
   },
-  // Herzhaft & Ofenfrisch – Pizzasnacks & Pizzetta
+  // Herzhaft & Ofenfrisch, Pizzasnacks & Pizzetta
   {
     id: "pizzasnack-caprese",
     name: "Pizzasnack Caprese",
@@ -847,7 +847,7 @@ export const menuProducts: MenuProduct[] = [
     category: "Shakes & Sportnahrung",
     origin: "Herbalife Nutrition: Seed to Feed Qualitätskontrolle",
   },
-  // Süßspeisen – Eis & Genuss
+  // Süßspeisen, Eis & Genuss
   {
     id: "cornetto-eis",
     name: "Cornetto Eis",
@@ -929,7 +929,7 @@ export const menuProducts: MenuProduct[] = [
     category: "Kalte Signatur Drinks",
     badges: ["🥡 Auch zum Mitnehmen", "🥭 Saison"],
   },
-  // Salate & Süßspeisen – Quark
+  // Salate & Süßspeisen, Quark
   {
     id: "bunter-salat",
     name: "Bunter Salat",

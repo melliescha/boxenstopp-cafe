@@ -55,7 +55,7 @@ export const localBusinessSchema = {
   publicAccess: true,
   areaServed: ["Hergatz", "Westallgäu", "Wangen im Allgäu", "Lindau", "Bodensee"],
   description:
-    "Bistro Boxenstopp in Hergatz im Westallgäu – Barista-Kaffee, handgemachte Flammkuchen, Hüttenbrot und Proteinshakes direkt am Bodensee-Königssee-Radweg und an der Leiblachroute.",
+    "Bistro Boxenstopp in Hergatz im Westallgäu, Barista-Kaffee, handgemachte Flammkuchen, Hüttenbrot und Proteinshakes direkt am Bodensee-Königssee-Radweg und an der Leiblachroute.",
   sameAs,
 };
 
@@ -66,7 +66,7 @@ export const contactPageSchema = [
     "@context": "https://schema.org",
     "@type": "ContactPage",
     url: `${SITE_URL}/kontakt`,
-    name: "Anfahrt & Kontakt – Bistro Boxenstopp",
+    name: "Anfahrt & Kontakt, Bistro Boxenstopp",
     about: { "@id": BUSINESS_ID },
   },
 ];

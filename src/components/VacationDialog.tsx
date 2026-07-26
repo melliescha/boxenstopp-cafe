@@ -19,7 +19,7 @@ const VacationDialog = () => {
     try {
       if (sessionStorage.getItem(STORAGE_KEY)) return;
     } catch {
-      // sessionStorage evtl. blockiert – dann einfach anzeigen
+      // sessionStorage evtl. blockiert, dann einfach anzeigen
     }
     const t = window.setTimeout(() => setOpen(true), 600);
     return () => window.clearTimeout(t);

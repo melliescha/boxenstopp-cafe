@@ -32,7 +32,7 @@ const articleSchema = {
   },
   about: {
     "@type": "Place",
-    name: "Bodensee-Königssee-Radweg – Etappe Hergatz",
+    name: "Bodensee-Königssee-Radweg, Etappe Hergatz",
   },
 };
 

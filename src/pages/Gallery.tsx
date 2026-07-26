@@ -58,7 +58,7 @@ const images: GalleryImage[] = [
   { src: aussenHausFrontStrasse, alt: "Außenansicht unseres Hauses am Südhang 1 mit Doppelgarage und Eingangsbereich", category: "aussen" },
   { src: aussenHausSeitlichWiese, alt: "Seitliche Außenansicht des Hauses mit Wiese und blauem Himmel", category: "aussen" },
   { src: aussenFitesGarageReifen, alt: "FITES-Studio mit Garage, Traktorreifen und Outdoor-Trainingsbereich", category: "aussen" },
-  { src: aussenStrasseKreuzungHaus, alt: "Anfahrt zum Bistro Boxenstopp – Blick von der Kreuzung auf das Haus am Südhang 1", category: "aussen" },
+  { src: aussenStrasseKreuzungHaus, alt: "Anfahrt zum Bistro Boxenstopp, Blick von der Kreuzung auf das Haus am Südhang 1", category: "aussen" },
   { src: innenSitzbereich, alt: "Heller Sitzbereich mit Holztischen und modernen Stühlen im Bistro Boxenstopp", category: "innen" },
   { src: innenTheke, alt: "Helena bedient einen Gast an der Theke des Bistro Boxenstopp", category: "innen" },
   { src: innenBilderwand, alt: "Bilderwand mit Sport-Motiven und gemütliche Ledersessel im Innenbereich", category: "innen" },
@@ -78,7 +78,7 @@ const images: GalleryImage[] = [
   { src: essenFlammkuchenSpeckMeckatzer, alt: "Herzhafter Flammkuchen mit Speck und Schnittlauch, dazu ein alkoholfreies Meckatzer Hell auf der Terrasse", category: "essen" },
   { src: essenLatteMuffinDonutTerrasse, alt: "Zwei Cup&Cino Latte Macchiato mit Heidelbeer-Muffin und Donut auf der sonnigen Terrasse", category: "essen" },
   { src: essenFlammkuchenSpeckPerplex, alt: "Flammkuchen mit Speck und Schnittlauch auf Perplex-Holzbrett im Innenbereich", category: "essen" },
-  { src: essenZweiFlammkuchenTomateSpeck, alt: "Zwei Flammkuchen – mediterran mit Tomate und Basilikum sowie klassisch mit Speck", category: "essen" },
+  { src: essenZweiFlammkuchenTomateSpeck, alt: "Zwei Flammkuchen, mediterran mit Tomate und Basilikum sowie klassisch mit Speck", category: "essen" },
   { src: essenCornettoMax, alt: "Cornetto Max Eishörnchen auf dem Terrassentisch mit gelben Frühlingsblumen", category: "essen" },
   { src: essenFlammkuchenLachsLauch, alt: "Flammkuchen mit Lachs, Lauch und Petersilie, dazu Orangensaft auf der Terrasse", category: "essen" },
   { src: essenBaguetteTomateMozzarella, alt: "Gourmet Baguette Tomate Mozzarella mit frischem Basilikum auf der Terrasse", category: "essen" },
@@ -100,7 +100,7 @@ const Gallery = () => {
 
   return (
     <Layout>
-      <SEO title="Galerie – Bistro Boxenstopp Hergatz" description="Eindrücke aus unserem Bistro im Allgäu: Kaffeespezialitäten, Flammkuchen, Atmosphäre." path="/galerie" image="/og/galerie.jpg" />
+      <SEO title="Galerie, Bistro Boxenstopp Hergatz" description="Eindrücke aus unserem Bistro im Allgäu: Kaffeespezialitäten, Flammkuchen, Atmosphäre." path="/galerie" image="/og/galerie.jpg" />
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
@@ -156,7 +156,7 @@ const Gallery = () => {
             </p>
           )}
 
-          {/* KI-Hinweis nach EU AI Act (Art. 50) – dezent ganz unten */}
+          {/* KI-Hinweis nach EU AI Act (Art. 50), dezent ganz unten */}
           <p
             className="max-w-3xl mx-auto mt-12 text-center text-xs italic text-muted-foreground"
             role="note"

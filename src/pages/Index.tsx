@@ -63,11 +63,11 @@ const whyUs = [
 ];
 
 const hours = [
-  { days: "Montag", time: "15:00 – 20:00 Uhr" },
+  { days: "Montag", time: "15:00 bis 20:00 Uhr" },
   { days: "Dienstag", time: "Ruhetag" },
-  { days: "Mittwoch – Freitag", time: "15:00 – 20:00 Uhr" },
-  { days: "Samstag", time: "10:30 – 15:30 Uhr" },
-  { days: "Sonntag", time: "11:00 – 16:00 Uhr" },
+  { days: "Mittwoch bis Freitag", time: "15:00 bis 20:00 Uhr" },
+  { days: "Samstag", time: "10:30 bis 15:30 Uhr" },
+  { days: "Sonntag", time: "11:00 bis 16:00 Uhr" },
 ];
 
 const faqs = [
@@ -94,7 +94,7 @@ const faqs = [
   {
     question: "Wann habt ihr offen?",
     answer:
-      "Montag: 15:00–20:00 Uhr. Dienstag: Ruhetag. Mittwoch–Freitag: 15:00–20:00 Uhr. Samstag: 10:30–15:30 Uhr. Sonntag: 11:00–16:00 Uhr.",
+      "Montag: 15:00 bis 20:00 Uhr. Dienstag: Ruhetag. Mittwoch bis Freitag: 15:00 bis 20:00 Uhr. Samstag: 10:30 bis 15:30 Uhr. Sonntag: 11:00 bis 16:00 Uhr.",
   },
 ];
 
@@ -281,7 +281,7 @@ const Index = () => {
 
       {/* Slogan + CTA */}
       <section className="text-center" style={{ backgroundColor: "#fef4ec", paddingTop: "16px", paddingBottom: "20px" }}>
-        <h1 className="sr-only">Bistro Boxenstopp Hergatz – Barista-Kaffee, Flammkuchen & Hüttenbrot im Westallgäu</h1>
+        <h1 className="sr-only">Bistro Boxenstopp Hergatz, Barista-Kaffee, Flammkuchen & Hüttenbrot im Westallgäu</h1>
         <p className="font-serif" style={{ color: "#164472", fontSize: "28px", fontWeight: 500 }}>
           Hergatz' bestgehütetes Geheimnis
         </p>
@@ -320,7 +320,7 @@ const Index = () => {
       <BestsellerSection />
 
 
-      {/* Highlights – 2x2 grid */}
+      {/* Highlights, 2x2 grid */}
       <section className="py-20 bg-secondary/50">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -385,7 +385,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* FAQ – Bevor du kommst */}
+      {/* FAQ, Bevor du kommst */}
       <section className="py-20" style={{ backgroundColor: "#FEF4EC" }}>
         <div className="container mx-auto px-6 max-w-3xl">
           <div className="text-center mb-10">

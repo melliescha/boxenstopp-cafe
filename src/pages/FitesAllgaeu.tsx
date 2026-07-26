@@ -20,12 +20,12 @@ const courses = [
   {
     icon: Trophy,
     title: "HYROX",
-    text: "Offizielles HYROX Training – funktionelle Fitness kombiniert mit Ausdauer. Perfekte Vorbereitung auf das Race oder einfach für maximale Fitness.",
+    text: "Offizielles HYROX Training, funktionelle Fitness kombiniert mit Ausdauer. Perfekte Vorbereitung auf das Race oder einfach für maximale Fitness.",
   },
   {
     icon: Flame,
     title: "FITES Boxen",
-    text: "Fitness-Boxen für alle Level. Technik, Kondition und Stressabbau in einem – mit Boxsack, Pratzen und persönlichem Coaching.",
+    text: "Fitness-Boxen für alle Level. Technik, Kondition und Stressabbau in einem, mit Boxsack, Pratzen und persönlichem Coaching.",
   },
   {
     icon: Sparkles,
@@ -41,10 +41,10 @@ const courses = [
 
 const benefits = [
   "Persönliche Betreuung von Inhaber Eugen",
-  "Kleine Gruppen – nie überfüllt",
+  "Kleine Gruppen, nie überfüllt",
   "Hammer Strength & Titanium Strength Geräte",
   "Wellpass-Partner (ehemals Qualitrain)",
-  "Direkt neben Bistro Boxenstopp – Kaffee & Shake nach dem Training inklusive Vibe",
+  "Direkt neben Bistro Boxenstopp, Kaffee & Shake nach dem Training inklusive Vibe",
   "Flexible Zeiten, keine langen Vertragslaufzeiten",
 ];
 
@@ -188,10 +188,10 @@ const FitesAllgaeu = () => {
           <div>
             <p className="text-xs uppercase tracking-[0.25em] font-semibold mb-4" style={{ color: BRONZE }}>Persönliche Betreuung</p>
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-5" style={{ color: NAVY }}>
-              Trainiert nicht irgendwo – trainiert mit Eugen.
+              Trainiert nicht irgendwo, trainiert mit Eugen.
             </h2>
             <p className="text-lg leading-relaxed mb-4" style={{ color: "#3d3d3d" }}>
-              Bei FITES Allgäu bist du kein Mitglieder-Barcode. Eugen kennt jeden Namen, jedes Ziel, jede Schwachstelle. Du bekommst einen Trainingsplan, der zu dir passt – nicht zur Werbebroschüre einer Kette.
+              Bei FITES Allgäu bist du kein Mitglieder-Barcode. Eugen kennt jeden Namen, jedes Ziel, jede Schwachstelle. Du bekommst einen Trainingsplan, der zu dir passt, nicht zur Werbebroschüre einer Kette.
             </p>
             <p className="text-lg leading-relaxed" style={{ color: "#3d3d3d" }}>
               Mehr als 30 Jahre Erfahrung, Boxtrainer-Lizenz, HYROX Coach, HIIT-Spezialist. Kleiner Ort, große Wirkung.
@@ -209,7 +209,7 @@ const FitesAllgaeu = () => {
               Vier Trainings-Formate, ein Ziel: du wirst stärker.
             </h2>
             <p className="text-lg text-muted-foreground">
-              Wähle, was zu dir passt. Oder komm einfach vorbei und probier alles aus – solange die Aktion läuft, kostenlos.
+              Wähle, was zu dir passt. Oder komm einfach vorbei und probier alles aus, solange die Aktion läuft, kostenlos.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -295,7 +295,7 @@ const FitesAllgaeu = () => {
             </div>
             <h3 className="font-serif text-2xl font-bold mb-3" style={{ color: NAVY }}>Flexibel nach Absprache</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Kurszeiten und offenes Training werden individuell abgestimmt. Ruf an und wir finden einen Termin, der zu dir passt – auch abends oder am Wochenende.
+              Kurszeiten und offenes Training werden individuell abgestimmt. Ruf an und wir finden einen Termin, der zu dir passt, auch abends oder am Wochenende.
             </p>
           </div>
         </div>
@@ -315,7 +315,7 @@ const FitesAllgaeu = () => {
             Ein Anruf. Ein Termin. Und du weißt, ob FITES zu dir passt.
           </h2>
           <p className="text-lg md:text-xl opacity-95 mb-9">
-            Bis 31. Dezember 2026 kostet dich dein Probetraining nichts – außer der Frage, warum du nicht schon früher angerufen hast.
+            Bis 31. Dezember 2026 kostet dich dein Probetraining nichts, außer der Frage, warum du nicht schon früher angerufen hast.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
