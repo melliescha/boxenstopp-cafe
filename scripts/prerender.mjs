@@ -84,7 +84,7 @@ const routes = [
     path: "/blog/bodensee-koenigssee-radweg-hergatz",
     title: "Bodensee-Königssee-Radweg: Etappe Hergatz im Westallgäu",
     description:
-      "Rast am Bodensee-Königssee-Radweg in Hergatz/Wohmbrechts: Duschen, E-Bike-Ladestation, Barista-Kaffee & Flammkuchen im Bistro Boxenstopp. Tipps für deine Etappe.",
+      "Rast am Bodensee-Königssee-Radweg in Hergatz/Wohmbrechts: Duschen, Steckdosen zum Aufladen, Barista-Kaffee & Flammkuchen im Bistro Boxenstopp. Tipps für deine Etappe.",
     type: "article",
     image: `${SITE_URL}/og/galerie.jpg`,
   },

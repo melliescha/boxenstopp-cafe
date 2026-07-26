@@ -329,7 +329,7 @@ const Contact = () => {
                 Wir liegen direkt am Bodensee-Königssee-Radweg sowie an der
                 Leiblachroute. Beide Routen führen praktisch an unserer Haustür
                 vorbei. Fahrradständer mit Schließmöglichkeit direkt am Eingang.
-                Steckdosen für E-Bikes auf Anfrage nutzbar.
+                Keine eigene E-Bike-Ladestation, aber auf Anfrage nutzt du gerne unsere Steckdose mit deinem eigenen Ladegerät.
               </AccordionContent>
             </AccordionItem>
 
