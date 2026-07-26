@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { Map, Thermometer, ShowerHead, BatteryCharging, Sun, Users, Bike, Clock, ArrowRight } from "lucide-react";
-import { isShowerFeatureVisible } from "@/lib/features";
+import { Map, Thermometer, Droplets, BatteryCharging, Sun, Users, Bike, Clock, ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import BestsellerSection from "@/components/BestsellerSection";
@@ -30,11 +29,9 @@ const highlights = [
     text: "Selbst bei 30°C genießt du bei uns angenehme 25°C im Schatten: die perfekte Erfrischung.",
   },
   {
-    icon: ShowerHead,
-    title: isShowerFeatureVisible() ? "Duschen für 3 €" : "Duschen vorhanden",
-    text: isShowerFeatureVisible()
-      ? "Frisch machen nach der Radtour, dem Joggen oder auf der Durchreise. Kinder unter 10 Jahren kostenlos in Begleitung der Eltern."
-      : "Frisch machen nach der Radtour oder dem Training, gegen kleine Gebühr. Hinweis: Aktuell nur Damendusche verfügbar, die Herrendusche befindet sich noch im Umbau.",
+    icon: Droplets,
+    title: "Kostenloses Leitungswasser",
+    text: "Wasser ist ein Grundrecht. Ein Glas Leitungswasser oder deine Trinkflasche füllst du bei uns immer kostenlos auf. Woanders kostet das oft 1 €, bei uns nicht.",
   },
   {
     icon: BatteryCharging,
