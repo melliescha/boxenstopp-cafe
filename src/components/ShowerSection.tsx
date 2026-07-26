@@ -1,4 +1,4 @@
-import { ShowerHead, Bike, Footprints, Briefcase, Route, Caravan } from "lucide-react";
+import { ShowerHead, Bike, Footprints, Briefcase, Route, Caravan, Euro } from "lucide-react";
 import { isShowerFeatureVisible, shower } from "@/lib/features";
 
 const useCases = [
@@ -26,6 +26,11 @@ const useCases = [
     icon: Caravan,
     label: "Für Camper",
     text: "Wohnmobil-Stopp mit frischer Dusche und gutem Kaffee.",
+  },
+  {
+    icon: Euro,
+    label: `Duschen für ${shower.price} pro Person`,
+    text: `Kinder unter ${shower.kidsAge} Jahren kostenlos in Begleitung der Eltern. Handtuch mitbringen oder bei uns erfragen.`,
   },
 ];
 
@@ -78,21 +83,6 @@ const ShowerSection = () => {
               </p>
             </div>
           ))}
-        </div>
-
-        <div
-          className="rounded-2xl p-6 md:p-8 text-center"
-          style={{ backgroundColor: "#164472", color: "#FEF4EC" }}
-        >
-          <p className="font-serif text-xl md:text-2xl font-bold mb-3">
-            Duschen für {shower.price} pro Person
-          </p>
-          <p className="text-base" style={{ color: "#FEF4ECCC" }}>
-            Kinder unter {shower.kidsAge} Jahren kostenlos in Begleitung der Eltern.
-          </p>
-          <p className="text-sm mt-4" style={{ color: "#FEF4ECAA" }}>
-            Handtuch mitbringen oder bei uns erfragen.
-          </p>
         </div>
       </div>
     </section>
