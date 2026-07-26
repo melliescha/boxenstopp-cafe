@@ -90,7 +90,7 @@ const routes = [
   },
   {
     path: "/fites-allgaeu",
-    title: "FITES Allgäu Hergatz | Kostenloses Probetraining bis Oktober",
+    title: "FITES Allgäu Hergatz | Kostenloses Probetraining bis Dezember",
     description:
       "Fitnessstudio in Hergatz: HYROX, Fitness-Boxen, Tabata & HIIT. Persönliche Betreuung von Eugen, kleine Gruppen, Wellpass-Partner. Jetzt kostenloses Probetraining sichern.",
     image: `${SITE_URL}/og-image.jpg`,

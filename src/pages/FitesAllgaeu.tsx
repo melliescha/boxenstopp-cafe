@@ -67,8 +67,8 @@ const jsonLd = [
     offers: {
       "@type": "Offer",
       name: "Kostenloses Probetraining",
-      description: "Bis Oktober kostenloses Probetraining sichern",
-      availabilityEnds: "2026-10-31",
+      description: "Bis Dezember kostenloses Probetraining sichern",
+      availabilityEnds: "2026-12-31",
       price: "0",
       priceCurrency: "EUR",
     },
@@ -82,7 +82,7 @@ const jsonLd = [
         name: "Kostet das Probetraining wirklich nichts?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Ja. Bis Oktober 2026 ist das Probetraining bei FITES Allgäu komplett kostenlos und unverbindlich. Einfach anrufen und Termin vereinbaren.",
+          text: "Ja. Bis Dezember 2026 ist das Probetraining bei FITES Allgäu komplett kostenlos und unverbindlich. Einfach anrufen und Termin vereinbaren.",
         },
       },
       {
@@ -117,7 +117,7 @@ const FitesAllgaeu = () => {
   return (
     <Layout>
       <SEO
-        title="FITES Allgäu Hergatz | Kostenloses Probetraining bis Oktober"
+        title="FITES Allgäu Hergatz | Kostenloses Probetraining bis Dezember"
         description="Fitnessstudio in Hergatz: HYROX, Fitness-Boxen, Tabata & HIIT. Persönliche Betreuung von Eugen, kleine Gruppen, Wellpass-Partner. Jetzt kostenloses Probetraining sichern."
         path="/fites-allgaeu"
         image="/og-image.jpg"
@@ -133,7 +133,7 @@ const FitesAllgaeu = () => {
         <div className="relative container mx-auto px-6 py-20 md:py-28 max-w-5xl text-white">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 backdrop-blur-sm" style={{ backgroundColor: "rgba(201,165,92,0.2)", border: `1px solid ${GOLD}` }}>
             <Sparkles className="w-4 h-4" style={{ color: GOLD }} />
-            <span className="text-sm font-semibold tracking-wide" style={{ color: GOLD }}>Nur bis Oktober 2026</span>
+            <span className="text-sm font-semibold tracking-wide" style={{ color: GOLD }}>Nur bis Dezember 2026</span>
           </div>
           <h1 className="font-serif text-4xl md:text-6xl font-bold leading-tight mb-6">
             Kostenloses Probetraining bei FITES Allgäu sichern
@@ -169,7 +169,7 @@ const FitesAllgaeu = () => {
       {/* URGENCY BAR */}
       <section className="py-4" style={{ backgroundColor: GOLD }}>
         <div className="container mx-auto px-6 text-center font-semibold" style={{ color: NAVY }}>
-          Aktion endet am 31. Oktober 2026. Ruf einfach an: <a href={`tel:${PHONE_LINK}`} className="underline">{PHONE_DISPLAY}</a>
+          Aktion endet am 31. Dezember 2026. Ruf einfach an: <a href={`tel:${PHONE_LINK}`} className="underline">{PHONE_DISPLAY}</a>
         </div>
       </section>
 
@@ -315,7 +315,7 @@ const FitesAllgaeu = () => {
             Ein Anruf. Ein Termin. Und du weißt, ob FITES zu dir passt.
           </h2>
           <p className="text-lg md:text-xl opacity-95 mb-9">
-            Bis 31. Oktober 2026 kostet dich dein Probetraining nichts – außer der Frage, warum du nicht schon früher angerufen hast.
+            Bis 31. Dezember 2026 kostet dich dein Probetraining nichts – außer der Frage, warum du nicht schon früher angerufen hast.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
