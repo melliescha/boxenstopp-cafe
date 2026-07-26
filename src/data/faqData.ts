@@ -335,7 +335,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Macht ihr selbst was, oder kommt alles aus der Tiefkühltruhe?",
         answer:
-          "Alle unsere ofenfrischen Speisen kommen von unserem Partner Perplex. Auch wenn diese tiefgefroren sind: das ist keine Massenware aus dem Supermarkt. Alles ist handbelegt und hergemacht mit frischen Zutaten. Vergleichbar damit, wenn ihr euch einen Flammkuchen selbst macht und für später einfriert. Ganz ehrlich: Kaum noch ein Restaurant bietet frische Flammkuchen an. Wir sind ehrlich mit euch und listen alle Nährwerte, Inhaltsstoffe und unsere Lieferanten transparent auf.",
+          "Klartext: Unsere ofenfrischen Speisen (Flammkuchen, Pizza, Baguette, Hüttenbrot) kommen von Perplex – einer deutschen Manufaktur, die seit über 33 Jahren in Deutschland von Hand belegt und erst danach schockfrostet. Das ist der Branchen-Standard – nahezu jede Gastronomie, jede Pizzeria, jedes Hotel arbeitet mit vorbereiteten oder tiefgekühlten Komponenten. Der Unterschied ist die Qualität: Handwerk statt Fließband, ohne Gentechnik, kontrolliert durch agroVet. Vergleichbar damit, wenn ihr euch zu Hause einen Flammkuchen frisch belegt und für später einfriert – nur eben von Profis. Wir sind ehrlich damit und listen Lieferanten, Nährwerte und Inhaltsstoffe transparent auf. Was wir vor Ort frisch machen: Salate, Shakes, Kaffee, Iced Drinks, Quark & Toppings.",
       },
       {
         question: "Eugen ist VIP-Berater bei Herbalife. Wollt ihr uns das jetzt verkaufen?",
