@@ -9,7 +9,8 @@ import herbalifePartner from "@/assets/herbalife-partner.jpg";
 import perplexLogo from "@/assets/perplex-logo.jpg";
 import cupcinoLogo from "@/assets/cupcino-logo.jpg";
 import cupcinoPartnerImg from "@/assets/cupcino-partner.jpg";
-import fitesStudio from "@/assets/fites-studio.jpg";
+import fitesStudioAsset from "@/assets/fites-studio.jpg.asset.json";
+const fitesStudio = fitesStudioAsset.url;
 
 const Partners = () => {
   const location = useLocation();
@@ -72,6 +73,9 @@ const Partners = () => {
               </div>
               <p className="text-muted-foreground leading-relaxed mb-7">
                 Das Bistro Boxenstopp ist Teil von FITES Allgäu, Eugens Fitnessstudio direkt im selben Gebäude. Kleine Gruppen, persönliche Betreuung, Kurse wie HYROX, HIIT und Fitness-Boxen. Wer nach dem Kaffee Lust auf Bewegung bekommt, oder nach dem Training auf einen Shake, ist herzlich willkommen.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-7">
+                <strong className="text-foreground">Wellpass-Partner:</strong> FITES Allgäu ist an Wellpass (ehemals Qualitrain) angeschlossen. Mitglieder trainieren mit ihrer Wellpass-Mitgliedschaft flexibel bei uns, ganz ohne Zusatzkosten.
               </p>
               <div className="flex flex-wrap gap-3">
                 <a
