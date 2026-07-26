@@ -49,6 +49,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://bistro-boxenstopp.de/blog/bodensee-koenigssee-radweg-hergatz</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://bistro-boxenstopp.de/impressum</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>yearly</changefreq>
