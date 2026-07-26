@@ -58,9 +58,20 @@ const MenuTileView = () => {
       </div>
 
       {/* Dezenter FITES-Hinweis: nur bei Shakes-Filter sichtbar (Zielgruppe vorqualifiziert) */}
-      {activeCategory === "Shakes" && (
+      {activeCategory === "Shakes & Sportnahrung" && (
         <div className="max-w-2xl mb-6">
           <FitesHint variant="shake" />
+        </div>
+      )}
+
+      {/* Saison-Hinweis für kalte Signatur-Drinks */}
+      {activeCategory === "Kalte Signatur Drinks" && (
+        <div className="max-w-2xl mb-6 rounded-lg border border-bronze/20 bg-bronze/5 px-4 py-3 text-sm text-bronze flex items-center gap-2">
+          <span>🍓🥭</span>
+          <p>
+            <span className="font-semibold">Saison-Hit:</span> Iced Strawberry & Mango Matcha Latte nur bis
+            <span className="font-semibold"> 15. September</span> erhältlich – solange der Vorrat reicht.
+          </p>
         </div>
       )}
 

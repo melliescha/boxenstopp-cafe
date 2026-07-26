@@ -921,6 +921,30 @@ export const menuProducts: MenuProduct[] = [
     category: "Kalte Signatur Drinks",
     badge: "🥡 Auch zum Mitnehmen",
   },
+  {
+    id: "iced-strawberry-matcha-latte",
+    name: "Iced Strawberry Matcha Latte",
+    price: "4,50 €",
+    description: "Fruchtig-cremiger Matcha Latte auf Eis mit Erdbeere",
+    category: "Kalte Signatur Drinks",
+    badges: ["🥡 Auch zum Mitnehmen", "🍓 Saison"],
+  },
+  {
+    id: "iced-strawberry-matcha-latte-vegan",
+    name: "Iced Strawberry Matcha Latte – Vegan",
+    price: "4,80 €",
+    description: "Mit Pflanzenmilch, 100% vegan – fruchtig mit Erdbeere",
+    category: "Kalte Signatur Drinks",
+    badges: ["🥡 Auch zum Mitnehmen", "🌱 Vegan", "🍓 Saison"],
+  },
+  {
+    id: "iced-mango-matcha-latte",
+    name: "Iced Mango Matcha Latte",
+    price: "4,50 €",
+    description: "Exotisch-cremiger Matcha Latte auf Eis mit Mango",
+    category: "Kalte Signatur Drinks",
+    badges: ["🥡 Auch zum Mitnehmen", "🥭 Saison"],
+  },
   // Salate & Süßspeisen – Quark
   {
     id: "bunter-salat",
