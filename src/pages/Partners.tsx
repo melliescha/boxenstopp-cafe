@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import { Droplets, Building2, GraduationCap, Handshake, Leaf, Zap, ShieldCheck, Globe, Award, FlaskConical, Dumbbell } from "lucide-react";
