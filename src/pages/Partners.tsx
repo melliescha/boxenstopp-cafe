@@ -43,7 +43,34 @@ const Partners = () => {
         </div>
       </section>
 
-      {/* PARTNER 1: Perplex */}
+      {/* PARTNER 1: FITES Allgäu */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-6 max-w-4xl text-center">
+          <div className="w-20 h-20 rounded-full border border-bronze/30 flex items-center justify-center mx-auto mb-6">
+            <Dumbbell className="w-8 h-8 text-bronze" />
+          </div>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
+            FITES Allgäu: Fitness nebenan
+          </h2>
+          <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-8">
+            Das Bistro Boxenstopp ist Teil von FITES Allgäu, Eugens Fitnessstudio direkt im selben Gebäude. Kleine Gruppen, persönliche Betreuung, Kurse wie HYROX, HIIT und Fitness-Boxen. Wer nach dem Kaffee Lust auf Bewegung bekommt, oder nach dem Training auf einen Shake, ist herzlich willkommen.
+          </p>
+          <a
+            href="https://www.fites-allgaeu.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
+          >
+            Mehr über FITES Allgäu →
+          </a>
+        </div>
+      </section>
+
+      <div className="w-full max-w-4xl mx-auto px-6">
+        <div className="h-[1px] bg-bronze/20" />
+      </div>
+
+      {/* PARTNER 2: Perplex */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
@@ -272,32 +299,6 @@ const Partners = () => {
         </div>
       </section>
 
-      <div className="w-full max-w-4xl mx-auto px-6">
-        <div className="h-[1px] bg-bronze/20" />
-      </div>
-
-      {/* PARTNER 5: FITES Allgäu */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-6 max-w-4xl text-center">
-          <div className="w-20 h-20 rounded-full border border-bronze/30 flex items-center justify-center mx-auto mb-6">
-            <Dumbbell className="w-8 h-8 text-bronze" />
-          </div>
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
-            FITES Allgäu: Fitness nebenan
-          </h2>
-          <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-8">
-            Das Bistro Boxenstopp ist Teil von FITES Allgäu, Eugens Fitnessstudio direkt im selben Gebäude. Kleine Gruppen, persönliche Betreuung, Kurse wie HYROX, HIIT und Fitness-Boxen. Wer nach dem Kaffee Lust auf Bewegung bekommt, oder nach dem Training auf einen Shake, ist herzlich willkommen.
-          </p>
-          <a
-            href="https://www.fites-allgaeu.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
-          >
-            Mehr über FITES Allgäu →
-          </a>
-        </div>
-      </section>
     </Layout>
   );
 };
