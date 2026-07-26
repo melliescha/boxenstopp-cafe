@@ -31,7 +31,7 @@ const highlights = [
   {
     icon: Droplets,
     title: "Kostenloses Leitungswasser",
-    text: "Wasser ist ein Grundrecht. Ein Glas Leitungswasser oder deine Trinkflasche füllst du bei uns immer kostenlos auf. Woanders kostet das oft 1 €, bei uns nicht.",
+    text: "1 € für Leitungswasser? Nicht bei uns. Wasser ist ein Grundrecht und bleibt kostenlos für euch: ein Glas oder deine Trinkflasche füllst du bei uns immer gratis auf.",
   },
   {
     icon: BatteryCharging,
