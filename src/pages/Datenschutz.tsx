@@ -90,7 +90,7 @@ const Datenschutz = () => {
 
   return (
     <Layout>
-      <SEO title="Datenschutz – Bistro Boxenstopp" description="Datenschutzerklärung gemäß DSGVO." path="/datenschutz" />
+      <SEO title="Datenschutz, Bistro Boxenstopp" description="Datenschutzerklärung gemäß DSGVO." path="/datenschutz" />
       <section style={{ backgroundColor: cream, paddingTop: 80, paddingBottom: 80 }}>
         <div className="mx-auto" style={{ maxWidth: 720, paddingLeft: 24, paddingRight: 24 }}>
           <h1
@@ -115,7 +115,7 @@ const Datenschutz = () => {
             </P>
             <P>
               Eugen Schall<br />
-              FITES – Bistro Boxenstopp<br />
+              FITES, Bistro Boxenstopp<br />
               Südhang 1<br />
               88145 Hergatz / Wohmbrechts<br />
               Deutschland

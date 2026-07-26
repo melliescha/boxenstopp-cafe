@@ -114,7 +114,7 @@ const About = () => {
 
   return (
     <Layout>
-      <SEO title="Über uns – Familie Schall | Bistro Boxenstopp" description="Hinter dem Bistro Boxenstopp im Westallgäu steht die Familie Schall: bodenständig, ehrlich, mit Leidenschaft für gute Küche und Gemeinschaft." path="/ueber-uns" image="/og/ueber-uns.jpg" />
+      <SEO title="Über uns, Familie Schall | Bistro Boxenstopp" description="Hinter dem Bistro Boxenstopp im Westallgäu steht die Familie Schall: bodenständig, ehrlich, mit Leidenschaft für gute Küche und Gemeinschaft." path="/ueber-uns" image="/og/ueber-uns.jpg" />
       {/* Hero */}
       <section className="relative h-[50vh] md:h-[60vh] overflow-hidden">
         <img

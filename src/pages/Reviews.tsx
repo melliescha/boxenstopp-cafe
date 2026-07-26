@@ -56,7 +56,7 @@ const Reviews = () => {
   return (
     <Layout>
       <SEO
-        title="Bewertungen – Bistro Boxenstopp Hergatz"
+        title="Bewertungen, Bistro Boxenstopp Hergatz"
         description="Bewertet das Bistro Boxenstopp in Hergatz auf Google, TripAdvisor und Instagram."
         path="/bewertungen"
         image="/og/bewertungen.jpg"

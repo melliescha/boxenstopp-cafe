@@ -180,7 +180,7 @@ const FlipbookMenu = () => {
                   </span>
                   {row.prices.map((p, i) => (
                     <span key={i} className="w-11 sm:w-14 text-right text-bronze font-semibold text-[10px] sm:text-xs whitespace-nowrap">
-                      {p || "–"}
+                      {p || ""}
                     </span>
                   ))}
                 </div>
@@ -209,7 +209,7 @@ const FlipbookMenu = () => {
                   </span>
                   {row.prices.map((p, i) => (
                     <span key={i} className="w-11 sm:w-14 text-right text-bronze font-semibold text-[10px] sm:text-xs whitespace-nowrap">
-                      {p || "–"}
+                      {p || ""}
                     </span>
                   ))}
                 </div>
@@ -251,7 +251,7 @@ const FlipbookMenu = () => {
                     </span>
                     {row.prices.map((p, i) => (
                       <span key={i} className="w-12 sm:w-14 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
-                        {p || "–"}
+                        {p || ""}
                       </span>
                     ))}
                   </div>
@@ -353,8 +353,8 @@ const FlipbookMenu = () => {
                 <p className="font-serif text-lg sm:text-xl font-bold text-primary-foreground mb-3">Bistro Boxenstopp</p>
                 <div className="text-primary-foreground/60 text-xs space-y-1 mb-4">
                   <p>Südhang 1, 88145 Hergatz</p>
-                  <p className="mt-2">Mo, Mi–Fr: 15:00–20:00 Uhr</p>
-                  <p>Sa: 10:30–15:30 Uhr · So: 11:00–16:00 Uhr</p>
+                  <p className="mt-2">Mo, Mi, Fr: 15:00 bis 20:00 Uhr</p>
+                  <p>Sa: 10:30 bis 15:30 Uhr · So: 11:00 bis 16:00 Uhr</p>
                   <p>Di: Ruhetag</p>
                 </div>
                 <p className="text-primary-foreground/50 text-xs mb-3">

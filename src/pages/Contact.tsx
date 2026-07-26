@@ -40,11 +40,11 @@ const WARM_BROWN = "#6B4A2E";
 const BORDER = "#EDE0D0";
 
 const hours = [
-  { days: "Montag", time: "15:00 – 20:00 Uhr" },
+  { days: "Montag", time: "15:00 bis 20:00 Uhr" },
   { days: "Dienstag", time: "Ruhetag" },
-  { days: "Mittwoch – Freitag", time: "15:00 – 20:00 Uhr" },
-  { days: "Samstag", time: "10:30 – 15:30 Uhr" },
-  { days: "Sonntag", time: "11:00 – 16:00 Uhr" },
+  { days: "Mittwoch bis Freitag", time: "15:00 bis 20:00 Uhr" },
+  { days: "Samstag", time: "10:30 bis 15:30 Uhr" },
+  { days: "Sonntag", time: "11:00 bis 16:00 Uhr" },
 ];
 
 const nearby = [
@@ -442,7 +442,7 @@ const Contact = () => {
       <Wegweiser />
 
 
-      {/* SECTION 6.5: PLANT UNS EIN — ROUTEN */}
+      {/* SECTION 6.5: PLANT UNS EIN, ROUTEN */}
       <section className="py-20 md:py-28" style={{ backgroundColor: "#FDF7EE" }}>
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="text-center mb-12">
@@ -472,7 +472,7 @@ const Contact = () => {
               <ul className="space-y-3">
                 {[
                   "Bodensee-Königssee-Radweg (1. Etappe)",
-                  "Allgäuer Käsestraße – Tour „Großes KäseGlück\"",
+                  "Allgäuer Käsestraße, Tour „Großes KäseGlück\"",
                   "Radrunde Allgäu (ADFC 4-Sterne-Qualitätsroute)",
                   "Bayerisch-Schwäbischer Jakobus-Radpilgerweg",
                 ].map((item) => (
