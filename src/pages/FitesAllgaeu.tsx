@@ -315,7 +315,7 @@ const FitesAllgaeu = () => {
             Ein Anruf. Ein Termin. Und du weißt, ob FITES zu dir passt.
           </h2>
           <p className="text-lg md:text-xl opacity-95 mb-9">
-            Bis 31. Oktober 2026 kostet dich dein Probetraining nichts – außer der Frage, warum du nicht schon früher angerufen hast.
+            Bis 31. Dezember 2026 kostet dich dein Probetraining nichts – außer der Frage, warum du nicht schon früher angerufen hast.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
