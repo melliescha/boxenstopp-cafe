@@ -18,6 +18,7 @@ const QRSpeisekarte = lazy(() => import("./pages/QRSpeisekarte"));
 const QRCodePage = lazy(() => import("./pages/QRCodePage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const FAQ = lazy(() => import("./pages/FAQ"));
+const BlogRadwegHergatz = lazy(() => import("./pages/BlogRadwegHergatz"));
 
 const queryClient = new QueryClient();
 
