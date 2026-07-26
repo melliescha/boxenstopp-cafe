@@ -93,9 +93,9 @@ export const faqBlocks: FaqBlock[] = [
           "Verstehen wir, wir hören das oft. Die Marke polarisiert. Unsere Antwort: Wir nutzen Herbalife seit über 20 Jahren selbst. Eugen ist deshalb sogar VIP Berater. Was uns überzeugt: extrem wenige Zusatzstoffe, sehr viele Vitamine im Mahlzeitenshake (was die meisten anderen Mahlzeitenshakes nicht haben, die haben oft viele Farbstoffe und kaum Vitamine), und der Geschmack ist natürlich, nicht künstlich. Probiert's einfach selbst.",
       },
       {
-        question: "Wer ist Perplex und warum nicht selbstgemacht?",
+        question: "Ist Perplex nicht einfach TK-Ware?",
         answer:
-          "Perplex ist unser Partner für Flammkuchen. Warum? Weil sie genau unsere Philosophie teilen: keine Massenware mit unnötigen Zusatzstoffen, sondern ehrliche Zutaten. Selbstgemacht klingt schön, aber Perplex liefert eine Qualität, die wir alleine in der Küche nicht so konstant hinbekommen würden. Und das schmeckt ihr.",
+          "Kurze, ehrliche Antwort: Ja, Perplex-Produkte werden schockgefrostet geliefert – wie in nahezu jeder Gastronomie in Deutschland (Pizzeria, Hotel, Restaurant). Der Unterschied: Perplex ist eine deutsche Manufaktur, die seit über 33 Jahren Flammkuchen, Baguettes & Co. in Deutschland von Hand belegt, mit frischen Zutaten verfeinert und erst danach einfriert – ohne Gentechnik, kontrolliert nach Codex-Richtlinie durch agroVet. Das ist keine anonyme Industrie-TK aus dem Supermarkt, sondern Handwerk aus Deutschland. Wir könnten so tun, als würden wir selbst kneten – tun wir aber nicht. Wir stehen zu unserem Partner.",
       },
     ],
   },
