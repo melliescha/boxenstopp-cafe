@@ -7,7 +7,7 @@ import { localBusinessSchema } from "@/lib/schema";
 const PATH = "/blog/bodensee-koenigssee-radweg-hergatz";
 const TITLE = "Bodensee-Königssee-Radweg: Etappe Hergatz im Westallgäu";
 const DESCRIPTION =
-  "Rast am Bodensee-Königssee-Radweg in Hergatz/Wohmbrechts: Duschen, E-Bike-Ladestation, Barista-Kaffee & Flammkuchen im Bistro Boxenstopp. Tipps für deine Etappe.";
+  "Rast am Bodensee-Königssee-Radweg in Hergatz/Wohmbrechts: Duschen, Steckdosen zum Aufladen, Barista-Kaffee & Flammkuchen im Bistro Boxenstopp. Tipps für deine Etappe.";
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -53,7 +53,7 @@ const faqSchema = {
       name: "Kann ich mein E-Bike am Bodensee-Königssee-Radweg in Hergatz laden?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ja, direkt am Bistro Boxenstopp gibt es eine E-Bike-Ladestation. Während der Ladung kannst du auf der schattigen Terrasse einen Barista-Kaffee oder Flammkuchen genießen.",
+        text: "Wir haben keine eigene E-Bike-Ladestation, aber du darfst unsere Steckdose mit deinem eigenen Ladegerät nutzen. Während des Ladens kannst du auf der schattigen Terrasse einen Barista-Kaffee oder Flammkuchen genießen.",
       },
     },
     {
@@ -120,8 +120,8 @@ const BlogRadwegHergatz = () => {
             <li className="flex gap-3">
               <BatteryCharging className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
               <div>
-                <strong className="text-foreground">E-Bike-Ladestation</strong>
-                <p className="text-muted-foreground">Akku laden, während du in Ruhe einen Cappuccino trinkst.</p>
+                <strong className="text-foreground">Steckdose zum Aufladen</strong>
+                <p className="text-muted-foreground">Mit deinem eigenen Ladegerät lädst du Handy, Navi und E-Bike kostenlos an unserer Steckdose, während du in Ruhe einen Cappuccino trinkst.</p>
               </div>
             </li>
             <li className="flex gap-3">

@@ -40,7 +40,7 @@ const highlights = [
     icon: BatteryCharging,
 
     title: "Steckdosen zum Aufladen",
-    text: "Bei uns lädst nicht nur du auf, sondern auch dein Handy, dein Navi und sogar dein E-Bike. Steckdosen findest du bei uns kostenlos.",
+    text: "Wir haben keine eigene E-Bike-Ladestation, aber du darfst unsere Steckdose nutzen. Handy, Navi und E-Bike lädst du mit deinem eigenen Ladegerät kostenlos bei uns auf.",
   },
 ];
 
@@ -58,7 +58,7 @@ const whyUs = [
   {
     icon: Bike,
     title: "Perfekt für Radfahrer",
-    text: "Terrasse, Duschen, E-Bike-Ladestation und alles was du brauchst, um wieder aufzutanken.",
+    text: "Terrasse, Duschen, Steckdosen zum Aufladen und alles was du brauchst, um wieder aufzutanken.",
   },
 ];
 
