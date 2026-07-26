@@ -315,7 +315,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Hüttenbrot? Das macht doch jeder. Was ist daran besonders?",
         answer:
-          "Ehrlich gesagt: Wir machen das Brot nicht selbst, das kommt ofenfrisch und handbelegt von unserem Partner Perplex. Klingt simpel, aber wenn ihr es einmal probiert habt, garantieren wir euch: ihr kommt wieder. Simpel, deftig, einfach nur gut.",
+          "Ehrlich: Wir backen das Brot nicht selbst. Es kommt handbelegt aus einer deutschen Manufaktur (Perplex, seit über 33 Jahren) und wird bei uns ofenfrisch aufgebacken. Klingt simpel, ist es auch – aber wenn ihr's einmal probiert habt, kommt ihr wieder. Simpel, deftig, einfach gut.",
       },
       {
         question: "Ein Café mit Eiweißshakes und Kollagen-Kaffee. Ist das nicht Hipster-Quatsch fürs Instagram?",
