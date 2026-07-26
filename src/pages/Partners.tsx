@@ -28,42 +28,75 @@ const Partners = () => {
     <Layout>
       <SEO title="Unsere Partner | Bistro Boxenstopp" description="Wir arbeiten mit Cup&Cino (Foundation für sauberes Wasser), Herbalife Nutrition und Perplex Pizza & Baguette Deutschland zusammen." path="/partner" image="/og/partner.jpg" />
       {/* Hero / Intro */}
-      <section className="pt-12 md:pt-20 pb-6 md:pb-8 bg-background">
-        <div className="container mx-auto px-6 max-w-4xl text-center">
-          <p className="text-bronze font-medium tracking-[0.2em] uppercase text-sm mb-2">Zusammenarbeit</p>
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-4">
+      <section className="pt-12 md:pt-20 pb-10 md:pb-14" style={{ backgroundColor: "#FEF4EC" }}>
+        <div className="container mx-auto px-6 max-w-3xl text-center">
+          <div className="inline-flex items-center justify-center gap-3 mb-5">
+            <span className="h-px w-8" style={{ backgroundColor: "#C9A55C" }} />
+            <p className="font-medium tracking-[0.25em] uppercase text-xs" style={{ color: "#9E7C4E" }}>Zusammenarbeit</p>
+            <span className="h-px w-8" style={{ backgroundColor: "#C9A55C" }} />
+          </div>
+          <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-5 leading-tight">
             Unsere Partner
           </h1>
-          <div className="w-16 h-[2px] bg-bronze mx-auto mb-6" />
-          <p className="text-muted-foreground leading-relaxed max-w-3xl mx-auto text-lg">
+          <p className="leading-relaxed text-lg" style={{ color: "#6B4A2E" }}>
             Qualität hat bei uns oberste Priorität. Deshalb haben wir uns nicht einfach nur für gute Partner entschieden, sondern für Spitzenpartner mit jahrzehntelanger Erfahrung und einer führenden Position in Deutschland.
           </p>
-          <p className="text-muted-foreground leading-relaxed max-w-3xl mx-auto text-lg mt-3">
+          <p className="leading-relaxed text-lg mt-3" style={{ color: "#6B4A2E" }}>
             Jedes Produkt, das wir im Bistro Boxenstopp servieren, kommt von einem Partner, dem wir zu 100 % vertrauen. Hier stellen wir sie vor.
           </p>
         </div>
       </section>
 
       {/* PARTNER 1: FITES Allgäu */}
-      <section className="pt-8 md:pt-12 pb-16 md:pb-24 bg-background">
-        <div className="container mx-auto px-6 max-w-4xl text-center">
-          <div className="w-20 h-20 rounded-full border border-bronze/30 flex items-center justify-center mx-auto mb-5">
-            <Dumbbell className="w-8 h-8 text-bronze" />
+      <section className="py-12 md:py-20 bg-background">
+        <div className="container mx-auto px-6 max-w-5xl">
+          <div className="group relative bg-card rounded-[2rem] overflow-hidden shadow-xl flex flex-col md:flex-row" style={{ border: "1px solid #EDE0D0" }}>
+            {/* Image */}
+            <div className="md:w-1/2 relative h-64 md:h-auto overflow-hidden" style={{ minHeight: "320px" }}>
+              <img
+                src={fitesStudio}
+                alt="Fitnessstudio FITES Allgäu mit Trainingsgeräten und Tageslicht"
+                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                loading="lazy"
+              />
+              {/* Icon Badge */}
+              <div className="absolute top-5 left-5 bg-white/95 backdrop-blur-sm p-3 rounded-2xl shadow-lg" style={{ border: "1px solid #EDE0D0" }}>
+                <Dumbbell className="w-6 h-6" style={{ color: "#9E7C4E" }} aria-hidden="true" />
+              </div>
+            </div>
+            {/* Content */}
+            <div className="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+              <div className="space-y-1 mb-5">
+                <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">FITES Allgäu</h2>
+                <p className="font-medium text-lg" style={{ color: "#9E7C4E" }}>Fitness nebenan</p>
+              </div>
+              <p className="text-muted-foreground leading-relaxed mb-7">
+                Das Bistro Boxenstopp ist Teil von FITES Allgäu, Eugens Fitnessstudio direkt im selben Gebäude. Kleine Gruppen, persönliche Betreuung, Kurse wie HYROX, HIIT und Fitness-Boxen. Wer nach dem Kaffee Lust auf Bewegung bekommt, oder nach dem Training auf einen Shake, ist herzlich willkommen.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="https://www.fites-allgaeu.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-7 py-3 rounded-xl font-semibold text-white transition-all hover:opacity-90"
+                  style={{ backgroundColor: "#164472" }}
+                >
+                  Mehr über FITES Allgäu
+                </a>
+                <a
+                  href="https://www.fites-allgaeu.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-7 py-3 rounded-xl font-semibold transition-all hover:opacity-80"
+                  style={{ backgroundColor: "#FEF4EC", color: "#9E7C4E", border: "1px solid #EDE0D0" }}
+                >
+                  Zum Studio →
+                </a>
+              </div>
+            </div>
+            {/* Decorative accent */}
+            <div className="pointer-events-none absolute -bottom-12 -right-12 w-48 h-48 rounded-full blur-3xl opacity-40" style={{ backgroundColor: "#FEF4EC" }} />
           </div>
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-5">
-            FITES Allgäu: Fitness nebenan
-          </h2>
-          <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-8">
-            Das Bistro Boxenstopp ist Teil von FITES Allgäu, Eugens Fitnessstudio direkt im selben Gebäude. Kleine Gruppen, persönliche Betreuung, Kurse wie HYROX, HIIT und Fitness-Boxen. Wer nach dem Kaffee Lust auf Bewegung bekommt, oder nach dem Training auf einen Shake, ist herzlich willkommen.
-          </p>
-          <a
-            href="https://www.fites-allgaeu.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
-          >
-            Mehr über FITES Allgäu →
-          </a>
         </div>
       </section>
 
