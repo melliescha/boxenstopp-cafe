@@ -61,6 +61,57 @@ const About = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was ist der Unterschied zwischen TK-Ware aus dem Supermarkt und euren Speisen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Klassische TK-Ware aus dem Supermarkt wird industriell am Fließband gefertigt, oft anonym und ohne deklarierbare Herkunft. Unsere ofenfrischen Speisen kommen von Perplex, einer deutschen Manufaktur, die seit über 33 Jahren Flammkuchen, Baguettes und Brote von Hand belegt und erst danach schockfrostet.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Bedeutet tiefgekühlt automatisch minderwertig?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Schockfrostung ist ein schonendes Verfahren, das Nährstoffe und Geschmack erhält und in nahezu jeder Gastronomie in Deutschland Standard ist, von der Pizzeria bis zum Hotel. Der Unterschied liegt in der Qualität der Rohstoffe und in der handwerklichen Belegung, nicht im Gefrierprozess selbst.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Wie stellt ihr sicher, dass keine Gentechnik im Spiel ist?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Perplex arbeitet nach der Codex-Richtlinie für gentechnikfreie Rohstoffe und wird regelmäßig durch die agroVet GmbH kontrolliert. So wissen wir, was auf unseren Flammkuchen kommt, und ihr auch.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Wo kann ich die genauen Zusätze und Inhaltsstoffe sehen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auf unserer Online-Speisekarte findet ihr alle Zusätze gelistet, und ihr werdet feststellen: auf einen unserer Flammkuchen kommt nur das, was rein soll. Nährwerte und Allergene sind dort transparent aufgeführt.",
+          },
+        },
+      ],
+    };
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "faq-schema-about";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const existing = document.head.querySelector('script[id="faq-schema-about"]');
+      if (existing) document.head.removeChild(existing);
+    };
+  }, []);
+
+
   return (
     <Layout>
       <SEO title="Über uns – Familie Schall | Bistro Boxenstopp" description="Hinter dem Bistro Boxenstopp im Westallgäu steht die Familie Schall: bodenständig, ehrlich, mit Leidenschaft für gute Küche und Gemeinschaft." path="/ueber-uns" image="/og/ueber-uns.jpg" />
@@ -233,6 +284,65 @@ const About = () => {
             Komm vorbei → Anfahrt & Öffnungszeiten
           </Link>
           <div className="divider-bronze mt-8" />
+        </div>
+      </section>
+
+      {/* Kurz-FAQ: TK-Ware, handwerkliche Belegung, kontrollierte Rohstoffe */}
+      <section className="py-16 md:py-20 bg-secondary/30">
+        <div className="container mx-auto px-6 max-w-3xl">
+          <div className="text-center mb-12">
+            <p className="text-bronze font-medium tracking-[0.2em] uppercase text-sm mb-2">Ehrlich & transparent</p>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
+              TK-Ware, handwerkliche Belegung, kontrollierte Rohstoffe
+            </h2>
+            <div className="divider-bronze" />
+            <p className="mt-6 text-muted-foreground leading-relaxed">
+              Wir bekommen oft Fragen zu unseren ofenfrischen Speisen. Hier klären wir den Unterschied, ohne zu beschönigen.
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            <details className="group rounded-lg border border-bronze/30 bg-card px-5 py-4 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer font-serif text-lg font-semibold text-foreground list-none">
+                Was ist der Unterschied zwischen TK-Ware aus dem Supermarkt und euren Speisen?
+                <span className="text-bronze transition-transform group-open:rotate-45 text-2xl leading-none">+</span>
+              </summary>
+              <p className="mt-3 text-muted-foreground leading-relaxed">
+                Klassische TK-Ware aus dem Supermarkt wird industriell am Fließband gefertigt, oft anonym und ohne deklarierbare Herkunft. Unsere ofenfrischen Speisen kommen von Perplex, einer deutschen Manufaktur, die seit über 33 Jahren Flammkuchen, Baguettes und Brote von Hand belegt und erst danach schockfrostet.
+              </p>
+            </details>
+
+            <details className="group rounded-lg border border-bronze/30 bg-card px-5 py-4 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer font-serif text-lg font-semibold text-foreground list-none">
+                Bedeutet tiefgekühlt automatisch minderwertig?
+                <span className="text-bronze transition-transform group-open:rotate-45 text-2xl leading-none">+</span>
+              </summary>
+              <p className="mt-3 text-muted-foreground leading-relaxed">
+                Nein. Schockfrostung ist ein schonendes Verfahren, das Nährstoffe und Geschmack erhält und in nahezu jeder Gastronomie in Deutschland Standard ist, von der Pizzeria bis zum Hotel. Der Unterschied liegt in der Qualität der Rohstoffe und in der handwerklichen Belegung, nicht im Gefrierprozess selbst.
+              </p>
+            </details>
+
+            <details className="group rounded-lg border border-bronze/30 bg-card px-5 py-4 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer font-serif text-lg font-semibold text-foreground list-none">
+                Wie stellt ihr sicher, dass keine Gentechnik im Spiel ist?
+                <span className="text-bronze transition-transform group-open:rotate-45 text-2xl leading-none">+</span>
+              </summary>
+              <p className="mt-3 text-muted-foreground leading-relaxed">
+                Perplex arbeitet nach der Codex-Richtlinie für gentechnikfreie Rohstoffe und wird regelmäßig durch die agroVet GmbH kontrolliert. So wissen wir, was auf unseren Flammkuchen kommt, und ihr auch.
+              </p>
+            </details>
+
+            <details className="group rounded-lg border border-bronze/30 bg-card px-5 py-4 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer font-serif text-lg font-semibold text-foreground list-none">
+                Wo kann ich die genauen Zusätze und Inhaltsstoffe sehen?
+                <span className="text-bronze transition-transform group-open:rotate-45 text-2xl leading-none">+</span>
+              </summary>
+              <p className="mt-3 text-muted-foreground leading-relaxed">
+                Auf unserer Online-Speisekarte findet ihr alle Zusätze gelistet, und ihr werdet feststellen: auf einen unserer Flammkuchen kommt nur das, was rein soll. Nährwerte und Allergene sind dort transparent aufgeführt.{" "}
+                <Link to="/speisekarte" className="font-semibold underline underline-offset-2 hover:text-primary transition-colors">Zur Speisekarte</Link>
+              </p>
+            </details>
+          </div>
         </div>
       </section>
 
