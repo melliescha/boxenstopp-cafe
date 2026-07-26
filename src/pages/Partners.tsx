@@ -9,7 +9,8 @@ import herbalifePartner from "@/assets/herbalife-partner.jpg";
 import perplexLogo from "@/assets/perplex-logo.jpg";
 import cupcinoLogo from "@/assets/cupcino-logo.jpg";
 import cupcinoPartnerImg from "@/assets/cupcino-partner.jpg";
-import fitesStudio from "@/assets/fites-studio.jpg";
+import fitesStudioAsset from "@/assets/fites-studio.jpg.asset.json";
+const fitesStudio = fitesStudioAsset.url;
 
 const Partners = () => {
   const location = useLocation();
