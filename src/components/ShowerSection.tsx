@@ -84,21 +84,6 @@ const ShowerSection = () => {
             </div>
           ))}
         </div>
-
-        <div
-          className="rounded-2xl p-6 md:p-8 text-center"
-          style={{ backgroundColor: "#164472", color: "#FEF4EC" }}
-        >
-          <p className="font-serif text-xl md:text-2xl font-bold mb-3">
-            Duschen für {shower.price} pro Person
-          </p>
-          <p className="text-base" style={{ color: "#FEF4ECCC" }}>
-            Kinder unter {shower.kidsAge} Jahren kostenlos in Begleitung der Eltern.
-          </p>
-          <p className="text-sm mt-4" style={{ color: "#FEF4ECAA" }}>
-            Handtuch mitbringen oder bei uns erfragen.
-          </p>
-        </div>
       </div>
     </section>
   );
