@@ -13,8 +13,8 @@ interface FitesHintProps {
 const FitesHint = ({ variant = "shake", className = "" }: FitesHintProps) => {
   const text =
     variant === "shake"
-      ? "Trainierst du regelmäßig? Im selben Haus ist FITES Allgäu – Eugens Studio mit kleinen Gruppen und persönlicher Betreuung."
-      : "Im selben Gebäude findet ihr FITES Allgäu – Eugens Fitnessstudio mit kleinen Gruppen, HYROX, HIIT und persönlicher Betreuung. Wer mag, schaut einfach rein.";
+      ? "Trainierst du regelmäßig? Im selben Haus ist FITES Allgäu, Eugens Studio mit kleinen Gruppen und persönlicher Betreuung."
+      : "Im selben Gebäude findet ihr FITES Allgäu, Eugens Fitnessstudio mit kleinen Gruppen, HYROX, HIIT und persönlicher Betreuung. Wer mag, schaut einfach rein.";
 
   return (
     <aside

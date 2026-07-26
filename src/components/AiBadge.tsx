@@ -12,7 +12,7 @@ interface AiBadgeProps {
  */
 const AiBadge = ({ variant = "caption", className = "" }: AiBadgeProps) => {
   const title =
-    "Dieses Bild wurde mit KI erstellt oder bearbeitet – klick für den ausführlichen KI-Hinweis";
+    "Dieses Bild wurde mit KI erstellt oder bearbeitet, klick für den ausführlichen KI-Hinweis";
 
   if (variant === "overlay") {
     return (

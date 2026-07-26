@@ -469,7 +469,7 @@ const Datenschutz = () => {
             </P>
             <P>
               Sollten wir zukünftig ein Analyse-Werkzeug einsetzen, werden wir diese
-              Datenschutzerklärung entsprechend anpassen und – soweit erforderlich – vorab Ihre
+              Datenschutzerklärung entsprechend anpassen und, soweit erforderlich, vorab Ihre
               Einwilligung über den Cookie-Banner einholen (Art. 6 Abs. 1 lit. a DSGVO, § 25
               Abs. 1 TDDDG).
             </P>
@@ -604,23 +604,23 @@ const Datenschutz = () => {
             </P>
             <ul style={{ color: warmBrown, fontSize: 16, lineHeight: 1.7, paddingLeft: 24, marginBottom: 14 }}>
               <li>
-                <strong>Lovable</strong> (Lovable Labs Inc., USA) – KI-gestützte
+                <strong>Lovable</strong> (Lovable Labs Inc., USA): KI-gestützte
                 Webentwicklungsplattform zur Erstellung von Layout, Komponenten und Code.
               </li>
               <li>
-                <strong>ChatGPT</strong> (OpenAI, L.L.C., USA) – Sprachmodell für Text-Entwürfe,
+                <strong>ChatGPT</strong> (OpenAI, L.L.C., USA): Sprachmodell für Text-Entwürfe,
                 Formulierungshilfen und Recherche.
               </li>
               <li>
-                <strong>Google Gemini</strong> (Google Ireland Ltd. / Google LLC) – Sprachmodell
+                <strong>Google Gemini</strong> (Google Ireland Ltd. / Google LLC): Sprachmodell
                 für Text- und Recherche-Unterstützung.
               </li>
               <li>
-                <strong>Anthropic Claude</strong> (Anthropic PBC, USA) – Sprachmodell für Texte,
+                <strong>Anthropic Claude</strong> (Anthropic PBC, USA): Sprachmodell für Texte,
                 Code-Reviews und redaktionelle Unterstützung.
               </li>
               <li>
-                <strong>Higgsfield AI</strong> (Higgsfield, Inc., USA) – KI-Bildgenerator für
+                <strong>Higgsfield AI</strong> (Higgsfield, Inc., USA): KI-Bildgenerator für
                 stimmungsvolle Foto-Eindrücke, Produkt- und Ambiente-Bilder.
               </li>
             </ul>
@@ -633,7 +633,7 @@ const Datenschutz = () => {
 
             <H3>16.2 Keine Abbildung realer Personen</H3>
             <P>
-              Bei der Erstellung KI-generierter Bilder – insbesondere über Higgsfield AI – haben
+              Bei der Erstellung KI-generierter Bilder, insbesondere über Higgsfield AI, haben
               wir bewusst darauf geachtet, <strong>keine realen, identifizierbaren Personen</strong>
               {" "}darzustellen. Auf allen KI-generierten Motiven sind ausschließlich fiktive,
               nicht existierende Personen, symbolische Silhouetten oder Situationen ohne

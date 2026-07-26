@@ -20,7 +20,7 @@ const VacationNotice = ({ compact = false }: { compact?: boolean }) => {
         <AlertTriangle className="w-6 h-6 text-warm-gold flex-shrink-0 mt-0.5" aria-hidden="true" />
         <div className="flex-1">
           <p className="font-serif font-bold text-lg text-primary mb-1">
-            Achtung – Sommerurlaub: geschlossen!
+            Achtung, Sommerurlaub: geschlossen!
           </p>
           <p className="text-sm text-foreground/80 leading-relaxed">
             Vom <strong>{vacation.startLabel}</strong> bis einschließlich{" "}
