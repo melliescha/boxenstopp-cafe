@@ -76,6 +76,7 @@ const Partners = () => {
               </p>
               <p className="text-muted-foreground leading-relaxed mb-7">
                 <strong className="text-foreground">Wellpass-Partner:</strong> FITES Allgäu ist an Wellpass (ehemals Qualitrain) angeschlossen. Mitglieder trainieren mit ihrer Wellpass-Mitgliedschaft flexibel bei uns, ganz ohne Zusatzkosten.
+              </p>
               <div className="flex flex-wrap gap-3">
                 <a
                   href="https://www.fites-allgaeu.com"
