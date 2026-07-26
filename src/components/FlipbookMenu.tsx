@@ -180,7 +180,7 @@ const FlipbookMenu = () => {
                   </span>
                   {row.prices.map((p, i) => (
                     <span key={i} className="w-11 sm:w-14 text-right text-bronze font-semibold text-[10px] sm:text-xs whitespace-nowrap">
-                      {p || ", "}
+                      {p || ""}
                     </span>
                   ))}
                 </div>
@@ -209,7 +209,7 @@ const FlipbookMenu = () => {
                   </span>
                   {row.prices.map((p, i) => (
                     <span key={i} className="w-11 sm:w-14 text-right text-bronze font-semibold text-[10px] sm:text-xs whitespace-nowrap">
-                      {p || ", "}
+                      {p || ""}
                     </span>
                   ))}
                 </div>
@@ -251,7 +251,7 @@ const FlipbookMenu = () => {
                     </span>
                     {row.prices.map((p, i) => (
                       <span key={i} className="w-12 sm:w-14 text-right text-bronze font-semibold text-[11px] sm:text-xs whitespace-nowrap">
-                        {p || ", "}
+                        {p || ""}
                       </span>
                     ))}
                   </div>
@@ -298,7 +298,7 @@ const FlipbookMenu = () => {
             {/* Page: Snacks + Süßes */}
             <Page>
               <SectionTitle title="Snacks" />
-              <FlipMenuItem item={{ name: "Proteinriegel", price: "2,50 bis 3,90 €" }} />
+              <FlipMenuItem item={{ name: "Proteinriegel", price: "2,50 – 3,90 €" }} />
               <FlipMenuItem item={{ name: "Müsliriegel Expressmahlzeit", price: "3,90 €" }} />
               <FlipMenuItem item={{ name: "Protein-Chips", price: "2,40 €" }} />
 

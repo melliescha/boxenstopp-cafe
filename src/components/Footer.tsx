@@ -30,7 +30,7 @@ const Footer = () => {
               <li className="flex items-start gap-2">
                 <Clock size={14} className="mt-1 flex-shrink-0" aria-hidden="true" />
                 <span>
-                  Mo, Mi, Fr 15 bis 20 Uhr<br />
+                  Mo, Mi bis Fr 15 bis 20 Uhr<br />
                   Sa 10:30 bis 15:30 · So 11 bis 16 Uhr<br />
                   Di Ruhetag
                 </span>
