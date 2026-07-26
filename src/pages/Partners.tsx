@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import { Droplets, Building2, GraduationCap, Handshake, Leaf, Zap, ShieldCheck, Globe, Award, FlaskConical, Dumbbell } from "lucide-react";
@@ -108,15 +108,13 @@ const Partners = () => {
                 <strong className="text-foreground">Wellpass-Partner:</strong> FITES Allgäu ist an Wellpass (ehemals Qualitrain) angeschlossen. Mitglieder trainieren mit ihrer Wellpass-Mitgliedschaft flexibel bei uns, ganz ohne Zusatzkosten.
               </p>
               <div className="flex flex-wrap gap-3">
-                <a
-                  href="https://www.fites-allgaeu.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/fites-allgaeu"
                   className="px-7 py-3 rounded-xl font-semibold text-white transition-all hover:opacity-90"
                   style={{ backgroundColor: "#164472" }}
                 >
                   Mehr über FITES Allgäu
-                </a>
+                </Link>
                 <a
                   href="https://www.fites-allgaeu.com"
                   target="_blank"
