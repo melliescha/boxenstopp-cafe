@@ -21,6 +21,14 @@ const fitesImages = [
 
 const Partners = () => {
   const location = useLocation();
+  const [fitesIndex, setFitesIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setFitesIndex((i) => (i + 1) % fitesImages.length);
+    }, 4500);
+    return () => clearInterval(timer);
+  }, []);
 
   useEffect(() => {
     if (location.hash) {
