@@ -67,8 +67,8 @@ const jsonLd = [
     offers: {
       "@type": "Offer",
       name: "Kostenloses Probetraining",
-      description: "Bis Oktober kostenloses Probetraining sichern",
-      availabilityEnds: "2026-10-31",
+      description: "Bis Dezember kostenloses Probetraining sichern",
+      availabilityEnds: "2026-12-31",
       price: "0",
       priceCurrency: "EUR",
     },
