@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
@@ -10,7 +10,14 @@ import perplexLogo from "@/assets/perplex-logo.jpg";
 import cupcinoLogo from "@/assets/cupcino-logo.jpg";
 import cupcinoPartnerImg from "@/assets/cupcino-partner.jpg";
 import fitesStudioAsset from "@/assets/fites-studio.jpg.asset.json";
-const fitesStudio = fitesStudioAsset.url;
+import fitesBoxingAsset from "@/assets/fites-boxing.jpg.asset.json";
+import fitesHyroxAsset from "@/assets/fites-hyrox.jpg.asset.json";
+
+const fitesImages = [
+  { url: fitesStudioAsset.url, alt: "FITES Allgäu Studio mit Trainingsgeräten und Hantelbank" },
+  { url: fitesHyroxAsset.url, alt: "HYROX Training Club im FITES Allgäu mit Boxsäcken und Geräten" },
+  { url: fitesBoxingAsset.url, alt: "Fitness-Boxen Training im FITES Allgäu" },
+];
 
 const Partners = () => {
   const location = useLocation();
