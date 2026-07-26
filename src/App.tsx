@@ -49,6 +49,7 @@ const App = () => (
             <Route path="/datenschutz" element={<Datenschutz />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/blog/bodensee-koenigssee-radweg-hergatz" element={<BlogRadwegHergatz />} />
+            <Route path="/fites-allgaeu" element={<FitesAllgaeu />} />
             <Route path="/qr-speisekarte" element={<QRSpeisekarte />} />
             <Route path="/qr-code" element={<QRCodePage />} />
             <Route path="*" element={<NotFound />} />
