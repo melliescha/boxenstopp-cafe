@@ -82,7 +82,7 @@ const jsonLd = [
         name: "Kostet das Probetraining wirklich nichts?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Ja. Bis Oktober 2026 ist das Probetraining bei FITES Allgäu komplett kostenlos und unverbindlich. Einfach anrufen und Termin vereinbaren.",
+          text: "Ja. Bis Dezember 2026 ist das Probetraining bei FITES Allgäu komplett kostenlos und unverbindlich. Einfach anrufen und Termin vereinbaren.",
         },
       },
       {
