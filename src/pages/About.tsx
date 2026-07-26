@@ -61,6 +61,57 @@ const About = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was ist der Unterschied zwischen TK-Ware aus dem Supermarkt und euren Speisen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Klassische TK-Ware aus dem Supermarkt wird industriell am Fließband gefertigt, oft anonym und ohne deklarierbare Herkunft. Unsere ofenfrischen Speisen kommen von Perplex, einer deutschen Manufaktur, die seit über 33 Jahren Flammkuchen, Baguettes und Brote von Hand belegt und erst danach schockfrostet.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Bedeutet tiefgekühlt automatisch minderwertig?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Schockfrostung ist ein schonendes Verfahren, das Nährstoffe und Geschmack erhält und in nahezu jeder Gastronomie in Deutschland Standard ist, von der Pizzeria bis zum Hotel. Der Unterschied liegt in der Qualität der Rohstoffe und in der handwerklichen Belegung, nicht im Gefrierprozess selbst.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Wie stellt ihr sicher, dass keine Gentechnik im Spiel ist?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Perplex arbeitet nach der Codex-Richtlinie für gentechnikfreie Rohstoffe und wird regelmäßig durch die agroVet GmbH kontrolliert. So wissen wir, was auf unseren Flammkuchen kommt, und ihr auch.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Wo kann ich die genauen Zusätze und Inhaltsstoffe sehen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auf unserer Online-Speisekarte findet ihr alle Zusätze gelistet, und ihr werdet feststellen: auf einen unserer Flammkuchen kommt nur das, was rein soll. Nährwerte und Allergene sind dort transparent aufgeführt.",
+          },
+        },
+      ],
+    };
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "faq-schema-about";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const existing = document.head.querySelector('script[id="faq-schema-about"]');
+      if (existing) document.head.removeChild(existing);
+    };
+  }, []);
+
+
   return (
     <Layout>
       <SEO title="Über uns – Familie Schall | Bistro Boxenstopp" description="Hinter dem Bistro Boxenstopp im Westallgäu steht die Familie Schall: bodenständig, ehrlich, mit Leidenschaft für gute Küche und Gemeinschaft." path="/ueber-uns" image="/og/ueber-uns.jpg" />
