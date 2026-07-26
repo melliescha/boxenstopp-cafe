@@ -81,20 +81,20 @@ const Partners = () => {
                 Handgemacht in Deutschland · Seit über 33 Jahren
               </span>
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Perplex: Handgemacht in Deutschland – ehrlich statt Massenware
+                Perplex: Handgemacht in Deutschland, ehrlich statt Massenware
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Klartext vorab: Nahezu jede Gastronomie – von der Pizzeria bis zum Hotel – arbeitet mit vorbereiteten, gekühlten oder tiefgekühlten Komponenten. Das ist Alltag in der Branche, wird nur selten offen gesagt. Wir sagen es. Und wir sagen euch auch, von wem unsere Ware kommt.
+                  Klartext vorab: Nahezu jede Gastronomie, von der Pizzeria bis zum Hotel, arbeitet mit vorbereiteten, gekühlten oder tiefgekühlten Komponenten. Das ist Alltag in der Branche, wird nur selten offen gesagt. Wir sagen es. Und wir sagen euch auch, von wem unsere Ware kommt.
                 </p>
                 <p>
-                  Unser Partner <strong className="text-foreground">Perplex</strong> ist keine anonyme Industrie&shy;fabrik, sondern eine deutsche Manufaktur mit über 33 Jahren Erfahrung. Jeder Flammkuchen, jedes Baguette wird in Deutschland <strong className="text-foreground">von Hand belegt</strong>, mit frischen Zutaten verfeinert und erst dann schockgefrostet – damit der Geschmack am Ofen bei uns genau so ankommt, wie er die Manufaktur verlassen hat.
+                  Unser Partner <strong className="text-foreground">Perplex</strong> ist keine anonyme Industrie&shy;fabrik, sondern eine deutsche Manufaktur mit über 33 Jahren Erfahrung. Jeder Flammkuchen, jedes Baguette wird in Deutschland <strong className="text-foreground">von Hand belegt</strong>, mit frischen Zutaten verfeinert und erst dann schockgefrostet, damit der Geschmack am Ofen bei uns genau so ankommt, wie er die Manufaktur verlassen hat.
                 </p>
                 <p>
-                  Der Unterschied zu „TK-Ware aus dem Supermarkt": handwerkliche Produktion, kontrollierte Rohstoffe ohne Gentechnik (Codex-Richtlinie, Kontrolle durch agroVet GmbH) und volle Transparenz. Vergleichbar damit, wenn ihr euch zu Hause einen Flammkuchen frisch belegt und für später einfriert – nur eben von Profis mit drei Jahrzehnten Erfahrung.
+                  Der Unterschied zu „TK-Ware aus dem Supermarkt": handwerkliche Produktion, kontrollierte Rohstoffe ohne Gentechnik (Codex-Richtlinie, Kontrolle durch agroVet GmbH) und volle Transparenz. Vergleichbar damit, wenn ihr euch zu Hause einen Flammkuchen frisch belegt und für später einfriert, nur eben von Profis mit drei Jahrzehnten Erfahrung.
                 </p>
                 <p className="text-sm italic">
-                  Wir könnten so tun, als würden wir alles selbst kneten. Machen wir aber nicht. Wir stehen zu unserem Partner – weil die Qualität stimmt und weil Ehrlichkeit besser schmeckt als Marketing.
+                  Wir könnten so tun, als würden wir alles selbst kneten. Machen wir aber nicht. Wir stehen zu unserem Partner, weil die Qualität stimmt und weil Ehrlichkeit besser schmeckt als Marketing.
                 </p>
               </div>
             </div>
@@ -134,7 +134,7 @@ const Partners = () => {
               </div>
             </div>
             <p className="mt-6 text-xs text-muted-foreground text-center sm:text-left">
-              Kleiner Reality-Check: Nach Branchenschätzungen setzt ein Großteil der Gastronomie in Deutschland auf vorbereitete oder tiefgekühlte Komponenten. Wir verstecken das nicht – wir wählen den Partner sorgfältig aus.
+              Kleiner Reality-Check: Nach Branchenschätzungen setzt ein Großteil der Gastronomie in Deutschland auf vorbereitete oder tiefgekühlte Komponenten. Wir verstecken das nicht, wir wählen den Partner sorgfältig aus.
             </p>
           </div>
         </div>

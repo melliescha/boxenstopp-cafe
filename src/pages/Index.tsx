@@ -74,7 +74,7 @@ const faqs = [
   {
     question: "Ist das ein Privatgrundstück? Darf ich da überhaupt hin?",
     answer:
-      "Ja, ihr dürft! Das Gebäude ist gleichzeitig unser Einfamilienhaus, das verwirrt viele. Außen führt eine Treppe nach unten zur Terrasse und zum Eingang. Genau da kommt ihr rein. Auf dem Schild seht ihr „Bistro Boxenstopp\" und „FITES Allgäu\" – beides ist im selben Gebäude. Einfach die Treppe runter, Türe auf, willkommen!",
+      "Ja, ihr dürft! Das Gebäude ist gleichzeitig unser Einfamilienhaus, das verwirrt viele. Außen führt eine Treppe nach unten zur Terrasse und zum Eingang. Genau da kommt ihr rein. Auf dem Schild seht ihr „Bistro Boxenstopp\" und „FITES Allgäu\", beides ist im selben Gebäude. Einfach die Treppe runter, Türe auf, willkommen!",
   },
   {
     question: "Muss ich Fitnessmitglied sein, um ins Bistro zu kommen?",
@@ -84,12 +84,12 @@ const faqs = [
   {
     question: "Bin ich hier richtig, wenn ich einfach nur Kaffee will?",
     answer:
-      "Absolut, du bist sogar GENAU richtig. Unser Name kommt nicht zufällig „Boxenstopp\". Egal ob nach der Arbeit, nach einer Radtour, einem Spaziergang durch Hergatz oder einfach so – wir sind dein Stopp zum Durchatmen.",
+      "Absolut, du bist sogar GENAU richtig. Unser Name kommt nicht zufällig „Boxenstopp\". Egal ob nach der Arbeit, nach einer Radtour, einem Spaziergang durch Hergatz oder einfach so, wir sind dein Stopp zum Durchatmen.",
   },
   {
     question: "Wie finde ich rein?",
     answer:
-      "Wir liegen am Südhang 1 in Hergatz / Wohmbrechts. Von außen seht ihr eine Treppe, die nach unten führt – die kommt euch direkt zu uns. Folgt einfach den Schildern „Bistro Boxenstopp\". Wir freuen uns auf euch.",
+      "Wir liegen am Südhang 1 in Hergatz / Wohmbrechts. Von außen seht ihr eine Treppe, die nach unten führt, die kommt euch direkt zu uns. Folgt einfach den Schildern „Bistro Boxenstopp\". Wir freuen uns auf euch.",
   },
   {
     question: "Wann habt ihr offen?",
@@ -241,7 +241,7 @@ const Index = () => {
     <Layout>
       <SEO
         title="Bistro Boxenstopp Hergatz | Kaffee & Flammkuchen"
-        description="Barista-Kaffee, ofenfrische Flammkuchen und Hüttenbrot in Hergatz – Euer Stopp am Bodensee-Königssee-Radweg im Westallgäu."
+        description="Barista-Kaffee, ofenfrische Flammkuchen und Hüttenbrot in Hergatz, Euer Stopp am Bodensee-Königssee-Radweg im Westallgäu."
         path="/"
         type="restaurant.restaurant"
         jsonLd={localBusinessSchema}

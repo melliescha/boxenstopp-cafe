@@ -265,7 +265,7 @@ const ProductDetailOverlay = ({ product, onClose }: Props) => {
 
           {/* Photo disclaimer */}
           <p className="mt-4 italic text-muted-foreground" style={{ fontSize: '11px' }}>
-            Beispielfoto — das tatsächliche Produkt kann optisch abweichen. Echte Eindrücke findest du in unserer{' '}
+            Beispielfoto: das tatsächliche Produkt kann optisch abweichen. Echte Eindrücke findest du in unserer{' '}
             <Link to="/galerie" className="underline" style={{ color: '#9e7c4e' }}>Galerie</Link>.
           </p>
 

@@ -122,7 +122,7 @@ const Wegweiser = ({ background = "background" }: WegweiserProps) => {
               </div>
               {!placeholders[lightbox].image && (
                 <p className="text-sm text-muted-foreground text-center">
-                  Foto folgt – Platzhalter
+                  Foto folgt, Platzhalter
                 </p>
               )}
             </>

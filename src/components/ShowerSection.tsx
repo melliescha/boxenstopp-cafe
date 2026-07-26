@@ -10,7 +10,7 @@ const useCases = [
   {
     icon: Footprints,
     label: "Nach dem Joggen",
-    text: "Frisch geduscht weiter – bevor ihr nach Hause fahrt.",
+    text: "Frisch geduscht weiter, bevor ihr nach Hause fahrt.",
   },
   {
     icon: Briefcase,
@@ -53,7 +53,7 @@ const ShowerSection = () => {
             Frisch geduscht weiter
           </h2>
           <p className="mt-3 text-lg" style={{ color: "#6B4A2E" }}>
-            Bei uns kannst du nicht nur aufladen – du kannst dich auch frisch machen.
+            Bei uns kannst du nicht nur aufladen, du kannst dich auch frisch machen.
           </p>
         </div>
 

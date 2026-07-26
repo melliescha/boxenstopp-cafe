@@ -70,7 +70,7 @@ const MenuTileView = () => {
           <span>🍓🥭</span>
           <p>
             <span className="font-semibold">Saison-Hit:</span> Iced Strawberry & Mango Matcha Latte nur bis
-            <span className="font-semibold"> 15. September</span> erhältlich – solange der Vorrat reicht.
+            <span className="font-semibold"> 15. September</span> erhältlich, solange der Vorrat reicht.
           </p>
         </div>
       )}

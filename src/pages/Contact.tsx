@@ -346,7 +346,7 @@ const Contact = () => {
                   </span>
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
-                  Bei uns könnt ihr für {shower.price} pro Person duschen – perfekt nach der Radtour, dem Joggen, vor der Arbeit oder auf der Durchreise. Kinder unter {shower.kidsAge} Jahren in Begleitung der Eltern sind kostenlos.
+                  Bei uns könnt ihr für {shower.price} pro Person duschen, perfekt nach der Radtour, dem Joggen, vor der Arbeit oder auf der Durchreise. Kinder unter {shower.kidsAge} Jahren in Begleitung der Eltern sind kostenlos.
                 </AccordionContent>
               </AccordionItem>
             )}

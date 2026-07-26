@@ -318,10 +318,10 @@ const FlipbookMenu = () => {
               <div className="text-[9px] sm:text-[10px] space-y-0.5 mb-3">
                 <p className="font-medium text-foreground mb-1">Allergene:</p>
                 {[
-                  "A – Glutenhaltiges Getreide", "B – Krebstiere", "C – Eier", "D – Fisch",
-                  "E – Erdnüsse", "F – Soja", "G – Milch / Laktose", "H – Schalenfrüchte",
-                  "I – Sellerie", "J – Senf", "K – Sesam", "L – Schwefeldioxid / Sulfite",
-                  "M – Lupinen", "N – Weichtiere",
+                  "A: Glutenhaltiges Getreide", "B: Krebstiere", "C: Eier", "D: Fisch",
+                  "E: Erdnüsse", "F: Soja", "G: Milch / Laktose", "H: Schalenfrüchte",
+                  "I: Sellerie", "J: Senf", "K: Sesam", "L: Schwefeldioxid / Sulfite",
+                  "M: Lupinen", "N: Weichtiere",
                 ].map((a) => (
                   <p key={a} className="text-muted-foreground">{a}</p>
                 ))}
@@ -329,10 +329,10 @@ const FlipbookMenu = () => {
               <div className="text-[9px] sm:text-[10px] space-y-0.5">
                 <p className="font-medium text-foreground mb-1">Zusatzstoffe:</p>
                 {[
-                  "1 – mit Farbstoff", "2 – mit Konservierungsstoff", "3 – mit Antioxidationsmittel",
-                  "4 – mit Geschmacksverstärker", "5 – geschwefelt", "6 – geschwärzt",
-                  "7 – gewachst", "8 – mit Phosphat", "9 – mit Süßungsmittel",
-                  "10 – enthält Phenylalaninquelle", "11 – koffeinhaltig", "12 – chininhaltig",
+                  "1: mit Farbstoff", "2: mit Konservierungsstoff", "3: mit Antioxidationsmittel",
+                  "4: mit Geschmacksverstärker", "5: geschwefelt", "6: geschwärzt",
+                  "7: gewachst", "8: mit Phosphat", "9: mit Süßungsmittel",
+                  "10: enthält Phenylalaninquelle", "11: koffeinhaltig", "12: chininhaltig",
                 ].map((a) => (
                   <p key={a} className="text-muted-foreground">{a}</p>
                 ))}
@@ -341,7 +341,7 @@ const FlipbookMenu = () => {
                 Alle Angaben ohne Gewähr. Bitte sprich uns bei Allergien direkt an.
               </p>
               <p className="text-[7px] sm:text-[8px] text-muted-foreground/70 italic mt-2">
-                Beispielfotos — die tatsächlichen Produkte können optisch abweichen.
+                Beispielfotos: die tatsächlichen Produkte können optisch abweichen.
               </p>
               <PageNumber num={11} />
             </Page>

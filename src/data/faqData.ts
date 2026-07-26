@@ -95,7 +95,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Ist Perplex nicht einfach TK-Ware?",
         answer:
-          "Kurze, ehrliche Antwort: Ja, Perplex-Produkte werden schockgefrostet geliefert – wie in nahezu jeder Gastronomie in Deutschland (Pizzeria, Hotel, Restaurant). Der Unterschied: Perplex ist eine deutsche Manufaktur, die seit über 33 Jahren Flammkuchen, Baguettes & Co. in Deutschland von Hand belegt, mit frischen Zutaten verfeinert und erst danach einfriert – ohne Gentechnik, kontrolliert nach Codex-Richtlinie durch agroVet. Das ist keine anonyme Industrie-TK aus dem Supermarkt, sondern Handwerk aus Deutschland. Wir könnten so tun, als würden wir selbst kneten – tun wir aber nicht. Wir stehen zu unserem Partner.",
+          "Kurze, ehrliche Antwort: Ja, Perplex-Produkte werden schockgefrostet geliefert, wie in nahezu jeder Gastronomie in Deutschland (Pizzeria, Hotel, Restaurant). Der Unterschied: Perplex ist eine deutsche Manufaktur, die seit über 33 Jahren Flammkuchen, Baguettes & Co. in Deutschland von Hand belegt, mit frischen Zutaten verfeinert und erst danach einfriert, ohne Gentechnik, kontrolliert nach Codex-Richtlinie durch agroVet. Das ist keine anonyme Industrie-TK aus dem Supermarkt, sondern Handwerk aus Deutschland. Wir könnten so tun, als würden wir selbst kneten, tun wir aber nicht. Wir stehen zu unserem Partner.",
       },
     ],
   },
@@ -315,7 +315,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Hüttenbrot? Das macht doch jeder. Was ist daran besonders?",
         answer:
-          "Ehrlich: Wir backen das Brot nicht selbst. Es kommt handbelegt aus einer deutschen Manufaktur (Perplex, seit über 33 Jahren) und wird bei uns ofenfrisch aufgebacken. Klingt simpel, ist es auch – aber wenn ihr's einmal probiert habt, kommt ihr wieder. Simpel, deftig, einfach gut.",
+          "Ehrlich: Wir backen das Brot nicht selbst. Es kommt handbelegt aus einer deutschen Manufaktur (Perplex, seit über 33 Jahren) und wird bei uns ofenfrisch aufgebacken. Klingt simpel, ist es auch, aber wenn ihr's einmal probiert habt, kommt ihr wieder. Simpel, deftig, einfach gut.",
       },
       {
         question: "Ein Café mit Eiweißshakes und Kollagen-Kaffee. Ist das nicht Hipster-Quatsch fürs Instagram?",
@@ -335,7 +335,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Macht ihr selbst was, oder kommt alles aus der Tiefkühltruhe?",
         answer:
-          "Klartext: Unsere ofenfrischen Speisen (Flammkuchen, Pizza, Baguette, Hüttenbrot) kommen von Perplex – einer deutschen Manufaktur, die seit über 33 Jahren in Deutschland von Hand belegt und erst danach schockfrostet. Das ist der Branchen-Standard – nahezu jede Gastronomie, jede Pizzeria, jedes Hotel arbeitet mit vorbereiteten oder tiefgekühlten Komponenten. Der Unterschied ist die Qualität: Handwerk statt Fließband, ohne Gentechnik, kontrolliert durch agroVet. Vergleichbar damit, wenn ihr euch zu Hause einen Flammkuchen frisch belegt und für später einfriert – nur eben von Profis. Wir sind ehrlich damit und listen Lieferanten, Nährwerte und Inhaltsstoffe transparent auf. Was wir vor Ort frisch machen: Salate, Shakes, Kaffee, Iced Drinks, Quark & Toppings.",
+          "Klartext: Unsere ofenfrischen Speisen (Flammkuchen, Pizza, Baguette, Hüttenbrot) kommen von Perplex, einer deutschen Manufaktur, die seit über 33 Jahren in Deutschland von Hand belegt und erst danach schockfrostet. Das ist der Branchen-Standard, nahezu jede Gastronomie, jede Pizzeria, jedes Hotel arbeitet mit vorbereiteten oder tiefgekühlten Komponenten. Der Unterschied ist die Qualität: Handwerk statt Fließband, ohne Gentechnik, kontrolliert durch agroVet. Vergleichbar damit, wenn ihr euch zu Hause einen Flammkuchen frisch belegt und für später einfriert, nur eben von Profis. Wir sind ehrlich damit und listen Lieferanten, Nährwerte und Inhaltsstoffe transparent auf. Was wir vor Ort frisch machen: Salate, Shakes, Kaffee, Iced Drinks, Quark & Toppings.",
       },
       {
         question: "Eugen ist VIP-Berater bei Herbalife. Wollt ihr uns das jetzt verkaufen?",

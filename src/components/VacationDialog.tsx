@@ -59,7 +59,7 @@ const VacationDialog = () => {
 
         <div className="bg-cream/60 rounded-lg p-4 text-center text-sm text-foreground/80">
           Ihr vermisst uns schon jetzt? Dann freuen wir uns riesig über eine
-          Bewertung auf Google – das hilft uns mehr als ein Sonnenbrand auf der Nase. 😉
+          Bewertung auf Google: das hilft uns mehr als ein Sonnenbrand auf der Nase. 😉
         </div>
 
         <div className="flex flex-col sm:flex-row gap-2 pt-2">
