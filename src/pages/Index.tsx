@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { Map, Thermometer, ShowerHead, BatteryCharging, Sun, Users, Bike, Clock, ArrowRight } from "lucide-react";
-import { isShowerFeatureVisible } from "@/lib/features";
+import { Map, Thermometer, Droplets, BatteryCharging, Sun, Users, Bike, Clock, ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import BestsellerSection from "@/components/BestsellerSection";
