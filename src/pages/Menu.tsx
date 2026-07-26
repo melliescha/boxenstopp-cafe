@@ -257,6 +257,20 @@ const Menu = () => {
           {tab === "karte" && <MenuTileView />}
           {tab === "flipbook" && <FlipbookMenu />}
 
+          {/* Transparenz-Hinweis zu Perplex */}
+          <div className="max-w-3xl mx-auto mt-12 rounded-lg border border-bronze/30 bg-bronze/5 px-5 py-5 text-sm md:text-base text-muted-foreground">
+            <p className="font-serif font-bold text-foreground mb-2">Ofenfrisch von Perplex, handgemacht in Deutschland</p>
+            <p>
+              Der Unterschied zu „TK-Ware aus dem Supermarkt": handwerkliche Produktion, kontrollierte Rohstoffe ohne Gentechnik (Codex-Richtlinie, Kontrolle durch agroVet GmbH) und volle Transparenz. Vergleichbar damit, wenn ihr euch zu Hause einen Flammkuchen frisch belegt und für später einfriert, nur eben von Profis mit drei Jahrzehnten Erfahrung.
+            </p>
+            <p className="mt-3">
+              Auf unserer Online-Speisekarte findet ihr alle Zusätze gelistet und werdet feststellen: auf einen unserer Flammkuchen kommt nur das, was rein soll.{" "}
+              <Link to="/partner" className="font-semibold underline underline-offset-2 hover:text-primary transition-colors">
+                mehr zu Perplex
+              </Link>
+            </p>
+          </div>
+
         </div>
       </section>
     </Layout>
