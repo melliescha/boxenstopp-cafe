@@ -27,29 +27,29 @@ const Partners = () => {
     <Layout>
       <SEO title="Unsere Partner | Bistro Boxenstopp" description="Wir arbeiten mit Cup&Cino (Foundation für sauberes Wasser), Herbalife Nutrition und Perplex Pizza & Baguette Deutschland zusammen." path="/partner" image="/og/partner.jpg" />
       {/* Hero / Intro */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="pt-12 md:pt-20 pb-6 md:pb-8 bg-background">
         <div className="container mx-auto px-6 max-w-4xl text-center">
           <p className="text-bronze font-medium tracking-[0.2em] uppercase text-sm mb-2">Zusammenarbeit</p>
           <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-4">
             Unsere Partner
           </h1>
-          <div className="w-16 h-[2px] bg-bronze mx-auto mb-8" />
+          <div className="w-16 h-[2px] bg-bronze mx-auto mb-6" />
           <p className="text-muted-foreground leading-relaxed max-w-3xl mx-auto text-lg">
             Qualität hat bei uns oberste Priorität. Deshalb haben wir uns nicht einfach nur für gute Partner entschieden, sondern für Spitzenpartner mit jahrzehntelanger Erfahrung und einer führenden Position in Deutschland.
           </p>
-          <p className="text-muted-foreground leading-relaxed max-w-3xl mx-auto text-lg mt-4">
+          <p className="text-muted-foreground leading-relaxed max-w-3xl mx-auto text-lg mt-3">
             Jedes Produkt, das wir im Bistro Boxenstopp servieren, kommt von einem Partner, dem wir zu 100 % vertrauen. Hier stellen wir sie vor.
           </p>
         </div>
       </section>
 
       {/* PARTNER 1: FITES Allgäu */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="pt-8 md:pt-12 pb-16 md:pb-24 bg-background">
         <div className="container mx-auto px-6 max-w-4xl text-center">
-          <div className="w-20 h-20 rounded-full border border-bronze/30 flex items-center justify-center mx-auto mb-6">
+          <div className="w-20 h-20 rounded-full border border-bronze/30 flex items-center justify-center mx-auto mb-5">
             <Dumbbell className="w-8 h-8 text-bronze" />
           </div>
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-5">
             FITES Allgäu: Fitness nebenan
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-8">
