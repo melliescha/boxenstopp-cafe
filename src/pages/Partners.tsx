@@ -67,17 +67,32 @@ const Partners = () => {
       <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="group relative bg-card rounded-[2rem] overflow-hidden shadow-xl flex flex-col md:flex-row" style={{ border: "1px solid #EDE0D0" }}>
-            {/* Image */}
+            {/* Image Carousel */}
             <div className="md:w-1/2 relative h-64 md:h-auto overflow-hidden" style={{ minHeight: "320px" }}>
-              <img
-                src={fitesStudio}
-                alt="Fitnessstudio FITES Allgäu mit Trainingsgeräten und Tageslicht"
-                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                loading="lazy"
-              />
+              {fitesImages.map((img, idx) => (
+                <img
+                  key={img.url}
+                  src={img.url}
+                  alt={img.alt}
+                  className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${idx === fitesIndex ? "opacity-100" : "opacity-0"}`}
+                  loading={idx === 0 ? "eager" : "lazy"}
+                />
+              ))}
               {/* Icon Badge */}
-              <div className="absolute top-5 left-5 bg-white/95 backdrop-blur-sm p-3 rounded-2xl shadow-lg" style={{ border: "1px solid #EDE0D0" }}>
+              <div className="absolute top-5 left-5 bg-white/95 backdrop-blur-sm p-3 rounded-2xl shadow-lg z-10" style={{ border: "1px solid #EDE0D0" }}>
                 <Dumbbell className="w-6 h-6" style={{ color: "#9E7C4E" }} aria-hidden="true" />
+              </div>
+              {/* Dots */}
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+                {fitesImages.map((_, idx) => (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={() => setFitesIndex(idx)}
+                    aria-label={`Bild ${idx + 1} anzeigen`}
+                    className={`h-2.5 rounded-full transition-all ${idx === fitesIndex ? "w-6 bg-white" : "w-2.5 bg-white/60 hover:bg-white/80"}`}
+                  />
+                ))}
               </div>
             </div>
             {/* Content */}
