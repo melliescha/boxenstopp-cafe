@@ -680,12 +680,11 @@ const Datenschutz = () => {
 
             <H3>16.3 Kennzeichnung und Aussagekraft</H3>
             <P>
-              KI-generierte oder KI-bearbeitete Bilder sind auf dieser Website mit einem
-              kleinen „AI"-Rundlogo am Bild gekennzeichnet. Ein Klick darauf führt direkt zu
-              diesem ausführlichen KI-Hinweis. Zusätzlich weisen wir in der Bildergalerie und
-              im Seitenfuß allgemein auf den Einsatz von KI-Bildern hin. Bei Texten dieser
-              Website wurden KI-Werkzeuge lediglich unterstützend eingesetzt; alle Inhalte
-              wurden vor Veröffentlichung von uns redaktionell geprüft und verantwortet.
+              KI-generierte Bilder sind auf dieser Website direkt im Bild mit dem Label
+              „KI generiert" gekennzeichnet, lediglich KI-bearbeitete Bilder mit einem kleinen
+              „KI"-Rundlabel. Ein Klick darauf führt direkt zu unserem Transparenzbericht. Bei
+              Texten dieser Website wurden KI-Werkzeuge lediglich unterstützend eingesetzt; alle
+              Inhalte wurden vor Veröffentlichung von uns redaktionell geprüft und verantwortet.
             </P>
             <P>
               Auch unser Logo sowie weitere Grafiken und Icons dieser Website wurden mit
