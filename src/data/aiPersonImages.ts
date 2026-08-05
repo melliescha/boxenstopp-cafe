@@ -4,8 +4,7 @@
  *
  * Grundlage: Art. 50 Abs. 4 der Verordnung (EU) 2024/1689 („EU AI Act").
  * Solche Bilder müssen sichtbar gekennzeichnet werden. Auf dieser Website
- * geschieht das über <AiBadge /> (klickbares „AI"-Rundlogo) bzw. über den
- * Sammelhinweis am Ende der Bildergalerie.
+ * geschieht das über <AiBadge /> (klickbares Label „KI generiert" direkt im Bild).
  *
  * WICHTIG: Neue KI-Bilder mit Personen hier eintragen. Das Skript
  * `scripts/check-ai-badges.mjs` läuft bei jedem Build und bricht ab,
@@ -27,6 +26,6 @@ export const AI_PERSON_IMAGES: AiPersonImage[] = [
 
 /**
  * Dateien, in denen ein gut sichtbarer Sammelhinweis (Fußnote mit Link auf
- * /datenschutz#ki-hinweis) statt eines „AI"-Rundlogos pro Bild ausreicht.
+ * /ki-transparenz) statt eines Badges pro Bild ausreicht.
  */
 export const AI_COLLECTIVE_NOTICE_FILES: string[] = ["src/pages/Gallery.tsx"];
