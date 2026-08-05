@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Phone, MapPin, Clock, Route, Star } from "lucide-react";
 import { socialLinks, facebookEnabled } from "@/config/social";
+import { openConsentSettings } from "@/lib/consent";
+
 
 const Footer = () => {
   return (
@@ -117,6 +119,16 @@ const Footer = () => {
                   <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded" style={{ backgroundColor: "#9E7C4E33", color: "#e8d4b0" }}>KI</span>
                 </Link>
               </li>
+              <li>
+                <button
+                  type="button"
+                  onClick={openConsentSettings}
+                  className="hover:text-warm-gold transition-colors text-left"
+                >
+                  Cookie-Einstellungen
+                </button>
+              </li>
+
             </ul>
           </div>
         </div>
