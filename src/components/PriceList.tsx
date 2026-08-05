@@ -281,10 +281,25 @@ const PriceList = () => {
           </div>
         </div>
 
+        <div className="mt-6 rounded-lg border border-bronze/30 bg-card px-5 py-4">
+          <p className="text-sm font-semibold text-foreground mb-2">
+            Vegan, glutenfrei und Kreuzkontamination
+          </p>
+          <p className="text-xs text-muted-foreground leading-relaxed">
+            Wir bieten vegane Milchalternativen wie Hafermilch an und haben Produkte im Angebot,
+            die glutenfrei sind. Da wir alles in einer offenen Küche mit gemeinsamen Geräten,
+            Arbeitsflächen und Milchsystemen zubereiten, können wir eine vollständige Frei-von-
+            Garantie jedoch <strong>nicht</strong> geben. Spuren durch Kreuzkontamination
+            (z. B. Gluten, Milch, Nüsse, Soja) sind nicht auszuschließen; eine Haftung dafür
+            können wir nicht übernehmen. Bei Allergien, Unverträglichkeiten oder einer streng
+            veganen Ernährung sprich uns bitte vor der Bestellung direkt an, wir beraten dich
+            gerne persönlich.
+          </p>
+        </div>
         <p className="text-xs text-muted-foreground italic text-center mt-6">
-          Alle Angaben ohne Gewähr. Bitte sprich uns bei Allergien oder Unverträglichkeiten direkt an,
-          wir beraten dich gerne persönlich.
+          Alle Angaben ohne Gewähr.
         </p>
+
         <p className="text-xs text-muted-foreground text-center mt-3">
           Alle Preise sind Endpreise in Euro (Kleinunternehmer gemäß § 19 UStG, daher kein
           Umsatzsteuerausweis). Preisänderungen und Irrtümer vorbehalten; verbindlich sind die
