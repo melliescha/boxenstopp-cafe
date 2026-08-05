@@ -37,7 +37,7 @@ const guarantees = [
 const faqItems = [
   {
     q: "Welche Bilder auf der Website sind KI-generiert?",
-    a: "Echte Fotos sind Aufnahmen von unserem Bistro, den Räumen, der Terrasse und unseren Speisen. Alle Bilder, die mit KI erstellt oder nachbearbeitet wurden, erkennt man am kleinen „AI"-Rundlogo am Bild. Ein Klick darauf führt zu unseren KI-Hinweisen.",
+    a: "Echte Fotos sind Aufnahmen von unserem Bistro, den Räumen, der Terrasse und unseren Speisen. Alle Bilder, die mit KI erstellt oder nachbearbeitet wurden, erkennt man am kleinen „AI“-Rundlogo am Bild. Ein Klick darauf führt zu unseren KI-Hinweisen.",
   },
   {
     q: "Sind auf den KI-Bildern echte Menschen zu sehen?",
@@ -200,7 +200,7 @@ const KiTransparenz = () => {
                 Schall sowie Melanie Dincdemir — als reale, erkennbare Personen. Diese sind im
                 Sinne von Art. 3 Nr. 60 EU AI Act als Deepfake einzuordnen. Da es sich um unsere
                 eigenen Abbildungen handelt, liegen die Einwilligungen der abgebildeten Personen
-                ausdrücklich vor. Wir kennzeichnen diese Bilder mit dem „AI"-Rundlogo und weisen
+                ausdrücklich vor. Wir kennzeichnen diese Bilder mit dem „AI“-Rundlogo und weisen
                 hier transparent gemäß Art. 50 EU AI Act darauf hin.
               </p>
             </div>
