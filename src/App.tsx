@@ -20,6 +20,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 const FAQ = lazy(() => import("./pages/FAQ"));
 const BlogRadwegHergatz = lazy(() => import("./pages/BlogRadwegHergatz"));
 const FitesAllgaeu = lazy(() => import("./pages/FitesAllgaeu"));
+const KiCheckliste = lazy(() => import("./pages/KiCheckliste"));
 
 const queryClient = new QueryClient();
 
@@ -51,6 +52,7 @@ const App = () => (
             <Route path="/blog/bodensee-koenigssee-radweg-hergatz" element={<BlogRadwegHergatz />} />
             <Route path="/fites-allgaeu" element={<FitesAllgaeu />} />
             <Route path="/qr-speisekarte" element={<QRSpeisekarte />} />
+            <Route path="/ki-checkliste" element={<KiCheckliste />} />
             <Route path="/qr-code" element={<QRCodePage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
