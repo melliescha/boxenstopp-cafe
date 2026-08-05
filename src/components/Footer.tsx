@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, Phone, MapPin, Clock, Route } from "lucide-react";
+import { Instagram, Facebook, Phone, MapPin, Clock, Route, Star } from "lucide-react";
 import { socialLinks, facebookEnabled } from "@/config/social";
 
 const Footer = () => {
