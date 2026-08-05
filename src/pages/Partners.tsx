@@ -2,13 +2,15 @@ import { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
-import { Droplets, Building2, GraduationCap, Handshake, Leaf, Zap, ShieldCheck, Globe, Award, FlaskConical, Dumbbell } from "lucide-react";
+import { Droplets, Building2, GraduationCap, Leaf, Zap, ShieldCheck, Globe, Award, FlaskConical, Dumbbell, Megaphone, BarChart3, PenTool, MonitorSmartphone } from "lucide-react";
 import flammkuchenPartner from "@/assets/flammkuchen-partner.png";
 import herbalifelogo from "@/assets/herbalife-logo.png";
 import herbalifePartner from "@/assets/herbalife-partner.jpg";
 import perplexLogo from "@/assets/perplex-logo.jpg";
 import cupcinoLogo from "@/assets/cupcino-logo.jpg";
 import cupcinoPartnerImg from "@/assets/cupcino-partner.jpg";
+import optivanatPartner from "@/assets/optivanat-partner.jpg";
+import optivanatLogo from "@/assets/optivanat-logo.png";
 import fitesStudioAsset from "@/assets/fites-studio.jpg.asset.json";
 import fitesBoxingAsset from "@/assets/fites-boxing.jpg.asset.json";
 import fitesHyroxAsset from "@/assets/fites-hyrox.jpg.asset.json";
@@ -42,7 +44,7 @@ const Partners = () => {
 
   return (
     <Layout>
-      <SEO title="Unsere Partner | Bistro Boxenstopp" description="Wir arbeiten mit Cup&Cino (Foundation für sauberes Wasser), Herbalife Nutrition und Perplex Pizza & Baguette Deutschland zusammen." path="/partner" image="/og/partner.jpg" />
+      <SEO title="Unsere Partner | Bistro Boxenstopp" description="Wir arbeiten mit FITES Allgäu, Cup&Cino, OPTIVANAT Agency, Herbalife Nutrition und Perplex zusammen." path="/partner" image="/og/partner.jpg" />
       {/* Hero / Intro */}
       <section className="pt-12 md:pt-20 pb-10 md:pb-14" style={{ backgroundColor: "#FEF4EC" }}>
         <div className="container mx-auto px-6 max-w-3xl text-center">
@@ -136,80 +138,6 @@ const Partners = () => {
         <div className="h-[1px] bg-bronze/20" />
       </div>
 
-      {/* PARTNER 2: Perplex */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-6 max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
-            {/* Text left */}
-            <div className="order-2 md:order-1">
-              <img src={perplexLogo} alt="Perplex Logo" className="h-12 mb-6" loading="lazy" />
-              <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
-                Handgemacht in Deutschland · Seit über 33 Jahren
-              </span>
-              <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Perplex: Handgemacht in Deutschland, ehrlich statt Massenware
-              </h2>
-              <div className="space-y-4 text-muted-foreground leading-relaxed">
-                <p>
-                  Klartext vorab: Nahezu jede Gastronomie, von der Pizzeria bis zum Hotel, arbeitet mit vorbereiteten, gekühlten oder tiefgekühlten Komponenten. Das ist Alltag in der Branche, wird nur selten offen gesagt. Wir sagen es. Und wir sagen euch auch, von wem unsere Ware kommt.
-                </p>
-                <p>
-                  Unser Partner <strong className="text-foreground">Perplex</strong> ist keine anonyme Industrie&shy;fabrik, sondern eine deutsche Manufaktur mit über 33 Jahren Erfahrung. Jeder Flammkuchen, jedes Baguette wird in Deutschland <strong className="text-foreground">von Hand belegt</strong>, mit frischen Zutaten verfeinert und erst dann schockgefrostet, damit der Geschmack am Ofen bei uns genau so ankommt, wie er die Manufaktur verlassen hat.
-                </p>
-                <p>
-                  Der Unterschied zu „TK-Ware aus dem Supermarkt": handwerkliche Produktion, kontrollierte Rohstoffe ohne Gentechnik (Codex-Richtlinie, Kontrolle durch agroVet GmbH) und volle Transparenz. Vergleichbar damit, wenn ihr euch zu Hause einen Flammkuchen frisch belegt und für später einfriert, nur eben von Profis mit drei Jahrzehnten Erfahrung.
-                </p>
-                <p className="text-sm italic">
-                  Wir könnten so tun, als würden wir alles selbst kneten. Machen wir aber nicht. Wir stehen zu unserem Partner, weil die Qualität stimmt und weil Ehrlichkeit besser schmeckt als Marketing.
-                </p>
-              </div>
-            </div>
-            {/* Image right */}
-            <div className="order-1 md:order-2">
-              <img
-                src={flammkuchenPartner}
-                alt="Vier verschiedene Flammkuchen auf Holzbrettern"
-                className="w-full aspect-[4/3] object-cover rounded-2xl shadow-lg"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          {/* Highlight Box */}
-          <div className="mt-12 bg-card rounded-xl border border-bronze/20 p-8">
-            <div className="grid sm:grid-cols-4 gap-6">
-              <div className="text-center sm:text-left">
-                <p className="text-2xl mb-2">🇩🇪</p>
-                <p className="font-serif font-bold text-foreground mb-1">Made in Germany</p>
-                <p className="text-muted-foreground text-sm">Produktion in deutscher Manufaktur</p>
-              </div>
-              <div className="text-center sm:text-left">
-                <p className="text-2xl mb-2">🤝</p>
-                <p className="font-serif font-bold text-foreground mb-1">Von Hand belegt</p>
-                <p className="text-muted-foreground text-sm">Echtes Handwerk, keine Fließbandware</p>
-              </div>
-              <div className="text-center sm:text-left">
-                <p className="text-2xl mb-2">🌿</p>
-                <p className="font-serif font-bold text-foreground mb-1">Ohne Gentechnik</p>
-                <p className="text-muted-foreground text-sm">Codex-Richtlinie, kontrolliert von agroVet</p>
-              </div>
-              <div className="text-center sm:text-left">
-                <p className="text-2xl mb-2">👀</p>
-                <p className="font-serif font-bold text-foreground mb-1">Volle Transparenz</p>
-                <p className="text-muted-foreground text-sm">Lieferant und Nährwerte offen gelistet</p>
-              </div>
-            </div>
-            <p className="mt-6 text-xs text-muted-foreground text-center sm:text-left">
-              Kleiner Reality-Check: Nach Branchenschätzungen setzt ein Großteil der Gastronomie in Deutschland auf vorbereitete oder tiefgekühlte Komponenten. Wir verstecken das nicht, wir wählen den Partner sorgfältig aus.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <div className="w-full max-w-4xl mx-auto px-6">
-        <div className="h-[1px] bg-bronze/20" />
-      </div>
-
       {/* PARTNER 2: Cup&Cino */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
@@ -245,7 +173,7 @@ const Partners = () => {
         </div>
       </section>
 
-      {/* PARTNER 3: Cup&Cino Foundation, Navy highlight */}
+      {/* PARTNER: Cup&Cino Foundation, Navy highlight */}
       <section id="foundation" className="py-16 md:py-24" style={{ background: "linear-gradient(135deg, #164472, #1d5a8a)" }}>
         <div className="container mx-auto px-6 max-w-4xl text-center">
           <p className="text-[#b8943e] font-medium tracking-[0.2em] uppercase text-sm mb-2">☕ Cup&Cino Foundation</p>
@@ -293,6 +221,99 @@ const Partners = () => {
           </div>
         </div>
       </section>
+
+      <div className="w-full max-w-4xl mx-auto px-6">
+        <div className="h-[1px] bg-bronze/20" />
+      </div>
+
+      {/* PARTNER 3: OPTIVANAT Agency */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+            {/* Text left */}
+            <div className="order-2 md:order-1">
+              <img src={optivanatLogo} alt="OPTIVANAT Agency Logo" className="h-14 mb-6" loading="lazy" />
+              <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
+                Digitalagentur · Web & Marketing
+              </span>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
+                OPTIVANAT Agency: Unsere Website, unsere Reichweite
+              </h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  Diese Website, die Meta-Ads, das Google-Setup und das Marketing drumherum stammen nicht von einer anonymen Großagentur, sondern von <strong className="text-foreground">OPTIVANAT Agency</strong>. Eine kleine, feine Digitalagentur, die weiß, wie man auch mit kleinem Budget echte Wirkung erzielt.
+                </p>
+                <p>
+                  OPTIVANAT begleitet uns von der Gestaltung der Website über das Setup von Meta und Google bis hin zu Monitoring und Marketing-Tipps. Was uns verbindet: ehrliche Beratung, saubere Umsetzung und Layer-für-Layer-Ergebnisse, ohne Budget zu verbrennen.
+                </p>
+                <p className="text-sm italic">
+                  Egal ob Website, Social Ads oder Sichtbarkeit bei Google – OPTIVANAT macht klein groß und groß überschaubar.
+                </p>
+              </div>
+            </div>
+            {/* Image right */}
+            <div className="order-1 md:order-2">
+              <img
+                src={optivanatPartner}
+                alt="OPTIVANAT Agency – Webdesign und Marketing Workspace"
+                className="w-full aspect-[4/3] object-cover rounded-2xl shadow-lg"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          {/* Services Box */}
+          <div className="mt-12 bg-card rounded-xl border border-bronze/20 p-8">
+            <h3 className="font-serif text-xl font-bold text-foreground mb-6">
+              Was OPTIVANAT für uns macht
+            </h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="flex flex-col gap-3">
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{ backgroundColor: "#FEF4EC" }}>
+                  <PenTool className="w-5 h-5" style={{ color: "#9E7C4E" }} aria-hidden="true" />
+                </div>
+                <p className="font-serif font-bold text-foreground">Website-Gestaltung</p>
+                <p className="text-muted-foreground text-sm">Design & Aufbau dieser Seite, von der ersten Skizze bis zum Klick.</p>
+              </div>
+              <div className="flex flex-col gap-3">
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{ backgroundColor: "#FEF4EC" }}>
+                  <Megaphone className="w-5 h-5" style={{ color: "#9E7C4E" }} aria-hidden="true" />
+                </div>
+                <p className="font-serif font-bold text-foreground">Meta- & Google-Setup</p>
+                <p className="text-muted-foreground text-sm">Ads und Sichtbarkeit bei Meta und Google – sauber eingerichtet und gepflegt.</p>
+              </div>
+              <div className="flex flex-col gap-3">
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{ backgroundColor: "#FEF4EC" }}>
+                  <BarChart3 className="w-5 h-5" style={{ color: "#9E7C4E" }} aria-hidden="true" />
+                </div>
+                <p className="font-serif font-bold text-foreground">Monitoring & Tipps</p>
+                <p className="text-muted-foreground text-sm">Klare Zahlen, ehrliche Auswertung und Marketing-Tipps, die wirklich weiterhelfen.</p>
+              </div>
+              <div className="flex flex-col gap-3">
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{ backgroundColor: "#FEF4EC" }}>
+                  <MonitorSmartphone className="w-5 h-5" style={{ color: "#9E7C4E" }} aria-hidden="true" />
+                </div>
+                <p className="font-serif font-bold text-foreground">Schritt für Schritt</p>
+                <p className="text-muted-foreground text-sm">Etappe für Etappe umgesetzt, auch mit kleinem Budget zu echten Ergebnissen.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Hint */}
+          <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-background border border-bronze/15 rounded-xl p-6">
+            <p className="text-muted-foreground text-sm flex-1">
+              Du suchst jemanden, der deine Website, dein Marketing oder deine Social Ads aufbaut, ohne Budget zu verbrennen? Frag uns nach OPTIVANAT.
+            </p>
+            <a href="/kontakt" className="inline-block bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-medium text-sm hover:opacity-90 transition-opacity whitespace-nowrap">
+              Mehr erfahren
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div className="w-full max-w-4xl mx-auto px-6">
+        <div className="h-[1px] bg-bronze/20" />
+      </div>
 
       {/* PARTNER 4: Herbalife */}
       <section className="py-16 md:py-24 bg-background">
@@ -361,6 +382,80 @@ const Partners = () => {
             <a href="/kontakt" className="inline-block bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-medium text-sm hover:opacity-90 transition-opacity whitespace-nowrap">
               Mehr erfahren
             </a>
+          </div>
+        </div>
+      </section>
+
+      <div className="w-full max-w-4xl mx-auto px-6">
+        <div className="h-[1px] bg-bronze/20" />
+      </div>
+
+      {/* PARTNER 5: Perplex */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+            {/* Text left */}
+            <div className="order-2 md:order-1">
+              <img src={perplexLogo} alt="Perplex Logo" className="h-12 mb-6" loading="lazy" />
+              <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
+                Handgemacht in Deutschland · Seit über 33 Jahren
+              </span>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
+                Perplex: Handgemacht in Deutschland, ehrlich statt Massenware
+              </h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  Klartext vorab: Nahezu jede Gastronomie, von der Pizzeria bis zum Hotel, arbeitet mit vorbereiteten, gekühlten oder tiefgekühlten Komponenten. Das ist Alltag in der Branche, wird nur selten offen gesagt. Wir sagen es. Und wir sagen euch auch, von wem unsere Ware kommt.
+                </p>
+                <p>
+                  Unser Partner <strong className="text-foreground">Perplex</strong> ist keine anonyme Industrie&shy;fabrik, sondern eine deutsche Manufaktur mit über 33 Jahren Erfahrung. Jeder Flammkuchen, jedes Baguette wird in Deutschland <strong className="text-foreground">von Hand belegt</strong>, mit frischen Zutaten verfeinert und erst dann schockgefrostet, damit der Geschmack am Ofen bei uns genau so ankommt, wie er die Manufaktur verlassen hat.
+                </p>
+                <p>
+                  Der Unterschied zu „TK-Ware aus dem Supermarkt": handwerkliche Produktion, kontrollierte Rohstoffe ohne Gentechnik (Codex-Richtlinie, Kontrolle durch agroVet GmbH) und volle Transparenz. Vergleichbar damit, wenn ihr euch zu Hause einen Flammkuchen frisch belegt und für später einfriert, nur eben von Profis mit drei Jahrzehnten Erfahrung.
+                </p>
+                <p className="text-sm italic">
+                  Wir könnten so tun, als würden wir alles selbst kneten. Machen wir aber nicht. Wir stehen zu unserem Partner, weil die Qualität stimmt und weil Ehrlichkeit besser schmeckt als Marketing.
+                </p>
+              </div>
+            </div>
+            {/* Image right */}
+            <div className="order-1 md:order-2">
+              <img
+                src={flammkuchenPartner}
+                alt="Vier verschiedene Flammkuchen auf Holzbrettern"
+                className="w-full aspect-[4/3] object-cover rounded-2xl shadow-lg"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          {/* Highlight Box */}
+          <div className="mt-12 bg-card rounded-xl border border-bronze/20 p-8">
+            <div className="grid sm:grid-cols-4 gap-6">
+              <div className="text-center sm:text-left">
+                <p className="text-2xl mb-2">🇩🇪</p>
+                <p className="font-serif font-bold text-foreground mb-1">Made in Germany</p>
+                <p className="text-muted-foreground text-sm">Produktion in deutscher Manufaktur</p>
+              </div>
+              <div className="text-center sm:text-left">
+                <p className="text-2xl mb-2">🤝</p>
+                <p className="font-serif font-bold text-foreground mb-1">Von Hand belegt</p>
+                <p className="text-muted-foreground text-sm">Echtes Handwerk, keine Fließbandware</p>
+              </div>
+              <div className="text-center sm:text-left">
+                <p className="text-2xl mb-2">🌿</p>
+                <p className="font-serif font-bold text-foreground mb-1">Ohne Gentechnik</p>
+                <p className="text-muted-foreground text-sm">Codex-Richtlinie, kontrolliert von agroVet</p>
+              </div>
+              <div className="text-center sm:text-left">
+                <p className="text-2xl mb-2">👀</p>
+                <p className="font-serif font-bold text-foreground mb-1">Volle Transparenz</p>
+                <p className="text-muted-foreground text-sm">Lieferant und Nährwerte offen gelistet</p>
+              </div>
+            </div>
+            <p className="mt-6 text-xs text-muted-foreground text-center sm:text-left">
+              Kleiner Reality-Check: Nach Branchenschätzungen setzt ein Großteil der Gastronomie in Deutschland auf vorbereitete oder tiefgekühlte Komponenten. Wir verstecken das nicht, wir wählen den Partner sorgfältig aus.
+            </p>
           </div>
         </div>
       </section>
