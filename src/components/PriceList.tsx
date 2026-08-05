@@ -291,9 +291,10 @@ const PriceList = () => {
             Arbeitsflächen und Milchsystemen zubereiten, können wir eine vollständige Frei-von-
             Garantie jedoch <strong>nicht</strong> geben. Spuren durch Kreuzkontamination
             (z. B. Gluten, Milch, Nüsse, Soja) sind nicht auszuschließen; eine Haftung dafür
-            können wir nicht übernehmen. Bei Allergien, Unverträglichkeiten oder einer streng
-            veganen Ernährung sprich uns bitte vor der Bestellung direkt an, wir beraten dich
-            gerne persönlich.
+            können wir nicht übernehmen. Was wir aber tun: Unser Milchsystem wird jedes Mal
+            gereinigt, wenn wir von Kuhmilch auf Hafermilch umstellen. Bei Allergien,
+            Unverträglichkeiten oder einer streng veganen Ernährung sprich uns bitte vor der
+            Bestellung direkt an, wir beraten dich gerne persönlich.
           </p>
         </div>
         <p className="text-xs text-muted-foreground italic text-center mt-6">

@@ -122,7 +122,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Könnt ihr „frei von\" garantieren (vegan, glutenfrei)?",
         answer:
-          "Nein, und das sagen wir ganz offen. Wir bieten vegane Milchalternativen wie Hafermilch an und haben Produkte, die glutenfrei sind. Zubereitet wird bei uns aber alles in einer Küche mit gemeinsamen Geräten, Arbeitsflächen und Milchsystemen. Deshalb können wir eine vollständige Frei-von-Garantie nicht geben, Spuren durch Kreuzkontamination sind nicht auszuschließen und eine Haftung dafür übernehmen wir nicht. Bei ausdrücklichen Wünschen oder Allergien sprecht uns bitte vor der Bestellung direkt an, dann finden wir gemeinsam die beste Lösung.",
+          "Nein, und das sagen wir ganz offen. Wir bieten vegane Milchalternativen wie Hafermilch an und haben Produkte, die glutenfrei sind. Zubereitet wird bei uns aber alles in einer Küche mit gemeinsamen Geräten, Arbeitsflächen und Milchsystemen. Was wir tun: Unser Milchsystem wird jedes Mal gereinigt, wenn wir von Kuhmilch auf Hafermilch umstellen. Eine vollständige Frei-von-Garantie können wir trotzdem nicht geben, Spuren durch Kreuzkontamination sind nicht auszuschließen und eine Haftung dafür übernehmen wir nicht. Bei ausdrücklichen Wünschen oder Allergien sprecht uns bitte vor der Bestellung direkt an, dann finden wir gemeinsam die beste Lösung.",
       },
 
       {
