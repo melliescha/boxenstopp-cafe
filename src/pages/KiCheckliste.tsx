@@ -342,6 +342,42 @@ const KiCheckliste = () => {
             </div>
           ))}
 
+          <div style={{ marginBottom: 40 }}>
+            <h2
+              className="font-sans"
+              style={{ color: bronze, fontWeight: 700, fontSize: 20, marginBottom: 10 }}
+            >
+              Versionshistorie dieser Checkliste
+            </h2>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+              {versionHistory.map((entry) => (
+                <li
+                  key={entry.version}
+                  style={{
+                    borderLeft: `2px solid ${bronze}66`,
+                    paddingLeft: 16,
+                    marginBottom: 14,
+                  }}
+                >
+                  <p
+                    className="font-sans"
+                    style={{ color: navy, fontWeight: 700, fontSize: 15, margin: 0 }}
+                  >
+                    Version {entry.version} · {entry.date}
+                  </p>
+                  <p
+                    className="font-sans"
+                    style={{ color: warmBrown, fontSize: 15, lineHeight: 1.7, margin: 0 }}
+                  >
+                    {entry.change}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+
+
           <div
             style={{
               border: `1px solid ${bronze}55`,
