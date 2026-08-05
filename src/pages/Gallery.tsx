@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { X } from "lucide-react";
+import { ListChecks, X } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 
@@ -41,48 +41,60 @@ import essenBaguetteSalamiSchorle from "@/assets/gallery/essen-baguette-salami-s
 
 type Category = "all" | "innen" | "aussen" | "essen";
 
+type ImageSource = "ki" | "foto" | "foto-personen";
+
 interface GalleryImage {
   src: string;
   alt: string;
   category: Exclude<Category, "all">;
+  /** Herkunft des Bildes fuer die Nachweis-Uebersicht (EU AI Act, Art. 50) */
+  source: ImageSource;
+  /** Kurznotiz zur Quelle, z. B. Einwilligung oder KI-Werkzeug */
+  sourceNote: string;
 }
 
+const SOURCE_LABEL: Record<ImageSource, string> = {
+  ki: "KI-generiert",
+  foto: "Echtes Foto",
+  "foto-personen": "Echtes Foto mit Personen",
+};
+
 const images: GalleryImage[] = [
-  { src: heroBistro, alt: "Sonnige Terrasse des Bistro Boxenstopp im Außenbereich", category: "aussen" },
-  { src: aussenTerrasseSchirm, alt: "Außenterrasse mit Sonnenschirm, Holztischen und Loungemöbeln vor Natursteinmauer", category: "aussen" },
-  { src: aussenTerrasseEingang, alt: "Blick von der Treppe auf die Terrasse mit Sonnenschirm und Eingangsbereich", category: "aussen" },
-  { src: aussenTerrasseSchild, alt: "Terrasse mit Café-Boxenstopp-Schild, Steinmauer und Frühlingsblumen", category: "aussen" },
-  { src: aussenFitesFassade, alt: "FITES-Fassade mit gepflegtem Steingarten und Holzbank", category: "aussen" },
-  { src: aussenTreppeBank, alt: "Treppe zum Eingang mit gemütlicher Holzbank am Bistro Boxenstopp", category: "aussen" },
-  { src: aussenSitzplatzSchirm, alt: "Sitzplatz mit Sonnenschirm, Lounge-Sessel und Holztischen vor Natursteinmauer", category: "aussen" },
-  { src: aussenHausFrontStrasse, alt: "Außenansicht unseres Hauses am Südhang 1 mit Doppelgarage und Eingangsbereich", category: "aussen" },
-  { src: aussenHausSeitlichWiese, alt: "Seitliche Außenansicht des Hauses mit Wiese und blauem Himmel", category: "aussen" },
-  { src: aussenFitesGarageReifen, alt: "FITES-Studio mit Garage, Traktorreifen und Outdoor-Trainingsbereich", category: "aussen" },
-  { src: aussenStrasseKreuzungHaus, alt: "Anfahrt zum Bistro Boxenstopp, Blick von der Kreuzung auf das Haus am Südhang 1", category: "aussen" },
-  { src: innenSitzbereich, alt: "Heller Sitzbereich mit Holztischen und modernen Stühlen im Bistro Boxenstopp", category: "innen" },
-  { src: innenTheke, alt: "Helena bedient einen Gast an der Theke des Bistro Boxenstopp", category: "innen" },
-  { src: innenBilderwand, alt: "Bilderwand mit Sport-Motiven und gemütliche Ledersessel im Innenbereich", category: "innen" },
-  { src: innenShaker, alt: "Goldener Shaker und Snacks an der Theke vor dem Herbalife-Regal", category: "innen" },
-  { src: innenThekeUebersicht, alt: "Übersicht der Theke mit Kaffeemaschine und stimmungsvoller Beleuchtung", category: "innen" },
-  { src: innenLedersesselPflanze, alt: "Gemütliche Sitzecke mit schwarzen Ledersesseln vor dekorativer 3D-Wand", category: "innen" },
-  { src: innenBartischeBilderwand, alt: "Bartische mit Lederhockern, Pizzasnack und Bilderwand mit Sport-Motiven", category: "innen" },
-  { src: essenTomateMozzarella, alt: "Unser vegetarisches Hüttenbrot mit Tomate, Mozzarella und frischem Basilikum", category: "essen" },
-  { src: essenFlammkuchenLachs, alt: "Flammkuchen mit Lachs, Lauch und Schnittlauch, serviert mit Orangensaft", category: "essen" },
-  { src: essenFlammkuchenGemuese, alt: "Unser mediterraner Flammkuchen mit Feta, Paprika, Zucchini und frischen Kräutern", category: "essen" },
-  { src: essenEisSchokoHimbeere, alt: "Cremiges Schoko-Himbeer-Eis am Stiel mit Schokoladenhülle in der Frühlingssonne", category: "essen" },
-  { src: essenEisHoernchenMango, alt: "Eishörnchen mit Mango und weißer Schokolade vor sonniger Allgäuer Kulisse", category: "essen" },
-  { src: essenCappuccinoMuffinDonut, alt: "Cup&Cino Cappuccino mit Schoko-Muffin und Donut auf der Terrasse", category: "essen" },
-  { src: getraenkMatchaLatte, alt: "Matcha Latte im Cup&Cino Glas vor sonniger Steinmauer", category: "essen" },
-  { src: getraenkZweiCappuccino, alt: "Zwei Cup&Cino Cappuccinos mit Wasser und Frühlingsblumen vor dem FITES-Fenster", category: "essen" },
-  { src: essenLatteDonutMuffin, alt: "Zwei Latte Macchiato mit Donut und Heidelbeer-Muffin auf der Terrasse", category: "essen" },
-  { src: essenFlammkuchenSpeckMeckatzer, alt: "Herzhafter Flammkuchen mit Speck und Schnittlauch, dazu ein alkoholfreies Meckatzer Hell auf der Terrasse", category: "essen" },
-  { src: essenLatteMuffinDonutTerrasse, alt: "Zwei Cup&Cino Latte Macchiato mit Heidelbeer-Muffin und Donut auf der sonnigen Terrasse", category: "essen" },
-  { src: essenFlammkuchenSpeckPerplex, alt: "Flammkuchen mit Speck und Schnittlauch auf Perplex-Holzbrett im Innenbereich", category: "essen" },
-  { src: essenZweiFlammkuchenTomateSpeck, alt: "Zwei Flammkuchen, mediterran mit Tomate und Basilikum sowie klassisch mit Speck", category: "essen" },
-  { src: essenCornettoMax, alt: "Cornetto Max Eishörnchen auf dem Terrassentisch mit gelben Frühlingsblumen", category: "essen" },
-  { src: essenFlammkuchenLachsLauch, alt: "Flammkuchen mit Lachs, Lauch und Petersilie, dazu Orangensaft auf der Terrasse", category: "essen" },
-  { src: essenBaguetteTomateMozzarella, alt: "Gourmet Baguette Tomate Mozzarella mit frischem Basilikum auf der Terrasse", category: "essen" },
-  { src: essenBaguetteSalamiSchorle, alt: "Gourmet Baguette mit Apfelschorle auf dem Terrassentisch", category: "essen" },
+  { src: heroBistro, alt: "Sonnige Terrasse des Bistro Boxenstopp im Außenbereich", category: "aussen", source: "ki", sourceNote: "KI-generiertes Stimmungsbild mit realistisch dargestellten Personen, gekennzeichnet nach Art. 50 EU AI Act" },
+  { src: aussenTerrasseSchirm, alt: "Außenterrasse mit Sonnenschirm, Holztischen und Loungemöbeln vor Natursteinmauer", category: "aussen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: aussenTerrasseEingang, alt: "Blick von der Treppe auf die Terrasse mit Sonnenschirm und Eingangsbereich", category: "aussen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: aussenTerrasseSchild, alt: "Terrasse mit Café-Boxenstopp-Schild, Steinmauer und Frühlingsblumen", category: "aussen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: aussenFitesFassade, alt: "FITES-Fassade mit gepflegtem Steingarten und Holzbank", category: "aussen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: aussenTreppeBank, alt: "Treppe zum Eingang mit gemütlicher Holzbank am Bistro Boxenstopp", category: "aussen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: aussenSitzplatzSchirm, alt: "Sitzplatz mit Sonnenschirm, Lounge-Sessel und Holztischen vor Natursteinmauer", category: "aussen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: aussenHausFrontStrasse, alt: "Außenansicht unseres Hauses am Südhang 1 mit Doppelgarage und Eingangsbereich", category: "aussen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: aussenHausSeitlichWiese, alt: "Seitliche Außenansicht des Hauses mit Wiese und blauem Himmel", category: "aussen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: aussenFitesGarageReifen, alt: "FITES-Studio mit Garage, Traktorreifen und Outdoor-Trainingsbereich", category: "aussen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: aussenStrasseKreuzungHaus, alt: "Anfahrt zum Bistro Boxenstopp, Blick von der Kreuzung auf das Haus am Südhang 1", category: "aussen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: innenSitzbereich, alt: "Heller Sitzbereich mit Holztischen und modernen Stühlen im Bistro Boxenstopp", category: "innen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: innenTheke, alt: "Helena bedient einen Gast an der Theke des Bistro Boxenstopp", category: "innen", source: "foto-personen", sourceNote: "Eigenes Foto, Einwilligung der abgebildeten Personen liegt vor" },
+  { src: innenBilderwand, alt: "Bilderwand mit Sport-Motiven und gemütliche Ledersessel im Innenbereich", category: "innen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: innenShaker, alt: "Goldener Shaker und Snacks an der Theke vor dem Herbalife-Regal", category: "innen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: innenThekeUebersicht, alt: "Übersicht der Theke mit Kaffeemaschine und stimmungsvoller Beleuchtung", category: "innen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: innenLedersesselPflanze, alt: "Gemütliche Sitzecke mit schwarzen Ledersesseln vor dekorativer 3D-Wand", category: "innen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: innenBartischeBilderwand, alt: "Bartische mit Lederhockern, Pizzasnack und Bilderwand mit Sport-Motiven", category: "innen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: essenTomateMozzarella, alt: "Unser vegetarisches Hüttenbrot mit Tomate, Mozzarella und frischem Basilikum", category: "essen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: essenFlammkuchenLachs, alt: "Flammkuchen mit Lachs, Lauch und Schnittlauch, serviert mit Orangensaft", category: "essen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: essenFlammkuchenGemuese, alt: "Unser mediterraner Flammkuchen mit Feta, Paprika, Zucchini und frischen Kräutern", category: "essen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: essenEisSchokoHimbeere, alt: "Cremiges Schoko-Himbeer-Eis am Stiel mit Schokoladenhülle in der Frühlingssonne", category: "essen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: essenEisHoernchenMango, alt: "Eishörnchen mit Mango und weißer Schokolade vor sonniger Allgäuer Kulisse", category: "essen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: essenCappuccinoMuffinDonut, alt: "Cup&Cino Cappuccino mit Schoko-Muffin und Donut auf der Terrasse", category: "essen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: getraenkMatchaLatte, alt: "Matcha Latte im Cup&Cino Glas vor sonniger Steinmauer", category: "essen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: getraenkZweiCappuccino, alt: "Zwei Cup&Cino Cappuccinos mit Wasser und Frühlingsblumen vor dem FITES-Fenster", category: "essen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: essenLatteDonutMuffin, alt: "Zwei Latte Macchiato mit Donut und Heidelbeer-Muffin auf der Terrasse", category: "essen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: essenFlammkuchenSpeckMeckatzer, alt: "Herzhafter Flammkuchen mit Speck und Schnittlauch, dazu ein alkoholfreies Meckatzer Hell auf der Terrasse", category: "essen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: essenLatteMuffinDonutTerrasse, alt: "Zwei Cup&Cino Latte Macchiato mit Heidelbeer-Muffin und Donut auf der sonnigen Terrasse", category: "essen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: essenFlammkuchenSpeckPerplex, alt: "Flammkuchen mit Speck und Schnittlauch auf Perplex-Holzbrett im Innenbereich", category: "essen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: essenZweiFlammkuchenTomateSpeck, alt: "Zwei Flammkuchen, mediterran mit Tomate und Basilikum sowie klassisch mit Speck", category: "essen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: essenCornettoMax, alt: "Cornetto Max Eishörnchen auf dem Terrassentisch mit gelben Frühlingsblumen", category: "essen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: essenFlammkuchenLachsLauch, alt: "Flammkuchen mit Lachs, Lauch und Petersilie, dazu Orangensaft auf der Terrasse", category: "essen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: essenBaguetteTomateMozzarella, alt: "Gourmet Baguette Tomate Mozzarella mit frischem Basilikum auf der Terrasse", category: "essen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: essenBaguetteSalamiSchorle, alt: "Gourmet Baguette mit Apfelschorle auf dem Terrassentisch", category: "essen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
 ];
 
 const tabs: { label: string; value: Category }[] = [
@@ -95,6 +107,7 @@ const tabs: { label: string; value: Category }[] = [
 const Gallery = () => {
   const [filter, setFilter] = useState<Category>("all");
   const [lightbox, setLightbox] = useState<number | null>(null);
+  const [showSources, setShowSources] = useState(false);
 
   const filtered = filter === "all" ? images : images.filter((img) => img.category === filter);
 
@@ -171,6 +184,86 @@ const Gallery = () => {
             </a>
             .
           </p>
+
+          {/* Bildnachweis-Übersicht: Quelle pro Bild nachvollziehbar */}
+          <div className="max-w-3xl mx-auto mt-8" id="bildnachweis">
+            <button
+              onClick={() => setShowSources((v) => !v)}
+              className="mx-auto flex items-center gap-2 text-sm font-medium text-bronze hover:text-primary transition-colors"
+              aria-expanded={showSources}
+              aria-controls="bildnachweis-liste"
+            >
+              <ListChecks size={16} />
+              {showSources ? "Bildnachweis ausblenden" : "Bildnachweis anzeigen, Quelle pro Bild"}
+            </button>
+
+            {showSources && (
+              <div id="bildnachweis-liste" className="mt-6">
+                <div className="mb-4 flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
+                  <span>
+                    Gesamt: <strong className="text-foreground">{images.length}</strong>
+                  </span>
+                  <span>
+                    KI-generiert:{" "}
+                    <strong className="text-foreground">
+                      {images.filter((i) => i.source === "ki").length}
+                    </strong>
+                  </span>
+                  <span>
+                    Echte Fotos:{" "}
+                    <strong className="text-foreground">
+                      {images.filter((i) => i.source !== "ki").length}
+                    </strong>
+                  </span>
+                  <span>
+                    davon mit Personen und Einwilligung:{" "}
+                    <strong className="text-foreground">
+                      {images.filter((i) => i.source === "foto-personen").length}
+                    </strong>
+                  </span>
+                </div>
+
+                <ul className="divide-y divide-border rounded-xl border border-border bg-card">
+                  {images.map((img, i) => (
+                    <li key={img.alt} className="flex items-start gap-4 p-4">
+                      <img
+                        src={img.src}
+                        alt=""
+                        loading="lazy"
+                        className="h-14 w-20 flex-shrink-0 rounded-md object-cover"
+                      />
+                      <div className="min-w-0">
+                        <p className="text-sm text-foreground">
+                          <span className="text-muted-foreground mr-1">{i + 1}.</span>
+                          {img.alt}
+                        </p>
+                        <p className="mt-1 flex flex-wrap items-center gap-2 text-xs">
+                          <span
+                            className={`rounded-full px-2 py-0.5 font-medium ${
+                              img.source === "ki"
+                                ? "bg-bronze/15 text-bronze"
+                                : "bg-secondary text-foreground"
+                            }`}
+                          >
+                            {SOURCE_LABEL[img.source]}
+                          </span>
+                          <span className="text-muted-foreground">{img.sourceNote}</span>
+                        </p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+
+                <p className="mt-4 text-xs italic text-muted-foreground">
+                  Diese Übersicht wird von uns gepflegt. KI-Bilder mit realistisch dargestellten
+                  Personen sind zusätzlich sichtbar mit einem Sternchen gekennzeichnet, bei echten
+                  Fotos mit erkennbaren Personen liegt eine Einwilligung der abgebildeten Personen
+                  vor.
+                </p>
+              </div>
+            )}
+          </div>
+
         </div>
       </section>
 
