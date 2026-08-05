@@ -158,10 +158,10 @@ const Partners = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Hinter jeder Tasse Kaffee bei uns steckt Cup&Cino: hochwertige Kaffeebohnen, perfekt abgestimmt auf ein Kaffeesystem der neuesten Generation. Modernste Technik, präzise Einstellungen und ausgewählte Bohnen – so entsteht bei uns jeder Espresso, jeder Cappuccino und jeder Latte Macchiato.
+                  Hinter jeder Tasse Kaffee bei uns steckt Cup&Cino: hochwertige Kaffeebohnen, perfekt abgestimmt auf ein Kaffeesystem der neuesten Generation. Modernste Technik, präzise Einstellungen und ausgewählte Bohnen, so entsteht bei uns jeder Espresso, jeder Cappuccino und jeder Latte Macchiato.
                 </p>
                 <p>
-                  Das Ergebnis schmeckst du mit dem ersten Schluck: vollmundig, aromatisch und auf Barista-Niveau. Bei uns bekommst du keinen Kaffee aus der Kanne, sondern Kaffeegenuss, wie du ihn aus den besten Cafés kennst – mitten im Allgäu.
+                  Das Ergebnis schmeckst du mit dem ersten Schluck: vollmundig, aromatisch und auf Barista-Niveau. Bei uns bekommst du keinen Kaffee aus der Kanne, sondern Kaffeegenuss, wie du ihn aus den besten Cafés kennst, mitten im Allgäu.
                 </p>
               </div>
             </div>
@@ -237,13 +237,13 @@ const Partners = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Diese Website, die Meta-Ads, das Google-Setup und das Marketing drumherum stammen nicht von einer anonymen Großagentur, sondern von <strong className="text-foreground">OPTIVANTA</strong> – einer Marketing-Agentur, die international und remote mit echten Experten arbeitet und auch mit kleinem Budget maximale Ergebnisse erzielt.
+                  Diese Website, die Meta-Ads, das Google-Setup und das Marketing drumherum stammen nicht von einer anonymen Großagentur, sondern von <strong className="text-foreground">OPTIVANTA</strong>, einer Marketing-Agentur, die international und remote mit echten Experten arbeitet und auch mit kleinem Budget maximale Ergebnisse erzielt.
                 </p>
                 <p>
                   OPTIVANTA begleitet uns von der Gestaltung der Website über das Setup von Meta und Google bis hin zu Monitoring und Marketing-Tipps. Was uns verbindet: ehrliche Beratung, saubere Umsetzung und nachhaltige Ergebnisse, ohne Budget zu verbrennen.
                 </p>
                 <blockquote className="border-l-4 pl-4 italic text-sm" style={{ borderColor: "#9E7C4E" }}>
-                  „Niemand sollte im Jahr 2026 noch 5.000 Euro für eine Website zahlen." – <strong className="text-foreground not-italic">OPTIVANTA</strong>
+                  „Niemand sollte im Jahr 2026 noch 5.000 Euro für eine Website zahlen.", <strong className="text-foreground not-italic">OPTIVANTA</strong>
                 </blockquote>
               </div>
             </div>
@@ -251,7 +251,7 @@ const Partners = () => {
             <div className="order-1 md:order-2">
               <img
                 src={optivantaPartner}
-                alt="OPTIVANTA Agency – Webdesign und Marketing Workspace"
+                alt="OPTIVANTA Agency, Webdesign und Marketing Workspace"
                 className="w-full aspect-[4/3] object-cover rounded-2xl shadow-lg"
                 loading="lazy"
               />
@@ -276,7 +276,7 @@ const Partners = () => {
                   <Megaphone className="w-5 h-5" style={{ color: "#9E7C4E" }} aria-hidden="true" />
                 </div>
                 <p className="font-serif font-bold text-foreground">Meta- & Google-Setup</p>
-                <p className="text-muted-foreground text-sm">Ads und Sichtbarkeit bei Meta und Google – sauber eingerichtet und gepflegt.</p>
+                <p className="text-muted-foreground text-sm">Ads und Sichtbarkeit bei Meta und Google, sauber eingerichtet und gepflegt.</p>
               </div>
               <div className="flex flex-col gap-3">
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{ backgroundColor: "#FEF4EC" }}>
@@ -338,7 +338,7 @@ const Partners = () => {
                   Die Herbalife-Produkte in unserem Bistro sind keine Trend-Supplements, sondern wissenschaftlich fundierte Nahrungsergänzung: Mahlzeitenersatz-Shakes mit Vitaminen und Mineralien, natürliche Zutaten, ohne künstlichen oder unangenehmen Geschmack.
                 </p>
                 <p>
-                  Das Herzstück: der mehrfach ausgezeichnete Formula 1-Shake mit Sojaprotein und allen wichtigen Aminosäuren, dazu 25 essenzielle Mineralstoffe und Vitamine. Er unterstützt das Immunsystem, den Erhalt normaler Knochen und hilft gegen Müdigkeit – ideal vor oder nach dem Training oder als gesunder Snack auf der Radtour.
+                  Das Herzstück: der mehrfach ausgezeichnete Formula 1-Shake mit Sojaprotein und allen wichtigen Aminosäuren, dazu 25 essenzielle Mineralstoffe und Vitamine. Er unterstützt das Immunsystem, den Erhalt normaler Knochen und hilft gegen Müdigkeit, ideal vor oder nach dem Training oder als gesunder Snack auf der Radtour.
                 </p>
               </div>
             </div>

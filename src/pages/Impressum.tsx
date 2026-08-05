@@ -150,11 +150,11 @@ const Impressum = () => {
             überwiegend fiktive Personen oder Szenen ohne erkennbare Gesichter. Gäste,
             Mitarbeitende oder Dritte werden darauf nicht abgebildet.<br />
             Ein Teil der gezeigten Bilder wurde mit Hilfe künstlicher Intelligenz erstellt oder
-            bearbeitet. Diese Bilder sind direkt im Bild mit dem Label „KI generiert" bzw. – bei bloß
-            KI-bearbeiteten Bildern – mit einem „KI"-Rundlabel gekennzeichnet; zusätzlich weisen
+            bearbeitet. Diese Bilder sind direkt im Bild mit dem Label „KI generiert" bzw. (bei bloß
+            KI-bearbeiteten Bildern) mit einem „KI"-Rundlabel gekennzeichnet; zusätzlich weisen
             wir im Footer darauf hin (Transparenzhinweis gemäß Art. 50 der
             Verordnung (EU) 2024/1689, „EU AI Act"). Ausnahme: Einige KI-Bilder zeigen uns selbst
-            (Eugen & Helena Schall, Oliver Schall, Melanie Dincdemir) als reale Personen — im Sinne
+            (Eugen & Helena Schall, Oliver Schall, Melanie Dincdemir) als reale Personen, im Sinne
             von Art. 3 Nr. 60 EU AI Act ein Deepfake, erstellt und verwendet mit ausdrücklicher
             eigener Einwilligung. Details dazu findest
             du in unserer{" "}

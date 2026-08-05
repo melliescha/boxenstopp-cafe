@@ -18,7 +18,7 @@ const BRONZE = "#b8943e";
  * - Optionale Kategorien (externe Inhalte, Analytics) sind vorab AUS.
  * - „Nur notwendige“ und „Alle akzeptieren“ sind gleichwertig gestaltet.
  * - Die Entscheidung wird mit Zeitstempel, Version und Methode gespeichert
- *   (Nachweis nach Art. 7 Abs. 1 DSGVO) – rein lokal, ohne Serverübertragung.
+ *   (Nachweis nach Art. 7 Abs. 1 DSGVO), rein lokal, ohne Serverübertragung.
  * - Widerruf jederzeit über „Cookie-Einstellungen“ im Footer.
  */
 const CookieBanner = () => {
@@ -147,7 +147,7 @@ const CookieBanner = () => {
                     Statistik / Reichweitenmessung
                   </p>
                   <p className="text-xs mt-1" style={{ color: "rgba(254,244,236,0.75)" }}>
-                    Anonyme Auswertung der Seitennutzung. Derzeit ist kein Analyse-Dienst aktiv –
+                    Anonyme Auswertung der Seitennutzung. Derzeit ist kein Analyse-Dienst aktiv,
                     ohne Ihre Einwilligung wird auch künftig keiner geladen.
                   </p>
                 </div>

@@ -234,7 +234,7 @@ const Datenschutz = () => {
             <P>
               Der Quellcode dieser Website wird in einem Repository bei GitHub verwaltet. Anbieter
               ist GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA, bzw.
-              für den europäischen Raum GitHub B.V., Vijzelstraat 68–72, 1017 HL Amsterdam,
+              für den europäischen Raum GitHub B.V., Vijzelstraat 68-72, 1017 HL Amsterdam,
               Niederlande. GitHub speichert ausschließlich unseren Programmcode und die
               Bearbeitungshistorie. Beim Aufruf dieser Website durch Besucher findet{" "}
               <strong>keine</strong> Verbindung zu GitHub statt; Besucherdaten werden nicht an
@@ -344,7 +344,7 @@ const Datenschutz = () => {
               <strong>ausschließlich lokal in Ihrem Browser</strong> gespeichert, nicht an uns
               oder Dritte übertragen und enthalten keine personenbezogenen Kennungen (keine
               IP-Adresse, keine Nutzer-ID). Die Speicherung bleibt bestehen, bis Sie sie löschen
-              (Browserdaten leeren) oder die Textversion der Einwilligung sich ändert – dann
+              (Browserdaten leeren) oder die Textversion der Einwilligung sich ändert, dann
               fragen wir erneut.
             </P>
             <P>Rechtsgrundlage:</P>
@@ -432,7 +432,7 @@ const Datenschutz = () => {
             <P>
               Empfänger: Zugriff haben nur die Inhaber. Eine Weitergabe an Dritte erfolgt nur in
               den vorgenannten Fällen. Du hast das Recht auf Auskunft, Löschung und Widerspruch
-              (Art. 15, 17, 21 DSGVO) – Kontakt siehe Impressum.
+              (Art. 15, 17, 21 DSGVO), Kontakt siehe Impressum.
             </P>
           </Section>
 
@@ -442,7 +442,7 @@ const Datenschutz = () => {
             <H2><span id="kartenzahlung">10. Kartenzahlung vor Ort (SumUp)</span></H2>
             <P>
               Für Karten- und kontaktlose Zahlungen im Bistro nutzen wir ein Zahlungsterminal von
-              SumUp. Anbieter ist die SumUp Payments Limited bzw. SumUp Limited, 32–34 Great
+              SumUp. Anbieter ist die SumUp Payments Limited bzw. SumUp Limited, 32-34 Great
               Marlborough Street, London W1F 7JB, Vereinigtes Königreich, mit europäischer
               Niederlassung SumUp EU Payments UAB (Litauen).
             </P>
@@ -450,7 +450,7 @@ const Datenschutz = () => {
               Bei einer Kartenzahlung verarbeitet SumUp als eigenverantwortliches
               Zahlungsdienstleistungsunternehmen die Zahlungsdaten (Kartennummer in maskierter
               Form, Betrag, Zeitpunkt, Transaktions- und Terminalkennung, Autorisierungsergebnis).
-              Wir selbst erhalten <strong>keine</strong> vollständigen Kartendaten – uns werden nur
+              Wir selbst erhalten <strong>keine</strong> vollständigen Kartendaten, uns werden nur
               der Betrag, das Datum, die Kartenart und die letzten Stellen der Kartennummer auf
               dem Transaktionsbeleg angezeigt.
             </P>
@@ -731,8 +731,8 @@ const Datenschutz = () => {
               biometrischen Merkmale werden nicht verarbeitet.
             </P>
             <P>
-              <strong>Ausnahme – KI-Bilder von uns selbst:</strong> Wir haben KI zusätzlich
-              genutzt, um Bilder von uns selbst zu erstellen — Eugen und Helena Schall, Oliver
+              <strong>Ausnahme, KI-Bilder von uns selbst:</strong> Wir haben KI zusätzlich
+              genutzt, um Bilder von uns selbst zu erstellen, Eugen und Helena Schall, Oliver
               Schall sowie Melanie Dincdemir. Diese Bilder bilden uns als reale, erkennbare
               Personen ab und sind daher im Sinne von Art. 3 Nr. 60 EU AI Act als{" "}
               <em>Deepfake</em> einzuordnen. Da es sich um unsere eigenen Abbildungen handelt,
@@ -787,7 +787,7 @@ const Datenschutz = () => {
             <P>
               Beim bloßen Aufruf unserer Website findet <strong>keine</strong> Datenübermittlung
               an KI-Anbieter statt. Eingesetzt haben wir OpenAI (ChatGPT), Anthropic (Claude),
-              Google (Gemini), Lovable und Higgsfield (Bildgenerierung) — jeweils ausschließlich
+              Google (Gemini), Lovable und Higgsfield (Bildgenerierung), jeweils ausschließlich
               intern von uns zur
               Erstellung von Inhalten genutzt. Rechtsgrundlage für die interne Nutzung ist Art. 6
               Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer effizienten Erstellung und
@@ -824,20 +824,20 @@ const Datenschutz = () => {
                   {[
                     ["Hosting & Auslieferung der Website", "IP-Adresse, Browsertyp, Zeitpunkt, HTTP-Header, Referrer", "Cloudflare, Inc. (USA/EU, Auftragsverarbeiter, DPA nach Art. 28 DSGVO)", "Art. 6 Abs. 1 lit. f DSGVO", "Server-Logfiles i. d. R. 7 Tage, danach automatische Löschung"],
                     ["Sicherheits- und Schutzfunktionen (z. B. gegen Angriffe)", "IP-Adresse, technische Verbindungsdaten", "Cloudflare, Inc.", "Art. 6 Abs. 1 lit. f DSGVO", "Kurzfristig, i. d. R. wenige Tage"],
-                    ["Kontakt per E-Mail", "Name, E-Mail-Adresse, Inhalt der Nachricht", "Unser E-Mail-Postfach (Hosting in Deutschland/EU), keine Weitergabe", "Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO", "Bis zur Erledigung der Anfrage; danach Löschung, sofern keine gesetzlichen Aufbewahrungspflichten (§ 147 AO, § 257 HGB: 6–10 Jahre) bestehen"],
+                    ["Kontakt per E-Mail", "Name, E-Mail-Adresse, Inhalt der Nachricht", "Unser E-Mail-Postfach (Hosting in Deutschland/EU), keine Weitergabe", "Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO", "Bis zur Erledigung der Anfrage; danach Löschung, sofern keine gesetzlichen Aufbewahrungspflichten (§ 147 AO, § 257 HGB: 6 bis 10 Jahre) bestehen"],
                     ["Kontakt per Telefon / WhatsApp", "Rufnummer, Gesprächs- bzw. Nachrichteninhalt", "Wir; bei WhatsApp zusätzlich WhatsApp Ireland Ltd.", "Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO", "Bis zur Erledigung der Anfrage"],
-                    ["Kontaktformular", "keine – wir bieten derzeit kein Kontaktformular an (Kontakt nur per Telefon, E-Mail oder vor Ort)", "entfällt", "entfällt", "entfällt"],
+                    ["Kontaktformular", "keine, wir bieten derzeit kein Kontaktformular an (Kontakt nur per Telefon, E-Mail oder vor Ort)", "entfällt", "entfällt", "entfällt"],
                     ["Tischreservierung / Anfragen vor Ort", "Name, Kontaktdaten, Wunschtermin", "Wir, keine Weitergabe", "Art. 6 Abs. 1 lit. b DSGVO", "Nach dem Besuch bzw. Erledigung gelöscht"],
                     ["Videoüberwachung Parkplatz & Eingangsbereich", "Bildaufnahmen von Personen und Fahrzeugen (kein Ton, keine Gesichtserkennung)", "Nur wir; im Vorfall zusätzlich Polizei/Versicherung", "Art. 6 Abs. 1 lit. f DSGVO", "Automatische Löschung nach spätestens 72 Stunden"],
                     ["Kartenzahlung vor Ort", "Zahlbetrag, Zeitpunkt, maskierte Kartendaten, Transaktionskennung", "SumUp (eigenverantwortlicher Zahlungsdienstleister)", "Art. 6 Abs. 1 lit. b und lit. c DSGVO", "Belege/Kassendaten 10 Jahre (§ 147 AO, § 257 HGB)"],
                     ["Google Maps (nur nach Klick)", "IP-Adresse, Geräte- und Browserdaten", "Google Ireland Ltd. / Google LLC (USA)", "Art. 6 Abs. 1 lit. a DSGVO (Einwilligung, 2-Klick-Lösung)", "Keine Speicherung bei uns; Dauer bei Google gemäß deren Datenschutzerklärung"],
-                    ["Schriftarten und Icons", "keine – lokal von unserem Server geladen", "kein Drittanbieter, keine Verbindung zu Google Fonts o. Ä.", "entfällt", "entfällt"],
-                    ["Technisch notwendige Speicherung im Browser (Einwilligungs-Nachweis)", "Entscheidung, Zeitstempel, Textversion, Methode – ohne personenbezogene Kennung", "verbleibt im Browser des Nutzers, keine Übertragung an uns", "§ 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. f DSGVO", "Bis zum Löschen der Browserdaten"],
-                    ["Newsletter / E-Mail-Marketing", "keine – wir versenden keinen Newsletter", "kein Newsletter-Dienstleister im Einsatz", "entfällt", "entfällt"],
-                    ["Reichweitenanalyse / Tracking", "keine – derzeit kein Analytics, kein Pixel, kein Profiling; eine Einbindung erfolgt nur nach Opt-in im Cookie-Banner", "keine Empfänger", "Art. 6 Abs. 1 lit. a DSGVO / § 25 Abs. 1 TDDDG (falls künftig aktiviert)", "entfällt"],
+                    ["Schriftarten und Icons", "keine, lokal von unserem Server geladen", "kein Drittanbieter, keine Verbindung zu Google Fonts o. Ä.", "entfällt", "entfällt"],
+                    ["Technisch notwendige Speicherung im Browser (Einwilligungs-Nachweis)", "Entscheidung, Zeitstempel, Textversion, Methode, ohne personenbezogene Kennung", "verbleibt im Browser des Nutzers, keine Übertragung an uns", "§ 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. f DSGVO", "Bis zum Löschen der Browserdaten"],
+                    ["Newsletter / E-Mail-Marketing", "keine, wir versenden keinen Newsletter", "kein Newsletter-Dienstleister im Einsatz", "entfällt", "entfällt"],
+                    ["Reichweitenanalyse / Tracking", "keine, derzeit kein Analytics, kein Pixel, kein Profiling; eine Einbindung erfolgt nur nach Opt-in im Cookie-Banner", "keine Empfänger", "Art. 6 Abs. 1 lit. a DSGVO / § 25 Abs. 1 TDDDG (falls künftig aktiviert)", "entfällt"],
                     ["Verlinkung zu Social Media & Bewertungsportalen", "erst nach Klick durch den Nutzer beim jeweiligen Anbieter", "Instagram/Meta, Google, TripAdvisor, Komoot (eigene Verantwortung)", "Art. 6 Abs. 1 lit. f DSGVO (reiner Link)", "Keine Speicherung bei uns"],
-                    ["Quellcode-Verwaltung (GitHub)", "keine Besucherdaten – nur unser Programmcode und Bearbeitungshistorie", "GitHub, Inc. (USA/EU, EU-Standardvertragsklauseln)", "Art. 6 Abs. 1 lit. f DSGVO", "Solange das Repository besteht"],
-                    ["KI-Werkzeuge zur Website-Erstellung", "keine Gästedaten – nur eigene redaktionelle Inhalte und Prompts", "OpenAI (ChatGPT), Anthropic (Claude), Google (Gemini), Lovable, Higgsfield – jeweils nur intern von uns genutzt, kein Kontakt beim Seitenaufruf", "Art. 6 Abs. 1 lit. f DSGVO", "Keine Speicherung personenbezogener Gästedaten"],
+                    ["Quellcode-Verwaltung (GitHub)", "keine Besucherdaten, nur unser Programmcode und Bearbeitungshistorie", "GitHub, Inc. (USA/EU, EU-Standardvertragsklauseln)", "Art. 6 Abs. 1 lit. f DSGVO", "Solange das Repository besteht"],
+                    ["KI-Werkzeuge zur Website-Erstellung", "keine Gästedaten, nur eigene redaktionelle Inhalte und Prompts", "OpenAI (ChatGPT), Anthropic (Claude), Google (Gemini), Lovable, Higgsfield, jeweils nur intern von uns genutzt, kein Kontakt beim Seitenaufruf", "Art. 6 Abs. 1 lit. f DSGVO", "Keine Speicherung personenbezogener Gästedaten"],
                   ].map((row) => (
                     <tr key={row[0]}>
                       {row.map((cell, i) => (

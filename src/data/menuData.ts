@@ -73,7 +73,7 @@ export const menuProducts: MenuProduct[] = [
   {
     id: "espresso",
     name: "Espresso",
-    price: "1,90 € – 2,30 €",
+    price: "1,90 € bis 2,30 €",
     description: "Barista Qualität",
     category: "Kaffee",
     variants: [
@@ -97,7 +97,7 @@ export const menuProducts: MenuProduct[] = [
   {
     id: "americano",
     name: "Americano",
-    price: "2,20 € – 2,60 €",
+    price: "2,20 € bis 2,60 €",
     description: "Barista Qualität",
     category: "Kaffee",
     variants: [
@@ -121,7 +121,7 @@ export const menuProducts: MenuProduct[] = [
   {
     id: "caffe-crema",
     name: "Caffè Crema",
-    price: "2,20 € – 3,20 €",
+    price: "2,20 € bis 3,20 €",
     description: "Barista Qualität",
     category: "Kaffee",
     variants: [
@@ -172,7 +172,7 @@ export const menuProducts: MenuProduct[] = [
   {
     id: "caffe-latte",
     name: "Caffè Latte",
-    price: "2,40 € – 3,40 €",
+    price: "2,40 € bis 3,40 €",
     description: "Barista Qualität",
     category: "Kaffee",
     allergens: "G",
@@ -198,7 +198,7 @@ export const menuProducts: MenuProduct[] = [
   {
     id: "cappuccino",
     name: "Cappuccino",
-    price: "2,40 € – 3,40 €",
+    price: "2,40 € bis 3,40 €",
     description: "Barista Qualität",
     category: "Kaffee",
     allergens: "G",
@@ -224,7 +224,7 @@ export const menuProducts: MenuProduct[] = [
   {
     id: "cappuccino-schoko-vanille",
     name: "Cappuccino Schoko oder Vanille",
-    price: "2,60 € – 3,60 €",
+    price: "2,60 € bis 3,60 €",
     description: "Barista Qualität",
     category: "Kaffee",
     allergens: "G",
@@ -250,7 +250,7 @@ export const menuProducts: MenuProduct[] = [
   {
     id: "latte-macchiato",
     name: "Latte Macchiato",
-    price: "2,60 € – 3,80 €",
+    price: "2,60 € bis 3,80 €",
     description: "Barista Qualität",
     category: "Kaffee",
     allergens: "G",
@@ -276,7 +276,7 @@ export const menuProducts: MenuProduct[] = [
   {
     id: "flat-white",
     name: "Flat White",
-    price: "2,60 € – 3,20 €",
+    price: "2,60 € bis 3,20 €",
     description: "Barista Qualität",
     category: "Kaffee",
     allergens: "G",
@@ -302,7 +302,7 @@ export const menuProducts: MenuProduct[] = [
   {
     id: "vegan-matcha-latte",
     name: "Vegan Matcha Latte",
-    price: "3,50 € – 3,80 €",
+    price: "3,50 € bis 3,80 €",
     description: "Mit pflanzlicher Milch",
     category: "Heiße Getränke",
     allergens: "A",
@@ -325,7 +325,7 @@ export const menuProducts: MenuProduct[] = [
   {
     id: "kakao",
     name: "Kakao",
-    price: "2,00 € – 3,20 €",
+    price: "2,00 € bis 3,20 €",
     description: "Heiße Schokolade",
     category: "Heiße Getränke",
     allergens: "G",
@@ -352,7 +352,7 @@ export const menuProducts: MenuProduct[] = [
   {
     id: "latte-vanilla",
     name: "Latte Vanilla",
-    price: "2,00 € – 3,20 €",
+    price: "2,00 € bis 3,20 €",
     description: "Vanille-Milchgetränk",
     category: "Heiße Getränke",
     allergens: "G",
@@ -796,7 +796,7 @@ export const menuProducts: MenuProduct[] = [
   {
     id: "protein-shake",
     name: "Protein-Shake",
-    price: "2,50 € – 4,50 €",
+    price: "2,50 € bis 4,50 €",
     description: "Verschiedene Geschmacksrichtungen",
     category: "Shakes & Sportnahrung",
     allergens: "F,G",
@@ -809,7 +809,7 @@ export const menuProducts: MenuProduct[] = [
   {
     id: "naehrshake",
     name: "Nährshake mit Vitaminen",
-    price: "3,50 € – 5,00 €",
+    price: "3,50 € bis 5,00 €",
     description: "Vollwertiger Shake mit Vitaminen und Mineralstoffen",
     category: "Shakes & Sportnahrung",
     allergens: "F,G",
@@ -822,7 +822,7 @@ export const menuProducts: MenuProduct[] = [
   {
     id: "proteinriegel",
     name: "Proteinriegel (nach Wahl)",
-    price: "2,50 € – 3,90 €",
+    price: "2,50 € bis 3,90 €",
     description: "Verschiedene Geschmacksrichtungen",
     category: "Shakes & Sportnahrung",
     variants: [
