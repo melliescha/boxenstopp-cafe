@@ -3,6 +3,7 @@ import { useSearchParams, Link } from "react-router-dom";
 import { menuProducts, menuCategories, type MenuProduct } from "@/data/menuData";
 import ProductDetailOverlay from "@/components/ProductDetailOverlay";
 import FitesHint from "@/components/FitesHint";
+import AiBadge from "@/components/AiBadge";
 
 const MenuTileView = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -86,7 +87,10 @@ const MenuTileView = () => {
             {/* Image */}
             <div className="relative aspect-square bg-secondary/40">
               {product.image ? (
-                <img src={product.image} alt={product.name} loading="lazy" decoding="async" className="w-full h-full object-cover" />
+                <>
+                  <img src={product.image} alt={product.name} loading="lazy" decoding="async" className="w-full h-full object-cover" />
+                  <AiBadge asText />
+                </>
               ) : (
                 <div className="w-full h-full flex items-center justify-center text-muted-foreground/20 group-hover:text-muted-foreground/30 transition-colors">
                   <span className="text-4xl">📷</span>

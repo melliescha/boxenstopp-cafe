@@ -2,6 +2,7 @@ import { useRef, useState, useCallback } from "react";
 import HTMLFlipBook from "react-pageflip";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { forwardRef } from "react";
+import AiBadge from "@/components/AiBadge";
 
 
 
@@ -66,7 +67,10 @@ const SectionTitle = ({ title, subtitle }: { title: string; subtitle?: string })
 );
 
 const ImagePage = ({ src, alt }: { src: string; alt: string }) => (
-  <img src={src} alt={alt} className="w-full h-full object-cover rounded-sm" loading="lazy" />
+  <div className="relative w-full h-full">
+    <img src={src} alt={alt} className="w-full h-full object-cover rounded-sm" loading="lazy" />
+    <AiBadge asText />
+  </div>
 );
 
 export const FLIPBOOK_EXPORT_PAGE_CLASS = "flipbook-export-page";
