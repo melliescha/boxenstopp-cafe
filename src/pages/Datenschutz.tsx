@@ -648,29 +648,18 @@ const Datenschutz = () => {
             </P>
 
 
-            <H3>16.4 Technische Infrastruktur und Freigabe</H3>
+            <H3>16.4 Menschliche Freigabe</H3>
             <P>
-              Der Quellcode dieser Website wird in einem Repository bei GitHub (GitHub, Inc., USA)
-              verwaltet, das Hosting erfolgt über Cloudflare (Cloudflare, Inc., USA). Kein Inhalt,
-              weder Text noch Bild, geht ungeprüft online: Jede Änderung wird vor der
-              Veröffentlichung von uns als Menschen gelesen, geprüft und freigegeben.
-            </P>
-            <P>
-              Die Freigabe erfolgt dabei in zwei Schritten – eine doppelte menschliche
-              Überprüfung: Zunächst prüft OPTIVANTA Agency (internationale Digitalagentur,
-              <ExtLink href="https://optivantaagency.com/">optivantaagency.com</ExtLink>) jeden
-              Inhalt konzeptionell, technisch und rechtlich. Anschließend erfolgt die inhaltliche
-              Endfreigabe durch Eugen Schall persönlich. Erst nach beiden Freigaben wird ein
-              Inhalt veröffentlicht. Ein automatisierter oder rein KI-gesteuerter
-              Veröffentlichungsprozess findet nicht statt.
+              Kein Inhalt, weder Text noch Bild, geht ungeprüft online. Jede Änderung wird vor der
+              Veröffentlichung von uns als Menschen gelesen, geprüft und freigegeben. Ein
+              automatisierter oder rein KI-gesteuerter Veröffentlichungsprozess findet nicht statt.
             </P>
 
             <H3>16.5 Verarbeitung durch die KI-Anbieter</H3>
             <P>
               Beim bloßen Aufruf unserer Website findet <strong>keine</strong> Datenübermittlung
-              an die genannten KI-Anbieter statt. Die KI-Werkzeuge werden ausschließlich intern von
-              uns zur Erstellung von Inhalten genutzt. Die Anbieter der eingesetzten Systeme haben
-              ihren Sitz teilweise in den USA. Rechtsgrundlage für die interne Nutzung ist Art. 6
+              an KI-Anbieter statt. Die KI-Werkzeuge werden ausschließlich intern von uns zur
+              Erstellung von Inhalten genutzt. Rechtsgrundlage für die interne Nutzung ist Art. 6
               Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer effizienten Erstellung und
               Pflege unserer Website).
             </P>
