@@ -643,6 +643,17 @@ const Datenschutz = () => {
               wurden vor Veröffentlichung von uns redaktionell geprüft und verantwortet.
             </P>
             <P>
+              Auch unser Logo sowie weitere Grafiken und Icons dieser Website wurden mit
+              KI-Werkzeugen erstellt. Logo, Grafiken und Icons tragen aus gestalterischen
+              Gründen kein Badge; wir weisen an dieser Stelle transparent darauf hin.
+            </P>
+            <P>
+              <strong>Markenhinweis:</strong> Fremde Wort- und Bildmarken (Logos) werden auf
+              dieser Website nicht verwendet. Marken-, Produkt- und Firmennamen werden
+              ausschließlich beschreibend genannt und bleiben Eigentum der jeweiligen
+              Rechteinhaber.
+            </P>
+            <P>
               KI-Bilder dienen ausschließlich illustrativen Zwecken und können von der
               tatsächlichen Realität abweichen. Sie stellen keine verbindliche Beschreibung
               unserer Produkte, Räumlichkeiten oder Dienstleistungen dar. Maßgeblich ist stets

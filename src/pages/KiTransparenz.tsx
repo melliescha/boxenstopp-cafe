@@ -140,6 +140,12 @@ const KiTransparenz = () => {
               KI-Werkzeugen erstellt. Aus gestalterischen Gründen tragen Logo und Grafiken kein
               Badge – wir weisen hier transparent darauf hin.
             </p>
+            <p>
+              Fremde Marken-Logos (z. B. von Partnern oder Bewertungsportalen) verwenden wir auf
+              dieser Website bewusst nicht. Partner und Plattformen werden ausschließlich mit
+              ihrem Namen genannt; alle Marken bleiben Eigentum der jeweiligen Rechteinhaber.
+              Symbole stammen aus der frei nutzbaren Lucide-Icon-Bibliothek (MIT-Lizenz).
+            </p>
 
             <p>
               Bei Texten wurden KI-Werkzeuge lediglich unterstützend eingesetzt. Alle Inhalte
