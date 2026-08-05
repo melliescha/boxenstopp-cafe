@@ -235,7 +235,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Welche Zahlungsmöglichkeiten habt ihr?",
         answer:
-          "Durch unseren Partner SumUp bieten wir alle Zahlungsmöglichkeiten an: Bargeld, EC Karte, Kreditkarte, Apple Pay, Google Pay. Alles geht.",
+          "Durch unseren Partner SumUp bieten wir alle Zahlungsmöglichkeiten an: Bargeld, EC Karte, Kreditkarte (Visa, Mastercard, American Express), Apple Pay und Google Pay. Alles geht, auch schon bei kleinen Beträgen.",
       },
       {
         question: "Kann ich einen Tisch reservieren?",
