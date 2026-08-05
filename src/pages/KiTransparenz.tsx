@@ -276,6 +276,18 @@ const KiTransparenz = () => {
               </p>
             </div>
             <div className="flex gap-4">
+              <BadgeCheck className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: "#9E7C4E" }} aria-hidden="true" />
+              <p className="text-muted-foreground leading-relaxed">
+                <strong className="text-foreground">Doppelte menschliche Freigabe:</strong> Jeder
+                Inhalt – Text wie Bild – wird vor der Veröffentlichung in zwei Schritten geprüft:
+                zunächst durch{" "}
+                <a href="https://optivantaagency.com/" target="_blank" rel="noopener noreferrer" className="text-foreground underline decoration-dotted">OPTIVANTA Agency</a>{" "}
+                (konzeptionelle, technische und rechtliche Prüfung) und anschließend durch{" "}
+                <strong className="text-foreground">Eugen Schall</strong> persönlich als
+                inhaltliche Endfreigabe. Erst nach beiden Freigaben geht etwas online.
+              </p>
+            </div>
+            <div className="flex gap-4">
               <Server className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: "#9E7C4E" }} aria-hidden="true" />
               <p className="text-muted-foreground leading-relaxed">
                 <strong className="text-foreground">Quellcode:</strong> Der Quellcode dieser Website

@@ -685,6 +685,15 @@ const Datenschutz = () => {
               weder Text noch Bild, geht ungeprüft online: Jede Änderung wird vor der
               Veröffentlichung von uns als Menschen gelesen, geprüft und freigegeben.
             </P>
+            <P>
+              Die Freigabe erfolgt dabei in zwei Schritten – eine doppelte menschliche
+              Überprüfung: Zunächst prüft OPTIVANTA Agency (internationale Digitalagentur,
+              <ExtLink href="https://optivantaagency.com/">optivantaagency.com</ExtLink>) jeden
+              Inhalt konzeptionell, technisch und rechtlich. Anschließend erfolgt die inhaltliche
+              Endfreigabe durch Eugen Schall persönlich. Erst nach beiden Freigaben wird ein
+              Inhalt veröffentlicht. Ein automatisierter oder rein KI-gesteuerter
+              Veröffentlichungsprozess findet nicht statt.
+            </P>
 
             <H3>16.5 Verarbeitung durch die KI-Anbieter</H3>
             <P>
