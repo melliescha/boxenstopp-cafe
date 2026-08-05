@@ -9,8 +9,8 @@ import herbalifePartner from "@/assets/herbalife-partner.jpg";
 import perplexLogo from "@/assets/perplex-logo.jpg";
 import cupcinoLogo from "@/assets/cupcino-logo.jpg";
 import cupcinoPartnerImg from "@/assets/cupcino-partner.jpg";
-import optivanatPartner from "@/assets/optivanat-partner.jpg";
-import optivanatLogo from "@/assets/optivanat-logo.png";
+import optivantaPartner from "@/assets/optivanta-partner.jpg";
+import optivantaLogo from "@/assets/optivanta-logo.png";
 import fitesStudioAsset from "@/assets/fites-studio.jpg.asset.json";
 import fitesBoxingAsset from "@/assets/fites-boxing.jpg.asset.json";
 import fitesHyroxAsset from "@/assets/fites-hyrox.jpg.asset.json";
@@ -44,7 +44,7 @@ const Partners = () => {
 
   return (
     <Layout>
-      <SEO title="Unsere Partner | Bistro Boxenstopp" description="Wir arbeiten mit FITES Allgäu, Cup&Cino, OPTIVANAT Agency, Herbalife Nutrition und Perplex zusammen." path="/partner" image="/og/partner.jpg" />
+      <SEO title="Unsere Partner | Bistro Boxenstopp" description="Wir arbeiten mit FITES Allgäu, Cup&Cino, OPTIVANTA Agency, Herbalife Nutrition und Perplex zusammen." path="/partner" image="/og/partner.jpg" />
       {/* Hero / Intro */}
       <section className="pt-12 md:pt-20 pb-10 md:pb-14" style={{ backgroundColor: "#FEF4EC" }}>
         <div className="container mx-auto px-6 max-w-3xl text-center">
@@ -226,36 +226,36 @@ const Partners = () => {
         <div className="h-[1px] bg-bronze/20" />
       </div>
 
-      {/* PARTNER 3: OPTIVANAT Agency */}
+      {/* PARTNER 3: OPTIVANTA Agency */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* Text left */}
             <div className="order-2 md:order-1">
-              <a href="https://optivantaagency.com/" target="_blank" rel="noopener noreferrer"><img src={optivanatLogo} alt="OPTIVANAT Agency Logo" className="h-14 mb-6" loading="lazy" /></a>
+              <a href="https://optivantaagency.com/" target="_blank" rel="noopener noreferrer"><img src={optivantaLogo} alt="OPTIVANTA Agency Logo" className="h-14 mb-6" loading="lazy" /></a>
               <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
                 Digitalagentur · Web & Marketing
               </span>
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
-                OPTIVANAT Agency: Unsere Website, unsere Reichweite
+                OPTIVANTA Agency: Unsere Website, unsere Reichweite
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Diese Website, die Meta-Ads, das Google-Setup und das Marketing drumherum stammen nicht von einer anonymen Großagentur, sondern von <strong className="text-foreground">OPTIVANAT Agency</strong> – einer kleinen, feinen Digitalagentur, die weiß, wie man auch mit kleinem Budget echte Wirkung erzielt.
+                  Diese Website, die Meta-Ads, das Google-Setup und das Marketing drumherum stammen nicht von einer anonymen Großagentur, sondern von <strong className="text-foreground">OPTIVANTA Agency</strong> – einer kleinen, feinen Digitalagentur, die weiß, wie man auch mit kleinem Budget echte Wirkung erzielt.
                 </p>
                 <p>
-                  OPTIVANAT begleitet uns von der Gestaltung der Website über das Setup von Meta und Google bis hin zu Monitoring und Marketing-Tipps. Was uns verbindet: ehrliche Beratung, saubere Umsetzung und nachhaltige Ergebnisse, ohne Budget zu verbrennen.
+                  OPTIVANTA begleitet uns von der Gestaltung der Website über das Setup von Meta und Google bis hin zu Monitoring und Marketing-Tipps. Was uns verbindet: ehrliche Beratung, saubere Umsetzung und nachhaltige Ergebnisse, ohne Budget zu verbrennen.
                 </p>
                 <p className="text-sm italic">
-                  Egal ob Website, Social Ads oder Sichtbarkeit bei Google – OPTIVANAT macht aus kleinen Budgets große Auftritte und behält dabei immer den Überblick.
+                  Egal ob Website, Social Ads oder Sichtbarkeit bei Google – OPTIVANTA macht aus kleinen Budgets große Auftritte und behält dabei immer den Überblick.
                 </p>
               </div>
             </div>
             {/* Image right */}
             <div className="order-1 md:order-2">
               <img
-                src={optivanatPartner}
-                alt="OPTIVANAT Agency – Webdesign und Marketing Workspace"
+                src={optivantaPartner}
+                alt="OPTIVANTA Agency – Webdesign und Marketing Workspace"
                 className="w-full aspect-[4/3] object-cover rounded-2xl shadow-lg"
                 loading="lazy"
               />
@@ -265,7 +265,7 @@ const Partners = () => {
           {/* Services Box */}
           <div className="mt-12 bg-card rounded-xl border border-bronze/20 p-8">
             <h3 className="font-serif text-xl font-bold text-foreground mb-6">
-              Was OPTIVANAT für uns macht
+              Was OPTIVANTA für uns macht
             </h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="flex flex-col gap-3">
@@ -302,7 +302,7 @@ const Partners = () => {
           {/* Hint */}
           <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-background border border-bronze/15 rounded-xl p-6">
             <p className="text-muted-foreground text-sm flex-1">
-              Du suchst jemanden, der deine Website, dein Marketing oder deine Social Ads aufbaut, ohne Budget zu verbrennen? Frag uns nach OPTIVANAT.
+              Du suchst jemanden, der deine Website, dein Marketing oder deine Social Ads aufbaut, ohne Budget zu verbrennen? Frag uns nach OPTIVANTA.
             </p>
             <a href="https://optivantaagency.com/" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-medium text-sm hover:opacity-90 transition-opacity whitespace-nowrap">
               Mehr erfahren
