@@ -122,12 +122,46 @@ const Impressum = () => {
             Betreiber verantwortlich.
           </Block>
 
+          <Block title="Urheberrecht:">
+            Alle Texte, Layouts, Grafiken und Bilder dieser Website sind, soweit nicht anders
+            gekennzeichnet, urheberrechtlich geschützt bzw. stehen uns zur Nutzung zu. Eine
+            Verwendung, Vervielfältigung oder Bearbeitung außerhalb der Grenzen des
+            Urheberrechts bedarf unserer vorherigen schriftlichen Zustimmung. Downloads und
+            Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch
+            gestattet.
+          </Block>
+
+          <Block title="Bildnachweise und KI-generierte Bilder:">
+            Reale Fotos: Bistro Boxenstopp / Eugen Schall sowie Bildmaterial unserer Partner,
+            das uns mit deren Einverständnis zur Nutzung überlassen wurde (Marken und Logos
+            bleiben Eigentum der jeweiligen Rechteinhaber).<br />
+            Ein Teil der gezeigten Bilder wurde mit Hilfe künstlicher Intelligenz erstellt oder
+            bearbeitet. Diese Bilder sind mit einem Sternchen (*) gekennzeichnet bzw. am Ende der
+            Bildergalerie und im Footer ausgewiesen (Transparenzhinweis gemäß Art. 50 der
+            Verordnung (EU) 2024/1689, „EU AI Act"). Sie zeigen keine realen, identifizierbaren
+            Personen. Details dazu findest du in unserer{" "}
+            <a
+              href="/datenschutz#ki-hinweis"
+              className={linkClass}
+              style={{ color: navy }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = bronze)}
+              onMouseLeave={(e) => (e.currentTarget.style.color = navy)}
+            >
+              Datenschutzerklärung, Abschnitt 16
+            </a>
+            .<br />
+            Rein KI-generierte Bilder genießen nach deutschem Recht in der Regel keinen
+            urheberrechtlichen Schutz, die Nutzung ohne unsere Zustimmung ist dennoch nicht
+            erwünscht.
+          </Block>
+
           <p
             className="font-sans"
             style={{ color: warmBrown, fontSize: 15, lineHeight: 1.7, marginTop: 32, fontStyle: "italic" }}
           >
-            Stand: November 2025
+            Stand: August 2026
           </p>
+
         </div>
       </section>
     </Layout>
