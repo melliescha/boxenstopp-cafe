@@ -232,7 +232,7 @@ const Partners = () => {
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* Text left */}
             <div className="order-2 md:order-1">
-              <img src={optivanatLogo} alt="OPTIVANAT Agency Logo" className="h-14 mb-6" loading="lazy" />
+              <a href="https://optivantaagency.com/" target="_blank" rel="noopener noreferrer"><img src={optivanatLogo} alt="OPTIVANAT Agency Logo" className="h-14 mb-6" loading="lazy" /></a>
               <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
                 Digitalagentur · Web & Marketing
               </span>
