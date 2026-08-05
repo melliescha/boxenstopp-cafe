@@ -346,7 +346,104 @@ const About = () => {
         </div>
       </section>
 
+      {/* KI-Transparenz (Art. 50 EU AI Act) */}
+      <section id="ki-transparenz" className="pb-16 md:pb-20 bg-background scroll-mt-24">
+        <div className="container mx-auto px-6 max-w-3xl">
+          <div className="rounded-2xl border border-bronze/30 bg-card p-8 md:p-10 shadow-sm">
+            <p className="text-bronze font-medium tracking-[0.2em] uppercase text-xs mb-2">
+              Transparenz
+            </p>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+              Wie wir künstliche Intelligenz einsetzen
+            </h2>
+
+            <div className="space-y-5 text-muted-foreground leading-relaxed">
+              <p>
+                Wir sind ein kleines Familienunternehmen, kein Werbestudio. Damit unsere Website
+                trotzdem einladend aussieht und verständlich geschrieben ist, nutzen wir an
+                manchen Stellen künstliche Intelligenz. Das sagen wir offen, denn wir finden:
+                Transparenz gehört zu ehrlicher Gastronomie genauso wie eine ehrliche Speisekarte.
+              </p>
+
+              <div>
+                <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
+                  Bilder
+                </h3>
+                <p>
+                  Viele Fotos von unserem Bistro, unseren Räumen, der Terrasse und unseren
+                  Speisen sind echte Aufnahmen. Ein Teil der Stimmungsbilder wurde jedoch mit
+                  KI erstellt oder nachbearbeitet. Immer dann, wenn auf einem KI-Bild
+                  realistisch aussehende Menschen zu sehen sind, findest du daneben ein kleines
+                  Sternchen (*), das dich direkt zum ausführlichen KI-Hinweis führt. In unserer
+                  Bildergalerie steht dieser Hinweis als Fußnote unter den Bildern. Auf keinem
+                  KI-Bild sind reale, identifizierbare Personen abgebildet, es handelt sich
+                  ausschließlich um fiktive Personen oder Szenen ohne erkennbare Gesichter.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
+                  Texte
+                </h3>
+                <p>
+                  Für Entwürfe, Formulierungen, Rechtschreibung und Struktur einzelner Texte
+                  haben wir KI-Werkzeuge als Schreibhilfe genutzt. Die Inhalte selbst stammen
+                  von uns: unsere Geschichte, unsere Preise, unsere Produkte, unsere Partner.
+                  Kein Text wird ungeprüft veröffentlicht.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
+                  Menschliche Verantwortung
+                </h3>
+                <p>
+                  Die redaktionelle Verantwortung für alle Inhalte dieser Website liegt
+                  ausschließlich bei uns als Menschen, namentlich bei Eugen Schall
+                  (verantwortlich gemäß § 18 Abs. 2 MStV). Jeder Text und jedes Bild wird vor
+                  der Veröffentlichung von uns gelesen, geprüft und freigegeben. Angaben zu
+                  Preisen, Zutaten, Allergenen und Öffnungszeiten pflegen wir selbst und
+                  kontrollieren sie manuell. Sollte dir trotzdem ein Fehler auffallen, sag uns
+                  bitte Bescheid, wir korrigieren ihn schnellstmöglich.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
+                  Deine Daten
+                </h3>
+                <p>
+                  Auf dieser Website läuft kein KI-Chatbot und keine automatisierte
+                  Entscheidungsfindung. Personenbezogene Daten unserer Gäste geben wir nicht in
+                  KI-Systeme ein.
+                </p>
+              </div>
+
+              <p className="text-sm">
+                Rechtlicher Hintergrund: Art. 50 der Verordnung (EU) 2024/1689 („EU AI Act").
+                Alle Details, inklusive der eingesetzten Werkzeuge, findest du in unserer{" "}
+                <Link
+                  to="/datenschutz#ki-hinweis"
+                  className="font-semibold underline underline-offset-2 hover:text-primary transition-colors"
+                >
+                  Datenschutzerklärung, Abschnitt 16
+                </Link>
+                {" "}sowie im{" "}
+                <Link
+                  to="/impressum"
+                  className="font-semibold underline underline-offset-2 hover:text-primary transition-colors"
+                >
+                  Impressum
+                </Link>
+                .
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Partner CTA */}
+
       <section className="pb-16 md:pb-20 bg-background">
         <div className="container mx-auto px-6 max-w-3xl">
           <div
