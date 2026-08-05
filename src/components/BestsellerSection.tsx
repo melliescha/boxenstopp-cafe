@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 import flammkuchenLachs from "@/assets/flammkuchen-lachs.png";
+import flammkuchenMediterran from "@/assets/flammkuchen-mediterran.png";
 import raclettebrot from "@/assets/raclettebrot-rustikal.jpg";
-import thunfischBaguette from "@/assets/thunfisch-baguette.png";
-import pizzettaMargherita from "@/assets/pizzetta-margherita.png";
-import pizzasnackSalami from "@/assets/pizzasnack-salami.png";
+import holzfaellerbrot from "@/assets/holzfaellerbrot-rustikal.jpg";
+import tomatenMozzarellaBrot from "@/assets/tomaten-mozzarella-brot.jpg";
 
 interface Bestseller {
   image: string;
@@ -27,6 +27,15 @@ const bestsellers: Bestseller[] = [
     badgeColor: "bg-orange-600/85",
   },
   {
+    image: flammkuchenMediterran,
+    alt: "Flammkuchen Mediterran mit Hirtenkäse, Paprika und Zucchini",
+    name: "Flammkuchen Mediterran",
+    description: "Flammkuchencreme, Hirtenkäse, gegrillte Paprika und Zucchini",
+    price: "6,30 €",
+    badge: "🥕 Vegetarisch",
+    badgeColor: "bg-green-600/85",
+  },
+  {
     image: raclettebrot,
     alt: "Hüttenbrot Raclette mit Raclettekäse und Lauch",
     name: "Hüttenbrot Raclette",
@@ -36,31 +45,22 @@ const bestsellers: Bestseller[] = [
     badgeColor: "bg-amber-700/85",
   },
   {
-    image: thunfischBaguette,
-    alt: "Gourmet Baguette mit Thunfisch, Zwiebeln, Gouda und Béchamelsauce",
-    name: "Gourmet Baguette Thunfisch",
-    description: "Mit Thunfisch, Zwiebeln, Gouda und Béchamelsauce",
-    price: "6,20 €",
-    badge: "🐟 Beliebt",
-    badgeColor: "bg-sky-700/85",
+    image: holzfaellerbrot,
+    alt: "Hüttenbrot Speck mit Käse, Speck, Zwiebeln und Schnittlauch",
+    name: "Hüttenbrot Speck",
+    description: "Schwarzbrot mit Knoblauchbutter, Käse, Speck, Zwiebeln und Schnittlauch",
+    price: "7,40 €",
+    badge: "💪 Sattmacher",
+    badgeColor: "bg-amber-800/85",
   },
   {
-    image: pizzettaMargherita,
-    alt: "Pizzetta Margherita mit Tomatensauce und Käse",
-    name: "Pizzetta Margherita",
-    description: "Tomatensauce und Käse — der kleine Klassiker für zwischendurch",
-    price: "3,60 €",
-    badge: "🥖 Für den kleinen Hunger",
-    badgeColor: "bg-emerald-600/85",
-  },
-  {
-    image: pizzasnackSalami,
-    alt: "Pizzasnack Salami mit Pizzasauce, Käse und Salami",
-    name: "Pizzasnack Salami",
-    description: "Pizzasauce, Käse und Salami — schnell, lecker, handlich",
-    price: "3,80 €",
-    badge: "🍕 Snack-Favorit",
-    badgeColor: "bg-red-700/85",
+    image: tomatenMozzarellaBrot,
+    alt: "Hüttenbrot Tomate Mozzarella mit Basilikum",
+    name: "Hüttenbrot Tomate Mozzarella",
+    description: "Weizenbrot mit Basilikum, Mozzarella und Tomaten",
+    price: "7,40 €",
+    badge: "🥕 Vegetarisch",
+    badgeColor: "bg-green-600/85",
   },
 ];
 
