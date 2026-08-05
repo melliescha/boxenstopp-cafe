@@ -399,6 +399,53 @@ export const faqBlocks: FaqBlock[] = [
       },
     ],
   },
+  {
+    id: "ki-transparenz",
+    icon: "🤖",
+    title: "Künstliche Intelligenz auf dieser Website",
+    items: [
+      {
+        question: "Welche Bilder auf der Website sind KI-generiert?",
+        answer:
+          "Echte Fotos sind Aufnahmen von unserem Bistro, den Räumen, der Terrasse und unseren Speisen. Stimmungsbilder, die mit KI erstellt oder nachbearbeitet wurden, erkennt man am kleinen Sternchen (*). In der Bildergalerie steht zusätzlich ein Bildnachweis, in dem für jedes Bild die Quelle aufgeführt ist.",
+      },
+      {
+        question: "Sind auf den KI-Bildern echte Menschen zu sehen?",
+        answer:
+          "Nein. Unsere Bildaufträge (Prompts) haben wir ausdrücklich so formuliert, dass keine realen, identifizierbaren Personen abgebildet werden. Zu sehen sind ausschließlich fiktive Personen oder Szenen ohne erkennbare Gesichter. Wo echte Menschen abgebildet sind, etwa Eugen selbst, liegt eine Einwilligung vor.",
+      },
+      {
+        question: "Welche KI-Werkzeuge nutzt ihr für Bilder?",
+        answer:
+          "Die Bildaufträge wurden mit Anthropic Claude formuliert und über Higgsfield AI umgesetzt. Unser Logo ist ein KI-Entwurf, erstellt mit ChatGPT (OpenAI).",
+      },
+      {
+        question: "Und für die Texte?",
+        answer:
+          "Für Entwürfe, Formulierungen, Rechtschreibung und Struktur nutzen wir Anthropic Claude, Lovable, Google Gemini und ChatGPT als Schreibhilfe. Die Inhalte selbst stammen von uns: unsere Geschichte, unsere Preise, unsere Produkte, unsere Partner. Kein Text geht ungeprüft online.",
+      },
+      {
+        question: "Warum nutzt ihr überhaupt KI?",
+        answer:
+          "Weil wir ein kleines Familienunternehmen sind und kein Werbestudio. KI hilft uns, eine einladende Website mit verständlichen Texten zu bauen, ohne ein teures Agenturteam zu bezahlen. Die Zeit, die wir dadurch sparen, stecken wir lieber in den Kaffee und in unsere Gäste.",
+      },
+      {
+        question: "Werden meine Daten an KI-Systeme weitergegeben?",
+        answer:
+          "Nein. Auf dieser Website läuft kein KI-Chatbot und keine automatisierte Entscheidungsfindung. Personenbezogene Daten unserer Gäste, etwa aus Anfragen oder Reservierungen, geben wir nicht in KI-Systeme ein.",
+      },
+      {
+        question: "Wer ist verantwortlich, wenn ein KI-Bild oder ein Text fehlerhaft ist?",
+        answer:
+          "Die redaktionelle Verantwortung liegt ausschließlich bei uns Menschen, namentlich bei Eugen Schall (verantwortlich gemäß § 18 Abs. 2 MStV). Jedes Bild und jeder Text wird vor der Veröffentlichung gelesen, geprüft und freigegeben. Wenn dir trotzdem ein Fehler auffällt: sag uns Bescheid, wir korrigieren ihn schnellstmöglich.",
+      },
+      {
+        question: "Wo finde ich die rechtlichen Details dazu?",
+        answer:
+          "Kurz zusammengefasst im KI-Hinweis auf dieser Website, ausführlich in Abschnitt 16 der Datenschutzerklärung (Einsatz von KI-generierten Inhalten, EU AI Act) sowie im Impressum unter Bildnachweise und Urheberrecht.",
+      },
+    ],
+  },
 ];
 
 export const allFaqs = faqBlocks.flatMap((b) => b.items);
