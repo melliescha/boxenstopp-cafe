@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Download } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import AiBadge from "@/components/AiBadge";
@@ -423,6 +424,17 @@ const About = () => {
                 </span>
               </span>
             </Link>
+
+            <a
+              href="/ki-konformitaets-checkliste-boxenstopp.pdf"
+              download
+              className="mb-8 inline-flex items-center gap-2 rounded-full bg-bronze px-6 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-90"
+            >
+              <Download className="h-4 w-4" />
+              Checkliste als PDF herunterladen
+            </a>
+
+
 
 
             <div className="space-y-5 text-muted-foreground leading-relaxed">
