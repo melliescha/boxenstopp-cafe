@@ -331,9 +331,10 @@ const Datenschutz = () => {
                 Kontakt-Seite
               </li>
               <li>
-                <strong>Statistik / Reichweitenmessung</strong> (optional): derzeit ist kein
-                Analyse-Dienst eingebunden; ohne Ihre Einwilligung wird auch künftig keiner geladen
+                Eine Kategorie für Statistik oder Reichweitenmessung bieten wir nicht an, da kein
+                Analyse-Dienst eingebunden ist (siehe Abschnitt 14)
               </li>
+
             </ul>
             <H3>6.3 Speicherung und Nachweis der Einwilligung (Art. 7 Abs. 1 DSGVO)</H3>
             <P>
