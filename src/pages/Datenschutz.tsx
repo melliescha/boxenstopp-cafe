@@ -392,15 +392,11 @@ const Datenschutz = () => {
           <Section>
             <H2>8. Kontaktformular</H2>
             <P>
-              Sofern auf unserer Website ein Kontaktformular bereitgestellt wird, werden die im
-              Formular eingegebenen Daten zur Bearbeitung Ihrer Anfrage gespeichert. Pflichtfelder
-              sind als solche gekennzeichnet. Die Übermittlung erfolgt verschlüsselt.
+              Auf dieser Website wird <strong>kein</strong> Kontaktformular angeboten. Eine
+              Kontaktaufnahme ist ausschließlich per Telefon, E-Mail, WhatsApp oder persönlich vor
+              Ort möglich (siehe Abschnitt 7). Es werden daher über diese Website keine
+              Formulardaten erhoben, übermittelt oder gespeichert.
             </P>
-            <P>
-              Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) bzw. Art. 6 Abs. 1 lit. b
-              DSGVO bei vertragsbezogenen Anfragen.
-            </P>
-            <P>Speicherdauer: Bis zum Wegfall des Speicherzwecks oder Widerruf der Einwilligung.</P>
           </Section>
 
           <Divider />
