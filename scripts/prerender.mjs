@@ -96,6 +96,13 @@ const routes = [
     image: `${SITE_URL}/og-image.jpg`,
   },
   {
+    path: "/hausordnung",
+    title: "Hausordnung | Bistro Boxenstopp Hergatz",
+    description:
+      "Hausordnung des Bistro Boxenstopp: Rauchverbot im Gebäude, Aufsichtspflicht der Eltern, Regeln für Duschen und WC, Videoüberwachung und respektvolles Miteinander.",
+    image: `${SITE_URL}/og-image.jpg`,
+  },
+  {
     path: "/ki-transparenz",
     title: "KI-Hinweis | Bistro Boxenstopp",
     description:

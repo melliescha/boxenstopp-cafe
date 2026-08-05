@@ -402,7 +402,82 @@ const Datenschutz = () => {
           <Divider />
 
           <Section>
-            <H2>9. Google Maps (2-Klick-Lösung)</H2>
+            <H2><span id="videoueberwachung">9. Videoüberwachung vor Ort</span></H2>
+            <P>
+              Der Parkplatz und der Eingangsbereich unseres Gebäudes (Südhang 1, 88145 Hergatz)
+              werden videoüberwacht. Gastraum, Sanitärbereich und Duschen werden{" "}
+              <strong>nicht</strong> überwacht. Auf die Überwachung weisen wir zusätzlich mit
+              Hinweisschildern am Eingang und auf dem Parkplatz hin.
+            </P>
+            <P>
+              Zweck: Schutz vor Vandalismus, Sachbeschädigung, Diebstahl und Einbruch sowie
+              Beweissicherung im Schadensfall. Verarbeitet werden Bildaufnahmen von Personen und
+              Fahrzeugen, die sich im erfassten Bereich aufhalten; eine Tonaufzeichnung findet
+              nicht statt, ebenso keine biometrische Gesichtserkennung und kein automatisiertes
+              Auswerten oder Profiling.
+            </P>
+            <P>
+              Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am Schutz
+              unseres Eigentums und der Sicherheit von Gästen und Mitarbeitenden). Eine
+              Interessenabwägung haben wir vorgenommen; die Kameras erfassen nur das eigene
+              Grundstück und den unmittelbaren Eingangsbereich, nicht den öffentlichen
+              Verkehrsraum oder Nachbargrundstücke.
+            </P>
+            <P>
+              Speicherdauer: Die Aufnahmen werden automatisch spätestens nach 72 Stunden
+              gelöscht. Länger gespeichert wird nur, wenn ein konkreter Vorfall dokumentiert und
+              zur Rechtsverfolgung benötigt wird; die Aufnahmen werden dann ausschließlich an
+              Polizei, Versicherung oder Behörden weitergegeben.
+            </P>
+            <P>
+              Empfänger: Zugriff haben nur die Inhaber. Eine Weitergabe an Dritte erfolgt nur in
+              den vorgenannten Fällen. Du hast das Recht auf Auskunft, Löschung und Widerspruch
+              (Art. 15, 17, 21 DSGVO) – Kontakt siehe Impressum.
+            </P>
+          </Section>
+
+          <Divider />
+
+          <Section>
+            <H2><span id="kartenzahlung">10. Kartenzahlung vor Ort (SumUp)</span></H2>
+            <P>
+              Für Karten- und kontaktlose Zahlungen im Bistro nutzen wir ein Zahlungsterminal von
+              SumUp. Anbieter ist die SumUp Payments Limited bzw. SumUp Limited, 32–34 Great
+              Marlborough Street, London W1F 7JB, Vereinigtes Königreich, mit europäischer
+              Niederlassung SumUp EU Payments UAB (Litauen).
+            </P>
+            <P>
+              Bei einer Kartenzahlung verarbeitet SumUp als eigenverantwortliches
+              Zahlungsdienstleistungsunternehmen die Zahlungsdaten (Kartennummer in maskierter
+              Form, Betrag, Zeitpunkt, Transaktions- und Terminalkennung, Autorisierungsergebnis).
+              Wir selbst erhalten <strong>keine</strong> vollständigen Kartendaten – uns werden nur
+              der Betrag, das Datum, die Kartenart und die letzten Stellen der Kartennummer auf
+              dem Transaktionsbeleg angezeigt.
+            </P>
+            <P>
+              Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Abwicklung des Kaufvertrags) sowie Art.
+              6 Abs. 1 lit. c DSGVO (gesetzliche Aufbewahrungs- und Aufzeichnungspflichten,
+              insbesondere § 147 AO, § 257 HGB, GoBD). Belege und Kassendaten bewahren wir
+              entsprechend 10 Jahre auf.
+            </P>
+            <P>
+              Drittlandtransfer: Soweit SumUp Daten außerhalb des EWR verarbeitet, erfolgt dies auf
+              Grundlage von EU-Standardvertragsklauseln bzw. des Angemessenheitsbeschlusses für
+              das Vereinigte Königreich (Art. 45, 46 DSGVO).
+            </P>
+            <P>
+              Weitere Informationen: <ExtLink href="https://www.sumup.com/de-de/datenschutz/">https://www.sumup.com/de-de/datenschutz/</ExtLink>
+            </P>
+            <P>
+              Wer keine Daten an einen Zahlungsdienstleister übermitteln möchte, kann bei uns
+              jederzeit bar bezahlen.
+            </P>
+          </Section>
+
+          <Divider />
+
+          <Section>
+            <H2>11. Google Maps (2-Klick-Lösung)</H2>
             <P>
               Auf unserer Website (insbesondere auf der Seite „Anfahrt") bieten wir die Anzeige
               einer Karte über den Dienst Google Maps der Google Ireland Limited, Gordon House,
@@ -438,7 +513,7 @@ const Datenschutz = () => {
           <Divider />
 
           <Section>
-            <H2>10. Schriftarten (lokal eingebunden)</H2>
+            <H2>12. Schriftarten (lokal eingebunden)</H2>
             <P>
               Diese Website nutzt zur einheitlichen Darstellung von Schriftarten ausschließlich
               lokal eingebundene Web Fonts (Playfair Display und Lato). Die Schriftdateien werden
@@ -455,7 +530,7 @@ const Datenschutz = () => {
           <Divider />
 
           <Section>
-            <H2>11. Verlinkung zu Google-Diensten und Bewertungsportalen</H2>
+            <H2>13. Verlinkung zu Google-Diensten und Bewertungsportalen</H2>
             <P>
               Auf unserer Website verlinken wir auf externe Bewertungs- und Kartendienste
               (insbesondere Google Business Profil/Google Bewertungen sowie Tripadvisor). Es
@@ -493,7 +568,7 @@ const Datenschutz = () => {
           <Divider />
 
           <Section>
-            <H2>12. Reichweitenanalyse und Tracking (kein Google Analytics)</H2>
+            <H2>14. Reichweitenanalyse und Tracking (kein Google Analytics)</H2>
             <P>
               Auf dieser Website kommen <strong>keine Analyse- oder Tracking-Dienste</strong> zum
               Einsatz. Insbesondere verwenden wir <strong>kein Google Analytics</strong>, kein
@@ -519,7 +594,7 @@ const Datenschutz = () => {
           <Divider />
 
           <Section>
-            <H2>13. Social-Media-Profile (Verlinkung)</H2>
+            <H2>15. Social-Media-Profile (Verlinkung)</H2>
             <P>
               Auf unserer Website verlinken wir auf unsere Profile in sozialen Netzwerken (z. B.
               Instagram, Facebook). Die Verlinkung erfolgt über einfache Hyperlinks, sodass beim
@@ -545,7 +620,7 @@ const Datenschutz = () => {
           <Divider />
 
           <Section>
-            <H2>14. Rechte der betroffenen Personen</H2>
+            <H2>16. Rechte der betroffenen Personen</H2>
             <P>
               Werden personenbezogene Daten von Ihnen verarbeitet, sind Sie Betroffener i. S. d.
               DSGVO und es stehen Ihnen folgende Rechte gegenüber dem Verantwortlichen zu:
@@ -620,7 +695,7 @@ const Datenschutz = () => {
           <Divider />
 
           <Section>
-            <H2>15. Automatisierte Entscheidungsfindung / Profiling</H2>
+            <H2>17. Automatisierte Entscheidungsfindung / Profiling</H2>
             <P>
               Eine automatisierte Entscheidungsfindung im Einzelfall einschließlich Profiling gemäß
               Art. 22 DSGVO findet auf unserer Website nicht statt.
@@ -630,7 +705,7 @@ const Datenschutz = () => {
           <Divider />
 
           <Section>
-            <H2><span id="ki-hinweis">16. Einsatz von KI-generierten Inhalten (EU AI Act)</span></H2>
+            <H2><span id="ki-hinweis">18. Einsatz von KI-generierten Inhalten (EU AI Act)</span></H2>
             <P>
               Wir kennzeichnen den Einsatz künstlicher Intelligenz auf dieser Website freiwillig
               und transparent im Sinne von Art. 50 der Verordnung (EU) 2024/1689
@@ -638,7 +713,7 @@ const Datenschutz = () => {
               für künstlich erzeugte oder manipulierte Inhalte vorsieht.
             </P>
 
-            <H3>16.1 Einsatz von KI-Werkzeugen</H3>
+            <H3>18.1 Einsatz von KI-Werkzeugen</H3>
             <P>
               Für Konzeption, Text-Entwürfe, Programmierung und Bildmaterial dieser Website haben
               wir KI-gestützte Werkzeuge eingesetzt. Sämtliche verarbeiteten Inhalte stammen aus
@@ -647,7 +722,7 @@ const Datenschutz = () => {
               oder zu Trainingszwecken weitergegeben.
             </P>
 
-            <H3>16.2 Abbildung realer Personen und Deepfake-Hinweis</H3>
+            <H3>18.2 Abbildung realer Personen und Deepfake-Hinweis</H3>
             <P>
               Die überwiegende Mehrzahl unserer KI-generierten Bilder zeigt fiktive, nicht
               existierende Personen, symbolische Silhouetten oder Situationen ohne erkennbare
@@ -674,7 +749,7 @@ const Datenschutz = () => {
             </P>
 
 
-            <H3>16.3 Kennzeichnung und Aussagekraft</H3>
+            <H3>18.3 Kennzeichnung und Aussagekraft</H3>
             <P>
               KI-generierte Bilder sind auf dieser Website direkt im Bild mit dem Label
               „KI generiert" gekennzeichnet, lediglich KI-bearbeitete Bilder mit einem kleinen
@@ -701,14 +776,14 @@ const Datenschutz = () => {
             </P>
 
 
-            <H3>16.4 Menschliche Freigabe</H3>
+            <H3>18.4 Menschliche Freigabe</H3>
             <P>
               Kein Inhalt, weder Text noch Bild, geht ungeprüft online. Jede Änderung wird vor der
               Veröffentlichung von uns als Menschen gelesen, geprüft und freigegeben. Ein
               automatisierter oder rein KI-gesteuerter Veröffentlichungsprozess findet nicht statt.
             </P>
 
-            <H3>16.5 Verarbeitung durch die KI-Anbieter</H3>
+            <H3>18.5 Verarbeitung durch die KI-Anbieter</H3>
             <P>
               Beim bloßen Aufruf unserer Website findet <strong>keine</strong> Datenübermittlung
               an KI-Anbieter statt. Eingesetzt haben wir OpenAI (ChatGPT), Anthropic (Claude),
@@ -728,7 +803,7 @@ const Datenschutz = () => {
           <Divider />
 
           <Section>
-            <H2>17. Übersicht der Datenverarbeitungen und Datenflüsse</H2>
+            <H2>19. Übersicht der Datenverarbeitungen und Datenflüsse</H2>
             <P>
               Zur besseren Nachvollziehbarkeit fassen wir hier alle Verarbeitungen dieser Website
               kompakt zusammen: welche Daten anfallen, wohin sie fließen, auf welcher
@@ -753,6 +828,8 @@ const Datenschutz = () => {
                     ["Kontakt per Telefon / WhatsApp", "Rufnummer, Gesprächs- bzw. Nachrichteninhalt", "Wir; bei WhatsApp zusätzlich WhatsApp Ireland Ltd.", "Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO", "Bis zur Erledigung der Anfrage"],
                     ["Kontaktformular", "keine – wir bieten derzeit kein Kontaktformular an (Kontakt nur per Telefon, E-Mail oder vor Ort)", "entfällt", "entfällt", "entfällt"],
                     ["Tischreservierung / Anfragen vor Ort", "Name, Kontaktdaten, Wunschtermin", "Wir, keine Weitergabe", "Art. 6 Abs. 1 lit. b DSGVO", "Nach dem Besuch bzw. Erledigung gelöscht"],
+                    ["Videoüberwachung Parkplatz & Eingangsbereich", "Bildaufnahmen von Personen und Fahrzeugen (kein Ton, keine Gesichtserkennung)", "Nur wir; im Vorfall zusätzlich Polizei/Versicherung", "Art. 6 Abs. 1 lit. f DSGVO", "Automatische Löschung nach spätestens 72 Stunden"],
+                    ["Kartenzahlung vor Ort", "Zahlbetrag, Zeitpunkt, maskierte Kartendaten, Transaktionskennung", "SumUp (eigenverantwortlicher Zahlungsdienstleister)", "Art. 6 Abs. 1 lit. b und lit. c DSGVO", "Belege/Kassendaten 10 Jahre (§ 147 AO, § 257 HGB)"],
                     ["Google Maps (nur nach Klick)", "IP-Adresse, Geräte- und Browserdaten", "Google Ireland Ltd. / Google LLC (USA)", "Art. 6 Abs. 1 lit. a DSGVO (Einwilligung, 2-Klick-Lösung)", "Keine Speicherung bei uns; Dauer bei Google gemäß deren Datenschutzerklärung"],
                     ["Schriftarten und Icons", "keine – lokal von unserem Server geladen", "kein Drittanbieter, keine Verbindung zu Google Fonts o. Ä.", "entfällt", "entfällt"],
                     ["Technisch notwendige Speicherung im Browser (Einwilligungs-Nachweis)", "Entscheidung, Zeitstempel, Textversion, Methode – ohne personenbezogene Kennung", "verbleibt im Browser des Nutzers, keine Übertragung an uns", "§ 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. f DSGVO", "Bis zum Löschen der Browserdaten"],
@@ -784,7 +861,7 @@ const Datenschutz = () => {
           <Divider />
 
           <Section>
-            <H2>18. Aktualität und Änderung dieser Datenschutzerklärung</H2>
+            <H2>20. Aktualität und Änderung dieser Datenschutzerklärung</H2>
             <P>
               Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Juli 2026.
             </P>

@@ -21,6 +21,7 @@ const FAQ = lazy(() => import("./pages/FAQ"));
 const BlogRadwegHergatz = lazy(() => import("./pages/BlogRadwegHergatz"));
 const FitesAllgaeu = lazy(() => import("./pages/FitesAllgaeu"));
 const KiTransparenz = lazy(() => import("./pages/KiTransparenz"));
+const Hausordnung = lazy(() => import("./pages/Hausordnung"));
 
 const queryClient = new QueryClient();
 
@@ -53,6 +54,7 @@ const App = () => (
             <Route path="/fites-allgaeu" element={<FitesAllgaeu />} />
             <Route path="/qr-speisekarte" element={<QRSpeisekarte />} />
             <Route path="/ki-transparenz" element={<KiTransparenz />} />
+            <Route path="/hausordnung" element={<Hausordnung />} />
             <Route path="/qr-code" element={<QRCodePage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
