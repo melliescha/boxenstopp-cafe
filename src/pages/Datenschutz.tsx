@@ -230,10 +230,24 @@ const Datenschutz = () => {
             <P>
               Weitere Informationen: <ExtLink href="https://lovable.dev/privacy">https://lovable.dev/privacy</ExtLink>
             </P>
+            <H3>3.3 Quellcode-Verwaltung (GitHub)</H3>
             <P>
-              Rechtsgrundlage für beide Verarbeitungen: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes
-              Interesse an einer technisch fehlerfreien Darstellung, schnellen Auslieferung und
-              Sicherheit unserer Website).
+              Der Quellcode dieser Website wird in einem Repository bei GitHub verwaltet. Anbieter
+              ist GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA, bzw.
+              für den europäischen Raum GitHub B.V., Vijzelstraat 68–72, 1017 HL Amsterdam,
+              Niederlande. GitHub speichert ausschließlich unseren Programmcode und die
+              Bearbeitungshistorie. Beim Aufruf dieser Website durch Besucher findet{" "}
+              <strong>keine</strong> Verbindung zu GitHub statt; Besucherdaten werden nicht an
+              GitHub übermittelt. Die Datenübermittlung in die USA erfolgt auf Grundlage von
+              EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO).
+            </P>
+            <P>
+              Weitere Informationen: <ExtLink href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</ExtLink>
+            </P>
+            <P>
+              Rechtsgrundlage für die vorgenannten Verarbeitungen: Art. 6 Abs. 1 lit. f DSGVO
+              (berechtigtes Interesse an einer technisch fehlerfreien Darstellung, schnellen
+              Auslieferung, Sicherheit und Pflege unserer Website).
             </P>
           </Section>
 
@@ -652,7 +666,7 @@ const Datenschutz = () => {
               Personen ab und sind daher im Sinne von Art. 3 Nr. 60 EU AI Act als{" "}
               <em>Deepfake</em> einzuordnen. Da es sich um unsere eigenen Abbildungen handelt,
               liegen die Einwilligungen der abgebildeten Personen ausdrücklich vor. Wir
-              kennzeichnen diese Bilder mit dem „AI"-Rundlogo und weisen hier transparent gemäß
+              kennzeichnen diese Bilder mit dem Label „KI generiert" und weisen hier transparent gemäß
               Art. 50 EU AI Act darauf hin.
             </P>
             <P>
@@ -666,12 +680,11 @@ const Datenschutz = () => {
 
             <H3>16.3 Kennzeichnung und Aussagekraft</H3>
             <P>
-              KI-generierte oder KI-bearbeitete Bilder sind auf dieser Website mit einem
-              kleinen „AI"-Rundlogo am Bild gekennzeichnet. Ein Klick darauf führt direkt zu
-              diesem ausführlichen KI-Hinweis. Zusätzlich weisen wir in der Bildergalerie und
-              im Seitenfuß allgemein auf den Einsatz von KI-Bildern hin. Bei Texten dieser
-              Website wurden KI-Werkzeuge lediglich unterstützend eingesetzt; alle Inhalte
-              wurden vor Veröffentlichung von uns redaktionell geprüft und verantwortet.
+              KI-generierte Bilder sind auf dieser Website direkt im Bild mit dem Label
+              „KI generiert" gekennzeichnet, lediglich KI-bearbeitete Bilder mit einem kleinen
+              „KI"-Rundlabel. Ein Klick darauf führt direkt zu unserem Transparenzbericht. Bei
+              Texten dieser Website wurden KI-Werkzeuge lediglich unterstützend eingesetzt; alle
+              Inhalte wurden vor Veröffentlichung von uns redaktionell geprüft und verantwortet.
             </P>
             <P>
               Auch unser Logo sowie weitere Grafiken und Icons dieser Website wurden mit
@@ -702,7 +715,9 @@ const Datenschutz = () => {
             <H3>16.5 Verarbeitung durch die KI-Anbieter</H3>
             <P>
               Beim bloßen Aufruf unserer Website findet <strong>keine</strong> Datenübermittlung
-              an KI-Anbieter statt. Die KI-Werkzeuge werden ausschließlich intern von uns zur
+              an KI-Anbieter statt. Eingesetzt haben wir OpenAI (ChatGPT), Anthropic (Claude),
+              Google (Gemini), Lovable und Higgsfield (Bildgenerierung) — jeweils ausschließlich
+              intern von uns zur
               Erstellung von Inhalten genutzt. Rechtsgrundlage für die interne Nutzung ist Art. 6
               Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer effizienten Erstellung und
               Pflege unserer Website).
@@ -748,7 +763,8 @@ const Datenschutz = () => {
                     ["Newsletter / E-Mail-Marketing", "keine – wir versenden keinen Newsletter", "kein Newsletter-Dienstleister im Einsatz", "entfällt", "entfällt"],
                     ["Reichweitenanalyse / Tracking", "keine – derzeit kein Analytics, kein Pixel, kein Profiling; eine Einbindung erfolgt nur nach Opt-in im Cookie-Banner", "keine Empfänger", "Art. 6 Abs. 1 lit. a DSGVO / § 25 Abs. 1 TDDDG (falls künftig aktiviert)", "entfällt"],
                     ["Verlinkung zu Social Media & Bewertungsportalen", "erst nach Klick durch den Nutzer beim jeweiligen Anbieter", "Instagram/Meta, Google, TripAdvisor, Komoot (eigene Verantwortung)", "Art. 6 Abs. 1 lit. f DSGVO (reiner Link)", "Keine Speicherung bei uns"],
-                    ["KI-Werkzeuge zur Website-Erstellung", "keine Gästedaten – nur eigene redaktionelle Inhalte und Prompts", "KI-Anbieter (nur intern von uns genutzt)", "Art. 6 Abs. 1 lit. f DSGVO", "Keine Speicherung personenbezogener Gästedaten"],
+                    ["Quellcode-Verwaltung (GitHub)", "keine Besucherdaten – nur unser Programmcode und Bearbeitungshistorie", "GitHub, Inc. (USA/EU, EU-Standardvertragsklauseln)", "Art. 6 Abs. 1 lit. f DSGVO", "Solange das Repository besteht"],
+                    ["KI-Werkzeuge zur Website-Erstellung", "keine Gästedaten – nur eigene redaktionelle Inhalte und Prompts", "OpenAI (ChatGPT), Anthropic (Claude), Google (Gemini), Lovable, Higgsfield – jeweils nur intern von uns genutzt, kein Kontakt beim Seitenaufruf", "Art. 6 Abs. 1 lit. f DSGVO", "Keine Speicherung personenbezogener Gästedaten"],
                   ].map((row) => (
                     <tr key={row[0]}>
                       {row.map((cell, i) => (
