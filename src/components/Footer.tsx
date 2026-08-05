@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, Phone, MapPin, Clock, Route } from "lucide-react";
+import { Instagram, Facebook, Phone, MapPin, Clock, Route, Download } from "lucide-react";
 import { TripAdvisorIcon, GoogleIcon } from "@/components/icons/SocialIcons";
 import { socialLinks, facebookEnabled } from "@/config/social";
 
