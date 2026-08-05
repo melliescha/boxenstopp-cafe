@@ -2,6 +2,7 @@ import { useState } from "react";
 import { X } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
+import AiBadge from "@/components/AiBadge";
 
 import heroBistro from "@/assets/hero-bistro.jpg";
 import essenTomateMozzarella from "@/assets/gallery/essen-flammkuchen-tomate-mozzarella.jpg";
@@ -146,7 +147,7 @@ const Gallery = () => {
                 <button
                   key={img.alt}
                   onClick={() => setLightbox(i)}
-                  className="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group cursor-pointer aspect-[4/3]"
+                  className="relative rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group cursor-pointer aspect-[4/3]"
                 >
                   <img
                     src={img.src}
@@ -154,6 +155,7 @@ const Gallery = () => {
                     loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
+                  {img.source === "ki" && <AiBadge variant="overlay" />}
                 </button>
               ))}
             </div>
