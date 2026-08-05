@@ -142,7 +142,7 @@ const FitesAllgaeu = () => {
             Kostenloses Probetraining bei FITES Allgäu sichern
           </h1>
           <p className="text-lg md:text-2xl mb-8 opacity-95 max-w-3xl leading-relaxed">
-            Dein Fitnessstudio in Hergatz. HYROX, Fitness-Boxen, Tabata und HIIT. Kleine Gruppen, persönliches Coaching von Eugen, keine Wartezeiten. Ohne Risiko, ohne Kosten, ohne Vertrag.
+            Dein Fitnessstudio in Hergatz. HYROX, FITES Boxen, HIIT & Tabata und Ganzkörpertraining, dazu Personal Training. Kleine Gruppen, persönliches Coaching von Eugen, keine Wartezeiten. Ohne Risiko, ohne Kosten, ohne Vertrag.
           </p>
           <div className="flex flex-wrap gap-4 items-center">
             <a
