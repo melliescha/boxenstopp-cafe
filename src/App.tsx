@@ -20,6 +20,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 const FAQ = lazy(() => import("./pages/FAQ"));
 const BlogRadwegHergatz = lazy(() => import("./pages/BlogRadwegHergatz"));
 const FitesAllgaeu = lazy(() => import("./pages/FitesAllgaeu"));
+const KiCheckliste = lazy(() => import("./pages/KiCheckliste"));
 
 const queryClient = new QueryClient();
 
