@@ -78,18 +78,16 @@ const CookieBanner = () => {
     >
       <div className="container mx-auto px-6 py-5 max-w-3xl">
         <h2 className="font-serif text-lg font-bold mb-2" style={{ color: CREAM }}>
-          Datenschutz-Einstellungen
+          Datenschutz
         </h2>
         <p className="text-sm leading-relaxed mb-4" style={{ color: CREAM }}>
-          Wir verwenden nur technisch notwendige Speicherung. Externe Inhalte (z. B. Google Maps)
-          und eine optionale Reichweitenmessung laden wir <strong>ausschließlich mit Ihrer
-          Einwilligung</strong>. Sie können Ihre Wahl jederzeit im Footer unter
-          „Cookie-Einstellungen“ ändern oder widerrufen. Details in der{" "}
+          Externe Inhalte (Google Maps) und Statistik laden wir nur mit Ihrer Einwilligung.
+          Widerruf jederzeit im Footer.{" "}
           <a href="/datenschutz" className="underline" style={{ color: BRONZE }}>
             Datenschutzerklärung
           </a>
-          .
         </p>
+
 
         {showSettings && (
           <div className="space-y-3 mb-5">
@@ -103,8 +101,7 @@ const CookieBanner = () => {
                     Technisch notwendig
                   </p>
                   <p className="text-xs mt-1" style={{ color: "rgba(254,244,236,0.75)" }}>
-                    Speichert nur Ihre Datenschutz-Entscheidung im Browser. Ohne diese Speicherung
-                    würde der Hinweis bei jedem Besuch erscheinen (§ 25 Abs. 2 Nr. 2 TDDDG).
+                    Speichert nur Ihre Entscheidung im Browser (§ 25 Abs. 2 TDDDG).
                   </p>
                 </div>
                 <span className="text-xs whitespace-nowrap mt-1" style={{ color: BRONZE }}>
@@ -123,8 +120,7 @@ const CookieBanner = () => {
                     Externe Inhalte (Google Maps)
                   </p>
                   <p className="text-xs mt-1" style={{ color: "rgba(254,244,236,0.75)" }}>
-                    Lädt die Karte auf der Kontakt-Seite. Dabei wird Ihre IP-Adresse an Google
-                    Ireland Ltd. übertragen (Drittlandtransfer USA, Art. 49 Abs. 1 lit. a DSGVO).
+                    Karte auf der Kontakt-Seite. Ihre IP-Adresse geht an Google (USA-Transfer).
                   </p>
                 </div>
                 <input
@@ -147,8 +143,7 @@ const CookieBanner = () => {
                     Statistik / Reichweitenmessung
                   </p>
                   <p className="text-xs mt-1" style={{ color: "rgba(254,244,236,0.75)" }}>
-                    Anonyme Auswertung der Seitennutzung. Derzeit ist kein Analyse-Dienst aktiv,
-                    ohne Ihre Einwilligung wird auch künftig keiner geladen.
+                    Anonyme Nutzungsauswertung. Derzeit kein Dienst aktiv.
                   </p>
                 </div>
                 <input
@@ -162,8 +157,7 @@ const CookieBanner = () => {
             </label>
 
             <p className="text-[11px]" style={{ color: "rgba(254,244,236,0.6)" }}>
-              Einwilligungs-Version {CONSENT_VERSION} · Ihre Entscheidung wird mit Zeitstempel
-              lokal in Ihrem Browser gespeichert und nicht an uns übertragen.
+              Version {CONSENT_VERSION} · Speicherung nur lokal im Browser.
             </p>
           </div>
         )}
