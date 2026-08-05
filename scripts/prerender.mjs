@@ -102,6 +102,14 @@ const routes = [
       "Unsere Checkliste zum EU AI Act: Kennzeichnung von KI-Bildern, eingesetzte Werkzeuge, menschliche Verantwortung, Datenschutz und Urheberrecht im Bistro Boxenstopp.",
     image: `${SITE_URL}/og-image.jpg`,
   },
+  {
+    path: "/ki-transparenz",
+    title: "KI-Transparenz | Bistro Boxenstopp",
+    description:
+      "Wie wir künstliche Intelligenz für Bilder und Texte einsetzen: Kennzeichnung, eingesetzte Werkzeuge, menschliche redaktionelle Verantwortung und Datenschutz.",
+    image: `${SITE_URL}/og-image.jpg`,
+  },
+
 
   {
     path: "/impressum",
