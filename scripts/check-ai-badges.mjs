@@ -79,12 +79,12 @@ for (const asset of assets) {
     usedAnywhere = true;
 
     const isCollective = collectiveFiles.includes(file.path);
-    const hasCollectiveNotice = /datenschutz#ki-hinweis/.test(file.text);
+    const hasCollectiveNotice = /datenschutz#ki-hinweis|\/ki-transparenz/.test(file.text);
 
     if (isCollective) {
       if (!hasCollectiveNotice) {
         problems.push(
-          `${file.path}: Sammelhinweis erwartet, aber kein Link auf /datenschutz#ki-hinweis gefunden (Asset ${asset}).`,
+          `${file.path}: Sammelhinweis erwartet, aber kein Link auf /ki-transparenz (oder /datenschutz#ki-hinweis) gefunden (Asset ${asset}).`,
         );
       } else {
         checked.push(`${asset} → ${file.path} (Sammelhinweis)`);

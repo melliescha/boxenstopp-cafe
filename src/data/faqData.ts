@@ -395,7 +395,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Was wird denn aus dem Rest? Wie geht's bei euch weiter?",
         answer:
-          "Schritt für Schritt. Das Bistro läuft, das FITES läuft, die Herren-Duschen sind im Umbau und kommen als nächstes. Was danach passiert, entscheiden wir mit der Zeit. Wir machen keine großen Pläne, die wir nicht halten können. Wir bauen, was wir bauen können, und freuen uns über jeden Fortschritt. Wer regelmäßig vorbeikommt, sieht den Wandel mit eigenen Augen.",
+          "Schritt für Schritt. Das Bistro läuft, das FITES läuft, die Duschen sind fertig und für Gäste nutzbar. Was danach passiert, entscheiden wir mit der Zeit. Wir machen keine großen Pläne, die wir nicht halten können. Wir bauen, was wir bauen können, und freuen uns über jeden Fortschritt. Wer regelmäßig vorbeikommt, sieht den Wandel mit eigenen Augen.",
       },
     ],
   },
