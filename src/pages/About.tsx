@@ -378,6 +378,9 @@ const About = () => {
                   Bildergalerie steht dieser Hinweis als Fußnote unter den Bildern. Auf keinem
                   KI-Bild sind reale, identifizierbare Personen abgebildet, es handelt sich
                   ausschließlich um fiktive Personen oder Szenen ohne erkennbare Gesichter.
+                  Die Bildaufträge haben wir mit Anthropic Claude formuliert und über
+                  Higgsfield AI umgesetzt, immer mit der ausdrücklichen Vorgabe, keine realen
+                  Menschen abzubilden. Auch unser Logo ist ein KI-Entwurf, erstellt mit ChatGPT.
                 </p>
               </div>
 
@@ -389,6 +392,7 @@ const About = () => {
                   Für Entwürfe, Formulierungen, Rechtschreibung und Struktur einzelner Texte
                   haben wir KI-Werkzeuge als Schreibhilfe genutzt. Die Inhalte selbst stammen
                   von uns: unsere Geschichte, unsere Preise, unsere Produkte, unsere Partner.
+                  Genutzt haben wir dafür Anthropic Claude, Lovable, Google Gemini und ChatGPT.
                   Kein Text wird ungeprüft veröffentlicht.
                 </p>
               </div>
@@ -403,7 +407,8 @@ const About = () => {
                   (verantwortlich gemäß § 18 Abs. 2 MStV). Jeder Text und jedes Bild wird vor
                   der Veröffentlichung von uns gelesen, geprüft und freigegeben. Angaben zu
                   Preisen, Zutaten, Allergenen und Öffnungszeiten pflegen wir selbst und
-                  kontrollieren sie manuell. Sollte dir trotzdem ein Fehler auffallen, sag uns
+                  kontrollieren sie manuell. Der Quellcode der Website liegt bei GitHub, gehostet
+                  wird sie über Cloudflare. Sollte dir trotzdem ein Fehler auffallen, sag uns
                   bitte Bescheid, wir korrigieren ihn schnellstmöglich.
                 </p>
               </div>

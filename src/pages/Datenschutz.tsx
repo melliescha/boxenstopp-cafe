@@ -609,7 +609,8 @@ const Datenschutz = () => {
               </li>
               <li>
                 <strong>ChatGPT</strong> (OpenAI, L.L.C., USA): Sprachmodell für Text-Entwürfe,
-                Formulierungshilfen und Recherche.
+                Formulierungshilfen und Recherche. Zusätzlich wurde unser Logo mit ChatGPT
+                KI-generiert.
               </li>
               <li>
                 <strong>Google Gemini</strong> (Google Ireland Ltd. / Google LLC): Sprachmodell
@@ -621,7 +622,9 @@ const Datenschutz = () => {
               </li>
               <li>
                 <strong>Higgsfield AI</strong> (Higgsfield, Inc., USA): KI-Bildgenerator für
-                stimmungsvolle Foto-Eindrücke, Produkt- und Ambiente-Bilder.
+                stimmungsvolle Foto-Eindrücke, Produkt- und Ambiente-Bilder. Die Bildaufträge
+                (Prompts) wurden dabei mit Anthropic Claude erstellt und enthielten stets die
+                ausdrückliche Vorgabe, keine realen Menschen abzubilden.
               </li>
             </ul>
             <P>
@@ -667,7 +670,15 @@ const Datenschutz = () => {
             </P>
 
 
-            <H3>16.4 Verarbeitung durch die KI-Anbieter</H3>
+            <H3>16.4 Technische Infrastruktur und Freigabe</H3>
+            <P>
+              Der Quellcode dieser Website wird in einem Repository bei GitHub (GitHub, Inc., USA)
+              verwaltet, das Hosting erfolgt über Cloudflare (Cloudflare, Inc., USA). Kein Inhalt,
+              weder Text noch Bild, geht ungeprüft online: Jede Änderung wird vor der
+              Veröffentlichung von uns als Menschen gelesen, geprüft und freigegeben.
+            </P>
+
+            <H3>16.5 Verarbeitung durch die KI-Anbieter</H3>
             <P>
               Beim bloßen Aufruf unserer Website findet <strong>keine</strong> Datenübermittlung
               an die genannten KI-Anbieter statt. Die KI-Werkzeuge werden ausschließlich intern von

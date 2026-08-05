@@ -135,6 +135,9 @@ const Impressum = () => {
             Reale Fotos: Bistro Boxenstopp / Eugen Schall sowie Bildmaterial unserer Partner,
             das uns mit deren Einverständnis zur Nutzung überlassen wurde (Marken und Logos
             bleiben Eigentum der jeweiligen Rechteinhaber).<br />
+            Unser Logo wurde mit ChatGPT (OpenAI) KI-generiert. KI-Bilder wurden über
+            Higgsfield AI erstellt, die Prompts dazu mit Anthropic Claude, jeweils mit der
+            ausdrücklichen Vorgabe, keine realen Menschen abzubilden.<br />
             Ein Teil der gezeigten Bilder wurde mit Hilfe künstlicher Intelligenz erstellt oder
             bearbeitet. Diese Bilder sind mit einem Sternchen (*) gekennzeichnet bzw. am Ende der
             Bildergalerie und im Footer ausgewiesen (Transparenzhinweis gemäß Art. 50 der
