@@ -4,7 +4,7 @@
  *
  * Grundlage: Art. 50 Abs. 4 der Verordnung (EU) 2024/1689 („EU AI Act").
  * Solche Bilder müssen sichtbar gekennzeichnet werden. Auf dieser Website
- * geschieht das über <AiBadge /> (klickbares Sternchen) bzw. über den
+ * geschieht das über <AiBadge /> (klickbares „AI"-Rundlogo) bzw. über den
  * Sammelhinweis am Ende der Bildergalerie.
  *
  * WICHTIG: Neue KI-Bilder mit Personen hier eintragen. Das Skript
