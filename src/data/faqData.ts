@@ -120,6 +120,12 @@ export const faqBlocks: FaqBlock[] = [
           "Wir kennzeichnen alle 14 Hauptallergene und Zusatzstoffe nach den gesetzlichen Vorgaben. Die detaillierten Zutatenlisten findet ihr auf unserer Website unter der Speisekarte. Bei Unsicherheiten fragt uns einfach, wir beraten euch persönlich.",
       },
       {
+        question: "Könnt ihr „frei von\" garantieren (vegan, glutenfrei)?",
+        answer:
+          "Nein, und das sagen wir ganz offen. Wir bieten vegane Milchalternativen wie Hafermilch an und haben Produkte, die glutenfrei sind. Zubereitet wird bei uns aber alles in einer Küche mit gemeinsamen Geräten, Arbeitsflächen und Milchsystemen. Deshalb können wir eine vollständige Frei-von-Garantie nicht geben, Spuren durch Kreuzkontamination sind nicht auszuschließen und eine Haftung dafür übernehmen wir nicht. Bei ausdrücklichen Wünschen oder Allergien sprecht uns bitte vor der Bestellung direkt an, dann finden wir gemeinsam die beste Lösung.",
+      },
+
+      {
         question: "Kann ich alles auch zum Mitnehmen bestellen?",
         answer:
           "Ja, alle Speisen und Getränke gibt's auch to go. Sagt uns einfach Bescheid, wir packen euch alles ein.",
