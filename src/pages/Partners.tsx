@@ -339,10 +339,10 @@ const Partners = () => {
 
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Die Herbalife-Produkte in unserem Bistro sind keine Trend-Supplements, sondern wissenschaftlich fundierte Nahrungsergänzung. Mahlzeitenersatz-Shakes mit Vitaminen und Mineralien, natürliche Zutaten, kein künstlicher unangenehmer Geschmack.
+                  Die Herbalife-Produkte in unserem Bistro sind keine Trend-Supplements, sondern wissenschaftlich fundierte Nahrungsergänzung: Mahlzeitenersatz-Shakes mit Vitaminen und Mineralien, natürliche Zutaten, ohne künstlichen oder unangenehmen Geschmack.
                 </p>
                 <p>
-                  Das Herzstück: der mehrfach ausgezeichnete Formula 1-Shake mit Sojaprotein und allen wichtigen Aminosäuren, dazu 25 essenzielle Mineralstoffe und Vitamine. Er unterstützt das Immunsystem, den Erhalt normaler Knochen und hilft gegen Müdigkeit, ideal vor oder nach dem Training, oder als gesunder Snack auf der Radtour.
+                  Das Herzstück: der mehrfach ausgezeichnete Formula 1-Shake mit Sojaprotein und allen wichtigen Aminosäuren, dazu 25 essenzielle Mineralstoffe und Vitamine. Er unterstützt das Immunsystem, den Erhalt normaler Knochen und hilft gegen Müdigkeit – ideal vor oder nach dem Training oder als gesunder Snack auf der Radtour.
                 </p>
               </div>
             </div>
