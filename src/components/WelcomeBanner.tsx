@@ -27,7 +27,13 @@ const WelcomeBanner = () => {
 
   return (
     <div className="welcome-banner bg-primary text-primary-foreground text-center py-2.5 px-4 text-sm font-medium relative">
-      <span>Egal ob nach der Fahrradtour, nach dem Training oder für eine entspannte Pause: komm einfach vorbei! 👋</span>
+      <span>
+        Egal ob nach der Fahrradtour, nach dem Training bei{" "}
+        <a href="/fites-allgaeu" className="underline hover:text-warm-gold transition-colors font-semibold">
+          FITES Allgäu
+        </a>{" "}
+        oder für eine entspannte Pause: komm einfach vorbei! 👋
+      </span>
       <button
         onClick={() => setVisible(false)}
         className="absolute right-4 top-1/2 -translate-y-1/2 hover:opacity-70 transition-opacity"
