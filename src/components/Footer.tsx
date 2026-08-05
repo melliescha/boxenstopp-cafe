@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, Phone, MapPin, Clock, Route } from "lucide-react";
+import { Instagram, Facebook, Phone, MapPin, Clock, Route, Download } from "lucide-react";
 import { TripAdvisorIcon, GoogleIcon } from "@/components/icons/SocialIcons";
 import { socialLinks, facebookEnabled } from "@/config/social";
 
@@ -186,16 +186,20 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/10 mt-6 pt-6 text-center text-xs text-primary-foreground/40 space-y-2">
+        <div className="border-t border-primary-foreground/10 mt-6 pt-6 text-center text-xs text-primary-foreground/40 space-y-3">
           <p>
             Hinweis: Ein Teil der Bilder und Texte dieser Website wurde mit Hilfe künstlicher
             Intelligenz erstellt oder bearbeitet (gem. Art. 50 EU AI Act). Die redaktionelle
             Verantwortung liegt bei uns.{" "}
             <Link
-              to="/ueber-uns#ki-transparenz"
+              to="/ki-transparenz"
               className="underline hover:text-warm-gold transition-colors"
             >
               KI-Transparenz
+            </Link>
+            {" "}·{" "}
+            <Link to="/ki-checkliste" className="underline hover:text-warm-gold transition-colors">
+              KI-Konformitäts-Checkliste
             </Link>
             {" "}·{" "}
             <Link to="/datenschutz#ki-hinweis" className="underline hover:text-warm-gold transition-colors">
@@ -203,6 +207,16 @@ const Footer = () => {
             </Link>
             .
           </p>
+
+          <a
+            href="/ki-konformitaets-checkliste-boxenstopp.pdf"
+            download
+            className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/20 px-4 py-2 text-[11px] font-semibold text-primary-foreground/70 hover:border-warm-gold hover:text-warm-gold transition-colors"
+          >
+            <Download size={13} aria-hidden="true" />
+            KI-Konformitäts-Checkliste als PDF
+          </a>
+
 
           <p>© {new Date().getFullYear()} Bistro Boxenstopp</p>
         </div>
