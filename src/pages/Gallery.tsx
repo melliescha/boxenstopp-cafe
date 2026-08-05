@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { X } from "lucide-react";
+import { ListChecks, X } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 
@@ -107,6 +107,7 @@ const tabs: { label: string; value: Category }[] = [
 const Gallery = () => {
   const [filter, setFilter] = useState<Category>("all");
   const [lightbox, setLightbox] = useState<number | null>(null);
+  const [showSources, setShowSources] = useState(false);
 
   const filtered = filter === "all" ? images : images.filter((img) => img.category === filter);
 
