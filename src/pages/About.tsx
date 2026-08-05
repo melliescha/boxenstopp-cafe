@@ -405,6 +405,26 @@ const About = () => {
               Wie wir künstliche Intelligenz einsetzen
             </h2>
 
+            <Link
+              to="/ki-checkliste"
+              className="group mb-8 flex items-start gap-4 rounded-xl border border-bronze/40 bg-secondary/40 px-5 py-4 transition-colors hover:bg-secondary/70"
+            >
+              <span className="mt-0.5 text-bronze text-xl leading-none">✓</span>
+              <span>
+                <span className="block font-semibold text-foreground">
+                  Unsere KI-Konformitäts-Checkliste zum EU AI Act
+                </span>
+                <span className="block text-sm text-muted-foreground">
+                  Alle Punkte auf einer Seite: Kennzeichnung, eingesetzte Werkzeuge,
+                  menschliche Verantwortung, Datenschutz und Urheberrecht.
+                </span>
+                <span className="mt-1 inline-block text-sm font-semibold text-bronze underline underline-offset-2">
+                  Checkliste ansehen →
+                </span>
+              </span>
+            </Link>
+
+
             <div className="space-y-5 text-muted-foreground leading-relaxed">
               <p>
                 Wir sind ein kleines Familienunternehmen, kein Werbestudio. Damit unsere Website
