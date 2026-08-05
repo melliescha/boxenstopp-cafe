@@ -165,7 +165,7 @@ const Impressum = () => {
               onMouseEnter={(e) => (e.currentTarget.style.color = bronze)}
               onMouseLeave={(e) => (e.currentTarget.style.color = navy)}
             >
-              Datenschutzerklärung, Abschnitt 16
+              Datenschutzerklärung, Abschnitt 18
             </a>
             .<br />
             Rein KI-generierte Bilder genießen nach deutschem Recht in der Regel keinen

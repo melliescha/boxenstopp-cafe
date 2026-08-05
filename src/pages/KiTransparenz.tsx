@@ -57,7 +57,7 @@ const faqItems = [
   },
   {
     q: "Wo finde ich die rechtlichen Details dazu?",
-    a: "Kurz zusammengefasst auf dieser Seite, ausführlich in Abschnitt 16 der Datenschutzerklärung (Einsatz von KI-generierten Inhalten, EU AI Act) sowie im Impressum unter Bildnachweise und Urheberrecht.",
+    a: "Kurz zusammengefasst auf dieser Seite, ausführlich in Abschnitt 18 der Datenschutzerklärung (Einsatz von KI-generierten Inhalten, EU AI Act) sowie im Impressum unter Bildnachweise und Urheberrecht.",
   },
 ];
 
@@ -280,7 +280,7 @@ const KiTransparenz = () => {
               className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-4 py-2.5 text-sm font-medium text-foreground hover:border-warm-gold transition-colors"
             >
               <Lock className="w-4 h-4" style={{ color: "#9E7C4E" }} aria-hidden="true" />
-              Datenschutzerklärung, Abschnitt 16
+              Datenschutzerklärung, Abschnitt 18
             </Link>
             <Link
               to="/impressum"

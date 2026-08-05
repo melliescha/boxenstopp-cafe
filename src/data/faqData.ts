@@ -432,7 +432,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Wo finde ich die rechtlichen Details dazu?",
         answer:
-          "Kurz zusammengefasst auf unserer KI-Transparenzseite, ausführlich in Abschnitt 16 der Datenschutzerklärung (Einsatz von KI-generierten Inhalten, EU AI Act) sowie im Impressum unter Bildnachweise und Urheberrecht.",
+          "Kurz zusammengefasst auf unserer KI-Transparenzseite, ausführlich in Abschnitt 18 der Datenschutzerklärung (Einsatz von KI-generierten Inhalten, EU AI Act) sowie im Impressum unter Bildnachweise und Urheberrecht.",
       },
     ],
   },
