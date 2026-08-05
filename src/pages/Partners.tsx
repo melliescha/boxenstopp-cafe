@@ -241,14 +241,14 @@ const Partners = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Diese Website, die Meta-Ads, das Google-Setup und das Marketing drumherum stammen nicht von einer anonymen Großagentur, sondern von <strong className="text-foreground">OPTIVANTA Agency</strong> – einer kleinen, feinen Digitalagentur, die weiß, wie man auch mit kleinem Budget echte Wirkung erzielt.
+                  Diese Website, die Meta-Ads, das Google-Setup und das Marketing drumherum stammen nicht von einer anonymen Großagentur, sondern von <strong className="text-foreground">OPTIVANTA</strong> – einer Marketing-Agentur, die international und remote mit echten Experten arbeitet und auch mit kleinem Budget maximale Ergebnisse erzielt.
                 </p>
                 <p>
                   OPTIVANTA begleitet uns von der Gestaltung der Website über das Setup von Meta und Google bis hin zu Monitoring und Marketing-Tipps. Was uns verbindet: ehrliche Beratung, saubere Umsetzung und nachhaltige Ergebnisse, ohne Budget zu verbrennen.
                 </p>
-                <p className="text-sm italic">
-                  Egal ob Website, Social Ads oder Sichtbarkeit bei Google – OPTIVANTA macht aus kleinen Budgets große Auftritte und behält dabei immer den Überblick.
-                </p>
+                <blockquote className="border-l-4 pl-4 italic text-sm" style={{ borderColor: "#9E7C4E" }}>
+                  „Niemand sollte im Jahr 2026 noch 5.000 Euro für eine Website zahlen." – <strong className="text-foreground not-italic">OPTIVANTA</strong>
+                </blockquote>
               </div>
             </div>
             {/* Image right */}
