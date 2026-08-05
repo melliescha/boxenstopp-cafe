@@ -78,18 +78,16 @@ const CookieBanner = () => {
     >
       <div className="container mx-auto px-6 py-5 max-w-3xl">
         <h2 className="font-serif text-lg font-bold mb-2" style={{ color: CREAM }}>
-          Datenschutz-Einstellungen
+          Datenschutz
         </h2>
         <p className="text-sm leading-relaxed mb-4" style={{ color: CREAM }}>
-          Wir verwenden nur technisch notwendige Speicherung. Externe Inhalte (z. B. Google Maps)
-          und eine optionale Reichweitenmessung laden wir <strong>ausschließlich mit Ihrer
-          Einwilligung</strong>. Sie können Ihre Wahl jederzeit im Footer unter
-          „Cookie-Einstellungen“ ändern oder widerrufen. Details in der{" "}
+          Externe Inhalte (Google Maps) und Statistik laden wir nur mit Ihrer Einwilligung.
+          Widerruf jederzeit im Footer.{" "}
           <a href="/datenschutz" className="underline" style={{ color: BRONZE }}>
             Datenschutzerklärung
           </a>
-          .
         </p>
+
 
         {showSettings && (
           <div className="space-y-3 mb-5">
