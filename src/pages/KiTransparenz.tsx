@@ -30,8 +30,12 @@ const KiTransparenz = () => {
             </p>
             <p>
               Alle Inhalte werden vor der Veröffentlichung von uns geprüft und freigegeben. Die
-              redaktionelle Verantwortung liegt bei Eugen Schall (§ 18 Abs. 2 MStV). Details stehen
-              in der{" "}
+              redaktionelle Verantwortung liegt bei Eugen Schall (§ 18 Abs. 2 MStV). Ausführliche
+              Antworten stehen in unseren{" "}
+              <Link to="/faq#ki-transparenz" className="underline underline-offset-2 hover:text-warm-gold">
+                FAQ
+              </Link>
+              , die rechtlichen Details in der{" "}
               <Link to="/datenschutz#ki-hinweis" className="underline underline-offset-2 hover:text-warm-gold">
                 Datenschutzerklärung
               </Link>{" "}
@@ -41,6 +45,7 @@ const KiTransparenz = () => {
               </Link>
               .
             </p>
+
           </div>
         </div>
       </section>
