@@ -615,8 +615,8 @@ const Datenschutz = () => {
               biometrischen Merkmale werden nicht verarbeitet.
             </P>
             <P>
-              <strong>Ausnahme – KI-Bilder von uns selbst:</strong> Wir haben KI (Higgsfield AI)
-              zusätzlich genutzt, um Bilder von uns selbst, Eugen und Helena Schall, zu erstellen.
+              <strong>Ausnahme – KI-Bilder von uns selbst:</strong> Wir haben KI zusätzlich
+              genutzt, um Bilder von uns selbst, Eugen und Helena Schall, zu erstellen.
               Diese Bilder bilden uns als reale, erkennbare Personen ab und sind daher im Sinne
               von Art. 3 Nr. 60 EU AI Act als <em>Deepfake</em> einzuordnen. Da es unsere eigenen
               Abbildungen sind, liegt die Einwilligung der abgebildeten Personen (uns selbst)
