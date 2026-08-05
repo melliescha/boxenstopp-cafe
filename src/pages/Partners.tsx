@@ -162,10 +162,10 @@ const Partners = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Hinter jeder Tasse Kaffee bei uns steckt Cup&Cino: hochwertige Kaffeebohnen, perfekt abgestimmt auf ein Kaffeesystem der neuesten Generation. Modernste Technik, präzise Einstellungen und ausgewählte Bohnen, so entsteht bei uns jeder Espresso, jeder Cappuccino und jeder Latte Macchiato.
+                  Hinter jeder Tasse Kaffee bei uns steckt Cup&Cino: hochwertige Kaffeebohnen, perfekt abgestimmt auf ein Kaffeesystem der neuesten Generation. Modernste Technik, präzise Einstellungen und ausgewählte Bohnen – so entsteht bei uns jeder Espresso, jeder Cappuccino und jeder Latte Macchiato.
                 </p>
                 <p>
-                  Das Ergebnis schmeckst du mit dem ersten Schluck: vollmundig, aromatisch und auf Barista-Niveau. Bei uns bekommst du keinen Kaffee aus der Kanne, sondern Kaffeegenuss, wie du ihn aus den besten Cafés kennst, mitten im Allgäu.
+                  Das Ergebnis schmeckst du mit dem ersten Schluck: vollmundig, aromatisch und auf Barista-Niveau. Bei uns bekommst du keinen Kaffee aus der Kanne, sondern Kaffeegenuss, wie du ihn aus den besten Cafés kennst – mitten im Allgäu.
                 </p>
               </div>
             </div>
@@ -241,13 +241,13 @@ const Partners = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Diese Website, die Meta-Ads, das Google-Setup und das Marketing drumherum stammen nicht von einer anonymen Großagentur, sondern von <strong className="text-foreground">OPTIVANAT Agency</strong>. Eine kleine, feine Digitalagentur, die weiß, wie man auch mit kleinem Budget echte Wirkung erzielt.
+                  Diese Website, die Meta-Ads, das Google-Setup und das Marketing drumherum stammen nicht von einer anonymen Großagentur, sondern von <strong className="text-foreground">OPTIVANAT Agency</strong> – einer kleinen, feinen Digitalagentur, die weiß, wie man auch mit kleinem Budget echte Wirkung erzielt.
                 </p>
                 <p>
-                  OPTIVANAT begleitet uns von der Gestaltung der Website über das Setup von Meta und Google bis hin zu Monitoring und Marketing-Tipps. Was uns verbindet: ehrliche Beratung, saubere Umsetzung und Layer-für-Layer-Ergebnisse, ohne Budget zu verbrennen.
+                  OPTIVANAT begleitet uns von der Gestaltung der Website über das Setup von Meta und Google bis hin zu Monitoring und Marketing-Tipps. Was uns verbindet: ehrliche Beratung, saubere Umsetzung und nachhaltige Ergebnisse, ohne Budget zu verbrennen.
                 </p>
                 <p className="text-sm italic">
-                  Egal ob Website, Social Ads oder Sichtbarkeit bei Google – OPTIVANAT macht klein groß und groß überschaubar.
+                  Egal ob Website, Social Ads oder Sichtbarkeit bei Google – OPTIVANAT macht aus kleinen Budgets große Auftritte und behält dabei immer den Überblick.
                 </p>
               </div>
             </div>
@@ -339,10 +339,10 @@ const Partners = () => {
 
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Die Herbalife-Produkte in unserem Bistro sind keine Trend-Supplements, sondern wissenschaftlich fundierte Nahrungsergänzung. Mahlzeitenersatz-Shakes mit Vitaminen und Mineralien, natürliche Zutaten, kein künstlicher unangenehmer Geschmack.
+                  Die Herbalife-Produkte in unserem Bistro sind keine Trend-Supplements, sondern wissenschaftlich fundierte Nahrungsergänzung: Mahlzeitenersatz-Shakes mit Vitaminen und Mineralien, natürliche Zutaten, ohne künstlichen oder unangenehmen Geschmack.
                 </p>
                 <p>
-                  Das Herzstück: der mehrfach ausgezeichnete Formula 1-Shake mit Sojaprotein und allen wichtigen Aminosäuren, dazu 25 essenzielle Mineralstoffe und Vitamine. Er unterstützt das Immunsystem, den Erhalt normaler Knochen und hilft gegen Müdigkeit, ideal vor oder nach dem Training, oder als gesunder Snack auf der Radtour.
+                  Das Herzstück: der mehrfach ausgezeichnete Formula 1-Shake mit Sojaprotein und allen wichtigen Aminosäuren, dazu 25 essenzielle Mineralstoffe und Vitamine. Er unterstützt das Immunsystem, den Erhalt normaler Knochen und hilft gegen Müdigkeit – ideal vor oder nach dem Training oder als gesunder Snack auf der Radtour.
                 </p>
               </div>
             </div>
