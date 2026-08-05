@@ -20,7 +20,7 @@ const courses = [
   {
     icon: Trophy,
     title: "HYROX",
-    text: "Offizielles HYROX Training, funktionelle Fitness kombiniert mit Ausdauer. Perfekte Vorbereitung auf das Race oder einfach für maximale Fitness.",
+    text: "Funktionelles Training kombiniert mit Ausdauer. Perfekte Vorbereitung auf das Race oder einfach für maximale Fitness.",
   },
   {
     icon: Flame,
@@ -29,15 +29,16 @@ const courses = [
   },
   {
     icon: Sparkles,
-    title: "Tabata",
+    title: "HIIT & Tabata",
     text: "Hochintensives Intervalltraining, das in kürzester Zeit maximale Ergebnisse liefert. Fettverbrennung, Ausdauer, Kraft.",
   },
   {
     icon: Dumbbell,
-    title: "HIIT & Kraft",
-    text: "Individuell abgestimmte Kraft- und HIIT-Einheiten an Hammer Strength Geräten. Kleine Gruppen, persönliche Betreuung.",
+    title: "Ganzkörpertraining",
+    text: "Kraft und Stabilität für den ganzen Körper an Hammer Strength Geräten. Kleine Gruppen, persönliche Betreuung.",
   },
 ];
+
 
 const benefits = [
   "Persönliche Betreuung von Inhaber Eugen",
