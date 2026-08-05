@@ -214,8 +214,8 @@ const KiTransparenz = () => {
               <UserCheck className="w-6 h-6 flex-shrink-0 mt-0.5" style={{ color: "#9E7C4E" }} aria-hidden="true" />
               <p>
                 <strong className="text-foreground">KI-Bilder von uns selbst (Deepfake-Hinweis):</strong>{" "}
-                Einige KI-generierte Bilder zeigen uns selbst, Eugen und Helena Schall, Oliver
-                Schall sowie Melanie Dincdemir, als reale, erkennbare Personen. Diese sind im
+                Einige KI-generierte Bilder zeigen uns selbst, die Inhaberfamilie, als reale,
+                erkennbare Personen. Diese sind im
                 Sinne von Art. 3 Nr. 60 EU AI Act als Deepfake einzuordnen. Da es sich um unsere
                 eigenen Abbildungen handelt, liegen die Einwilligungen der abgebildeten Personen
                 ausdrücklich vor. Wir kennzeichnen diese Bilder mit dem Label „KI generiert“ und weisen

@@ -162,7 +162,7 @@ const Impressum = () => {
             KI-bearbeiteten Bildern) mit einem „KI"-Rundlabel gekennzeichnet; zusätzlich weisen
             wir im Footer darauf hin (Transparenzhinweis gemäß Art. 50 der
             Verordnung (EU) 2024/1689, „EU AI Act"). Ausnahme: Einige KI-Bilder zeigen uns selbst
-            (Eugen & Helena Schall, Oliver Schall, Melanie Dincdemir) als reale Personen, im Sinne
+            (Inhaberfamilie) als reale Personen, im Sinne
             von Art. 3 Nr. 60 EU AI Act ein Deepfake, erstellt und verwendet mit ausdrücklicher
             eigener Einwilligung. Details dazu findest
             du in unserer{" "}
