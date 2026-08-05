@@ -12,13 +12,13 @@ interface AiBadgeProps {
  * Minimaler KI-Hinweis gem. Art. 50 EU AI Act (VO 2024/1689).
  * Kleines „KI generiert"-Label, immer direkt auf dem Bild, 60 % Deckkraft
  * mit einem Backdrop-Blur-Hintergrund, der sich dezent an jedes Bild anpasst.
- * Klickbar → ausführlicher KI-Hinweis in der Datenschutzerklärung.
+ * Klickbar → Transparenzbericht (Abschnitt Kennzeichnung).
  */
 const AiBadge = ({ variant = "overlay", asText = false, className = "" }: AiBadgeProps) => {
   const edited = variant === "edited";
   const title = edited
-    ? "Dieses Bild wurde mit KI bearbeitet, klick für den ausführlichen KI-Hinweis"
-    : "Dieses Bild wurde mit KI erstellt oder bearbeitet, klick für den ausführlichen KI-Hinweis";
+    ? "Dieses Bild wurde mit KI bearbeitet, klick für den Transparenzbericht"
+    : "Dieses Bild wurde mit KI erstellt oder bearbeitet, klick für den Transparenzbericht";
   const label = edited ? "KI" : "KI generiert";
 
   const sharedClassName = `absolute bottom-2 right-2 z-20 inline-flex items-center justify-center rounded-full font-semibold backdrop-blur-md hover:!opacity-100 transition-opacity ${className}`;
@@ -45,7 +45,7 @@ const AiBadge = ({ variant = "overlay", asText = false, className = "" }: AiBadg
   }
 
   return (
-    <Link to="/datenschutz#ki-hinweis" title={title} aria-label={title} className={sharedClassName} style={sharedStyle}>
+    <Link to="/ki-transparenz#kennzeichnung" title={title} aria-label={title} className={sharedClassName} style={sharedStyle}>
       {label}
     </Link>
   );
