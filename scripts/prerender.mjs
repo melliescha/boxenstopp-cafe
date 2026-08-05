@@ -96,6 +96,14 @@ const routes = [
     image: `${SITE_URL}/og-image.jpg`,
   },
   {
+    path: "/ki-checkliste",
+    title: "KI-Konformitäts-Checkliste | Bistro Boxenstopp",
+    description:
+      "Unsere Checkliste zum EU AI Act: Kennzeichnung von KI-Bildern, eingesetzte Werkzeuge, menschliche Verantwortung, Datenschutz und Urheberrecht im Bistro Boxenstopp.",
+    image: `${SITE_URL}/og-image.jpg`,
+  },
+
+  {
     path: "/impressum",
     title: "Impressum – Bistro Boxenstopp",
     description: "Impressum und Anbieterkennzeichnung.",
