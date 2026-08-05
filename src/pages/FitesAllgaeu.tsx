@@ -20,7 +20,7 @@ const courses = [
   {
     icon: Trophy,
     title: "HYROX",
-    text: "Offizielles HYROX Training, funktionelle Fitness kombiniert mit Ausdauer. Perfekte Vorbereitung auf das Race oder einfach für maximale Fitness.",
+    text: "Funktionelles Training kombiniert mit Ausdauer. Perfekte Vorbereitung auf das Race oder einfach für maximale Fitness.",
   },
   {
     icon: Flame,
@@ -29,15 +29,16 @@ const courses = [
   },
   {
     icon: Sparkles,
-    title: "Tabata",
+    title: "HIIT & Tabata",
     text: "Hochintensives Intervalltraining, das in kürzester Zeit maximale Ergebnisse liefert. Fettverbrennung, Ausdauer, Kraft.",
   },
   {
     icon: Dumbbell,
-    title: "HIIT & Kraft",
-    text: "Individuell abgestimmte Kraft- und HIIT-Einheiten an Hammer Strength Geräten. Kleine Gruppen, persönliche Betreuung.",
+    title: "Ganzkörpertraining",
+    text: "Kraft und Stabilität für den ganzen Körper an Hammer Strength Geräten. Kleine Gruppen, persönliche Betreuung.",
   },
 ];
+
 
 const benefits = [
   "Persönliche Betreuung von Inhaber Eugen",
@@ -53,13 +54,14 @@ const jsonLd = [
     "@context": "https://schema.org",
     "@type": "HealthClub",
     name: "FITES Allgäu",
-    description: "Fitnessstudio in Hergatz mit HYROX, Fitness-Boxen, Tabata und HIIT. Kleine Gruppen, persönliche Betreuung, Wellpass-Partner.",
+    description: "Fitnessstudio in Hergatz mit HYROX, FITES Boxen, HIIT & Tabata und Ganzkörpertraining, dazu Personal Training nach Absprache.",
     url: "https://bistro-boxenstopp.de/fites-allgaeu",
     telephone: "+491716226201",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Bahnhofstraße 4",
+      streetAddress: "Südhang 1",
       addressLocality: "Hergatz",
+
       postalCode: "88145",
       addressCountry: "DE",
     },
@@ -98,7 +100,7 @@ const jsonLd = [
         name: "Welche Kurse gibt es?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "HYROX, Fitness-Boxen, Tabata, HIIT und individuelles Krafttraining. Immer in kleinen Gruppen mit persönlicher Betreuung.",
+          text: "Vier Kurse: HYROX, FITES Boxen, HIIT & Tabata und Ganzkörpertraining. Dazu Personal Training nach Absprache.",
         },
       },
       {
@@ -106,8 +108,9 @@ const jsonLd = [
         name: "Wo befindet sich FITES Allgäu?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Bahnhofstraße 4 in 88145 Hergatz im Westallgäu, direkt im selben Gebäude wie das Bistro Boxenstopp.",
+          text: "Südhang 1 in 88145 Hergatz im Westallgäu, im selben Gebäude wie das Bistro Boxenstopp.",
         },
+
       },
     ],
   },
@@ -118,7 +121,7 @@ const FitesAllgaeu = () => {
     <Layout>
       <SEO
         title="FITES Allgäu Hergatz | Kostenloses Probetraining bis Dezember"
-        description="Fitnessstudio in Hergatz: HYROX, Fitness-Boxen, Tabata & HIIT. Persönliche Betreuung von Eugen, kleine Gruppen, Wellpass-Partner. Jetzt kostenloses Probetraining sichern."
+        description="Fitnessstudio in Hergatz: HYROX, FITES Boxen, HIIT & Tabata, Ganzkörpertraining und Personal Training. Persönliche Betreuung von Eugen, kleine Gruppen, Wellpass-Partner."
         path="/fites-allgaeu"
         image="/og-image.jpg"
         jsonLd={jsonLd}
@@ -139,7 +142,7 @@ const FitesAllgaeu = () => {
             Kostenloses Probetraining bei FITES Allgäu sichern
           </h1>
           <p className="text-lg md:text-2xl mb-8 opacity-95 max-w-3xl leading-relaxed">
-            Dein Fitnessstudio in Hergatz. HYROX, Fitness-Boxen, Tabata und HIIT. Kleine Gruppen, persönliches Coaching von Eugen, keine Wartezeiten. Ohne Risiko, ohne Kosten, ohne Vertrag.
+            Dein Fitnessstudio in Hergatz. HYROX, FITES Boxen, HIIT & Tabata und Ganzkörpertraining, dazu Personal Training. Kleine Gruppen, persönliches Coaching von Eugen, keine Wartezeiten. Ohne Risiko, ohne Kosten, ohne Vertrag.
           </p>
           <div className="flex flex-wrap gap-4 items-center">
             <a
@@ -194,7 +197,7 @@ const FitesAllgaeu = () => {
               Bei FITES Allgäu bist du kein Mitglieder-Barcode. Eugen kennt jeden Namen, jedes Ziel, jede Schwachstelle. Du bekommst einen Trainingsplan, der zu dir passt, nicht zur Werbebroschüre einer Kette.
             </p>
             <p className="text-lg leading-relaxed" style={{ color: "#3d3d3d" }}>
-              Mehr als 30 Jahre Erfahrung, Boxtrainer-Lizenz, HYROX Coach, HIIT-Spezialist. Kleiner Ort, große Wirkung.
+              Vier Kurse plus Personal Training, das sind die Säulen bei FITES Allgäu: HYROX, FITES Boxen, HIIT & Tabata und Ganzkörpertraining. Kleiner Ort, große Wirkung.
             </p>
           </div>
         </div>
@@ -280,23 +283,24 @@ const FitesAllgaeu = () => {
               <MapPin className="w-5 h-5" style={{ color: BRONZE }} />
               <p className="text-xs uppercase tracking-[0.25em] font-semibold" style={{ color: BRONZE }}>Standort</p>
             </div>
-            <h3 className="font-serif text-2xl font-bold mb-3" style={{ color: NAVY }}>Direkt in Hergatz, Westallgäu</h3>
+            <h3 className="font-serif text-2xl font-bold mb-3" style={{ color: NAVY }}>Im Westallgäu, in Hergatz</h3>
             <address className="not-italic text-muted-foreground leading-relaxed">
               FITES Allgäu<br />
-              Bahnhofstraße 4<br />
+              Südhang 1<br />
               88145 Hergatz
             </address>
-            <p className="text-sm text-muted-foreground mt-3">Im selben Gebäude wie das Bistro Boxenstopp. Perfekt für Kaffee oder Protein-Shake nach dem Training.</p>
+            <p className="text-sm text-muted-foreground mt-3">Bistro Boxenstopp und FITES Allgäu sind im selben Gebäude. Perfekt für Kaffee oder Protein-Shake nach dem Training.</p>
           </div>
           <div>
             <div className="flex items-center gap-3 mb-3">
               <Clock className="w-5 h-5" style={{ color: BRONZE }} />
               <p className="text-xs uppercase tracking-[0.25em] font-semibold" style={{ color: BRONZE }}>Trainingszeiten</p>
             </div>
-            <h3 className="font-serif text-2xl font-bold mb-3" style={{ color: NAVY }}>Flexibel nach Absprache</h3>
+            <h3 className="font-serif text-2xl font-bold mb-3" style={{ color: NAVY }}>Kurszeiten auf der Website</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Kurszeiten und offenes Training werden individuell abgestimmt. Ruf an und wir finden einen Termin, der zu dir passt, auch abends oder am Wochenende.
+              Die aktuellen Kurszeiten findest du auf der FITES Website. Personal Training läuft ausschließlich nach Absprache, ruf einfach an und wir finden einen passenden Termin.
             </p>
+
           </div>
         </div>
       </section>
