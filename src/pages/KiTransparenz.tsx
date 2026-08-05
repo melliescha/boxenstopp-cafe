@@ -136,6 +136,12 @@ const KiTransparenz = () => {
               für jedes einzelne Bild die Quelle (Foto oder KI) nachvollziehbar aufgeführt ist.
             </p>
             <p>
+              Auch unser Logo sowie weitere Grafiken und Icons dieser Website wurden mit
+              KI-Werkzeugen erstellt. Aus gestalterischen Gründen tragen Logo und Grafiken kein
+              Badge – wir weisen hier transparent darauf hin.
+            </p>
+
+            <p>
               Bei Texten wurden KI-Werkzeuge lediglich unterstützend eingesetzt. Alle Inhalte
               wurden vor der Veröffentlichung von uns redaktionell geprüft und verantwortet.
               KI-Bilder dienen ausschließlich illustrativen Zwecken und können von der
