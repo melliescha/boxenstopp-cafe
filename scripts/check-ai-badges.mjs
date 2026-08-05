@@ -33,7 +33,7 @@ try {
 
 const assets = [...registrySource.matchAll(/asset:\s*"([^"]+)"/g)].map((m) => m[1]);
 const collectiveFiles = [
-  ...(registrySource.match(/AI_COLLECTIVE_NOTICE_FILES[^[]*\[([^\]]*)\]/s)?.[1] ?? "").matchAll(
+  ...(registrySource.match(/AI_COLLECTIVE_NOTICE_FILES[\s\S]*?=\s*\[([\s\S]*?)\]/)?.[1] ?? "").matchAll(
     /"([^"]+)"/g,
   ),
 ].map((m) => m[1]);
