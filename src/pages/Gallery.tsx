@@ -2,6 +2,7 @@ import { useState } from "react";
 import { X } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
+import AiBadge from "@/components/AiBadge";
 
 import heroBistro from "@/assets/hero-bistro.jpg";
 import essenTomateMozzarella from "@/assets/gallery/essen-flammkuchen-tomate-mozzarella.jpg";
