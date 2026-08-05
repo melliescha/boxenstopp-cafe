@@ -232,7 +232,7 @@ const Partners = () => {
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* Text left */}
             <div className="order-2 md:order-1">
-              <img src={optivanatLogo} alt="OPTIVANAT Agency Logo" className="h-14 mb-6" loading="lazy" />
+              <a href="https://optivantaagency.com/" target="_blank" rel="noopener noreferrer"><img src={optivanatLogo} alt="OPTIVANAT Agency Logo" className="h-14 mb-6" loading="lazy" /></a>
               <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
                 Digitalagentur · Web & Marketing
               </span>
@@ -304,7 +304,7 @@ const Partners = () => {
             <p className="text-muted-foreground text-sm flex-1">
               Du suchst jemanden, der deine Website, dein Marketing oder deine Social Ads aufbaut, ohne Budget zu verbrennen? Frag uns nach OPTIVANAT.
             </p>
-            <a href="/kontakt" className="inline-block bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-medium text-sm hover:opacity-90 transition-opacity whitespace-nowrap">
+            <a href="https://optivantaagency.com/" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-medium text-sm hover:opacity-90 transition-opacity whitespace-nowrap">
               Mehr erfahren
             </a>
           </div>
