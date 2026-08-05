@@ -53,11 +53,6 @@ interface GalleryImage {
   sourceNote: string;
 }
 
-const SOURCE_LABEL: Record<ImageSource, string> = {
-  ki: "KI-generiert",
-  foto: "Echtes Foto",
-  "foto-personen": "Echtes Foto mit Personen",
-};
 
 const images: GalleryImage[] = [
   { src: heroBistro, alt: "Sonnige Terrasse des Bistro Boxenstopp im Außenbereich", category: "aussen", source: "ki", sourceNote: "KI-generiertes Stimmungsbild mit realistisch dargestellten Personen, gekennzeichnet nach Art. 50 EU AI Act" },
