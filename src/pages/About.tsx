@@ -173,14 +173,14 @@ const About = () => {
 
           {/* Block 2 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div>
+            <div className="relative rounded-xl overflow-hidden shadow-md">
               <img
                 src={aboutCafe}
                 alt="Gemütliches Café-Interieur"
                 loading="lazy"
-                className="rounded-xl shadow-md w-full h-64 md:h-80 object-cover"
+                className="w-full h-64 md:h-80 object-cover"
               />
-              <AiBadge />
+              <AiBadge variant="overlay" />
             </div>
             <div>
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
@@ -215,15 +215,15 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="order-1 md:order-2">
+            <div className="order-1 md:order-2 relative rounded-xl overflow-hidden shadow-md">
               <img
                 src={aboutTerrace}
                 alt="Terrasse des Bistro Boxenstopp mit Radfahrern"
                 loading="lazy"
-                className="rounded-xl shadow-md w-full h-64 md:h-80 object-cover"
+                className="w-full h-64 md:h-80 object-cover"
                 style={{ objectPosition: 'center 30%' }}
               />
-              <AiBadge />
+              <AiBadge variant="overlay" />
             </div>
           </div>
         </div>
