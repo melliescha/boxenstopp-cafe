@@ -382,6 +382,36 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* Unsere Werte */}
+      <section className="pb-20 md:pb-24 bg-background">
+        <div className="container mx-auto px-6 max-w-3xl">
+          <h2
+            className="font-serif text-2xl md:text-3xl font-bold mb-6"
+            style={{ color: "#164472" }}
+          >
+            Unsere Werte
+          </h2>
+          <div className="space-y-5 leading-relaxed" style={{ color: "#6B4A2E" }}>
+            <p>
+              Transparenz und Ehrlichkeit sind für uns das Allerwichtigste. Unsere Gäste
+              vertrauen uns, und genau dieses Vertrauen möchten wir jeden Tag zurückgeben.
+            </p>
+            <p>
+              Deshalb beantworten wir alle Fragen offen: Woher unsere Zutaten kommen, wer
+              unsere Lieferanten sind, wie unsere Speisen zubereitet werden. Herkunft,
+              Zutaten, Allergene und Nährwerte kennzeichnen wir nachvollziehbar, bei jedem
+              einzelnen Produkt auf der Speisekarte.
+            </p>
+            <p>
+              Wenn du etwas wissen möchtest, frag uns einfach. Es gibt bei uns nichts zu
+              verstecken, und wenn wir eine Antwort nicht sofort parat haben, finden wir sie
+              für dich heraus.
+            </p>
+          </div>
+        </div>
+      </section>
+
     </Layout>
   );
 };
