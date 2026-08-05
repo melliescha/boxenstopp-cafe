@@ -188,13 +188,22 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/10 mt-6 pt-6 text-center text-xs text-primary-foreground/40 space-y-2">
           <p>
-            Hinweis: Ein Teil der auf dieser Website gezeigten Bilder ist KI-generiert oder
-            KI-bearbeitet (gem. Art. 50 EU AI Act). Mehr dazu in unserer{" "}
-            <Link to="/datenschutz" className="underline hover:text-warm-gold transition-colors">
+            Hinweis: Ein Teil der Bilder und Texte dieser Website wurde mit Hilfe künstlicher
+            Intelligenz erstellt oder bearbeitet (gem. Art. 50 EU AI Act). Die redaktionelle
+            Verantwortung liegt bei uns.{" "}
+            <Link
+              to="/ueber-uns#ki-transparenz"
+              className="underline hover:text-warm-gold transition-colors"
+            >
+              KI-Transparenz
+            </Link>
+            {" "}·{" "}
+            <Link to="/datenschutz#ki-hinweis" className="underline hover:text-warm-gold transition-colors">
               Datenschutzerklärung
             </Link>
             .
           </p>
+
           <p>© {new Date().getFullYear()} Bistro Boxenstopp</p>
         </div>
 
