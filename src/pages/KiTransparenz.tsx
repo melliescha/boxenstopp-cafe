@@ -99,7 +99,7 @@ const faqItems = [
   },
   {
     q: "Wer ist verantwortlich, wenn ein KI-Bild oder ein Text fehlerhaft ist?",
-    a: "Die redaktionelle Verantwortung liegt ausschließlich bei uns Menschen, namentlich bei Eugen Schall (verantwortlich gemäß § 18 Abs. 2 MStV). Jedes Bild und jeder Text wird vor der Veröffentlichung gelesen, geprüft und freigegeben. Wenn dir trotzdem ein Fehler auffällt: sag uns Bescheid, wir korrigieren ihn schnellstmöglich.",
+    a: "Die redaktionelle Verantwortung liegt ausschließlich bei uns Menschen, namentlich bei Eugen Schall (verantwortlich gemäß § 18 Abs. 2 MStV). Jedes Bild und jeder Text wird vor der Veröffentlichung in zwei Schritten geprüft: zunächst durch OPTIVANTA Agency (konzeptionell, technisch, rechtlich) und danach persönlich durch Eugen Schall als inhaltliche Endfreigabe. Wenn dir trotzdem ein Fehler auffällt: sag uns Bescheid, wir korrigieren ihn schnellstmöglich.",
   },
 ];
 
