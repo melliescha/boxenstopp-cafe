@@ -625,12 +625,13 @@ const Datenschutz = () => {
               Art. 50 EU AI Act darauf hin.
             </P>
             <P>
-              Daneben gibt es echte Fotos, auf denen die Inhaberfamilie zu sehen ist (z.&nbsp;B.
-              auf der Seite „Über uns"). Dabei handelt es sich um reale Aufnahmen mit
-              ausdrücklicher Einwilligung der abgebildeten Personen (Art. 6 Abs. 1 lit. a DSGVO),
-              die nicht durch KI generiert wurden. Gelegentliche technische Bildoptimierungen
-              (z.&nbsp;B. Retusche, Farbkorrektur) erfolgen ohne Erstellung biometrischer Profile.
+              Bilder, auf denen die Inhaberfamilie zu sehen ist, sind ebenfalls KI-generiert
+              (Deepfakes von uns selbst) und mit unserer ausdrücklichen Einwilligung entstanden
+              (Art. 6 Abs. 1 lit. a DSGVO). Bei allen übrigen Personenbildern wurde in den
+              Prompts ausdrücklich vorgegeben, dass ausschließlich fiktive, nicht existierende
+              Personen dargestellt werden. Biometrische Profile werden in keinem Fall erstellt.
             </P>
+
 
             <H3>16.3 Kennzeichnung und Aussagekraft</H3>
             <P>
