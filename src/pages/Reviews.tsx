@@ -101,6 +101,16 @@ const Reviews = () => {
           <p className="text-center text-muted-foreground text-sm italic mt-10 max-w-xl mx-auto">
             Jede Bewertung hilft uns weiter. Aktuell freuen wir uns über 5,0 Sterne auf Google und TripAdvisor, und über jede weitere ehrliche Rückmeldung.
           </p>
+
+          <p className="text-center text-muted-foreground text-xs mt-6 max-w-2xl mx-auto leading-relaxed">
+            Hinweis zu Bewertungen (§ 5b Abs. 3 UWG): Die angezeigten Durchschnittsnoten und
+            Anzahlen geben den Stand der öffentlichen Bewertungen auf Google und TripAdvisor
+            wieder. Die Bewertungen werden dort von den Plattformen verwaltet; eine eigene
+            Echtheitsprüfung durch uns findet nicht statt, und wir können nicht sicherstellen,
+            dass jede Bewertung von einem Gast stammt, der tatsächlich bei uns war. Wir
+            bezahlen keine Bewertungen, gewähren keine Vergünstigungen dafür und löschen oder
+            unterdrücken keine negativen Bewertungen.
+          </p>
         </div>
       </section>
     </Layout>

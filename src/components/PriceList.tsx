@@ -285,6 +285,11 @@ const PriceList = () => {
           Alle Angaben ohne Gewähr. Bitte sprich uns bei Allergien oder Unverträglichkeiten direkt an,
           wir beraten dich gerne persönlich.
         </p>
+        <p className="text-xs text-muted-foreground text-center mt-3">
+          Alle Preise sind Endpreise in Euro (Kleinunternehmer gemäß § 19 UStG, daher kein
+          Umsatzsteuerausweis). Preisänderungen und Irrtümer vorbehalten; verbindlich sind die
+          Preise der Aushänge und Karten vor Ort.
+        </p>
       </div>
 
       {/* Footer note */}

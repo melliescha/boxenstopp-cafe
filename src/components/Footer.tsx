@@ -109,11 +109,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/agb" className="hover:text-warm-gold transition-colors">
-                  AGB
-                </Link>
-              </li>
-              <li>
                 <Link to="/ki-transparenz" className="hover:text-warm-gold transition-colors inline-flex items-center gap-1.5">
                   Transparenz
                   <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded" style={{ backgroundColor: "#9E7C4E33", color: "#e8d4b0" }}>KI</span>
