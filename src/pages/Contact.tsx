@@ -18,6 +18,7 @@ import VacationNotice from "@/components/VacationNotice";
 import FitesHint from "@/components/FitesHint";
 import Wegweiser from "@/components/Wegweiser";
 import { isShowerFeatureVisible, shower } from "@/lib/features";
+import { hasConsent, onConsentChange, saveConsent } from "@/lib/consent";
 import { contactPageSchema } from "@/lib/schema";
 import {
   Accordion,
@@ -59,6 +60,12 @@ const nearby = [
 
 const Contact = () => {
   const [mapConsent, setMapConsent] = useState(false);
+
+  // Karte nur laden, wenn die Einwilligung für externe Inhalte vorliegt.
+  useEffect(() => {
+    setMapConsent(hasConsent("externalMedia"));
+    return onConsentChange((record) => setMapConsent(record.externalMedia));
+  }, []);
 
 
   useEffect(() => {
@@ -156,7 +163,11 @@ const Contact = () => {
                     </p>
                     <button
                       type="button"
-                      onClick={() => setMapConsent(true)}
+                      onClick={() => {
+                        // Einwilligung dokumentieren (Zeitstempel + Version) und Karte laden.
+                        saveConsent({ externalMedia: true, analytics: hasConsent("analytics") }, "custom");
+                        setMapConsent(true);
+                      }}
                       className="px-5 py-2.5 rounded-lg font-medium min-h-[44px]"
                       style={{ backgroundColor: NAVY, color: CREAM }}
                     >
