@@ -402,7 +402,82 @@ const Datenschutz = () => {
           <Divider />
 
           <Section>
-            <H2>9. Google Maps (2-Klick-Lösung)</H2>
+            <H2><span id="videoueberwachung">9. Videoüberwachung vor Ort</span></H2>
+            <P>
+              Der Parkplatz und der Eingangsbereich unseres Gebäudes (Südhang 1, 88145 Hergatz)
+              werden videoüberwacht. Gastraum, Sanitärbereich und Duschen werden{" "}
+              <strong>nicht</strong> überwacht. Auf die Überwachung weisen wir zusätzlich mit
+              Hinweisschildern am Eingang und auf dem Parkplatz hin.
+            </P>
+            <P>
+              Zweck: Schutz vor Vandalismus, Sachbeschädigung, Diebstahl und Einbruch sowie
+              Beweissicherung im Schadensfall. Verarbeitet werden Bildaufnahmen von Personen und
+              Fahrzeugen, die sich im erfassten Bereich aufhalten; eine Tonaufzeichnung findet
+              nicht statt, ebenso keine biometrische Gesichtserkennung und kein automatisiertes
+              Auswerten oder Profiling.
+            </P>
+            <P>
+              Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am Schutz
+              unseres Eigentums und der Sicherheit von Gästen und Mitarbeitenden). Eine
+              Interessenabwägung haben wir vorgenommen; die Kameras erfassen nur das eigene
+              Grundstück und den unmittelbaren Eingangsbereich, nicht den öffentlichen
+              Verkehrsraum oder Nachbargrundstücke.
+            </P>
+            <P>
+              Speicherdauer: Die Aufnahmen werden automatisch spätestens nach 72 Stunden
+              gelöscht. Länger gespeichert wird nur, wenn ein konkreter Vorfall dokumentiert und
+              zur Rechtsverfolgung benötigt wird; die Aufnahmen werden dann ausschließlich an
+              Polizei, Versicherung oder Behörden weitergegeben.
+            </P>
+            <P>
+              Empfänger: Zugriff haben nur die Inhaber. Eine Weitergabe an Dritte erfolgt nur in
+              den vorgenannten Fällen. Du hast das Recht auf Auskunft, Löschung und Widerspruch
+              (Art. 15, 17, 21 DSGVO) – Kontakt siehe Impressum.
+            </P>
+          </Section>
+
+          <Divider />
+
+          <Section>
+            <H2><span id="kartenzahlung">10. Kartenzahlung vor Ort (SumUp)</span></H2>
+            <P>
+              Für Karten- und kontaktlose Zahlungen im Bistro nutzen wir ein Zahlungsterminal von
+              SumUp. Anbieter ist die SumUp Payments Limited bzw. SumUp Limited, 32–34 Great
+              Marlborough Street, London W1F 7JB, Vereinigtes Königreich, mit europäischer
+              Niederlassung SumUp EU Payments UAB (Litauen).
+            </P>
+            <P>
+              Bei einer Kartenzahlung verarbeitet SumUp als eigenverantwortliches
+              Zahlungsdienstleistungsunternehmen die Zahlungsdaten (Kartennummer in maskierter
+              Form, Betrag, Zeitpunkt, Transaktions- und Terminalkennung, Autorisierungsergebnis).
+              Wir selbst erhalten <strong>keine</strong> vollständigen Kartendaten – uns werden nur
+              der Betrag, das Datum, die Kartenart und die letzten Stellen der Kartennummer auf
+              dem Transaktionsbeleg angezeigt.
+            </P>
+            <P>
+              Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Abwicklung des Kaufvertrags) sowie Art.
+              6 Abs. 1 lit. c DSGVO (gesetzliche Aufbewahrungs- und Aufzeichnungspflichten,
+              insbesondere § 147 AO, § 257 HGB, GoBD). Belege und Kassendaten bewahren wir
+              entsprechend 10 Jahre auf.
+            </P>
+            <P>
+              Drittlandtransfer: Soweit SumUp Daten außerhalb des EWR verarbeitet, erfolgt dies auf
+              Grundlage von EU-Standardvertragsklauseln bzw. des Angemessenheitsbeschlusses für
+              das Vereinigte Königreich (Art. 45, 46 DSGVO).
+            </P>
+            <P>
+              Weitere Informationen: <ExtLink href="https://www.sumup.com/de-de/datenschutz/">https://www.sumup.com/de-de/datenschutz/</ExtLink>
+            </P>
+            <P>
+              Wer keine Daten an einen Zahlungsdienstleister übermitteln möchte, kann bei uns
+              jederzeit bar bezahlen.
+            </P>
+          </Section>
+
+          <Divider />
+
+          <Section>
+            <H2>11. Google Maps (2-Klick-Lösung)</H2>
             <P>
               Auf unserer Website (insbesondere auf der Seite „Anfahrt") bieten wir die Anzeige
               einer Karte über den Dienst Google Maps der Google Ireland Limited, Gordon House,
