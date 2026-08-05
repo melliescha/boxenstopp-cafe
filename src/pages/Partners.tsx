@@ -162,10 +162,10 @@ const Partners = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Hinter jeder Tasse Kaffee bei uns steckt Cup&Cino: hochwertige Kaffeebohnen, perfekt abgestimmt auf ein Kaffeesystem der neuesten Generation. Modernste Technik, präzise Einstellungen und ausgewählte Bohnen, so entsteht bei uns jeder Espresso, jeder Cappuccino und jeder Latte Macchiato.
+                  Hinter jeder Tasse Kaffee bei uns steckt Cup&Cino: hochwertige Kaffeebohnen, perfekt abgestimmt auf ein Kaffeesystem der neuesten Generation. Modernste Technik, präzise Einstellungen und ausgewählte Bohnen – so entsteht bei uns jeder Espresso, jeder Cappuccino und jeder Latte Macchiato.
                 </p>
                 <p>
-                  Das Ergebnis schmeckst du mit dem ersten Schluck: vollmundig, aromatisch und auf Barista-Niveau. Bei uns bekommst du keinen Kaffee aus der Kanne, sondern Kaffeegenuss, wie du ihn aus den besten Cafés kennst, mitten im Allgäu.
+                  Das Ergebnis schmeckst du mit dem ersten Schluck: vollmundig, aromatisch und auf Barista-Niveau. Bei uns bekommst du keinen Kaffee aus der Kanne, sondern Kaffeegenuss, wie du ihn aus den besten Cafés kennst – mitten im Allgäu.
                 </p>
               </div>
             </div>
