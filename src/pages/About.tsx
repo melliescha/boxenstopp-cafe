@@ -98,54 +98,6 @@ const About = () => {
             "text": "Auf unserer Online-Speisekarte findet ihr alle Zusätze gelistet, und ihr werdet feststellen: auf einen unserer Flammkuchen kommt nur das, was rein soll. Nährwerte und Allergene sind dort transparent aufgeführt.",
           },
         },
-        {
-          "@type": "Question",
-          "name": "Welche Bilder auf der Website sind KI-generiert?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Echte Fotos sind Aufnahmen von unserem Bistro, den Räumen, der Terrasse und den Speisen. Stimmungsbilder, die teilweise mit KI erstellt oder nachbearbeitet wurden, erkennst du an dem kleinen Sternchen. In der Bildergalerie steht ein Sammelhinweis als Fußnote unter den Bildern.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "Sind auf den KI-Bildern echte Menschen zu sehen?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Nein. Unsere Bildaufträge haben wir so formuliert, dass keine realen, identifizierbaren Personen abgebildet werden. Es handelt sich ausschließlich um fiktive Personen oder Szenen ohne erkennbare Gesichter.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "Welche KI-Tools wurden für die Bilder verwendet?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Die Bildaufträge wurden mit Anthropic Claude formuliert und über Higgsfield AI umgesetzt. Unser Logo ist ein KI-Entwurf, erstellt mit ChatGPT.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "Welche KI-Tools wurden für die Texte verwendet?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Für Entwürfe, Formulierungen, Rechtschreibung und Struktur haben wir Anthropic Claude, Lovable, Google Gemini und ChatGPT als Schreibhilfe genutzt. Die Inhalte selbst stammen von uns. Kein Text wird ungeprüft veröffentlicht.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "Werden meine Daten an KI-Systeme weitergegeben?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Nein. Auf dieser Website läuft kein KI-Chatbot und keine automatisierte Entscheidungsfindung. Personenbezogene Daten unserer Gäste geben wir nicht in KI-Systeme ein.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "Wer ist verantwortlich, wenn ein KI-generiertes Bild oder ein Text fehlerhaft ist?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Die redaktionelle Verantwortung liegt ausschließlich bei uns als Menschen, namentlich bei Eugen Schall, verantwortlich gemäß § 18 Abs. 2 MStV. Jeder Text und jedes Bild wird vor der Veröffentlichung von uns gelesen, geprüft und freigegeben.",
-          },
-        },
       ],
     };
     const script = document.createElement("script");
