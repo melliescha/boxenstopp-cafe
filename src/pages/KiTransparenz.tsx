@@ -120,20 +120,18 @@ const KiTransparenz = () => {
       </section>
 
       {/* Kennzeichnung */}
-      <section className="py-10 bg-muted/30">
+      <section id="kennzeichnung" className="py-10 bg-muted/30 scroll-mt-24">
         <div className="container mx-auto px-6 max-w-3xl">
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
             1. Kennzeichnung KI-generierter Inhalte
           </h2>
           <div className="rounded-xl border border-border bg-card p-6 space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              KI-generierte oder KI-bearbeitete Bilder sind auf dieser Website mit einem kleinen{" "}
-              <span className="inline-flex items-center justify-center w-5 h-5 rounded-full text-white font-bold align-middle" style={{ backgroundColor: "#9E7C4E", fontSize: "9px" }}>AI</span>{" "}
-              -Rundlogo gekennzeichnet. Ein Klick darauf führt direkt zu diesem Transparenzbericht.
-            </p>
-            <p>
-              In der Bildergalerie gibt es zusätzlich einen ausklappbaren Bildnachweis, in dem
-              für jedes einzelne Bild die Quelle (Foto oder KI) nachvollziehbar aufgeführt ist.
+              KI-generierte Bilder sind auf dieser Website direkt im Bild mit dem Label{" "}
+              <span className="inline-flex items-center rounded-full text-white font-semibold align-middle" style={{ backgroundColor: "rgba(20,20,20,0.7)", fontSize: "10px", padding: "2px 8px" }}>KI generiert</span>{" "}
+              gekennzeichnet. Bilder, die lediglich mit KI bearbeitet wurden, tragen ein kleines{" "}
+              <span className="inline-flex items-center justify-center w-5 h-5 rounded-full text-white font-semibold align-middle" style={{ backgroundColor: "rgba(20,20,20,0.7)", fontSize: "9px" }}>KI</span>{" "}
+              -Rundlabel. Ein Klick darauf führt direkt zu diesem Abschnitt des Transparenzberichts.
             </p>
             <p>
               Auch unser Logo sowie weitere Grafiken und Icons dieser Website wurden mit
