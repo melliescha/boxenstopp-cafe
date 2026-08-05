@@ -100,7 +100,7 @@ const jsonLd = [
         name: "Welche Kurse gibt es?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "HYROX, Fitness-Boxen, Tabata, HIIT und individuelles Krafttraining. Immer in kleinen Gruppen mit persönlicher Betreuung.",
+          text: "Vier Kurse: HYROX, FITES Boxen, HIIT & Tabata und Ganzkörpertraining. Dazu Personal Training nach Absprache.",
         },
       },
       {
@@ -108,8 +108,9 @@ const jsonLd = [
         name: "Wo befindet sich FITES Allgäu?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Bahnhofstraße 4 in 88145 Hergatz im Westallgäu, direkt im selben Gebäude wie das Bistro Boxenstopp.",
+          text: "Südhang 1 in 88145 Hergatz im Westallgäu, im selben Gebäude wie das Bistro Boxenstopp.",
         },
+
       },
     ],
   },
