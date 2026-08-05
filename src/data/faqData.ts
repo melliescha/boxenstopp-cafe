@@ -415,19 +415,9 @@ export const faqBlocks: FaqBlock[] = [
           "Die meisten KI-Bilder zeigen fiktive Personen oder Szenen ohne erkennbare Gesichter — Gäste, Mitarbeitende oder Dritte werden nie abgebildet. Zusätzlich haben wir KI genutzt, um Bilder von uns selbst (Eugen & Helena) zu erstellen. Diese bilden uns als reale Personen ab und sind daher technisch ein Deepfake im Sinne von Art. 3 Nr. 60 EU AI Act. Da es unsere eigenen Bilder sind, liegt die Einwilligung der abgebildeten Personen vor, und weisen hier transparent gemäß Art. 50 EU AI Act darauf hin.",
       },
       {
-        question: "Welche KI-Werkzeuge nutzt ihr für Bilder?",
-        answer:
-          "Die Bildaufträge wurden mit Anthropic Claude formuliert und über Higgsfield AI umgesetzt. Unser Logo ist ein KI-Entwurf, erstellt mit ChatGPT (OpenAI).",
-      },
-      {
-        question: "Und für die Texte?",
-        answer:
-          "Für Entwürfe, Formulierungen, Rechtschreibung und Struktur nutzen wir Anthropic Claude, Lovable, Google Gemini und ChatGPT als Schreibhilfe. Die Inhalte selbst stammen von uns: unsere Geschichte, unsere Preise, unsere Produkte, unsere Partner. Kein Text geht ungeprüft online.",
-      },
-      {
         question: "Warum nutzt ihr überhaupt KI?",
         answer:
-          "Weil wir ein kleines Familienunternehmen sind und kein Werbestudio. KI hilft uns, eine einladende Website mit verständlichen Texten zu bauen, ohne ein teures Agenturteam zu bezahlen. Die Zeit, die wir dadurch sparen, stecken wir lieber in den Kaffee und in unsere Gäste.",
+          "Weil wir ein kleines Familienunternehmen sind und kein Werbestudio. KI hilft uns, eine einladende Website mit verständlichen Texten zu bauen. Die Zeit, die wir dadurch sparen, stecken wir lieber in den Kaffee und in unsere Gäste.",
       },
       {
         question: "Werden meine Daten an KI-Systeme weitergegeben?",
@@ -437,12 +427,12 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Wer ist verantwortlich, wenn ein KI-Bild oder ein Text fehlerhaft ist?",
         answer:
-          "Die redaktionelle Verantwortung liegt ausschließlich bei uns Menschen, namentlich bei Eugen Schall (verantwortlich gemäß § 18 Abs. 2 MStV). Jedes Bild und jeder Text wird vor der Veröffentlichung in zwei Schritten geprüft: zunächst durch OPTIVANTA Agency (konzeptionell, technisch, rechtlich) und danach persönlich durch Eugen Schall als inhaltliche Endfreigabe. Wenn dir trotzdem ein Fehler auffällt: sag uns Bescheid, wir korrigieren ihn schnellstmöglich.",
+          "Die redaktionelle Verantwortung liegt ausschließlich bei uns Menschen, namentlich bei Eugen Schall (verantwortlich gemäß § 18 Abs. 2 MStV). Jedes Bild und jeder Text wird vor der Veröffentlichung von uns gelesen, geprüft und freigegeben. Wenn dir trotzdem ein Fehler auffällt: sag uns Bescheid, wir korrigieren ihn schnellstmöglich.",
       },
       {
         question: "Wo finde ich die rechtlichen Details dazu?",
         answer:
-          "Kurz zusammengefasst im KI-Hinweis auf dieser Website, ausführlich in Abschnitt 16 der Datenschutzerklärung (Einsatz von KI-generierten Inhalten, EU AI Act) sowie im Impressum unter Bildnachweise und Urheberrecht.",
+          "Kurz zusammengefasst auf unserer KI-Transparenzseite, ausführlich in Abschnitt 16 der Datenschutzerklärung (Einsatz von KI-generierten Inhalten, EU AI Act) sowie im Impressum unter Bildnachweise und Urheberrecht.",
       },
     ],
   },
