@@ -146,7 +146,7 @@ const Gallery = () => {
                 <button
                   key={img.alt}
                   onClick={() => setLightbox(i)}
-                  className="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group cursor-pointer aspect-[4/3]"
+                  className="relative rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group cursor-pointer aspect-[4/3]"
                 >
                   <img
                     src={img.src}
@@ -154,6 +154,7 @@ const Gallery = () => {
                     loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
+                  {img.source === "ki" && <AiBadge variant="overlay" />}
                 </button>
               ))}
             </div>
