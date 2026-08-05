@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
-import bestsellerMatcha from "@/assets/vegan-matcha.png";
-import bestsellerSpezial from "@/assets/boxenstopp-spezial.png";
-import bestsellerFlammkuchen from "@/assets/flammkuchen-lachs.png";
-import bestsellerHolzfaellerbrot from "@/assets/bestseller-holzfaellerbrot.jpg";
-import bestsellerShake from "@/assets/bestseller-shake.jpg";
+import flammkuchenLachs from "@/assets/flammkuchen-lachs.png";
+import raclettebrot from "@/assets/raclettebrot-rustikal.jpg";
+import thunfischBaguette from "@/assets/thunfisch-baguette.png";
+import pizzettaMargherita from "@/assets/pizzetta-margherita.png";
+import pizzasnackSalami from "@/assets/pizzasnack-salami.png";
 
 interface Bestseller {
   image: string;
@@ -18,49 +18,49 @@ interface Bestseller {
 
 const bestsellers: Bestseller[] = [
   {
-    image: bestsellerMatcha,
-    alt: "Vegan Matcha Latte mit Latte Art",
-    name: "Vegan Matcha Latte",
-    description: "Unser cremiger Matcha, mit pflanzlicher Milch, 100% vegan",
-    price: "3,50 € – 3,80 €",
-    badge: "🌱 Vegan",
-    badgeColor: "bg-green-600/85",
-  },
-  {
-    image: bestsellerSpezial,
-    alt: "Boxenstopp Spezial, Kollagen Latte Macchiato",
-    name: "Boxenstopp Spezial",
-    description: "Kollagen Latte Macchiato mit einer Prise Salz und Rohkakao, unser Signature Drink",
-    price: "4,90 €",
-    badge: "⭐ Hausspezialität",
-    badgeColor: "bg-[hsl(43,55%,48%)]/85",
-  },
-  {
-    image: bestsellerFlammkuchen,
-    alt: "Flammkuchen Lachs und Lauch",
+    image: flammkuchenLachs,
+    alt: "Flammkuchen mit Lachs und Lauch",
     name: "Flammkuchen Lachs & Lauch",
-    description: "Unser beliebtester Flammkuchen, mit Flammkuchencreme, Lachs und Lauch",
+    description: "Flammkuchencreme, Lachs und Lauch — unser beliebtester Flammkuchen",
     price: "7,30 €",
     badge: "🔥 Beliebtestes Gericht",
     badgeColor: "bg-orange-600/85",
   },
   {
-    image: bestsellerHolzfaellerbrot,
-    alt: "Hüttenbrot rustikal auf Holzbrett",
-    name: "Hüttenbrot",
-    description: "Handgemachtes Schwarzbrot mit Knoblauchbutter, Käse, Speck, Zwiebeln und Schnittlauch",
-    price: "7,40 €",
-    badge: "💪 Sattmacher",
-    badgeColor: "bg-amber-800/85",
+    image: raclettebrot,
+    alt: "Hüttenbrot Raclette mit Raclettekäse und Lauch",
+    name: "Hüttenbrot Raclette",
+    description: "Schwarzbrot mit Knoblauchbutter, Raclettekäse und Lauch",
+    price: "7,70 €",
+    badge: "🧀 Käseliebhaber",
+    badgeColor: "bg-amber-700/85",
   },
   {
-    image: bestsellerShake,
-    alt: "Bunter Herbalife Nährshake mit Früchten",
-    name: "Nährshake",
-    description: "Vitaminreich, lecker und in vielen Geschmacksrichtungen. Ideal nach dem Sport.",
-    price: "2,50 € – 4,50 €",
-    badge: "💚 Nach dem Sport",
+    image: thunfischBaguette,
+    alt: "Gourmet Baguette mit Thunfisch, Zwiebeln, Gouda und Béchamelsauce",
+    name: "Gourmet Baguette Thunfisch",
+    description: "Mit Thunfisch, Zwiebeln, Gouda und Béchamelsauce",
+    price: "6,20 €",
+    badge: "🐟 Beliebt",
+    badgeColor: "bg-sky-700/85",
+  },
+  {
+    image: pizzettaMargherita,
+    alt: "Pizzetta Margherita mit Tomatensauce und Käse",
+    name: "Pizzetta Margherita",
+    description: "Tomatensauce und Käse — der kleine Klassiker für zwischendurch",
+    price: "3,60 €",
+    badge: "🥖 Für den kleinen Hunger",
     badgeColor: "bg-emerald-600/85",
+  },
+  {
+    image: pizzasnackSalami,
+    alt: "Pizzasnack Salami mit Pizzasauce, Käse und Salami",
+    name: "Pizzasnack Salami",
+    description: "Pizzasauce, Käse und Salami — schnell, lecker, handlich",
+    price: "3,80 €",
+    badge: "🍕 Snack-Favorit",
+    badgeColor: "bg-red-700/85",
   },
 ];
 
