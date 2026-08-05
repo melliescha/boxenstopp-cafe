@@ -4,13 +4,9 @@ import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import { Droplets, Building2, GraduationCap, Leaf, Zap, ShieldCheck, Globe, Award, FlaskConical, Dumbbell, Megaphone, BarChart3, PenTool, MonitorSmartphone } from "lucide-react";
 import flammkuchenPartner from "@/assets/flammkuchen-partner.png";
-import herbalifelogo from "@/assets/herbalife-logo.png";
 import herbalifePartner from "@/assets/herbalife-partner.jpg";
-import perplexLogo from "@/assets/perplex-logo.jpg";
-import cupcinoLogo from "@/assets/cupcino-logo.jpg";
 import cupcinoPartnerImg from "@/assets/cupcino-partner.jpg";
 import optivantaPartner from "@/assets/optivanta-partner.jpg";
-import optivantaLogo from "@/assets/optivanta-logo.png";
 import fitesStudioAsset from "@/assets/fites-studio.jpg.asset.json";
 import fitesBoxingAsset from "@/assets/fites-boxing.jpg.asset.json";
 import fitesHyroxAsset from "@/assets/fites-hyrox.jpg.asset.json";
@@ -153,7 +149,7 @@ const Partners = () => {
             </div>
             {/* Text right */}
             <div>
-              <img src={cupcinoLogo} alt="Cup&Cino Logo" className="h-12 mb-6 rounded" loading="lazy" />
+              <p className="font-serif text-2xl font-bold text-foreground mb-6">Cup&amp;Cino</p>
               <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
                 Kaffeesystem der Spitzenklasse
               </span>
@@ -232,7 +228,7 @@ const Partners = () => {
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* Text left */}
             <div className="order-2 md:order-1">
-              <a href="https://optivantaagency.com/" target="_blank" rel="noopener noreferrer"><img src={optivantaLogo} alt="OPTIVANTA Agency Logo" className="h-14 mb-6" loading="lazy" /></a>
+              <a href="https://optivantaagency.com/" target="_blank" rel="noopener noreferrer" className="font-serif text-2xl font-bold text-foreground mb-6 inline-block hover:text-bronze transition-colors">OPTIVANTA Agency</a>
               <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
                 Digitalagentur · Web & Marketing
               </span>
@@ -321,7 +317,7 @@ const Partners = () => {
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* Text left */}
             <div className="order-2 md:order-1">
-              <img src={herbalifelogo} alt="Herbalife Nutrition Logo" className="h-12 mb-6" loading="lazy" />
+              <p className="font-serif text-2xl font-bold text-foreground mb-6">Herbalife Nutrition</p>
               <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
                 Seit über 20 Jahren in der Familie
               </span>
@@ -396,7 +392,7 @@ const Partners = () => {
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* Text left */}
             <div className="order-2 md:order-1">
-              <img src={perplexLogo} alt="Perplex Logo" className="h-12 mb-6" loading="lazy" />
+              <p className="font-serif text-2xl font-bold text-foreground mb-6">Perplex</p>
               <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
                 Handgemacht in Deutschland · Seit über 33 Jahren
               </span>
