@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/prerender.mjs",
-    "build:dev": "vite build --mode development && node scripts/prerender.mjs",
+    "check:ai": "node scripts/check-ai-badges.mjs",
+    "build": "node scripts/check-ai-badges.mjs && vite build && node scripts/prerender.mjs",
+    "build:dev": "node scripts/check-ai-badges.mjs && vite build --mode development && node scripts/prerender.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
