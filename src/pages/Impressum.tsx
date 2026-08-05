@@ -47,13 +47,21 @@ const Impressum = () => {
           </h2>
 
           <Block title="Anbieter:">
-            Eugen Schall<br />
-            FITES, Bistro Boxenstopp<br />
-            (Bistro Boxenstopp ist ein Geschäftszweig des Einzelunternehmens FITES)<br />
+            <strong>FITES, Inhaber Eugen Schall</strong><br />
             Südhang 1<br />
             88145 Hergatz<br />
             Deutschland
           </Block>
+
+          <Block title="Zugehörigkeit des Bistro Boxenstopp:">
+            <strong>Das Bistro Boxenstopp gehört zu FITES.</strong> Es ist keine eigene
+            Gesellschaft, sondern ein unselbstständiger Geschäftsbereich (Betriebsteil) des
+            Einzelunternehmens FITES, Inhaber Eugen Schall. Verantwortlich für den Betrieb des
+            Bistros und für diese Website ist damit ausschließlich FITES, Inhaber Eugen Schall,
+            Südhang 1, 88145 Hergatz. „Bistro Boxenstopp" ist die Geschäftsbezeichnung dieses
+            Betriebsteils.
+          </Block>
+
 
           <Block title="Kontakt:">
             Telefon:{" "}
