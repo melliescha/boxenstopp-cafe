@@ -286,8 +286,8 @@ const PriceList = () => {
             Vegan, glutenfrei und Kreuzkontamination
           </p>
           <p className="text-xs text-muted-foreground leading-relaxed">
-            Wir bieten vegane Milchalternativen wie Hafermilch an; glutenfrei sind aktuell nur
-            unsere Salate. Da wir alles in einer offenen Küche mit gemeinsamen Geräten,
+            Wir bieten vegane Milchalternativen wie Hafermilch an; ausdrücklich glutenfreie
+            Speisen haben wir aktuell nicht im Angebot. Da wir alles in einer offenen Küche mit gemeinsamen Geräten,
             Arbeitsflächen und Milchsystemen zubereiten, können wir eine vollständige Frei-von-
             Garantie jedoch <strong>nicht</strong> geben. Spuren durch Kreuzkontamination
             (z. B. Gluten, Milch, Nüsse, Soja) sind nicht auszuschließen; eine Haftung dafür
