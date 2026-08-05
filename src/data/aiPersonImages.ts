@@ -20,9 +20,9 @@ export interface AiPersonImage {
 
 export const AI_PERSON_IMAGES: AiPersonImage[] = [
   { asset: "hero-bistro.jpg", note: "Titelbild Startseite, KI-Motiv mit Personen im Innenraum" },
-  { asset: "about-hero-family.jpg", note: "Hero „Über uns", KI-Motiv mit Familienszene" },
-  { asset: "about-cafe-interior.jpg", note: "Abschnitt „Der Traum", KI-Motiv mit Personen" },
-  { asset: "about-terrace-cyclists.jpg", note: "Abschnitt „Warum Boxenstopp", KI-Motiv mit Radfahrern" },
+  { asset: "about-hero-family.jpg", note: "Hero Ueber uns, KI-Motiv mit Familienszene" },
+  { asset: "about-cafe-interior.jpg", note: "Abschnitt Der Traum, KI-Motiv mit Personen" },
+  { asset: "about-terrace-cyclists.jpg", note: "Abschnitt Warum Boxenstopp, KI-Motiv mit Radfahrern" },
 ];
 
 /**
