@@ -136,13 +136,16 @@ const Impressum = () => {
             das uns mit deren Einverständnis zur Nutzung überlassen wurde (Marken und Logos
             bleiben Eigentum der jeweiligen Rechteinhaber).<br />
             Unser Logo wurde mit ChatGPT (OpenAI) KI-generiert. KI-Bilder wurden über
-            Higgsfield AI erstellt, die Prompts dazu mit Anthropic Claude, jeweils mit der
-            ausdrücklichen Vorgabe, keine realen Menschen abzubilden.<br />
+            Higgsfield AI erstellt, die Prompts dazu mit Anthropic Claude. Sie zeigen
+            überwiegend fiktive Personen oder Szenen ohne erkennbare Gesichter. Gäste,
+            Mitarbeitende oder Dritte werden darauf nicht abgebildet.<br />
             Ein Teil der gezeigten Bilder wurde mit Hilfe künstlicher Intelligenz erstellt oder
             bearbeitet. Diese Bilder sind mit einem Sternchen (*) gekennzeichnet bzw. am Ende der
             Bildergalerie und im Footer ausgewiesen (Transparenzhinweis gemäß Art. 50 der
-            Verordnung (EU) 2024/1689, „EU AI Act"). Sie zeigen keine realen, identifizierbaren
-            Personen. Details dazu findest du in unserer{" "}
+            Verordnung (EU) 2024/1689, „EU AI Act"). Ausnahme: Einige KI-Bilder zeigen uns selbst
+            (Eugen & Helena Schall) als reale Personen — im Sinne von Art. 3 Nr. 60 EU AI Act
+            ein Deepfake, erstellt und verwendet mit eigener Einwilligung. Details dazu findest
+            du in unserer{" "}
             <a
               href="/datenschutz#ki-hinweis"
               className={linkClass}

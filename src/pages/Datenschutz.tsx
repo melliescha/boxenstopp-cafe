@@ -623,8 +623,10 @@ const Datenschutz = () => {
               <li>
                 <strong>Higgsfield AI</strong> (Higgsfield, Inc., USA): KI-Bildgenerator für
                 stimmungsvolle Foto-Eindrücke, Produkt- und Ambiente-Bilder. Die Bildaufträge
-                (Prompts) wurden dabei mit Anthropic Claude erstellt und enthielten stets die
-                ausdrückliche Vorgabe, keine realen Menschen abzubilden.
+                (Prompts) wurden mit Anthropic Claude erstellt. Sie zeigen überwiegend fiktive
+                Personen oder Szenen ohne erkennbare Gesichter; Gäste, Mitarbeitende oder Dritte
+                werden nicht abgebildet. Zusätzlich haben wir Higgsfield AI genutzt, um Bilder von
+                uns selbst (Eugen & Helena Schall) zu erstellen (siehe Abschnitt 16.2).
               </li>
             </ul>
             <P>
@@ -634,23 +636,29 @@ const Datenschutz = () => {
               weitergegeben.
             </P>
 
-            <H3>16.2 Keine Abbildung realer Personen</H3>
+            <H3>16.2 Abbildung realer Personen und Deepfake-Hinweis</H3>
             <P>
-              Bei der Erstellung KI-generierter Bilder, insbesondere über Higgsfield AI, haben
-              wir bewusst darauf geachtet, <strong>keine realen, identifizierbaren Personen</strong>
-              {" "}darzustellen. Auf allen KI-generierten Motiven sind ausschließlich fiktive,
-              nicht existierende Personen, symbolische Silhouetten oder Situationen ohne
-              erkennbare Gesichter zu sehen. Es werden weder Gesichter realer Gäste, Mitarbeitender
-              oder Dritter nachgebildet noch biometrische Merkmale bestimmter Personen
-              verarbeitet. Ein <em>Deepfake</em> im Sinne von Art. 3 Nr. 60 EU AI Act liegt daher
-              nicht vor.
+              Die überwiegende Mehrzahl unserer KI-generierten Bilder zeigt fiktive, nicht
+              existierende Personen, symbolische Silhouetten oder Situationen ohne erkennbare
+              Gesichter sowie Ambiente- und Produktmotive. Gäste, Mitarbeitende oder Dritte
+              werden auf KI-Bildern weder abgebildet noch nachgebildet; ihre Gesichter oder
+              biometrischen Merkmale werden nicht verarbeitet.
             </P>
             <P>
-              Fotos, auf denen die Inhaberfamilie zu sehen ist (z.&nbsp;B. auf der Seite „Über
-              uns"), sind reale Aufnahmen mit ausdrücklicher Einwilligung der abgebildeten
-              Personen (Art. 6 Abs. 1 lit. a DSGVO). Diese wurden nicht durch KI generiert;
-              gelegentliche technische Bildoptimierungen (z.&nbsp;B. Retusche, Farbkorrektur)
-              erfolgen ohne Erstellung biometrischer Profile.
+              <strong>Ausnahme – KI-Bilder von uns selbst:</strong> Wir haben KI (Higgsfield AI)
+              zusätzlich genutzt, um Bilder von uns selbst, Eugen und Helena Schall, zu erstellen.
+              Diese Bilder bilden uns als reale, erkennbare Personen ab und sind daher im Sinne
+              von Art. 3 Nr. 60 EU AI Act als <em>Deepfake</em> einzuordnen. Da es unsere eigenen
+              Abbildungen sind, liegt die Einwilligung der abgebildeten Personen (uns selbst)
+              vor. Wir kennzeichnen diese Bilder mit dem Sternchen (*) und weisen hier
+              transparent gemäß Art. 50 EU AI Act darauf hin.
+            </P>
+            <P>
+              Daneben gibt es echte Fotos, auf denen die Inhaberfamilie zu sehen ist (z.&nbsp;B.
+              auf der Seite „Über uns"). Dabei handelt es sich um reale Aufnahmen mit
+              ausdrücklicher Einwilligung der abgebildeten Personen (Art. 6 Abs. 1 lit. a DSGVO),
+              die nicht durch KI generiert wurden. Gelegentliche technische Bildoptimierungen
+              (z.&nbsp;B. Retusche, Farbkorrektur) erfolgen ohne Erstellung biometrischer Profile.
             </P>
 
             <H3>16.3 Kennzeichnung und Aussagekraft</H3>
