@@ -7,11 +7,39 @@ const bronze = "#9E7C4E";
 const warmBrown = "#6B4A2E";
 const cream = "#FEF4EC";
 
+const checklistVersion = {
+  version: "Version 1.2",
+  date: "05.08.2026",
+  nextReview:
+    "Nächste Prüfung: bei der nächsten größeren Website-Änderung, spätestens Februar 2027.",
+  pdf: "/ki-konformitaets-checkliste-boxenstopp.pdf",
+};
+
+const versionHistory = [
+  {
+    version: "1.2",
+    date: "05.08.2026",
+    change:
+      "Eigene Checklisten-Seite auf der Website, Änderungsprotokoll und sichtbare Versionsangabe ergänzt.",
+  },
+  {
+    version: "1.1",
+    date: "29.07.2026",
+    change: "Eingesetzte KI-Werkzeuge, Code-Verwaltung und Hosting konkretisiert.",
+  },
+  {
+    version: "1.0",
+    date: "15.07.2026",
+    change: "Erstfassung der KI-Konformitäts-Checkliste.",
+  },
+];
+
 type Item = {
   title: string;
   status: string;
   detail: string;
 };
+
 
 const sections: { heading: string; intro?: string; items: Item[] }[] = [
   {
