@@ -298,16 +298,47 @@ const Datenschutz = () => {
             </ul>
             <H3>6.2 Cookie-Banner und Einwilligung (TDDDG / DSGVO)</H3>
             <P>
-              Beim erstmaligen Aufruf unserer Website werden Sie über die eingesetzten Cookies
-              informiert und um Ihre Einwilligung in den Einsatz nicht technisch notwendiger
-              Cookies gebeten. Diese Einwilligung können Sie jederzeit über die Einstellungen im
-              Cookie-Banner („Cookie-Einstellungen ändern") widerrufen.
+              Beim erstmaligen Aufruf unserer Website werden Sie über die eingesetzten
+              Technologien informiert und um Ihre Einwilligung gebeten. Alle optionalen
+              Kategorien sind dabei standardmäßig deaktiviert (Opt-in); es wird nichts geladen,
+              bevor Sie zugestimmt haben. Die Ablehnung („Nur notwendige") ist genauso einfach
+              möglich wie die Zustimmung. Ihre Einwilligung können Sie jederzeit über
+              „Cookie-Einstellungen" im Footer ändern oder vollständig widerrufen.
+            </P>
+            <P>Kategorien:</P>
+            <ul style={{ color: warmBrown, fontSize: 16, lineHeight: 1.7, paddingLeft: 24, marginBottom: 14 }}>
+              <li>
+                <strong>Technisch notwendig</strong> (nicht abwählbar): Speicherung Ihrer
+                Datenschutz-Entscheidung im lokalen Speicher Ihres Browsers
+                (Schlüssel „boxenstopp-consent-v2")
+              </li>
+              <li>
+                <strong>Externe Inhalte</strong> (optional): Laden der Google-Maps-Karte auf der
+                Kontakt-Seite
+              </li>
+              <li>
+                <strong>Statistik / Reichweitenmessung</strong> (optional): derzeit ist kein
+                Analyse-Dienst eingebunden; ohne Ihre Einwilligung wird auch künftig keiner geladen
+              </li>
+            </ul>
+            <H3>6.3 Speicherung und Nachweis der Einwilligung (Art. 7 Abs. 1 DSGVO)</H3>
+            <P>
+              Zum Nachweis der Einwilligung speichern wir gemeinsam mit Ihrer Entscheidung den
+              Zeitpunkt (Zeitstempel), die Version des Einwilligungstextes, die Art der
+              Entscheidung (alle akzeptiert, nur notwendige, individuelle Auswahl oder Widerruf)
+              sowie die einzelnen Kategorie-Entscheidungen. Diese Angaben werden{" "}
+              <strong>ausschließlich lokal in Ihrem Browser</strong> gespeichert, nicht an uns
+              oder Dritte übertragen und enthalten keine personenbezogenen Kennungen (keine
+              IP-Adresse, keine Nutzer-ID). Die Speicherung bleibt bestehen, bis Sie sie löschen
+              (Browserdaten leeren) oder die Textversion der Einwilligung sich ändert – dann
+              fragen wir erneut.
             </P>
             <P>Rechtsgrundlage:</P>
             <ul style={{ color: warmBrown, fontSize: 16, lineHeight: 1.7, paddingLeft: 24, marginBottom: 14 }}>
-              <li>Für technisch notwendige Cookies: § 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. f DSGVO</li>
-              <li>Für optionale Cookies: § 25 Abs. 1 TDDDG, Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)</li>
+              <li>Für die technisch notwendige Speicherung: § 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. f DSGVO</li>
+              <li>Für optionale Kategorien: § 25 Abs. 1 TDDDG, Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)</li>
             </ul>
+
           </Section>
 
           <Divider />
