@@ -412,7 +412,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Sind auf den KI-Bildern echte Menschen zu sehen?",
         answer:
-          "Nein. Unsere Bildaufträge (Prompts) haben wir ausdrücklich so formuliert, dass keine realen, identifizierbaren Personen abgebildet werden. Zu sehen sind ausschließlich fiktive Personen oder Szenen ohne erkennbare Gesichter. Wo echte Menschen abgebildet sind, etwa Eugen selbst, liegt eine Einwilligung vor.",
+          "Die meisten KI-Bilder zeigen fiktive Personen oder Szenen ohne erkennbare Gesichter — Gäste, Mitarbeitende oder Dritte werden nie abgebildet. Zusätzlich haben wir KI genutzt, um Bilder von uns selbst (Eugen & Helena) zu erstellen. Diese bilden uns als reale Personen ab und sind daher technisch ein Deepfake im Sinne von Art. 3 Nr. 60 EU AI Act. Da es unsere eigenen Bilder sind, liegt die Einwilligung der abgebildeten Personen vor, und weisen hier transparent gemäß Art. 50 EU AI Act darauf hin.",
       },
       {
         question: "Welche KI-Werkzeuge nutzt ihr für Bilder?",

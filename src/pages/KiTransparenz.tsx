@@ -57,8 +57,8 @@ const guarantees = [
   },
   {
     icon: UserCheck,
-    title: "Keine realen, identifizierbaren Personen",
-    text: "Alle KI-Bild-Prompts enthielten ausdrücklich die Vorgabe, keine realen Menschen abzubilden. Gezeigt werden ausschließlich fiktive Personen oder Szenen ohne erkennbare Gesichter. Ein Deepfake im Sinne von Art. 3 Nr. 60 EU AI Act liegt nicht vor.",
+    title: "Keine Gäste oder Dritte auf KI-Bildern",
+    text: "KI-Bilder zeigen überwiegend fiktive Personen, Szenen ohne erkennbare Gesichter, Ambiente- und Produktbilder. Gäste, Mitarbeitende oder Dritte werden niemals auf KI-Bildern abgebildet oder nachgebildet. Ausnahme: KI-generierte Bilder von uns selbst (Eugen & Helena) — siehe Abschnitt 5.",
   },
   {
     icon: BadgeCheck,
@@ -79,7 +79,7 @@ const faqItems = [
   },
   {
     q: "Sind auf den KI-Bildern echte Menschen zu sehen?",
-    a: "Nein. Unsere Bildaufträge (Prompts) haben wir ausdrücklich so formuliert, dass keine realen, identifizierbaren Personen abgebildet werden. Zu sehen sind ausschließlich fiktive Personen oder Szenen ohne erkennbare Gesichter. Wo echte Menschen abgebildet sind, etwa Eugen selbst, liegt eine Einwilligung vor.",
+    a: "Die meisten KI-Bilder zeigen fiktive Personen oder Szenen ohne erkennbare Gesichter — Gäste, Mitarbeitende oder Dritte werden nie abgebildet. Zusätzlich haben wir KI genutzt, um Bilder von uns selbst (Eugen & Helena) zu erstellen. Diese bilden uns als reale Personen ab und sind daher technisch ein Deepfake im Sinne von Art. 3 Nr. 60 EU AI Act. Da es unsere eigenen Bilder sind, liegt die Einwilligung der abgebildeten Personen vor, und wir weisen hier transparent gemäß Art. 50 EU AI Act darauf hin.",
   },
   {
     q: "Welche KI-Werkzeuge nutzt ihr für Bilder?",
@@ -224,7 +224,7 @@ const KiTransparenz = () => {
                 <li>Kein KI-Chatbot für Gäste</li>
                 <li>Keine automatisierte Entscheidungsfindung (Art. 22 DSGVO)</li>
                 <li>Keine Eingabe von Gästedaten in KI-Systeme</li>
-                <li>Keine Abbildung realer, identifizierbarer Personen</li>
+                <li>Keine Abbildung von Gästen, Mitarbeitenden oder Drittpersonen</li>
                 <li>Keine Trainingsdaten aus unserem Gästekontakt</li>
               </ul>
             </div>
@@ -324,10 +324,21 @@ const KiTransparenz = () => {
             <div className="flex gap-3">
               <UserCheck className="w-6 h-6 flex-shrink-0 mt-0.5" style={{ color: "#9E7C4E" }} aria-hidden="true" />
               <p>
-                <strong className="text-foreground">Echte Personenabbildungen:</strong> Fotos
-                der Inhaberfamilie sind reale Aufnahmen mit ausdrücklicher Einwilligung der
-                abgebildeten Personen (Art. 6 Abs. 1 lit. a DSGVO). Diese wurden nicht durch KI
-                generiert; gelegentliche Bildoptimierungen erfolgen ohne biometrische Profile.
+                <strong className="text-foreground">KI-Bilder von uns selbst (Deepfake-Hinweis):</strong>{" "}
+                Einige KI-generierte Bilder zeigen uns selbst, Eugen und Helena Schall, als reale,
+                erkennbare Personen. Diese sind im Sinne von Art. 3 Nr. 60 EU AI Act als Deepfake
+                einzuordnen. Da es unsere eigenen Abbildungen sind, liegt die Einwilligung der
+                abgebildeten Personen (uns selbst) vor. Wir kennzeichnen diese Bilder mit dem
+                Sternchen (*) und weisen hier transparent gemäß Art. 50 EU AI Act darauf hin.
+              </p>
+            </div>
+            <div className="flex gap-3">
+              <UserCheck className="w-6 h-6 flex-shrink-0 mt-0.5" style={{ color: "#9E7C4E" }} aria-hidden="true" />
+              <p>
+                <strong className="text-foreground">Reale Fotos der Inhaberfamilie:</strong> Daneben
+                gibt es echte Aufnahmen von uns mit ausdrücklicher Einwilligung (Art. 6 Abs. 1 lit. a
+                DSGVO). Gäste, Mitarbeitende oder Dritte werden weder in KI-Bildern abgebildet noch
+                nachgebildet.
               </p>
             </div>
           </div>
