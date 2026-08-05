@@ -161,13 +161,14 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="order-1 md:order-2">
+            <div className="order-1 md:order-2 relative rounded-xl overflow-hidden shadow-md">
               <img
                 src={aboutBodensee}
                 alt="Bodensee-Panorama und Allgäuer Landschaft"
                 loading="lazy"
-                className="rounded-xl shadow-md w-full h-64 md:h-80 object-cover"
+                className="w-full h-64 md:h-80 object-cover"
               />
+              <AiBadge variant="edited" />
             </div>
           </div>
 

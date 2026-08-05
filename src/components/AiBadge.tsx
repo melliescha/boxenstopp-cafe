@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
 interface AiBadgeProps {
-  /** Beide Varianten rendern das Label direkt als Overlay auf dem Bild. */
-  variant?: "overlay" | "caption";
+  /** "overlay"/"caption": Label "KI generiert". "edited": nur Kreis mit "KI" (KI-bearbeitet). */
+  variant?: "overlay" | "caption" | "edited";
   className?: string;
 }
 
@@ -12,10 +12,12 @@ interface AiBadgeProps {
  * mit einem Backdrop-Blur-Hintergrund, der sich dezent an jedes Bild anpasst.
  * Klickbar → ausführlicher KI-Hinweis in der Datenschutzerklärung.
  */
-const AiBadge = ({ variant: _variant = "overlay", className = "" }: AiBadgeProps) => {
-  const title =
-    "Dieses Bild wurde mit KI erstellt oder bearbeitet, klick für den ausführlichen KI-Hinweis";
-  const label = "KI generiert";
+const AiBadge = ({ variant = "overlay", className = "" }: AiBadgeProps) => {
+  const edited = variant === "edited";
+  const title = edited
+    ? "Dieses Bild wurde mit KI bearbeitet, klick für den ausführlichen KI-Hinweis"
+    : "Dieses Bild wurde mit KI erstellt oder bearbeitet, klick für den ausführlichen KI-Hinweis";
+  const label = edited ? "KI" : "KI generiert";
 
   return (
     <Link
@@ -24,7 +26,9 @@ const AiBadge = ({ variant: _variant = "overlay", className = "" }: AiBadgeProps
       aria-label={title}
       className={`absolute bottom-2 right-2 z-20 inline-flex items-center justify-center rounded-full font-semibold backdrop-blur-md hover:!opacity-100 transition-opacity ${className}`}
       style={{
-        padding: "3px 9px",
+        padding: edited ? 0 : "3px 9px",
+        width: edited ? 26 : undefined,
+        height: edited ? 26 : undefined,
         fontSize: 10,
         letterSpacing: "0.04em",
         lineHeight: 1.2,
