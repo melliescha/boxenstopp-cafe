@@ -304,7 +304,7 @@ const Partners = () => {
             <p className="text-muted-foreground text-sm flex-1">
               Du suchst jemanden, der deine Website, dein Marketing oder deine Social Ads aufbaut, ohne Budget zu verbrennen? Frag uns nach OPTIVANAT.
             </p>
-            <a href="/kontakt" className="inline-block bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-medium text-sm hover:opacity-90 transition-opacity whitespace-nowrap">
+            <a href="https://optivantaagency.com/" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-medium text-sm hover:opacity-90 transition-opacity whitespace-nowrap">
               Mehr erfahren
             </a>
           </div>
