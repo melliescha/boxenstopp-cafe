@@ -37,7 +37,7 @@ const guarantees = [
 const faqItems = [
   {
     q: "Welche Bilder auf der Website sind KI-generiert?",
-    a: "Echte Fotos sind Aufnahmen von unserem Bistro, den Räumen, der Terrasse und unseren Speisen. Alle Bilder, die mit KI erstellt oder nachbearbeitet wurden, erkennt man am kleinen Sternchen (*) am Bild. Ein Klick darauf führt zu unseren KI-Hinweisen.",
+    a: "Echte Fotos sind Aufnahmen von unserem Bistro, den Räumen, der Terrasse und unseren Speisen. Alle Bilder, die mit KI erstellt oder nachbearbeitet wurden, erkennt man am kleinen „AI“-Rundlogo am Bild. Ein Klick darauf führt zu unseren KI-Hinweisen.",
   },
   {
     q: "Sind auf den KI-Bildern echte Menschen zu sehen?",
@@ -120,8 +120,8 @@ const KiTransparenz = () => {
           <div className="rounded-xl border border-border bg-card p-6 space-y-4 text-muted-foreground leading-relaxed">
             <p>
               KI-generierte oder KI-bearbeitete Bilder sind auf dieser Website mit einem kleinen{" "}
-              <span className="inline-flex items-center justify-center w-5 h-5 rounded-full text-foreground font-bold text-xs align-middle" style={{ backgroundColor: "#9E7C4E33" }}>*</span>{" "}
-              Sternchen gekennzeichnet. Ein Klick darauf führt direkt zu diesem Transparenzbericht.
+              <span className="inline-flex items-center justify-center w-5 h-5 rounded-full text-white font-bold align-middle" style={{ backgroundColor: "#9E7C4E", fontSize: "9px" }}>AI</span>{" "}
+              -Rundlogo gekennzeichnet. Ein Klick darauf führt direkt zu diesem Transparenzbericht.
             </p>
             <p>
               In der Bildergalerie gibt es zusätzlich einen ausklappbaren Bildnachweis, in dem
@@ -200,7 +200,7 @@ const KiTransparenz = () => {
                 Schall sowie Melanie Dincdemir — als reale, erkennbare Personen. Diese sind im
                 Sinne von Art. 3 Nr. 60 EU AI Act als Deepfake einzuordnen. Da es sich um unsere
                 eigenen Abbildungen handelt, liegen die Einwilligungen der abgebildeten Personen
-                ausdrücklich vor. Wir kennzeichnen diese Bilder mit dem Sternchen (*) und weisen
+                ausdrücklich vor. Wir kennzeichnen diese Bilder mit dem „AI“-Rundlogo und weisen
                 hier transparent gemäß Art. 50 EU AI Act darauf hin.
               </p>
             </div>
