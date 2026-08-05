@@ -686,7 +686,62 @@ const Datenschutz = () => {
           <Divider />
 
           <Section>
-            <H2>17. Aktualität und Änderung dieser Datenschutzerklärung</H2>
+            <H2>17. Übersicht der Datenverarbeitungen und Datenflüsse</H2>
+            <P>
+              Zur besseren Nachvollziehbarkeit fassen wir hier alle Verarbeitungen dieser Website
+              kompakt zusammen: welche Daten anfallen, wohin sie fließen, auf welcher
+              Rechtsgrundlage und wie lange sie gespeichert werden.
+            </P>
+            <div style={{ overflowX: "auto", marginBottom: 14 }}>
+              <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 15, color: warmBrown }}>
+                <thead>
+                  <tr style={{ backgroundColor: cream }}>
+                    {["Verarbeitung", "Daten", "Empfänger / Ort", "Rechtsgrundlage", "Speicherdauer"].map((h) => (
+                      <th key={h} style={{ textAlign: "left", padding: "10px 12px", border: `1px solid ${bronze}33`, color: bronze, fontWeight: 700 }}>
+                        {h}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["Hosting & Auslieferung der Website", "IP-Adresse, Browsertyp, Zeitpunkt, HTTP-Header, Referrer", "Cloudflare, Inc. (USA/EU, Auftragsverarbeiter, DPA nach Art. 28 DSGVO)", "Art. 6 Abs. 1 lit. f DSGVO", "Server-Logfiles i. d. R. 7 Tage, danach automatische Löschung"],
+                    ["Sicherheits- und Schutzfunktionen (z. B. gegen Angriffe)", "IP-Adresse, technische Verbindungsdaten", "Cloudflare, Inc.", "Art. 6 Abs. 1 lit. f DSGVO", "Kurzfristig, i. d. R. wenige Tage"],
+                    ["Kontakt per E-Mail", "Name, E-Mail-Adresse, Inhalt der Nachricht", "Unser E-Mail-Postfach (Hosting in Deutschland/EU), keine Weitergabe", "Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO", "Bis zur Erledigung der Anfrage; danach Löschung, sofern keine gesetzlichen Aufbewahrungspflichten (§ 147 AO, § 257 HGB: 6–10 Jahre) bestehen"],
+                    ["Kontakt per Telefon / WhatsApp", "Rufnummer, Gesprächs- bzw. Nachrichteninhalt", "Wir; bei WhatsApp zusätzlich WhatsApp Ireland Ltd.", "Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO", "Bis zur Erledigung der Anfrage"],
+                    ["Kontaktformular", "Angaben aus dem Formular (Pflichtfelder gekennzeichnet)", "Wir (verschlüsselte Übertragung), keine Weitergabe an Dritte", "Art. 6 Abs. 1 lit. a bzw. lit. b DSGVO", "Bis zum Wegfall des Zwecks oder Widerruf der Einwilligung"],
+                    ["Tischreservierung / Anfragen vor Ort", "Name, Kontaktdaten, Wunschtermin", "Wir, keine Weitergabe", "Art. 6 Abs. 1 lit. b DSGVO", "Nach dem Besuch bzw. Erledigung gelöscht"],
+                    ["Google Maps (nur nach Klick)", "IP-Adresse, Geräte- und Browserdaten", "Google Ireland Ltd. / Google LLC (USA)", "Art. 6 Abs. 1 lit. a DSGVO (Einwilligung, 2-Klick-Lösung)", "Keine Speicherung bei uns; Dauer bei Google gemäß deren Datenschutzerklärung"],
+                    ["Schriftarten und Icons", "keine – lokal von unserem Server geladen", "kein Drittanbieter, keine Verbindung zu Google Fonts o. Ä.", "entfällt", "entfällt"],
+                    ["Technisch notwendige Speicherung im Browser (z. B. Hinweis-Banner)", "lokale Kennung, ob ein Hinweis bereits gesehen wurde", "verbleibt im Browser des Nutzers", "§ 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. f DSGVO", "Bis zum Löschen der Browserdaten"],
+                    ["Newsletter / E-Mail-Marketing", "keine – wir versenden keinen Newsletter", "kein Newsletter-Dienstleister im Einsatz", "entfällt", "entfällt"],
+                    ["Reichweitenanalyse / Tracking", "keine – kein Analytics, kein Pixel, kein Profiling", "keine Empfänger", "entfällt", "entfällt"],
+                    ["Verlinkung zu Social Media & Bewertungsportalen", "erst nach Klick durch den Nutzer beim jeweiligen Anbieter", "Instagram/Meta, Google, TripAdvisor, Komoot (eigene Verantwortung)", "Art. 6 Abs. 1 lit. f DSGVO (reiner Link)", "Keine Speicherung bei uns"],
+                    ["KI-Werkzeuge zur Website-Erstellung", "keine Gästedaten – nur eigene redaktionelle Inhalte und Prompts", "KI-Anbieter (nur intern von uns genutzt)", "Art. 6 Abs. 1 lit. f DSGVO", "Keine Speicherung personenbezogener Gästedaten"],
+                  ].map((row) => (
+                    <tr key={row[0]}>
+                      {row.map((cell, i) => (
+                        <td key={i} style={{ padding: "10px 12px", border: `1px solid ${bronze}33`, verticalAlign: "top", lineHeight: 1.6 }}>
+                          {i === 0 ? <strong>{cell}</strong> : cell}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <P>
+              Es findet keine Übermittlung Ihrer Daten in Drittländer statt, außer soweit dies in
+              den oben genannten Fällen (Cloudflare, Google Maps nach Einwilligung) beschrieben
+              ist. Grundlage sind dort die EU-Standardvertragsklauseln bzw. das
+              EU-US Data Privacy Framework. Ein Verkauf von Daten findet nicht statt.
+            </P>
+          </Section>
+
+          <Divider />
+
+          <Section>
+            <H2>18. Aktualität und Änderung dieser Datenschutzerklärung</H2>
             <P>
               Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Juli 2026.
             </P>
