@@ -621,7 +621,7 @@ const Datenschutz = () => {
               Personen ab und sind daher im Sinne von Art. 3 Nr. 60 EU AI Act als{" "}
               <em>Deepfake</em> einzuordnen. Da es sich um unsere eigenen Abbildungen handelt,
               liegen die Einwilligungen der abgebildeten Personen ausdrücklich vor. Wir
-              kennzeichnen diese Bilder mit dem Sternchen (*) und weisen hier transparent gemäß
+              kennzeichnen diese Bilder mit dem „AI"-Rundlogo und weisen hier transparent gemäß
               Art. 50 EU AI Act darauf hin.
             </P>
             <P>
@@ -636,7 +636,7 @@ const Datenschutz = () => {
             <H3>16.3 Kennzeichnung und Aussagekraft</H3>
             <P>
               KI-generierte oder KI-bearbeitete Bilder sind auf dieser Website mit einem
-              kleinen Sternchen (*) am Bild gekennzeichnet. Ein Klick darauf führt direkt zu
+              kleinen „AI"-Rundlogo am Bild gekennzeichnet. Ein Klick darauf führt direkt zu
               diesem ausführlichen KI-Hinweis. Zusätzlich weisen wir in der Bildergalerie und
               im Seitenfuß allgemein auf den Einsatz von KI-Bildern hin. Bei Texten dieser
               Website wurden KI-Werkzeuge lediglich unterstützend eingesetzt; alle Inhalte

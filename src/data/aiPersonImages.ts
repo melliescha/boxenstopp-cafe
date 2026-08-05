@@ -27,6 +27,6 @@ export const AI_PERSON_IMAGES: AiPersonImage[] = [
 
 /**
  * Dateien, in denen ein gut sichtbarer Sammelhinweis (Fußnote mit Link auf
- * /datenschutz#ki-hinweis) statt eines Sternchens pro Bild ausreicht.
+ * /datenschutz#ki-hinweis) statt eines „AI"-Rundlogos pro Bild ausreicht.
  */
 export const AI_COLLECTIVE_NOTICE_FILES: string[] = ["src/pages/Gallery.tsx"];

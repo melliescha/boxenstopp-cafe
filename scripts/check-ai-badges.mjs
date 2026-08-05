@@ -3,7 +3,7 @@
  * Automatische Prüfung der KI-Kennzeichnung (EU AI Act, Art. 50 Abs. 4).
  *
  * Für jedes in src/data/aiPersonImages.ts registrierte KI-Bild mit Personen
- * wird geprüft, ob an der Einbindungsstelle ein sichtbares Sternchen
+ * wird geprüft, ob an der Einbindungsstelle ein sichtbares „AI"-Rundlogo
  * (<AiBadge />) steht, bzw. ob die Datei einen zugelassenen Sammelhinweis hat.
  *
  * Läuft automatisch vor jedem Build (npm run build). Exit-Code 1 = Veröffentlichung
@@ -15,7 +15,7 @@ import { join, relative } from "node:path";
 const ROOT = process.cwd();
 const SRC = join(ROOT, "src");
 const REGISTRY = join(SRC, "data", "aiPersonImages.ts");
-/** Zeilen-Fenster nach dem <img src={...}>, in dem das Sternchen stehen muss */
+/** Zeilen-Fenster nach dem <img src={...}>, in dem das „AI"-Rundlogo stehen muss */
 const LOOKAHEAD = 30;
 
 function fail(msg) {
@@ -104,10 +104,10 @@ for (const asset of assets) {
     for (const idx of usageLines) {
       const window = lines.slice(idx, idx + LOOKAHEAD + 1).join("\n");
       if (/<AiBadge\b/.test(window)) {
-        checked.push(`${asset} → ${file.path}:${idx + 1} (Sternchen)`);
+        checked.push(`${asset} → ${file.path}:${idx + 1} (AI-Rundlogo)`);
       } else {
         problems.push(
-          `${file.path}:${idx + 1}: KI-Personenbild "${asset}" wird eingebunden, aber innerhalb der nächsten ${LOOKAHEAD} Zeilen fehlt <AiBadge /> (Sternchen-Kennzeichnung).`,
+          `${file.path}:${idx + 1}: KI-Personenbild "${asset}" wird eingebunden, aber innerhalb der nächsten ${LOOKAHEAD} Zeilen fehlt <AiBadge /> (AI-Rundlogo-Kennzeichnung).`,
         );
       }
     }
