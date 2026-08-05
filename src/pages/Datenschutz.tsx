@@ -597,43 +597,13 @@ const Datenschutz = () => {
               für künstlich erzeugte oder manipulierte Inhalte vorsieht.
             </P>
 
-            <H3>16.1 Eingesetzte KI-Werkzeuge</H3>
+            <H3>16.1 Einsatz von KI-Werkzeugen</H3>
             <P>
               Für Konzeption, Text-Entwürfe, Programmierung und Bildmaterial dieser Website haben
-              wir insbesondere folgende KI-Werkzeuge genutzt:
-            </P>
-            <ul style={{ color: warmBrown, fontSize: 16, lineHeight: 1.7, paddingLeft: 24, marginBottom: 14 }}>
-              <li>
-                <strong>Lovable</strong> (Lovable Labs Inc., USA): KI-gestützte
-                Webentwicklungsplattform zur Erstellung von Layout, Komponenten und Code.
-              </li>
-              <li>
-                <strong>ChatGPT</strong> (OpenAI, L.L.C., USA): Sprachmodell für Text-Entwürfe,
-                Formulierungshilfen und Recherche. Zusätzlich wurde unser Logo mit ChatGPT
-                KI-generiert.
-              </li>
-              <li>
-                <strong>Google Gemini</strong> (Google Ireland Ltd. / Google LLC): Sprachmodell
-                für Text- und Recherche-Unterstützung.
-              </li>
-              <li>
-                <strong>Anthropic Claude</strong> (Anthropic PBC, USA): Sprachmodell für Texte,
-                Code-Reviews und redaktionelle Unterstützung.
-              </li>
-              <li>
-                <strong>Higgsfield AI</strong> (Higgsfield, Inc., USA): KI-Bildgenerator für
-                stimmungsvolle Foto-Eindrücke, Produkt- und Ambiente-Bilder. Die Bildaufträge
-                (Prompts) wurden mit Anthropic Claude erstellt. Sie zeigen überwiegend fiktive
-                Personen oder Szenen ohne erkennbare Gesichter; Gäste, Mitarbeitende oder Dritte
-                werden nicht abgebildet. Zusätzlich haben wir Higgsfield AI genutzt, um Bilder von
-                uns selbst (Eugen & Helena Schall) zu erstellen (siehe Abschnitt 16.2).
-              </li>
-            </ul>
-            <P>
-              Sämtliche über diese Werkzeuge verarbeiteten Inhalte stammen aus unserem eigenen
-              redaktionellen Umfeld. Personenbezogene Daten unserer Gäste, Kundinnen und Kunden
-              werden dabei <strong>nicht</strong> in KI-Systeme eingegeben oder zu Trainingszwecken
-              weitergegeben.
+              wir KI-gestützte Werkzeuge eingesetzt. Sämtliche verarbeiteten Inhalte stammen aus
+              unserem eigenen redaktionellen Umfeld. Personenbezogene Daten unserer Gäste,
+              Kundinnen und Kunden werden dabei <strong>nicht</strong> in KI-Systeme eingegeben
+              oder zu Trainingszwecken weitergegeben.
             </P>
 
             <H3>16.2 Abbildung realer Personen und Deepfake-Hinweis</H3>
