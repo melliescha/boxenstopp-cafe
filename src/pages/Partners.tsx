@@ -241,13 +241,13 @@ const Partners = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Diese Website, die Meta-Ads, das Google-Setup und das Marketing drumherum stammen nicht von einer anonymen Großagentur, sondern von <strong className="text-foreground">OPTIVANAT Agency</strong>. Eine kleine, feine Digitalagentur, die weiß, wie man auch mit kleinem Budget echte Wirkung erzielt.
+                  Diese Website, die Meta-Ads, das Google-Setup und das Marketing drumherum stammen nicht von einer anonymen Großagentur, sondern von <strong className="text-foreground">OPTIVANAT Agency</strong> – einer kleinen, feinen Digitalagentur, die weiß, wie man auch mit kleinem Budget echte Wirkung erzielt.
                 </p>
                 <p>
-                  OPTIVANAT begleitet uns von der Gestaltung der Website über das Setup von Meta und Google bis hin zu Monitoring und Marketing-Tipps. Was uns verbindet: ehrliche Beratung, saubere Umsetzung und Layer-für-Layer-Ergebnisse, ohne Budget zu verbrennen.
+                  OPTIVANAT begleitet uns von der Gestaltung der Website über das Setup von Meta und Google bis hin zu Monitoring und Marketing-Tipps. Was uns verbindet: ehrliche Beratung, saubere Umsetzung und nachhaltige Ergebnisse, ohne Budget zu verbrennen.
                 </p>
                 <p className="text-sm italic">
-                  Egal ob Website, Social Ads oder Sichtbarkeit bei Google – OPTIVANAT macht klein groß und groß überschaubar.
+                  Egal ob Website, Social Ads oder Sichtbarkeit bei Google – OPTIVANAT macht aus kleinen Budgets große Auftritte und behält dabei immer den Überblick.
                 </p>
               </div>
             </div>
