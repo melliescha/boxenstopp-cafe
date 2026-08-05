@@ -88,6 +88,14 @@ const KiTransparenz = () => {
             erklärt, wie wir das transparent kennzeichnen, was mit Gästedaten passiert (nichts)
             und wie wir mit dem EU AI Act konform sind.
           </p>
+          <p className="mt-4 text-muted-foreground leading-relaxed">
+            Alle Prompts enthalten ausdrücklich den Hinweis, keine realen Personen abzubilden,
+            sondern ausschließlich fiktive. Solche rein fiktiven Personen sind rechtlich keine
+            Deepfakes im Sinne von Art. 3 Nr. 60 EU AI Act, weil sie keine existierenden Menschen
+            nachbilden. Wir behandeln sie trotzdem vorsichtshalber wie Deepfakes: Jedes
+            KI-generierte Bild ist als solches gekennzeichnet.
+          </p>
+
         </div>
       </section>
 
