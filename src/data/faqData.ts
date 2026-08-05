@@ -112,7 +112,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Habt ihr glutenfreie Optionen?",
         answer:
-          "Aktuell leider nicht. Sprecht uns gerne direkt an, wir beraten euch ehrlich was wir für euch tun können. Wichtig ist uns aber, ganz offen zu sein: Wir können keine zöliakiegerechten Speisen anbieten, weil es in unserer Küche zu Kreuzkontamination kommen kann. Wenn ihr also unter Zöliakie leidet, möchten wir euch nicht in Sicherheit wiegen, die wir nicht garantieren können.",
+          "Ehrliche Antwort: Außer unseren Salaten haben wir aktuell keine glutenfreien Produkte im Angebot. Sprecht uns gerne direkt an, wir beraten euch ehrlich was wir für euch tun können. Wichtig ist uns aber, ganz offen zu sein: Wir können keine zöliakiegerechten Speisen anbieten, weil es in unserer Küche zu Kreuzkontamination kommen kann. Wenn ihr also unter Zöliakie leidet, möchten wir euch nicht in Sicherheit wiegen, die wir nicht garantieren können.",
       },
       {
         question: "Was ist mit Allergien?",
@@ -122,7 +122,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Könnt ihr „frei von\" garantieren (vegan, glutenfrei)?",
         answer:
-          "Nein, und das sagen wir ganz offen. Wir bieten vegane Milchalternativen wie Hafermilch an und haben Produkte, die glutenfrei sind. Zubereitet wird bei uns aber alles in einer Küche mit gemeinsamen Geräten, Arbeitsflächen und Milchsystemen. Was wir tun: Unser Milchsystem wird jedes Mal gereinigt, wenn wir von Kuhmilch auf Hafermilch umstellen. Eine vollständige Frei-von-Garantie können wir trotzdem nicht geben, Spuren durch Kreuzkontamination sind nicht auszuschließen und eine Haftung dafür übernehmen wir nicht. Bei ausdrücklichen Wünschen oder Allergien sprecht uns bitte vor der Bestellung direkt an, dann finden wir gemeinsam die beste Lösung.",
+          "Nein, und das sagen wir ganz offen. Wir bieten vegane Milchalternativen wie Hafermilch an, glutenfrei sind aktuell nur unsere Salate. Zubereitet wird bei uns alles in einer Küche mit gemeinsamen Geräten, Arbeitsflächen und Milchsystemen. Was wir tun: Unser Milchsystem wird jedes Mal gereinigt, wenn wir von Kuhmilch auf Hafermilch umstellen. Eine vollständige Frei-von-Garantie können wir trotzdem nicht geben, Spuren durch Kreuzkontamination sind nicht auszuschließen und eine Haftung dafür übernehmen wir nicht. Bei ausdrücklichen Wünschen oder Allergien sprecht uns bitte vor der Bestellung direkt an, dann finden wir gemeinsam die beste Lösung.",
       },
 
       {
