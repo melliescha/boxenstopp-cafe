@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Download } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import AiBadge from "@/components/AiBadge";

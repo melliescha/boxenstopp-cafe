@@ -394,7 +394,7 @@ const KiCheckliste = () => {
             </p>
             <p className="font-sans" style={{ color: warmBrown, fontSize: 15, lineHeight: 1.8 }}>
               Ausführliche Erläuterungen findest du im Abschnitt{" "}
-              <Link to="/ueber-uns#ki-transparenz" style={{ color: navy }} className="underline underline-offset-2">
+              <Link to="/ki-transparenz" style={{ color: navy }} className="underline underline-offset-2">
                 „Wie wir künstliche Intelligenz einsetzen“
               </Link>
               , in der{" "}

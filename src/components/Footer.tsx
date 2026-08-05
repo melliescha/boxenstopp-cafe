@@ -192,7 +192,7 @@ const Footer = () => {
             Intelligenz erstellt oder bearbeitet (gem. Art. 50 EU AI Act). Die redaktionelle
             Verantwortung liegt bei uns.{" "}
             <Link
-              to="/ueber-uns#ki-transparenz"
+              to="/ki-transparenz"
               className="underline hover:text-warm-gold transition-colors"
             >
               KI-Transparenz
