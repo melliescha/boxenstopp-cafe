@@ -230,10 +230,24 @@ const Datenschutz = () => {
             <P>
               Weitere Informationen: <ExtLink href="https://lovable.dev/privacy">https://lovable.dev/privacy</ExtLink>
             </P>
+            <H3>3.3 Quellcode-Verwaltung (GitHub)</H3>
             <P>
-              Rechtsgrundlage für beide Verarbeitungen: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes
-              Interesse an einer technisch fehlerfreien Darstellung, schnellen Auslieferung und
-              Sicherheit unserer Website).
+              Der Quellcode dieser Website wird in einem Repository bei GitHub verwaltet. Anbieter
+              ist GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA, bzw.
+              für den europäischen Raum GitHub B.V., Vijzelstraat 68–72, 1017 HL Amsterdam,
+              Niederlande. GitHub speichert ausschließlich unseren Programmcode und die
+              Bearbeitungshistorie. Beim Aufruf dieser Website durch Besucher findet{" "}
+              <strong>keine</strong> Verbindung zu GitHub statt; Besucherdaten werden nicht an
+              GitHub übermittelt. Die Datenübermittlung in die USA erfolgt auf Grundlage von
+              EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO).
+            </P>
+            <P>
+              Weitere Informationen: <ExtLink href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</ExtLink>
+            </P>
+            <P>
+              Rechtsgrundlage für die vorgenannten Verarbeitungen: Art. 6 Abs. 1 lit. f DSGVO
+              (berechtigtes Interesse an einer technisch fehlerfreien Darstellung, schnellen
+              Auslieferung, Sicherheit und Pflege unserer Website).
             </P>
           </Section>
 
