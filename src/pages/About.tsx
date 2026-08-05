@@ -550,6 +550,58 @@ const About = () => {
                 </div>
               </div>
 
+              {/* Änderungsprotokoll */}
+              <div className="pt-4">
+                <h3 className="font-serif text-xl font-semibold text-foreground mb-4">
+                  Änderungsprotokoll der KI-Hinweise
+                </h3>
+                <p className="text-sm mb-4">
+                  Damit du nachvollziehen kannst, wann wir unsere Texte und
+                  Transparenzhinweise überarbeitet haben, dokumentieren wir die Änderungen hier:
+                </p>
+                <ul className="space-y-3">
+                  {[
+                    {
+                      date: "05.08.2026",
+                      text: "KI-FAQ mit sieben Fragen zur Bild- und Textnutzung ergänzt sowie dieses Änderungsprotokoll eingeführt.",
+                    },
+                    {
+                      date: "29.07.2026",
+                      text: "Eingesetzte Werkzeuge konkretisiert (Logo mit ChatGPT, Bilder über Higgsfield AI, Texte mit Claude, Lovable, Gemini, ChatGPT) und Hinweise zu Code-Verwaltung sowie Hosting aufgenommen.",
+                    },
+                    {
+                      date: "22.07.2026",
+                      text: "Bildnachweis in der Galerie um die Quelle je Bild erweitert (KI-generiert oder echtes Foto mit Einwilligung).",
+                    },
+                    {
+                      date: "15.07.2026",
+                      text: "Abschnitt „Wie wir künstliche Intelligenz einsetzen“ neu erstellt, inklusive Hinweis zur menschlichen redaktionellen Verantwortung.",
+                    },
+                    {
+                      date: "08.07.2026",
+                      text: "Kennzeichnung KI-generierter Bilder mit Sternchen (*) eingeführt, Abschnitt 16 der Datenschutzerklärung sowie Urheberrechts- und Bildnachweishinweise im Impressum ergänzt.",
+                    },
+                  ].map((entry) => (
+                    <li
+                      key={entry.date}
+                      className="flex flex-col gap-1 rounded-lg border border-bronze/20 bg-secondary/20 px-5 py-4 sm:flex-row sm:gap-5"
+                    >
+                      <time className="shrink-0 font-medium text-bronze sm:w-24">
+                        {entry.date}
+                      </time>
+                      <span className="text-muted-foreground leading-relaxed">
+                        {entry.text}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-sm mt-4">
+                  Letzte Überarbeitung dieses Abschnitts: 05.08.2026.
+                </p>
+              </div>
+
+
+
               <p className="text-sm">
                 Rechtlicher Hintergrund: Art. 50 der Verordnung (EU) 2024/1689 („EU AI Act").
                 Alle Details, inklusive der eingesetzten Werkzeuge, findest du in unserer{" "}
