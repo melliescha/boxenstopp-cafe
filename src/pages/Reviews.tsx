@@ -100,7 +100,7 @@ const Reviews = () => {
           </div>
 
           <p className="text-center text-muted-foreground text-sm italic mt-10 max-w-xl mx-auto">
-            Echte Stimmen unserer Gäste sammeln wir gerade. Sobald wir die ersten Bewertungen haben, zeigen wir sie hier.
+            Jede Bewertung hilft uns weiter. Aktuell freuen wir uns über 5,0 Sterne auf Google und TripAdvisor, und über jede weitere ehrliche Rückmeldung.
           </p>
         </div>
       </section>

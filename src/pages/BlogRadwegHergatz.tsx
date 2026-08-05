@@ -94,7 +94,7 @@ const BlogRadwegHergatz = () => {
             Bodensee-Königssee-Radweg: Deine Rast in Hergatz
           </h1>
           <p className="text-lg text-muted-foreground">
-            Duschen, E-Bike-Laden, Schatten und ein echter Barista-Kaffee: Der perfekte Zwischenstopp
+            Duschen, Steckdose zum Aufladen, Schatten und ein echter Barista-Kaffee: Der perfekte Zwischenstopp
             auf der Etappe durch das Westallgäu, mitten in Hergatz/Wohmbrechts.
           </p>
         </header>
