@@ -52,6 +52,7 @@ const App = () => (
             <Route path="/blog/bodensee-koenigssee-radweg-hergatz" element={<BlogRadwegHergatz />} />
             <Route path="/fites-allgaeu" element={<FitesAllgaeu />} />
             <Route path="/qr-speisekarte" element={<QRSpeisekarte />} />
+            <Route path="/ki-checkliste" element={<KiCheckliste />} />
             <Route path="/qr-code" element={<QRCodePage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
