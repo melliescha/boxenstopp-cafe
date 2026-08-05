@@ -54,13 +54,14 @@ const jsonLd = [
     "@context": "https://schema.org",
     "@type": "HealthClub",
     name: "FITES Allgäu",
-    description: "Fitnessstudio in Hergatz mit HYROX, Fitness-Boxen, Tabata und HIIT. Kleine Gruppen, persönliche Betreuung, Wellpass-Partner.",
+    description: "Fitnessstudio in Hergatz mit HYROX, FITES Boxen, HIIT & Tabata und Ganzkörpertraining, dazu Personal Training nach Absprache.",
     url: "https://bistro-boxenstopp.de/fites-allgaeu",
     telephone: "+491716226201",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Bahnhofstraße 4",
+      streetAddress: "Südhang 1",
       addressLocality: "Hergatz",
+
       postalCode: "88145",
       addressCountry: "DE",
     },
