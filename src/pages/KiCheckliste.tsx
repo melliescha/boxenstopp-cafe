@@ -204,9 +204,51 @@ const KiCheckliste = () => {
             („EU AI Act“) für unsere Website gelten und wie wir sie umsetzen. Sie ist als
             verständliche Selbstauskunft gedacht, nicht als Rechtsberatung.
           </p>
-          <p className="font-sans" style={{ color: bronze, fontSize: 14, marginBottom: 40 }}>
-            Stand: 05.08.2026, verantwortlich: Eugen Schall
-          </p>
+          <div
+            style={{
+              border: `1px solid ${bronze}66`,
+              borderRadius: 12,
+              padding: "16px 20px",
+              backgroundColor: "#FFFFFFAA",
+              marginBottom: 40,
+            }}
+          >
+            <div className="flex flex-wrap items-center gap-3" style={{ marginBottom: 8 }}>
+              <span
+                className="font-sans"
+                style={{
+                  backgroundColor: navy,
+                  color: cream,
+                  fontSize: 12,
+                  fontWeight: 700,
+                  letterSpacing: 0.8,
+                  borderRadius: 999,
+                  padding: "4px 12px",
+                }}
+              >
+                {checklistVersion.version}
+              </span>
+              <span className="font-sans" style={{ color: navy, fontWeight: 700, fontSize: 15 }}>
+                Stand: {checklistVersion.date}
+              </span>
+              <span className="font-sans" style={{ color: bronze, fontSize: 14 }}>
+                verantwortlich: Eugen Schall
+              </span>
+            </div>
+            <p className="font-sans" style={{ color: warmBrown, fontSize: 14, lineHeight: 1.7, margin: 0 }}>
+              {checklistVersion.nextReview}
+            </p>
+            <a
+              href={checklistVersion.pdf}
+              target="_blank"
+              rel="noopener"
+              className="font-sans underline underline-offset-2"
+              style={{ color: navy, fontSize: 14, fontWeight: 700, display: "inline-block", marginTop: 10 }}
+            >
+              Checkliste als PDF herunterladen ({checklistVersion.version}, Stand {checklistVersion.date})
+            </a>
+          </div>
+
 
           {sections.map((section) => (
             <div key={section.heading} style={{ marginBottom: 40 }}>
