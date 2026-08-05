@@ -60,14 +60,14 @@ const Hausordnung = () => {
             des Hauses verweisen oder ein Hausverbot erteilen.
           </p>
 
-          <Section title="1. Respektvolles Miteinander – sicherer Raum">
+          <Section title="1. Respektvolles Miteinander: sicherer Raum">
             Wir sind ein sicherer Ort für alle, insbesondere für Frauen und Mädchen. Belästigung,
             Anmache, Anstarren, aufdringliches Verhalten, sexistische, rassistische,
             homo- oder transfeindliche Äußerungen, Bedrohungen und Gewalt werden bei uns
             <strong> nicht toleriert</strong>. Wer sich respektlos verhält, wird ohne Diskussion
             des Hauses verwiesen; in schweren Fällen erstatten wir Anzeige.
             <br />
-            Du fühlst dich unwohl oder belästigt? Sprich uns direkt an – wir helfen sofort,
+            Du fühlst dich unwohl oder belästigt? Sprich uns direkt an, wir helfen sofort,
             begleiten dich und rufen bei Bedarf Hilfe.
           </Section>
 
@@ -75,7 +75,7 @@ const Hausordnung = () => {
             <List
               items={[
                 <>
-                  Im gesamten Gebäude gilt ein <strong>strenges Rauchverbot</strong> – das gilt
+                  Im gesamten Gebäude gilt ein <strong>strenges Rauchverbot</strong>, das gilt
                   auch für E-Zigaretten, Vapes, Shishas und Tabakerhitzer (Gesundheitsschutzgesetz
                   Bayern, GSG).
                 </>,
@@ -93,7 +93,7 @@ const Hausordnung = () => {
 
           <Section title="3. Kinder und Aufsichtspflicht">
             Eltern und Begleitpersonen haften für ihre Kinder. Die Aufsichtspflicht liegt
-            ausschließlich bei den Erziehungsberechtigten – wir übernehmen keine Betreuung oder
+            ausschließlich bei den Erziehungsberechtigten, wir übernehmen keine Betreuung oder
             Aufsicht. Kinder unter 10 Jahren dürfen Duschen und Sanitärbereich nur in Begleitung
             eines Erziehungsberechtigten nutzen. Bitte achte darauf, dass Kinder nicht auf dem
             Parkplatz oder im Zufahrtsbereich spielen.
@@ -120,7 +120,7 @@ const Hausordnung = () => {
                 </>,
                 <>
                   Bitte hinterlasse Dusche und WC so, wie du sie selbst gerne vorfinden würdest.
-                  Persönliche Gegenstände nimm bitte wieder mit – für vergessene oder abgelegte
+                  Persönliche Gegenstände nimm bitte wieder mit, für vergessene oder abgelegte
                   Wertsachen übernehmen wir keine Haftung.
                 </>,
                 <>
@@ -150,7 +150,7 @@ const Hausordnung = () => {
                 "Übernachten und Camping auf dem Parkplatz sind nicht erlaubt.",
                 <>
                   Wir haben <strong>keine</strong> E-Bike-Ladestation. Gäste dürfen unsere
-                  Steckdosen aber gerne mit ihrem eigenen Ladegerät nutzen – Nutzung auf eigene
+                  Steckdosen aber gerne mit ihrem eigenen Ladegerät nutzen, Nutzung auf eigene
                   Verantwortung.
                 </>,
               ]}

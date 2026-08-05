@@ -302,7 +302,7 @@ const FlipbookMenu = () => {
             {/* Page: Snacks + Süßes */}
             <Page>
               <SectionTitle title="Snacks" />
-              <FlipMenuItem item={{ name: "Proteinriegel", price: "2,50 – 3,90 €" }} />
+              <FlipMenuItem item={{ name: "Proteinriegel", price: "2,50, 3,90 €" }} />
               <FlipMenuItem item={{ name: "Müsliriegel Expressmahlzeit", price: "3,90 €" }} />
               <FlipMenuItem item={{ name: "Protein-Chips", price: "2,40 €" }} />
 
