@@ -1,7 +1,6 @@
-import { Instagram, Star } from "lucide-react";
+import { Instagram, Star, MapPin } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
-import { TripAdvisorIcon, GoogleIcon } from "@/components/icons/SocialIcons";
 import { socialLinks } from "@/config/social";
 
 type Card = {
@@ -15,7 +14,7 @@ type Card = {
 
 const cards: Card[] = [
   {
-    icon: <GoogleIcon size={32} />,
+    icon: <MapPin size={32} aria-hidden="true" />,
     title: "Google Bewertungen",
     text: "Bewertet uns direkt auf Google. Dauert nur 30 Sekunden.",
     cta: "Auf Google bewerten",
@@ -23,7 +22,7 @@ const cards: Card[] = [
     rating: { value: "5,0", count: 3 },
   },
   {
-    icon: <TripAdvisorIcon size={32} style={{ color: "#34E0A1" }} />,
+    icon: <Star size={32} aria-hidden="true" />,
     title: "TripAdvisor",
     text: "Eure Erfahrung auf der Reise-Plattform teilen.",
     cta: "Auf TripAdvisor bewerten",
@@ -31,7 +30,7 @@ const cards: Card[] = [
     rating: { value: "5,0", count: 5 },
   },
   {
-    icon: <Instagram size={32} style={{ color: "#E1306C" }} />,
+    icon: <Instagram size={32} aria-hidden="true" />,
     title: "Instagram",
     text: "Folgt uns für Eindrücke aus dem Bistro.",
     cta: "Zu Instagram",

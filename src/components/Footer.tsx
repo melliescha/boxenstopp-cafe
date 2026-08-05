@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Phone, MapPin, Clock, Route } from "lucide-react";
-import { TripAdvisorIcon, GoogleIcon } from "@/components/icons/SocialIcons";
 import { socialLinks, facebookEnabled } from "@/config/social";
 
 const Footer = () => {
@@ -157,7 +156,7 @@ const Footer = () => {
               className="w-11 h-11 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-warm-gold hover:scale-110 transition-all"
               aria-label="TripAdvisor"
             >
-              <TripAdvisorIcon size={18} />
+              <Star size={18} aria-hidden="true" />
             </a>
             <a
               href={socialLinks.googleMaps}
@@ -166,7 +165,7 @@ const Footer = () => {
               className="w-11 h-11 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-warm-gold hover:scale-110 transition-all"
               aria-label="Google Maps Profil"
             >
-              <GoogleIcon size={18} />
+              <MapPin size={18} aria-hidden="true" />
             </a>
             <a
               href={socialLinks.komoot}
