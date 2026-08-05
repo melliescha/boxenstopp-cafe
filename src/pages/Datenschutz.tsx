@@ -693,7 +693,7 @@ const Datenschutz = () => {
               Rechtsgrundlage und wie lange sie gespeichert werden.
             </P>
             <div style={{ overflowX: "auto", marginBottom: 14 }}>
-              <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 15, color: warmBrown }}>
+              <table style={{ width: "100%", minWidth: 640, tableLayout: "fixed", borderCollapse: "collapse", fontSize: 14, color: warmBrown }}>
                 <thead>
                   <tr style={{ backgroundColor: cream }}>
                     {["Verarbeitung", "Daten", "Empfänger / Ort", "Rechtsgrundlage", "Speicherdauer"].map((h) => (
