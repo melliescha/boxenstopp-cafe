@@ -183,6 +183,86 @@ const Gallery = () => {
             </a>
             .
           </p>
+
+          {/* Bildnachweis-Übersicht: Quelle pro Bild nachvollziehbar */}
+          <div className="max-w-3xl mx-auto mt-8" id="bildnachweis">
+            <button
+              onClick={() => setShowSources((v) => !v)}
+              className="mx-auto flex items-center gap-2 text-sm font-medium text-bronze hover:text-primary transition-colors"
+              aria-expanded={showSources}
+              aria-controls="bildnachweis-liste"
+            >
+              <ListChecks size={16} />
+              {showSources ? "Bildnachweis ausblenden" : "Bildnachweis anzeigen, Quelle pro Bild"}
+            </button>
+
+            {showSources && (
+              <div id="bildnachweis-liste" className="mt-6">
+                <div className="mb-4 flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
+                  <span>
+                    Gesamt: <strong className="text-foreground">{images.length}</strong>
+                  </span>
+                  <span>
+                    KI-generiert:{" "}
+                    <strong className="text-foreground">
+                      {images.filter((i) => i.source === "ki").length}
+                    </strong>
+                  </span>
+                  <span>
+                    Echte Fotos:{" "}
+                    <strong className="text-foreground">
+                      {images.filter((i) => i.source !== "ki").length}
+                    </strong>
+                  </span>
+                  <span>
+                    davon mit Personen und Einwilligung:{" "}
+                    <strong className="text-foreground">
+                      {images.filter((i) => i.source === "foto-personen").length}
+                    </strong>
+                  </span>
+                </div>
+
+                <ul className="divide-y divide-border rounded-xl border border-border bg-card">
+                  {images.map((img, i) => (
+                    <li key={img.alt} className="flex items-start gap-4 p-4">
+                      <img
+                        src={img.src}
+                        alt=""
+                        loading="lazy"
+                        className="h-14 w-20 flex-shrink-0 rounded-md object-cover"
+                      />
+                      <div className="min-w-0">
+                        <p className="text-sm text-foreground">
+                          <span className="text-muted-foreground mr-1">{i + 1}.</span>
+                          {img.alt}
+                        </p>
+                        <p className="mt-1 flex flex-wrap items-center gap-2 text-xs">
+                          <span
+                            className={`rounded-full px-2 py-0.5 font-medium ${
+                              img.source === "ki"
+                                ? "bg-bronze/15 text-bronze"
+                                : "bg-secondary text-foreground"
+                            }`}
+                          >
+                            {SOURCE_LABEL[img.source]}
+                          </span>
+                          <span className="text-muted-foreground">{img.sourceNote}</span>
+                        </p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+
+                <p className="mt-4 text-xs italic text-muted-foreground">
+                  Diese Übersicht wird von uns gepflegt. KI-Bilder mit realistisch dargestellten
+                  Personen sind zusätzlich sichtbar mit einem Sternchen gekennzeichnet, bei echten
+                  Fotos mit erkennbaren Personen liegt eine Einwilligung der abgebildeten Personen
+                  vor.
+                </p>
+              </div>
+            )}
+          </div>
+
         </div>
       </section>
 
