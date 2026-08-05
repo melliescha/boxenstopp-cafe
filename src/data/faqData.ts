@@ -407,7 +407,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Welche Bilder auf der Website sind KI-generiert?",
         answer:
-          "Echte Fotos sind Aufnahmen von unserem Bistro, den Räumen, der Terrasse und unseren Speisen. Alle Bilder, die mit KI erstellt oder nachbearbeitet wurden, erkennt man am kleinen „AI“-Rundlogo am Bild. Ein Klick darauf führt zu unseren KI-Hinweisen.",
+          "Echte Fotos sind Aufnahmen von unserem Bistro, den Räumen, der Terrasse und unseren Speisen. KI-generierte Bilder tragen direkt im Bild das Label „KI generiert“, nur KI-bearbeitete Bilder ein kleines „KI“-Rundlabel. Ein Klick darauf führt zu unserem Transparenzbericht.",
       },
       {
         question: "Sind auf den KI-Bildern echte Menschen zu sehen?",
