@@ -99,7 +99,7 @@ const faqItems = [
   },
   {
     q: "Wer ist verantwortlich, wenn ein KI-Bild oder ein Text fehlerhaft ist?",
-    a: "Die redaktionelle Verantwortung liegt ausschließlich bei uns Menschen, namentlich bei Eugen Schall (verantwortlich gemäß § 18 Abs. 2 MStV). Jedes Bild und jeder Text wird vor der Veröffentlichung gelesen, geprüft und freigegeben. Wenn dir trotzdem ein Fehler auffällt: sag uns Bescheid, wir korrigieren ihn schnellstmöglich.",
+    a: "Die redaktionelle Verantwortung liegt ausschließlich bei uns Menschen, namentlich bei Eugen Schall (verantwortlich gemäß § 18 Abs. 2 MStV). Jedes Bild und jeder Text wird vor der Veröffentlichung in zwei Schritten geprüft: zunächst durch OPTIVANTA Agency (konzeptionell, technisch, rechtlich) und danach persönlich durch Eugen Schall als inhaltliche Endfreigabe. Wenn dir trotzdem ein Fehler auffällt: sag uns Bescheid, wir korrigieren ihn schnellstmöglich.",
   },
 ];
 
@@ -273,6 +273,18 @@ const KiTransparenz = () => {
                 Verantwortung liegt ausschließlich bei uns Menschen, namentlich bei{" "}
                 <strong className="text-foreground">Eugen Schall</strong> (verantwortlich gemäß
                 § 18 Abs. 2 MStV). Kein Inhalt – weder Text noch Bild – geht ungeprüft online.
+              </p>
+            </div>
+            <div className="flex gap-4">
+              <BadgeCheck className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: "#9E7C4E" }} aria-hidden="true" />
+              <p className="text-muted-foreground leading-relaxed">
+                <strong className="text-foreground">Doppelte menschliche Freigabe:</strong> Jeder
+                Inhalt – Text wie Bild – wird vor der Veröffentlichung in zwei Schritten geprüft:
+                zunächst durch{" "}
+                <a href="https://optivantaagency.com/" target="_blank" rel="noopener noreferrer" className="text-foreground underline decoration-dotted">OPTIVANTA Agency</a>{" "}
+                (konzeptionelle, technische und rechtliche Prüfung) und anschließend durch{" "}
+                <strong className="text-foreground">Eugen Schall</strong> persönlich als
+                inhaltliche Endfreigabe. Erst nach beiden Freigaben geht etwas online.
               </p>
             </div>
             <div className="flex gap-4">
