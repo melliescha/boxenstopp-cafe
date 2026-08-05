@@ -121,7 +121,7 @@ const FitesAllgaeu = () => {
     <Layout>
       <SEO
         title="FITES Allgäu Hergatz | Kostenloses Probetraining bis Dezember"
-        description="Fitnessstudio in Hergatz: HYROX, Fitness-Boxen, Tabata & HIIT. Persönliche Betreuung von Eugen, kleine Gruppen, Wellpass-Partner. Jetzt kostenloses Probetraining sichern."
+        description="Fitnessstudio in Hergatz: HYROX, FITES Boxen, HIIT & Tabata, Ganzkörpertraining und Personal Training. Persönliche Betreuung von Eugen, kleine Gruppen, Wellpass-Partner."
         path="/fites-allgaeu"
         image="/og-image.jpg"
         jsonLd={jsonLd}
