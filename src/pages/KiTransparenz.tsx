@@ -3,51 +3,13 @@ import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import {
   ShieldCheck,
-  ImageIcon,
-  FileText,
-  Sparkles,
   UserCheck,
   EyeOff,
   BadgeCheck,
   Lock,
   Gavel,
-  Server,
   MessageSquareQuote,
-  AlertCircle,
 } from "lucide-react";
-
-const tools = [
-  {
-    name: "Lovable",
-    provider: "Lovable Labs Inc., USA",
-    purpose: "KI-gestützte Webentwicklungsplattform – Layout, Komponenten, Code",
-    icon: Server,
-  },
-  {
-    name: "ChatGPT",
-    provider: "OpenAI, L.L.C., USA",
-    purpose: "Sprachmodell für Text-Entwürfe, Formulierungshilfen, Recherche; Logo-Entwurf",
-    icon: FileText,
-  },
-  {
-    name: "Google Gemini",
-    provider: "Google Ireland Ltd. / Google LLC",
-    purpose: "Sprachmodell für Text- und Recherche-Unterstützung",
-    icon: Sparkles,
-  },
-  {
-    name: "Anthropic Claude",
-    provider: "Anthropic PBC, USA",
-    purpose: "Sprachmodell für Texte, Code-Reviews, redaktionelle Unterstützung, Bild-Prompts",
-    icon: FileText,
-  },
-  {
-    name: "Higgsfield AI",
-    provider: "Higgsfield, Inc., USA",
-    purpose: "KI-Bildgenerator für Ambiente-, Produkt- und Stimmungsbilder",
-    icon: ImageIcon,
-  },
-];
 
 const guarantees = [
   {
@@ -58,7 +20,7 @@ const guarantees = [
   {
     icon: UserCheck,
     title: "Keine Gäste oder Dritte auf KI-Bildern",
-    text: "KI-Bilder zeigen überwiegend fiktive Personen, Szenen ohne erkennbare Gesichter, Ambiente- und Produktbilder. Gäste, Mitarbeitende oder Dritte werden niemals auf KI-Bildern abgebildet oder nachgebildet. Ausnahme: KI-generierte Bilder von uns selbst (Eugen & Helena) — siehe Abschnitt 5.",
+    text: "KI-Bilder zeigen überwiegend fiktive Personen, Szenen ohne erkennbare Gesichter, Ambiente- und Produktbilder. Gäste, Mitarbeitende oder Dritte werden niemals auf KI-Bildern abgebildet oder nachgebildet. Ausnahme: KI-generierte Bilder von uns selbst (Eugen & Helena) — siehe Abschnitt 3.",
   },
   {
     icon: BadgeCheck,
@@ -82,16 +44,8 @@ const faqItems = [
     a: "Die meisten KI-Bilder zeigen fiktive Personen oder Szenen ohne erkennbare Gesichter — Gäste, Mitarbeitende oder Dritte werden nie abgebildet. Zusätzlich haben wir KI genutzt, um Bilder von uns selbst (Eugen & Helena) zu erstellen. Diese bilden uns als reale Personen ab und sind daher technisch ein Deepfake im Sinne von Art. 3 Nr. 60 EU AI Act. Da es unsere eigenen Bilder sind, liegt die Einwilligung der abgebildeten Personen vor, und wir weisen hier transparent gemäß Art. 50 EU AI Act darauf hin.",
   },
   {
-    q: "Welche KI-Werkzeuge nutzt ihr für Bilder?",
-    a: "Die Bildaufträge wurden mit Anthropic Claude formuliert und über Higgsfield AI umgesetzt. Unser Logo ist ein KI-Entwurf, erstellt mit ChatGPT (OpenAI).",
-  },
-  {
-    q: "Und für die Texte?",
-    a: "Für Entwürfe, Formulierungen, Rechtschreibung und Struktur nutzen wir Anthropic Claude, Lovable, Google Gemini und ChatGPT als Schreibhilfe. Die Inhalte selbst stammen von uns: unsere Geschichte, unsere Preise, unsere Produkte, unsere Partner. Kein Text geht ungeprüft online.",
-  },
-  {
     q: "Warum nutzt ihr überhaupt KI?",
-    a: "Weil wir ein kleines Familienunternehmen sind und kein Werbestudio. KI hilft uns, eine einladende Website mit verständlichen Texten zu bauen, ohne ein teures Agenturteam zu bezahlen. Die Zeit, die wir dadurch sparen, stecken wir lieber in den Kaffee und in unsere Gäste.",
+    a: "Weil wir ein kleines Familienunternehmen sind und kein Werbestudio. KI hilft uns, eine einladende Website mit verständlichen Texten zu bauen. Die Zeit, die wir dadurch sparen, stecken wir lieber in den Kaffee und in unsere Gäste.",
   },
   {
     q: "Werden meine Daten an KI-Systeme weitergegeben?",
@@ -99,7 +53,11 @@ const faqItems = [
   },
   {
     q: "Wer ist verantwortlich, wenn ein KI-Bild oder ein Text fehlerhaft ist?",
-    a: "Die redaktionelle Verantwortung liegt ausschließlich bei uns Menschen, namentlich bei Eugen Schall (verantwortlich gemäß § 18 Abs. 2 MStV). Jedes Bild und jeder Text wird vor der Veröffentlichung in zwei Schritten geprüft: zunächst durch OPTIVANTA Agency (konzeptionell, technisch, rechtlich) und danach persönlich durch Eugen Schall als inhaltliche Endfreigabe. Wenn dir trotzdem ein Fehler auffällt: sag uns Bescheid, wir korrigieren ihn schnellstmöglich.",
+    a: "Die redaktionelle Verantwortung liegt ausschließlich bei uns Menschen, namentlich bei Eugen Schall (verantwortlich gemäß § 18 Abs. 2 MStV). Jedes Bild und jeder Text wird vor der Veröffentlichung von uns gelesen, geprüft und freigegeben. Wenn dir trotzdem ein Fehler auffällt: sag uns Bescheid, wir korrigieren ihn schnellstmöglich.",
+  },
+  {
+    q: "Wo finde ich die rechtlichen Details dazu?",
+    a: "Kurz zusammengefasst auf dieser Seite, ausführlich in Abschnitt 16 der Datenschutzerklärung (Einsatz von KI-generierten Inhalten, EU AI Act) sowie im Impressum unter Bildnachweise und Urheberrecht.",
   },
 ];
 
@@ -108,7 +66,7 @@ const KiTransparenz = () => {
     <Layout>
       <SEO
         title="KI-Transparenz | Bistro Boxenstopp"
-        description="Ausführlicher Transparenzbericht zum Einsatz künstlicher Intelligenz auf dieser Website: Werkzeuge, Kennzeichnung, Datenschutz und EU AI Act."
+        description="Transparenzbericht zum Einsatz künstlicher Intelligenz auf dieser Website: Kennzeichnung, Datenschutz und EU AI Act."
         path="/ki-transparenz"
       />
 
@@ -127,10 +85,8 @@ const KiTransparenz = () => {
           <p className="text-lg text-muted-foreground leading-relaxed">
             Wir gehen offen und ehrlich damit um: Ein Teil der Bilder und Texte dieser Website
             wurde mit Hilfe künstlicher Intelligenz erstellt oder bearbeitet. Diese Seite
-            dokumentiert ausführlich, <strong className="text-foreground">welche</strong> Werkzeuge
-            wir einsetzen, <strong className="text-foreground">wofür</strong>, was mit
-            Gästedaten passiert (nichts) und wie wir sicherstellen, dass wir mit dem EU AI Act
-            konform sind.
+            erklärt, wie wir das transparent kennzeichnen, was mit Gästedaten passiert (nichts)
+            und wie wir mit dem EU AI Act konform sind.
           </p>
         </div>
       </section>
@@ -155,88 +111,11 @@ const KiTransparenz = () => {
         </div>
       </section>
 
-      {/* Werkzeuge */}
-      <section className="py-10 bg-muted/30">
-        <div className="container mx-auto px-6 max-w-3xl">
-          <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-2">
-            1. Welche KI-Werkzeuge wir einsetzen
-          </h2>
-          <p className="text-muted-foreground leading-relaxed mb-6">
-            Für Konzeption, Text-Entwürfe, Programmierung und Bildmaterial dieser Website haben
-            wir folgende KI-Werkzeuge genutzt. Alle Inhalte stammen aus unserem eigenen
-            redaktionellen Umfeld.
-          </p>
-          <div className="space-y-4">
-            {tools.map((t) => (
-              <div
-                key={t.name}
-                className="flex gap-4 rounded-lg border border-border bg-card p-4"
-              >
-                <div
-                  className="flex-shrink-0 w-11 h-11 rounded-full flex items-center justify-center"
-                  style={{ backgroundColor: "#9E7C4E22" }}
-                >
-                  <t.icon className="w-5 h-5" style={{ color: "#9E7C4E" }} aria-hidden="true" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground">
-                    {t.name}{" "}
-                    <span className="font-normal text-muted-foreground text-sm">
-                      · {t.provider}
-                    </span>
-                  </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed mt-0.5">
-                    {t.purpose}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Wofür KI / Wofür nicht */}
-      <section className="py-12 bg-background">
-        <div className="container mx-auto px-6 max-w-3xl">
-          <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
-            2. Wofür KI eingesetzt wird – und wofür nicht
-          </h2>
-          <div className="grid sm:grid-cols-2 gap-6">
-            <div className="rounded-xl border border-border bg-card p-6">
-              <h3 className="font-serif text-lg font-bold text-foreground mb-3 flex items-center gap-2">
-                <BadgeCheck className="w-5 h-5" style={{ color: "#9E7C4E" }} aria-hidden="true" />
-                Dafür
-              </h3>
-              <ul className="space-y-2 text-sm text-muted-foreground leading-relaxed list-disc pl-5">
-                <li>Entwürfe und Struktur für Texte und Beschreibungen</li>
-                <li>Stimmungs-, Ambiente- und Produktbilder</li>
-                <li>Unser Logo (ChatGPT)</li>
-                <li>Layout, Komponenten und Code (Lovable)</li>
-                <li>Rechtschreibung, Formulierung, Recherche</li>
-              </ul>
-            </div>
-            <div className="rounded-xl border border-border bg-card p-6">
-              <h3 className="font-serif text-lg font-bold text-foreground mb-3 flex items-center gap-2">
-                <AlertCircle className="w-5 h-5" style={{ color: "#b04a4a" }} aria-hidden="true" />
-                Nicht dafür
-              </h3>
-              <ul className="space-y-2 text-sm text-muted-foreground leading-relaxed list-disc pl-5">
-                <li>Kein KI-Chatbot für Gäste</li>
-                <li>Keine automatisierte Entscheidungsfindung (Art. 22 DSGVO)</li>
-                <li>Keine Eingabe von Gästedaten in KI-Systeme</li>
-                <li>Keine Abbildung von Gästen, Mitarbeitenden oder Drittpersonen</li>
-                <li>Keine Trainingsdaten aus unserem Gästekontakt</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Kennzeichnung */}
       <section className="py-10 bg-muted/30">
         <div className="container mx-auto px-6 max-w-3xl">
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
-            3. Kennzeichnung KI-generierter Inhalte
+            1. Kennzeichnung KI-generierter Inhalte
           </h2>
           <div className="rounded-xl border border-border bg-card p-6 space-y-4 text-muted-foreground leading-relaxed">
             <p>
@@ -259,11 +138,11 @@ const KiTransparenz = () => {
         </div>
       </section>
 
-      {/* Redaktionelle Verantwortung & Infrastruktur */}
+      {/* Redaktionelle Verantwortung */}
       <section className="py-10 bg-background">
         <div className="container mx-auto px-6 max-w-3xl">
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
-            4. Redaktionelle Verantwortung & technische Infrastruktur
+            2. Redaktionelle Verantwortung
           </h2>
           <div className="space-y-4">
             <div className="flex gap-4">
@@ -278,30 +157,10 @@ const KiTransparenz = () => {
             <div className="flex gap-4">
               <BadgeCheck className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: "#9E7C4E" }} aria-hidden="true" />
               <p className="text-muted-foreground leading-relaxed">
-                <strong className="text-foreground">Doppelte menschliche Freigabe:</strong> Jeder
-                Inhalt – Text wie Bild – wird vor der Veröffentlichung in zwei Schritten geprüft:
-                zunächst durch{" "}
-                <a href="https://optivantaagency.com/" target="_blank" rel="noopener noreferrer" className="text-foreground underline decoration-dotted">OPTIVANTA Agency</a>{" "}
-                (konzeptionelle, technische und rechtliche Prüfung) und anschließend durch{" "}
-                <strong className="text-foreground">Eugen Schall</strong> persönlich als
-                inhaltliche Endfreigabe. Erst nach beiden Freigaben geht etwas online.
-              </p>
-            </div>
-            <div className="flex gap-4">
-              <Server className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: "#9E7C4E" }} aria-hidden="true" />
-              <p className="text-muted-foreground leading-relaxed">
-                <strong className="text-foreground">Quellcode:</strong> Der Quellcode dieser Website
-                wird in einem Repository bei <strong className="text-foreground">GitHub</strong>{" "}
-                (GitHub, Inc., USA) verwaltet.
-              </p>
-            </div>
-            <div className="flex gap-4">
-              <Server className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: "#9E7C4E" }} aria-hidden="true" />
-              <p className="text-muted-foreground leading-relaxed">
-                <strong className="text-foreground">Hosting:</strong> Die Auslieferung erfolgt über{" "}
-                <strong className="text-foreground">Cloudflare</strong> (Cloudflare, Inc., USA).
-                Beim bloßen Aufruf der Website findet keine Datenübermittlung an die
-                KI-Anbieter statt.
+                <strong className="text-foreground">Menschliche Freigabe:</strong> Jeder Inhalt –
+                Text wie Bild – wird vor der Veröffentlichung von uns gelesen, geprüft und
+                freigegeben. Ein automatisierter oder rein KI-gesteuerter
+                Veröffentlichungsprozess findet nicht statt.
               </p>
             </div>
           </div>
@@ -312,7 +171,7 @@ const KiTransparenz = () => {
       <section className="py-10 bg-muted/30">
         <div className="container mx-auto px-6 max-w-3xl">
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
-            5. Rechtsgrundlagen
+            3. Rechtsgrundlagen
           </h2>
           <div className="rounded-xl border border-border bg-card p-6 space-y-4 text-muted-foreground leading-relaxed">
             <div className="flex gap-3">
@@ -362,7 +221,7 @@ const KiTransparenz = () => {
         <div className="container mx-auto px-6 max-w-3xl">
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-2 flex items-center gap-3">
             <MessageSquareQuote className="w-7 h-7" style={{ color: "#9E7C4E" }} aria-hidden="true" />
-            6. Häufige Fragen zum Thema KI
+            4. Häufige Fragen zum Thema KI
           </h2>
           <p className="text-muted-foreground mb-6">
             Die ausführlichen Antworten stehen auch in unseren{" "}
@@ -394,7 +253,7 @@ const KiTransparenz = () => {
       <section className="py-10 bg-muted/30">
         <div className="container mx-auto px-6 max-w-3xl">
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
-            7. Weiterführende rechtliche Dokumente
+            5. Weiterführende rechtliche Dokumente
           </h2>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -408,7 +267,7 @@ const KiTransparenz = () => {
               to="/impressum"
               className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-4 py-2.5 text-sm font-medium text-foreground hover:border-warm-gold transition-colors"
             >
-              <FileText className="w-4 h-4" style={{ color: "#9E7C4E" }} aria-hidden="true" />
+              <MessageSquareQuote className="w-4 h-4" style={{ color: "#9E7C4E" }} aria-hidden="true" />
               Impressum (Bildnachweise & Urheberrecht)
             </Link>
             <Link
@@ -424,10 +283,9 @@ const KiTransparenz = () => {
 
       {/* Stand */}
       <section className="py-10 bg-background">
-        <div className="container mx-auto px-6 max-w-3xl">
-          <p className="text-sm text-muted-foreground italic">
-            Stand: August 2026 · Diese Seite wird von Eugen Schall gepflegt. Bei Fragen zum
-            Einsatz von KI wenden Sie sich gerne an die im Impressum genannten Kontaktdaten.
+        <div className="container mx-auto px-6 max-w-3xl text-center">
+          <p className="text-sm text-muted-foreground">
+            Stand: August 2026 · Bistro Boxenstopp, Hergatz
           </p>
         </div>
       </section>

@@ -597,43 +597,13 @@ const Datenschutz = () => {
               für künstlich erzeugte oder manipulierte Inhalte vorsieht.
             </P>
 
-            <H3>16.1 Eingesetzte KI-Werkzeuge</H3>
+            <H3>16.1 Einsatz von KI-Werkzeugen</H3>
             <P>
               Für Konzeption, Text-Entwürfe, Programmierung und Bildmaterial dieser Website haben
-              wir insbesondere folgende KI-Werkzeuge genutzt:
-            </P>
-            <ul style={{ color: warmBrown, fontSize: 16, lineHeight: 1.7, paddingLeft: 24, marginBottom: 14 }}>
-              <li>
-                <strong>Lovable</strong> (Lovable Labs Inc., USA): KI-gestützte
-                Webentwicklungsplattform zur Erstellung von Layout, Komponenten und Code.
-              </li>
-              <li>
-                <strong>ChatGPT</strong> (OpenAI, L.L.C., USA): Sprachmodell für Text-Entwürfe,
-                Formulierungshilfen und Recherche. Zusätzlich wurde unser Logo mit ChatGPT
-                KI-generiert.
-              </li>
-              <li>
-                <strong>Google Gemini</strong> (Google Ireland Ltd. / Google LLC): Sprachmodell
-                für Text- und Recherche-Unterstützung.
-              </li>
-              <li>
-                <strong>Anthropic Claude</strong> (Anthropic PBC, USA): Sprachmodell für Texte,
-                Code-Reviews und redaktionelle Unterstützung.
-              </li>
-              <li>
-                <strong>Higgsfield AI</strong> (Higgsfield, Inc., USA): KI-Bildgenerator für
-                stimmungsvolle Foto-Eindrücke, Produkt- und Ambiente-Bilder. Die Bildaufträge
-                (Prompts) wurden mit Anthropic Claude erstellt. Sie zeigen überwiegend fiktive
-                Personen oder Szenen ohne erkennbare Gesichter; Gäste, Mitarbeitende oder Dritte
-                werden nicht abgebildet. Zusätzlich haben wir Higgsfield AI genutzt, um Bilder von
-                uns selbst (Eugen & Helena Schall) zu erstellen (siehe Abschnitt 16.2).
-              </li>
-            </ul>
-            <P>
-              Sämtliche über diese Werkzeuge verarbeiteten Inhalte stammen aus unserem eigenen
-              redaktionellen Umfeld. Personenbezogene Daten unserer Gäste, Kundinnen und Kunden
-              werden dabei <strong>nicht</strong> in KI-Systeme eingegeben oder zu Trainingszwecken
-              weitergegeben.
+              wir KI-gestützte Werkzeuge eingesetzt. Sämtliche verarbeiteten Inhalte stammen aus
+              unserem eigenen redaktionellen Umfeld. Personenbezogene Daten unserer Gäste,
+              Kundinnen und Kunden werden dabei <strong>nicht</strong> in KI-Systeme eingegeben
+              oder zu Trainingszwecken weitergegeben.
             </P>
 
             <H3>16.2 Abbildung realer Personen und Deepfake-Hinweis</H3>
@@ -645,8 +615,8 @@ const Datenschutz = () => {
               biometrischen Merkmale werden nicht verarbeitet.
             </P>
             <P>
-              <strong>Ausnahme – KI-Bilder von uns selbst:</strong> Wir haben KI (Higgsfield AI)
-              zusätzlich genutzt, um Bilder von uns selbst, Eugen und Helena Schall, zu erstellen.
+              <strong>Ausnahme – KI-Bilder von uns selbst:</strong> Wir haben KI zusätzlich
+              genutzt, um Bilder von uns selbst, Eugen und Helena Schall, zu erstellen.
               Diese Bilder bilden uns als reale, erkennbare Personen ab und sind daher im Sinne
               von Art. 3 Nr. 60 EU AI Act als <em>Deepfake</em> einzuordnen. Da es unsere eigenen
               Abbildungen sind, liegt die Einwilligung der abgebildeten Personen (uns selbst)
@@ -678,29 +648,18 @@ const Datenschutz = () => {
             </P>
 
 
-            <H3>16.4 Technische Infrastruktur und Freigabe</H3>
+            <H3>16.4 Menschliche Freigabe</H3>
             <P>
-              Der Quellcode dieser Website wird in einem Repository bei GitHub (GitHub, Inc., USA)
-              verwaltet, das Hosting erfolgt über Cloudflare (Cloudflare, Inc., USA). Kein Inhalt,
-              weder Text noch Bild, geht ungeprüft online: Jede Änderung wird vor der
-              Veröffentlichung von uns als Menschen gelesen, geprüft und freigegeben.
-            </P>
-            <P>
-              Die Freigabe erfolgt dabei in zwei Schritten – eine doppelte menschliche
-              Überprüfung: Zunächst prüft OPTIVANTA Agency (internationale Digitalagentur,
-              <ExtLink href="https://optivantaagency.com/">optivantaagency.com</ExtLink>) jeden
-              Inhalt konzeptionell, technisch und rechtlich. Anschließend erfolgt die inhaltliche
-              Endfreigabe durch Eugen Schall persönlich. Erst nach beiden Freigaben wird ein
-              Inhalt veröffentlicht. Ein automatisierter oder rein KI-gesteuerter
-              Veröffentlichungsprozess findet nicht statt.
+              Kein Inhalt, weder Text noch Bild, geht ungeprüft online. Jede Änderung wird vor der
+              Veröffentlichung von uns als Menschen gelesen, geprüft und freigegeben. Ein
+              automatisierter oder rein KI-gesteuerter Veröffentlichungsprozess findet nicht statt.
             </P>
 
             <H3>16.5 Verarbeitung durch die KI-Anbieter</H3>
             <P>
               Beim bloßen Aufruf unserer Website findet <strong>keine</strong> Datenübermittlung
-              an die genannten KI-Anbieter statt. Die KI-Werkzeuge werden ausschließlich intern von
-              uns zur Erstellung von Inhalten genutzt. Die Anbieter der eingesetzten Systeme haben
-              ihren Sitz teilweise in den USA. Rechtsgrundlage für die interne Nutzung ist Art. 6
+              an KI-Anbieter statt. Die KI-Werkzeuge werden ausschließlich intern von uns zur
+              Erstellung von Inhalten genutzt. Rechtsgrundlage für die interne Nutzung ist Art. 6
               Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer effizienten Erstellung und
               Pflege unserer Website).
             </P>
