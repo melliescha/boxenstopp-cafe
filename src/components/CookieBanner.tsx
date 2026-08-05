@@ -49,7 +49,7 @@ const CookieBanner = () => {
   }, []);
 
   const acceptAll = () => {
-    saveConsent({ externalMedia: true, analytics: true }, "accept_all");
+    saveConsent({ externalMedia: true, analytics: false }, "accept_all");
     close();
   };
 
@@ -59,13 +59,13 @@ const CookieBanner = () => {
   };
 
   const saveSelection = () => {
-    saveConsent({ externalMedia: draft.externalMedia, analytics: draft.analytics }, "custom");
+    saveConsent({ externalMedia: draft.externalMedia, analytics: false }, "custom");
     close();
   };
 
   if (!visible) return null;
 
-  const toggle = (key: "externalMedia" | "analytics") =>
+  const toggle = (key: "externalMedia") =>
     setDraft((prev) => ({ ...prev, [key]: !prev[key] }));
 
   return (
@@ -81,7 +81,7 @@ const CookieBanner = () => {
           Datenschutz
         </h2>
         <p className="text-sm leading-relaxed mb-4" style={{ color: CREAM }}>
-          Externe Inhalte (Google Maps) und Statistik laden wir nur mit Ihrer Einwilligung.
+          Externe Inhalte (Google Maps) laden wir nur mit Ihrer Einwilligung.
           Widerruf jederzeit im Footer.{" "}
           <a href="/datenschutz" className="underline" style={{ color: BRONZE }}>
             Datenschutzerklärung
@@ -129,29 +129,6 @@ const CookieBanner = () => {
                   onChange={() => toggle("externalMedia")}
                   className="mt-1 w-5 h-5 shrink-0"
                   aria-label="Externe Inhalte erlauben"
-                />
-              </div>
-            </label>
-
-            <label
-              className="block rounded-lg p-4 cursor-pointer"
-              style={{ backgroundColor: "rgba(254,244,236,0.08)", border: "1px solid rgba(254,244,236,0.2)" }}
-            >
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <p className="text-sm font-semibold" style={{ color: CREAM }}>
-                    Statistik / Reichweitenmessung
-                  </p>
-                  <p className="text-xs mt-1" style={{ color: "rgba(254,244,236,0.75)" }}>
-                    Anonyme Nutzungsauswertung. Derzeit kein Dienst aktiv.
-                  </p>
-                </div>
-                <input
-                  type="checkbox"
-                  checked={draft.analytics}
-                  onChange={() => toggle("analytics")}
-                  className="mt-1 w-5 h-5 shrink-0"
-                  aria-label="Statistik erlauben"
                 />
               </div>
             </label>
