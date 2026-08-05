@@ -131,6 +131,16 @@ const Impressum = () => {
             gestattet.
           </Block>
 
+          <Block title="Markenhinweis:">
+            Alle auf dieser Website genannten Marken-, Produkt- und Firmennamen sind Eigentum der
+            jeweiligen Rechteinhaber. Die Nennung erfolgt ausschließlich beschreibend, um unser
+            Angebot zu erläutern (§ 23 MarkenG), und begründet keine Partnerschaft, Empfehlung
+            oder Genehmigung durch die Markeninhaber. Fremde Wort- und Bildmarken (Logos) werden
+            auf dieser Website nicht verwendet.
+          </Block>
+
+
+
           <Block title="Bildnachweise und KI-generierte Bilder:">
             Reale Fotos: Bistro Boxenstopp / Eugen Schall sowie Bildmaterial unserer Partner,
             das uns mit deren Einverständnis zur Nutzung überlassen wurde (Marken und Logos
