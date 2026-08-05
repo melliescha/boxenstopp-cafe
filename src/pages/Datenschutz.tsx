@@ -652,12 +652,20 @@ const Datenschutz = () => {
 
             <H3>16.3 Kennzeichnung und Aussagekraft</H3>
             <P>
-              KI-generierte Bilder auf dieser Website sind mit einem entsprechenden Hinweis
-              („KI-generiert" bzw. Icon) versehen. Sie dienen ausschließlich illustrativen
-              Zwecken und können von der tatsächlichen Realität abweichen. Sie stellen keine
-              verbindliche Beschreibung unserer Produkte, Räumlichkeiten oder Dienstleistungen
-              dar. Maßgeblich ist stets das tatsächliche Angebot vor Ort.
+              KI-generierte oder KI-bearbeitete Bilder sind auf dieser Website mit einem
+              kleinen Sternchen (*) am Bild gekennzeichnet. Ein Klick darauf führt direkt zu
+              diesem ausführlichen KI-Hinweis. Zusätzlich weisen wir in der Bildergalerie und
+              im Seitenfuß allgemein auf den Einsatz von KI-Bildern hin. Bei Texten dieser
+              Website wurden KI-Werkzeuge lediglich unterstützend eingesetzt; alle Inhalte
+              wurden vor Veröffentlichung von uns redaktionell geprüft und verantwortet.
             </P>
+            <P>
+              KI-Bilder dienen ausschließlich illustrativen Zwecken und können von der
+              tatsächlichen Realität abweichen. Sie stellen keine verbindliche Beschreibung
+              unserer Produkte, Räumlichkeiten oder Dienstleistungen dar. Maßgeblich ist stets
+              das tatsächliche Angebot vor Ort.
+            </P>
+
 
             <H3>16.4 Verarbeitung durch die KI-Anbieter</H3>
             <P>
