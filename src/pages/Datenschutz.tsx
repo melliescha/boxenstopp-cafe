@@ -616,12 +616,13 @@ const Datenschutz = () => {
             </P>
             <P>
               <strong>Ausnahme – KI-Bilder von uns selbst:</strong> Wir haben KI zusätzlich
-              genutzt, um Bilder von uns selbst, Eugen und Helena Schall, zu erstellen.
-              Diese Bilder bilden uns als reale, erkennbare Personen ab und sind daher im Sinne
-              von Art. 3 Nr. 60 EU AI Act als <em>Deepfake</em> einzuordnen. Da es unsere eigenen
-              Abbildungen sind, liegt die Einwilligung der abgebildeten Personen (uns selbst)
-              vor. Wir kennzeichnen diese Bilder mit dem Sternchen (*) und weisen hier
-              transparent gemäß Art. 50 EU AI Act darauf hin.
+              genutzt, um Bilder von uns selbst zu erstellen — Eugen und Helena Schall, Oliver
+              Schall sowie Melanie Dincmeir. Diese Bilder bilden uns als reale, erkennbare
+              Personen ab und sind daher im Sinne von Art. 3 Nr. 60 EU AI Act als{" "}
+              <em>Deepfake</em> einzuordnen. Da es sich um unsere eigenen Abbildungen handelt,
+              liegen die Einwilligungen der abgebildeten Personen ausdrücklich vor. Wir
+              kennzeichnen diese Bilder mit dem Sternchen (*) und weisen hier transparent gemäß
+              Art. 50 EU AI Act darauf hin.
             </P>
             <P>
               Daneben gibt es echte Fotos, auf denen die Inhaberfamilie zu sehen ist (z.&nbsp;B.

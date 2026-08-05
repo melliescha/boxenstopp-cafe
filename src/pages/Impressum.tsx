@@ -143,8 +143,9 @@ const Impressum = () => {
             bearbeitet. Diese Bilder sind mit einem Sternchen (*) gekennzeichnet bzw. am Ende der
             Bildergalerie und im Footer ausgewiesen (Transparenzhinweis gemäß Art. 50 der
             Verordnung (EU) 2024/1689, „EU AI Act"). Ausnahme: Einige KI-Bilder zeigen uns selbst
-            (Eugen & Helena Schall) als reale Personen — im Sinne von Art. 3 Nr. 60 EU AI Act
-            ein Deepfake, erstellt und verwendet mit eigener Einwilligung. Details dazu findest
+            (Eugen & Helena Schall, Oliver Schall, Melanie Dincmeir) als reale Personen — im Sinne
+            von Art. 3 Nr. 60 EU AI Act ein Deepfake, erstellt und verwendet mit ausdrücklicher
+            eigener Einwilligung. Details dazu findest
             du in unserer{" "}
             <a
               href="/datenschutz#ki-hinweis"
