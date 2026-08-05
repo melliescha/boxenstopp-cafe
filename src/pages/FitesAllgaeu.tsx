@@ -283,23 +283,24 @@ const FitesAllgaeu = () => {
               <MapPin className="w-5 h-5" style={{ color: BRONZE }} />
               <p className="text-xs uppercase tracking-[0.25em] font-semibold" style={{ color: BRONZE }}>Standort</p>
             </div>
-            <h3 className="font-serif text-2xl font-bold mb-3" style={{ color: NAVY }}>Direkt in Hergatz, Westallgäu</h3>
+            <h3 className="font-serif text-2xl font-bold mb-3" style={{ color: NAVY }}>Im Westallgäu, in Hergatz</h3>
             <address className="not-italic text-muted-foreground leading-relaxed">
               FITES Allgäu<br />
-              Bahnhofstraße 4<br />
+              Südhang 1<br />
               88145 Hergatz
             </address>
-            <p className="text-sm text-muted-foreground mt-3">Im selben Gebäude wie das Bistro Boxenstopp. Perfekt für Kaffee oder Protein-Shake nach dem Training.</p>
+            <p className="text-sm text-muted-foreground mt-3">Bistro Boxenstopp und FITES Allgäu sind im selben Gebäude. Perfekt für Kaffee oder Protein-Shake nach dem Training.</p>
           </div>
           <div>
             <div className="flex items-center gap-3 mb-3">
               <Clock className="w-5 h-5" style={{ color: BRONZE }} />
               <p className="text-xs uppercase tracking-[0.25em] font-semibold" style={{ color: BRONZE }}>Trainingszeiten</p>
             </div>
-            <h3 className="font-serif text-2xl font-bold mb-3" style={{ color: NAVY }}>Flexibel nach Absprache</h3>
+            <h3 className="font-serif text-2xl font-bold mb-3" style={{ color: NAVY }}>Kurszeiten auf der Website</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Kurszeiten und offenes Training werden individuell abgestimmt. Ruf an und wir finden einen Termin, der zu dir passt, auch abends oder am Wochenende.
+              Die aktuellen Kurszeiten findest du auf der FITES Website. Personal Training läuft ausschließlich nach Absprache, ruf einfach an und wir finden einen passenden Termin.
             </p>
+
           </div>
         </div>
       </section>
