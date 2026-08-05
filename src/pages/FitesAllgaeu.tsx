@@ -197,7 +197,7 @@ const FitesAllgaeu = () => {
               Bei FITES Allgäu bist du kein Mitglieder-Barcode. Eugen kennt jeden Namen, jedes Ziel, jede Schwachstelle. Du bekommst einen Trainingsplan, der zu dir passt, nicht zur Werbebroschüre einer Kette.
             </p>
             <p className="text-lg leading-relaxed" style={{ color: "#3d3d3d" }}>
-              Mehr als 30 Jahre Erfahrung, Boxtrainer-Lizenz, HYROX Coach, HIIT-Spezialist. Kleiner Ort, große Wirkung.
+              Vier Kurse plus Personal Training, das sind die Säulen bei FITES Allgäu: HYROX, FITES Boxen, HIIT & Tabata und Ganzkörpertraining. Kleiner Ort, große Wirkung.
             </p>
           </div>
         </div>
