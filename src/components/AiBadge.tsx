@@ -30,6 +30,7 @@ const AiBadge = ({ variant = "caption", className = "" }: AiBadgeProps) => {
           backgroundColor: "rgba(0,0,0,0.6)",
           boxShadow: "0 1px 3px rgba(0,0,0,0.7)",
           border: "1px solid rgba(255,255,255,0.35)",
+          opacity: 0.7,
         }}
       >
         {label}
