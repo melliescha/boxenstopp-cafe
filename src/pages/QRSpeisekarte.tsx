@@ -13,10 +13,16 @@ const QRSpeisekarte = () => {
       />
 
       {/* Minimal header */}
-      <div className="py-4 px-6 flex items-center justify-center gap-2">
-        <img src={logoIcon} alt="Bistro Boxenstopp Logo" className="h-8 w-auto" />
-        <span className="font-serif text-lg font-bold text-foreground">Speisekarte</span>
+      <div className="py-4 px-6 flex flex-col items-center justify-center gap-1">
+        <div className="flex items-center gap-2">
+          <img src={logoIcon} alt="Bistro Boxenstopp Logo" className="h-8 w-auto" />
+          <h1 className="font-serif text-lg font-bold text-foreground">Speisekarte</h1>
+        </div>
+        <p className="text-xs text-muted-foreground text-center">
+          Barista-Kaffee, Flammkuchen, Hüttenbrot, Kuchen und Getränke im Bistro Boxenstopp Hergatz.
+        </p>
       </div>
+
 
       {/* Flipbook */}
       <div className="flex-1 px-2 sm:px-6 pb-4">
