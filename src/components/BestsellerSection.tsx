@@ -22,7 +22,7 @@ interface Bestseller {
 const bestsellers: Bestseller[] = [
   {
     image: flammkuchenLachs,
-    alt: "Flammkuchen mit Lachs und Lauch",
+    alt: "KI generiert: Flammkuchen mit Lachs und Lauch",
     name: "Flammkuchen Lachs & Lauch",
     description: "Flammkuchencreme, Lachs und Lauch, unser beliebtester Flammkuchen",
     price: "7,30 €",
@@ -31,7 +31,7 @@ const bestsellers: Bestseller[] = [
   },
   {
     image: flammkuchenMediterran,
-    alt: "Flammkuchen Mediterran mit Hirtenkäse, Paprika und Zucchini",
+    alt: "KI generiert: Flammkuchen Mediterran mit Hirtenkäse, Paprika und Zucchini",
     name: "Flammkuchen Mediterran",
     description: "Flammkuchencreme, Hirtenkäse, gegrillte Paprika und Zucchini",
     price: "6,30 €",
@@ -40,7 +40,7 @@ const bestsellers: Bestseller[] = [
   },
   {
     image: raclettebrot,
-    alt: "Hüttenbrot Raclette mit Raclettekäse und Lauch",
+    alt: "KI generiert: Hüttenbrot Raclette mit Raclettekäse und Lauch",
     name: "Hüttenbrot Raclette",
     description: "Schwarzbrot mit Knoblauchbutter, Raclettekäse und Lauch",
     price: "7,70 €",
@@ -49,7 +49,7 @@ const bestsellers: Bestseller[] = [
   },
   {
     image: holzfaellerbrot,
-    alt: "Hüttenbrot Speck mit Käse, Speck, Zwiebeln und Schnittlauch",
+    alt: "KI generiert: Hüttenbrot Speck mit Käse, Speck, Zwiebeln und Schnittlauch",
     name: "Hüttenbrot Speck",
     description: "Schwarzbrot mit Knoblauchbutter, Käse, Speck, Zwiebeln und Schnittlauch",
     price: "7,40 €",
@@ -58,7 +58,7 @@ const bestsellers: Bestseller[] = [
   },
   {
     image: tomatenMozzarellaBrot,
-    alt: "Hüttenbrot Tomate Mozzarella mit Basilikum",
+    alt: "KI generiert: Hüttenbrot Tomate Mozzarella mit Basilikum",
     name: "Hüttenbrot Tomate Mozzarella",
     description: "Weizenbrot mit Basilikum, Mozzarella und Tomaten",
     price: "7,40 €",
