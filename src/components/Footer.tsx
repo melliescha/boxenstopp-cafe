@@ -223,7 +223,7 @@ const Footer = () => {
             Anzeigen
           </p>
 
-          <div className="flex flex-col gap-4 max-w-3xl mx-auto">
+          <div className="flex flex-col gap-4 w-full">
             {/* Anzeige: FITES Allgäu */}
             <div
               className="relative rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-md"
