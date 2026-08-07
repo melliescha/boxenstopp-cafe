@@ -82,7 +82,7 @@ const SEO = ({ title, description, path, image = DEFAULT_IMAGE, type = "website"
     // Per-route JSON-LD (sitewide CafeOrCoffeeShop stays in index.html as default)
     setJsonLd(jsonLd);
     return () => setJsonLd(undefined);
-  }, [title, description, path, image, type, jsonLd]);
+  }, [title, description, path, image, type, jsonLd, noindex]);
 
   return null;
 };
