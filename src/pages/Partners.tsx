@@ -516,6 +516,31 @@ const Partners = () => {
         </div>
       </section>
 
+      {/* Prominente OPTIVANTA Werbung, ganz unten */}
+      <section className="py-16 md:py-20 text-white" style={{ background: "linear-gradient(135deg, #164472, #1d5a8a)" }}>
+        <div className="container mx-auto px-6 max-w-4xl text-center">
+          <span className="inline-block bg-white/10 text-white text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-5">
+            Anzeige, unser Partner OPTIVANTA Agency
+          </span>
+          <h2 className="font-serif text-3xl md:text-5xl font-bold mb-5">
+            Dir gefällt diese Website?
+          </h2>
+          <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl mx-auto">
+            Du brauchst Sichtbarkeit für dein lokales Unternehmen? OPTIVANTA baut Websites, Google und
+            Meta Ads, die wirklich Gäste und Kunden bringen, auch mit kleinem Budget.
+          </p>
+          <a
+            href="https://optivantaagency.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-white px-8 py-4 rounded-xl font-semibold text-base md:text-lg hover:opacity-90 transition-opacity"
+            style={{ color: "#164472" }}
+          >
+            Jetzt Gespräch vereinbaren
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
 
 
     </Layout>
