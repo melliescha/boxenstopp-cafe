@@ -30,20 +30,22 @@ const routes = [
     path: "/",
     title: "Bistro Boxenstopp Hergatz | Kaffee & Flammkuchen",
     description:
-      "Barista-Kaffee, ofenfrische Flammkuchen und Hüttenbrot in Hergatz – Euer Stopp am Bodensee-Königssee-Radweg im Westallgäu.",
+      "Barista-Kaffee, ofenfrische Flammkuchen und Hüttenbrot in Hergatz, Euer Stopp am Bodensee-Königssee-Radweg im Westallgäu.",
     type: "restaurant.restaurant",
     image: `${SITE_URL}/og-image.jpg`,
+    imageAlt: "Bistro Boxenstopp in Hergatz im Westallgäu, Barista-Kaffee und Flammkuchen",
   },
   {
     path: "/speisekarte",
-    title: "Speisekarte – Bistro Boxenstopp Hergatz",
+    title: "Speisekarte, Bistro Boxenstopp Hergatz",
     description:
       "Unsere Karte: Flammkuchen, Pizza-Snacks, Brote, Barista-Kaffee, Matcha, Proteinshakes und der berühmte Boxenstopp-Spezial mit Kollagen.",
     image: `${SITE_URL}/og/speisekarte.jpg`,
+    imageAlt: "Speisekarte des Bistro Boxenstopp: Flammkuchen, Kaffee und Shakes",
   },
   {
     path: "/ueber-uns",
-    title: "Über uns – Familie Schall | Bistro Boxenstopp",
+    title: "Über uns, Familie Schall | Bistro Boxenstopp",
     description:
       "Hinter dem Bistro Boxenstopp im Westallgäu steht die Familie Schall: bodenständig, ehrlich, mit Leidenschaft für gute Küche und Gemeinschaft.",
     image: `${SITE_URL}/og/ueber-uns.jpg`,
@@ -52,15 +54,16 @@ const routes = [
     path: "/partner",
     title: "Unsere Partner | Bistro Boxenstopp",
     description:
-      "Wir arbeiten mit Cup&Cino (Foundation für sauberes Wasser), Herbalife Nutrition und Perplex Pizza & Baguette Deutschland zusammen.",
+      "Wir arbeiten mit FITES Allgäu, Cup&Cino, OPTIVANTA Agency, Herbalife Nutrition und Perplex zusammen.",
     image: `${SITE_URL}/og/partner.jpg`,
   },
   {
     path: "/galerie",
-    title: "Galerie – Bistro Boxenstopp Hergatz",
+    title: "Galerie, Bistro Boxenstopp Hergatz",
     description:
       "Eindrücke aus unserem Bistro im Allgäu: Kaffeespezialitäten, Flammkuchen, Atmosphäre.",
     image: `${SITE_URL}/og/galerie.jpg`,
+    imageAlt: "Bilder aus dem Bistro Boxenstopp in Hergatz: Kaffee, Flammkuchen und Terrasse",
   },
   {
     path: "/bewertungen",
