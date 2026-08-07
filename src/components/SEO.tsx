@@ -7,6 +7,8 @@ interface SEOProps {
   image?: string;
   type?: string;
   jsonLd?: object | object[];
+  /** true = Seite aus dem Index halten (z. B. QR-, 404-Seiten) */
+  noindex?: boolean;
 }
 
 const SITE_URL = "https://bistro-boxenstopp.de";
@@ -48,7 +50,7 @@ const setJsonLd = (data?: object | object[]) => {
   document.head.appendChild(script);
 };
 
-const SEO = ({ title, description, path, image = DEFAULT_IMAGE, type = "website", jsonLd }: SEOProps) => {
+const SEO = ({ title, description, path, image = DEFAULT_IMAGE, type = "website", jsonLd, noindex = false }: SEOProps) => {
   useEffect(() => {
     const url = `${SITE_URL}${path}`;
     const img = image.startsWith("http") ? image : `${SITE_URL}${image}`;
@@ -57,6 +59,7 @@ const SEO = ({ title, description, path, image = DEFAULT_IMAGE, type = "website"
     setMeta('meta[name="description"]', "content", description);
     setMeta('meta[http-equiv="content-language"]', "content", "de");
     setMeta('meta[name="language"]', "content", "de");
+    setMeta('meta[name="robots"]', "content", noindex ? "noindex, follow" : "index, follow");
     setLink("canonical", url);
 
     // Open Graph
@@ -79,7 +82,7 @@ const SEO = ({ title, description, path, image = DEFAULT_IMAGE, type = "website"
     // Per-route JSON-LD (sitewide CafeOrCoffeeShop stays in index.html as default)
     setJsonLd(jsonLd);
     return () => setJsonLd(undefined);
-  }, [title, description, path, image, type, jsonLd]);
+  }, [title, description, path, image, type, jsonLd, noindex]);
 
   return null;
 };

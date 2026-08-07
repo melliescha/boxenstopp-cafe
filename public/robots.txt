@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /qr-code
+Disallow: /qr-speisekarte
 
 Sitemap: https://bistro-boxenstopp.de/sitemap.xml
