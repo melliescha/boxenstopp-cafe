@@ -6,14 +6,18 @@
 
 - [Startseite](/): Übersicht, Öffnungszeiten und Highlights.
 - [Speisekarte](/speisekarte): Flammkuchen, Pizza-Snacks, Brote, Kaffee, Matcha, Shakes, Boxenstopp Spezial.
-- [Über uns](/ueber-uns): Familie Schall und die Geschichte hinter dem Bistro.
-- [Partner](/partner): Cup&Cino, Herbalife Nutrition, Perplex Pizza & Baguette.
+- [Über uns](/ueber-uns): Familie Schall, Geschichte und unsere Werte.
+- [Partner](/partner): FITES Allgäu, Cup&Cino, OPTIVANTA, Herbalife Nutrition, Perplex.
+- [FITES Allgäu](/fites-allgaeu): Fitnessstudio im selben Gebäude, HYROX, Fitness-Boxen, HIIT, Tabata, Personaltraining.
 - [Galerie](/galerie): Fotos aus Bistro, Terrasse und Umgebung.
-- [Bewertungen](/bewertungen): Gästestimmen und Google-Rezensionen.
+- [Bewertungen](/bewertungen): Gästestimmen und Bewertungsportale.
 - [Kontakt & Anfahrt](/kontakt): Adresse, Öffnungszeiten, Anfahrt mit Auto/Rad/Bahn.
-- [FAQ](/faq): Häufige Fragen zu Reservierung, Karte, Anfahrt, Allergenen.
+- [FAQ](/faq): Häufige Fragen zu Reservierung, Karte, Anfahrt, Allergenen, Zahlung.
+- [Radweg-Etappe Hergatz](/blog/bodensee-koenigssee-radweg-hergatz): Rast am Bodensee-Königssee-Radweg, Duschen, Steckdosen.
 
 ## Optional
 
+- [Hausordnung](/hausordnung)
+- [KI-Hinweis](/ki-transparenz)
 - [Impressum](/impressum)
 - [Datenschutz](/datenschutz)
