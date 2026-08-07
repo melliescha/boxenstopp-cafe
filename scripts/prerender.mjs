@@ -30,20 +30,22 @@ const routes = [
     path: "/",
     title: "Bistro Boxenstopp Hergatz | Kaffee & Flammkuchen",
     description:
-      "Barista-Kaffee, ofenfrische Flammkuchen und Hüttenbrot in Hergatz – Euer Stopp am Bodensee-Königssee-Radweg im Westallgäu.",
+      "Barista-Kaffee, ofenfrische Flammkuchen und Hüttenbrot in Hergatz, Euer Stopp am Bodensee-Königssee-Radweg im Westallgäu.",
     type: "restaurant.restaurant",
     image: `${SITE_URL}/og-image.jpg`,
+    imageAlt: "Bistro Boxenstopp in Hergatz im Westallgäu, Barista-Kaffee und Flammkuchen",
   },
   {
     path: "/speisekarte",
-    title: "Speisekarte – Bistro Boxenstopp Hergatz",
+    title: "Speisekarte, Bistro Boxenstopp Hergatz",
     description:
       "Unsere Karte: Flammkuchen, Pizza-Snacks, Brote, Barista-Kaffee, Matcha, Proteinshakes und der berühmte Boxenstopp-Spezial mit Kollagen.",
     image: `${SITE_URL}/og/speisekarte.jpg`,
+    imageAlt: "Speisekarte des Bistro Boxenstopp: Flammkuchen, Kaffee und Shakes",
   },
   {
     path: "/ueber-uns",
-    title: "Über uns – Familie Schall | Bistro Boxenstopp",
+    title: "Über uns, Familie Schall | Bistro Boxenstopp",
     description:
       "Hinter dem Bistro Boxenstopp im Westallgäu steht die Familie Schall: bodenständig, ehrlich, mit Leidenschaft für gute Küche und Gemeinschaft.",
     image: `${SITE_URL}/og/ueber-uns.jpg`,
@@ -52,19 +54,20 @@ const routes = [
     path: "/partner",
     title: "Unsere Partner | Bistro Boxenstopp",
     description:
-      "Wir arbeiten mit Cup&Cino (Foundation für sauberes Wasser), Herbalife Nutrition und Perplex Pizza & Baguette Deutschland zusammen.",
+      "Wir arbeiten mit FITES Allgäu, Cup&Cino, OPTIVANTA Agency, Herbalife Nutrition und Perplex zusammen.",
     image: `${SITE_URL}/og/partner.jpg`,
   },
   {
     path: "/galerie",
-    title: "Galerie – Bistro Boxenstopp Hergatz",
+    title: "Galerie, Bistro Boxenstopp Hergatz",
     description:
       "Eindrücke aus unserem Bistro im Allgäu: Kaffeespezialitäten, Flammkuchen, Atmosphäre.",
     image: `${SITE_URL}/og/galerie.jpg`,
+    imageAlt: "Bilder aus dem Bistro Boxenstopp in Hergatz: Kaffee, Flammkuchen und Terrasse",
   },
   {
     path: "/bewertungen",
-    title: "Bewertungen – Bistro Boxenstopp Hergatz",
+    title: "Bewertungen, Bistro Boxenstopp Hergatz",
     description:
       "Bewertet das Bistro Boxenstopp in Hergatz auf Google, TripAdvisor und Instagram.",
   },
@@ -97,14 +100,14 @@ const routes = [
   },
   {
     path: "/hausordnung",
-    title: "Hausordnung | Bistro Boxenstopp Hergatz",
+    title: "Hausordnung, Bistro Boxenstopp Hergatz",
     description:
       "Hausordnung des Bistro Boxenstopp: Rauchverbot im Gebäude, Aufsichtspflicht der Eltern, Regeln für Duschen und WC, Videoüberwachung und respektvolles Miteinander.",
     image: `${SITE_URL}/og-image.jpg`,
   },
   {
     path: "/ki-transparenz",
-    title: "KI-Hinweis | Bistro Boxenstopp",
+    title: "KI-Transparenz | Bistro Boxenstopp",
     description:
       "Kurzer Hinweis, wie wir künstliche Intelligenz für Bilder und Texte einsetzen und wer die redaktionelle Verantwortung trägt.",
     image: `${SITE_URL}/og-image.jpg`,
@@ -113,12 +116,12 @@ const routes = [
 
   {
     path: "/impressum",
-    title: "Impressum – Bistro Boxenstopp",
+    title: "Impressum, Bistro Boxenstopp",
     description: "Impressum und Anbieterkennzeichnung.",
   },
   {
     path: "/datenschutz",
-    title: "Datenschutz – Bistro Boxenstopp",
+    title: "Datenschutz, Bistro Boxenstopp",
     description: "Datenschutzerklärung gemäß DSGVO.",
   },
 ];
@@ -159,11 +162,17 @@ function applyRouteMeta(html, route) {
   );
 
   // Open Graph
+  const alt = escape(route.imageAlt ?? route.title);
   const og = [
     ["og:title", title],
     ["og:description", description],
     ["og:url", url],
     ["og:image", image],
+    ["og:image:secure_url", image],
+    ["og:image:type", image.endsWith(".png") ? "image/png" : "image/jpeg"],
+    ["og:image:width", "1200"],
+    ["og:image:height", "630"],
+    ["og:image:alt", alt],
     ["og:type", type],
     ["og:site_name", SITE_NAME],
     ["og:locale", "de_DE"],
@@ -182,6 +191,7 @@ function applyRouteMeta(html, route) {
     ["twitter:title", title],
     ["twitter:description", description],
     ["twitter:image", image],
+    ["twitter:image:alt", alt],
   ];
   for (const [name, val] of tw) {
     out = upsertTag(

@@ -5,6 +5,8 @@ interface SEOProps {
   description: string;
   path: string;
   image?: string;
+  /** Alternativtext des Vorschaubilds für Social Previews */
+  imageAlt?: string;
   type?: string;
   jsonLd?: object | object[];
   /** true = Seite aus dem Index halten (z. B. QR-, 404-Seiten) */
@@ -50,10 +52,20 @@ const setJsonLd = (data?: object | object[]) => {
   document.head.appendChild(script);
 };
 
-const SEO = ({ title, description, path, image = DEFAULT_IMAGE, type = "website", jsonLd, noindex = false }: SEOProps) => {
+const SEO = ({
+  title,
+  description,
+  path,
+  image = DEFAULT_IMAGE,
+  imageAlt,
+  type = "website",
+  jsonLd,
+  noindex = false,
+}: SEOProps) => {
   useEffect(() => {
     const url = `${SITE_URL}${path}`;
     const img = image.startsWith("http") ? image : `${SITE_URL}${image}`;
+    const alt = imageAlt ?? title;
 
     document.title = title;
     setMeta('meta[name="description"]', "content", description);
@@ -67,8 +79,11 @@ const SEO = ({ title, description, path, image = DEFAULT_IMAGE, type = "website"
     setMeta('meta[property="og:description"]', "content", description);
     setMeta('meta[property="og:url"]', "content", url);
     setMeta('meta[property="og:image"]', "content", img);
+    setMeta('meta[property="og:image:secure_url"]', "content", img);
+    setMeta('meta[property="og:image:type"]', "content", img.endsWith(".png") ? "image/png" : "image/jpeg");
     setMeta('meta[property="og:image:width"]', "content", "1200");
     setMeta('meta[property="og:image:height"]', "content", "630");
+    setMeta('meta[property="og:image:alt"]', "content", alt);
     setMeta('meta[property="og:type"]', "content", type);
     setMeta('meta[property="og:site_name"]', "content", SITE_NAME);
     setMeta('meta[property="og:locale"]', "content", LOCALE);
@@ -78,11 +93,12 @@ const SEO = ({ title, description, path, image = DEFAULT_IMAGE, type = "website"
     setMeta('meta[name="twitter:title"]', "content", title);
     setMeta('meta[name="twitter:description"]', "content", description);
     setMeta('meta[name="twitter:image"]', "content", img);
+    setMeta('meta[name="twitter:image:alt"]', "content", alt);
 
     // Per-route JSON-LD (sitewide CafeOrCoffeeShop stays in index.html as default)
     setJsonLd(jsonLd);
     return () => setJsonLd(undefined);
-  }, [title, description, path, image, type, jsonLd, noindex]);
+  }, [title, description, path, image, imageAlt, type, jsonLd, noindex]);
 
   return null;
 };
