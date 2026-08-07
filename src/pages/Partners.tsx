@@ -339,7 +339,7 @@ const Partners = () => {
                 Herbalife Nutrition
               </p>
               <p className="text-xs text-muted-foreground italic mb-6">
-                Transparenz: Eugen Schall ist offizieller, zertifizierter Herbalife Berater (VIP-Berater). Beim Verkauf von Herbalife Produkten besteht dadurch ein wirtschaftliches Eigeninteresse.
+                Transparenz: Eugen Schall ist offizieller, zertifizierter Herbalife Berater (VIP-Berater). Beim Verkauf von Herbalife Produkten besteht dadurch ein wirtschaftliches Eigeninteresse. Herbalife Produkte werden ausschließlich nach ausdrücklicher, persönlicher Produktberatung verkauft und können nur über den Berater erworben werden.
               </p>
 
 
