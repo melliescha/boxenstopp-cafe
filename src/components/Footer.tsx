@@ -221,25 +221,25 @@ const Footer = () => {
           {/* Anzeige: FITES Allgäu */}
           <div
             className="rounded-xl overflow-hidden"
-            style={{ border: "1px solid #C9A55C55", background: "#164472" }}
+            style={{ border: "1px solid #7EC8F055", background: "linear-gradient(135deg, #0C2F5A, #2E86C1)" }}
           >
             <div
               className="flex items-center justify-between px-4 py-1.5"
-              style={{ backgroundColor: "#0f3258" }}
+              style={{ backgroundColor: "#08213F" }}
             >
-              <span className="text-[10px] font-semibold tracking-[0.18em] uppercase" style={{ color: "#C9A55C" }}>
+              <span className="text-[10px] font-semibold tracking-[0.18em] uppercase" style={{ color: "#7EC8F0" }}>
                 Anzeige
               </span>
-              <span className="text-[10px] tracking-wide" style={{ color: "#FEF4EC", opacity: 0.5 }}>
+              <span className="text-[10px] tracking-wide" style={{ color: "#EAF6FD", opacity: 0.6 }}>
                 FITES Allgäu
               </span>
             </div>
             <div className="p-6 md:p-7 flex flex-col md:flex-row md:items-center md:justify-between gap-5 text-center md:text-left">
               <div>
-                <p className="font-serif text-xl md:text-2xl font-bold mb-1.5" style={{ color: "#FEF4EC" }}>
+                <p className="font-serif text-xl md:text-2xl font-bold mb-1.5" style={{ color: "#EAF6FD" }}>
                   HYROX, Personaltraining, Tabata, HIIT, FITES Boxen
                 </p>
-                <p className="text-sm" style={{ color: "#FEF4EC", opacity: 0.8 }}>
+                <p className="text-sm" style={{ color: "#EAF6FD", opacity: 0.85 }}>
                   Kostenloses Probetraining bei FITES Allgäu, im selben Gebäude wie das Bistro.
                 </p>
               </div>
@@ -247,16 +247,16 @@ const Footer = () => {
                 <Link
                   to="/fites-allgaeu"
                   className="inline-block px-5 py-2.5 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity whitespace-nowrap"
-                  style={{ backgroundColor: "#C9A55C", color: "#164472" }}
+                  style={{ backgroundColor: "#2FA84F", color: "#FFFFFF" }}
                 >
-                  Probetraining sichern
+                  Kostenloses Probetraining sichern
                 </Link>
                 <a
                   href="https://www.fites-allgaeu.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block px-5 py-2.5 rounded-lg font-semibold text-sm border hover:opacity-80 transition-opacity whitespace-nowrap"
-                  style={{ borderColor: "#FEF4EC55", color: "#FEF4EC" }}
+                  style={{ borderColor: "#EAF6FD66", color: "#EAF6FD" }}
                 >
                   Zur Website
                 </a>
@@ -267,26 +267,27 @@ const Footer = () => {
           {/* Anzeige: OPTIVANTA Agency */}
           <div
             className="rounded-xl overflow-hidden"
-            style={{ border: "1px solid #2EC4B655", background: "#0B1B2B" }}
+            style={{ border: "1px solid #6B2FA855", background: "#F3E7D6" }}
           >
             <div
               className="flex items-center justify-between px-4 py-1.5"
-              style={{ backgroundColor: "#07131e" }}
+              style={{ backgroundColor: "#5B2A94" }}
             >
-              <span className="text-[10px] font-semibold tracking-[0.18em] uppercase" style={{ color: "#2EC4B6" }}>
+              <span className="text-[10px] font-semibold tracking-[0.18em] uppercase" style={{ color: "#F3E7D6" }}>
                 Anzeige
               </span>
-              <span className="text-[10px] tracking-wide" style={{ color: "#E9F6F5", opacity: 0.5 }}>
+              <span className="text-[10px] tracking-wide" style={{ color: "#F3E7D6", opacity: 0.7 }}>
                 OPTIVANTA Agency
               </span>
             </div>
             <div className="p-6 md:p-7 flex flex-col md:flex-row md:items-center md:justify-between gap-5 text-center md:text-left">
               <div>
-                <p className="font-serif text-xl md:text-2xl font-bold mb-1.5" style={{ color: "#E9F6F5" }}>
-                  Social Media Management, Webdesign, Marketing
+                <p className="font-serif text-xl md:text-2xl font-bold mb-1.5" style={{ color: "#3B1663" }}>
+                  Dir gefällt diese Website?
                 </p>
-                <p className="text-sm" style={{ color: "#E9F6F5", opacity: 0.75 }}>
-                  Sichtbarkeit für lokale Unternehmen, Google und Meta Ads, auch mit kleinem Budget.
+                <p className="text-sm" style={{ color: "#4A2A73" }}>
+                  OPTIVANTA Agency: Marketing, das Kunden bringt. Social Media Management, Meta Ads,
+                  Webdesign für dein lokales Unternehmen.
                 </p>
               </div>
               <a
@@ -294,7 +295,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-5 py-2.5 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity whitespace-nowrap md:flex-shrink-0"
-                style={{ backgroundColor: "#2EC4B6", color: "#07131e" }}
+                style={{ backgroundColor: "#5B2A94", color: "#F3E7D6" }}
               >
                 Jetzt Gespräch vereinbaren →
               </a>
