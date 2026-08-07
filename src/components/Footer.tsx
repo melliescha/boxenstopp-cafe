@@ -221,39 +221,39 @@ const Footer = () => {
           {/* Anzeige: FITES Allgäu */}
           <div
             className="relative rounded-2xl overflow-hidden shadow-lg"
-            style={{ background: "linear-gradient(150deg, #0A2A50 0%, #17497F 55%, #2E86C1 100%)" }}
+            style={{ background: "linear-gradient(150deg, #1b4d66 0%, #228bcd 100%)" }}
           >
             <div
               className="pointer-events-none absolute -top-16 -right-10 w-56 h-56 rounded-full blur-3xl"
-              style={{ background: "#7EC8F0", opacity: 0.22 }}
+              style={{ background: "#b3ddf2", opacity: 0.22 }}
               aria-hidden="true"
             />
             <div className="relative p-7 md:p-8 flex flex-col h-full">
               <div className="flex items-center gap-2 mb-5">
                 <span
                   className="text-[9px] font-semibold tracking-[0.22em] uppercase px-2 py-0.5 rounded-full"
-                  style={{ backgroundColor: "#EAF6FD1f", color: "#7EC8F0", border: "1px solid #7EC8F04d" }}
+                  style={{ backgroundColor: "#f2fafd1f", color: "#b3ddf2", border: "1px solid #b3ddf24d" }}
                 >
                   Anzeige
                 </span>
-                <span className="text-[11px] tracking-[0.12em] uppercase" style={{ color: "#EAF6FD", opacity: 0.55 }}>
+                <span className="text-[11px] tracking-[0.12em] uppercase" style={{ color: "#f2fafd", opacity: 0.55 }}>
                   FITES Allgäu
                 </span>
               </div>
-              <p className="text-[11px] font-medium tracking-[0.14em] uppercase mb-2" style={{ color: "#7EC8F0" }}>
+              <p className="text-[11px] font-medium tracking-[0.14em] uppercase mb-2" style={{ color: "#b3ddf2" }}>
                 HYROX · Personaltraining · Tabata · HIIT · FITES Boxen
               </p>
-              <p className="font-serif text-2xl md:text-[26px] leading-snug font-bold mb-3" style={{ color: "#EAF6FD" }}>
+              <p className="font-serif text-2xl md:text-[26px] leading-snug font-bold mb-3" style={{ color: "#f2fafd" }}>
                 Trainiere direkt im selben Gebäude
               </p>
-              <p className="text-sm leading-relaxed mb-6" style={{ color: "#EAF6FD", opacity: 0.8 }}>
+              <p className="text-sm leading-relaxed mb-6" style={{ color: "#f2fafd", opacity: 0.8 }}>
                 Kostenloses Probetraining bei FITES Allgäu, ohne Vertrag, ohne Vorkenntnisse.
               </p>
               <div className="mt-auto flex flex-wrap items-center gap-3">
                 <Link
                   to="/fites-allgaeu"
                   className="inline-block px-5 py-2.5 rounded-full font-semibold text-sm shadow-md hover:opacity-90 transition-opacity"
-                  style={{ backgroundColor: "#2FA84F", color: "#FFFFFF" }}
+                  style={{ backgroundColor: "#a6d608", color: "#1b4d66" }}
                 >
                   Kostenloses Probetraining sichern
                 </Link>
@@ -262,7 +262,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm font-medium hover:opacity-80 transition-opacity underline underline-offset-4"
-                  style={{ color: "#EAF6FD", textDecorationColor: "#7EC8F0" }}
+                  style={{ color: "#f2fafd", textDecorationColor: "#b3ddf2" }}
                 >
                   Zur Website
                 </a>
