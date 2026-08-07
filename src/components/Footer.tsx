@@ -217,116 +217,126 @@ const Footer = () => {
           <p>© {new Date().getFullYear()} Bistro Boxenstopp</p>
         </div>
 
-        {/* Werbeanzeigen, ganz unten im Footer */}
-        <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-5">
-          {/* Anzeige: FITES Allgäu */}
-          <div
-            className="relative rounded-2xl overflow-hidden shadow-lg"
-            style={{ background: "linear-gradient(150deg, #1b4d66 0%, #228bcd 100%)" }}
-          >
-            <div
-              className="pointer-events-none absolute -top-16 -right-10 w-56 h-56 rounded-full blur-3xl"
-              style={{ background: "#b3ddf2", opacity: 0.22 }}
-              aria-hidden="true"
-            />
-            <div className="relative p-7 md:p-8 flex flex-col h-full">
-              <div className="flex items-center gap-2 mb-5">
-                <span
-                  className="text-[9px] font-semibold tracking-[0.22em] uppercase px-2 py-0.5 rounded-full"
-                  style={{ backgroundColor: "#f2fafd1f", color: "#b3ddf2", border: "1px solid #b3ddf24d" }}
-                >
-                  Anzeige
-                </span>
-                <span
-                  className="font-sans text-[13px] font-extrabold tracking-[0.16em] uppercase px-2.5 py-1 rounded-md"
-                  style={{ backgroundColor: "#f2fafd", color: "#1b4d66" }}
-                >
-                  FITES<span style={{ color: "#a6d608" }}> Allgäu</span>
-                </span>
-              </div>
-              <p className="text-[11px] font-medium tracking-[0.14em] uppercase mb-2" style={{ color: "#b3ddf2" }}>
-                HYROX · Personaltraining · Tabata · HIIT · FITES Boxen
-              </p>
-              <p className="font-serif text-2xl md:text-[26px] leading-snug font-bold mb-3" style={{ color: "#f2fafd" }}>
-                Trainiere direkt im selben Gebäude
-              </p>
-              <p className="text-sm leading-relaxed mb-6" style={{ color: "#f2fafd", opacity: 0.8 }}>
-                Kostenloses Probetraining bei FITES Allgäu, ohne Vertrag, ohne Vorkenntnisse.
-              </p>
-              <div className="mt-auto flex flex-wrap items-center gap-3">
-                <Link
-                  to="/fites-allgaeu"
-                  className="inline-block px-5 py-2.5 rounded-full font-semibold text-sm shadow-md hover:opacity-90 transition-opacity"
-                  style={{ backgroundColor: "#a6d608", color: "#1b4d66" }}
-                >
-                  Kostenloses Probetraining sichern
-                </Link>
-                <a
-                  href="https://www.fites-allgaeu.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-medium hover:opacity-80 transition-opacity underline underline-offset-4"
-                  style={{ color: "#f2fafd", textDecorationColor: "#b3ddf2" }}
-                >
-                  Zur Website
-                </a>
-              </div>
-            </div>
-          </div>
+        {/* Werbeanzeigen, ganz unten im Footer, als eigener Abschnitt untereinander */}
+        <section className="mt-10 pt-8 border-t border-white/10" aria-label="Werbeanzeigen unserer Partner">
+          <p className="text-[10px] tracking-[0.28em] uppercase text-center mb-5 opacity-50">
+            Anzeigen
+          </p>
 
-          {/* Anzeige: OPTIVANTA Agency */}
-          <div
-            className="relative rounded-2xl overflow-hidden shadow-lg"
-            style={{ background: "linear-gradient(150deg, #F5E9DA 0%, #EFDDCB 100%)" }}
-          >
+          <div className="flex flex-col gap-4 max-w-3xl mx-auto">
+            {/* Anzeige: FITES Allgäu */}
             <div
-              className="pointer-events-none absolute -bottom-20 -left-12 w-60 h-60 rounded-full blur-3xl"
-              style={{ background: "#66206f", opacity: 0.16 }}
-              aria-hidden="true"
-            />
-            <div className="relative p-7 md:p-8 flex flex-col h-full">
-              <div className="flex items-center gap-2 mb-5">
-                <span
-                  className="text-[9px] font-semibold tracking-[0.22em] uppercase px-2 py-0.5 rounded-full"
-                  style={{ backgroundColor: "#66206f14", color: "#66206f", border: "1px solid #66206f40" }}
-                >
-                  Anzeige
-                </span>
-                <img
-                  src={optivantaLogo}
-                  alt="OPTIVANTA Agency Logo"
-                  className="h-9 w-9 rounded-lg object-contain"
-                  loading="lazy"
-                  width={36}
-                  height={36}
-                />
-                <span className="text-[11px] tracking-[0.12em] uppercase font-semibold" style={{ color: "#66206f", opacity: 0.75 }}>
-                  OPTIVANTA Agency
-                </span>
+              className="relative rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-md"
+              style={{ background: "linear-gradient(115deg, #1b4d66 0%, #228bcd 100%)" }}
+            >
+              <div
+                className="pointer-events-none absolute -top-16 -right-10 w-52 h-52 rounded-full blur-3xl"
+                style={{ background: "#b3ddf2", opacity: 0.2 }}
+                aria-hidden="true"
+              />
+              <div className="relative p-6 md:p-7 flex flex-col md:flex-row md:items-center gap-5">
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span
+                      className="text-[9px] font-semibold tracking-[0.22em] uppercase px-2 py-0.5 rounded-full"
+                      style={{ backgroundColor: "#f2fafd1f", color: "#b3ddf2", border: "1px solid #b3ddf24d" }}
+                    >
+                      Anzeige
+                    </span>
+                    <span
+                      className="font-sans text-[12px] font-extrabold tracking-[0.16em] uppercase px-2.5 py-1 rounded-md"
+                      style={{ backgroundColor: "#f2fafd", color: "#1b4d66" }}
+                    >
+                      FITES<span style={{ color: "#a6d608" }}> Allgäu</span>
+                    </span>
+                  </div>
+                  <p className="font-serif text-xl md:text-[24px] leading-snug font-bold mb-2" style={{ color: "#f2fafd" }}>
+                    Trainiere direkt im selben Gebäude
+                  </p>
+                  <p className="text-[11px] font-medium tracking-[0.14em] uppercase mb-2" style={{ color: "#b3ddf2" }}>
+                    HYROX · Personaltraining · Tabata · HIIT · FITES Boxen
+                  </p>
+                  <p className="text-sm leading-relaxed" style={{ color: "#f2fafd", opacity: 0.8 }}>
+                    Kostenloses Probetraining bei FITES Allgäu, ohne Vertrag, ohne Vorkenntnisse.
+                  </p>
+                </div>
+                <div className="md:w-auto flex flex-wrap items-center gap-3 md:flex-col md:items-end">
+                  <Link
+                    to="/fites-allgaeu"
+                    className="inline-block px-5 py-2.5 rounded-full font-semibold text-sm shadow-md hover:opacity-90 transition-opacity whitespace-nowrap"
+                    style={{ backgroundColor: "#a6d608", color: "#1b4d66" }}
+                  >
+                    Kostenloses Probetraining sichern
+                  </Link>
+                  <a
+                    href="https://www.fites-allgaeu.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-medium hover:opacity-80 transition-opacity underline underline-offset-4"
+                    style={{ color: "#f2fafd", textDecorationColor: "#b3ddf2" }}
+                  >
+                    Zur Website
+                  </a>
+                </div>
               </div>
-              <p className="text-[11px] font-medium tracking-[0.14em] uppercase mb-2" style={{ color: "#e8875e" }}>
-                Marketing, das Kunden bringt
-              </p>
-              <p className="font-serif text-2xl md:text-[26px] leading-snug font-bold mb-3" style={{ color: "#66206f" }}>
-                Dir gefällt diese Website?
-              </p>
-              <p className="text-sm leading-relaxed mb-6" style={{ color: "#4a2450" }}>
-                Social Media Management, Meta Ads und Webdesign für dein lokales Unternehmen.
-              </p>
-              <div className="mt-auto">
-                <a
-                  href="https://optivantaagency.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-5 py-2.5 rounded-full font-semibold text-sm shadow-md hover:opacity-90 transition-opacity"
-                  style={{ backgroundColor: "#66206f", color: "#F5E9DA" }}
-                >
-                  Jetzt Gespräch vereinbaren →
-                </a>
+            </div>
+
+            {/* Anzeige: OPTIVANTA Agency */}
+            <div
+              className="relative rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-md"
+              style={{ background: "linear-gradient(115deg, #F5E9DA 0%, #EFDDCB 100%)" }}
+            >
+              <div
+                className="pointer-events-none absolute -bottom-20 -left-12 w-56 h-56 rounded-full blur-3xl"
+                style={{ background: "#66206f", opacity: 0.16 }}
+                aria-hidden="true"
+              />
+              <div className="relative p-6 md:p-7 flex flex-col md:flex-row md:items-center gap-5">
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span
+                      className="text-[9px] font-semibold tracking-[0.22em] uppercase px-2 py-0.5 rounded-full"
+                      style={{ backgroundColor: "#66206f14", color: "#66206f", border: "1px solid #66206f40" }}
+                    >
+                      Anzeige
+                    </span>
+                    <img
+                      src={optivantaLogo}
+                      alt="OPTIVANTA Agency Logo"
+                      className="h-8 w-8 rounded-lg object-contain"
+                      loading="lazy"
+                      width={32}
+                      height={32}
+                    />
+                    <span className="text-[11px] tracking-[0.12em] uppercase font-semibold" style={{ color: "#66206f", opacity: 0.75 }}>
+                      OPTIVANTA Agency
+                    </span>
+                  </div>
+                  <p className="font-serif text-xl md:text-[24px] leading-snug font-bold mb-2" style={{ color: "#66206f" }}>
+                    Dir gefällt diese Website?
+                  </p>
+                  <p className="text-[11px] font-medium tracking-[0.14em] uppercase mb-2" style={{ color: "#e8875e" }}>
+                    Marketing, das Kunden bringt
+                  </p>
+                  <p className="text-sm leading-relaxed" style={{ color: "#4a2450" }}>
+                    Social Media Management, Meta Ads und Webdesign für dein lokales Unternehmen.
+                  </p>
+                </div>
+                <div className="md:w-auto">
+                  <a
+                    href="https://optivantaagency.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-5 py-2.5 rounded-full font-semibold text-sm shadow-md hover:opacity-90 transition-opacity whitespace-nowrap"
+                    style={{ backgroundColor: "#66206f", color: "#F5E9DA" }}
+                  >
+                    Jetzt Gespräch vereinbaren →
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </footer>
   );
