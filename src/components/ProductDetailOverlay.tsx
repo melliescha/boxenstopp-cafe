@@ -84,7 +84,7 @@ const ProductDetailOverlay = ({ product, onClose }: Props) => {
         <div className="relative aspect-[4/3] bg-secondary/50 sm:rounded-t-xl rounded-t-2xl overflow-hidden">
           {product.image ? (
             <>
-              <img src={product.image} alt={product.name} loading="lazy" decoding="async" className="w-full h-full object-cover" />
+              <img src={product.image} alt={`KI generiert: Produktbild ${product.name}`} loading="lazy" decoding="async" className="w-full h-full object-cover" />
               <AiBadge />
             </>
           ) : (

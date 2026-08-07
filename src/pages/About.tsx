@@ -119,7 +119,7 @@ const About = () => {
       <section className="relative h-[50vh] md:h-[60vh] overflow-hidden">
         <img
           src={aboutHero}
-          alt="Familie Schall vor Allgäuer Bergpanorama"
+          alt="KI generiert: Familie Schall vor Allgäuer Bergpanorama"
           className="w-full h-full object-cover"
           style={{ objectPosition: 'center 25%' }}
           width={1920}
@@ -164,7 +164,7 @@ const About = () => {
             <div className="order-1 md:order-2 relative rounded-xl overflow-hidden shadow-md">
               <img
                 src={aboutBodensee}
-                alt="Bodensee-Panorama und Allgäuer Landschaft"
+                alt="Mit KI bearbeitetes Foto: Bodensee-Panorama und Allgäuer Landschaft"
                 loading="lazy"
                 className="w-full h-64 md:h-80 object-cover"
               />
@@ -177,7 +177,7 @@ const About = () => {
             <div className="relative rounded-xl overflow-hidden shadow-md">
               <img
                 src={aboutCafe}
-                alt="Gemütliches Café-Interieur"
+                alt="KI generiert: gemütliches Café-Interieur"
                 loading="lazy"
                 className="w-full h-64 md:h-80 object-cover"
               />
@@ -219,7 +219,7 @@ const About = () => {
             <div className="order-1 md:order-2 relative rounded-xl overflow-hidden shadow-md">
               <img
                 src={aboutTerrace}
-                alt="Terrasse des Bistro Boxenstopp mit Radfahrern"
+                alt="KI generiert: Terrasse des Bistro Boxenstopp mit Radfahrern"
                 loading="lazy"
                 className="w-full h-64 md:h-80 object-cover"
                 style={{ objectPosition: 'center 30%' }}

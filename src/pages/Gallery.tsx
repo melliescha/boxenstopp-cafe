@@ -56,7 +56,7 @@ interface GalleryImage {
 
 
 const images: GalleryImage[] = [
-  { src: heroBistro, alt: "Sonnige Terrasse des Bistro Boxenstopp im Außenbereich", category: "aussen", source: "ki", sourceNote: "KI-generiertes Stimmungsbild mit realistisch dargestellten Personen, gekennzeichnet nach Art. 50 EU AI Act" },
+  { src: heroBistro, alt: "KI generiert: sonnige Terrasse des Bistro Boxenstopp im Außenbereich", category: "aussen", source: "ki", sourceNote: "KI-generiertes Stimmungsbild mit realistisch dargestellten Personen, gekennzeichnet nach Art. 50 EU AI Act" },
   { src: aussenTerrasseSchirm, alt: "Außenterrasse mit Sonnenschirm, Holztischen und Loungemöbeln vor Natursteinmauer", category: "aussen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
   { src: aussenTerrasseEingang, alt: "Blick von der Treppe auf die Terrasse mit Sonnenschirm und Eingangsbereich", category: "aussen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
   { src: aussenTerrasseSchild, alt: "Terrasse mit Café-Boxenstopp-Schild, Steinmauer und Frühlingsblumen", category: "aussen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
