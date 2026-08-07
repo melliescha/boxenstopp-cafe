@@ -67,7 +67,7 @@ const routes = [
   },
   {
     path: "/bewertungen",
-    title: "Bewertungen – Bistro Boxenstopp Hergatz",
+    title: "Bewertungen, Bistro Boxenstopp Hergatz",
     description:
       "Bewertet das Bistro Boxenstopp in Hergatz auf Google, TripAdvisor und Instagram.",
   },
@@ -100,14 +100,14 @@ const routes = [
   },
   {
     path: "/hausordnung",
-    title: "Hausordnung | Bistro Boxenstopp Hergatz",
+    title: "Hausordnung, Bistro Boxenstopp Hergatz",
     description:
       "Hausordnung des Bistro Boxenstopp: Rauchverbot im Gebäude, Aufsichtspflicht der Eltern, Regeln für Duschen und WC, Videoüberwachung und respektvolles Miteinander.",
     image: `${SITE_URL}/og-image.jpg`,
   },
   {
     path: "/ki-transparenz",
-    title: "KI-Hinweis | Bistro Boxenstopp",
+    title: "KI-Transparenz | Bistro Boxenstopp",
     description:
       "Kurzer Hinweis, wie wir künstliche Intelligenz für Bilder und Texte einsetzen und wer die redaktionelle Verantwortung trägt.",
     image: `${SITE_URL}/og-image.jpg`,
@@ -116,12 +116,12 @@ const routes = [
 
   {
     path: "/impressum",
-    title: "Impressum – Bistro Boxenstopp",
+    title: "Impressum, Bistro Boxenstopp",
     description: "Impressum und Anbieterkennzeichnung.",
   },
   {
     path: "/datenschutz",
-    title: "Datenschutz – Bistro Boxenstopp",
+    title: "Datenschutz, Bistro Boxenstopp",
     description: "Datenschutzerklärung gemäß DSGVO.",
   },
 ];
@@ -162,11 +162,17 @@ function applyRouteMeta(html, route) {
   );
 
   // Open Graph
+  const alt = escape(route.imageAlt ?? route.title);
   const og = [
     ["og:title", title],
     ["og:description", description],
     ["og:url", url],
     ["og:image", image],
+    ["og:image:secure_url", image],
+    ["og:image:type", image.endsWith(".png") ? "image/png" : "image/jpeg"],
+    ["og:image:width", "1200"],
+    ["og:image:height", "630"],
+    ["og:image:alt", alt],
     ["og:type", type],
     ["og:site_name", SITE_NAME],
     ["og:locale", "de_DE"],
@@ -185,6 +191,7 @@ function applyRouteMeta(html, route) {
     ["twitter:title", title],
     ["twitter:description", description],
     ["twitter:image", image],
+    ["twitter:image:alt", alt],
   ];
   for (const [name, val] of tw) {
     out = upsertTag(
