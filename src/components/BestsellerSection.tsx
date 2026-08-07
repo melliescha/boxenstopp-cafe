@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 
+import AiBadge from "@/components/AiBadge";
+
+
 import flammkuchenLachs from "@/assets/flammkuchen-lachs.png";
 import flammkuchenMediterran from "@/assets/flammkuchen-mediterran.png";
 import raclettebrot from "@/assets/raclettebrot-rustikal.jpg";
@@ -78,6 +81,8 @@ const BestsellerCard = ({ item }: { item: Bestseller }) => (
       <span className={`absolute top-3 left-3 ${item.badgeColor} text-white text-xs font-medium px-2.5 py-1 rounded-full`}>
         {item.badge}
       </span>
+      <AiBadge />
+
     </div>
     <div className="p-4 text-center">
       <h3 className="font-serif text-lg font-semibold text-foreground mb-1">{item.name}</h3>
