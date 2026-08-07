@@ -138,99 +138,6 @@ const Partners = () => {
         <div className="h-[1px] bg-bronze/20" />
       </div>
 
-      {/* PARTNER 2: Cup&Cino */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-6 max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
-            {/* Image left */}
-            <div>
-              <img
-                src={cupcinoPartnerImg}
-                alt="Cup&Cino Kaffeegenuss"
-                className="w-full aspect-[4/3] object-cover object-center rounded-2xl shadow-lg"
-                loading="lazy"
-              />
-            </div>
-            {/* Text right */}
-            <div>
-              <p className="font-serif text-2xl font-bold text-foreground mb-6">
-                Cup&amp;Cino
-                <a href="#partnerschaft-hinweise" title="Transparenzhinweis 2" className="align-super text-sm text-bronze hover:underline ml-0.5">2</a>
-              </p>
-
-
-              <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
-                Kaffeesystem der Spitzenklasse
-              </span>
-              <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Cup&Cino: Kaffeegenuss auf Spitzenniveau
-              </h2>
-              <div className="space-y-4 text-muted-foreground leading-relaxed">
-                <p>
-                  Hinter jeder Tasse Kaffee bei uns steckt Cup&Cino: hochwertige Kaffeebohnen, perfekt abgestimmt auf ein Kaffeesystem der neuesten Generation. Modernste Technik, präzise Einstellungen und ausgewählte Bohnen, so entsteht bei uns jeder Espresso, jeder Cappuccino und jeder Latte Macchiato.
-                </p>
-                <p>
-                  Das Ergebnis schmeckst du mit dem ersten Schluck: vollmundig, aromatisch und auf Barista-Niveau. Bei uns bekommst du keinen Kaffee aus der Kanne, sondern Kaffeegenuss, wie du ihn aus den besten Cafés kennst, mitten im Allgäu.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PARTNER: Cup&Cino Foundation, Navy highlight */}
-      <section id="foundation" className="py-16 md:py-24" style={{ background: "linear-gradient(135deg, #164472, #1d5a8a)" }}>
-        <div className="container mx-auto px-6 max-w-4xl text-center">
-          <p className="text-[#b8943e] font-medium tracking-[0.2em] uppercase text-sm mb-2">☕ Cup&Cino Foundation</p>
-          <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8" style={{ color: "#fef4ec" }}>
-            Mit jedem Kaffee die Welt ein Stück besser machen
-          </h2>
-
-          <p className="text-xl md:text-2xl font-serif leading-relaxed mb-10" style={{ color: "#b8943e" }}>
-            Mit jeder Tasse Kaffee, die du bei uns trinkst, spendet das Bistro Boxenstopp 1 Cent an die Cup&Cino Foundation.
-          </p>
-
-          <div className="max-w-2xl mx-auto text-left space-y-4 mb-12" style={{ color: "#fef4ec" }}>
-            <p className="leading-relaxed opacity-90">
-              Gesundheit, Bildung, Selbstbestimmung: all das beginnt mit dem Zugang zu sauberem Trinkwasser. Was für uns selbstverständlich ist, bleibt in vielen Teilen der Welt unerreichbar.
-            </p>
-            <p className="leading-relaxed opacity-90">
-              Die Cup&Cino Foundation setzt genau hier an: In Kaffeeanbauländern wie Äthiopien, Kenia und Tansania schaffen sie Zugang zu sauberem Wasser, Sanitäranlagen und Hygiene, für eine gesündere Zukunft, mehr Bildungschancen und ein selbstbestimmtes Leben.
-            </p>
-          </div>
-
-          {/* 100% Versprechen Box */}
-          <div className="max-w-xl mx-auto rounded-xl p-8 mb-12" style={{ border: "2px solid #b8943e", backgroundColor: "rgba(184, 148, 62, 0.08)" }}>
-            <h3 className="font-serif text-xl font-bold mb-3" style={{ color: "#b8943e" }}>
-              Das 100%-Versprechen
-            </h3>
-            <p className="leading-relaxed" style={{ color: "#fef4ec" }}>
-              Jeder gespendete Cent fließt zu 100 % direkt in die Projekte. Alle Kosten für Verwaltung und Organisation übernimmt Cup&Cino selbst. So kommt deine Unterstützung genau dort an, wo sie am nötigsten ist.
-            </p>
-          </div>
-
-          {/* Three icons */}
-          <div className="grid grid-cols-3 gap-6 max-w-md mx-auto">
-            <div className="flex flex-col items-center gap-2">
-              <Droplets className="w-8 h-8" style={{ color: "#b8943e" }} />
-              <span className="text-sm font-medium" style={{ color: "#b8943e" }}>Sauberes Wasser</span>
-            </div>
-            <div className="flex flex-col items-center gap-2">
-              <Building2 className="w-8 h-8" style={{ color: "#b8943e" }} />
-              <span className="text-sm font-medium" style={{ color: "#b8943e" }}>Sanitäranlagen</span>
-            </div>
-            <div className="flex flex-col items-center gap-2">
-              <GraduationCap className="w-8 h-8" style={{ color: "#b8943e" }} />
-              <span className="text-sm font-medium" style={{ color: "#b8943e" }}>Bildungschancen</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div className="w-full max-w-4xl mx-auto px-6">
-        <div className="h-[1px] bg-bronze/20" />
-      </div>
-
       {/* PARTNER 3: OPTIVANTA Agency */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
@@ -395,6 +302,99 @@ const Partners = () => {
             <a href="/kontakt" className="inline-block bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-medium text-sm hover:opacity-90 transition-opacity whitespace-nowrap">
               Mehr erfahren
             </a>
+          </div>
+        </div>
+      </section>
+
+      <div className="w-full max-w-4xl mx-auto px-6">
+        <div className="h-[1px] bg-bronze/20" />
+      </div>
+
+      {/* PARTNER 2: Cup&Cino */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+            {/* Image left */}
+            <div>
+              <img
+                src={cupcinoPartnerImg}
+                alt="Cup&Cino Kaffeegenuss"
+                className="w-full aspect-[4/3] object-cover object-center rounded-2xl shadow-lg"
+                loading="lazy"
+              />
+            </div>
+            {/* Text right */}
+            <div>
+              <p className="font-serif text-2xl font-bold text-foreground mb-6">
+                Cup&amp;Cino
+                <a href="#partnerschaft-hinweise" title="Transparenzhinweis 2" className="align-super text-sm text-bronze hover:underline ml-0.5">2</a>
+              </p>
+
+
+              <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
+                Kaffeesystem der Spitzenklasse
+              </span>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
+                Cup&Cino: Kaffeegenuss auf Spitzenniveau
+              </h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  Hinter jeder Tasse Kaffee bei uns steckt Cup&Cino: hochwertige Kaffeebohnen, perfekt abgestimmt auf ein Kaffeesystem der neuesten Generation. Modernste Technik, präzise Einstellungen und ausgewählte Bohnen, so entsteht bei uns jeder Espresso, jeder Cappuccino und jeder Latte Macchiato.
+                </p>
+                <p>
+                  Das Ergebnis schmeckst du mit dem ersten Schluck: vollmundig, aromatisch und auf Barista-Niveau. Bei uns bekommst du keinen Kaffee aus der Kanne, sondern Kaffeegenuss, wie du ihn aus den besten Cafés kennst, mitten im Allgäu.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PARTNER: Cup&Cino Foundation, Navy highlight */}
+      <section id="foundation" className="py-16 md:py-24" style={{ background: "linear-gradient(135deg, #164472, #1d5a8a)" }}>
+        <div className="container mx-auto px-6 max-w-4xl text-center">
+          <p className="text-[#b8943e] font-medium tracking-[0.2em] uppercase text-sm mb-2">☕ Cup&Cino Foundation</p>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8" style={{ color: "#fef4ec" }}>
+            Mit jedem Kaffee die Welt ein Stück besser machen
+          </h2>
+
+          <p className="text-xl md:text-2xl font-serif leading-relaxed mb-10" style={{ color: "#b8943e" }}>
+            Mit jeder Tasse Kaffee, die du bei uns trinkst, spendet das Bistro Boxenstopp 1 Cent an die Cup&Cino Foundation.
+          </p>
+
+          <div className="max-w-2xl mx-auto text-left space-y-4 mb-12" style={{ color: "#fef4ec" }}>
+            <p className="leading-relaxed opacity-90">
+              Gesundheit, Bildung, Selbstbestimmung: all das beginnt mit dem Zugang zu sauberem Trinkwasser. Was für uns selbstverständlich ist, bleibt in vielen Teilen der Welt unerreichbar.
+            </p>
+            <p className="leading-relaxed opacity-90">
+              Die Cup&Cino Foundation setzt genau hier an: In Kaffeeanbauländern wie Äthiopien, Kenia und Tansania schaffen sie Zugang zu sauberem Wasser, Sanitäranlagen und Hygiene, für eine gesündere Zukunft, mehr Bildungschancen und ein selbstbestimmtes Leben.
+            </p>
+          </div>
+
+          {/* 100% Versprechen Box */}
+          <div className="max-w-xl mx-auto rounded-xl p-8 mb-12" style={{ border: "2px solid #b8943e", backgroundColor: "rgba(184, 148, 62, 0.08)" }}>
+            <h3 className="font-serif text-xl font-bold mb-3" style={{ color: "#b8943e" }}>
+              Das 100%-Versprechen
+            </h3>
+            <p className="leading-relaxed" style={{ color: "#fef4ec" }}>
+              Jeder gespendete Cent fließt zu 100 % direkt in die Projekte. Alle Kosten für Verwaltung und Organisation übernimmt Cup&Cino selbst. So kommt deine Unterstützung genau dort an, wo sie am nötigsten ist.
+            </p>
+          </div>
+
+          {/* Three icons */}
+          <div className="grid grid-cols-3 gap-6 max-w-md mx-auto">
+            <div className="flex flex-col items-center gap-2">
+              <Droplets className="w-8 h-8" style={{ color: "#b8943e" }} />
+              <span className="text-sm font-medium" style={{ color: "#b8943e" }}>Sauberes Wasser</span>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <Building2 className="w-8 h-8" style={{ color: "#b8943e" }} />
+              <span className="text-sm font-medium" style={{ color: "#b8943e" }}>Sanitäranlagen</span>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <GraduationCap className="w-8 h-8" style={{ color: "#b8943e" }} />
+              <span className="text-sm font-medium" style={{ color: "#b8943e" }}>Bildungschancen</span>
+            </div>
           </div>
         </div>
       </section>
