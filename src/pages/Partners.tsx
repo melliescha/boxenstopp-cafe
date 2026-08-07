@@ -517,7 +517,7 @@ const Partners = () => {
       </section>
 
       {/* Prominente OPTIVANTA Werbung, ganz unten */}
-      <section className="py-16 md:py-20 bg-navy text-white">
+      <section className="py-16 md:py-20 text-white" style={{ background: "linear-gradient(135deg, #164472, #1d5a8a)" }}>
         <div className="container mx-auto px-6 max-w-4xl text-center">
           <span className="inline-block bg-white/10 text-white text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-5">
             Anzeige, unser Partner OPTIVANTA Agency
