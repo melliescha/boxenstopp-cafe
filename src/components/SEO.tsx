@@ -5,6 +5,8 @@ interface SEOProps {
   description: string;
   path: string;
   image?: string;
+  /** Alternativtext des Vorschaubilds für Social Previews */
+  imageAlt?: string;
   type?: string;
   jsonLd?: object | object[];
   /** true = Seite aus dem Index halten (z. B. QR-, 404-Seiten) */
