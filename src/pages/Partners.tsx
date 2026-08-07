@@ -327,7 +327,7 @@ const Partners = () => {
             <div>
               <p className="font-serif text-2xl font-bold text-foreground mb-6">
                 Cup&amp;Cino
-                <a href="#partnerschaft-hinweise" title="Transparenzhinweis 2" className="align-super text-sm text-bronze hover:underline ml-0.5">2</a>
+                <a href="#partnerschaft-hinweise" title="Transparenzhinweis 4" className="align-super text-sm text-bronze hover:underline ml-0.5">4</a>
               </p>
 
 
@@ -490,10 +490,6 @@ const Partners = () => {
               beider Betriebe ist Eugen Schall, das Bistro Boxenstopp ist ein Geschäftsbereich von FITES Allgäu.
             </li>
             <li>
-              <strong className="text-foreground">Cup&amp;Cino:</strong> Offizieller Partner. Wir beziehen
-              unsere Kaffeemaschine, unsere Kaffeebohnen und unseren Matcha von Cup&amp;Cino.
-            </li>
-            <li>
               <strong className="text-foreground">OPTIVANTA Agency:</strong> Offizieller Partner für
               diese Website, Webdesign, Meta und Google Setup sowie Marketing.
             </li>
@@ -503,6 +499,10 @@ const Partners = () => {
               Produkten besteht dadurch ein wirtschaftliches Eigeninteresse. Herbalife Produkte werden
               ausschließlich nach ausdrücklicher, persönlicher Produktberatung verkauft und können nur
               über den Berater erworben werden.
+            </li>
+            <li>
+              <strong className="text-foreground">Cup&amp;Cino:</strong> Offizieller Partner. Wir beziehen
+              unsere Kaffeemaschine, unsere Kaffeebohnen und unseren Matcha von Cup&amp;Cino.
             </li>
             <li>
               <strong className="text-foreground">Perplex:</strong> Unser Lieferant für unsere
