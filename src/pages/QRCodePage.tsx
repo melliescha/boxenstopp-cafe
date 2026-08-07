@@ -1,5 +1,6 @@
 import QRCode from "react-qr-code";
 import logoIcon from "@/assets/logo-icon.png";
+import SEO from "@/components/SEO";
 
 const QRCodePage = () => {
   const url = "https://bistro-boxenstopp.de/qr-speisekarte";
@@ -8,6 +9,13 @@ const QRCodePage = () => {
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-6">
+      <SEO
+        title="QR-Code zur Speisekarte | Bistro Boxenstopp"
+        description="Interne Druckvorlage für den QR-Code zur digitalen Speisekarte."
+        path="/qr-code"
+        noindex
+      />
+
       <div className="text-center max-w-md mx-auto">
         {/* Printable area */}
         <div className="print-area inline-block">
