@@ -7,6 +7,8 @@ interface SEOProps {
   image?: string;
   type?: string;
   jsonLd?: object | object[];
+  /** true = Seite aus dem Index halten (z. B. QR-, 404-Seiten) */
+  noindex?: boolean;
 }
 
 const SITE_URL = "https://bistro-boxenstopp.de";
