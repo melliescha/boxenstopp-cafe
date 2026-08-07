@@ -533,7 +533,8 @@ const Partners = () => {
             href="https://optivantaagency.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-white text-navy px-8 py-4 rounded-xl font-semibold text-base md:text-lg hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 bg-white px-8 py-4 rounded-xl font-semibold text-base md:text-lg hover:opacity-90 transition-opacity"
+            style={{ color: "#164472" }}
           >
             Jetzt Gespräch vereinbaren
             <span aria-hidden="true">→</span>
