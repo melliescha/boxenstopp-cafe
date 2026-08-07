@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Instagram, Facebook, Phone, MapPin, Clock, Route, Star } from "lucide-react";
 import { socialLinks, facebookEnabled } from "@/config/social";
 import { openConsentSettings } from "@/lib/consent";
+import optivantaLogo from "@/assets/logo-optivanta.png";
 
 
 const Footer = () => {
@@ -236,8 +237,11 @@ const Footer = () => {
                 >
                   Anzeige
                 </span>
-                <span className="text-[11px] tracking-[0.12em] uppercase" style={{ color: "#f2fafd", opacity: 0.55 }}>
-                  FITES Allgäu
+                <span
+                  className="font-sans text-[13px] font-extrabold tracking-[0.16em] uppercase px-2.5 py-1 rounded-md"
+                  style={{ backgroundColor: "#f2fafd", color: "#1b4d66" }}
+                >
+                  FITES<span style={{ color: "#a6d608" }}> Allgäu</span>
                 </span>
               </div>
               <p className="text-[11px] font-medium tracking-[0.14em] uppercase mb-2" style={{ color: "#b3ddf2" }}>
@@ -288,7 +292,15 @@ const Footer = () => {
                 >
                   Anzeige
                 </span>
-                <span className="text-[11px] tracking-[0.12em] uppercase" style={{ color: "#66206f", opacity: 0.6 }}>
+                <img
+                  src={optivantaLogo}
+                  alt="OPTIVANTA Agency Logo"
+                  className="h-9 w-9 rounded-lg object-contain"
+                  loading="lazy"
+                  width={36}
+                  height={36}
+                />
+                <span className="text-[11px] tracking-[0.12em] uppercase font-semibold" style={{ color: "#66206f", opacity: 0.75 }}>
                   OPTIVANTA Agency
                 </span>
               </div>
