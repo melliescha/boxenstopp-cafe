@@ -138,14 +138,14 @@ const Partners = () => {
         <div className="h-[1px] bg-bronze/20" />
       </div>
 
-      {/* PARTNER 3: OPTIVANTA Agency */}
+      {/* PARTNER 2: OPTIVANTA Agency */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* Text left */}
             <div className="order-2 md:order-1">
               <a href="https://optivantaagency.com/" target="_blank" rel="noopener noreferrer" className="font-serif text-2xl font-bold text-foreground mb-6 inline-block hover:text-bronze transition-colors">OPTIVANTA Agency</a>
-              <a href="#partnerschaft-hinweise" title="Transparenzhinweis 3" className="align-super text-sm text-bronze hover:underline ml-0.5">3</a>
+              <a href="#partnerschaft-hinweise" title="Transparenzhinweis 2" className="align-super text-sm text-bronze hover:underline ml-0.5">2</a>
 
 
               <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
@@ -230,7 +230,7 @@ const Partners = () => {
         <div className="h-[1px] bg-bronze/20" />
       </div>
 
-      {/* PARTNER 4: Herbalife */}
+      {/* PARTNER 3: Herbalife */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
@@ -238,7 +238,7 @@ const Partners = () => {
             <div className="order-2 md:order-1">
               <p className="font-serif text-2xl font-bold text-foreground mb-6">
                 Herbalife Nutrition
-                <a href="#partnerschaft-hinweise" title="Transparenzhinweis 4" className="align-super text-sm text-bronze hover:underline ml-0.5">4</a>
+                <a href="#partnerschaft-hinweise" title="Transparenzhinweis 3" className="align-super text-sm text-bronze hover:underline ml-0.5">3</a>
               </p>
 
 
@@ -310,7 +310,7 @@ const Partners = () => {
         <div className="h-[1px] bg-bronze/20" />
       </div>
 
-      {/* PARTNER 2: Cup&Cino */}
+      {/* PARTNER 4: Cup&Cino */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
