@@ -279,10 +279,13 @@ const Index = () => {
 
       {/* Slogan + CTA */}
       <section className="text-center" style={{ backgroundColor: "#fef4ec", paddingTop: "16px", paddingBottom: "20px" }}>
-        <h1 className="sr-only">Bistro Boxenstopp Hergatz, Barista-Kaffee, Flammkuchen & Hüttenbrot im Westallgäu</h1>
-        <p className="font-serif" style={{ color: "#164472", fontSize: "28px", fontWeight: 500 }}>
+        <h1 className="font-serif" style={{ color: "#164472", fontSize: "28px", fontWeight: 500 }}>
           Hergatz' bestgehütetes Geheimnis
+        </h1>
+        <p className="text-muted-foreground" style={{ marginTop: "8px", fontSize: "15px" }}>
+          Bistro Boxenstopp in Hergatz-Wohmbrechts: Barista-Kaffee, Flammkuchen und Hüttenbrot im Westallgäu
         </p>
+
         <div style={{ marginTop: "24px" }}>
           <Link
             to="/speisekarte"
