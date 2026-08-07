@@ -98,12 +98,10 @@ const Partners = () => {
               <div className="space-y-1 mb-5">
                 <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">
                   FITES Allgäu
+                  <a href="#partnerschaft-hinweise" title="Transparenzhinweis 1" className="align-super text-sm text-bronze hover:underline ml-0.5">1</a>
                 </h2>
 
                 <p className="font-medium text-lg" style={{ color: "#9E7C4E" }}>Fitness nebenan</p>
-                <p className="text-xs text-muted-foreground italic pt-2">
-                  Transparenz: Offizieller Partner. Inhaber beider Betriebe ist Eugen Schall, das Bistro Boxenstopp ist ein Geschäftsbereich von FITES Allgäu.
-                </p>
               </div>
               <p className="text-muted-foreground leading-relaxed mb-7">
                 Das Bistro Boxenstopp ist Teil von FITES Allgäu, Eugens Fitnessstudio direkt im selben Gebäude. Kleine Gruppen, persönliche Betreuung, Kurse wie HYROX, HIIT und Fitness-Boxen. Wer nach dem Kaffee Lust auf Bewegung bekommt, oder nach dem Training auf einen Shake, ist herzlich willkommen.
@@ -155,11 +153,9 @@ const Partners = () => {
             </div>
             {/* Text right */}
             <div>
-              <p className="font-serif text-2xl font-bold text-foreground mb-2">
+              <p className="font-serif text-2xl font-bold text-foreground mb-6">
                 Cup&amp;Cino
-              </p>
-              <p className="text-xs text-muted-foreground italic mb-6">
-                Transparenz: Offizieller Partner. Wir beziehen unsere Kaffeemaschine, unsere Kaffeebohnen und unseren Matcha von Cup&amp;Cino.
+                <a href="#partnerschaft-hinweise" title="Transparenzhinweis 2" className="align-super text-sm text-bronze hover:underline ml-0.5">2</a>
               </p>
 
 
@@ -241,10 +237,8 @@ const Partners = () => {
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* Text left */}
             <div className="order-2 md:order-1">
-              <a href="https://optivantaagency.com/" target="_blank" rel="noopener noreferrer" className="font-serif text-2xl font-bold text-foreground mb-2 inline-block hover:text-bronze transition-colors">OPTIVANTA Agency</a>
-              <p className="text-xs text-muted-foreground italic mb-6">
-                Transparenz: Offizieller Partner für diese Website, Webdesign, Meta und Google Setup sowie Marketing.
-              </p>
+              <a href="https://optivantaagency.com/" target="_blank" rel="noopener noreferrer" className="font-serif text-2xl font-bold text-foreground mb-6 inline-block hover:text-bronze transition-colors">OPTIVANTA Agency</a>
+              <a href="#partnerschaft-hinweise" title="Transparenzhinweis 3" className="align-super text-sm text-bronze hover:underline ml-0.5">3</a>
 
 
               <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
@@ -335,11 +329,9 @@ const Partners = () => {
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* Text left */}
             <div className="order-2 md:order-1">
-              <p className="font-serif text-2xl font-bold text-foreground mb-2">
+              <p className="font-serif text-2xl font-bold text-foreground mb-6">
                 Herbalife Nutrition
-              </p>
-              <p className="text-xs text-muted-foreground italic mb-6">
-                Transparenz: Eugen Schall ist offizieller, zertifizierter Herbalife Berater (VIP-Berater). Beim Verkauf von Herbalife Produkten besteht dadurch ein wirtschaftliches Eigeninteresse. Herbalife Produkte werden ausschließlich nach ausdrücklicher, persönlicher Produktberatung verkauft und können nur über den Berater erworben werden.
+                <a href="#partnerschaft-hinweise" title="Transparenzhinweis 4" className="align-super text-sm text-bronze hover:underline ml-0.5">4</a>
               </p>
 
 
@@ -417,11 +409,9 @@ const Partners = () => {
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* Text left */}
             <div className="order-2 md:order-1">
-              <p className="font-serif text-2xl font-bold text-foreground mb-2">
+              <p className="font-serif text-2xl font-bold text-foreground mb-6">
                 Perplex
-              </p>
-              <p className="text-xs text-muted-foreground italic mb-6">
-                Transparenz: Perplex ist unser Lieferant für unsere ofenfrischen Backwaren, Flammkuchen und Baguettes.
+                <a href="#partnerschaft-hinweise" title="Transparenzhinweis 5" className="align-super text-sm text-bronze hover:underline ml-0.5">5</a>
               </p>
 
 
@@ -488,10 +478,38 @@ const Partners = () => {
         </div>
       </section>
 
-      {/* Markenhinweis */}
-      <section id="partnerschaft-hinweise" className="py-10 bg-secondary/40 border-t border-border/60">
+      {/* Transparenzhinweise */}
+      <section id="partnerschaft-hinweise" className="py-12 bg-secondary/40 border-t border-border/60">
         <div className="container mx-auto px-6 max-w-3xl">
-          <p className="text-xs text-muted-foreground">
+          <h2 className="font-serif text-xl font-bold text-foreground mb-4">
+            Transparenzhinweise zu unseren Partnerschaften
+          </h2>
+          <ol className="space-y-3 text-sm text-muted-foreground list-decimal pl-5">
+            <li>
+              <strong className="text-foreground">FITES Allgäu:</strong> Offizieller Partner. Inhaber
+              beider Betriebe ist Eugen Schall, das Bistro Boxenstopp ist ein Geschäftsbereich von FITES Allgäu.
+            </li>
+            <li>
+              <strong className="text-foreground">Cup&amp;Cino:</strong> Offizieller Partner. Wir beziehen
+              unsere Kaffeemaschine, unsere Kaffeebohnen und unseren Matcha von Cup&amp;Cino.
+            </li>
+            <li>
+              <strong className="text-foreground">OPTIVANTA Agency:</strong> Offizieller Partner für
+              diese Website, Webdesign, Meta und Google Setup sowie Marketing.
+            </li>
+            <li>
+              <strong className="text-foreground">Herbalife Nutrition:</strong> Eugen Schall ist
+              offizieller, zertifizierter Herbalife Berater (VIP-Berater). Beim Verkauf von Herbalife
+              Produkten besteht dadurch ein wirtschaftliches Eigeninteresse. Herbalife Produkte werden
+              ausschließlich nach ausdrücklicher, persönlicher Produktberatung verkauft und können nur
+              über den Berater erworben werden.
+            </li>
+            <li>
+              <strong className="text-foreground">Perplex:</strong> Unser Lieferant für unsere
+              ofenfrischen Backwaren, Flammkuchen und Baguettes.
+            </li>
+          </ol>
+          <p className="mt-4 text-xs text-muted-foreground">
             Alle genannten Marken- und Firmennamen gehören ihren jeweiligen Inhabern und werden hier nur
             zur Information über unsere Lieferanten und Partner genannt.
           </p>
