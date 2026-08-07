@@ -241,6 +241,7 @@ const Index = () => {
         description="Barista-Kaffee, ofenfrische Flammkuchen und Hüttenbrot in Hergatz, Euer Stopp am Bodensee-Königssee-Radweg im Westallgäu."
         path="/"
         type="restaurant.restaurant"
+        imageAlt="Bistro Boxenstopp in Hergatz im Westallgäu, Barista-Kaffee und Flammkuchen"
         jsonLd={localBusinessSchema}
       />
       {/* Hero */}
