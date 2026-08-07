@@ -96,7 +96,11 @@ const Partners = () => {
             {/* Content */}
             <div className="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
               <div className="space-y-1 mb-5">
-                <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">FITES Allgäu</h2>
+                <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">
+                  FITES Allgäu
+                  <a href="#partnerschaft-hinweise" title="Offizieller Partner, Inhaber beider Betriebe ist Eugen Schall" className="align-super text-sm text-bronze hover:underline ml-0.5">*</a>
+                </h2>
+
                 <p className="font-medium text-lg" style={{ color: "#9E7C4E" }}>Fitness nebenan</p>
               </div>
               <p className="text-muted-foreground leading-relaxed mb-7">
@@ -149,7 +153,11 @@ const Partners = () => {
             </div>
             {/* Text right */}
             <div>
-              <p className="font-serif text-2xl font-bold text-foreground mb-6">Cup&amp;Cino</p>
+              <p className="font-serif text-2xl font-bold text-foreground mb-6">
+                Cup&amp;Cino
+                <a href="#partnerschaft-hinweise" title="Offizieller Partner, wir beziehen Kaffeemaschine, Kaffeebohnen und Matcha von Cup&Cino" className="align-super text-sm text-bronze hover:underline ml-0.5">**</a>
+              </p>
+
               <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
                 Kaffeesystem der Spitzenklasse
               </span>
@@ -229,6 +237,8 @@ const Partners = () => {
             {/* Text left */}
             <div className="order-2 md:order-1">
               <a href="https://optivantaagency.com/" target="_blank" rel="noopener noreferrer" className="font-serif text-2xl font-bold text-foreground mb-6 inline-block hover:text-bronze transition-colors">OPTIVANTA Agency</a>
+              <a href="#partnerschaft-hinweise" title="Offizieller Partner für Website, Webdesign und Marketing" className="align-super text-sm text-bronze hover:underline ml-0.5">***</a>
+
               <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
                 Digitalagentur · Web & Marketing
               </span>
@@ -317,7 +327,11 @@ const Partners = () => {
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* Text left */}
             <div className="order-2 md:order-1">
-              <p className="font-serif text-2xl font-bold text-foreground mb-6">Herbalife Nutrition</p>
+              <p className="font-serif text-2xl font-bold text-foreground mb-6">
+                Herbalife Nutrition
+                <a href="#partnerschaft-hinweise" title="Eugen Schall ist offizieller, zertifizierter Herbalife Berater" className="align-super text-sm text-bronze hover:underline ml-0.5">****</a>
+              </p>
+
               <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
                 Seit über 20 Jahren in der Familie
               </span>
@@ -392,7 +406,11 @@ const Partners = () => {
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* Text left */}
             <div className="order-2 md:order-1">
-              <p className="font-serif text-2xl font-bold text-foreground mb-6">Perplex</p>
+              <p className="font-serif text-2xl font-bold text-foreground mb-6">
+                Perplex
+                <a href="#partnerschaft-hinweise" title="Unser Lieferant für ofenfrische Backwaren" className="align-super text-sm text-bronze hover:underline ml-0.5">*****</a>
+              </p>
+
               <span className="inline-block bg-bronze/10 text-bronze text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
                 Handgemacht in Deutschland · Seit über 33 Jahren
               </span>
