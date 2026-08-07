@@ -249,7 +249,7 @@ const Index = () => {
         <div className="relative h-full">
           <img
             src={heroBg}
-            alt="Bistro Boxenstopp, gemütliches Café-Interieur mit Kaffee und Gebäck"
+            alt="KI generiert: Bistro Boxenstopp, gemütliches Café-Interieur mit Kaffee und Gebäck"
             width={1920}
             height={1080}
             className="w-full h-full object-cover"

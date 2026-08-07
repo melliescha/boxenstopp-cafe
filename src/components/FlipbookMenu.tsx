@@ -68,7 +68,7 @@ const SectionTitle = ({ title, subtitle }: { title: string; subtitle?: string })
 
 const ImagePage = ({ src, alt }: { src: string; alt: string }) => (
   <div className="relative w-full h-full">
-    <img src={src} alt={alt} className="w-full h-full object-cover rounded-sm" loading="lazy" />
+    <img src={src} alt={`KI generiert: ${alt}`} className="w-full h-full object-cover rounded-sm" loading="lazy" />
     <AiBadge asText />
   </div>
 );

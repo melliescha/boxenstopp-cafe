@@ -88,7 +88,7 @@ const MenuTileView = () => {
             <div className="relative aspect-square bg-secondary/40">
               {product.image ? (
                 <>
-                  <img src={product.image} alt={product.name} loading="lazy" decoding="async" className="w-full h-full object-cover" />
+                  <img src={product.image} alt={`KI generiert: Produktbild ${product.name}`} loading="lazy" decoding="async" className="w-full h-full object-cover" />
                   <AiBadge asText />
                 </>
               ) : (
