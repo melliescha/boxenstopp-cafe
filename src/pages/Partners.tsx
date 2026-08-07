@@ -456,6 +456,44 @@ const Partners = () => {
         </div>
       </section>
 
+      {/* Transparenz: Partnerschaften im Detail */}
+      <section id="partnerschaft-hinweise" className="py-12 bg-secondary/40 border-t border-border/60">
+        <div className="container mx-auto px-6 max-w-3xl">
+          <h2 className="font-serif text-xl font-bold text-foreground mb-4">
+            Transparenzhinweise zu unseren Partnerschaften
+          </h2>
+          <ul className="space-y-3 text-sm text-muted-foreground">
+            <li>
+              <strong className="text-foreground">* FITES Allgäu:</strong> Offizieller Partner. Inhaber
+              beider Betriebe ist Eugen Schall, das Bistro Boxenstopp ist ein Geschäftsbereich von FITES Allgäu.
+            </li>
+            <li>
+              <strong className="text-foreground">** Cup&amp;Cino:</strong> Offizieller Partner. Wir beziehen
+              unsere Kaffeemaschine, unsere Kaffeebohnen und unseren Matcha von Cup&amp;Cino.
+            </li>
+            <li>
+              <strong className="text-foreground">*** OPTIVANTA Agency:</strong> Offizieller Partner für
+              diese Website, Webdesign, Meta und Google Setup sowie Marketing.
+            </li>
+            <li>
+              <strong className="text-foreground">**** Herbalife Nutrition:</strong> Eugen Schall ist
+              offizieller, zertifizierter Herbalife Berater (VIP-Berater). Beim Verkauf von Herbalife
+              Produkten besteht dadurch ein wirtschaftliches Eigeninteresse.
+            </li>
+            <li>
+              <strong className="text-foreground">***** Perplex:</strong> Unser Lieferant für unsere
+              ofenfrischen Backwaren, Flammkuchen und Baguettes.
+            </li>
+          </ul>
+          <p className="mt-4 text-xs text-muted-foreground">
+            Alle genannten Marken- und Firmennamen gehören ihren jeweiligen Inhabern und werden hier nur
+            zur Information über unsere Lieferanten und Partner genannt.
+          </p>
+        </div>
+      </section>
+
+
+
     </Layout>
   );
 };
