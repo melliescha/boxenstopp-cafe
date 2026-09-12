@@ -414,6 +414,26 @@ const Index = () => {
                 </div>
               ))}
             </div>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-8">
+              <a
+                href="tel:+4917176226201"
+                className="inline-flex items-center justify-center gap-2 rounded-lg font-medium text-white hover:opacity-90 transition-opacity w-full sm:w-auto"
+                style={{ backgroundColor: "#164472", padding: "12px 28px", fontSize: "15px", minHeight: "48px" }}
+              >
+                <Phone className="w-4 h-4" aria-hidden="true" />
+                Jetzt anrufen
+              </a>
+              <a
+                href={socialLinks.googleMaps}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-lg font-medium hover:opacity-90 transition-opacity w-full sm:w-auto"
+                style={{ border: "2px solid #B8943E", color: "#B8943E", padding: "10px 28px", fontSize: "15px", minHeight: "48px" }}
+              >
+                <Navigation className="w-4 h-4" aria-hidden="true" />
+                Route planen
+              </a>
+            </div>
             <div className="divider-bronze mt-8" />
           </div>
         </div>
