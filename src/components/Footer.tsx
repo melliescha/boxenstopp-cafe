@@ -7,7 +7,7 @@ import optivantaLogo from "@/assets/logo-optivanta.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground py-12">
+    <footer className="bg-primary text-primary-foreground pt-12 pb-[84px] lg:pb-12">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Bereich 1: Kontakt */}
