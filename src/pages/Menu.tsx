@@ -12,7 +12,7 @@ import { downloadMenuPdf } from "@/lib/menuPdf";
 
 const Menu = () => {
   const [downloading, setDownloading] = useState(false);
-  const [view, setView] = useState<"liste" | "kacheln">("liste");
+  const [view, setView] = useState<"liste" | "kacheln">("kacheln");
 
   const handleDownloadPdf = async () => {
     try {
