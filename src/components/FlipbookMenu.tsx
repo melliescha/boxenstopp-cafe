@@ -281,21 +281,13 @@ const FlipbookMenu = () => {
               <PageNumber num={4} />
             </Page>
 
-            {/* Page: Flammkuchen & Pizza */}
+            {/* Page: Flammkuchen */}
             <Page>
               <SectionTitle title="Flammkuchen" />
               <FlipMenuItem item={{ name: "Elsässer Art", price: "6,30 €", allergens: "A,G", note: "Speck und Zwiebeln" }} />
               <FlipMenuItem item={{ name: "Griechische Art", price: "6,30 €", allergens: "A,G,L", note: "Peperoni, Hirtenkäse, bunter Pfeffer" }} />
               <FlipMenuItem item={{ name: "Mediterran", price: "6,30 €", allergens: "A,G", note: "Hirtenkäse, Paprika, Zucchini" }} />
               <FlipMenuItem item={{ name: "Lachs & Lauch", price: "7,30 €", allergens: "A,D,G" }} />
-
-              <div className="mt-3">
-                <SectionTitle title="Pizzasnacks & Pizzetta" />
-                <FlipMenuItem item={{ name: "Pizzasnack Caprese", price: "3,50 €", allergens: "A,G", note: "Pizzasauce, Käse & Kirschtomaten" }} />
-                <FlipMenuItem item={{ name: "Pizzasnack Salami", price: "3,80 €", allergens: "A,G", note: "Pizzasauce, Käse & Salami" }} />
-                <FlipMenuItem item={{ name: "Pizzetta Margherita", price: "3,60 €", allergens: "A,G", note: "Ø 19 cm · Tomatensauce & Käse" }} />
-                <FlipMenuItem item={{ name: "Pizzetta Salami", price: "3,95 €", allergens: "A,G", note: "Ø 19 cm · Tomatensauce, Käse & Salami" }} />
-              </div>
               <PageNumber num={5} />
             </Page>
 

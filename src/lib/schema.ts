@@ -49,7 +49,7 @@ export const localBusinessSchema = {
   geo,
   hasMap: "https://www.google.com/maps?q=Bistro+Boxenstopp+Südhang+1+88145+Hergatz",
   openingHoursSpecification: openingHours,
-  servesCuisine: ["Flammkuchen", "Pizza", "Barista-Kaffee", "Proteinshakes", "Hüttenbrot"],
+  servesCuisine: ["Flammkuchen", "Barista-Kaffee", "Proteinshakes", "Hüttenbrot"],
   acceptsReservations: true,
   smokingAllowed: false,
   publicAccess: true,

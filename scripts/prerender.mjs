@@ -39,7 +39,7 @@ const routes = [
     path: "/speisekarte",
     title: "Speisekarte, Bistro Boxenstopp Hergatz",
     description:
-      "Unsere Karte: Flammkuchen, Pizza-Snacks, Brote, Barista-Kaffee, Matcha, Proteinshakes und der berühmte Boxenstopp-Spezial mit Kollagen.",
+      "Unsere Karte: Flammkuchen, Brote, Barista-Kaffee, Matcha, Proteinshakes und der berühmte Boxenstopp-Spezial mit Kollagen.",
     image: `${SITE_URL}/og/speisekarte.jpg`,
     imageAlt: "Speisekarte des Bistro Boxenstopp: Flammkuchen, Kaffee und Shakes",
   },
