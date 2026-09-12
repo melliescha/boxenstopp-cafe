@@ -218,12 +218,12 @@ const Footer = () => {
         </div>
 
         {/* Werbeanzeigen, ganz unten im Footer, als eigener Abschnitt untereinander */}
-        <section className="mt-8 sm:mt-10 pt-6 sm:pt-8 border-t border-white/10" aria-label="Werbeanzeigen unserer Partner">
-          <p className="text-[10px] tracking-[0.28em] uppercase text-center mb-4 sm:mb-5 opacity-50">
+        <section className="mt-8 sm:mt-10 pt-8 sm:pt-10 border-t border-primary-foreground/10" aria-label="Werbeanzeigen unserer Partner">
+          <p className="text-[10px] tracking-[0.28em] uppercase text-center mb-5 opacity-50">
             Anzeigen
           </p>
 
-          <div className="flex flex-col gap-4 w-full">
+          <div className="flex flex-col gap-4 sm:gap-5 w-full">
             {/* Anzeige: FITES Allgäu */}
             <div
               className="relative rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-md"
@@ -234,9 +234,9 @@ const Footer = () => {
                 style={{ background: "#b3ddf2", opacity: 0.2 }}
                 aria-hidden="true"
               />
-              <div className="relative p-5 sm:p-6 md:p-7 flex flex-col sm:flex-row sm:items-center gap-5">
+              <div className="relative p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
                 <div className="flex-1 min-w-0">
-                  <div className="flex flex-wrap items-center gap-2 mb-3">
+                  <div className="flex flex-wrap items-center gap-2 mb-3 min-h-8">
                     <span
                       className="text-[9px] font-semibold tracking-[0.22em] uppercase px-2 py-0.5 rounded-full"
                       style={{ backgroundColor: "#f2fafd1f", color: "#b3ddf2", border: "1px solid #b3ddf24d" }}
@@ -250,20 +250,20 @@ const Footer = () => {
                       FITES<span style={{ color: "#a6d608" }}> Allgäu</span>
                     </span>
                   </div>
-                  <p className="font-serif text-lg sm:text-xl md:text-[24px] leading-snug font-bold mb-2" style={{ color: "#f2fafd" }}>
+                  <p className="font-serif text-lg sm:text-xl md:text-[22px] leading-snug font-bold mb-2" style={{ color: "#f2fafd" }}>
                     Trainiere direkt im selben Gebäude
                   </p>
-                  <p className="text-[10px] sm:text-[11px] font-medium tracking-[0.1em] sm:tracking-[0.14em] uppercase mb-2" style={{ color: "#b3ddf2" }}>
+                  <p className="text-[10px] sm:text-[11px] font-medium tracking-[0.12em] sm:tracking-[0.14em] uppercase mb-2" style={{ color: "#b3ddf2" }}>
                     HYROX &middot; Personaltraining &middot; Tabata &middot; HIIT &middot; FITES Boxen
                   </p>
                   <p className="text-sm leading-relaxed" style={{ color: "#f2fafd", opacity: 0.8 }}>
                     Kostenloses Probetraining bei FITES Allgäu, ohne Vertrag, ohne Vorkenntnisse.
                   </p>
                 </div>
-                <div className="w-full sm:w-auto flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3">
+                <div className="w-full sm:w-auto lg:w-[270px] shrink-0 flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-3 lg:flex-col lg:items-stretch">
                   <Link
                     to="/fites-allgaeu"
-                    className="inline-flex items-center justify-center px-5 py-3 sm:py-2.5 rounded-full font-semibold text-sm shadow-md hover:opacity-90 transition-opacity text-center"
+                    className="w-full sm:w-auto lg:w-full inline-flex items-center justify-center px-5 py-3 rounded-full font-semibold text-sm shadow-md hover:opacity-90 transition-opacity text-center"
                     style={{ backgroundColor: "#a6d608", color: "#1b4d66" }}
                   >
                     Kostenloses Probetraining sichern
@@ -272,7 +272,7 @@ const Footer = () => {
                     href="https://www.fites-allgaeu.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center text-sm font-medium hover:opacity-80 transition-opacity underline underline-offset-4 text-center"
+                    className="w-full sm:w-auto lg:w-full inline-flex items-center justify-center text-sm font-medium hover:opacity-80 transition-opacity underline underline-offset-4 text-center"
                     style={{ color: "#f2fafd", textDecorationColor: "#b3ddf2" }}
                   >
                     Zur Website
@@ -291,9 +291,9 @@ const Footer = () => {
                 style={{ background: "#66206f", opacity: 0.16 }}
                 aria-hidden="true"
               />
-              <div className="relative p-5 sm:p-6 md:p-7 flex flex-col sm:flex-row sm:items-center gap-5">
+              <div className="relative p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
                 <div className="flex-1 min-w-0">
-                  <div className="flex flex-wrap items-center gap-2 mb-3">
+                  <div className="flex flex-wrap items-center gap-2 mb-3 min-h-8">
                     <span
                       className="text-[9px] font-semibold tracking-[0.22em] uppercase px-2 py-0.5 rounded-full"
                       style={{ backgroundColor: "#66206f14", color: "#66206f", border: "1px solid #66206f40" }}
@@ -312,7 +312,7 @@ const Footer = () => {
                       OPTIVANTA Agency
                     </span>
                   </div>
-                  <p className="font-serif text-lg sm:text-xl md:text-[24px] leading-snug font-bold mb-2" style={{ color: "#66206f" }}>
+                  <p className="font-serif text-lg sm:text-xl md:text-[22px] leading-snug font-bold mb-2" style={{ color: "#66206f" }}>
                     Dir gefällt diese Website?
                   </p>
                   <p className="text-[10px] sm:text-[11px] font-medium tracking-[0.12em] sm:tracking-[0.14em] uppercase mb-2" style={{ color: "#e8875e" }}>
@@ -322,12 +322,12 @@ const Footer = () => {
                     Social Media Management, Meta Ads und Webdesign für dein lokales Unternehmen.
                   </p>
                 </div>
-                <div className="w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                <div className="w-full sm:w-auto lg:w-[270px] shrink-0 flex flex-col sm:flex-row sm:items-center gap-3 lg:flex-col lg:items-stretch">
                   <a
                     href="https://optivantaagency.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center px-5 py-3 sm:py-2.5 rounded-full font-semibold text-sm shadow-md hover:opacity-90 transition-opacity text-center"
+                    className="w-full sm:w-auto lg:w-full inline-flex items-center justify-center px-5 py-3 rounded-full font-semibold text-sm shadow-md hover:opacity-90 transition-opacity text-center"
                     style={{ backgroundColor: "#66206f", color: "#F5E9DA" }}
                   >
                     Jetzt Gespräch vereinbaren&nbsp;&rarr;
