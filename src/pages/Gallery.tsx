@@ -73,7 +73,7 @@ const images: GalleryImage[] = [
   { src: innenShaker, alt: "Goldener Shaker und Snacks an der Theke vor dem Herbalife-Regal", category: "innen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
   { src: innenThekeUebersicht, alt: "Übersicht der Theke mit Kaffeemaschine und stimmungsvoller Beleuchtung", category: "innen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
   { src: innenLedersesselPflanze, alt: "Gemütliche Sitzecke mit schwarzen Ledersesseln vor dekorativer 3D-Wand", category: "innen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
-  { src: innenBartischeBilderwand, alt: "Bartische mit Lederhockern, Pizzasnack und Bilderwand mit Sport-Motiven", category: "innen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
+  { src: innenBartischeBilderwand, alt: "Bartische mit Lederhockern und Bilderwand mit Sport-Motiven", category: "innen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
   { src: essenTomateMozzarella, alt: "Unser vegetarisches Hüttenbrot mit Tomate, Mozzarella und frischem Basilikum", category: "essen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
   { src: essenFlammkuchenLachs, alt: "Flammkuchen mit Lachs, Lauch und Schnittlauch, serviert mit Orangensaft", category: "essen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },
   { src: essenFlammkuchenGemuese, alt: "Unser mediterraner Flammkuchen mit Feta, Paprika, Zucchini und frischen Kräutern", category: "essen", source: "foto", sourceNote: "Eigenes Foto, Bistro Boxenstopp" },

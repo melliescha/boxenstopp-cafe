@@ -5,7 +5,7 @@
 ## Pages
 
 - [Startseite](/): Übersicht, Öffnungszeiten und Highlights.
-- [Speisekarte](/speisekarte): Flammkuchen, Pizza-Snacks, Brote, Kaffee, Matcha, Shakes, Boxenstopp Spezial.
+- [Speisekarte](/speisekarte): Flammkuchen, Brote, Kaffee, Matcha, Shakes, Boxenstopp Spezial.
 - [Über uns](/ueber-uns): Familie Schall, Geschichte und unsere Werte.
 - [Partner](/partner): FITES Allgäu, Cup&Cino, OPTIVANTA, Herbalife Nutrition, Perplex.
 - [FITES Allgäu](/fites-allgaeu): Fitnessstudio im selben Gebäude, HYROX, Fitness-Boxen, HIIT, Tabata, Personaltraining.

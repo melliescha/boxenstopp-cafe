@@ -331,7 +331,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Was kostet ein Kaffee bei euch? Wahrscheinlich wieder so überzogen wie überall.",
         answer:
-          "Ganz ehrlich: faire Preise waren uns am wichtigsten. Das letzte was wir brauchen sind 5-Euro-Cappuccinos wie in Berlin. Gerade deshalb haben wir uns in der Region umgesehen und können auf jeden Fall mithalten, manche Optionen sind sogar günstiger. Auch unsere ofenfrischen Speisen sind nicht nur konkurrenzfähig: Mit unserem Pizzasnack haben wir auch eine Option für den kleinen Hunger und den schmalen Geldbeutel.",
+          "Ganz ehrlich: faire Preise waren uns am wichtigsten. Das letzte was wir brauchen sind 5-Euro-Cappuccinos wie in Berlin. Gerade deshalb haben wir uns in der Region umgesehen und können auf jeden Fall mithalten, manche Optionen sind sogar günstiger. Auch unsere ofenfrischen Speisen sind nicht nur konkurrenzfähig: Für den kleinen Hunger und den schmalen Geldbeutel haben wir ebenfalls eine Option auf der Karte.",
       },
       {
         question: "Wieso soll ich extra nach Hergatz / Wohmbrechts fahren, wenn ich in Lindau oder Wangen alles habe?",
@@ -341,7 +341,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Macht ihr selbst was, oder kommt alles aus der Tiefkühltruhe?",
         answer:
-          "Klartext: Unsere ofenfrischen Speisen (Flammkuchen, Pizza, Baguette, Hüttenbrot) kommen von Perplex, einer deutschen Manufaktur, die seit über 33 Jahren in Deutschland von Hand belegt und erst danach schockfrostet. Das ist der Branchen-Standard, nahezu jede Gastronomie, jede Pizzeria, jedes Hotel arbeitet mit vorbereiteten oder tiefgekühlten Komponenten. Der Unterschied ist die Qualität: Handwerk statt Fließband, ohne Gentechnik, kontrolliert durch agroVet. Vergleichbar damit, wenn ihr euch zu Hause einen Flammkuchen frisch belegt und für später einfriert, nur eben von Profis. Wir sind ehrlich damit und listen Lieferanten, Nährwerte und Inhaltsstoffe transparent auf. Was wir vor Ort frisch machen: Salate, Shakes, Kaffee, Iced Drinks, Quark & Toppings.",
+          "Klartext: Unsere ofenfrischen Speisen (Flammkuchen, Baguette, Hüttenbrot) kommen von Perplex, einer deutschen Manufaktur, die seit über 33 Jahren in Deutschland von Hand belegt und erst danach schockfrostet. Das ist der Branchen-Standard, nahezu jede Gastronomie und jedes Hotel arbeitet mit vorbereiteten oder tiefgekühlten Komponenten. Der Unterschied ist die Qualität: Handwerk statt Fließband, ohne Gentechnik, kontrolliert durch agroVet. Vergleichbar damit, wenn ihr euch zu Hause einen Flammkuchen frisch belegt und für später einfriert, nur eben von Profis. Wir sind ehrlich damit und listen Lieferanten, Nährwerte und Inhaltsstoffe transparent auf. Was wir vor Ort frisch machen: Salate, Shakes, Kaffee, Iced Drinks, Quark & Toppings.",
       },
       {
         question: "Eugen ist VIP-Berater bei Herbalife. Wollt ihr uns das jetzt verkaufen?",
