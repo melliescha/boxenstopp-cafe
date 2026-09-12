@@ -238,13 +238,14 @@ const Index = () => {
   return (
     <Layout>
       <SEO
-        title="Bistro Boxenstopp Hergatz | Kaffee & Flammkuchen"
-        description="Barista-Kaffee, ofenfrische Flammkuchen und Hüttenbrot in Hergatz, Euer Stopp am Bodensee-Königssee-Radweg im Westallgäu."
+        title="Café & Bistro Hergatz | Frühstück, Kaffee, Flammkuchen"
+        description="Bistro Boxenstopp in Hergatz-Wohmbrechts im Westallgäu: Barista-Kaffee, Frühstück, ofenfrische Flammkuchen und Hüttenbrot. Direkt am Bodensee-Königssee-Radweg, Parkplätze, Duschen. Nähe Wangen, Heimenkirch, Lindenberg, Lindau."
         path="/"
         type="restaurant.restaurant"
         imageAlt="Bistro Boxenstopp in Hergatz im Westallgäu, Barista-Kaffee und Flammkuchen"
         jsonLd={localBusinessSchema}
       />
+
       {/* Vertrauter Einstieg mit dezenter Bewegung */}
       <section className="relative overflow-hidden h-[58vh] min-h-[440px] max-h-[680px]">
         <div className="relative h-full">
@@ -270,11 +271,12 @@ const Index = () => {
           <div className="text-center md:text-left">
             <p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-bronze">Café in Hergatz-Wohmbrechts</p>
             <h1 className="font-serif text-3xl font-medium text-foreground md:text-4xl">
-              Hergatz' bestgehütetes Geheimnis
+              Café &amp; Bistro in Hergatz: Hergatz' bestgehütetes Geheimnis
             </h1>
             <p className="mt-2 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-              Bistro Boxenstopp in Hergatz-Wohmbrechts: Barista-Kaffee, Flammkuchen und Hüttenbrot im Westallgäu
+              Bistro Boxenstopp in Hergatz-Wohmbrechts: Barista-Kaffee, Frühstück, Flammkuchen und Hüttenbrot im Westallgäu, kurze Wege aus Wangen im Allgäu, Heimenkirch, Lindenberg und Lindau.
             </p>
+
           </div>
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
