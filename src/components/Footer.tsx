@@ -218,8 +218,8 @@ const Footer = () => {
         </div>
 
         {/* Werbeanzeigen, ganz unten im Footer, als eigener Abschnitt untereinander */}
-        <section className="mt-10 pt-8 border-t border-white/10" aria-label="Werbeanzeigen unserer Partner">
-          <p className="text-[10px] tracking-[0.28em] uppercase text-center mb-5 opacity-50">
+        <section className="mt-8 sm:mt-10 pt-6 sm:pt-8 border-t border-white/10" aria-label="Werbeanzeigen unserer Partner">
+          <p className="text-[10px] tracking-[0.28em] uppercase text-center mb-4 sm:mb-5 opacity-50">
             Anzeigen
           </p>
 
