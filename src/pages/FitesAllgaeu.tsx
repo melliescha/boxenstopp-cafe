@@ -332,6 +332,29 @@ const FitesAllgaeu = () => {
         </div>
       </section>
 
+      {/* EINZUGSGEBIET */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6 max-w-4xl text-center">
+          <p className="text-xs uppercase tracking-[0.25em] font-semibold mb-3" style={{ color: BRONZE }}>Gut erreichbar</p>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold mb-5" style={{ color: NAVY }}>
+            Dein Fitnessstudio im Westallgäu, egal aus welchem Ort du kommst.
+          </h2>
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-3xl mx-auto">
+            FITES Allgäu liegt in Hergatz, zentral zwischen den Orten des Westallgäus und des Bodenseekreises. Ob Fitness-Kurse, HYROX Training, Fitness-Boxen, HIIT, Tabata, Ganzkörpertraining oder Personal Training: Mitglieder kommen aus der ganzen Region zu uns.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 mb-8">
+            {serviceArea.map((ort) => (
+              <span key={ort} className="px-5 py-2.5 rounded-full font-semibold bg-card" style={{ border: `1px solid #EDE0D0`, color: NAVY }}>
+                {ort}
+              </span>
+            ))}
+          </div>
+          <p className="text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+            Viele Trainierende kommen aus <strong className="text-foreground">Wangen im Allgäu</strong>, <strong className="text-foreground">Lindenberg im Allgäu</strong>, <strong className="text-foreground">Heimenkirch</strong>, <strong className="text-foreground">Ravensburg</strong> und <strong className="text-foreground">Lindau am Bodensee</strong>. Alle Orte sind in wenigen Autominuten erreichbar, Parkplätze direkt am Gebäude. Nach dem Training wartet im selben Gebäude das Bistro Boxenstopp mit Kaffee, Protein-Shake und Frühstück.
+          </p>
+        </div>
+      </section>
+
       {/* FINAL CTA */}
       <section className="py-20 md:py-28 relative overflow-hidden" style={{ backgroundColor: NAVY }}>
         <div className="absolute inset-0 opacity-20">
