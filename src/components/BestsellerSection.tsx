@@ -103,15 +103,8 @@ const BestsellerSection = () => (
         <p className="text-muted-foreground text-lg">Das bestellen unsere Gäste am liebsten.</p>
       </div>
 
-      {/* Desktop: 5 cols, Tablet: 3 cols grid, Mobile: horizontal scroll */}
-      <div className="hidden md:grid md:grid-cols-3 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
-        {bestsellers.map((item, index) => (
-          <BestsellerCard key={item.name} item={item} featured={index === 0} />
-        ))}
-      </div>
-
-      {/* Mobile: horizontal scroll with snap */}
-      <div className="md:hidden flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide">
+      {/* Einheitliches, flüssiges Raster: alle Kacheln gleich groß */}
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-5">
         {bestsellers.map((item) => (
           <BestsellerCard key={item.name} item={item} />
         ))}
