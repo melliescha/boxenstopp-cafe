@@ -49,12 +49,22 @@ const benefits = [
   "Flexible Zeiten, keine langen Vertragslaufzeiten",
 ];
 
+const serviceArea = [
+  "Hergatz",
+  "Wangen im Allgäu",
+  "Lindenberg im Allgäu",
+  "Heimenkirch",
+  "Ravensburg",
+  "Lindau (Bodensee)",
+];
+
 const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "HealthClub",
     name: "FITES Allgäu",
-    description: "Fitnessstudio in Hergatz mit HYROX, FITES Boxen, HIIT & Tabata und Ganzkörpertraining, dazu Personal Training nach Absprache.",
+    description:
+      "Fitnessstudio in Hergatz mit HYROX, FITES Boxen, HIIT & Tabata, Ganzkörpertraining und Personal Training. Für Mitglieder aus Hergatz, Wangen im Allgäu, Lindenberg, Heimenkirch, Ravensburg und Lindau.",
     url: "https://bistro-boxenstopp.de/fites-allgaeu",
     telephone: "+491716226201",
     address: {
@@ -65,6 +75,7 @@ const jsonLd = [
       postalCode: "88145",
       addressCountry: "DE",
     },
+    areaServed: serviceArea.map((name) => ({ "@type": "City", name })),
     sameAs: [STUDIO_URL],
     offers: {
       "@type": "Offer",
