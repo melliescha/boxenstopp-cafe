@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, Phone, MapPin, Clock, Route, Star } from "lucide-react";
+import { Instagram, Facebook, Phone, MapPin, Clock, Route, Star, ArrowUpRight } from "lucide-react";
 import { socialLinks, facebookEnabled } from "@/config/social";
 import { openConsentSettings } from "@/lib/consent";
 import optivantaLogo from "@/assets/logo-optivanta.png";
@@ -217,62 +217,62 @@ const Footer = () => {
           <p>© {new Date().getFullYear()} Bistro Boxenstopp</p>
         </div>
 
-        {/* Werbeanzeigen, ganz unten im Footer, als eigener Abschnitt untereinander */}
-        <section className="mt-8 sm:mt-10 pt-8 sm:pt-10 border-t border-primary-foreground/10" aria-label="Werbeanzeigen unserer Partner">
-          <p className="text-[10px] tracking-[0.28em] uppercase text-center mb-5 opacity-50">
-            Anzeigen
-          </p>
+        {/* Werbeanzeigen als ruhiger, zusammenhängender Footer-Abschluss */}
+        <section className="mt-8 border-t border-primary-foreground/10 pt-8 sm:mt-10 sm:pt-10" aria-label="Werbeanzeigen unserer Partner">
+          <div className="mb-4 flex items-center gap-4">
+            <span className="h-px flex-1 bg-primary-foreground/10" aria-hidden="true" />
+            <p className="text-[10px] uppercase tracking-[0.24em] text-primary-foreground/45">Empfehlungen aus unserem Haus</p>
+            <span className="h-px flex-1 bg-primary-foreground/10" aria-hidden="true" />
+          </div>
 
-          <div className="flex flex-col gap-4 sm:gap-5 w-full">
+          <div className="w-full overflow-hidden rounded-lg border border-primary-foreground/15 bg-primary-foreground/5 shadow-lg">
             {/* Anzeige: FITES Allgäu */}
             <div
-              className="relative rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-md"
-              style={{ background: "linear-gradient(115deg, #1b4d66 0%, #228bcd 100%)" }}
+              className="relative overflow-hidden"
+              style={{ background: "linear-gradient(105deg, #1b4d66 0%, #228bcd 100%)" }}
             >
-              <div
-                className="pointer-events-none absolute -top-16 -right-10 w-52 h-52 rounded-full blur-3xl"
-                style={{ background: "#b3ddf2", opacity: 0.2 }}
-                aria-hidden="true"
-              />
-              <div className="relative p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
-                <div className="flex-1 min-w-0">
-                  <div className="flex flex-wrap items-center gap-2 mb-3 min-h-8">
+              <div className="relative grid gap-5 p-5 sm:p-7 lg:grid-cols-[220px_1fr_auto] lg:items-center lg:gap-8">
+                <div className="min-w-0">
+                  <div className="mb-2 flex flex-wrap items-center gap-2">
                     <span
-                      className="text-[9px] font-semibold tracking-[0.22em] uppercase px-2 py-0.5 rounded-full"
-                      style={{ backgroundColor: "#f2fafd1f", color: "#b3ddf2", border: "1px solid #b3ddf24d" }}
+                      className="text-[9px] font-semibold tracking-[0.2em] uppercase"
+                      style={{ color: "#b3ddf2" }}
                     >
                       Anzeige
                     </span>
-                    <span
-                      className="font-sans text-[11px] sm:text-[12px] font-extrabold tracking-[0.1em] sm:tracking-[0.16em] uppercase px-2.5 py-1 rounded-md"
-                      style={{ backgroundColor: "#f2fafd", color: "#1b4d66" }}
-                    >
-                      FITES<span style={{ color: "#a6d608" }}> Allgäu</span>
-                    </span>
                   </div>
-                  <p className="font-serif text-lg sm:text-xl md:text-[22px] leading-snug font-bold mb-2" style={{ color: "#f2fafd" }}>
+                  <p className="font-sans text-xl font-extrabold uppercase tracking-[0.12em]" style={{ color: "#f2fafd" }}>
+                    FITES <span style={{ color: "#a6d608" }}>Allgäu</span>
+                  </p>
+                  <p className="mt-1 text-xs font-medium uppercase tracking-[0.12em]" style={{ color: "#b3ddf2" }}>
+                    Fitness im selben Gebäude
+                  </p>
+                </div>
+                <div className="min-w-0 lg:border-l lg:pl-8" style={{ borderColor: "#b3ddf24d" }}>
+                  <p className="font-serif text-xl font-bold leading-snug sm:text-2xl" style={{ color: "#f2fafd" }}>
                     Trainiere direkt im selben Gebäude
                   </p>
-                  <p className="text-[10px] sm:text-[11px] font-medium tracking-[0.12em] sm:tracking-[0.14em] uppercase mb-2" style={{ color: "#b3ddf2" }}>
+                  <p className="mt-2 text-[10px] font-medium uppercase tracking-[0.12em] sm:text-[11px]" style={{ color: "#b3ddf2" }}>
                     HYROX &middot; Personaltraining &middot; Tabata &middot; HIIT &middot; FITES Boxen
                   </p>
-                  <p className="text-sm leading-relaxed" style={{ color: "#f2fafd", opacity: 0.8 }}>
+                  <p className="mt-2 text-sm leading-relaxed" style={{ color: "#f2fafd", opacity: 0.82 }}>
                     Kostenloses Probetraining bei FITES Allgäu, ohne Vertrag, ohne Vorkenntnisse.
                   </p>
                 </div>
-                <div className="w-full sm:w-auto lg:w-[270px] shrink-0 flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-3 lg:flex-col lg:items-stretch">
+                <div className="flex w-full shrink-0 flex-col gap-2 sm:w-auto sm:flex-row lg:w-[250px] lg:flex-col">
                   <Link
                     to="/fites-allgaeu"
-                    className="w-full sm:w-auto lg:w-full inline-flex items-center justify-center px-5 py-3 rounded-full font-semibold text-sm shadow-md hover:opacity-90 transition-opacity text-center"
+                    className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-md px-5 py-3 text-center text-sm font-semibold shadow-sm transition-transform hover:-translate-y-0.5"
                     style={{ backgroundColor: "#a6d608", color: "#1b4d66" }}
                   >
                     Kostenloses Probetraining sichern
+                    <ArrowUpRight className="h-4 w-4 flex-shrink-0" aria-hidden="true" />
                   </Link>
                   <a
                     href="https://www.fites-allgaeu.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full sm:w-auto lg:w-full inline-flex items-center justify-center text-sm font-medium hover:opacity-80 transition-opacity underline underline-offset-4 text-center"
+                    className="inline-flex min-h-10 w-full items-center justify-center text-center text-sm font-medium underline underline-offset-4 transition-opacity hover:opacity-80"
                     style={{ color: "#f2fafd", textDecorationColor: "#b3ddf2" }}
                   >
                     Zur Website
@@ -283,54 +283,54 @@ const Footer = () => {
 
             {/* Anzeige: OPTIVANTA Agency */}
             <div
-              className="relative rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-md"
-              style={{ background: "linear-gradient(115deg, #F5E9DA 0%, #EFDDCB 100%)" }}
+              className="relative overflow-hidden border-t border-primary-foreground/20"
+              style={{ background: "linear-gradient(105deg, #F5E9DA 0%, #EFDDCB 100%)" }}
             >
-              <div
-                className="pointer-events-none absolute -bottom-20 -left-12 w-56 h-56 rounded-full blur-3xl"
-                style={{ background: "#66206f", opacity: 0.16 }}
-                aria-hidden="true"
-              />
-              <div className="relative p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
-                <div className="flex-1 min-w-0">
-                  <div className="flex flex-wrap items-center gap-2 mb-3 min-h-8">
+              <div className="relative grid gap-5 p-5 sm:p-7 lg:grid-cols-[220px_1fr_auto] lg:items-center lg:gap-8">
+                <div className="min-w-0">
+                  <div className="mb-2 flex items-center gap-2">
                     <span
-                      className="text-[9px] font-semibold tracking-[0.22em] uppercase px-2 py-0.5 rounded-full"
-                      style={{ backgroundColor: "#66206f14", color: "#66206f", border: "1px solid #66206f40" }}
+                      className="text-[9px] font-semibold uppercase tracking-[0.2em]"
+                      style={{ color: "#66206f", opacity: 0.7 }}
                     >
                       Anzeige
                     </span>
+                  </div>
+                  <div className="flex items-center gap-3">
                     <img
                       src={optivantaLogo}
                       alt="OPTIVANTA Agency Logo"
-                      className="h-8 w-8 rounded-lg object-contain"
+                      className="h-9 w-9 rounded-md object-contain"
                       loading="lazy"
                       width={32}
                       height={32}
                     />
-                    <span className="text-[11px] tracking-[0.12em] uppercase font-semibold" style={{ color: "#66206f", opacity: 0.75 }}>
+                    <span className="text-xs font-bold uppercase tracking-[0.12em]" style={{ color: "#66206f" }}>
                       OPTIVANTA Agency
                     </span>
                   </div>
-                  <p className="font-serif text-lg sm:text-xl md:text-[22px] leading-snug font-bold mb-2" style={{ color: "#66206f" }}>
+                </div>
+                <div className="min-w-0 lg:border-l lg:pl-8" style={{ borderColor: "#66206f33" }}>
+                  <p className="font-serif text-xl font-bold leading-snug sm:text-2xl" style={{ color: "#66206f" }}>
                     Dir gefällt diese Website?
                   </p>
-                  <p className="text-[10px] sm:text-[11px] font-medium tracking-[0.12em] sm:tracking-[0.14em] uppercase mb-2" style={{ color: "#e8875e" }}>
+                  <p className="mt-2 text-[10px] font-semibold uppercase tracking-[0.12em] sm:text-[11px]" style={{ color: "#e8875e" }}>
                     Marketing, das Kunden bringt
                   </p>
-                  <p className="text-sm leading-relaxed" style={{ color: "#4a2450" }}>
+                  <p className="mt-2 text-sm leading-relaxed" style={{ color: "#4a2450" }}>
                     Social Media Management, Meta Ads und Webdesign für dein lokales Unternehmen.
                   </p>
                 </div>
-                <div className="w-full sm:w-auto lg:w-[270px] shrink-0 flex flex-col sm:flex-row sm:items-center gap-3 lg:flex-col lg:items-stretch">
+                <div className="w-full shrink-0 sm:w-auto lg:w-[250px]">
                   <a
                     href="https://optivantaagency.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full sm:w-auto lg:w-full inline-flex items-center justify-center px-5 py-3 rounded-full font-semibold text-sm shadow-md hover:opacity-90 transition-opacity text-center"
+                    className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-md px-5 py-3 text-center text-sm font-semibold shadow-sm transition-transform hover:-translate-y-0.5"
                     style={{ backgroundColor: "#66206f", color: "#F5E9DA" }}
                   >
-                    Jetzt Gespräch vereinbaren&nbsp;&rarr;
+                    Jetzt Gespräch vereinbaren
+                    <ArrowUpRight className="h-4 w-4 flex-shrink-0" aria-hidden="true" />
                   </a>
                 </div>
               </div>
