@@ -67,8 +67,8 @@ const bestsellers: Bestseller[] = [
   },
 ];
 
-const BestsellerCard = ({ item }: { item: Bestseller }) => (
-  <div className="group min-w-[260px] sm:min-w-0 snap-center bg-card rounded-xl border border-bronze/30 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+const BestsellerCard = ({ item, featured = false }: { item: Bestseller; featured?: boolean }) => (
+  <article className={`group min-w-[260px] sm:min-w-0 snap-center bg-card rounded-lg border border-bronze/30 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ${featured ? "md:col-span-2 md:row-span-2" : ""}`}>
     <div className="relative aspect-square overflow-hidden">
       <img
         src={item.image}
@@ -84,29 +84,29 @@ const BestsellerCard = ({ item }: { item: Bestseller }) => (
       <AiBadge />
 
     </div>
-    <div className="p-4 text-center">
-      <h3 className="font-serif text-lg font-semibold text-foreground mb-1">{item.name}</h3>
+    <div className={`p-4 ${featured ? "md:p-6" : ""}`}>
+      <h3 className={`font-serif font-semibold text-foreground mb-1 ${featured ? "text-xl md:text-2xl" : "text-lg"}`}>{item.name}</h3>
       <p className="text-muted-foreground text-sm leading-relaxed mb-3">{item.description}</p>
       <span className="text-bronze font-semibold text-base">{item.price}</span>
     </div>
-  </div>
+  </article>
 );
 
 const BestsellerSection = () => (
   <section className="py-10 md:py-14 bg-background">
     <div className="container mx-auto px-6">
-      <div className="text-center mb-10">
+      <div className="mb-8 max-w-2xl">
+        <p className="text-bronze font-bold tracking-[0.2em] uppercase text-xs mb-2">Aus unserer Küche</p>
         <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-3">
-          Unsere Bestseller ✨
+          Unsere Bestseller
         </h2>
         <p className="text-muted-foreground text-lg">Das bestellen unsere Gäste am liebsten.</p>
-        <div className="divider-bronze mt-4" />
       </div>
 
       {/* Desktop: 5 cols, Tablet: 3 cols grid, Mobile: horizontal scroll */}
-      <div className="hidden md:grid md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
-        {bestsellers.map((item) => (
-          <BestsellerCard key={item.name} item={item} />
+      <div className="hidden md:grid md:grid-cols-3 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
+        {bestsellers.map((item, index) => (
+          <BestsellerCard key={item.name} item={item} featured={index === 0} />
         ))}
       </div>
 
