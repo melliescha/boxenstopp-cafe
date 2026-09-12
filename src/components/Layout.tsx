@@ -8,7 +8,7 @@ import VacationDialog from "./VacationDialog";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-dvh flex flex-col">
       {/* Skip to content link, visible on focus only */}
       <a
         href="#main-content"

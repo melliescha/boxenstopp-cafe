@@ -8,7 +8,7 @@ const QRCodePage = () => {
   const handlePrint = () => window.print();
 
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center p-6">
+    <div className="min-h-dvh bg-background flex items-center justify-center p-6">
       <SEO
         title="QR-Code zur Speisekarte | Bistro Boxenstopp"
         description="Interne Druckvorlage für den QR-Code zur digitalen Speisekarte."

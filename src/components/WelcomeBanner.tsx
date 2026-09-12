@@ -19,7 +19,7 @@ const WelcomeBanner = () => {
           className="absolute right-4 top-1/2 -translate-y-1/2 hover:opacity-70 transition-opacity"
           aria-label="Banner schließen"
         >
-          <X size={16} />
+          <X size={16} aria-hidden="true" />
         </button>
       </div>
     );
@@ -39,7 +39,7 @@ const WelcomeBanner = () => {
         className="absolute right-4 top-1/2 -translate-y-1/2 hover:opacity-70 transition-opacity"
         aria-label="Banner schließen"
       >
-        <X size={16} />
+        <X size={16} aria-hidden="true" />
       </button>
     </div>
   );
