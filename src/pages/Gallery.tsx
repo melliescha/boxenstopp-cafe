@@ -4,6 +4,7 @@ import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import AiBadge from "@/components/AiBadge";
 import InstagramSection from "@/components/InstagramSection";
+import Reveal from "@/components/Reveal";
 
 import heroBistro from "@/assets/hero-bistro.jpg";
 import essenTomateMozzarella from "@/assets/gallery/essen-flammkuchen-tomate-mozzarella.jpg";
@@ -145,19 +146,20 @@ const Gallery = () => {
           {filtered.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
               {filtered.map((img, i) => (
-                <button
-                  key={img.alt}
-                  onClick={() => setLightbox(i)}
-                  className="relative rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group cursor-pointer aspect-[4/3]"
-                >
-                  <img
-                    src={img.src}
-                    alt={img.alt}
-                    loading="lazy"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  {img.source === "ki" && <AiBadge variant="overlay" />}
-                </button>
+                <Reveal key={img.alt} delay={(i % 6) * 70}>
+                  <button
+                    onClick={() => setLightbox(i)}
+                    className="relative rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group cursor-pointer aspect-[4/3] w-full"
+                  >
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      loading="lazy"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    {img.source === "ki" && <AiBadge variant="overlay" />}
+                  </button>
+                </Reveal>
               ))}
             </div>
           ) : (

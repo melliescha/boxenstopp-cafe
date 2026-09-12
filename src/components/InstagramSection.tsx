@@ -1,5 +1,6 @@
 import { Instagram, ExternalLink } from "lucide-react";
 import { socialLinks } from "@/config/social";
+import Reveal from "@/components/Reveal";
 
 import img1 from "@/assets/gallery/essen-flammkuchen-speck-perplex.jpg";
 import img2 from "@/assets/gallery/getraenk-matcha-latte.jpg";
@@ -81,29 +82,31 @@ export default function InstagramSection({
         </div>
 
         <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
-          {visible.map((p) => (
+          {visible.map((p, idx) => (
             <li key={p.alt}>
-              <a
-                href={socialLinks.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group block relative overflow-hidden rounded-xl border border-border/50 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bronze"
-                aria-label={`${p.alt}. Öffnet unser Instagram Profil in einem neuen Tab`}
-              >
-                <img
-                  src={p.src}
-                  alt={p.alt}
-                  loading="lazy"
-                  decoding="async"
-                  className="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <span className="absolute inset-0 bg-primary/0 group-hover:bg-primary/25 transition-colors flex items-center justify-center">
-                  <Instagram
-                    className="w-7 h-7 text-primary-foreground opacity-0 group-hover:opacity-100 transition-opacity"
-                    aria-hidden="true"
+              <Reveal delay={(idx % 8) * 60}>
+                <a
+                  href={socialLinks.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block relative overflow-hidden rounded-xl border border-border/50 shadow-sm hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bronze transition-shadow duration-300"
+                  aria-label={`${p.alt}. Öffnet unser Instagram Profil in einem neuen Tab`}
+                >
+                  <img
+                    src={p.src}
+                    alt={p.alt}
+                    loading="lazy"
+                    decoding="async"
+                    className="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </span>
-              </a>
+                  <span className="absolute inset-0 bg-primary/0 group-hover:bg-primary/25 transition-colors flex items-center justify-center">
+                    <Instagram
+                      className="w-7 h-7 text-primary-foreground opacity-0 group-hover:opacity-100 transition-opacity"
+                      aria-hidden="true"
+                    />
+                  </span>
+                </a>
+              </Reveal>
             </li>
           ))}
         </ul>
