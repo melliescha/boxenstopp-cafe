@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import MenuTileView from "@/components/MenuTileView";
-import { Download, Loader2, Star } from "lucide-react";
+import PriceList from "@/components/PriceList";
+import { Download, Loader2, Star, List, LayoutGrid } from "lucide-react";
 import { socialLinks } from "@/config/social";
 import { toast } from "sonner";
 import { menuPageSchema } from "@/lib/schema";
@@ -11,6 +12,7 @@ import { downloadMenuPdf } from "@/lib/menuPdf";
 
 const Menu = () => {
   const [downloading, setDownloading] = useState(false);
+  const [view, setView] = useState<"liste" | "kacheln">("liste");
 
   const handleDownloadPdf = async () => {
     try {
