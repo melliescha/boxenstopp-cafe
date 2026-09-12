@@ -3,12 +3,10 @@ import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import MenuTileView from "@/components/MenuTileView";
-import FlipbookMenu from "@/components/FlipbookMenu";
 import { Download, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import { menuPageSchema } from "@/lib/schema";
-
-type Tab = "karte" | "flipbook";
+import { downloadMenuPdf } from "@/lib/menuPdf";
 
 const Menu = () => {
   const [tab, setTab] = useState<Tab>("karte");
