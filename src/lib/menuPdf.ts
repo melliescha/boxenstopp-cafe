@@ -10,10 +10,10 @@ const NAVY: [number, number, number] = [22, 68, 114];
 const BRONZE: [number, number, number] = [158, 124, 78];
 const TEXT: [number, number, number] = [60, 45, 35];
 
-// Entfernt Zeichen, die die PDF-Schrift nicht darstellen kann (z. B. ★, Emojis)
+// Entfernt Zeichen, die die PDF-Schrift nicht darstellen kann (z. B. ★, Emojis). € bleibt erhalten.
 const clean = (s: string) =>
   s
-    .replace(/[^\u0020-\u00FF]/g, "")
+    .replace(/[^\u0020-\u00FF\u20AC]/g, "")
     .replace(/\s{2,}/g, " ")
     .trim();
 
