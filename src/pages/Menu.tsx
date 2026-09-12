@@ -3,128 +3,18 @@ import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import MenuTileView from "@/components/MenuTileView";
-import FlipbookMenu from "@/components/FlipbookMenu";
 import { Download, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import { menuPageSchema } from "@/lib/schema";
-
-type Tab = "karte" | "flipbook";
+import { downloadMenuPdf } from "@/lib/menuPdf";
 
 const Menu = () => {
-  const [tab, setTab] = useState<Tab>("karte");
   const [downloading, setDownloading] = useState(false);
 
   const handleDownloadPdf = async () => {
     try {
       setDownloading(true);
-      const pages = Array.from(
-        document.querySelectorAll<HTMLElement>("[data-flip-page]")
-      );
-      if (pages.length === 0) {
-        toast.error("Keine Seiten gefunden.");
-        return;
-      }
-
-      await document.fonts?.ready;
-
-      const [{ default: html2canvas }, { jsPDF }] = await Promise.all([
-        import("html2canvas"),
-        import("jspdf"),
-      ]);
-
-      const pdf = new jsPDF({
-        orientation: "portrait",
-        unit: "mm",
-        format: "a4",
-        compress: true,
-      });
-      const pageWidth = pdf.internal.pageSize.getWidth();
-      const pageHeight = pdf.internal.pageSize.getHeight();
-      const exportRoot = document.createElement("div");
-
-      exportRoot.setAttribute("aria-hidden", "true");
-      exportRoot.style.position = "fixed";
-      exportRoot.style.left = "-10000px";
-      exportRoot.style.top = "0";
-      exportRoot.style.pointerEvents = "none";
-      exportRoot.style.opacity = "0";
-      exportRoot.style.zIndex = "-1";
-      document.body.appendChild(exportRoot);
-
-      try {
-        for (let i = 0; i < pages.length; i++) {
-          const el = pages[i];
-          const rect = el.getBoundingClientRect();
-          const clone = el.cloneNode(true) as HTMLElement;
-
-          clone.removeAttribute("style");
-          clone.style.transform = "none";
-          clone.style.position = "relative";
-          clone.style.display = "block";
-          clone.style.visibility = "visible";
-          clone.style.opacity = "1";
-          clone.style.left = "0";
-          clone.style.top = "0";
-          clone.style.width = `${Math.max(rect.width, 380)}px`;
-          clone.style.height = `${Math.max(rect.height, 620)}px`;
-          clone.style.minWidth = clone.style.width;
-          clone.style.maxWidth = clone.style.width;
-          clone.style.minHeight = clone.style.height;
-          clone.style.maxHeight = clone.style.height;
-          clone.style.margin = "0";
-          clone.style.background = "hsl(28 100% 96%)";
-          clone.style.boxShadow = "none";
-          clone.querySelectorAll<HTMLElement>("*").forEach((node) => {
-            node.style.transform = "none";
-            node.style.animation = "none";
-            node.style.transition = "none";
-          });
-
-          exportRoot.appendChild(clone);
-
-          const cloneWidth = Math.max(clone.offsetWidth, clone.scrollWidth, 380);
-          const cloneHeight = Math.max(clone.offsetHeight, clone.scrollHeight, 620);
-          clone.style.width = `${cloneWidth}px`;
-          clone.style.height = `${cloneHeight}px`;
-
-          const canvas = await html2canvas(clone, {
-            scale: 1.5,
-            useCORS: true,
-            backgroundColor: "#fef4ec",
-            logging: false,
-          });
-
-          exportRoot.removeChild(clone);
-
-          if (!canvas.width || !canvas.height) {
-            throw new Error("PDF page render returned empty canvas");
-          }
-
-          const imgData = canvas.toDataURL("image/jpeg", 0.82);
-          const ratio = Math.min(pageWidth / canvas.width, pageHeight / canvas.height);
-          const w = Math.max(1, canvas.width * ratio);
-          const h = Math.max(1, canvas.height * ratio);
-          const x = Math.max(0, (pageWidth - w) / 2);
-          const y = Math.max(0, (pageHeight - h) / 2);
-
-          if (i > 0) pdf.addPage();
-          pdf.addImage(imgData, "JPEG", x, y, w, h, undefined, "FAST");
-        }
-
-        const blob = pdf.output("blob");
-        const url = URL.createObjectURL(blob);
-        const link = document.createElement("a");
-
-        link.href = url;
-        link.download = "Speisekarte-Bistro-Boxenstopp.pdf";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        URL.revokeObjectURL(url);
-      } finally {
-        document.body.removeChild(exportRoot);
-      }
-
+      downloadMenuPdf();
       toast.success("PDF heruntergeladen");
     } catch (err) {
       console.error("PDF download failed", err);
@@ -133,7 +23,6 @@ const Menu = () => {
       setDownloading(false);
     }
   };
-
 
   useEffect(() => {
     const menuSchema = {
@@ -213,49 +102,21 @@ const Menu = () => {
             <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">Speisekarte</h1>
             <div className="divider-bronze mb-8" />
 
-            {/* Tab switcher */}
-            <div className="inline-flex rounded-lg border border-bronze/40 overflow-hidden no-print">
-              <button
-                onClick={() => setTab("karte")}
-                className={`font-serif text-sm sm:text-base px-5 sm:px-8 py-2.5 transition-colors ${
-                  tab === "karte"
-                    ? "bg-bronze text-bronze-foreground"
-                    : "bg-transparent text-bronze hover:bg-bronze/10"
-                }`}
-              >
-                Unsere Karte
-              </button>
-              <button
-                onClick={() => setTab("flipbook")}
-                className={`font-serif text-sm sm:text-base px-5 sm:px-8 py-2.5 transition-colors ${
-                  tab === "flipbook"
-                    ? "bg-bronze text-bronze-foreground"
-                    : "bg-transparent text-bronze hover:bg-bronze/10"
-                }`}
-              >
-                Speisekarte zum Blättern
-              </button>
-            </div>
+            {/* PDF Download */}
+            <button
+              type="button"
+              onClick={handleDownloadPdf}
+              disabled={downloading}
+              className="inline-flex items-center justify-center gap-2 rounded-lg font-serif text-sm sm:text-base px-6 sm:px-8 py-3 bg-bronze text-bronze-foreground hover:opacity-90 transition-opacity disabled:opacity-60 no-print"
+              style={{ minHeight: "48px" }}
+            >
+              {downloading ? <Loader2 size={18} className="animate-spin" /> : <Download size={18} />}
+              {downloading ? "Erstelle PDF…" : "Speisekarte als PDF herunterladen"}
+            </button>
           </div>
 
-          {/* Flipbook toolbar */}
-          {tab === "flipbook" && (
-            <div className="flex justify-end mb-4 no-print">
-              <button
-                type="button"
-                onClick={handleDownloadPdf}
-                disabled={downloading}
-                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors border border-border rounded-lg px-4 py-2 disabled:opacity-60"
-              >
-                {downloading ? <Loader2 size={16} className="animate-spin" /> : <Download size={16} />}
-                {downloading ? "Erstelle PDF…" : "Als PDF herunterladen"}
-              </button>
-            </div>
-          )}
-
-          {/* Tab content */}
-          {tab === "karte" && <MenuTileView />}
-          {tab === "flipbook" && <FlipbookMenu />}
+          {/* Speisekarte */}
+          <MenuTileView />
 
           {/* Transparenz-Hinweis zu Perplex */}
           <div className="max-w-3xl mx-auto mt-12 rounded-lg border border-bronze/30 bg-bronze/5 px-5 py-5 text-sm md:text-base text-muted-foreground">
