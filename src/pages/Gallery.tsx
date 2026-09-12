@@ -3,6 +3,7 @@ import { X } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import AiBadge from "@/components/AiBadge";
+import InstagramSection from "@/components/InstagramSection";
 
 import heroBistro from "@/assets/hero-bistro.jpg";
 import essenTomateMozzarella from "@/assets/gallery/essen-flammkuchen-tomate-mozzarella.jpg";
@@ -183,6 +184,13 @@ const Gallery = () => {
 
         </div>
       </section>
+
+      {/* Instagram Feed: die letzten 20 Fotos, datenschutzsicher ohne Meta-Einbindung */}
+      <InstagramSection
+        limit={20}
+        heading="Unsere letzten Instagram Fotos"
+        subline="Die neuesten 20 Fotos aus dem Bistro Boxenstopp. Mehr gibt es auf @bistro.boxenstopp."
+      />
 
       {/* Lightbox */}
       {lightbox !== null && (
