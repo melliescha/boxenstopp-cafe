@@ -13,6 +13,9 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 
 import heroBg from "@/assets/hero-bistro.jpg";
 import heroLogoSchriftzug from "@/assets/hero-logo-schriftzug.png";
+import terracePhoto from "@/assets/aussenterrasse.jpg";
+import coffeePhoto from "@/assets/gallery/getraenk-zwei-cappuccino.jpg";
+import interiorPhoto from "@/assets/gallery/innen-sitzbereich-tische.jpg";
 import { socialLinks } from "@/config/social";
 import VacationNotice from "@/components/VacationNotice";
 import AiBadge from "@/components/AiBadge";
@@ -246,9 +249,8 @@ const Index = () => {
         imageAlt="Bistro Boxenstopp in Hergatz im Westallgäu, Barista-Kaffee und Flammkuchen"
         jsonLd={localBusinessSchema}
       />
-      {/* Hero */}
-      {/* Hero */}
-      <section className="relative overflow-hidden h-[55vh]">
+      {/* Atmosphärischer Einstieg */}
+      <section className="relative overflow-hidden min-h-[560px] h-[72vh] max-h-[760px]">
         <div className="relative h-full">
           <img
             src={heroBg}
@@ -261,70 +263,80 @@ const Index = () => {
             fetchPriority="high"
             decoding="async"
           />
-          <div className="absolute inset-0 bg-black/35" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-primary/10" />
           <AiBadge variant="overlay" />
-          <div className="absolute inset-0 flex items-center justify-center px-6 z-10">
-            <img
-              src={heroLogoSchriftzug}
-              alt="Bistro Boxenstopp"
-              className="w-[90%] max-w-[700px] animate-fade-in-up"
-              style={{ mixBlendMode: "multiply" }}
-              loading="eager"
-              fetchPriority="high"
-              decoding="async"
-              width={700}
-              height={200}
-            />
+          <div className="absolute inset-0 z-10 flex items-end">
+            <div className="container mx-auto px-6 pb-10 md:pb-14">
+              <div className="max-w-3xl animate-fade-in-up text-primary-foreground">
+                <img
+                  src={heroLogoSchriftzug}
+                  alt="Bistro Boxenstopp"
+                  className="w-[82%] max-w-[520px] mb-4 brightness-0 invert"
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+                  width={700}
+                  height={200}
+                />
+                <h1 className="font-serif text-3xl md:text-5xl font-semibold leading-tight">
+                  Ankommen. Durchatmen. Genießen.
+                </h1>
+                <p className="mt-3 max-w-2xl text-base md:text-lg leading-relaxed text-primary-foreground/90">
+                  Dein gemütlicher Boxenstopp im Westallgäu, mit Barista-Kaffee, ofenfrischen Lieblingsgerichten und einer Terrasse zum Bleiben.
+                </p>
+                <div className="mt-6 flex flex-col sm:flex-row gap-3">
+                  <Link
+                    to="/speisekarte"
+                    className="inline-flex min-h-12 items-center justify-center rounded-lg bg-accent px-7 py-3 font-semibold text-accent-foreground transition-transform hover:-translate-y-0.5"
+                  >
+                    Speisekarte ansehen
+                  </Link>
+                  <a
+                    href={socialLinks.googleMaps}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-primary-foreground/70 bg-background/10 px-7 py-3 font-semibold text-primary-foreground backdrop-blur-sm transition-colors hover:bg-background/20"
+                  >
+                    <Navigation className="h-4 w-4" aria-hidden="true" />
+                    Route planen
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Slogan + CTA */}
-      <section className="text-center" style={{ backgroundColor: "#fef4ec", paddingTop: "16px", paddingBottom: "20px" }}>
-        <h1 className="font-serif" style={{ color: "#164472", fontSize: "28px", fontWeight: 500 }}>
-          Hergatz' bestgehütetes Geheimnis
-        </h1>
-        <p className="text-muted-foreground" style={{ marginTop: "8px", fontSize: "15px" }}>
-          Bistro Boxenstopp in Hergatz-Wohmbrechts: Barista-Kaffee, Flammkuchen und Hüttenbrot im Westallgäu
-        </p>
-
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3" style={{ marginTop: "24px" }}>
-          <Link
-            to="/speisekarte"
-            className="inline-block rounded-lg font-medium text-white hover:opacity-90 transition-opacity w-full sm:w-auto text-center"
-            style={{ backgroundColor: "#b8943e", padding: "12px 28px", fontSize: "14px", minHeight: "48px" }}
-          >
-            Speisekarte ansehen
-          </Link>
-          <a
-            href={socialLinks.googleMaps}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-lg font-medium hover:opacity-90 transition-opacity w-full sm:w-auto"
-            style={{ border: "2px solid #164472", color: "#164472", padding: "10px 28px", fontSize: "14px", minHeight: "48px" }}
-          >
-            <Navigation className="w-4 h-4" aria-hidden="true" />
-            Route planen
-          </a>
-        </div>
-      </section>
-
-      {/* Welcome */}
-      <section className="py-6 bg-background">
+      {/* Willkommen und echte Eindrücke */}
+      <section className="py-10 md:py-14 bg-background overflow-hidden">
         <Reveal>
-        <div className="container mx-auto px-6 max-w-3xl text-center">
-          <div className="divider-bronze mb-4" />
-          <p className="text-lg leading-relaxed text-muted-foreground mb-4">
-            Zugegeben: Man muss uns erstmal finden. Das Bistro Boxenstopp liegt versteckt in einer
-            ruhigen Wohnsiedlung in Hergatz-Wohmbrechts, aber genau das macht uns aus.
-          </p>
-          <p className="text-lg leading-relaxed text-muted-foreground">
-            Wer den Weg zu uns findet, wird belohnt: mit richtig gutem Kaffee, frischen Flammkuchen,
-            einer im Sommer angenehm kühlen Terrasse und echter Allgäuer Gastfreundschaft.
-            Von Helena und Eugen, für alle.
-          </p>
-          <div className="divider-bronze mt-4" />
-        </div>
+          <div className="container mx-auto px-6">
+            <div className="grid items-center gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14">
+              <div className="max-w-xl">
+                <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-bronze">Hergatz' bestgehütetes Geheimnis</p>
+                <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight text-foreground">
+                  Ein Lieblingsplatz zwischen Naturstein, Sonnenschirm und Allgäuer Ruhe
+                </h2>
+                <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
+                  Ein wenig versteckt in Hergatz-Wohmbrechts wartet ein Ort, an dem die Zeit kurz langsamer läuft. Nimm Platz, hör dem leisen Treiben zu und gönn dir etwas Gutes.
+                </p>
+                <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+                  Helena und Eugen empfangen dich persönlich, mit richtig gutem Kaffee, frischen Flammkuchen und ehrlicher Allgäuer Gastfreundschaft.
+                </p>
+              </div>
+              <div className="grid h-[420px] grid-cols-5 grid-rows-5 gap-3 md:h-[500px]">
+                <figure className="col-span-3 row-span-5 overflow-hidden rounded-lg">
+                  <img src={terracePhoto} alt="Sonnige Terrasse des Bistro Boxenstopp mit Natursteinmauer und Sitzplätzen" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy" />
+                </figure>
+                <figure className="col-span-2 row-span-3 overflow-hidden rounded-lg">
+                  <img src={coffeePhoto} alt="Zwei Cappuccinos auf der Terrasse des Bistro Boxenstopp" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy" />
+                </figure>
+                <figure className="col-span-2 row-span-2 overflow-hidden rounded-lg">
+                  <img src={interiorPhoto} alt="Gemütlicher Sitzbereich im Bistro Boxenstopp" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy" />
+                </figure>
+              </div>
+            </div>
+          </div>
         </Reveal>
       </section>
 
