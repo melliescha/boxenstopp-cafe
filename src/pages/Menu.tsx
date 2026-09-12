@@ -12,7 +12,7 @@ import { downloadMenuPdf } from "@/lib/menuPdf";
 
 const Menu = () => {
   const [downloading, setDownloading] = useState(false);
-  const [view, setView] = useState<"liste" | "kacheln">("liste");
+  const [view, setView] = useState<"liste" | "kacheln">("kacheln");
 
   const handleDownloadPdf = async () => {
     try {
@@ -121,16 +121,6 @@ const Menu = () => {
             <div className="inline-flex rounded-lg border border-bronze/30 overflow-hidden no-print" role="group" aria-label="Ansicht der Speisekarte wählen">
               <button
                 type="button"
-                onClick={() => setView("liste")}
-                aria-pressed={view === "liste"}
-                className={`inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium transition-colors ${view === "liste" ? "bg-bronze text-bronze-foreground" : "bg-transparent text-foreground hover:bg-bronze/10"}`}
-                style={{ minHeight: "44px" }}
-              >
-                <List size={16} />
-                Liste
-              </button>
-              <button
-                type="button"
                 onClick={() => setView("kacheln")}
                 aria-pressed={view === "kacheln"}
                 className={`inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium transition-colors ${view === "kacheln" ? "bg-bronze text-bronze-foreground" : "bg-transparent text-foreground hover:bg-bronze/10"}`}
@@ -138,6 +128,16 @@ const Menu = () => {
               >
                 <LayoutGrid size={16} />
                 Fotos
+              </button>
+              <button
+                type="button"
+                onClick={() => setView("liste")}
+                aria-pressed={view === "liste"}
+                className={`inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium transition-colors ${view === "liste" ? "bg-bronze text-bronze-foreground" : "bg-transparent text-foreground hover:bg-bronze/10"}`}
+                style={{ minHeight: "44px" }}
+              >
+                <List size={16} />
+                Liste
               </button>
             </div>
           </div>
