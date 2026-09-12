@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import MenuTileView from "@/components/MenuTileView";
-import { Download, Loader2, Star } from "lucide-react";
+import PriceList from "@/components/PriceList";
+import { Download, Loader2, Star, List, LayoutGrid } from "lucide-react";
 import { socialLinks } from "@/config/social";
 import { toast } from "sonner";
 import { menuPageSchema } from "@/lib/schema";
@@ -11,6 +12,7 @@ import { downloadMenuPdf } from "@/lib/menuPdf";
 
 const Menu = () => {
   const [downloading, setDownloading] = useState(false);
+  const [view, setView] = useState<"liste" | "kacheln">("liste");
 
   const handleDownloadPdf = async () => {
     try {
@@ -114,10 +116,34 @@ const Menu = () => {
               {downloading ? <Loader2 size={18} className="animate-spin" /> : <Download size={18} />}
               {downloading ? "Erstelle PDF…" : "Speisekarte als PDF herunterladen"}
             </button>
+
+            {/* Ansicht-Umschalter */}
+            <div className="inline-flex rounded-lg border border-bronze/30 overflow-hidden no-print" role="group" aria-label="Ansicht der Speisekarte wählen">
+              <button
+                type="button"
+                onClick={() => setView("liste")}
+                aria-pressed={view === "liste"}
+                className={`inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium transition-colors ${view === "liste" ? "bg-bronze text-bronze-foreground" : "bg-transparent text-foreground hover:bg-bronze/10"}`}
+                style={{ minHeight: "44px" }}
+              >
+                <List size={16} />
+                Liste
+              </button>
+              <button
+                type="button"
+                onClick={() => setView("kacheln")}
+                aria-pressed={view === "kacheln"}
+                className={`inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium transition-colors ${view === "kacheln" ? "bg-bronze text-bronze-foreground" : "bg-transparent text-foreground hover:bg-bronze/10"}`}
+                style={{ minHeight: "44px" }}
+              >
+                <LayoutGrid size={16} />
+                Fotos
+              </button>
+            </div>
           </div>
 
           {/* Speisekarte */}
-          <MenuTileView />
+          {view === "liste" ? <PriceList /> : <MenuTileView />}
 
           {/* Google Bewertung CTA */}
           <div className="max-w-2xl mx-auto mt-14 text-center">
