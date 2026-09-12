@@ -67,14 +67,14 @@ const bestsellers: Bestseller[] = [
   },
 ];
 
-const BestsellerCard = ({ item, featured = false }: { item: Bestseller; featured?: boolean }) => (
-  <article className={`group min-w-[260px] sm:min-w-0 snap-center bg-card rounded-lg border border-bronze/30 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ${featured ? "md:col-span-2 md:row-span-2" : ""}`}>
-    <div className="relative aspect-square overflow-hidden">
+const BestsellerCard = ({ item }: { item: Bestseller }) => (
+  <article className="group flex h-full flex-col bg-card rounded-lg border border-bronze/30 overflow-hidden transition-transform duration-300 hover:-translate-y-1">
+    <div className="relative aspect-[4/3] overflow-hidden">
       <img
         src={item.image}
         alt={item.alt}
         width={512}
-        height={512}
+        height={384}
         loading="lazy"
         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
       />
@@ -84,9 +84,9 @@ const BestsellerCard = ({ item, featured = false }: { item: Bestseller; featured
       <AiBadge />
 
     </div>
-    <div className={`p-4 ${featured ? "md:p-6" : ""}`}>
-      <h3 className={`font-serif font-semibold text-foreground mb-1 ${featured ? "text-xl md:text-2xl" : "text-lg"}`}>{item.name}</h3>
-      <p className="text-muted-foreground text-sm leading-relaxed mb-3">{item.description}</p>
+    <div className="flex flex-1 flex-col p-4">
+      <h3 className="font-serif font-semibold text-foreground mb-1 text-base md:text-lg leading-snug">{item.name}</h3>
+      <p className="text-muted-foreground text-sm leading-relaxed mb-3 flex-1">{item.description}</p>
       <span className="text-bronze font-semibold text-base">{item.price}</span>
     </div>
   </article>
@@ -103,15 +103,8 @@ const BestsellerSection = () => (
         <p className="text-muted-foreground text-lg">Das bestellen unsere Gäste am liebsten.</p>
       </div>
 
-      {/* Desktop: 5 cols, Tablet: 3 cols grid, Mobile: horizontal scroll */}
-      <div className="hidden md:grid md:grid-cols-3 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
-        {bestsellers.map((item, index) => (
-          <BestsellerCard key={item.name} item={item} featured={index === 0} />
-        ))}
-      </div>
-
-      {/* Mobile: horizontal scroll with snap */}
-      <div className="md:hidden flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide">
+      {/* Einheitliches, flüssiges Raster: alle Kacheln gleich groß */}
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-5">
         {bestsellers.map((item) => (
           <BestsellerCard key={item.name} item={item} />
         ))}

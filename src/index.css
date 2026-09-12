@@ -77,7 +77,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Space Grotesk', sans-serif;
   }
 
   /* Ensure inputs do not trigger iOS auto-zoom (>=16px) */
@@ -112,7 +112,7 @@
 
 @layer utilities {
   .font-serif-italic {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-style: italic;
   }
 
