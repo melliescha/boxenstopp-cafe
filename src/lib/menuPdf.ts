@@ -82,7 +82,7 @@ export const downloadMenuPdf = () => {
     pdf.setFont("helvetica", "bold");
     pdf.setFontSize(12);
     pdf.setTextColor(...NAVY);
-    pdf.text(category, MARGIN, y);
+    pdf.text(clean(category), MARGIN, y);
     y += 2;
     pdf.setDrawColor(...BRONZE);
     pdf.setLineWidth(0.3);
@@ -95,10 +95,10 @@ export const downloadMenuPdf = () => {
 
       const descLines: string[] = [];
       if (item.description) {
-        descLines.push(...pdf.splitTextToSize(item.description, CONTENT_W - 40));
+        descLines.push(...pdf.splitTextToSize(clean(item.description), CONTENT_W - 40));
       }
       const variantLines: string[] = item.variants
-        ? item.variants.map((v) => `${v.label}: ${v.price}`)
+        ? item.variants.map((v) => clean(`${v.label}: ${v.price}`))
         : [];
 
       const blockHeight = 6 + descLines.length * 4.5 + variantLines.length * 4.5 + 2;
@@ -108,9 +108,9 @@ export const downloadMenuPdf = () => {
       pdf.setFont("helvetica", "bold");
       pdf.setFontSize(10.5);
       pdf.setTextColor(...TEXT);
-      pdf.text(item.name, MARGIN, y);
+      pdf.text(clean(item.name), MARGIN, y);
       pdf.setFont("helvetica", "normal");
-      pdf.text(item.price, PAGE_W - MARGIN, y, { align: "right" });
+      pdf.text(clean(item.price), PAGE_W - MARGIN, y, { align: "right" });
       y += 4.5;
 
       // Description
