@@ -670,26 +670,6 @@ export const menuProducts: MenuProduct[] = [
     ],
     image: flammkuchenLachsImage,
   },
-  {
-    id: "pizzetta-salami",
-    name: "Pizzetta Salami",
-    price: "3,95 €",
-    description: "Tomatensauce, Käse und Salami",
-    category: "Herzhaft & Ofenfrisch",
-    allergens: "A,G",
-    badge: "🥖 Für den kleinen Hunger",
-    origin: perplexOrigin,
-  },
-  {
-    id: "pizzetta-margherita",
-    name: "Pizzetta Margherita",
-    price: "3,60 €",
-    description: "Tomatensauce und Käse",
-    category: "Herzhaft & Ofenfrisch",
-    allergens: "A,G",
-    badges: ["🥖 Für den kleinen Hunger", "🥕 Vegetarisch"],
-    origin: perplexOrigin,
-  },
   // Erfrischungsgetränke
   {
     id: "apfelschorle",
