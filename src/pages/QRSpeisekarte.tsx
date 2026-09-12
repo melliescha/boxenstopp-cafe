@@ -29,6 +29,20 @@ const QRSpeisekarte = () => {
         <FlipbookMenu />
       </div>
 
+      {/* Google Bewertung CTA */}
+      <div className="px-6 pb-3 text-center">
+        <a
+          href={socialLinks.googleReview}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 rounded-lg font-serif text-sm px-6 py-3 bg-bronze text-bronze-foreground hover:opacity-90 transition-opacity"
+          style={{ minHeight: "48px" }}
+        >
+          <Star size={16} />
+          Hat es geschmeckt? Auf Google bewerten
+        </a>
+      </div>
+
       {/* Footer link */}
       <div className="py-3 text-center">
         <a
