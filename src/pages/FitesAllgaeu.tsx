@@ -123,6 +123,22 @@ const jsonLd = [
         },
 
       },
+      {
+        "@type": "Question",
+        name: "Lohnt sich FITES Allgäu auch für Mitglieder aus Wangen, Lindenberg, Heimenkirch, Ravensburg oder Lindau?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja. FITES Allgäu in Hergatz ist zentral im Westallgäu gelegen und gut erreichbar aus Wangen im Allgäu, Lindenberg im Allgäu, Heimenkirch, Ravensburg und Lindau. Kurse wie HYROX, Fitness-Boxen, HIIT, Tabata, Ganzkörpertraining und Personal Training stehen allen offen, das Probetraining ist bis Dezember 2026 kostenlos.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Gibt es Personal Training bei FITES Allgäu?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja, Personal Training mit Inhaber Eugen nach Absprache. Individueller Trainingsplan, persönliche Betreuung, Terminvereinbarung unter 0171 6226201.",
+        },
+      },
     ],
   },
 ];
@@ -131,8 +147,8 @@ const FitesAllgaeu = () => {
   return (
     <Layout>
       <SEO
-        title="FITES Allgäu Hergatz | Kostenloses Probetraining bis Dezember"
-        description="Fitnessstudio in Hergatz: HYROX, FITES Boxen, HIIT & Tabata, Ganzkörpertraining und Personal Training. Persönliche Betreuung von Eugen, kleine Gruppen, Wellpass-Partner."
+        title="Fitnessstudio Hergatz | FITES Allgäu: HYROX, Boxen & Personal Training für Wangen, Lindenberg, Ravensburg"
+        description="FITES Allgäu in Hergatz: Fitnessstudio mit HYROX, Fitness-Boxen, HIIT, Tabata, Ganzkörpertraining & Personal Training. Zentral für Wangen im Allgäu, Lindenberg, Heimenkirch, Ravensburg & Lindau. Kostenloses Probetraining bis Dezember."
         path="/fites-allgaeu"
         image="/og-image.jpg"
         jsonLd={jsonLd}
