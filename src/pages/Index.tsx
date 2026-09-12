@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { Map, Thermometer, Droplets, BatteryCharging, Sun, Users, Bike, Clock, ArrowRight } from "lucide-react";
+import { Map, Thermometer, Droplets, BatteryCharging, Sun, Users, Bike, Clock, ArrowRight, Navigation, Phone } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import BestsellerSection from "@/components/BestsellerSection";
@@ -287,14 +287,24 @@ const Index = () => {
           Bistro Boxenstopp in Hergatz-Wohmbrechts: Barista-Kaffee, Flammkuchen und Hüttenbrot im Westallgäu
         </p>
 
-        <div style={{ marginTop: "24px" }}>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3" style={{ marginTop: "24px" }}>
           <Link
             to="/speisekarte"
-            className="inline-block rounded-lg font-medium text-white hover:opacity-90 transition-opacity"
-            style={{ backgroundColor: "#b8943e", padding: "10px 24px", fontSize: "14px" }}
+            className="inline-block rounded-lg font-medium text-white hover:opacity-90 transition-opacity w-full sm:w-auto text-center"
+            style={{ backgroundColor: "#b8943e", padding: "12px 28px", fontSize: "14px", minHeight: "48px" }}
           >
             Speisekarte ansehen
           </Link>
+          <a
+            href={socialLinks.googleMaps}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 rounded-lg font-medium hover:opacity-90 transition-opacity w-full sm:w-auto"
+            style={{ border: "2px solid #164472", color: "#164472", padding: "10px 28px", fontSize: "14px", minHeight: "48px" }}
+          >
+            <Navigation className="w-4 h-4" aria-hidden="true" />
+            Route planen
+          </a>
         </div>
       </section>
 
@@ -317,6 +327,18 @@ const Index = () => {
 
       {/* Wegweiser: So findet ihr uns */}
       <Wegweiser background="cream" />
+      <div className="text-center pb-14" style={{ backgroundColor: "#FEF4EC" }}>
+        <a
+          href={socialLinks.googleMaps}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 rounded-lg font-medium text-white hover:opacity-90 transition-opacity"
+          style={{ backgroundColor: "#164472", padding: "14px 32px", fontSize: "15px", minHeight: "48px" }}
+        >
+          <Navigation className="w-4 h-4" aria-hidden="true" />
+          Route zu uns planen
+        </a>
+      </div>
 
       {/* Bestseller */}
       <BestsellerSection />
@@ -329,6 +351,12 @@ const Index = () => {
       {/* Highlights, 2x2 grid */}
       <section className="py-20 bg-secondary/50">
         <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">
+              Darum lohnt sich der Boxenstopp
+            </h2>
+            <div className="divider-bronze mt-4" />
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {highlights.map((h) => (
               <div key={h.title} className="bg-card rounded-xl p-8 text-center shadow-sm border border-border/50">
