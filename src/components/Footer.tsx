@@ -234,9 +234,9 @@ const Footer = () => {
                 style={{ background: "#b3ddf2", opacity: 0.2 }}
                 aria-hidden="true"
               />
-              <div className="relative p-6 md:p-7 flex flex-col md:flex-row md:items-center gap-5">
-                <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-3">
+              <div className="relative p-5 sm:p-6 md:p-7 flex flex-col sm:flex-row sm:items-center gap-5">
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-wrap items-center gap-2 mb-3">
                     <span
                       className="text-[9px] font-semibold tracking-[0.22em] uppercase px-2 py-0.5 rounded-full"
                       style={{ backgroundColor: "#f2fafd1f", color: "#b3ddf2", border: "1px solid #b3ddf24d" }}
@@ -244,26 +244,26 @@ const Footer = () => {
                       Anzeige
                     </span>
                     <span
-                      className="font-sans text-[12px] font-extrabold tracking-[0.16em] uppercase px-2.5 py-1 rounded-md"
+                      className="font-sans text-[11px] sm:text-[12px] font-extrabold tracking-[0.1em] sm:tracking-[0.16em] uppercase px-2.5 py-1 rounded-md"
                       style={{ backgroundColor: "#f2fafd", color: "#1b4d66" }}
                     >
                       FITES<span style={{ color: "#a6d608" }}> Allgäu</span>
                     </span>
                   </div>
-                  <p className="font-serif text-xl md:text-[24px] leading-snug font-bold mb-2" style={{ color: "#f2fafd" }}>
+                  <p className="font-serif text-lg sm:text-xl md:text-[24px] leading-snug font-bold mb-2" style={{ color: "#f2fafd" }}>
                     Trainiere direkt im selben Gebäude
                   </p>
-                  <p className="text-[11px] font-medium tracking-[0.14em] uppercase mb-2" style={{ color: "#b3ddf2" }}>
-                    HYROX · Personaltraining · Tabata · HIIT · FITES Boxen
+                  <p className="text-[10px] sm:text-[11px] font-medium tracking-[0.1em] sm:tracking-[0.14em] uppercase mb-2" style={{ color: "#b3ddf2" }}>
+                    HYROX &middot; Personaltraining &middot; Tabata &middot; HIIT &middot; FITES Boxen
                   </p>
                   <p className="text-sm leading-relaxed" style={{ color: "#f2fafd", opacity: 0.8 }}>
                     Kostenloses Probetraining bei FITES Allgäu, ohne Vertrag, ohne Vorkenntnisse.
                   </p>
                 </div>
-                <div className="md:w-auto flex flex-wrap items-center gap-3 md:flex-col md:items-end">
+                <div className="w-full sm:w-auto flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3">
                   <Link
                     to="/fites-allgaeu"
-                    className="inline-block px-5 py-2.5 rounded-full font-semibold text-sm shadow-md hover:opacity-90 transition-opacity whitespace-nowrap"
+                    className="inline-flex items-center justify-center px-5 py-3 sm:py-2.5 rounded-full font-semibold text-sm shadow-md hover:opacity-90 transition-opacity text-center"
                     style={{ backgroundColor: "#a6d608", color: "#1b4d66" }}
                   >
                     Kostenloses Probetraining sichern
@@ -272,7 +272,7 @@ const Footer = () => {
                     href="https://www.fites-allgaeu.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-medium hover:opacity-80 transition-opacity underline underline-offset-4"
+                    className="inline-flex items-center justify-center text-sm font-medium hover:opacity-80 transition-opacity underline underline-offset-4 text-center"
                     style={{ color: "#f2fafd", textDecorationColor: "#b3ddf2" }}
                   >
                     Zur Website
