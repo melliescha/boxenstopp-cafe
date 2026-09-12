@@ -67,14 +67,14 @@ const bestsellers: Bestseller[] = [
   },
 ];
 
-const BestsellerCard = ({ item, featured = false }: { item: Bestseller; featured?: boolean }) => (
-  <article className={`group min-w-[260px] sm:min-w-0 snap-center bg-card rounded-lg border border-bronze/30 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ${featured ? "md:col-span-2 md:row-span-2" : ""}`}>
-    <div className="relative aspect-square overflow-hidden">
+const BestsellerCard = ({ item }: { item: Bestseller }) => (
+  <article className="group flex h-full flex-col bg-card rounded-lg border border-bronze/30 overflow-hidden transition-transform duration-300 hover:-translate-y-1">
+    <div className="relative aspect-[4/3] overflow-hidden">
       <img
         src={item.image}
         alt={item.alt}
         width={512}
-        height={512}
+        height={384}
         loading="lazy"
         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
       />
@@ -84,9 +84,9 @@ const BestsellerCard = ({ item, featured = false }: { item: Bestseller; featured
       <AiBadge />
 
     </div>
-    <div className={`p-4 ${featured ? "md:p-6" : ""}`}>
-      <h3 className={`font-serif font-semibold text-foreground mb-1 ${featured ? "text-xl md:text-2xl" : "text-lg"}`}>{item.name}</h3>
-      <p className="text-muted-foreground text-sm leading-relaxed mb-3">{item.description}</p>
+    <div className="flex flex-1 flex-col p-4">
+      <h3 className="font-serif font-semibold text-foreground mb-1 text-base md:text-lg leading-snug">{item.name}</h3>
+      <p className="text-muted-foreground text-sm leading-relaxed mb-3 flex-1">{item.description}</p>
       <span className="text-bronze font-semibold text-base">{item.price}</span>
     </div>
   </article>
