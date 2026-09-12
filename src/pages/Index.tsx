@@ -247,7 +247,7 @@ const Index = () => {
         jsonLd={localBusinessSchema}
       />
       {/* Vertrauter Einstieg mit dezenter Bewegung */}
-      <section className="relative overflow-hidden h-[55vh] min-h-[420px] max-h-[620px]">
+      <section className="relative overflow-hidden h-[58vh] min-h-[440px] max-h-[680px]">
         <div className="relative h-full">
           <img
             src={heroBg}
@@ -260,13 +260,13 @@ const Index = () => {
             fetchPriority="high"
             decoding="async"
           />
-          <div className="absolute inset-0 bg-primary/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary/45 via-primary/15 to-transparent" />
           <AiBadge variant="overlay" />
           <div className="absolute inset-0 z-10 flex items-center justify-center px-6">
             <img
               src={heroLogoSchriftzug}
               alt="Bistro Boxenstopp"
-              className="w-[90%] max-w-[700px] animate-fade-in-up"
+              className="hero-logo-motion w-[88%] max-w-[680px] animate-fade-in-up"
               style={{ mixBlendMode: "multiply" }}
               loading="eager"
               fetchPriority="high"
@@ -279,44 +279,54 @@ const Index = () => {
       </section>
 
       {/* Slogan und wichtigste Wege */}
-      <section className="bg-background px-6 py-6 text-center">
-        <h1 className="font-serif text-3xl font-medium text-foreground">
-          Hergatz' bestgehütetes Geheimnis
-        </h1>
-        <p className="mx-auto mt-2 max-w-2xl text-[15px] text-muted-foreground">
-          Bistro Boxenstopp in Hergatz-Wohmbrechts: Barista-Kaffee, Flammkuchen und Hüttenbrot im Westallgäu
-        </p>
-        <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Link
-            to="/speisekarte"
-            className="inline-flex min-h-12 w-full items-center justify-center rounded-lg bg-accent px-7 py-3 font-medium text-accent-foreground transition-opacity hover:opacity-90 sm:w-auto"
-          >
-            Speisekarte ansehen
-          </Link>
-          <a
-            href={socialLinks.googleMaps}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-lg border-2 border-primary px-7 py-3 font-medium text-primary transition-colors hover:bg-primary hover:text-primary-foreground sm:w-auto"
-          >
-            <Navigation className="h-4 w-4" aria-hidden="true" />
-            Route planen
-          </a>
+      <section className="relative bg-background px-6 py-8 md:py-10">
+        <div className="container mx-auto grid max-w-5xl items-center gap-6 md:grid-cols-[1fr_auto] md:gap-12">
+          <div className="text-center md:text-left">
+            <p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-bronze">Café in Hergatz-Wohmbrechts</p>
+            <h1 className="font-serif text-3xl font-medium text-foreground md:text-4xl">
+              Hergatz' bestgehütetes Geheimnis
+            </h1>
+            <p className="mt-2 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+              Bistro Boxenstopp in Hergatz-Wohmbrechts: Barista-Kaffee, Flammkuchen und Hüttenbrot im Westallgäu
+            </p>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <Link
+              to="/speisekarte"
+              className="inline-flex min-h-12 w-full items-center justify-center rounded-lg bg-accent px-7 py-3 font-medium text-accent-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md sm:w-auto"
+            >
+              Speisekarte ansehen
+            </Link>
+            <a
+              href={socialLinks.googleMaps}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-lg border-2 border-primary px-7 py-3 font-medium text-primary transition-colors hover:bg-primary hover:text-primary-foreground sm:w-auto"
+            >
+              <Navigation className="h-4 w-4" aria-hidden="true" />
+              Route planen
+            </a>
+          </div>
         </div>
       </section>
 
       {/* Willkommen */}
-      <section className="bg-background py-6">
+      <section className="border-y border-border/60 bg-secondary/30 py-10 md:py-14">
         <Reveal>
-          <div className="container mx-auto max-w-3xl px-6 text-center">
-            <div className="divider-bronze mb-4" />
-            <p className="mb-4 text-lg leading-relaxed text-muted-foreground">
-              Zugegeben: Man muss uns erstmal finden. Das Bistro Boxenstopp liegt versteckt in einer ruhigen Wohnsiedlung in Hergatz-Wohmbrechts, aber genau das macht uns aus.
-            </p>
-            <p className="text-lg leading-relaxed text-muted-foreground">
-              Wer den Weg zu uns findet, wird belohnt: mit richtig gutem Kaffee, frischen Flammkuchen, einer im Sommer angenehm kühlen Terrasse und echter Allgäuer Gastfreundschaft. Von Helena und Eugen, für alle.
-            </p>
-            <div className="divider-bronze mt-4" />
+          <div className="container mx-auto grid max-w-5xl gap-6 px-6 md:grid-cols-[0.8fr_1.2fr] md:gap-14">
+            <div className="border-b border-bronze/50 pb-5 md:border-b-0 md:border-r md:pb-0 md:pr-12">
+              <p className="font-serif text-3xl italic leading-snug text-foreground md:text-4xl">
+                Ein ruhiger Platz zum Ankommen und Genießen.
+              </p>
+            </div>
+            <div>
+              <p className="mb-4 text-lg leading-relaxed text-muted-foreground">
+                Zugegeben: Man muss uns erstmal finden. Das Bistro Boxenstopp liegt versteckt in einer ruhigen Wohnsiedlung in Hergatz-Wohmbrechts, aber genau das macht uns aus.
+              </p>
+              <p className="text-lg leading-relaxed text-muted-foreground">
+                Wer den Weg zu uns findet, wird belohnt: mit richtig gutem Kaffee, frischen Flammkuchen, einer im Sommer angenehm kühlen Terrasse und echter Allgäuer Gastfreundschaft. Von Helena und Eugen, für alle.
+              </p>
+            </div>
           </div>
         </Reveal>
       </section>
@@ -330,15 +340,20 @@ const Index = () => {
       <section className="py-10 md:py-14 bg-background">
         <Reveal>
         <div className="container mx-auto px-6">
-          <div className="max-w-md mx-auto text-center">
-            <div className="w-14 h-14 rounded-full bg-bronze/10 flex items-center justify-center mx-auto mb-5">
+          <div className="max-w-3xl mx-auto">
+            <div className="flex items-center gap-4 mb-7">
+              <div className="w-14 h-14 rounded-full bg-bronze/10 flex items-center justify-center flex-shrink-0">
               <Clock className="w-7 h-7 text-bronze" />
+              </div>
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-1">Wann wir für euch da sind</p>
+                <h2 className="font-serif text-3xl font-bold text-foreground">Öffnungszeiten</h2>
+              </div>
             </div>
-            <h2 className="font-serif text-3xl font-bold text-foreground mb-8">Öffnungszeiten</h2>
             <VacationNotice />
-            <div className="space-y-4">
+            <div className="divide-y divide-border border-y border-border">
               {hours.map((h) => (
-                <div key={h.days} className="flex justify-between items-center text-base">
+                <div key={h.days} className="flex justify-between items-center gap-5 py-3.5 text-base">
                   <span className="font-medium text-foreground">{h.days}</span>
                   <span className="text-muted-foreground">{h.time}</span>
                 </div>
@@ -364,7 +379,6 @@ const Index = () => {
                 Route planen
               </a>
             </div>
-            <div className="divider-bronze mt-8" />
           </div>
         </div>
         </Reveal>
