@@ -260,40 +260,35 @@ const Index = () => {
             fetchPriority="high"
             decoding="async"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary/45 via-primary/15 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/20 to-transparent" />
           <AiBadge variant="overlay" />
-        </div>
-      </section>
-
-      {/* Slogan und wichtigste Wege */}
-      <section className="relative bg-background px-6 py-8 md:py-10">
-        <div className="container mx-auto grid max-w-5xl items-center gap-6 md:grid-cols-[1fr_auto] md:gap-12">
-          <div className="text-center md:text-left">
-            <p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-bronze">Café in Hergatz-Wohmbrechts</p>
-            <h1 className="font-serif text-3xl font-medium text-foreground md:text-4xl">
-              Café &amp; Bistro in Hergatz: Hergatz' bestgehütetes Geheimnis
-            </h1>
-            <p className="mt-2 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-              Bistro Boxenstopp in Hergatz-Wohmbrechts: Barista-Kaffee, Frühstück, Flammkuchen und Hüttenbrot im Westallgäu, kurze Wege aus Wangen im Allgäu, Heimenkirch, Lindenberg und Lindau.
-            </p>
-
-          </div>
-          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link
-              to="/speisekarte"
-              className="inline-flex min-h-12 w-full items-center justify-center rounded-lg bg-accent px-7 py-3 font-medium text-accent-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md sm:w-auto"
-            >
-              Speisekarte ansehen
-            </Link>
-            <a
-              href={socialLinks.googleMaps}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-lg border-2 border-primary px-7 py-3 font-medium text-primary transition-colors hover:bg-primary hover:text-primary-foreground sm:w-auto"
-            >
-              <Navigation className="h-4 w-4" aria-hidden="true" />
-              Route planen
-            </a>
+          <div className="absolute inset-x-0 bottom-0 px-6 pb-8 md:pb-12">
+            <div className="container mx-auto max-w-5xl">
+              <p className="hero-fade-up mb-2 text-xs font-bold uppercase tracking-[0.2em] text-bronze-foreground" style={{ animationDelay: "0.15s" }}>Café in Hergatz-Wohmbrechts</p>
+              <h1 className="hero-fade-up max-w-2xl font-serif text-3xl font-medium text-white md:text-4xl" style={{ animationDelay: "0.3s" }}>
+                Café &amp; Bistro in Hergatz: Hergatz' bestgehütetes Geheimnis
+              </h1>
+              <p className="hero-fade-up mt-2 max-w-2xl text-[15px] leading-relaxed text-white/90" style={{ animationDelay: "0.45s" }}>
+                Bistro Boxenstopp in Hergatz-Wohmbrechts: Barista-Kaffee, Frühstück, Flammkuchen und Hüttenbrot im Westallgäu, kurze Wege aus Wangen im Allgäu, Heimenkirch, Lindenberg und Lindau.
+              </p>
+              <div className="hero-fade-up mt-5 flex flex-col gap-3 sm:flex-row" style={{ animationDelay: "0.6s" }}>
+                <Link
+                  to="/speisekarte"
+                  className="inline-flex min-h-12 items-center justify-center rounded-lg bg-accent px-7 py-3 font-medium text-accent-foreground transition-all hover:-translate-y-0.5"
+                >
+                  Speisekarte ansehen
+                </Link>
+                <a
+                  href={socialLinks.googleMaps}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border-2 border-white/80 px-7 py-3 font-medium text-white transition-colors hover:bg-white hover:text-primary"
+                >
+                  <Navigation className="h-4 w-4" aria-hidden="true" />
+                  Route planen
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

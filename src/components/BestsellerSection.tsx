@@ -111,7 +111,7 @@ const BestsellerSection = () => (
       </div>
 
       {/* Mobile: horizontal scroll with snap */}
-      <div className="md:hidden flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 -mx-2 px-2 scrollbar-hide">
+      <div className="md:hidden flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide">
         {bestsellers.map((item) => (
           <BestsellerCard key={item.name} item={item} />
         ))}
