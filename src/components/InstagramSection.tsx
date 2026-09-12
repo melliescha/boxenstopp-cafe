@@ -25,7 +25,7 @@ const posts = [
  */
 export default function InstagramSection() {
   return (
-    <section className="py-16 md:py-20 bg-background">
+    <section className="py-10 md:py-14 bg-background">
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="text-center mb-8">
           <div className="w-14 h-14 rounded-full bg-bronze/10 flex items-center justify-center mx-auto mb-4">

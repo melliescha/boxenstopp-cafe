@@ -39,7 +39,7 @@ const ShowerSection = () => {
 
   return (
     <section
-      className="py-20"
+      className="py-10 md:py-14"
       style={{
         backgroundColor: "#FEF4EC",
         borderTop: "1px solid #9E7C4E33",
