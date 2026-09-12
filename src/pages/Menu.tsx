@@ -165,7 +165,7 @@ const Menu = () => {
             {"@type": "MenuItem", "name": "Hüttenbrot Tomate Mozzarella"},
             {"@type": "MenuItem", "name": "Hüttenbrot Raclette"},
             {"@type": "MenuItem", "name": "Gourmet Baguette"},
-            {"@type": "MenuItem", "name": "Pizza-Snack", "description": "Kleiner Hunger, kleiner Preis"},
+
             
           ],
         },

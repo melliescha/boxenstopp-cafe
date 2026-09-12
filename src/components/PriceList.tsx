@@ -96,15 +96,6 @@ const categories: PriceCategory[] = [
           { name: "Flammkuchen Lachs & Lauch", price: "7,30 €", note: "Flammkuchencreme, Lachs und Lauch", allergens: "A,D,G" },
         ],
       },
-      {
-        subtitle: "Pizzasnacks & Pizzetta",
-        items: [
-          { name: "Pizzasnack Caprese", price: "3,50 €", note: "Pizzasauce, Käse und Kirschtomaten", allergens: "A,G" },
-          { name: "Pizzasnack Salami", price: "3,80 €", note: "Pizzasauce, Käse und Salami", allergens: "A,G" },
-          { name: "Pizzetta Margherita", price: "3,60 €", note: "Tomatensauce und Käse", allergens: "A,G" },
-          { name: "Pizzetta Salami", price: "3,95 €", note: "Tomatensauce, Käse und Salami", allergens: "A,G" },
-        ],
-      },
     ],
   },
   {
