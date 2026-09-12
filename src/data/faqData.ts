@@ -394,11 +394,6 @@ export const faqBlocks: FaqBlock[] = [
           "Direkt sagen. Wir sind dankbar für jedes ehrliche Feedback, auch das unbequeme. Ein Kaffee zu kalt? Sagen, wir machen neu. Was nicht geschmeckt? Sagen, wir reagieren. Schlechte Erfahrung mit dem Service? Sagen, wir lernen. Bei uns gibt's keinen anonymen Beschwerde-Briefkasten. Bei uns gibt's uns, und wir wollen, dass ihr zufrieden seid.",
       },
       {
-        question: "Ihr seid doch die mit der ewigen Baustelle. Wirkt absolut unseriös, oder?",
-        answer:
-          "Wir wissen, dass wir bekannt sind als \"die mit der ewigen Baustelle\". Und das ist ein Thema, das uns sehr schmerzt. Es gibt viele Spekulationen und wilde Theorien, was dahintersteckt. Die Wahrheit? Eigentlich nicht viel. Wir haben am Bodensee gelebt, uns ins Allgäu verliebt, hier unser Grundstück gekauft und dachten: das wird unser großes Glück, in einem Jahr ziehen wir ein. Dann kam alles anders. Keine wilden Theorien, einfach das Leben. Wer kennt schon eine Baustelle, wo alles glatt läuft? Nur hatten wir eben den Worst Case erwischt. Manchmal kann man alles richtig machen und es läuft trotzdem schief. So ist das. Wir leben mittlerweile einige Jahre hier, kennen jede Straße in Hergatz und Wohmbrechts und sind angekommen, auch wenn das Haus es noch nicht ganz ist. Aber genau deshalb sind wir heute hier: weil wir nicht aufgegeben haben. Das Bistro Boxenstopp ist der erste Schritt, dass aus unserem Traum mehr wird als nur eine Baustelle. Wir bauen weiter, Stück für Stück, mit jedem Gast der zu uns findet.",
-      },
-      {
         question: "Was wird denn aus dem Rest? Wie geht's bei euch weiter?",
         answer:
           "Schritt für Schritt. Das Bistro läuft, das FITES läuft, die Duschen sind fertig und für Gäste nutzbar. Was danach passiert, entscheiden wir mit der Zeit. Wir machen keine großen Pläne, die wir nicht halten können. Wir bauen, was wir bauen können, und freuen uns über jeden Fortschritt. Wer regelmäßig vorbeikommt, sieht den Wandel mit eigenen Augen.",
