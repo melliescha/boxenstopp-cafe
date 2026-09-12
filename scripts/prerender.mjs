@@ -28,9 +28,9 @@ const DEFAULT_IMAGE = `${SITE_URL}/og-image.jpg`;
 const routes = [
   {
     path: "/",
-    title: "Bistro Boxenstopp Hergatz | Kaffee & Flammkuchen",
+    title: "Café & Bistro Hergatz | Frühstück, Kaffee, Flammkuchen",
     description:
-      "Barista-Kaffee, ofenfrische Flammkuchen und Hüttenbrot in Hergatz, Euer Stopp am Bodensee-Königssee-Radweg im Westallgäu.",
+      "Bistro Boxenstopp in Hergatz-Wohmbrechts im Westallgäu: Barista-Kaffee, Frühstück, ofenfrische Flammkuchen und Hüttenbrot. Direkt am Bodensee-Königssee-Radweg, Parkplätze, Duschen. Nähe Wangen, Heimenkirch, Lindenberg, Lindau.",
     type: "restaurant.restaurant",
     image: `${SITE_URL}/og-image.jpg`,
     imageAlt: "Bistro Boxenstopp in Hergatz im Westallgäu, Barista-Kaffee und Flammkuchen",
@@ -93,9 +93,9 @@ const routes = [
   },
   {
     path: "/fites-allgaeu",
-    title: "Fitnessstudio Hergatz | FITES Allgäu: HYROX, Boxen & HIIT",
+    title: "Fitnessstudio Hergatz & Wangen | FITES Allgäu: HYROX, Boxen, HIIT",
     description:
-      "FITES Allgäu in Hergatz: Fitnessstudio mit HYROX, Fitness-Boxen, HIIT, Tabata, Ganzkörpertraining & Personal Training. Zentral für Wangen im Allgäu, Lindenberg, Heimenkirch, Ravensburg & Lindau. Kostenloses Probetraining bis Dezember.",
+      "FITES Allgäu, dein Fitnessstudio in Hergatz im Westallgäu: HYROX, Fitness-Boxen, HIIT, Tabata, Ganzkörpertraining und Personal Training. Kurze Wege aus Wangen im Allgäu, Lindenberg, Heimenkirch, Ravensburg und Lindau. Kostenloses Probetraining, Wellpass.",
     image: `${SITE_URL}/og-image.jpg`,
   },
   {
