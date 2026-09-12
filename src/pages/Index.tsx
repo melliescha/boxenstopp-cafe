@@ -325,77 +325,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Wegweiser: So findet ihr uns */}
-      <Wegweiser background="cream" />
-      <div className="text-center pb-14" style={{ backgroundColor: "#FEF4EC" }}>
-        <a
-          href={socialLinks.googleMaps}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-2 rounded-lg font-medium text-white hover:opacity-90 transition-opacity"
-          style={{ backgroundColor: "#164472", padding: "14px 32px", fontSize: "15px", minHeight: "48px" }}
-        >
-          <Navigation className="w-4 h-4" aria-hidden="true" />
-          Route zu uns planen
-        </a>
-      </div>
-
-      {/* Bestseller */}
+      {/* Bestseller: Fotos vom Essen zuerst */}
       <BestsellerSection />
-
-      {/* Instagram Vorschau, datenschutzsicher ohne Meta-Einbindung */}
-      <InstagramSection />
-
-
-
-      {/* Highlights, 2x2 grid */}
-      <section className="py-20 bg-secondary/50">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">
-              Darum lohnt sich der Boxenstopp
-            </h2>
-            <div className="divider-bronze mt-4" />
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {highlights.map((h) => (
-              <div key={h.title} className="bg-card rounded-xl p-8 text-center shadow-sm border border-border/50">
-                <div className="w-14 h-14 rounded-full bg-bronze/10 flex items-center justify-center mx-auto mb-5">
-                  <h.icon className="w-7 h-7 text-bronze" />
-                </div>
-                <h2 className="font-serif text-xl font-semibold text-foreground mb-3">{h.title}</h2>
-                <p className="text-muted-foreground text-sm leading-relaxed">{h.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Shower promo */}
-      <ShowerSection />
-
-      {/* Why Us */}
-      <section className="py-20 bg-primary text-primary-foreground">
-
-        <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-center mb-12">
-            Ein Bistro, das man nicht erwartet, und nicht mehr vergisst
-          </h2>
-          <div className="space-y-8">
-            {whyUs.map((item) => (
-              <div key={item.title} className="flex items-start gap-5">
-                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
-                  <item.icon className="w-6 h-6 text-warm-gold" />
-                </div>
-                <div>
-                  <h3 className="font-serif text-xl font-semibold mb-1">{item.title}</h3>
-                  <p className="text-primary-foreground/80 leading-relaxed">{item.text}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Opening Hours */}
       <section className="py-20 bg-background">
@@ -438,6 +369,73 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Wegweiser: So findet ihr uns */}
+      <Wegweiser background="cream" />
+      <div className="text-center pb-14" style={{ backgroundColor: "#FEF4EC" }}>
+        <a
+          href={socialLinks.googleMaps}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 rounded-lg font-medium text-white hover:opacity-90 transition-opacity"
+          style={{ backgroundColor: "#164472", padding: "14px 32px", fontSize: "15px", minHeight: "48px" }}
+        >
+          <Navigation className="w-4 h-4" aria-hidden="true" />
+          Route zu uns planen
+        </a>
+      </div>
+
+      {/* Highlights, 2x2 grid */}
+      <section className="py-20 bg-secondary/50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">
+              Darum lohnt sich der Boxenstopp
+            </h2>
+            <div className="divider-bronze mt-4" />
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {highlights.map((h) => (
+              <div key={h.title} className="bg-card rounded-xl p-8 text-center shadow-sm border border-border/50">
+                <div className="w-14 h-14 rounded-full bg-bronze/10 flex items-center justify-center mx-auto mb-5">
+                  <h.icon className="w-7 h-7 text-bronze" />
+                </div>
+                <h2 className="font-serif text-xl font-semibold text-foreground mb-3">{h.title}</h2>
+                <p className="text-muted-foreground text-sm leading-relaxed">{h.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Us */}
+      <section className="py-20 bg-primary text-primary-foreground">
+
+        <div className="container mx-auto px-6 max-w-4xl">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-center mb-12">
+            Ein Bistro, das man nicht erwartet, und nicht mehr vergisst
+          </h2>
+          <div className="space-y-8">
+            {whyUs.map((item) => (
+              <div key={item.title} className="flex items-start gap-5">
+                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+                  <item.icon className="w-6 h-6 text-warm-gold" />
+                </div>
+                <div>
+                  <h3 className="font-serif text-xl font-semibold mb-1">{item.title}</h3>
+                  <p className="text-primary-foreground/80 leading-relaxed">{item.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Instagram Vorschau, datenschutzsicher ohne Meta-Einbindung */}
+      <InstagramSection />
+
+      {/* Shower promo, Zusatzangebot weiter unten */}
+      <ShowerSection />
 
       {/* FAQ, Bevor du kommst */}
       <section className="py-20" style={{ backgroundColor: "#FEF4EC" }}>
