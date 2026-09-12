@@ -320,6 +320,10 @@ const Index = () => {
       {/* Bestseller */}
       <BestsellerSection />
 
+      {/* Instagram Vorschau, datenschutzsicher ohne Meta-Einbindung */}
+      <InstagramSection />
+
+
 
       {/* Highlights, 2x2 grid */}
       <section className="py-20 bg-secondary/50">
