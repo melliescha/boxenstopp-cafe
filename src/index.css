@@ -182,6 +182,10 @@
   .animate-hero-ken-burns {
     animation: none;
   }
+  .hero-fade-up {
+    opacity: 1;
+    animation: none;
+  }
   .hover-lift:hover,
   .hover-lift-img:hover img {
     transform: none;
