@@ -102,49 +102,21 @@ const Menu = () => {
             <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">Speisekarte</h1>
             <div className="divider-bronze mb-8" />
 
-            {/* Tab switcher */}
-            <div className="inline-flex rounded-lg border border-bronze/40 overflow-hidden no-print">
-              <button
-                onClick={() => setTab("karte")}
-                className={`font-serif text-sm sm:text-base px-5 sm:px-8 py-2.5 transition-colors ${
-                  tab === "karte"
-                    ? "bg-bronze text-bronze-foreground"
-                    : "bg-transparent text-bronze hover:bg-bronze/10"
-                }`}
-              >
-                Unsere Karte
-              </button>
-              <button
-                onClick={() => setTab("flipbook")}
-                className={`font-serif text-sm sm:text-base px-5 sm:px-8 py-2.5 transition-colors ${
-                  tab === "flipbook"
-                    ? "bg-bronze text-bronze-foreground"
-                    : "bg-transparent text-bronze hover:bg-bronze/10"
-                }`}
-              >
-                Speisekarte zum Blättern
-              </button>
-            </div>
+            {/* PDF Download */}
+            <button
+              type="button"
+              onClick={handleDownloadPdf}
+              disabled={downloading}
+              className="inline-flex items-center justify-center gap-2 rounded-lg font-serif text-sm sm:text-base px-6 sm:px-8 py-3 bg-bronze text-bronze-foreground hover:opacity-90 transition-opacity disabled:opacity-60 no-print"
+              style={{ minHeight: "48px" }}
+            >
+              {downloading ? <Loader2 size={18} className="animate-spin" /> : <Download size={18} />}
+              {downloading ? "Erstelle PDF…" : "Speisekarte als PDF herunterladen"}
+            </button>
           </div>
 
-          {/* Flipbook toolbar */}
-          {tab === "flipbook" && (
-            <div className="flex justify-end mb-4 no-print">
-              <button
-                type="button"
-                onClick={handleDownloadPdf}
-                disabled={downloading}
-                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors border border-border rounded-lg px-4 py-2 disabled:opacity-60"
-              >
-                {downloading ? <Loader2 size={16} className="animate-spin" /> : <Download size={16} />}
-                {downloading ? "Erstelle PDF…" : "Als PDF herunterladen"}
-              </button>
-            </div>
-          )}
-
-          {/* Tab content */}
-          {tab === "karte" && <MenuTileView />}
-          {tab === "flipbook" && <FlipbookMenu />}
+          {/* Speisekarte */}
+          <MenuTileView />
 
           {/* Transparenz-Hinweis zu Perplex */}
           <div className="max-w-3xl mx-auto mt-12 rounded-lg border border-bronze/30 bg-bronze/5 px-5 py-5 text-sm md:text-base text-muted-foreground">
