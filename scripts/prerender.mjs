@@ -93,9 +93,9 @@ const routes = [
   },
   {
     path: "/fites-allgaeu",
-    title: "FITES Allgäu Hergatz | Kostenloses Probetraining bis Dezember",
+    title: "Fitnessstudio Hergatz | FITES Allgäu: HYROX, Boxen & HIIT",
     description:
-      "Fitnessstudio in Hergatz: HYROX, Fitness-Boxen, Tabata & HIIT. Persönliche Betreuung von Eugen, kleine Gruppen, Wellpass-Partner. Jetzt kostenloses Probetraining sichern.",
+      "FITES Allgäu in Hergatz: Fitnessstudio mit HYROX, Fitness-Boxen, HIIT, Tabata, Ganzkörpertraining & Personal Training. Zentral für Wangen im Allgäu, Lindenberg, Heimenkirch, Ravensburg & Lindau. Kostenloses Probetraining bis Dezember.",
     image: `${SITE_URL}/og-image.jpg`,
   },
   {
