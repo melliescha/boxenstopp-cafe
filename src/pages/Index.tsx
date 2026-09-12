@@ -6,6 +6,7 @@ import SEO from "@/components/SEO";
 import BestsellerSection from "@/components/BestsellerSection";
 import ShowerSection from "@/components/ShowerSection";
 import Wegweiser from "@/components/Wegweiser";
+import InstagramSection from "@/components/InstagramSection";
 
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 
@@ -319,6 +320,10 @@ const Index = () => {
 
       {/* Bestseller */}
       <BestsellerSection />
+
+      {/* Instagram Vorschau, datenschutzsicher ohne Meta-Einbindung */}
+      <InstagramSection />
+
 
 
       {/* Highlights, 2x2 grid */}
