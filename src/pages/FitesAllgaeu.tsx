@@ -147,7 +147,7 @@ const FitesAllgaeu = () => {
   return (
     <Layout>
       <SEO
-        title="Fitnessstudio Hergatz | FITES Allgäu: HYROX, Boxen & Personal Training für Wangen, Lindenberg, Ravensburg"
+        title="Fitnessstudio Hergatz | FITES Allgäu: HYROX, Boxen & HIIT"
         description="FITES Allgäu in Hergatz: Fitnessstudio mit HYROX, Fitness-Boxen, HIIT, Tabata, Ganzkörpertraining & Personal Training. Zentral für Wangen im Allgäu, Lindenberg, Heimenkirch, Ravensburg & Lindau. Kostenloses Probetraining bis Dezember."
         path="/fites-allgaeu"
         image="/og-image.jpg"
