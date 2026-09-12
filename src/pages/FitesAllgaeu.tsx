@@ -49,12 +49,22 @@ const benefits = [
   "Flexible Zeiten, keine langen Vertragslaufzeiten",
 ];
 
+const serviceArea = [
+  "Hergatz",
+  "Wangen im Allgäu",
+  "Lindenberg im Allgäu",
+  "Heimenkirch",
+  "Ravensburg",
+  "Lindau (Bodensee)",
+];
+
 const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "HealthClub",
     name: "FITES Allgäu",
-    description: "Fitnessstudio in Hergatz mit HYROX, FITES Boxen, HIIT & Tabata und Ganzkörpertraining, dazu Personal Training nach Absprache.",
+    description:
+      "Fitnessstudio in Hergatz mit HYROX, FITES Boxen, HIIT & Tabata, Ganzkörpertraining und Personal Training. Für Mitglieder aus Hergatz, Wangen im Allgäu, Lindenberg, Heimenkirch, Ravensburg und Lindau.",
     url: "https://bistro-boxenstopp.de/fites-allgaeu",
     telephone: "+491716226201",
     address: {
@@ -65,6 +75,7 @@ const jsonLd = [
       postalCode: "88145",
       addressCountry: "DE",
     },
+    areaServed: serviceArea.map((name) => ({ "@type": "City", name })),
     sameAs: [STUDIO_URL],
     offers: {
       "@type": "Offer",
@@ -112,6 +123,22 @@ const jsonLd = [
         },
 
       },
+      {
+        "@type": "Question",
+        name: "Lohnt sich FITES Allgäu auch für Mitglieder aus Wangen, Lindenberg, Heimenkirch, Ravensburg oder Lindau?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja. FITES Allgäu in Hergatz ist zentral im Westallgäu gelegen und gut erreichbar aus Wangen im Allgäu, Lindenberg im Allgäu, Heimenkirch, Ravensburg und Lindau. Kurse wie HYROX, Fitness-Boxen, HIIT, Tabata, Ganzkörpertraining und Personal Training stehen allen offen, das Probetraining ist bis Dezember 2026 kostenlos.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Gibt es Personal Training bei FITES Allgäu?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja, Personal Training mit Inhaber Eugen nach Absprache. Individueller Trainingsplan, persönliche Betreuung, Terminvereinbarung unter 0171 6226201.",
+        },
+      },
     ],
   },
 ];
@@ -120,8 +147,8 @@ const FitesAllgaeu = () => {
   return (
     <Layout>
       <SEO
-        title="FITES Allgäu Hergatz | Kostenloses Probetraining bis Dezember"
-        description="Fitnessstudio in Hergatz: HYROX, FITES Boxen, HIIT & Tabata, Ganzkörpertraining und Personal Training. Persönliche Betreuung von Eugen, kleine Gruppen, Wellpass-Partner."
+        title="Fitnessstudio Hergatz | FITES Allgäu: HYROX, Boxen & HIIT"
+        description="FITES Allgäu in Hergatz: Fitnessstudio mit HYROX, Fitness-Boxen, HIIT, Tabata, Ganzkörpertraining & Personal Training. Zentral für Wangen im Allgäu, Lindenberg, Heimenkirch, Ravensburg & Lindau. Kostenloses Probetraining bis Dezember."
         path="/fites-allgaeu"
         image="/og-image.jpg"
         jsonLd={jsonLd}
@@ -302,6 +329,29 @@ const FitesAllgaeu = () => {
             </p>
 
           </div>
+        </div>
+      </section>
+
+      {/* EINZUGSGEBIET */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6 max-w-4xl text-center">
+          <p className="text-xs uppercase tracking-[0.25em] font-semibold mb-3" style={{ color: BRONZE }}>Gut erreichbar</p>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold mb-5" style={{ color: NAVY }}>
+            Dein Fitnessstudio im Westallgäu, egal aus welchem Ort du kommst.
+          </h2>
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-3xl mx-auto">
+            FITES Allgäu liegt in Hergatz, zentral zwischen den Orten des Westallgäus und des Bodenseekreises. Ob Fitness-Kurse, HYROX Training, Fitness-Boxen, HIIT, Tabata, Ganzkörpertraining oder Personal Training: Mitglieder kommen aus der ganzen Region zu uns.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 mb-8">
+            {serviceArea.map((ort) => (
+              <span key={ort} className="px-5 py-2.5 rounded-full font-semibold bg-card" style={{ border: `1px solid #EDE0D0`, color: NAVY }}>
+                {ort}
+              </span>
+            ))}
+          </div>
+          <p className="text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+            Viele Trainierende kommen aus <strong className="text-foreground">Wangen im Allgäu</strong>, <strong className="text-foreground">Lindenberg im Allgäu</strong>, <strong className="text-foreground">Heimenkirch</strong>, <strong className="text-foreground">Ravensburg</strong> und <strong className="text-foreground">Lindau am Bodensee</strong>. Alle Orte sind in wenigen Autominuten erreichbar, Parkplätze direkt am Gebäude. Nach dem Training wartet im selben Gebäude das Bistro Boxenstopp mit Kaffee, Protein-Shake und Frühstück.
+          </p>
         </div>
       </section>
 
