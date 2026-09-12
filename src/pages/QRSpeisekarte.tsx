@@ -1,6 +1,8 @@
 import FlipbookMenu from "@/components/FlipbookMenu";
 import logoIcon from "@/assets/logo-icon.png";
 import SEO from "@/components/SEO";
+import { Star } from "lucide-react";
+import { socialLinks } from "@/config/social";
 
 const QRSpeisekarte = () => {
   return (
@@ -27,6 +29,20 @@ const QRSpeisekarte = () => {
       {/* Flipbook */}
       <div className="flex-1 px-2 sm:px-6 pb-4">
         <FlipbookMenu />
+      </div>
+
+      {/* Google Bewertung CTA */}
+      <div className="px-6 pb-3 text-center">
+        <a
+          href={socialLinks.googleReview}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 rounded-lg font-serif text-sm px-6 py-3 bg-bronze text-bronze-foreground hover:opacity-90 transition-opacity"
+          style={{ minHeight: "48px" }}
+        >
+          <Star size={16} />
+          Hat es geschmeckt? Auf Google bewerten
+        </a>
       </div>
 
       {/* Footer link */}

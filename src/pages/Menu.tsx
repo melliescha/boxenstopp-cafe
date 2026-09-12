@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import MenuTileView from "@/components/MenuTileView";
-import { Download, Loader2 } from "lucide-react";
+import { Download, Loader2, Star } from "lucide-react";
+import { socialLinks } from "@/config/social";
 import { toast } from "sonner";
 import { menuPageSchema } from "@/lib/schema";
 import { downloadMenuPdf } from "@/lib/menuPdf";
@@ -117,6 +118,28 @@ const Menu = () => {
 
           {/* Speisekarte */}
           <MenuTileView />
+
+          {/* Google Bewertung CTA */}
+          <div className="max-w-2xl mx-auto mt-14 text-center">
+            <div className="rounded-lg border border-bronze/30 bg-bronze/10 px-5 py-6">
+              <p className="font-serif text-lg md:text-xl font-semibold text-foreground mb-2">
+                Hat es dir geschmeckt?
+              </p>
+              <p className="text-sm md:text-base text-muted-foreground mb-4">
+                Eine kurze Google-Bewertung hilft uns sehr und dauert nur eine Minute.
+              </p>
+              <a
+                href={socialLinks.googleReview}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-lg font-serif text-sm sm:text-base px-6 sm:px-8 py-3 bg-bronze text-bronze-foreground hover:opacity-90 transition-opacity"
+                style={{ minHeight: "48px" }}
+              >
+                <Star size={18} />
+                Auf Google bewerten
+              </a>
+            </div>
+          </div>
 
         </div>
       </section>
