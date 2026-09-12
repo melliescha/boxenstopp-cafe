@@ -138,3 +138,41 @@
     size: A4;
   }
 }
+
+/* Scroll-Reveal & Hover-Animationen */
+@keyframes hero-zoom {
+  from { transform: scale(1.12); }
+  to { transform: scale(1); }
+}
+
+.animate-hero-zoom {
+  animation: hero-zoom 2.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+  will-change: transform;
+}
+
+.hover-lift {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px -12px hsl(var(--foreground) / 0.18);
+}
+
+.hover-lift-img img {
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hover-lift-img:hover img {
+  transform: scale(1.05);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero-zoom {
+    animation: none;
+  }
+  .hover-lift:hover,
+  .hover-lift-img:hover img {
+    transform: none;
+  }
+}
