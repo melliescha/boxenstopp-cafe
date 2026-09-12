@@ -10,7 +10,7 @@ const WelcomeBanner = () => {
 
   if (isVacation) {
     return (
-      <div className="welcome-banner bg-warm-gold text-primary text-center py-2.5 px-10 text-sm font-medium relative">
+      <div className="welcome-banner bg-warm-gold text-primary text-center py-2.5 pl-4 pr-12 text-sm font-medium relative">
         <span>
           🌴 Sommerurlaub! Vom <strong>16.06. bis 23.06.2026</strong> machen wir Pause, tanken Sonne und kommen frisch zurück. Ab dem <strong>24.06.</strong> stehen Kaffee &amp; Flammkuchen wieder für euch bereit. ☕🥐
         </span>
@@ -26,7 +26,7 @@ const WelcomeBanner = () => {
   }
 
   return (
-    <div className="welcome-banner bg-primary text-primary-foreground text-center py-2.5 px-4 text-sm font-medium relative">
+    <div className="welcome-banner bg-primary text-primary-foreground text-center py-2.5 pl-4 pr-12 text-sm font-medium relative">
       <span>
         Egal ob nach der Fahrradtour, nach dem Training bei{" "}
         <a href="/fites-allgaeu" className="underline hover:text-warm-gold transition-colors font-semibold">
