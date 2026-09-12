@@ -10,6 +10,13 @@ const NAVY: [number, number, number] = [22, 68, 114];
 const BRONZE: [number, number, number] = [158, 124, 78];
 const TEXT: [number, number, number] = [60, 45, 35];
 
+// Entfernt Zeichen, die die PDF-Schrift nicht darstellen kann (z. B. ★, Emojis)
+const clean = (s: string) =>
+  s
+    .replace(/[^\u0020-\u00FF]/g, "")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+
 export const downloadMenuPdf = () => {
   const pdf = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
   let y = MARGIN;
@@ -71,7 +78,7 @@ export const downloadMenuPdf = () => {
     const items = menuProducts.filter((p) => p.category === category);
     if (items.length === 0) return;
 
-    ensureSpace(14);
+    ensureSpace(34);
     pdf.setFont("helvetica", "bold");
     pdf.setFontSize(12);
     pdf.setTextColor(...NAVY);
