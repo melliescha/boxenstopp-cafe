@@ -147,12 +147,13 @@ const FitesAllgaeu = () => {
   return (
     <Layout>
       <SEO
-        title="Fitnessstudio Hergatz | FITES Allgäu: HYROX, Boxen & HIIT"
-        description="FITES Allgäu in Hergatz: Fitnessstudio mit HYROX, Fitness-Boxen, HIIT, Tabata, Ganzkörpertraining & Personal Training. Zentral für Wangen im Allgäu, Lindenberg, Heimenkirch, Ravensburg & Lindau. Kostenloses Probetraining bis Dezember."
+        title="Fitnessstudio Hergatz & Wangen | FITES Allgäu: HYROX, Boxen, HIIT"
+        description="FITES Allgäu, dein Fitnessstudio in Hergatz im Westallgäu: HYROX, Fitness-Boxen, HIIT, Tabata, Ganzkörpertraining und Personal Training. Kurze Wege aus Wangen im Allgäu, Lindenberg, Heimenkirch, Ravensburg und Lindau. Kostenloses Probetraining, Wellpass."
         path="/fites-allgaeu"
         image="/og-image.jpg"
         jsonLd={jsonLd}
       />
+
 
       {/* HERO */}
       <section className="relative overflow-hidden" style={{ backgroundColor: NAVY }}>
@@ -166,8 +167,9 @@ const FitesAllgaeu = () => {
             <span className="text-sm font-semibold tracking-wide" style={{ color: GOLD }}>Nur bis Dezember 2026</span>
           </div>
           <h1 className="font-serif text-4xl md:text-6xl font-bold leading-tight mb-6">
-            Kostenloses Probetraining bei FITES Allgäu sichern
+            Fitnessstudio in Hergatz: Kostenloses Probetraining bei FITES Allgäu sichern
           </h1>
+
           <p className="text-lg md:text-2xl mb-8 opacity-95 max-w-3xl leading-relaxed">
             Dein Fitnessstudio in Hergatz. HYROX, FITES Boxen, HIIT & Tabata und Ganzkörpertraining, dazu Personal Training. Kleine Gruppen, persönliches Coaching von Eugen, keine Wartezeiten. Ohne Risiko, ohne Kosten, ohne Vertrag.
           </p>
@@ -390,9 +392,14 @@ const FitesAllgaeu = () => {
               Jetzt buchen <ArrowRight className="w-5 h-5" />
             </a>
           </div>
-          <p className="mt-8 text-sm opacity-70">
-            <Link to="/partner" className="underline hover:opacity-100">Zurück zu unseren Partnern</Link>
+          <p className="mt-8 text-sm opacity-80 leading-relaxed">
+            Mehr aus Hergatz:{" "}
+            <Link to="/" className="underline hover:opacity-100">Bistro Boxenstopp, Café im Westallgäu</Link>{" · "}
+            <Link to="/speisekarte" className="underline hover:opacity-100">Speisekarte &amp; Protein-Shakes</Link>{" · "}
+            <Link to="/kontakt" className="underline hover:opacity-100">Anfahrt nach Hergatz</Link>{" · "}
+            <Link to="/partner" className="underline hover:opacity-100">Unsere Partner</Link>
           </p>
+
         </div>
       </section>
     </Layout>
