@@ -1,6 +1,8 @@
 import FlipbookMenu from "@/components/FlipbookMenu";
 import logoIcon from "@/assets/logo-icon.png";
 import SEO from "@/components/SEO";
+import { Star } from "lucide-react";
+import { socialLinks } from "@/config/social";
 
 const QRSpeisekarte = () => {
   return (
