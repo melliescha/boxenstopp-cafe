@@ -114,7 +114,7 @@ const ReviewCTASection = () => {
   return (
     <section
       ref={ref}
-      className="py-16 md:py-20"
+      className="py-10 md:py-12"
       style={{ backgroundColor: "#FEF4EC", borderTop: "1px solid #9E7C4E33", borderBottom: "1px solid #9E7C4E33" }}
     >
       <div className="container mx-auto px-6 text-center max-w-2xl">
@@ -329,7 +329,7 @@ const Index = () => {
       <BestsellerSection />
 
       {/* Opening Hours */}
-      <section className="py-20 bg-background">
+      <section className="py-10 md:py-14 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-md mx-auto text-center">
             <div className="w-14 h-14 rounded-full bg-bronze/10 flex items-center justify-center mx-auto mb-5">
@@ -372,7 +372,7 @@ const Index = () => {
 
       {/* Wegweiser: So findet ihr uns */}
       <Wegweiser background="cream" />
-      <div className="text-center pb-14" style={{ backgroundColor: "#FEF4EC" }}>
+      <div className="text-center pb-10" style={{ backgroundColor: "#FEF4EC" }}>
         <a
           href={socialLinks.googleMaps}
           target="_blank"
@@ -386,17 +386,17 @@ const Index = () => {
       </div>
 
       {/* Highlights, 2x2 grid */}
-      <section className="py-20 bg-secondary/50">
+      <section className="py-10 md:py-14 bg-secondary/50">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">
               Darum lohnt sich der Boxenstopp
             </h2>
             <div className="divider-bronze mt-4" />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {highlights.map((h) => (
-              <div key={h.title} className="bg-card rounded-xl p-8 text-center shadow-sm border border-border/50">
+              <div key={h.title} className="bg-card rounded-xl p-6 text-center shadow-sm border border-border/50">
                 <div className="w-14 h-14 rounded-full bg-bronze/10 flex items-center justify-center mx-auto mb-5">
                   <h.icon className="w-7 h-7 text-bronze" />
                 </div>
@@ -409,13 +409,13 @@ const Index = () => {
       </section>
 
       {/* Why Us */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-10 md:py-14 bg-primary text-primary-foreground">
 
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-center mb-8">
             Ein Bistro, das man nicht erwartet, und nicht mehr vergisst
           </h2>
-          <div className="space-y-8">
+          <div className="space-y-6">
             {whyUs.map((item) => (
               <div key={item.title} className="flex items-start gap-5">
                 <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
@@ -438,9 +438,9 @@ const Index = () => {
       <ShowerSection />
 
       {/* FAQ, Bevor du kommst */}
-      <section className="py-20" style={{ backgroundColor: "#FEF4EC" }}>
+      <section className="py-10 md:py-14" style={{ backgroundColor: "#FEF4EC" }}>
         <div className="container mx-auto px-6 max-w-3xl">
-          <div className="text-center mb-10">
+          <div className="text-center mb-8">
             <p className="font-medium tracking-[0.2em] uppercase text-sm mb-2" style={{ color: "#9E7C4E" }}>
               FAQ
             </p>

@@ -39,7 +39,7 @@ const Wegweiser = ({ background = "background" }: WegweiserProps) => {
   const sectionBg = background === "cream" ? CREAM : undefined;
 
   return (
-    <section className="py-14 md:py-20" style={{ backgroundColor: sectionBg }}>
+    <section className="py-10 md:py-14" style={{ backgroundColor: sectionBg }}>
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="text-center mb-10">
           <p
