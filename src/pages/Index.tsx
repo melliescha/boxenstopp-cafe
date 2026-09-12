@@ -12,7 +12,6 @@ import Reveal from "@/components/Reveal";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 
 import heroBg from "@/assets/hero-bistro.jpg";
-import heroLogoSchriftzug from "@/assets/hero-logo-schriftzug.png";
 import { socialLinks } from "@/config/social";
 import VacationNotice from "@/components/VacationNotice";
 import AiBadge from "@/components/AiBadge";
@@ -254,7 +253,7 @@ const Index = () => {
             alt="KI generiert: Bistro Boxenstopp, gemütliches Café-Interieur mit Kaffee und Gebäck"
             width={1920}
             height={1080}
-            className="w-full h-full object-cover animate-hero-zoom"
+            className="h-full w-full object-cover animate-hero-ken-burns"
             style={{ objectPosition: "center 25%" }}
             loading="eager"
             fetchPriority="high"
@@ -262,19 +261,6 @@ const Index = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary/45 via-primary/15 to-transparent" />
           <AiBadge variant="overlay" />
-          <div className="absolute inset-0 z-10 flex items-center justify-center px-6">
-            <img
-              src={heroLogoSchriftzug}
-              alt="Bistro Boxenstopp"
-              className="hero-logo-motion w-[88%] max-w-[680px] animate-fade-in-up"
-              style={{ mixBlendMode: "multiply" }}
-              loading="eager"
-              fetchPriority="high"
-              decoding="async"
-              width={700}
-              height={200}
-            />
-          </div>
         </div>
       </section>
 

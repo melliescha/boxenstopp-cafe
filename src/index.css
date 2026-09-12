@@ -140,23 +140,15 @@
 }
 
 /* Scroll-Reveal & Hover-Animationen */
-@keyframes hero-zoom {
-  from { transform: scale(1.055); }
-  to { transform: scale(1); }
+@keyframes hero-ken-burns {
+  0% { transform: scale(1.08) translate3d(-0.7%, -0.5%, 0); }
+  50% { transform: scale(1.045) translate3d(0.5%, 0.25%, 0); }
+  100% { transform: scale(1.07) translate3d(-0.25%, 0.5%, 0); }
 }
 
-.animate-hero-zoom {
-  animation: hero-zoom 8s cubic-bezier(0.22, 1, 0.36, 1) both;
+.animate-hero-ken-burns {
+  animation: hero-ken-burns 18s ease-in-out infinite alternate;
   will-change: transform;
-}
-
-@keyframes hero-logo-settle {
-  from { transform: translateY(8px); }
-  to { transform: translateY(0); }
-}
-
-.hero-logo-motion {
-  animation: hero-logo-settle 1.4s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .hover-lift {
@@ -177,10 +169,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-hero-zoom {
-    animation: none;
-  }
-  .hero-logo-motion {
+  .animate-hero-ken-burns {
     animation: none;
   }
   .hover-lift:hover,
