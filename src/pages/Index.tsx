@@ -173,7 +173,7 @@ const Index = () => {
       "alternateName": "Bistro Boxenstopp Hergatz",
       "description": "Bistro im Westallgäu mit Barista-Kaffee, Flammkuchen, Hüttenbrot und Proteinshakes. Direkt am Bodensee-Königssee-Radweg und an der Leiblachroute in Hergatz/Wohmbrechts.",
       "url": "https://bistro-boxenstopp.de",
-      "telephone": "+4917176226201",
+      "telephone": "+491716226201",
       "priceRange": "€€",
       "image": "https://bistro-boxenstopp.de/og-image.jpg",
       "address": {
@@ -345,7 +345,7 @@ const Index = () => {
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-8">
               <a
-                href="tel:+4917176226201"
+                href="tel:+491716226201"
                 className="inline-flex items-center justify-center gap-2 rounded-lg font-medium text-white hover:opacity-90 transition-opacity w-full sm:w-auto"
                 style={{ backgroundColor: "#164472", padding: "12px 28px", fontSize: "15px", minHeight: "48px" }}
               >
