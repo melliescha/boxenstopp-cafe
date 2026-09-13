@@ -127,7 +127,6 @@ const FlipbookMenu = () => {
         </button>
 
         <div className="flex justify-center px-2 sm:px-0">
-           {/* @ts-expect-error react-pageflip exposes an incomplete ref type */}
           <HTMLFlipBook
             ref={flipBookRef}
             width={380}
