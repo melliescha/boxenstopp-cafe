@@ -104,7 +104,7 @@ const BestsellerSection = () => (
       </div>
 
       {/* Einheitliches, flüssiges Raster: alle Kacheln gleich groß */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-5">
+      <div className="grid grid-cols-1 min-[360px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-5">
         {bestsellers.map((item) => (
           <BestsellerCard key={item.name} item={item} />
         ))}
