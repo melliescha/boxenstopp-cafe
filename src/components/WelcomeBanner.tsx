@@ -26,17 +26,24 @@ const WelcomeBanner = () => {
   }
 
   return (
-    <div className="welcome-banner bg-primary text-primary-foreground text-center py-2.5 pl-4 pr-12 text-sm font-medium relative">
-      <span>
+    <div className="welcome-banner relative bg-primary py-2 pl-3 pr-12 text-center text-xs font-medium leading-5 text-primary-foreground sm:px-14 sm:py-2.5 sm:text-sm">
+      <span className="sm:hidden">
+        Pause nach Radtour oder Training bei{" "}
+        <a href="/fites-allgaeu" className="font-semibold underline transition-colors hover:text-warm-gold">
+          FITES Allgäu
+        </a>
+        .
+      </span>
+      <span className="hidden sm:inline">
         Egal ob nach der Fahrradtour, nach dem Training bei{" "}
         <a href="/fites-allgaeu" className="underline hover:text-warm-gold transition-colors font-semibold">
           FITES Allgäu
         </a>{" "}
-        oder für eine entspannte Pause: komm einfach vorbei! 👋
+        oder für eine entspannte Pause: komm einfach vorbei!
       </span>
       <button
         onClick={() => setVisible(false)}
-        className="absolute right-4 top-1/2 -translate-y-1/2 hover:opacity-70 transition-opacity"
+        className="absolute right-1 top-1/2 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center transition-opacity hover:opacity-70 sm:right-2"
         aria-label="Banner schließen"
       >
         <X size={16} aria-hidden="true" />

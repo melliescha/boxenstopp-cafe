@@ -247,34 +247,33 @@ const Index = () => {
       />
 
       {/* Vertrauter Einstieg mit dezenter Bewegung */}
-      <section className="relative overflow-hidden h-[58vh] min-h-[440px] max-h-[680px]">
+      <section className="relative min-h-[620px] overflow-hidden sm:h-[68svh] sm:min-h-[560px] sm:max-h-[720px] lg:h-[58vh] lg:min-h-[540px] lg:max-h-[680px]">
         <div className="relative h-full">
           <img
             src={heroBg}
             alt="KI generiert: Bistro Boxenstopp, gemütliches Café-Interieur mit Kaffee und Gebäck"
             width={1920}
             height={1080}
-            className="h-full w-full object-cover animate-hero-ken-burns"
-            style={{ objectPosition: "center 25%" }}
+            className="h-full w-full object-cover object-[58%_center] animate-hero-ken-burns sm:object-center"
             loading="eager"
             fetchPriority="high"
             decoding="async"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/20 to-transparent" />
+           <div className="absolute inset-0 bg-primary/45 sm:bg-primary/35" />
           <AiBadge variant="overlay" />
-          <div className="absolute inset-x-0 bottom-0 px-6 pb-8 md:pb-12">
+           <div className="absolute inset-x-0 bottom-0 px-4 pb-6 min-[360px]:px-5 sm:px-6 sm:pb-8 md:pb-12">
             <div className="container mx-auto max-w-5xl">
-              <p className="hero-fade-up mb-2 text-xs font-bold uppercase tracking-[0.2em] text-bronze-foreground" style={{ animationDelay: "0.15s" }}>Café in Hergatz-Wohmbrechts</p>
-              <h1 className="hero-fade-up max-w-2xl font-serif text-3xl font-medium text-white md:text-4xl" style={{ animationDelay: "0.3s" }}>
+               <p className="hero-fade-up mb-2 text-[11px] font-bold uppercase tracking-[0.16em] text-primary-foreground sm:text-xs sm:tracking-[0.2em]" style={{ animationDelay: "0.15s" }}>Café in Hergatz-Wohmbrechts</p>
+               <h1 className="hero-fade-up max-w-2xl font-serif text-[28px] font-medium leading-[1.12] text-primary-foreground min-[360px]:text-[32px] sm:text-4xl" style={{ animationDelay: "0.3s" }}>
                 Café &amp; Bistro in Hergatz: Hergatz' bestgehütetes Geheimnis
               </h1>
-              <p className="hero-fade-up mt-2 max-w-2xl text-[15px] leading-relaxed text-white/90" style={{ animationDelay: "0.45s" }}>
+               <p className="hero-fade-up mt-3 max-w-2xl text-sm leading-6 text-primary-foreground/90 sm:text-[15px]" style={{ animationDelay: "0.45s" }}>
                 Bistro Boxenstopp in Hergatz-Wohmbrechts: Barista-Kaffee, Frühstück, Flammkuchen und Hüttenbrot im Westallgäu, kurze Wege aus Wangen im Allgäu, Heimenkirch, Lindenberg und Lindau.
               </p>
-              <div className="hero-fade-up mt-5 flex flex-col gap-3 sm:flex-row" style={{ animationDelay: "0.6s" }}>
+               <div className="hero-fade-up mt-5 grid grid-cols-1 gap-3 min-[400px]:grid-cols-2 sm:flex sm:flex-row" style={{ animationDelay: "0.6s" }}>
                 <Link
                   to="/speisekarte"
-                  className="inline-flex min-h-12 items-center justify-center rounded-lg bg-accent px-7 py-3 font-medium text-accent-foreground transition-all hover:-translate-y-0.5"
+                   className="inline-flex min-h-12 items-center justify-center rounded-md bg-accent px-5 py-3 text-center font-medium text-accent-foreground transition-colors hover:bg-accent/90 sm:px-7"
                 >
                   Speisekarte ansehen
                 </Link>
@@ -282,7 +281,7 @@ const Index = () => {
                   href={socialLinks.googleMaps}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border-2 border-white/80 px-7 py-3 font-medium text-white transition-colors hover:bg-white hover:text-primary"
+                   className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md border-2 border-primary-foreground/80 px-5 py-3 text-center font-medium text-primary-foreground transition-colors hover:bg-primary-foreground hover:text-primary sm:px-7"
                 >
                   <Navigation className="h-4 w-4" aria-hidden="true" />
                   Route planen
