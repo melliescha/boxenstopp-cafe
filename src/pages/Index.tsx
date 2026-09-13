@@ -247,7 +247,7 @@ const Index = () => {
       />
 
       {/* Vertrauter Einstieg mit dezenter Bewegung */}
-      <section className="relative min-h-[620px] overflow-hidden sm:h-[68svh] sm:min-h-[560px] sm:max-h-[720px] lg:h-[58vh] lg:min-h-[540px] lg:max-h-[680px]">
+      <section className="relative h-[calc(100svh-189px)] min-h-[375px] max-h-[620px] overflow-hidden sm:h-[68svh] sm:min-h-[560px] sm:max-h-[720px] lg:h-[58vh] lg:min-h-[540px] lg:max-h-[680px]">
         <div className="relative h-full">
           <img
             src={heroBg}
@@ -262,20 +262,22 @@ const Index = () => {
            <div className="absolute inset-0 bg-primary/45 sm:bg-primary/35" />
           <AiBadge variant="overlay" />
            <div className="absolute inset-x-0 bottom-0 px-4 pb-6 min-[360px]:px-5 sm:px-6 sm:pb-8 md:pb-12">
-            <div className="container mx-auto max-w-5xl">
+             <div className="mx-auto w-full max-w-5xl">
                <p className="hero-fade-up mb-2 text-[11px] font-bold uppercase tracking-[0.16em] text-primary-foreground sm:text-xs sm:tracking-[0.2em]" style={{ animationDelay: "0.15s" }}>Café in Hergatz-Wohmbrechts</p>
                <h1 className="hero-fade-up max-w-2xl font-serif text-[28px] font-medium leading-[1.12] text-primary-foreground min-[360px]:text-[32px] sm:text-4xl" style={{ animationDelay: "0.3s" }}>
                 Café &amp; Bistro in Hergatz: Hergatz' bestgehütetes Geheimnis
               </h1>
-               <p className="hero-fade-up mt-3 max-w-2xl text-sm leading-6 text-primary-foreground/90 sm:text-[15px]" style={{ animationDelay: "0.45s" }}>
-                Bistro Boxenstopp in Hergatz-Wohmbrechts: Barista-Kaffee, Frühstück, Flammkuchen und Hüttenbrot im Westallgäu, kurze Wege aus Wangen im Allgäu, Heimenkirch, Lindenberg und Lindau.
+               <p className="hero-fade-up mt-3 max-w-2xl text-sm leading-5 text-primary-foreground/90 sm:text-[15px] sm:leading-6" style={{ animationDelay: "0.45s" }}>
+                 <span className="sm:hidden">Barista-Kaffee, Frühstück, Flammkuchen und Hüttenbrot im Westallgäu.</span>
+                 <span className="hidden sm:inline">Bistro Boxenstopp in Hergatz-Wohmbrechts: Barista-Kaffee, Frühstück, Flammkuchen und Hüttenbrot im Westallgäu, kurze Wege aus Wangen im Allgäu, Heimenkirch, Lindenberg und Lindau.</span>
               </p>
-               <div className="hero-fade-up mt-5 grid grid-cols-1 gap-3 min-[400px]:grid-cols-2 sm:flex sm:flex-row" style={{ animationDelay: "0.6s" }}>
+               <div className="hero-fade-up mt-4 grid grid-cols-2 gap-2 sm:mt-5 sm:flex sm:gap-3" style={{ animationDelay: "0.6s" }}>
                 <Link
                   to="/speisekarte"
                    className="inline-flex min-h-12 items-center justify-center rounded-md bg-accent px-5 py-3 text-center font-medium text-accent-foreground transition-colors hover:bg-accent/90 sm:px-7"
                 >
-                  Speisekarte ansehen
+                   <span className="sm:hidden">Speisekarte</span>
+                   <span className="hidden sm:inline">Speisekarte ansehen</span>
                 </Link>
                 <a
                   href={socialLinks.googleMaps}
