@@ -31,6 +31,21 @@ interface FlipItem {
   sizes?: { label: string; price: string }[];
 }
 
+interface FlipBookApi {
+  pageFlip: () => {
+    flipNext: () => void;
+    flipPrev: () => void;
+  };
+}
+
+interface FlipEvent {
+  data: number;
+}
+
+interface FlipInitEvent {
+  data?: { pages?: number };
+}
+
 const FlipMenuItem = ({ item }: { item: FlipItem }) => (
   <div className="mb-1.5">
     <div className="flex items-baseline justify-between gap-1">
@@ -76,15 +91,15 @@ const ImagePage = ({ src, alt }: { src: string; alt: string }) => (
 export const FLIPBOOK_EXPORT_PAGE_CLASS = "flipbook-export-page";
 
 const FlipbookMenu = () => {
-  const flipBookRef = useRef<any>(null);
+  const flipBookRef = useRef<FlipBookApi | null>(null);
   const [currentPage, setCurrentPage] = useState(0);
   const [totalPages, setTotalPages] = useState(14);
 
-  const onFlip = useCallback((e: any) => {
+  const onFlip = useCallback((e: FlipEvent) => {
     setCurrentPage(e.data);
   }, []);
 
-  const onInit = useCallback((e: any) => {
+  const onInit = useCallback((e: FlipInitEvent) => {
     setTotalPages(e?.data?.pages || 14);
   }, []);
 
@@ -112,7 +127,6 @@ const FlipbookMenu = () => {
         </button>
 
         <div className="flex justify-center px-2 sm:px-0">
-          {/* @ts-ignore react-pageflip typing issues */}
           <HTMLFlipBook
             ref={flipBookRef}
             width={380}

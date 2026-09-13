@@ -12,6 +12,11 @@ import { isShowerFeatureVisible } from "@/lib/features";
 const FAQ = () => {
   const [query, setQuery] = useState("");
 
+  const visibleFaqs = useMemo(
+    () => (isShowerFeatureVisible() ? allFaqs : allFaqs.filter((f) => f.feature !== "shower")),
+    [],
+  );
+
   // Inject FAQPage JSON-LD with all visible Q&As
   useEffect(() => {
     const schema = {
@@ -36,14 +41,9 @@ const FAQ = () => {
       const existing = document.head.querySelector('script[id="faq-page-schema"]');
       if (existing) document.head.removeChild(existing);
     };
-  }, []);
+  }, [visibleFaqs]);
 
   const q = query.trim().toLowerCase();
-
-  const visibleFaqs = useMemo(
-    () => (isShowerFeatureVisible() ? allFaqs : allFaqs.filter((f) => f.feature !== "shower")),
-    [],
-  );
 
   const filteredBlocks = useMemo(() => {
     let blocks = faqBlocks;

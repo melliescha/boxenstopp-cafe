@@ -60,7 +60,9 @@ const ProductDetailOverlay = ({ product, onClose }: Props) => {
     if (navigator.share) {
       try {
         await navigator.share({ title: product.name, url });
-      } catch {}
+      } catch {
+        return;
+      }
     } else {
       await navigator.clipboard.writeText(url);
     }
