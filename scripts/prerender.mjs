@@ -59,6 +59,14 @@ const routes = [
     imageAlt: "Bistro Boxenstopp und FITES Allgäu im Wohnhaus der Inhaberfamilie in Hergatz",
   },
   {
+    path: "/news",
+    title: "News & Aktuelles | Bistro Boxenstopp Hergatz",
+    description:
+      "Aktuelles aus dem Bistro Boxenstopp in Hergatz: neuer Beeren-Flammkuchen, Sponsoring beim TSV Wohmbrechts und Neuigkeiten aus der Nachbarschaft.",
+    image: `${SITE_URL}/og-image.jpg`,
+    imageAlt: "Neuigkeiten aus dem Bistro Boxenstopp in Hergatz",
+  },
+  {
     path: "/partner",
     title: "Unsere Partner | Bistro Boxenstopp",
     description:
