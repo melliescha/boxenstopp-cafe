@@ -1,4 +1,5 @@
-import flammkuchenImage from "@/assets/bestseller-flammkuchen.jpg";
+import flammkuchenImage from "@/assets/news/beeren-flammkuchen.jpg";
+import sponsorImage from "@/assets/news/sponsor-tsv-wohmbrechts.jpg";
 
 export type NewsPost = {
   slug: string;
@@ -27,12 +28,11 @@ export const newsPosts: NewsPost[] = [
     excerpt:
       "Süßer Flammkuchen mit fruchtigen Beeren, frisch aus dem Ofen. Unsere neue Empfehlung für alle, die den Nachmittag genießen wollen.",
     body: [
-      "Unser Beeren-Flammkuchen ist die süße Antwort auf unsere herzhaften Klassiker: knuspriger Flammkuchenboden, cremige Basis und fruchtige Beeren, frisch aus dem Ofen serviert.",
-      "Er passt perfekt zu einem Cappuccino auf der schattigen Terrasse und lässt sich gut teilen, wenn ihr zu zweit oder in der Gruppe unterwegs seid.",
-      "Fotos und Eindrücke findet ihr in unserem Instagram-Beitrag zum Beeren-Flammkuchen.",
+      "Unser Beeren-Flammkuchen ist ganz neu auf der Karte und wie gemacht für die kühleren Tage: warm, wohltuend und einfach köstlich. Das Zusammenspiel aus süßen Beeren und einer feinen Vanille-Note schmeckt ein bisschen wie der warme Grießbrei, den es früher bei Oma gab.",
+      "Kommt vorbei, macht es euch gemütlich und probiert unseren neuen Herbst-Favoriten, am besten mit einem Cappuccino auf der Terrasse.",
     ],
     image: flammkuchenImage,
-    imageAlt: "KI generiert: Flammkuchen aus dem Bistro Boxenstopp in Hergatz",
+    imageAlt: "Beeren-Flammkuchen mit Himbeeren und Blaubeeren auf der Terrasse des Bistro Boxenstopp in Hergatz",
     instagramUrl: "https://www.instagram.com/p/Dc-9zEzqJe1/",
   },
   {
@@ -48,6 +48,9 @@ export const newsPosts: NewsPost[] = [
       "Der TSV gehört zu Wohmbrechts wie unser Bistro zu diesem Haus. Sport bringt Menschen zusammen, und genau darum geht es uns auch: ein Ort für die Nachbarschaft, für Begegnung und für Gemeinschaft in Hergatz.",
       "Nach dem Training oder nach dem Spiel seid ihr bei uns herzlich willkommen, für einen Kaffee, einen Shake oder einen Flammkuchen auf der Terrasse.",
     ],
+    image: sponsorImage,
+    imageAlt:
+      "Inhaberfamilie vor dem Sponsorenbanner von FITES Allgäu und Bistro Boxenstopp am Sportplatz des TSV Wohmbrechts",
     instagramUrl: "https://www.instagram.com/p/Dcwd9S9kd2m/",
   },
 ];
