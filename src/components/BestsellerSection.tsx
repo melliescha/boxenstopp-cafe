@@ -16,7 +16,6 @@ interface Bestseller {
   description: string;
   price: string;
   badge: string;
-  badgeColor: string;
 }
 
 const bestsellers: Bestseller[] = [
@@ -26,8 +25,7 @@ const bestsellers: Bestseller[] = [
     name: "Flammkuchen Lachs & Lauch",
     description: "Flammkuchencreme, Lachs und Lauch, unser beliebtester Flammkuchen",
     price: "7,30 €",
-    badge: "🔥 Beliebtestes Gericht",
-    badgeColor: "bg-orange-600/85",
+    badge: "Beliebtestes Gericht",
   },
   {
     image: flammkuchenMediterran,
@@ -35,8 +33,7 @@ const bestsellers: Bestseller[] = [
     name: "Flammkuchen Mediterran",
     description: "Flammkuchencreme, Hirtenkäse, gegrillte Paprika und Zucchini",
     price: "6,30 €",
-    badge: "🥕 Vegetarisch",
-    badgeColor: "bg-green-600/85",
+    badge: "Vegetarisch",
   },
   {
     image: raclettebrot,
@@ -44,8 +41,7 @@ const bestsellers: Bestseller[] = [
     name: "Hüttenbrot Raclette",
     description: "Schwarzbrot mit Knoblauchbutter, Raclettekäse und Lauch",
     price: "7,70 €",
-    badge: "🧀 Käseliebhaber",
-    badgeColor: "bg-amber-700/85",
+    badge: "Käseliebhaber",
   },
   {
     image: holzfaellerbrot,
@@ -53,8 +49,7 @@ const bestsellers: Bestseller[] = [
     name: "Hüttenbrot Speck",
     description: "Schwarzbrot mit Knoblauchbutter, Käse, Speck, Zwiebeln und Schnittlauch",
     price: "7,40 €",
-    badge: "💪 Sattmacher",
-    badgeColor: "bg-amber-800/85",
+    badge: "Sattmacher",
   },
   {
     image: tomatenMozzarellaBrot,
@@ -62,13 +57,12 @@ const bestsellers: Bestseller[] = [
     name: "Hüttenbrot Tomate Mozzarella",
     description: "Weizenbrot mit Basilikum, Mozzarella und Tomaten",
     price: "7,40 €",
-    badge: "🥕 Vegetarisch",
-    badgeColor: "bg-green-600/85",
+    badge: "Vegetarisch",
   },
 ];
 
 const BestsellerCard = ({ item }: { item: Bestseller }) => (
-  <article className="group flex h-full flex-col bg-card rounded-lg border border-bronze/30 overflow-hidden transition-transform duration-300 hover:-translate-y-1">
+  <article className="group flex h-full flex-col overflow-hidden border border-border bg-card">
     <div className="relative aspect-[4/3] overflow-hidden">
       <img
         src={item.image}
@@ -78,7 +72,7 @@ const BestsellerCard = ({ item }: { item: Bestseller }) => (
         loading="lazy"
         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
       />
-      <span className={`absolute top-3 left-3 ${item.badgeColor} text-white text-xs font-medium px-2.5 py-1 rounded-full`}>
+      <span className="absolute left-3 top-3 bg-primary px-2.5 py-1 text-xs font-medium text-primary-foreground">
         {item.badge}
       </span>
       <AiBadge />
@@ -113,7 +107,7 @@ const BestsellerSection = () => (
       <div className="text-center mt-10">
         <Link
           to="/speisekarte"
-          className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
+        className="inline-block bg-primary px-8 py-3 font-medium text-primary-foreground transition-colors hover:bg-primary/90"
         >
           Zur kompletten Speisekarte →
         </Link>
