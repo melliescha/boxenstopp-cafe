@@ -12,7 +12,7 @@ import Reveal from "@/components/Reveal";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 
 import heroBg from "@/assets/hero-bistro.jpg";
-import heroVideo from "@/assets/hero-bistro-motion.mp4.asset.json";
+import heroVideo from "@/assets/hero-bistro-motion.mp4";
 import { socialLinks } from "@/config/social";
 import VacationNotice from "@/components/VacationNotice";
 import AiBadge from "@/components/AiBadge";
@@ -258,7 +258,7 @@ const Index = () => {
           poster={heroBg}
           aria-label="KI generiert: Ruhige Szene im Bistro Boxenstopp"
         >
-          <source src={heroVideo.url} type="video/mp4" />
+          <source src={heroVideo} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-primary/55" />
         <AiBadge variant="overlay" />
