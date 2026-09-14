@@ -10,3 +10,5 @@
 - [x] Einladungstext auf der Nachbarschaftsseite ergänzt: „Naja fast", Gewerbeteil, Treppe neben der Garage
 - [x] Abschnitt „Zu Fuß im Westallgäu" mit Dörfern und Cafés in der Nachbarschaft für die Suche
 - [x] Seitentitel und Kurzbeschreibung der Nachbarschaftsseite aktualisiert
+- [x] Tourismusseite: „Kühl draußen, warm drinnen" statt nur „Kühle Terrasse", auch warme Plätze innen beworben
+- [x] Kurzbeschreibung der Tourismusseite in Vorab-Rendering und Seite synchron gehalten
