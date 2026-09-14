@@ -11,8 +11,8 @@ import Wegweiser from "@/components/Wegweiser";
 const Neighborhood = () => (
   <Layout>
     <SEO
-      title="Nachbarschaft in Hergatz | Bistro Boxenstopp"
-      description="Eine persönliche Einladung an unsere Nachbarn in Hergatz: Bistro Boxenstopp und FITES Allgäu schaffen gemeinsam einen Ort für Begegnung, Bewegung und Gemeinschaft."
+      title="Bistro in Hergatz-Wohmbrechts | Treffpunkt Nachbarschaft"
+      description="Bistro in Hergatz-Wohmbrechts für die Nachbarschaft im Westallgäu: Bistro Boxenstopp und FITES Allgäu, ein Ort für Kaffee, Begegnung und Bewegung."
       path="/nachbarschaft"
       image="/og-image.jpg"
     />
@@ -33,7 +33,7 @@ const Neighborhood = () => (
             Wir laden euch in unser Zuhause ein. Wortwörtlich.
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-light leading-8 text-primary-foreground/90 md:text-xl">
-            Unser Café liegt in unserem Wohnhaus. Genau hier möchten wir mit dem Bistro Boxenstopp und FITES Allgäu einen Ort schaffen, der Hergatz zusammenbringt.
+            Unser Café liegt in unserem Wohnhaus in Hergatz-Wohmbrechts. Genau hier möchten wir mit dem Bistro Boxenstopp und FITES Allgäu einen Ort schaffen, der Hergatz und das Westallgäu zusammenbringt.
           </p>
         </div>
       </div>

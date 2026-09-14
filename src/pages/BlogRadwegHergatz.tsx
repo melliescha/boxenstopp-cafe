@@ -8,8 +8,8 @@ import { socialLinks } from "@/config/social";
 import { localBusinessSchema } from "@/lib/schema";
 
 const PATH = "/blog/bodensee-koenigssee-radweg-hergatz";
-const TITLE = "Tourismus in Hergatz | Radwege, Wandern & Rast";
-const DESCRIPTION = "Bistro Boxenstopp in Hergatz als Rastplatz für Radfahrer, Wanderer, Camper und Tagesgäste, mit Dusche, kühler Terrasse, Wasser und Steckdosen.";
+const TITLE = "Bodensee-Königssee-Radweg: Stopp in Hergatz, Allgäu";
+const DESCRIPTION = "Stopp am Bodensee-Königssee-Radweg in Hergatz im Westallgäu: kühle Terrasse, kostenloses Leitungswasser, Duschen, Steckdosen, Routen für Rad und Wandern.";
 
 const highlights = [
   { icon: Map, title: "Geheimtipp am Radweg", text: "Direkt an der Leiblachroute & Bodensee-Königssee-Radweg. Wer uns findet, kommt wieder." },
@@ -44,15 +44,15 @@ const BlogRadwegHergatz = () => (
     <header className="border-b border-border bg-primary py-16 text-primary-foreground md:py-24">
       <div className="mx-auto max-w-6xl px-6">
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground/75">Tourismus im Westallgäu</p>
-        <h1 className="max-w-4xl font-serif text-4xl font-normal leading-tight md:text-6xl">Euer Boxenstopp auf Touren rund um Hergatz</h1>
-        <p className="mt-6 max-w-2xl text-lg font-light leading-8 text-primary-foreground/85">Für Radfahrer, Wanderer, Camper und Tagesgäste, erholt euch auf unserer kühlen Terrasse und startet frisch in die nächste Etappe.</p>
+        <h1 className="max-w-4xl font-serif text-4xl font-normal leading-tight md:text-6xl">Euer Stopp am Bodensee-Königssee-Radweg in Hergatz</h1>
+        <p className="mt-6 max-w-2xl text-lg font-light leading-8 text-primary-foreground/85">Radfahrer, Wanderer, Camper und Tagesgäste im Westallgäu erholen sich bei uns auf der kühlen Terrasse in Hergatz-Wohmbrechts und starten frisch in die nächste Etappe, zwischen Wangen im Allgäu, Lindenberg und dem Bodensee.</p>
       </div>
     </header>
 
     <section className="bg-secondary/40 py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-bronze">Pause im Westallgäu</p>
-        <h2 className="font-serif text-3xl font-normal text-foreground md:text-5xl">Darum lohnt sich der Boxenstopp</h2>
+        <h2 className="font-serif text-3xl font-normal text-foreground md:text-5xl">Darum lohnt sich der Boxenstopp am Allgäu-Radweg</h2>
         <div className="mt-10 grid gap-px bg-border sm:grid-cols-2">
           {highlights.map((item) => (
             <article key={item.title} className="bg-background p-7 md:p-9">

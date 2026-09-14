@@ -219,8 +219,8 @@ const Index = () => {
   return (
     <Layout>
       <SEO
-        title="Café & Bistro Hergatz | Frühstück, Kaffee, Flammkuchen"
-        description="Bistro Boxenstopp in Hergatz-Wohmbrechts im Westallgäu: Barista-Kaffee, Frühstück, ofenfrische Flammkuchen und Hüttenbrot. Direkt am Bodensee-Königssee-Radweg, Parkplätze, Duschen. Nähe Wangen, Heimenkirch, Lindenberg, Lindau."
+        title="Bistro & Café Hergatz im Westallgäu | Boxenstopp"
+        description="Bistro und Café in Hergatz-Wohmbrechts im Westallgäu: Barista-Kaffee, Frühstück und Flammkuchen, direkt am Bodensee-Königssee-Radweg. Nähe Wangen im Allgäu."
         path="/"
         type="restaurant.restaurant"
         imageAlt="Bistro Boxenstopp in Hergatz im Westallgäu, Barista-Kaffee und Flammkuchen"
@@ -268,7 +268,7 @@ const Index = () => {
               Bistro Boxenstopp
             </h1>
             <p className="hero-fade-up mt-5 max-w-2xl text-lg font-light leading-7 text-primary-foreground/90 sm:text-xl sm:leading-8" style={{ animationDelay: "0.45s" }}>
-              Ein Ort für gute Nachbarschaft, ehrlichen Genuss und herzliche Begegnungen im Westallgäu.
+              Bistro und Café in Hergatz-Wohmbrechts, ein Ort für gute Nachbarschaft, ehrlichen Genuss und herzliche Begegnungen im Westallgäu.
             </p>
             <div className="hero-fade-up mt-7 grid grid-cols-2 gap-2 sm:flex sm:gap-3" style={{ animationDelay: "0.6s" }}>
               <Link
@@ -300,7 +300,11 @@ const Index = () => {
               Ein Platz, an dem aus Gästen Nachbarn werden.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg font-light leading-8 text-muted-foreground md:text-xl">
-              Unser Café liegt in unserem Wohnhaus. Gemeinsam mit FITES Allgäu möchten wir hier einen Ort schaffen, der Hergatz zusammenbringt. Unsere Tür steht euch offen.
+              Unser Café liegt in unserem Wohnhaus in Hergatz-Wohmbrechts. Gemeinsam mit FITES Allgäu möchten wir hier einen Ort schaffen, der Hergatz zusammenbringt. Unsere Tür steht euch offen, auch als{" "}
+              <Link to="/blog/bodensee-koenigssee-radweg-hergatz" className="border-b border-primary/50 text-foreground transition-colors hover:text-bronze">
+                Stopp am Bodensee-Königssee-Radweg
+              </Link>{" "}
+              im Westallgäu.
             </p>
             <Link to="/nachbarschaft" className="mt-7 inline-flex min-h-11 items-center border-b border-primary font-medium text-primary transition-colors hover:text-bronze">
               Unsere Einladung an Hergatz
