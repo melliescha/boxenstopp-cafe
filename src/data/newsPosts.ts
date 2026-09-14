@@ -48,6 +48,9 @@ export const newsPosts: NewsPost[] = [
       "Der TSV gehört zu Wohmbrechts wie unser Bistro zu diesem Haus. Sport bringt Menschen zusammen, und genau darum geht es uns auch: ein Ort für die Nachbarschaft, für Begegnung und für Gemeinschaft in Hergatz.",
       "Nach dem Training oder nach dem Spiel seid ihr bei uns herzlich willkommen, für einen Kaffee, einen Shake oder einen Flammkuchen auf der Terrasse.",
     ],
+    image: sponsorImage,
+    imageAlt:
+      "Inhaberfamilie vor dem Sponsorenbanner von FITES Allgäu und Bistro Boxenstopp am Sportplatz des TSV Wohmbrechts",
     instagramUrl: "https://www.instagram.com/p/Dcwd9S9kd2m/",
   },
 ];
