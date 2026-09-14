@@ -290,7 +290,9 @@ const Index = () => {
           playsInline
           poster={heroAllgaeu}
           aria-label="KI generiert: Bewegte Allgäuer Berglandschaft bei Wangen mit Kühen auf einer grünen Wiese"
-          className={`absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-1000 ${showAllgaeu ? "opacity-100" : "opacity-0"}`}
+          className={`absolute inset-0 h-full w-full object-cover object-center transition-[opacity,filter,transform] duration-[2200ms] ease-in-out ${
+            showAllgaeu ? "scale-100 opacity-100 blur-0" : "scale-[1.015] opacity-0 blur-sm"
+          }`}
         >
           <source src={heroAllgaeuVideo.url} type="video/mp4" />
         </video>
