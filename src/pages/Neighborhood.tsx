@@ -215,7 +215,7 @@ const Neighborhood = () => (
         <div className="mt-14 grid gap-10 md:grid-cols-[1fr_1fr] md:items-start">
           <div>
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-bronze">Cafés in der Nachbarschaft</p>
-            <h3 className="font-serif text-2xl font-normal text-foreground md:text-3xl">Kaffeebaumieten in Wangen, Böhen und drumherum</h3>
+            <h3 className="font-serif text-2xl font-normal text-foreground md:text-3xl">Cafés, Eisläden und Konditoreien in der Region</h3>
             <p className="mt-5 leading-7 text-muted-foreground">
               Für alle, die nach dem Boxenstopp noch weiterziehen oder einen Sonntagsnachmittag suchen: Das sind die Cafés, Eisläden und Konditoreien, die rund um uns liegen. Am nächsten seid ihr trotzdem bei uns, direkt am Südhang.
             </p>
