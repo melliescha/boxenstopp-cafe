@@ -268,7 +268,7 @@ const Index = () => {
               Bistro Boxenstopp
             </h1>
             <p className="hero-fade-up mt-5 max-w-2xl text-lg font-light leading-7 text-primary-foreground/90 sm:text-xl sm:leading-8" style={{ animationDelay: "0.45s" }}>
-              Bistro und Café in Hergatz-Wohmbrechts, ein Ort für gute Nachbarschaft, ehrlichen Genuss und herzliche Begegnungen im Westallgäu.
+              Echter Barista-Kaffee, Flammkuchen direkt aus dem Ofen und ein Platz am Südhang, an dem ihr durchatmen könnt. Einfach reinkommen, hinsetzen, bleiben.
             </p>
             <div className="hero-fade-up mt-7 grid grid-cols-2 gap-2 sm:flex sm:gap-3" style={{ animationDelay: "0.6s" }}>
               <Link
@@ -295,32 +295,35 @@ const Index = () => {
       <section className="border-b border-border bg-background py-16 md:py-24">
         <Reveal>
           <div className="container mx-auto max-w-6xl px-6 text-center">
-            <div className="mx-auto mb-8 h-px w-12 bg-bronze" />
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-bronze">Warum Boxenstopp</p>
             <h2 className="mx-auto max-w-4xl font-serif text-4xl font-normal leading-tight text-foreground md:text-6xl">
               Ein Platz, an dem aus Gästen Nachbarn werden.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg font-light leading-8 text-muted-foreground md:text-xl">
-              Unser Café liegt in unserem Wohnhaus in Hergatz-Wohmbrechts. Gemeinsam mit FITES Allgäu möchten wir hier einen Ort schaffen, der Hergatz zusammenbringt. Unsere Tür steht euch offen, auch als{" "}
+              Kaffee, der wirklich nach Kaffee schmeckt, ofenfrische Flammkuchen und ein Platz, an dem niemand auf die Uhr schaut. Im Sommer kühl auf der Terrasse am Südhang, an kühlen Tagen warm drinnen.
+            </p>
+            <p className="mx-auto mt-4 max-w-2xl text-base font-light leading-7 text-muted-foreground">
+              Und wo das ist? In unserem Wohnhaus in Hergatz-Wohmbrechts, gemeinsam mit FITES Allgäu, direkt als{" "}
               <Link to="/blog/bodensee-koenigssee-radweg-hergatz" className="border-b border-primary/50 text-foreground transition-colors hover:text-bronze">
                 Stopp am Bodensee-Königssee-Radweg
               </Link>{" "}
-              im Westallgäu.
+              im Westallgäu. Wir bauen hier einen Ort, der Hergatz zusammenbringt. Unsere Tür steht euch offen.
             </p>
             <Link to="/nachbarschaft" className="mt-7 inline-flex min-h-11 items-center border-b border-primary font-medium text-primary transition-colors hover:text-bronze">
               Unsere Einladung an Hergatz
             </Link>
             <div className="mt-14 grid border-t border-border text-left md:grid-cols-3">
               <div className="border-b border-border py-8 md:border-b-0 md:border-r md:pr-10">
-                <h3 className="text-xl font-medium text-primary">Herzlich</h3>
-                <p className="mt-3 leading-7 text-muted-foreground">Persönlich begrüßt, entspannt geblieben, gerne wiedergekommen.</p>
+                <h3 className="text-xl font-medium text-primary">Für den Genuss</h3>
+                <p className="mt-3 leading-7 text-muted-foreground">Barista-Kaffee, Flammkuchen und Hüttenbrot, frisch gemacht und fair kalkuliert. Keine 5-Euro-Cappuccinos.</p>
               </div>
               <div className="border-b border-border py-8 md:border-b-0 md:border-r md:px-10">
-                <h3 className="text-xl font-medium text-primary">Verbunden</h3>
-                <p className="mt-3 leading-7 text-muted-foreground">Ein Treffpunkt für Wohmbrechts, Radreisende und alle aus der Umgebung.</p>
+                <h3 className="text-xl font-medium text-primary">Für die Auszeit</h3>
+                <p className="mt-3 leading-7 text-muted-foreground">Kühl auf der Terrasse, warm drinnen, Leitungswasser gratis und Steckdosen zum Aufladen.</p>
               </div>
               <div className="py-8 md:pl-10">
-                <h3 className="text-xl font-medium text-primary">Ehrlich</h3>
-                <p className="mt-3 leading-7 text-muted-foreground">Gute Zutaten, faire Preise und eine kleine Auszeit ohne Umwege.</p>
+                <h3 className="text-xl font-medium text-primary">Für die Nachbarschaft</h3>
+                <p className="mt-3 leading-7 text-muted-foreground">Ein Café im Wohnhaus der Inhaberfamilie. Wir wohnen hier, ihr seid zu Gast bei uns.</p>
               </div>
             </div>
           </div>
