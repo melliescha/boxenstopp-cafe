@@ -1,4 +1,5 @@
-import flammkuchenImage from "@/assets/bestseller-flammkuchen.jpg";
+import flammkuchenImage from "@/assets/news/beeren-flammkuchen.jpg";
+import sponsorImage from "@/assets/news/sponsor-tsv-wohmbrechts.jpg";
 
 export type NewsPost = {
   slug: string;
