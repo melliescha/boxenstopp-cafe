@@ -1,4 +1,8 @@
 # Aufgaben
+- [ ] Hochwertigen, klaren Community-Auftritt für die Startseite umsetzen
+- [ ] Ruhiges Video im Kopfbereich einbauen
+- [ ] Outfit und Figtree lokal einbinden
+- [ ] Neuen Auftritt auf Mobiltelefon und Desktop prüfen
 - [x] Fehlende FITES-Bilder auf Partner und FITES Allgäu reparieren
 - [x] QR-Speisekarte und QR-Code ohne HTTP-404 erreichbar machen
 - [x] Telefonnummer im Startseiten-Anrufknopf korrigieren
