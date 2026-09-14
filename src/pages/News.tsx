@@ -22,7 +22,7 @@ const News = () => (
       <div className="mx-auto max-w-6xl px-6">
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-bronze">Blog</p>
         <h1 className="max-w-3xl font-serif text-4xl font-normal leading-tight tracking-[-0.02em] text-foreground md:text-6xl">
-          News & Aktuelles aus Hergatz
+          News & Aktuelles aus dem Bistro Boxenstopp
         </h1>
         <p className="mt-6 max-w-2xl text-lg font-light leading-8 text-muted-foreground">
           Neue Produkte, Aktionen und Neuigkeiten aus der Nachbarschaft. Jeder Beitrag verlinkt auf die passenden Fotos in unserem Instagram-Kanal.
