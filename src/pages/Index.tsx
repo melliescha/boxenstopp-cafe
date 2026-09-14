@@ -155,7 +155,7 @@ const Index = () => {
     let landscapeTimer: number | undefined;
     const showLandscape = () => {
       setShowAllgaeu(true);
-      landscapeTimer = window.setTimeout(() => setShowAllgaeu(false), 4000);
+      landscapeTimer = window.setTimeout(() => setShowAllgaeu(false), 3200);
     };
 
     const cycleTimer = window.setInterval(showLandscape, 14000);
@@ -290,9 +290,13 @@ const Index = () => {
           playsInline
           poster={heroAllgaeu}
           aria-label="KI generiert: Bewegte Allgäuer Berglandschaft bei Wangen mit Kühen auf einer grünen Wiese"
-          className={`absolute inset-0 h-full w-full object-cover object-center transition-[opacity,filter,transform] duration-[2200ms] ease-in-out ${
-            showAllgaeu ? "scale-100 opacity-100 blur-0" : "scale-[1.015] opacity-0 blur-sm"
-          }`}
+          className="absolute inset-0 h-full w-full object-cover object-center"
+          style={{
+            opacity: showAllgaeu ? 0.82 : 0,
+            filter: showAllgaeu ? "blur(0px)" : "blur(12px)",
+            transform: showAllgaeu ? "scale(1)" : "scale(1.025)",
+            transition: "opacity 2600ms ease-in-out, filter 2600ms ease-in-out, transform 3200ms ease-in-out",
+          }}
         >
           <source src={heroAllgaeuVideo.url} type="video/mp4" />
         </video>
