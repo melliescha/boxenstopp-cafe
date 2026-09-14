@@ -230,7 +230,7 @@ const Index = () => {
       {/* Video-Einstieg: ruhig, hochwertig und nahbar */}
       <section className="relative flex h-[calc(100svh-125px)] min-h-[500px] max-h-[780px] items-end overflow-hidden sm:h-[72svh] sm:min-h-[610px]">
         <video
-          className="absolute inset-0 h-full w-full object-cover object-[58%_center] sm:object-center"
+          className="absolute inset-0 h-full w-full object-cover object-[12%_center] sm:object-center"
           autoPlay
           muted
           loop
