@@ -54,7 +54,7 @@ const routes = [
     path: "/nachbarschaft",
     title: "Bistro Hergatz: Café im Wohnhaus | Nachbarschaft Westallgäu",
     description:
-      "Bistro Boxenstopp in Hergatz-Wohmbrechts: Café und Bistro im Wohnhaus der Inhaberfamilie. Dörfer, Radwege und Cafés rund um Wohmbrechts im Westallgäu.",
+      "Café und Bistro im Wohnhaus der Inhaberfamilie in Hergatz-Wohmbrechts: Öffnungszeiten, Speisekarte, Dörfer, Radwege und Cafés rund um Wohmbrechts.",
     image: `${SITE_URL}/og-image.jpg`,
     imageAlt: "Bistro Boxenstopp und FITES Allgäu im Wohnhaus der Inhaberfamilie in Hergatz",
   },

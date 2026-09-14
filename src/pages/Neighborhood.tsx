@@ -89,7 +89,7 @@ const Neighborhood = () => (
   <Layout>
     <SEO
       title="Bistro Hergatz: Café im Wohnhaus | Nachbarschaft Westallgäu"
-      description="Bistro Boxenstopp in Hergatz-Wohmbrechts: Café und Bistro im Wohnhaus der Inhaberfamilie. Dörfer, Radwege und Cafés rund um Wohmbrechts im Westallgäu."
+      description="Café und Bistro im Wohnhaus der Inhaberfamilie in Hergatz-Wohmbrechts: Öffnungszeiten, Speisekarte, Dörfer, Radwege und Cafés rund um Wohmbrechts."
       path="/nachbarschaft"
       image="/og-image.jpg"
     />
