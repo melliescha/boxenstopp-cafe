@@ -93,9 +93,9 @@ const routes = [
   },
   {
     path: "/blog/bodensee-koenigssee-radweg-hergatz",
-    title: "Bodensee-Königssee-Radweg: Etappe Hergatz im Westallgäu",
+    title: "Tourismus in Hergatz | Radwege, Wandern & Rast",
     description:
-      "Rast am Bodensee-Königssee-Radweg in Hergatz/Wohmbrechts: Duschen, Steckdosen zum Aufladen, Barista-Kaffee & Flammkuchen im Bistro Boxenstopp. Tipps für deine Etappe.",
+      "Bistro Boxenstopp in Hergatz als Rastplatz für Radfahrer, Wanderer, Camper und Tagesgäste, mit Dusche, kühler Terrasse, Wasser und Steckdosen.",
     type: "article",
     image: `${SITE_URL}/og/galerie.jpg`,
   },
