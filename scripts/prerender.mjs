@@ -103,7 +103,7 @@ const routes = [
     path: "/blog/bodensee-koenigssee-radweg-hergatz",
     title: "Bodensee-Königssee-Radweg: Stopp in Hergatz, Allgäu",
     description:
-      "Stopp am Bodensee-Königssee-Radweg in Hergatz im Westallgäu: kühle Terrasse, kostenloses Leitungswasser, Duschen, Steckdosen, Routen für Rad und Wandern.",
+      "Stopp am Bodensee-Königssee-Radweg in Hergatz im Westallgäu: schattige Terrasse, warme Plätze im Bistro, Leitungswasser gratis, Duschen und Routen.",
     type: "article",
     image: `${SITE_URL}/og/galerie.jpg`,
   },

@@ -9,11 +9,11 @@ import { localBusinessSchema } from "@/lib/schema";
 
 const PATH = "/blog/bodensee-koenigssee-radweg-hergatz";
 const TITLE = "Bodensee-Königssee-Radweg: Stopp in Hergatz, Allgäu";
-const DESCRIPTION = "Stopp am Bodensee-Königssee-Radweg in Hergatz im Westallgäu: kühle Terrasse, kostenloses Leitungswasser, Duschen, Steckdosen, Routen für Rad und Wandern.";
+const DESCRIPTION = "Stopp am Bodensee-Königssee-Radweg in Hergatz im Westallgäu: schattige Terrasse, warme Plätze im Bistro, Leitungswasser gratis, Duschen und Routen.";
 
 const highlights = [
   { icon: Map, title: "Geheimtipp am Radweg", text: "Direkt an der Leiblachroute & Bodensee-Königssee-Radweg. Wer uns findet, kommt wieder." },
-  { icon: Thermometer, title: "Kühle Terrasse", text: "Selbst bei 30°C genießt du bei uns angenehme 25°C im Schatten: die perfekte Erfrischung." },
+  { icon: Thermometer, title: "Kühl draußen, warm drinnen", text: "Im Sommer liegt unsere Terrasse durch die Hauslage angenehm im Schatten, bei 30°C sind es bei uns erfrischende 25°C. An kühlen Tagen sitzt du drinnen warm und gemütlich an deinem Platz." },
   { icon: Droplets, title: "Kostenloses Leitungswasser", text: "1 € für Leitungswasser? Nicht bei uns. Wasser ist ein Grundrecht und bleibt kostenlos für euch: ein Glas oder deine Trinkflasche füllst du bei uns immer gratis auf." },
   { icon: BatteryCharging, title: "Steckdosen zum Aufladen", text: "Wir haben keine eigene E-Bike-Ladestation, aber du darfst unsere Steckdose nutzen. Handy, Navi und E-Bike lädst du mit deinem eigenen Ladegerät kostenlos bei uns auf." },
 ];
@@ -45,7 +45,7 @@ const BlogRadwegHergatz = () => (
       <div className="mx-auto max-w-6xl px-6">
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground/75">Tourismus im Westallgäu</p>
         <h1 className="max-w-4xl font-serif text-4xl font-normal leading-tight md:text-6xl">Euer Stopp am Bodensee-Königssee-Radweg in Hergatz</h1>
-        <p className="mt-6 max-w-2xl text-lg font-light leading-8 text-primary-foreground/85">Radfahrer, Wanderer, Camper und Tagesgäste im Westallgäu erholen sich bei uns auf der kühlen Terrasse in Hergatz-Wohmbrechts und starten frisch in die nächste Etappe, zwischen Wangen im Allgäu, Lindenberg und dem Bodensee.</p>
+        <p className="mt-6 max-w-2xl text-lg font-light leading-8 text-primary-foreground/85">Radfahrer, Wanderer, Camper und Tagesgäste im Westallgäu erholen sich bei uns auf der schattigen Terrasse oder an einem warmen Platz im Bistro in Hergatz-Wohmbrechts und starten frisch in die nächste Etappe, zwischen Wangen im Allgäu, Lindenberg und dem Bodensee.</p>
       </div>
     </header>
 
