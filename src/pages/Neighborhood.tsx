@@ -285,34 +285,8 @@ const Neighborhood = () => (
           ))}
         </div>
 
-        <div className="mt-14 grid gap-10 md:grid-cols-[1fr_1fr] md:items-start">
-          <div>
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-bronze">Cafés in der Nachbarschaft</p>
-            <h3 className="font-serif text-2xl font-normal text-foreground md:text-3xl">Cafés, Eisläden und Konditoreien in der Region</h3>
-            <p className="mt-5 leading-7 text-muted-foreground">
-              Für alle, die nach dem Boxenstopp noch weiterziehen oder einen Sonntagsnachmittag suchen: Das sind die Cafés, Eisläden und Konditoreien, die rund um uns liegen. Am nächsten seid ihr trotzdem bei uns, direkt am Südhang.
-            </p>
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-              <Button asChild variant="outline">
-                <Link to="/speisekarte">Unsere Karte ansehen</Link>
-              </Button>
-              <Button asChild variant="ghost">
-                <Link to="/blog/bodensee-koenigssee-radweg-hergatz">Routen durchs Westallgäu</Link>
-              </Button>
-            </div>
-          </div>
-          <ul className="divide-y divide-border border-y border-border">
-            {nachbarCafes.map((cafe) => (
-              <li key={cafe.name} className="flex items-baseline justify-between gap-6 py-3">
-                <span className="text-foreground">{cafe.name}</span>
-                <span className="shrink-0 text-sm text-muted-foreground tabular-nums">{cafe.km}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-
         <p className="mt-10 max-w-3xl text-sm leading-6 text-muted-foreground">
-          Alle Entfernungen sind Luftlinien ab Südhang 1 in Hergatz-Wohmbrechts, die Gehzeiten sind Richtwerte für ein gemütliches Tempo. Für Ausflüge lohnt sich auch der Weg nach Lindau und Bodolz am Bodensee, mit dem Rad oder in kurzer Fahrt mit dem Auto.
+          Alle Entfernungen sind Luftlinien ab Südhang 1 in Hergatz-Wohmbrechts, die Gehzeiten sind Richtwerte für ein gemütliches Tempo.
         </p>
       </div>
     </section>
