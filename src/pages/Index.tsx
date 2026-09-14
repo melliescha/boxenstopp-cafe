@@ -219,7 +219,7 @@ const Index = () => {
   return (
     <Layout>
       <SEO
-        title="Café & Bistro Hergatz | Frühstück, Kaffee, Flammkuchen"
+        title="Bistro & Café Hergatz im Westallgäu | Boxenstopp"
         description="Bistro Boxenstopp in Hergatz-Wohmbrechts im Westallgäu: Barista-Kaffee, Frühstück, ofenfrische Flammkuchen und Hüttenbrot. Direkt am Bodensee-Königssee-Radweg, Parkplätze, Duschen. Nähe Wangen, Heimenkirch, Lindenberg, Lindau."
         path="/"
         type="restaurant.restaurant"
