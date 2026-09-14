@@ -10,7 +10,7 @@ export type NewsPost = {
   body: string[];
   image?: string;
   imageAlt?: string;
-  instagram?: boolean;
+  instagramUrl?: string;
 };
 
 /**
@@ -29,11 +29,11 @@ export const newsPosts: NewsPost[] = [
     body: [
       "Unser Beeren-Flammkuchen ist die süße Antwort auf unsere herzhaften Klassiker: knuspriger Flammkuchenboden, cremige Basis und fruchtige Beeren, frisch aus dem Ofen serviert.",
       "Er passt perfekt zu einem Cappuccino auf der schattigen Terrasse und lässt sich gut teilen, wenn ihr zu zweit oder in der Gruppe unterwegs seid.",
-      "Aktuelle Fotos und kurze Eindrücke zeigen wir laufend auf Instagram. Schaut dort vorbei, wenn ihr sehen wollt, wie er aussieht, bevor ihr bei uns bestellt.",
+      "Fotos und Eindrücke findet ihr in unserem Instagram-Beitrag zum Beeren-Flammkuchen.",
     ],
     image: flammkuchenImage,
     imageAlt: "KI generiert: Flammkuchen aus dem Bistro Boxenstopp in Hergatz",
-    instagram: true,
+    instagramUrl: "https://www.instagram.com/p/Dc-9zEzqJe1/",
   },
   {
     slug: "sponsor-tsv-wohmbrechts",
@@ -48,6 +48,6 @@ export const newsPosts: NewsPost[] = [
       "Der TSV gehört zu Wohmbrechts wie unser Bistro zu diesem Haus. Sport bringt Menschen zusammen, und genau darum geht es uns auch: ein Ort für die Nachbarschaft, für Begegnung und für Gemeinschaft in Hergatz.",
       "Nach dem Training oder nach dem Spiel seid ihr bei uns herzlich willkommen, für einen Kaffee, einen Shake oder einen Flammkuchen auf der Terrasse.",
     ],
-    instagram: true,
+    instagramUrl: "https://www.instagram.com/p/Dcwd9S9kd2m/",
   },
 ];
