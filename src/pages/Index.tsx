@@ -300,7 +300,11 @@ const Index = () => {
               Ein Platz, an dem aus Gästen Nachbarn werden.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg font-light leading-8 text-muted-foreground md:text-xl">
-              Unser Café liegt in unserem Wohnhaus. Gemeinsam mit FITES Allgäu möchten wir hier einen Ort schaffen, der Hergatz zusammenbringt. Unsere Tür steht euch offen.
+              Unser Café liegt in unserem Wohnhaus in Hergatz-Wohmbrechts. Gemeinsam mit FITES Allgäu möchten wir hier einen Ort schaffen, der Hergatz zusammenbringt. Unsere Tür steht euch offen, auch als{" "}
+              <Link to="/blog/bodensee-koenigssee-radweg-hergatz" className="border-b border-primary/50 text-foreground transition-colors hover:text-bronze">
+                Stopp am Bodensee-Königssee-Radweg
+              </Link>{" "}
+              im Westallgäu.
             </p>
             <Link to="/nachbarschaft" className="mt-7 inline-flex min-h-11 items-center border-b border-primary font-medium text-primary transition-colors hover:text-bronze">
               Unsere Einladung an Hergatz
