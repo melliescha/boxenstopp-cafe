@@ -51,6 +51,14 @@ const routes = [
     image: `${SITE_URL}/og/ueber-uns.jpg`,
   },
   {
+    path: "/nachbarschaft",
+    title: "Nachbarschaft in Hergatz | Bistro Boxenstopp",
+    description:
+      "Eine persönliche Einladung an unsere Nachbarn in Hergatz: Bistro Boxenstopp und FITES Allgäu schaffen gemeinsam einen Ort für Begegnung, Bewegung und Gemeinschaft.",
+    image: `${SITE_URL}/og-image.jpg`,
+    imageAlt: "Bistro Boxenstopp und FITES Allgäu im Wohnhaus der Inhaberfamilie in Hergatz",
+  },
+  {
     path: "/partner",
     title: "Unsere Partner | Bistro Boxenstopp",
     description:

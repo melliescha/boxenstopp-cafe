@@ -343,8 +343,11 @@ const Index = () => {
               Ein Platz, an dem aus Gästen Nachbarn werden.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg font-light leading-8 text-muted-foreground md:text-xl">
-              Versteckt in einer ruhigen Wohnsiedlung, offen für alle. Helena und Eugen servieren guten Kaffee, frische Flammkuchen und echte Allgäuer Gastfreundschaft.
+              Unser Café liegt in unserem Wohnhaus. Gemeinsam mit FITES Allgäu möchten wir hier einen Ort schaffen, der Hergatz zusammenbringt. Unsere Tür steht euch offen.
             </p>
+            <Link to="/nachbarschaft" className="mt-7 inline-flex min-h-11 items-center border-b border-primary font-medium text-primary transition-colors hover:text-bronze">
+              Unsere Einladung an Hergatz
+            </Link>
             <div className="mt-14 grid border-t border-border text-left md:grid-cols-3">
               <div className="border-b border-border py-8 md:border-b-0 md:border-r md:pr-10">
                 <h3 className="text-xl font-medium text-primary">Herzlich</h3>

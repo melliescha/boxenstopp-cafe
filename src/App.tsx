@@ -22,6 +22,7 @@ const BlogRadwegHergatz = lazy(() => import("./pages/BlogRadwegHergatz"));
 const FitesAllgaeu = lazy(() => import("./pages/FitesAllgaeu"));
 const KiTransparenz = lazy(() => import("./pages/KiTransparenz"));
 const Hausordnung = lazy(() => import("./pages/Hausordnung"));
+const Neighborhood = lazy(() => import("./pages/Neighborhood"));
 
 const queryClient = new QueryClient();
 
@@ -43,6 +44,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/speisekarte" element={<Menu />} />
             <Route path="/ueber-uns" element={<About />} />
+            <Route path="/nachbarschaft" element={<Neighborhood />} />
             <Route path="/partner" element={<Partners />} />
             <Route path="/galerie" element={<Gallery />} />
             <Route path="/bewertungen" element={<Reviews />} />
