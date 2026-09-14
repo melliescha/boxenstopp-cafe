@@ -6,3 +6,4 @@
 - [x] Tourismusvorteile und Duschen von der Startseite entfernen
 - [x] Routen und Touren von der Kontaktseite entfernen
 - [x] Alle Inhalte auf der Tourismusseite gebündelt und geprüft
+- [x] „So findet ihr uns" (Wegweiser) am Ende der Nachbarschaftsseite ergänzt
