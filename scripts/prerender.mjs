@@ -30,7 +30,7 @@ const routes = [
     path: "/",
     title: "Bistro & Café Hergatz im Westallgäu | Boxenstopp",
     description:
-      "Bistro Boxenstopp in Hergatz-Wohmbrechts im Westallgäu: Barista-Kaffee, Frühstück, ofenfrische Flammkuchen und Hüttenbrot. Direkt am Bodensee-Königssee-Radweg, Parkplätze, Duschen. Nähe Wangen, Heimenkirch, Lindenberg, Lindau.",
+      "Bistro und Café in Hergatz-Wohmbrechts im Westallgäu: Barista-Kaffee, Frühstück und Flammkuchen, direkt am Bodensee-Königssee-Radweg. Nähe Wangen im Allgäu.",
     type: "restaurant.restaurant",
     image: `${SITE_URL}/og-image.jpg`,
     imageAlt: "Bistro Boxenstopp in Hergatz im Westallgäu, Barista-Kaffee und Flammkuchen",
@@ -54,7 +54,7 @@ const routes = [
     path: "/nachbarschaft",
     title: "Bistro in Hergatz-Wohmbrechts | Treffpunkt Nachbarschaft",
     description:
-      "Das Bistro Hergatz für die Nachbarschaft im Westallgäu: Bistro Boxenstopp und FITES Allgäu im Wohnhaus der Inhaberfamilie in Wohmbrechts, ein Ort für Kaffee, Begegnung und Bewegung.",
+      "Bistro in Hergatz-Wohmbrechts für die Nachbarschaft im Westallgäu: Bistro Boxenstopp und FITES Allgäu, ein Ort für Kaffee, Begegnung und Bewegung.",
     image: `${SITE_URL}/og-image.jpg`,
     imageAlt: "Bistro Boxenstopp und FITES Allgäu im Wohnhaus der Inhaberfamilie in Hergatz",
   },
@@ -103,7 +103,7 @@ const routes = [
     path: "/blog/bodensee-koenigssee-radweg-hergatz",
     title: "Bodensee-Königssee-Radweg: Stopp in Hergatz, Allgäu",
     description:
-      "Rast am Bodensee-Königssee-Radweg im Westallgäu: Bistro Boxenstopp in Hergatz mit kühler Terrasse, kostenlosem Leitungswasser, Duschen, Steckdosen. Auch an Radrunde Allgäu, Leiblachroute und Westallgäuer Wasserwegen.",
+      "Stopp am Bodensee-Königssee-Radweg in Hergatz im Westallgäu: kühle Terrasse, kostenloses Leitungswasser, Duschen, Steckdosen, Routen für Rad und Wandern.",
     type: "article",
     image: `${SITE_URL}/og/galerie.jpg`,
   },
