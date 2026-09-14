@@ -7,44 +7,44 @@
 
 @layer base {
   :root {
-    --background: 27 90% 96%;
-    --foreground: 210 68% 27%;
+    --background: 37 38% 96%;
+    --foreground: 25 30% 17%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 68% 27%;
+    --card-foreground: 25 30% 17%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 68% 27%;
+    --popover-foreground: 25 30% 17%;
 
-    --primary: 210 68% 27%;
-    --primary-foreground: 27 90% 96%;
+    --primary: 207 57% 25%;
+    --primary-foreground: 37 38% 96%;
 
-    --secondary: 31 43% 87%;
-    --secondary-foreground: 210 68% 27%;
+    --secondary: 35 28% 88%;
+    --secondary-foreground: 25 30% 17%;
 
-    --muted: 31 43% 87%;
-    --muted-foreground: 27 20% 45%;
+    --muted: 34 22% 90%;
+    --muted-foreground: 27 14% 39%;
 
-    --accent: 43 50% 48%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 25 30% 17%;
+    --accent-foreground: 37 38% 96%;
 
-    --bronze: 34 34% 46%;
-    --bronze-foreground: 0 0% 100%;
+    --bronze: 25 31% 31%;
+    --bronze-foreground: 37 38% 96%;
 
-    --wood: 27 40% 30%;
-    --wood-foreground: 27 90% 96%;
+    --wood: 25 30% 17%;
+    --wood-foreground: 37 38% 96%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 31 30% 82%;
-    --input: 31 30% 82%;
-    --ring: 210 68% 27%;
+    --border: 31 20% 78%;
+    --input: 31 20% 78%;
+    --ring: 207 57% 25%;
 
-    --radius: 0.75rem;
+    --radius: 0.375rem;
 
-    --warm-gold: 43 55% 48%;
-    --warm-gold-foreground: 0 0% 100%;
+    --warm-gold: 31 25% 47%;
+    --warm-gold-foreground: 37 38% 96%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -77,7 +77,8 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
   }
 
   /* Ensure inputs do not trigger iOS auto-zoom (>=16px) */
@@ -112,7 +113,7 @@
 
 @layer utilities {
   .font-serif-italic {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-style: italic;
   }
 

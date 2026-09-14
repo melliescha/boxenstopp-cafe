@@ -12,6 +12,7 @@ import Reveal from "@/components/Reveal";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 
 import heroBg from "@/assets/hero-bistro.jpg";
+import heroVideo from "@/assets/hero-bistro-motion.mp4";
 import { socialLinks } from "@/config/social";
 import VacationNotice from "@/components/VacationNotice";
 import AiBadge from "@/components/AiBadge";
@@ -246,70 +247,77 @@ const Index = () => {
         jsonLd={localBusinessSchema}
       />
 
-      {/* Vertrauter Einstieg mit dezenter Bewegung */}
-      <section className="relative h-[calc(100svh-189px)] min-h-[375px] max-h-[620px] overflow-hidden sm:h-[68svh] sm:min-h-[560px] sm:max-h-[720px] lg:h-[58vh] lg:min-h-[540px] lg:max-h-[680px]">
-        <div className="relative h-full">
-          <img
-            src={heroBg}
-            alt="KI generiert: Bistro Boxenstopp, gemütliches Café-Interieur mit Kaffee und Gebäck"
-            width={1920}
-            height={1080}
-            className="h-full w-full object-cover object-[58%_center] animate-hero-ken-burns sm:object-center"
-            loading="eager"
-            fetchPriority="high"
-            decoding="async"
-          />
-           <div className="absolute inset-0 bg-primary/45 sm:bg-primary/35" />
-          <AiBadge variant="overlay" />
-           <div className="absolute inset-x-0 bottom-0 px-4 pb-6 min-[360px]:px-5 sm:px-6 sm:pb-8 md:pb-12">
-             <div className="mx-auto w-full max-w-5xl">
-               <p className="hero-fade-up mb-2 text-[11px] font-bold uppercase tracking-[0.16em] text-primary-foreground sm:text-xs sm:tracking-[0.2em]" style={{ animationDelay: "0.15s" }}>Café in Hergatz-Wohmbrechts</p>
-               <h1 className="hero-fade-up max-w-2xl font-serif text-[28px] font-medium leading-[1.12] text-primary-foreground min-[360px]:text-[32px] sm:text-4xl" style={{ animationDelay: "0.3s" }}>
-                Café &amp; Bistro in Hergatz: Hergatz' bestgehütetes Geheimnis
-              </h1>
-               <p className="hero-fade-up mt-3 max-w-2xl text-sm leading-5 text-primary-foreground/90 sm:text-[15px] sm:leading-6" style={{ animationDelay: "0.45s" }}>
-                 <span className="sm:hidden">Barista-Kaffee, Frühstück, Flammkuchen und Hüttenbrot im Westallgäu.</span>
-                 <span className="hidden sm:inline">Bistro Boxenstopp in Hergatz-Wohmbrechts: Barista-Kaffee, Frühstück, Flammkuchen und Hüttenbrot im Westallgäu, kurze Wege aus Wangen im Allgäu, Heimenkirch, Lindenberg und Lindau.</span>
-              </p>
-               <div className="hero-fade-up mt-4 grid grid-cols-2 gap-2 sm:mt-5 sm:flex sm:gap-3" style={{ animationDelay: "0.6s" }}>
-                <Link
-                  to="/speisekarte"
-                   className="inline-flex min-h-12 items-center justify-center rounded-md bg-accent px-5 py-3 text-center font-medium text-accent-foreground transition-colors hover:bg-accent/90 sm:px-7"
-                >
-                   <span className="sm:hidden">Speisekarte</span>
-                   <span className="hidden sm:inline">Speisekarte ansehen</span>
-                </Link>
-                <a
-                  href={socialLinks.googleMaps}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                   className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md border-2 border-primary-foreground/80 px-5 py-3 text-center font-medium text-primary-foreground transition-colors hover:bg-primary-foreground hover:text-primary sm:px-7"
-                >
-                  <Navigation className="h-4 w-4" aria-hidden="true" />
-                  Route planen
-                </a>
-              </div>
+      {/* Video-Einstieg: ruhig, hochwertig und nahbar */}
+      <section className="relative flex h-[calc(100svh-125px)] min-h-[500px] max-h-[780px] items-end overflow-hidden sm:h-[72svh] sm:min-h-[610px]">
+        <video
+          className="absolute inset-0 h-full w-full object-cover object-[58%_center] sm:object-center"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster={heroBg}
+          aria-label="KI generiert: Ruhige Szene im Bistro Boxenstopp"
+        >
+          <source src={heroVideo} type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-primary/55" />
+        <AiBadge variant="overlay" />
+        <div className="relative z-10 w-full px-4 pb-8 pt-24 min-[360px]:px-5 sm:px-8 sm:pb-12 lg:px-12 lg:pb-16">
+          <div className="mx-auto max-w-6xl">
+            <p className="hero-fade-up mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground/80" style={{ animationDelay: "0.15s" }}>
+              Café und Bistro in Hergatz-Wohmbrechts
+            </p>
+            <h1 className="hero-fade-up max-w-4xl font-serif text-[clamp(2.5rem,7vw,5.8rem)] font-normal leading-[0.98] text-primary-foreground" style={{ animationDelay: "0.3s" }}>
+              Bistro Boxenstopp
+            </h1>
+            <p className="hero-fade-up mt-5 max-w-2xl text-lg font-light leading-7 text-primary-foreground/90 sm:text-xl sm:leading-8" style={{ animationDelay: "0.45s" }}>
+              Ein Ort für gute Nachbarschaft, ehrlichen Genuss und herzliche Begegnungen im Westallgäu.
+            </p>
+            <div className="hero-fade-up mt-7 grid grid-cols-2 gap-2 sm:flex sm:gap-3" style={{ animationDelay: "0.6s" }}>
+              <Link
+                to="/speisekarte"
+                className="inline-flex min-h-12 items-center justify-center bg-background px-5 py-3 text-center font-medium text-primary transition-colors hover:bg-secondary sm:px-8"
+              >
+                Speisekarte
+              </Link>
+              <a
+                href={socialLinks.googleMaps}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-12 items-center justify-center gap-2 border border-primary-foreground/70 px-5 py-3 text-center font-medium text-primary-foreground transition-colors hover:bg-primary-foreground hover:text-primary sm:px-8"
+              >
+                <Navigation className="h-4 w-4" aria-hidden="true" />
+                Route planen
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Willkommen */}
-      <section className="border-y border-border/60 bg-secondary/30 py-10 md:py-14">
+      {/* Gemeinschaft */}
+      <section className="border-b border-border bg-background py-16 md:py-24">
         <Reveal>
-          <div className="container mx-auto grid max-w-5xl gap-6 px-6 md:grid-cols-[0.8fr_1.2fr] md:gap-14">
-            <div className="border-b border-bronze/50 pb-5 md:border-b-0 md:border-r md:pb-0 md:pr-12">
-              <p className="font-serif text-3xl italic leading-snug text-foreground md:text-4xl">
-                Ein ruhiger Platz zum Ankommen und Genießen.
-              </p>
-            </div>
-            <div>
-              <p className="mb-4 text-lg leading-relaxed text-muted-foreground">
-                Zugegeben: Man muss uns erstmal finden. Das Bistro Boxenstopp liegt versteckt in einer ruhigen Wohnsiedlung in Hergatz-Wohmbrechts, aber genau das macht uns aus.
-              </p>
-              <p className="text-lg leading-relaxed text-muted-foreground">
-                Wer den Weg zu uns findet, wird belohnt: mit richtig gutem Kaffee, frischen Flammkuchen, einer im Sommer angenehm kühlen Terrasse und echter Allgäuer Gastfreundschaft. Von Helena und Eugen, für alle.
-              </p>
+          <div className="container mx-auto max-w-6xl px-6 text-center">
+            <div className="mx-auto mb-8 h-px w-12 bg-bronze" />
+            <h2 className="mx-auto max-w-4xl font-serif text-4xl font-normal leading-tight text-foreground md:text-6xl">
+              Ein Platz, an dem aus Gästen Nachbarn werden.
+            </h2>
+            <p className="mx-auto mt-6 max-w-2xl text-lg font-light leading-8 text-muted-foreground md:text-xl">
+              Versteckt in einer ruhigen Wohnsiedlung, offen für alle. Helena und Eugen servieren guten Kaffee, frische Flammkuchen und echte Allgäuer Gastfreundschaft.
+            </p>
+            <div className="mt-14 grid border-t border-border text-left md:grid-cols-3">
+              <div className="border-b border-border py-8 md:border-b-0 md:border-r md:pr-10">
+                <h3 className="text-xl font-medium text-primary">Herzlich</h3>
+                <p className="mt-3 leading-7 text-muted-foreground">Persönlich begrüßt, entspannt geblieben, gerne wiedergekommen.</p>
+              </div>
+              <div className="border-b border-border py-8 md:border-b-0 md:border-r md:px-10">
+                <h3 className="text-xl font-medium text-primary">Verbunden</h3>
+                <p className="mt-3 leading-7 text-muted-foreground">Ein Treffpunkt für Wohmbrechts, Radreisende und alle aus der Umgebung.</p>
+              </div>
+              <div className="py-8 md:pl-10">
+                <h3 className="text-xl font-medium text-primary">Ehrlich</h3>
+                <p className="mt-3 leading-7 text-muted-foreground">Gute Zutaten, faire Preise und eine kleine Auszeit ohne Umwege.</p>
+              </div>
             </div>
           </div>
         </Reveal>
@@ -325,14 +333,12 @@ const Index = () => {
         <Reveal>
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
-            <div className="flex items-center gap-4 mb-7">
-              <div className="w-14 h-14 rounded-full bg-bronze/10 flex items-center justify-center flex-shrink-0">
-              <Clock className="w-7 h-7 text-bronze" />
-              </div>
+            <div className="mb-7 flex items-end justify-between gap-4 border-b border-border pb-5">
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-bronze mb-1">Wann wir für euch da sind</p>
-                <h2 className="font-serif text-3xl font-bold text-foreground">Öffnungszeiten</h2>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-bronze">Wann wir für euch da sind</p>
+                <h2 className="font-serif text-4xl font-normal text-foreground">Öffnungszeiten</h2>
               </div>
+              <Clock className="h-6 w-6 text-primary" aria-hidden="true" />
             </div>
             <VacationNotice />
             <div className="divide-y divide-border border-y border-border">

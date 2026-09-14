@@ -19,15 +19,15 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
-      <nav aria-label="Hauptnavigation" className="container mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+    <header className="sticky top-0 z-50 border-b border-border bg-background">
+      <nav aria-label="Hauptnavigation" className="container mx-auto flex items-center justify-between px-4 py-3 sm:px-6">
         <Link
           to="/"
           aria-label="Startseite Bistro Boxenstopp"
           className="flex items-center gap-2 min-h-[44px]"
         >
           <img src={logoIcon} alt="Bistro Boxenstopp Logo" className="h-[35px] md:h-[45px] w-auto" />
-          <span className="hidden sm:block font-serif text-lg md:text-xl font-bold text-primary">
+          <span className="hidden font-serif text-lg font-medium text-primary sm:block md:text-xl">
             Bistro Boxenstopp
           </span>
         </Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
                   aria-current={active ? "page" : undefined}
                   className={`text-sm font-medium transition-colors inline-flex items-center min-h-[44px] ${
                     active
-                      ? "text-primary border-b-2 border-bronze pb-0.5"
+                      ? "text-primary border-b border-primary pb-0.5"
                       : "text-muted-foreground hover:text-primary"
                   }`}
                 >
@@ -59,7 +59,7 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram Bistro Boxenstopp"
-            className="hidden sm:inline-flex items-center justify-center w-11 h-11 rounded-full text-muted-foreground hover:text-bronze hover:scale-110 transition-all"
+            className="hidden h-11 w-11 items-center justify-center text-muted-foreground transition-colors hover:text-primary sm:inline-flex"
           >
             <Instagram size={20} aria-hidden="true" />
           </a>
@@ -69,7 +69,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook Bistro Boxenstopp"
-              className="hidden sm:inline-flex items-center justify-center w-11 h-11 rounded-full text-muted-foreground hover:text-bronze hover:scale-110 transition-all"
+              className="hidden h-11 w-11 items-center justify-center text-muted-foreground transition-colors hover:text-primary sm:inline-flex"
             >
               <Facebook size={20} aria-hidden="true" />
             </a>
