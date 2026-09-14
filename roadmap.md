@@ -1,4 +1,5 @@
 # Aufgaben
+- [x] Allgäu-Landschaft mit Bergen, Kühen und Wiese sanft zwischen die Videoszenen blenden
 - [x] Hochwertigen, klaren Community-Auftritt für die Startseite umsetzen
 - [x] Ruhiges Video im Kopfbereich einbauen
 - [x] Outfit und Figtree lokal einbinden
