@@ -151,7 +151,7 @@ const Index = () => {
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-    let landscapeTimer: ReturnType<typeof window.setTimeout>;
+    let landscapeTimer: number | undefined;
     const showLandscape = () => {
       setShowAllgaeu(true);
       landscapeTimer = window.setTimeout(() => setShowAllgaeu(false), 4000);
