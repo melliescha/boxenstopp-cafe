@@ -6,6 +6,7 @@ import { socialLinks } from "@/config/social";
 import houseImage from "@/assets/aussenansicht-haus.jpg";
 import entranceImage from "@/assets/gallery/aussen-terrasse-eingang.jpg";
 import fitesImage from "@/assets/gallery/aussen-fites-fassade.jpg";
+import Wegweiser from "@/components/Wegweiser";
 
 const Neighborhood = () => (
   <Layout>
@@ -105,6 +106,8 @@ const Neighborhood = () => (
         </div>
       </div>
     </section>
+
+    <Wegweiser />
   </Layout>
 );
 
