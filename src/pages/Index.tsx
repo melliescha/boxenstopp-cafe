@@ -302,10 +302,10 @@ const Index = () => {
               Ein Zuhause, das man nicht vergisst.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg font-light leading-8 text-muted-foreground md:text-xl">
-              Kaffee, der wirklich nach Kaffee schmeckt, ofenfrische Flammkuchen und ein Platz, an dem niemand auf die Uhr schaut. Im Sommer kühl auf der Terrasse am Südhang, an kühlen Tagen warm drinnen.
+              Guter Kaffee, ofenfrische Flammkuchen und ein Platz, an dem niemand auf die Uhr schaut. Im Sommer kühl auf der Terrasse am Südhang, an kühlen Tagen warm drinnen. Im Mittelpunkt stehen Gemeinschaft, Nachbarschaft und Ruhe.
             </p>
             <p className="mx-auto mt-4 max-w-2xl text-base font-light leading-7 text-muted-foreground">
-              Und wo das ist? In unserem Wohnhaus in Hergatz-Wohmbrechts, gemeinsam mit FITES Allgäu, direkt als{" "}
+              Und wo das ist? In unserem Wohnhaus in Hergatz-Wohmbrechts, gemeinsam mit FITES Allgäu, auch als{" "}
               <Link to="/blog/bodensee-koenigssee-radweg-hergatz" className="border-b border-primary/50 text-foreground transition-colors hover:text-bronze">
                 Stopp am Bodensee-Königssee-Radweg
               </Link>{" "}
