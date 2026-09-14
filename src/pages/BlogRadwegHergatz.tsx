@@ -9,7 +9,7 @@ import { localBusinessSchema } from "@/lib/schema";
 
 const PATH = "/blog/bodensee-koenigssee-radweg-hergatz";
 const TITLE = "Bodensee-Königssee-Radweg: Stopp in Hergatz, Allgäu";
-const DESCRIPTION = "Rast am Bodensee-Königssee-Radweg im Westallgäu: Bistro Boxenstopp in Hergatz mit kühler Terrasse, kostenlosem Leitungswasser, Duschen, Steckdosen. Auch an Radrunde Allgäu, Leiblachroute und Westallgäuer Wasserwegen.";
+const DESCRIPTION = "Stopp am Bodensee-Königssee-Radweg in Hergatz im Westallgäu: kühle Terrasse, kostenloses Leitungswasser, Duschen, Steckdosen, Routen für Rad und Wandern.";
 
 const highlights = [
   { icon: Map, title: "Geheimtipp am Radweg", text: "Direkt an der Leiblachroute & Bodensee-Königssee-Radweg. Wer uns findet, kommt wieder." },
