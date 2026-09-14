@@ -85,6 +85,13 @@ def clean_caption(raw: str) -> list[str]:
     text = re.sub(r"^.*?bistro\.boxenstopp\s*", "", raw, flags=re.S).strip()
     text = re.sub(r"(A post shared by|Ein Beitrag geteilt von).*$", "", text, flags=re.S)
     text = re.sub(r"#\S+", "", text)
+    # Emojis und Gedankenstriche entfernen (Design-Konvention der Website)
+    text = re.sub(
+        "[\U0001F000-\U0001FAFF\u2600-\u27BF\uFE0F\u2b00-\u2bff\U0001F1E6-\U0001F1FF\U0001F3FB-\U0001F3FF]",
+        "",
+        text,
+    )
+    text = text.replace("–", ",").replace("—", ",")
     parts = [re.sub(r"\s+", " ", p).strip() for p in text.split("\n")]
     return [p for p in parts if len(p) > 25]
 
