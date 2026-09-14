@@ -297,7 +297,9 @@ const Index = () => {
           <div className="container mx-auto max-w-6xl px-6 text-center">
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-bronze">Warum Boxenstopp</p>
             <h2 className="mx-auto max-w-4xl font-serif text-4xl font-normal leading-tight text-foreground md:text-6xl">
-              Ein Platz, an dem aus Gästen Nachbarn werden.
+              Ein Café, das euch erwartet.
+              <br className="hidden sm:block" />{" "}
+              Ein Zuhause, das man nicht vergisst.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg font-light leading-8 text-muted-foreground md:text-xl">
               Kaffee, der wirklich nach Kaffee schmeckt, ofenfrische Flammkuchen und ein Platz, an dem niemand auf die Uhr schaut. Im Sommer kühl auf der Terrasse am Südhang, an kühlen Tagen warm drinnen.

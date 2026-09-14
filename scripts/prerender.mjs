@@ -45,9 +45,9 @@ const routes = [
   },
   {
     path: "/ueber-uns",
-    title: "Über uns, Familie Schall | Bistro Boxenstopp",
+    title: "Über uns | Bistro Boxenstopp Hergatz",
     description:
-      "Hinter dem Bistro Boxenstopp im Westallgäu steht die Familie Schall: bodenständig, ehrlich, mit Leidenschaft für gute Küche und Gemeinschaft.",
+      "Hinter dem Bistro Boxenstopp im Westallgäu steht die Inhaberfamilie: bodenständig, ehrlich, mit Leidenschaft für gute Küche und Gemeinschaft.",
     image: `${SITE_URL}/og/ueber-uns.jpg`,
   },
   {

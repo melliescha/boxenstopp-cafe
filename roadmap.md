@@ -12,3 +12,5 @@
 - [x] Seitentitel und Kurzbeschreibung der Nachbarschaftsseite aktualisiert
 - [x] Tourismusseite: „Kühl draußen, warm drinnen" statt nur „Kühle Terrasse", auch warme Plätze innen beworben
 - [x] Kurzbeschreibung der Tourismusseite in Vorab-Rendering und Seite synchron gehalten
+- [x] Startseite: Überschrift ersetzt durch „Ein Café, das euch erwartet. Ein Zuhause, das man nicht vergisst."
+- [x] Über-uns-Seite: Suchhinweis auf „Inhaberfamilie" angeglichen, Seite und Vorab-Rendering synchron
