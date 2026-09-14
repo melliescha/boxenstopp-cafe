@@ -8,11 +8,88 @@ import entranceImage from "@/assets/gallery/aussen-terrasse-eingang.jpg";
 import fitesImage from "@/assets/gallery/aussen-fites-fassade.jpg";
 import Wegweiser from "@/components/Wegweiser";
 
+interface Nahziel {
+  name: string;
+  km: string;
+}
+
+interface GehStufe {
+  zeit: string;
+  titel: string;
+  text: string;
+  ziele: Nahziel[];
+}
+
+const gehStufen: GehStufe[] = [
+  {
+    zeit: "0 bis 10 Minuten",
+    titel: "Direkt vor der Haustür",
+    text: "Wer in Wohmbrechts wohnt, ist zu Fuß da, ohne das Auto anzurühren.",
+    ziele: [
+      { name: "Wohmbrechts, unser Dorf", km: "0 km" },
+      { name: "Salzstadel an der Tiroler Salzstraße", km: "0,2 km" },
+      { name: "Reutenmühle", km: "0,6 km" },
+    ],
+  },
+  {
+    zeit: "15 bis 20 Minuten",
+    titel: "Der nächste Nachbarschaftskreis",
+    text: "Drei Gehminuten pro Nachbarn, die mal vorbeikommen wollten.",
+    ziele: [
+      { name: "Schreckelberg", km: "1,1 km" },
+      { name: "Möllen", km: "1,2 km" },
+      { name: "Engelitz", km: "1,2 km" },
+    ],
+  },
+  {
+    zeit: "Eine halbe Stunde",
+    titel: "Zu Fuß rund um Hergatz",
+    text: "Unsere Gemeindeteile, der Wallfahrtsort und der Bahnhof, alles in Gehweite.",
+    ziele: [
+      { name: "Maria-Thann mit Wallfahrtskirche", km: "1,7 km" },
+      { name: "Schwarzensee", km: "1,7 km" },
+      { name: "Hergatz mit Bahnhof", km: "2,2 km" },
+      { name: "Itzlings und Adelgunz", km: "2,2 km" },
+      { name: "Schwarzenberg", km: "2,2 km" },
+      { name: "Beuren", km: "2,2 km" },
+      { name: "Handwerks", km: "2,3 km" },
+      { name: "Staudach", km: "2,6 km" },
+      { name: "Grod", km: "2,7 km" },
+    ],
+  },
+  {
+    zeit: "Mit dem Rad in 15 Minuten",
+    titel: "Das Westallgäu ums Eck",
+    text: "Vom Boxenstopp aus seid ihr in einer Viertelstunde halb Westallgäu durch.",
+    ziele: [
+      { name: "Wangen im Allgäu, Altstadt", km: "3,5 km" },
+      { name: "Opfenbach", km: "3,3 km" },
+      { name: "Lengatz", km: "3,2 km" },
+      { name: "Degermoos", km: "3,9 km" },
+      { name: "Edelitz", km: "3,9 km" },
+      { name: "Heimenkirch", km: "4,2 km" },
+      { name: "Hergensweiler", km: "7,1 km" },
+      { name: "Röthenbach im Allgäu", km: "8,6 km" },
+    ],
+  },
+];
+
+const nachbarCafes: Nahziel[] = [
+  { name: "Café Lädele, Böhen", km: "3,3 km" },
+  { name: "Café Walfisch, Wangener Altstadt", km: "3,5 km" },
+  { name: "Hinderofen Cafe, Marktplatz Wangen", km: "3,5 km" },
+  { name: "Café Blumenreich, Bindstraße Wangen", km: "3,5 km" },
+  { name: "Fidelisbäck, Paradiesstraße Wangen", km: "3,5 km" },
+  { name: "Café am Saumarkt, Wangen", km: "3,5 km" },
+  { name: "Carderie by Pierre, Spinnerei Wangen", km: "3,5 km" },
+  { name: "Eiscafé Pinocchio, Marktplatz Wangen", km: "3,5 km" },
+];
+
 const Neighborhood = () => (
   <Layout>
     <SEO
-      title="Bistro in Hergatz-Wohmbrechts | Treffpunkt Nachbarschaft"
-      description="Bistro in Hergatz-Wohmbrechts für die Nachbarschaft im Westallgäu: Bistro Boxenstopp und FITES Allgäu, ein Ort für Kaffee, Begegnung und Bewegung."
+      title="Bistro Hergatz: Café im Wohnhaus | Nachbarschaft Westallgäu"
+      description="Bistro Boxenstopp in Hergatz-Wohmbrechts: Café und Bistro im Wohnhaus der Inhaberfamilie. Dörfer, Radwege und Cafés rund um Wohmbrechts im Westallgäu."
       path="/nachbarschaft"
       image="/og-image.jpg"
     />
@@ -30,10 +107,10 @@ const Neighborhood = () => (
         <div className="max-w-4xl text-primary-foreground">
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground/80">An unsere Nachbarn in Hergatz</p>
           <h1 className="font-serif text-4xl font-normal leading-tight sm:text-5xl md:text-7xl">
-            Wir laden euch in unser Zuhause ein. Wortwörtlich.
+            Wir laden euch in unser Zuhause ein. Naja fast.
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-light leading-8 text-primary-foreground/90 md:text-xl">
-            Unser Café liegt in unserem Wohnhaus in Hergatz-Wohmbrechts. Genau hier möchten wir mit dem Bistro Boxenstopp und FITES Allgäu einen Ort schaffen, der Hergatz und das Westallgäu zusammenbringt.
+            Willkommen im Gewerbeteil unseres Hauses in Hergatz-Wohmbrechts. Den Eingang findet ihr gleich bei der Treppe neben der Garage, die Treppe führt euch hinunter zu unserer Terrasse und direkt ins Bistro.
           </p>
         </div>
       </div>
@@ -46,7 +123,7 @@ const Neighborhood = () => (
           <h2 className="font-serif text-3xl font-normal leading-tight text-foreground md:text-5xl">Kommt vorbei, lernt uns kennen und macht diesen Ort mit uns lebendig.</h2>
           <div className="mt-7 space-y-5 text-lg font-light leading-8 text-muted-foreground">
             <p>
-              Vielleicht seid ihr schon oft an unserem Haus vorbeigegangen und habt euch gefragt, ob man hier wirklich einfach hereinkommen darf. Ja, unbedingt. Die Treppe führt hinunter zu unserer Terrasse und direkt zu euch ins Bistro.
+              Vielleicht seid ihr schon oft an unserem Haus vorbeigegangen und habt euch gefragt, ob man hier wirklich einfach hereinkommen darf. Ja, unbedingt. Neben der Garage beginnt die Treppe, die hinunter zu unserer Terrasse und direkt zu euch ins Bistro führt.
             </p>
             <p>
               Wir wünschen uns einen Treffpunkt für Wohmbrechts und ganz Hergatz. Einen Platz für den Kaffee zwischendurch, ein Gespräch nach Feierabend, gemeinsames Training und neue Bekanntschaften direkt in der Nachbarschaft.
@@ -104,6 +181,66 @@ const Neighborhood = () => (
             „Ein Haus, zwei Herzensprojekte und eine Idee: einen Ort schaffen, an dem unsere Nachbarschaft zusammenkommt.“
           </blockquote>
         </div>
+      </div>
+    </section>
+
+    <section className="border-y border-border bg-background py-16 md:py-24">
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="max-w-3xl">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-bronze">Zu Fuß im Westallgäu</p>
+          <h2 className="font-serif text-3xl font-normal leading-tight text-foreground md:text-5xl">Was ihr euch rund um Wohmbrechts erlaufen könnt</h2>
+          <p className="mt-6 text-lg font-light leading-8 text-muted-foreground">
+            Fünfzehn Minuten zu Fuß sind im Westallgäu mehr, als man denkt. Von unserem Eingang am Südhang aus erreicht ihr die Gemeindeteile von Hergatz, den Wallfahrtsort Maria-Thann und in einer Viertelstunde mit dem Rad die Altstadt von Wangen. Hier sind alle Dörfer, Weiler und Höfe in der Nachbarschaft.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-px bg-border md:grid-cols-2">
+          {gehStufen.map((stufe) => (
+            <article key={stufe.titel} className="bg-background p-7 md:p-9">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary tabular-nums">{stufe.zeit}</p>
+              <h3 className="mt-3 font-serif text-2xl font-normal text-foreground">{stufe.titel}</h3>
+              <p className="mt-3 leading-7 text-muted-foreground">{stufe.text}</p>
+              <ul className="mt-6 divide-y divide-border border-t border-border">
+                {stufe.ziele.map((ziel) => (
+                  <li key={ziel.name} className="flex items-baseline justify-between gap-6 py-3">
+                    <span className="text-foreground">{ziel.name}</span>
+                    <span className="shrink-0 text-sm text-muted-foreground tabular-nums">{ziel.km}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+
+        <div className="mt-14 grid gap-10 md:grid-cols-[1fr_1fr] md:items-start">
+          <div>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-bronze">Cafés in der Nachbarschaft</p>
+            <h3 className="font-serif text-2xl font-normal text-foreground md:text-3xl">Cafés, Eisläden und Konditoreien in der Region</h3>
+            <p className="mt-5 leading-7 text-muted-foreground">
+              Für alle, die nach dem Boxenstopp noch weiterziehen oder einen Sonntagsnachmittag suchen: Das sind die Cafés, Eisläden und Konditoreien, die rund um uns liegen. Am nächsten seid ihr trotzdem bei uns, direkt am Südhang.
+            </p>
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+              <Button asChild variant="outline">
+                <Link to="/speisekarte">Unsere Karte ansehen</Link>
+              </Button>
+              <Button asChild variant="ghost">
+                <Link to="/blog/bodensee-koenigssee-radweg-hergatz">Routen durchs Westallgäu</Link>
+              </Button>
+            </div>
+          </div>
+          <ul className="divide-y divide-border border-y border-border">
+            {nachbarCafes.map((cafe) => (
+              <li key={cafe.name} className="flex items-baseline justify-between gap-6 py-3">
+                <span className="text-foreground">{cafe.name}</span>
+                <span className="shrink-0 text-sm text-muted-foreground tabular-nums">{cafe.km}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <p className="mt-10 max-w-3xl text-sm leading-6 text-muted-foreground">
+          Alle Entfernungen sind Luftlinien ab Südhang 1 in Hergatz-Wohmbrechts, die Gehzeiten sind Richtwerte für ein gemütliches Tempo. Für Ausflüge lohnt sich auch der Weg nach Lindau und Bodolz am Bodensee, mit dem Rad oder in kurzer Fahrt mit dem Auto.
+        </p>
       </div>
     </section>
 
