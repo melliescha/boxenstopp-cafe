@@ -1,0 +1,1 @@
+Nachbarschaft wird als direkte, persönliche Einladung an Menschen in Hergatz kommuniziert. Kernbotschaft: Das Café liegt wortwörtlich im Wohnhaus der Inhaberfamilie. Bistro Boxenstopp und FITES Allgäu bilden gemeinsam einen Ort für Begegnung, Bewegung und Gemeinschaft.
