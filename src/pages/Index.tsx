@@ -249,7 +249,7 @@ const Index = () => {
           aria-label="KI generiert: Bewegte Allgäuer Berglandschaft bei Wangen mit Kühen auf einer grünen Wiese"
           className="absolute inset-0 h-full w-full object-cover object-center"
           style={{
-            opacity: showAllgaeu ? 0.82 : 0,
+            opacity: showAllgaeu ? 0.9 : 0,
             filter: showAllgaeu ? "blur(0px)" : "blur(12px)",
             transform: showAllgaeu ? "scale(1)" : "scale(1.025)",
             transition: "opacity 2600ms ease-in-out, filter 2600ms ease-in-out, transform 3200ms ease-in-out",
