@@ -5,4 +5,4 @@
 - [x] Darstellung auf Mobilgeräten und Desktop geprüft
 - [x] Tourismusvorteile und Duschen von der Startseite entfernen
 - [x] Routen und Touren von der Kontaktseite entfernen
-- [ ] Alle Inhalte auf der Tourismusseite bündeln und prüfen
+- [x] Alle Inhalte auf der Tourismusseite gebündelt und geprüft
