@@ -33,7 +33,7 @@ const Neighborhood = () => (
             Wir laden euch in unser Zuhause ein. Wortwörtlich.
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-light leading-8 text-primary-foreground/90 md:text-xl">
-            Unser Café liegt in unserem Wohnhaus. Genau hier möchten wir mit dem Bistro Boxenstopp und FITES Allgäu einen Ort schaffen, der Hergatz zusammenbringt.
+            Unser Café liegt in unserem Wohnhaus in Hergatz-Wohmbrechts. Genau hier möchten wir mit dem Bistro Boxenstopp und FITES Allgäu einen Ort schaffen, der Hergatz und das Westallgäu zusammenbringt.
           </p>
         </div>
       </div>
