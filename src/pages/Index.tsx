@@ -157,7 +157,7 @@ const Index = () => {
       landscapeTimer = window.setTimeout(() => setShowAllgaeu(false), 4000);
     };
 
-    const cycleTimer = window.setInterval(showLandscape, 12000);
+    const cycleTimer = window.setInterval(showLandscape, 14000);
     const firstLandscapeTimer = window.setTimeout(showLandscape, 6000);
 
     return () => {
