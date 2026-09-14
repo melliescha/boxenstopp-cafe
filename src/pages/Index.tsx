@@ -14,6 +14,7 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 import heroBg from "@/assets/hero-bistro.jpg";
 import heroVideo from "@/assets/hero-bistro-motion.mp4";
 import heroAllgaeu from "@/assets/hero-allgaeu-wangen.jpg";
+import heroAllgaeuVideo from "@/assets/hero-allgaeu-wangen-motion.mp4.asset.json";
 import { socialLinks } from "@/config/social";
 import VacationNotice from "@/components/VacationNotice";
 import AiBadge from "@/components/AiBadge";
@@ -282,13 +283,17 @@ const Index = () => {
         >
           <source src={heroVideo} type="video/mp4" />
         </video>
-        <img
-          src={heroAllgaeu}
-          alt="KI generiert: Allgäuer Berglandschaft bei Wangen mit Kühen auf einer grünen Wiese"
-          width={1920}
-          height={1080}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster={heroAllgaeu}
+          aria-label="KI generiert: Bewegte Allgäuer Berglandschaft bei Wangen mit Kühen auf einer grünen Wiese"
           className={`absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-1000 ${showAllgaeu ? "opacity-100" : "opacity-0"}`}
-        />
+        >
+          <source src={heroAllgaeuVideo.url} type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-primary/55" />
         <AiBadge variant="overlay" />
         <div className="relative z-10 w-full px-4 pb-8 pt-24 min-[360px]:px-5 sm:px-8 sm:pb-12 lg:px-12 lg:pb-16">
