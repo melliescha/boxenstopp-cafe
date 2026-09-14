@@ -184,7 +184,80 @@ const Neighborhood = () => (
       </div>
     </section>
 
-    <section className="border-y border-border bg-background py-16 md:py-24">
+    <section className="border-b border-border bg-background py-16 md:py-24">
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="max-w-3xl">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-bronze">Mitgestaltung</p>
+          <h2 className="font-serif text-3xl font-normal leading-tight text-foreground md:text-5xl">Ihr gestaltet das Bistro mit.</h2>
+          <p className="mt-6 text-lg font-light leading-8 text-muted-foreground">
+            Wir versuchen immer, die Speisekarte an die aktuelle Auslastung anzupassen. Was ihr euch wünscht und was ihr tatsächlich nachfragt, entscheidet mit darüber, was bei uns auf den Tisch kommt und was wir lassen.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-px bg-border md:grid-cols-3">
+          <article className="bg-background p-7 md:p-9">
+            <p className="text-sm font-semibold text-primary">Auslastung</p>
+            <h3 className="mt-3 font-serif text-2xl font-normal text-foreground">Karte nach Bedarf</h3>
+            <p className="mt-4 leading-7 text-muted-foreground">
+              Wir richten unsere Speisekarte an der tatsächlichen Nachfrage aus statt an einem starren Plan. Was häufig gewünscht wird, bleibt und bekommt mehr Raum. Was kaum jemand bestellt, macht Platz für etwas Neues.
+            </p>
+          </article>
+          <article className="bg-background p-7 md:p-9">
+            <p className="text-sm font-semibold text-primary">Öffnungszeiten</p>
+            <h3 className="mt-3 font-serif text-2xl font-normal text-foreground">Aktuell am Training ausgerichtet</h3>
+            <p className="mt-4 leading-7 text-muted-foreground">
+              Derzeit orientieren sich unsere Öffnungszeiten stark an denen von FITES Allgäu, weil wir unter einem Dach sind. In Zukunft möchten wir sie natürlich Schritt für Schritt erweitern.
+            </p>
+          </article>
+          <article className="bg-background p-7 md:p-9">
+            <p className="text-sm font-semibold text-primary">Speisekarte und Auswahl</p>
+            <h3 className="mt-3 font-serif text-2xl font-normal text-foreground">Da kommt noch mehr</h3>
+            <p className="mt-4 leading-7 text-muted-foreground">
+              Auch bei den Gerichten und beim Angebot drumherum haben wir noch viel vor. Wie schnell wir wachsen und in welche Richtung, hängt von der Nachfrage und von eurem Feedback ab.
+            </p>
+          </article>
+        </div>
+
+        <div className="mt-12 grid gap-10 border-t border-border pt-12 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+          <div>
+            <h3 className="font-serif text-2xl font-normal leading-snug text-foreground md:text-4xl">Was wünscht ihr euch? Was fehlt euch?</h3>
+            <p className="mt-5 max-w-xl leading-7 text-muted-foreground">
+              Sprecht uns an, egal ob beim Besuch an der Theke, per Nachricht oder am Telefon. Jedes ehrliche Wort hilft uns weiter, auch wenn wir nicht alles sofort umsetzen können.
+            </p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <Button asChild size="lg">
+                <Link to="/kontakt">Sprecht uns an</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline">
+                <a href="tel:+491716226201">0171 6226201</a>
+              </Button>
+            </div>
+          </div>
+          <div className="border border-border bg-secondary/20 p-7 md:p-9">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-bronze">Feedback auf kurzem Weg</p>
+            <ul className="mt-5 divide-y divide-border">
+              <li className="flex items-baseline justify-between gap-6 py-3">
+                <span className="text-foreground">An der Theke</span>
+                <span className="shrink-0 text-sm text-muted-foreground">beim Besuch</span>
+              </li>
+              <li className="flex items-baseline justify-between gap-6 py-3">
+                <a className="text-foreground underline underline-offset-4" href={socialLinks.instagram} target="_blank" rel="noopener noreferrer">Instagram</a>
+                <span className="shrink-0 text-sm text-muted-foreground">Direktnachricht</span>
+              </li>
+              <li className="flex items-baseline justify-between gap-6 py-3">
+                <a className="text-foreground underline underline-offset-4" href="tel:+491716226201">0171 6226201</a>
+                <span className="shrink-0 text-sm text-muted-foreground">Telefon</span>
+              </li>
+            </ul>
+            <p className="mt-5 leading-6 text-sm text-muted-foreground">
+              Auch Kritik nehmen wir gern an. Nur wenn wir wissen, was euch fehlt, können wir es ändern.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="bg-background py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
         <div className="max-w-3xl">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-bronze">Zu Fuß im Westallgäu</p>
