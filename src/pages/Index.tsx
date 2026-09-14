@@ -297,7 +297,7 @@ const Index = () => {
           <div className="container mx-auto max-w-6xl px-6 text-center">
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-bronze">Warum Boxenstopp</p>
             <h2 className="mx-auto max-w-4xl font-serif text-4xl font-normal leading-tight text-foreground md:text-6xl">
-              Ein Café, das euch erwartet.
+              Ein Café, das man nicht erwartet.
               <br className="hidden sm:block" />{" "}
               Ein Zuhause, das man nicht vergisst.
             </h2>
