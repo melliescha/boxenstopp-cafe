@@ -74,16 +74,6 @@ const gehStufen: GehStufe[] = [
   },
 ];
 
-const nachbarCafes: Nahziel[] = [
-  { name: "Café Lädele, Böhen", km: "3,3 km" },
-  { name: "Café Walfisch, Wangener Altstadt", km: "3,5 km" },
-  { name: "Hinderofen Cafe, Marktplatz Wangen", km: "3,5 km" },
-  { name: "Café Blumenreich, Bindstraße Wangen", km: "3,5 km" },
-  { name: "Fidelisbäck, Paradiesstraße Wangen", km: "3,5 km" },
-  { name: "Café am Saumarkt, Wangen", km: "3,5 km" },
-  { name: "Carderie by Pierre, Spinnerei Wangen", km: "3,5 km" },
-  { name: "Eiscafé Pinocchio, Marktplatz Wangen", km: "3,5 km" },
-];
 
 const Neighborhood = () => (
   <Layout>
