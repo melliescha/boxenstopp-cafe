@@ -1,10 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { Map, Thermometer, Droplets, BatteryCharging, Sun, Users, Bike, Clock, ArrowRight, Navigation, Phone } from "lucide-react";
+import { Clock, ArrowRight, Navigation, Phone } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import BestsellerSection from "@/components/BestsellerSection";
-import ShowerSection from "@/components/ShowerSection";
 import Wegweiser from "@/components/Wegweiser";
 import InstagramSection from "@/components/InstagramSection";
 import Reveal from "@/components/Reveal";
@@ -20,48 +19,6 @@ import VacationNotice from "@/components/VacationNotice";
 import AiBadge from "@/components/AiBadge";
 import { localBusinessSchema } from "@/lib/schema";
 
-
-const highlights = [
-  {
-    icon: Map,
-    title: "Geheimtipp am Radweg",
-    text: "Direkt an der Leiblachroute & Bodensee-Königssee-Radweg. Wer uns findet, kommt wieder.",
-  },
-  {
-    icon: Thermometer,
-    title: "Kühle Terrasse",
-    text: "Selbst bei 30°C genießt du bei uns angenehme 25°C im Schatten: die perfekte Erfrischung.",
-  },
-  {
-    icon: Droplets,
-    title: "Kostenloses Leitungswasser",
-    text: "1 € für Leitungswasser? Nicht bei uns. Wasser ist ein Grundrecht und bleibt kostenlos für euch: ein Glas oder deine Trinkflasche füllst du bei uns immer gratis auf.",
-  },
-  {
-    icon: BatteryCharging,
-
-    title: "Steckdosen zum Aufladen",
-    text: "Wir haben keine eigene E-Bike-Ladestation, aber du darfst unsere Steckdose nutzen. Handy, Navi und E-Bike lädst du mit deinem eigenen Ladegerät kostenlos bei uns auf.",
-  },
-];
-
-const whyUs = [
-  {
-    icon: Sun,
-    title: "Versteckt & besonders",
-    text: "Kein Straßenlärm, keine Hektik. Bei uns genießt du in aller Ruhe, umgeben von Allgäuer Natur.",
-  },
-  {
-    icon: Users,
-    title: "Familiär & persönlich",
-    text: "Helena und Eugen begrüßen dich persönlich. Bei uns bist du Gast, nicht Kunde.",
-  },
-  {
-    icon: Bike,
-    title: "Perfekt für Radfahrer",
-    text: "Terrasse, Duschen, Steckdosen zum Aufladen und alles was du brauchst, um wieder aufzutanken.",
-  },
-];
 
 const hours = [
   { days: "Montag", time: "15:00 bis 20:00 Uhr" },
@@ -434,68 +391,9 @@ const Index = () => {
         </div>
       </Reveal>
 
-      {/* Highlights, 2x2 grid */}
-      <section className="py-10 md:py-14 bg-secondary/50">
-        <div className="container mx-auto px-6">
-          <Reveal>
-            <div className="text-center mb-8">
-              <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">
-                Darum lohnt sich der Boxenstopp
-              </h2>
-              <div className="divider-bronze mt-4" />
-            </div>
-          </Reveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {highlights.map((h, idx) => (
-              <Reveal key={h.title} delay={idx * 90}>
-                <div className="bg-card rounded-xl p-6 text-center shadow-sm border border-border/50 hover-lift h-full">
-                  <div className="w-14 h-14 rounded-full bg-bronze/10 flex items-center justify-center mx-auto mb-5">
-                    <h.icon className="w-7 h-7 text-bronze" />
-                  </div>
-                  <h2 className="font-serif text-xl font-semibold text-foreground mb-3">{h.title}</h2>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{h.text}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Why Us */}
-      <section className="py-10 md:py-14 bg-primary text-primary-foreground">
-
-        <div className="container mx-auto px-6 max-w-4xl">
-          <Reveal>
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-center mb-8">
-              Ein Bistro, das man nicht erwartet, und nicht mehr vergisst
-            </h2>
-          </Reveal>
-          <div className="space-y-6">
-            {whyUs.map((item, idx) => (
-              <Reveal key={item.title} delay={idx * 110} direction="left">
-                <div className="flex items-start gap-5">
-                  <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
-                    <item.icon className="w-6 h-6 text-warm-gold" />
-                  </div>
-                  <div>
-                    <h3 className="font-serif text-xl font-semibold mb-1">{item.title}</h3>
-                    <p className="text-primary-foreground/80 leading-relaxed">{item.text}</p>
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Instagram Vorschau, datenschutzsicher ohne Meta-Einbindung */}
       <Reveal>
         <InstagramSection />
-      </Reveal>
-
-      {/* Shower promo, Zusatzangebot weiter unten */}
-      <Reveal>
-        <ShowerSection />
       </Reveal>
 
       {/* FAQ, Bevor du kommst */}
