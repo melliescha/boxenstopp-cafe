@@ -14,6 +14,7 @@ const navLinks = [
 ];
 
 const moreLinks = [
+  { label: "News & Aktuelles", path: "/news" },
   { label: "Partner", path: "/partner" },
   { label: "Nachbarschaft", path: "/nachbarschaft" },
   { label: "Tourismus", path: "/blog/bodensee-koenigssee-radweg-hergatz" },

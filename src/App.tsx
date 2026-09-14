@@ -23,6 +23,7 @@ const FitesAllgaeu = lazy(() => import("./pages/FitesAllgaeu"));
 const KiTransparenz = lazy(() => import("./pages/KiTransparenz"));
 const Hausordnung = lazy(() => import("./pages/Hausordnung"));
 const Neighborhood = lazy(() => import("./pages/Neighborhood"));
+const News = lazy(() => import("./pages/News"));
 
 const queryClient = new QueryClient();
 
@@ -52,6 +53,7 @@ const App = () => (
             <Route path="/impressum" element={<Impressum />} />
             <Route path="/datenschutz" element={<Datenschutz />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/news" element={<News />} />
             <Route path="/blog/bodensee-koenigssee-radweg-hergatz" element={<BlogRadwegHergatz />} />
             <Route path="/fites-allgaeu" element={<FitesAllgaeu />} />
             <Route path="/qr-speisekarte" element={<QRSpeisekarte />} />
