@@ -103,7 +103,7 @@ const Datenschutz = () => {
             className="font-sans italic"
             style={{ color: warmBrown, fontSize: 14, marginBottom: 40 }}
           >
-            Stand: Juli 2026
+            Stand: September 2026
           </p>
 
           <Section>
@@ -865,7 +865,7 @@ const Datenschutz = () => {
           <Section>
             <H2>20. Aktualität und Änderung dieser Datenschutzerklärung</H2>
             <P>
-              Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Juli 2026.
+              Diese Datenschutzerklärung ist aktuell gültig und hat den Stand September 2026.
             </P>
             <P>
               Durch die Weiterentwicklung unserer Website und Angebote oder aufgrund geänderter
