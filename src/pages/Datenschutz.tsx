@@ -103,7 +103,7 @@ const Datenschutz = () => {
             className="font-sans italic"
             style={{ color: warmBrown, fontSize: 14, marginBottom: 40 }}
           >
-            Stand: Juli 2026
+            Stand: September 2026
           </p>
 
           <Section>
@@ -517,7 +517,8 @@ const Datenschutz = () => {
             <H2>12. Schriftarten (lokal eingebunden)</H2>
             <P>
               Diese Website nutzt zur einheitlichen Darstellung von Schriftarten ausschließlich
-              lokal eingebundene Web Fonts (Playfair Display und Lato). Die Schriftdateien werden
+              lokal eingebundene Web Fonts (Outfit, Figtree, Space Grotesk, Lato und Playfair
+              Display). Die Schriftdateien werden
               direkt von unserem Server ausgeliefert. Es besteht keinerlei Verbindung zu Google
               Fonts, Google CDN oder anderen externen Schrift-Diensten; Ihre IP-Adresse wird
               dadurch nicht an Dritte übertragen.
@@ -626,28 +627,28 @@ const Datenschutz = () => {
               Werden personenbezogene Daten von Ihnen verarbeitet, sind Sie Betroffener i. S. d.
               DSGVO und es stehen Ihnen folgende Rechte gegenüber dem Verantwortlichen zu:
             </P>
-            <H3>14.1 Auskunftsrecht (Art. 15 DSGVO)</H3>
+            <H3>16.1 Auskunftsrecht (Art. 15 DSGVO)</H3>
             <P>
               Sie können Auskunft darüber verlangen, ob personenbezogene Daten, die Sie betreffen,
               von uns verarbeitet werden.
             </P>
-            <H3>14.2 Recht auf Berichtigung (Art. 16 DSGVO)</H3>
+            <H3>16.2 Recht auf Berichtigung (Art. 16 DSGVO)</H3>
             <P>
               Sie haben ein Recht auf Berichtigung und/oder Vervollständigung gegenüber dem
               Verantwortlichen, sofern die verarbeiteten personenbezogenen Daten, die Sie betreffen,
               unrichtig oder unvollständig sind.
             </P>
-            <H3>14.3 Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</H3>
+            <H3>16.3 Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</H3>
             <P>
               Unter bestimmten Voraussetzungen können Sie die Einschränkung der Verarbeitung der
               Sie betreffenden personenbezogenen Daten verlangen.
             </P>
-            <H3>14.4 Recht auf Löschung (Art. 17 DSGVO)</H3>
+            <H3>16.4 Recht auf Löschung (Art. 17 DSGVO)</H3>
             <P>
               Sie können vom Verantwortlichen verlangen, dass die Sie betreffenden personenbezogenen
               Daten unverzüglich gelöscht werden, sofern einer der gesetzlichen Gründe zutrifft.
             </P>
-            <H3>14.5 Recht auf Unterrichtung (Art. 19 DSGVO)</H3>
+            <H3>16.5 Recht auf Unterrichtung (Art. 19 DSGVO)</H3>
             <P>
               Haben Sie das Recht auf Berichtigung, Löschung oder Einschränkung der Verarbeitung
               gegenüber dem Verantwortlichen geltend gemacht, ist dieser verpflichtet, allen
@@ -655,24 +656,24 @@ const Datenschutz = () => {
               diese Berichtigung oder Löschung der Daten oder Einschränkung der Verarbeitung
               mitzuteilen.
             </P>
-            <H3>14.6 Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</H3>
+            <H3>16.6 Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</H3>
             <P>
               Sie haben das Recht, die Sie betreffenden personenbezogenen Daten in einem
               strukturierten, gängigen und maschinenlesbaren Format zu erhalten.
             </P>
-            <H3>14.7 Widerspruchsrecht (Art. 21 DSGVO)</H3>
+            <H3>16.7 Widerspruchsrecht (Art. 21 DSGVO)</H3>
             <P>
               Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben,
               jederzeit gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten, die
               aufgrund von Art. 6 Abs. 1 lit. e oder f DSGVO erfolgt, Widerspruch einzulegen.
             </P>
-            <H3>14.8 Recht auf Widerruf der datenschutzrechtlichen Einwilligungserklärung (Art. 7 Abs. 3 DSGVO)</H3>
+            <H3>16.8 Recht auf Widerruf der datenschutzrechtlichen Einwilligungserklärung (Art. 7 Abs. 3 DSGVO)</H3>
             <P>
               Sie haben das Recht, Ihre datenschutzrechtliche Einwilligungserklärung jederzeit zu
               widerrufen. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der aufgrund
               der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt.
             </P>
-            <H3>14.9 Recht auf Beschwerde bei einer Aufsichtsbehörde (Art. 77 DSGVO)</H3>
+            <H3>16.9 Recht auf Beschwerde bei einer Aufsichtsbehörde (Art. 77 DSGVO)</H3>
             <P>
               Unbeschadet eines anderweitigen verwaltungsrechtlichen oder gerichtlichen
               Rechtsbehelfs steht Ihnen das Recht auf Beschwerde bei einer Aufsichtsbehörde zu.
@@ -825,7 +826,7 @@ const Datenschutz = () => {
                   {[
                     ["Hosting & Auslieferung der Website", "IP-Adresse, Browsertyp, Zeitpunkt, HTTP-Header, Referrer", "Cloudflare, Inc. (USA/EU, Auftragsverarbeiter, DPA nach Art. 28 DSGVO)", "Art. 6 Abs. 1 lit. f DSGVO", "Server-Logfiles i. d. R. 7 Tage, danach automatische Löschung"],
                     ["Sicherheits- und Schutzfunktionen (z. B. gegen Angriffe)", "IP-Adresse, technische Verbindungsdaten", "Cloudflare, Inc.", "Art. 6 Abs. 1 lit. f DSGVO", "Kurzfristig, i. d. R. wenige Tage"],
-                    ["Kontakt per E-Mail", "Name, E-Mail-Adresse, Inhalt der Nachricht", "Unser E-Mail-Postfach (Hosting in Deutschland/EU), keine Weitergabe", "Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO", "Bis zur Erledigung der Anfrage; danach Löschung, sofern keine gesetzlichen Aufbewahrungspflichten (§ 147 AO, § 257 HGB: 6 bis 10 Jahre) bestehen"],
+                    ["Kontakt per E-Mail", "Name, E-Mail-Adresse, Inhalt der Nachricht", "Unser E-Mail-Postfach bei Apple iCloud (Apple Distribution International Ltd., Irland; Verarbeitung auch in den USA auf Grundlage des EU-US Data Privacy Framework), keine sonstige Weitergabe", "Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO", "Bis zur Erledigung der Anfrage; danach Löschung, sofern keine gesetzlichen Aufbewahrungspflichten (§ 147 AO, § 257 HGB: 6 bis 10 Jahre) bestehen"],
                     ["Kontakt per Telefon / WhatsApp", "Rufnummer, Gesprächs- bzw. Nachrichteninhalt", "Wir; bei WhatsApp zusätzlich WhatsApp Ireland Ltd.", "Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO", "Bis zur Erledigung der Anfrage"],
                     ["Kontaktformular", "keine, wir bieten derzeit kein Kontaktformular an (Kontakt nur per Telefon, E-Mail oder vor Ort)", "entfällt", "entfällt", "entfällt"],
                     ["Tischreservierung / Anfragen vor Ort", "Name, Kontaktdaten, Wunschtermin", "Wir, keine Weitergabe", "Art. 6 Abs. 1 lit. b DSGVO", "Nach dem Besuch bzw. Erledigung gelöscht"],
@@ -864,7 +865,7 @@ const Datenschutz = () => {
           <Section>
             <H2>20. Aktualität und Änderung dieser Datenschutzerklärung</H2>
             <P>
-              Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Juli 2026.
+              Diese Datenschutzerklärung ist aktuell gültig und hat den Stand September 2026.
             </P>
             <P>
               Durch die Weiterentwicklung unserer Website und Angebote oder aufgrund geänderter
