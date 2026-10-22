@@ -259,7 +259,7 @@ const Index = () => {
           <source src={heroAllgaeuVideo.url} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-primary/55" />
-        <FallingSeason className="z-[5]" />
+        <FallingSeason className="z-[5]" tone="light" />
         <AiBadge variant="overlay" />
         <div className="relative z-10 w-full px-4 pb-8 pt-24 min-[360px]:px-5 sm:px-8 sm:pb-12 lg:px-12 lg:pb-16">
           <div className="mx-auto max-w-6xl">
