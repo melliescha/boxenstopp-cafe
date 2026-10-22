@@ -6,6 +6,7 @@ import ShowerSection from "@/components/ShowerSection";
 import { Button } from "@/components/ui/button";
 import { socialLinks } from "@/config/social";
 import { localBusinessSchema } from "@/lib/schema";
+import { FallingLeaves, SeasonalLabel } from "@/components/AutumnMotifs";
 
 const PATH = "/blog/bodensee-koenigssee-radweg-hergatz";
 const TITLE = "Bodensee-Königssee-Radweg: Stopp in Hergatz, Allgäu";
@@ -51,7 +52,7 @@ const BlogRadwegHergatz = () => (
 
     <section className="bg-secondary/40 py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
-        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-bronze">Pause im Westallgäu</p>
+        <SeasonalLabel className="mb-3">Pause im Westallgäu</SeasonalLabel>
         <h2 className="font-serif text-3xl font-normal text-foreground md:text-5xl">Darum lohnt sich der Boxenstopp am Allgäu-Radweg</h2>
         <div className="mt-10 grid gap-px bg-border sm:grid-cols-2">
           {highlights.map((item) => (
