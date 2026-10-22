@@ -61,6 +61,18 @@ describe("Availability from the card supplied on 22 October 2026", () => {
     ]);
   });
 
+  it.each([
+    ["caffe-latte", ["2,90 €", "3,50 €"]],
+    ["cappuccino", ["2,90 €", "3,50 €"]],
+    ["cappuccino-schoko-vanille", ["3,10 €", "3,70 €"]],
+    ["latte-macchiato", ["3,50 €"]],
+    ["flat-white", ["3,70 €"]],
+    ["kakao", ["2,30 €", "2,90 €"]],
+  ])("applies the card's 0.30 euro vegan supplement to %s", (id, prices) => {
+    const variants = menuProducts.find((product) => product.id === id)?.variants;
+    expect(variants?.filter((variant) => /vegan/i.test(variant.label)).map((variant) => variant.price)).toEqual(prices);
+  });
+
   it("shows the card's prices for the items the site was still missing", () => {
     expect(menuProducts.find((product) => product.id === "kakaogato")?.price).toBe("3,50 €");
     expect(menuProducts.find((product) => product.id === "beerentraum-flammkuchen")?.price).toBe("8,30 €");
