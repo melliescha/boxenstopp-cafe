@@ -55,6 +55,16 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
+  /* Herbstlook: wärmere Kupfer- und Laubtöne, Blau bleibt Hauptfarbe */
+  .season-autumn {
+    --background: 34 40% 94%;
+    --secondary: 28 38% 86%;
+    --muted: 30 30% 88%;
+    --warm-gold: 24 62% 44%;
+    --bronze: 18 45% 32%;
+    --border: 28 28% 76%;
+  }
 }
 
 @layer base {
