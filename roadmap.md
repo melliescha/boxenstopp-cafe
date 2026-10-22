@@ -24,4 +24,5 @@
 - [x] Saison-Motive in ein gemeinsames Modul überführt: Blätter und Kürbis im Herbst, Schnee, Stern und Flocke im Winter
 - [x] Winterlook bei 1280 px und 375 px geprüft, Herbst und die Zeit nach dem Winter kontrolliert
 - [x] Keine fallenden Blätter im Kopfbild der Startseite, Schnee im Winter bleibt
+- [x] Preise und Artikel der neuen Karte übernommen: Kakaogato 3,50 €, Beerentraum Flammkuchen 8,30 €, Iced Mango Matcha vegan 4,80 €, Füllmengen der Getränke
 - [ ] Weihnachts- und Neujahrs-Öffnungszeiten (24. bis 26.12., 31.12., 01.01.) bestätigen lassen, dazu passt der Winterlook
