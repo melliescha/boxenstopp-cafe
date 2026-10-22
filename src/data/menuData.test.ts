@@ -13,7 +13,7 @@ describe("Availability from the card supplied on 22 October 2026", () => {
     const allowedIds = [
       "espresso", "americano", "caffe-crema", "caffe-latte", "cappuccino",
       "cappuccino-schoko-vanille", "latte-macchiato", "flat-white", "vegan-matcha-latte",
-      "kakao", "tee", "herbalife-tee", "donut", "muffin", "affogato",
+      "kakao", "tee", "herbalife-tee", "donut", "muffin", "affogato", "kakaogato",
       "thunfisch-baguette", "tomate-mozzarella-baguette", "provence-baguette",
       "rustikal-baguette", "pikant-baguette", "holzfaellerbrot", "tomaten-mozzarella-brot",
       "raclettebrot", "flammkuchen-elsaesser", "flammkuchen-griechisch",
@@ -22,8 +22,9 @@ describe("Availability from the card supplied on 22 October 2026", () => {
       "proteinriegel", "muesliriegel", "protein-chips", "cornetto-eis", "magnum-eis",
       "eiskugel", "trio-eisbecher", "ice-matcha-latte", "ice-matcha-latte-vegan",
       "espresso-kuesst-orange", "iced-strawberry-matcha-latte",
-      "iced-strawberry-matcha-latte-vegan", "iced-mango-matcha-latte", "bunter-salat",
-      "caprese-salat", "2-in-1-salat", "frucht-quark",
+      "iced-strawberry-matcha-latte-vegan", "iced-mango-matcha-latte",
+      "iced-mango-matcha-latte-vegan", "bunter-salat",
+      "caprese-salat", "2-in-1-salat", "frucht-quark", "beerentraum-flammkuchen",
     ];
     expect(menuProducts.map((product) => product.id).sort()).toEqual(allowedIds.sort());
   });
