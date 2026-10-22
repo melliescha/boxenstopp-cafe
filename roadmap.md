@@ -14,3 +14,5 @@
 - [x] Kurzbeschreibung der Tourismusseite in Vorab-Rendering und Seite synchron gehalten
 - [x] Startseite: Überschrift ersetzt durch „Ein Café, das euch erwartet. Ein Zuhause, das man nicht vergisst."
 - [x] Über-uns-Seite: Suchhinweis auf „Inhaberfamilie" angeglichen, Seite und Vorab-Rendering synchron
+- [x] Herbstlook (bis 30.11.) und Halloween-Hinweis (bis 31.10.) mit automatischem Ende
+- [x] Hinweis: am 31. Oktober geschlossen

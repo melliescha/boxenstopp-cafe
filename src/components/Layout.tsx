@@ -5,10 +5,11 @@ import WelcomeBanner from "./WelcomeBanner";
 import CookieBanner from "./CookieBanner";
 import MobileBottomNav from "./MobileBottomNav";
 import VacationDialog from "./VacationDialog";
+import { isAutumnActive } from "@/lib/season";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
-    <div className="min-h-dvh flex flex-col">
+    <div className={`min-h-dvh flex flex-col ${isAutumnActive() ? "season-autumn" : ""}`}>
       {/* Skip to content link, visible on focus only */}
       <a
         href="#main-content"
