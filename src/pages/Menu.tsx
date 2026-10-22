@@ -9,6 +9,7 @@ import { socialLinks } from "@/config/social";
 import { toast } from "sonner";
 import { menuPageSchema } from "@/lib/schema";
 import { downloadMenuPdf } from "@/lib/menuPdf";
+import { menuCategories, menuProducts } from "@/data/menuData";
 import { SeasonPair } from "@/components/SeasonMotifs";
 
 const Menu = () => {
@@ -34,45 +35,15 @@ const Menu = () => {
       "@type": "Menu",
       "name": "Speisekarte Bistro Boxenstopp",
       "inLanguage": "de",
-      "hasMenuSection": [
-        {
-          "@type": "MenuSection",
-          "name": "Kaffeespezialitäten",
-          "description": "Barista-Kaffee von Cup&Cino in Spitzenqualität",
-          "hasMenuItem": [
-            {"@type": "MenuItem", "name": "Espresso"},
-            {"@type": "MenuItem", "name": "Cappuccino"},
-            {"@type": "MenuItem", "name": "Latte Macchiato"},
-            {"@type": "MenuItem", "name": "Café Crème"},
-            {"@type": "MenuItem", "name": "Boxenstopp Spezial", "description": "Kollagen Latte Macchiato mit Roh-Kakao und Meersalz, unser Signature Drink"},
-            {"@type": "MenuItem", "name": "Matcha Latte", "description": "Mit Hafermilch optional"},
-          ],
-        },
-        {
-          "@type": "MenuSection",
-          "name": "Herzhaft",
-          "description": "Ofenfrische Speisen von unserem Partner Perplex, handbelegt",
-          "hasMenuItem": [
-            {"@type": "MenuItem", "name": "Flammkuchen", "description": "Verschiedene Sorten, ofenfrisch"},
-            {"@type": "MenuItem", "name": "Hüttenbrot Speck", "description": "Schwarzbrot mit Knoblauchbutter, Käse, Speck, Zwiebeln und Schnittlauch"},
-            {"@type": "MenuItem", "name": "Hüttenbrot Tomate Mozzarella"},
-            {"@type": "MenuItem", "name": "Hüttenbrot Raclette"},
-            {"@type": "MenuItem", "name": "Gourmet Baguette"},
-
-            
-          ],
-        },
-        {
-          "@type": "MenuSection",
-          "name": "Sportler-Drinks",
-          "description": "Energie für vor, während und nach dem Workout",
-          "hasMenuItem": [
-            {"@type": "MenuItem", "name": "Herbalife Protein-Shake"},
-            {"@type": "MenuItem", "name": "Herbalife Nähr-Shake"},
-            {"@type": "MenuItem", "name": "Iso-Mineralgetränke"},
-          ],
-        },
-      ],
+      "hasMenuSection": menuCategories.filter((category) => category !== "Alle").map((category) => ({
+        "@type": "MenuSection",
+        name: category,
+        hasMenuItem: menuProducts.filter((product) => product.category === category).map((product) => ({
+          "@type": "MenuItem",
+          name: product.name,
+          description: product.description,
+        })),
+      })),
     };
     const script = document.createElement("script");
     script.type = "application/ld+json";
@@ -87,7 +58,7 @@ const Menu = () => {
 
   return (
     <Layout>
-      <SEO title="Speisekarte, Bistro Boxenstopp Hergatz" description="Unsere Karte: Flammkuchen, Brote, Barista-Kaffee, Matcha, Proteinshakes und der berühmte Boxenstopp-Spezial mit Kollagen." path="/speisekarte" image="/og/speisekarte.jpg" imageAlt="Speisekarte des Bistro Boxenstopp: Flammkuchen, Kaffee und Shakes" jsonLd={menuPageSchema} />
+      <SEO title="Speisekarte, Bistro Boxenstopp Hergatz" description="Unsere Karte: Flammkuchen, Hüttenbrote, Baguettes, Barista-Kaffee, Matcha, Herbalife Milchshakes, Salate und Desserts." path="/speisekarte" image="/og/speisekarte.jpg" imageAlt="Speisekarte des Bistro Boxenstopp: Flammkuchen, Kaffee und Shakes" jsonLd={menuPageSchema} />
       <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-6">
           {/* Foundation note */}
