@@ -30,8 +30,8 @@ const WelcomeBanner = () => {
   if (isHalloweenActive()) {
     return (
       <div className="welcome-banner relative bg-wood py-2 pl-3 pr-12 text-center text-xs font-medium leading-5 text-wood-foreground sm:px-14 sm:py-2.5 sm:text-sm">
-        <PumpkinMark className="pointer-events-none absolute left-4 top-1/2 hidden h-5 w-5 -translate-y-1/2 text-warm-gold/60 sm:block" />
-        <LeafMark className="pointer-events-none absolute right-14 top-1/2 hidden h-4 w-4 -translate-y-1/2 text-warm-gold/45 sm:block" />
+        <PumpkinMark className="pointer-events-none absolute left-4 top-1/2 hidden h-5 w-5 -translate-y-1/2 text-warm-gold/80 sm:block" />
+        <LeafMark className="pointer-events-none absolute right-14 top-1/2 hidden h-4 w-4 -translate-y-1/2 text-warm-gold/70 sm:block" />
         <span>
           Herbstzeit im Boxenstopp. An Halloween, dem <strong className="text-warm-gold">{season.closedLabel}</strong>, haben wir geschlossen. Ab 1. November sind wir wieder für euch da.
         </span>

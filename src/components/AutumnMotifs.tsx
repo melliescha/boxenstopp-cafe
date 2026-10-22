@@ -30,7 +30,7 @@ export const LeafMark = ({ className = "h-5 w-5" }: MarkProps) => (
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    strokeWidth={1.1}
+    strokeWidth={1.3}
     strokeLinecap="round"
     strokeLinejoin="round"
     className={className}
@@ -75,14 +75,16 @@ type LeafSpec = {
 };
 
 const LEAVES: LeafSpec[] = [
-  { left: "5%", top: -14, size: 26, duration: 24, delay: -3, sway: 4.6, drift: 70, spin: 220, tone: "text-warm-gold/45", shape: "maple" },
-  { left: "17%", top: -26, size: 18, duration: 19, delay: -11, sway: 3.4, drift: -50, spin: -180, tone: "text-bronze/40", shape: "leaf" },
-  { left: "29%", top: -8, size: 30, duration: 28, delay: -18, sway: 5.2, drift: 95, spin: 260, tone: "text-warm-gold/30", shape: "leaf" },
-  { left: "42%", top: -20, size: 15, duration: 17, delay: -6, sway: 3.1, drift: 40, spin: 150, tone: "text-bronze/35", shape: "maple" },
-  { left: "55%", top: -30, size: 22, duration: 22, delay: -14, sway: 4.1, drift: -80, spin: -240, tone: "text-warm-gold/40", shape: "maple" },
-  { left: "68%", top: -10, size: 17, duration: 20, delay: -2, sway: 3.7, drift: 60, spin: 190, tone: "text-bronze/30", shape: "leaf" },
-  { left: "80%", top: -22, size: 27, duration: 26, delay: -20, sway: 4.9, drift: -65, spin: -200, tone: "text-warm-gold/35", shape: "leaf" },
-  { left: "91%", top: -16, size: 19, duration: 21, delay: -9, sway: 3.9, drift: 45, spin: 230, tone: "text-bronze/40", shape: "maple" },
+  { left: "4%", top: -14, size: 34, duration: 24, delay: -3, sway: 4.6, drift: 70, spin: 220, tone: "text-warm-gold/70", shape: "leaf" },
+  { left: "15%", top: -26, size: 22, duration: 19, delay: -11, sway: 3.4, drift: -50, spin: -180, tone: "text-bronze/65", shape: "leaf" },
+  { left: "27%", top: -8, size: 40, duration: 28, delay: -18, sway: 5.2, drift: 95, spin: 260, tone: "text-warm-gold/55", shape: "leaf" },
+  { left: "38%", top: -20, size: 20, duration: 17, delay: -6, sway: 3.1, drift: 40, spin: 150, tone: "text-bronze/70", shape: "leaf" },
+  { left: "50%", top: -30, size: 30, duration: 22, delay: -14, sway: 4.1, drift: -80, spin: -240, tone: "text-warm-gold/65", shape: "leaf" },
+  { left: "62%", top: -10, size: 24, duration: 20, delay: -2, sway: 3.7, drift: 60, spin: 190, tone: "text-bronze/60", shape: "leaf" },
+  { left: "74%", top: -22, size: 36, duration: 26, delay: -20, sway: 4.9, drift: -65, spin: -200, tone: "text-warm-gold/60", shape: "leaf" },
+  { left: "85%", top: -16, size: 26, duration: 21, delay: -9, sway: 3.9, drift: 45, spin: 230, tone: "text-bronze/70", shape: "leaf" },
+  { left: "21%", top: -34, size: 28, duration: 25, delay: -22, sway: 4.4, drift: 85, spin: 200, tone: "text-warm-gold/60", shape: "leaf" },
+  { left: "69%", top: -28, size: 20, duration: 18, delay: -16, sway: 3.3, drift: -55, spin: -160, tone: "text-warm-gold/70", shape: "leaf" },
 ];
 
 /**
