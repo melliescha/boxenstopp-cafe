@@ -6,7 +6,7 @@ import ShowerSection from "@/components/ShowerSection";
 import { Button } from "@/components/ui/button";
 import { socialLinks } from "@/config/social";
 import { localBusinessSchema } from "@/lib/schema";
-import { FallingLeaves, PumpkinMark, SeasonalLabel } from "@/components/AutumnMotifs";
+import { FallingSeason, PumpkinMark, SeasonalLabel } from "@/components/SeasonMotifs";
 
 const PATH = "/blog/bodensee-koenigssee-radweg-hergatz";
 const TITLE = "Bodensee-Königssee-Radweg: Stopp in Hergatz, Allgäu";
@@ -43,7 +43,7 @@ const BlogRadwegHergatz = () => (
     <SEO title={TITLE} description={DESCRIPTION} path={PATH} type="article" image="/og/galerie.jpg" jsonLd={[articleSchema, localBusinessSchema]} />
 
     <header className="relative overflow-hidden border-b border-border bg-primary py-16 text-primary-foreground md:py-24">
-      <FallingLeaves tone="light" />
+      <FallingSeason tone="light" />
       <PumpkinMark className="pointer-events-none absolute bottom-6 right-6 hidden h-10 w-10 text-primary-foreground/25 md:block" />
       <div className="relative mx-auto max-w-6xl px-6">
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground/75">Tourismus im Westallgäu</p>

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { X } from "lucide-react";
 import { isVacationActive } from "@/lib/vacation";
 import { isHalloweenActive, isAutumnActive, season } from "@/lib/season";
-import { LeafMark, PumpkinMark } from "@/components/AutumnMotifs";
+import { LeafMark, PumpkinMark } from "@/components/SeasonMotifs";
 
 const WelcomeBanner = () => {
   const [visible, setVisible] = useState(true);
