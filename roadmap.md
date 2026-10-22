@@ -1,5 +1,6 @@
 # Roadmap
 
+- [ ] Hochgeladene Textkarte abgleichen, Wasser, Schorle, Matcha, vegane Milchshakes und Eispreise angleichen und prüfen
 - [x] Aktuelles Angebot mit der zuletzt gesendeten Karte abgleichen und nicht mehr verfügbare Produkte entfernen
 - [x] Speisekarte, Download und weitere Produktangebote auf übereinstimmende Verfügbarkeit prüfen
 
