@@ -6,6 +6,7 @@ import Reveal from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
 import { socialLinks } from "@/config/social";
 import { newsPosts } from "@/data/newsPosts";
+import { FallingLeaves, SeasonalLabel } from "@/components/AutumnMotifs";
 
 const [featured, ...rest] = newsPosts;
 
@@ -18,9 +19,10 @@ const News = () => (
       image="/og-image.jpg"
     />
 
-    <section className="border-b border-border bg-secondary/30 py-16 md:py-24">
-      <div className="mx-auto max-w-6xl px-6">
-        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-bronze">Blog</p>
+    <section className="relative overflow-hidden border-b border-border bg-secondary/30 py-16 md:py-24">
+      <FallingLeaves />
+      <div className="relative mx-auto max-w-6xl px-6">
+        <SeasonalLabel className="mb-3">Blog</SeasonalLabel>
         <h1 className="max-w-3xl font-serif text-4xl font-normal leading-tight tracking-[-0.02em] text-foreground md:text-6xl">
           News & Aktuelles aus dem Bistro Boxenstopp
         </h1>

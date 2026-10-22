@@ -7,6 +7,7 @@ import houseImage from "@/assets/aussenansicht-haus.jpg";
 import entranceImage from "@/assets/gallery/aussen-terrasse-eingang.jpg";
 import fitesImage from "@/assets/gallery/aussen-fites-fassade.jpg";
 import Wegweiser from "@/components/Wegweiser";
+import { SeasonalLabel } from "@/components/AutumnMotifs";
 
 interface Nahziel {
   name: string;
@@ -109,7 +110,7 @@ const Neighborhood = () => (
     <section className="border-b border-border bg-background py-16 md:py-24">
       <div className="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-[1.05fr_0.95fr] md:items-center">
         <div>
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-bronze">Liebe Nachbarinnen und Nachbarn</p>
+          <SeasonalLabel className="mb-3">Liebe Nachbarinnen und Nachbarn</SeasonalLabel>
           <h2 className="font-serif text-3xl font-normal leading-tight text-foreground md:text-5xl">Kommt vorbei, lernt uns kennen und macht diesen Ort mit uns lebendig.</h2>
           <div className="mt-7 space-y-5 text-lg font-light leading-8 text-muted-foreground">
             <p>

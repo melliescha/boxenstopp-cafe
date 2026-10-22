@@ -6,6 +6,7 @@ import ShowerSection from "@/components/ShowerSection";
 import { Button } from "@/components/ui/button";
 import { socialLinks } from "@/config/social";
 import { localBusinessSchema } from "@/lib/schema";
+import { FallingLeaves, PumpkinMark, SeasonalLabel } from "@/components/AutumnMotifs";
 
 const PATH = "/blog/bodensee-koenigssee-radweg-hergatz";
 const TITLE = "Bodensee-Königssee-Radweg: Stopp in Hergatz, Allgäu";
@@ -41,8 +42,10 @@ const BlogRadwegHergatz = () => (
   <Layout>
     <SEO title={TITLE} description={DESCRIPTION} path={PATH} type="article" image="/og/galerie.jpg" jsonLd={[articleSchema, localBusinessSchema]} />
 
-    <header className="border-b border-border bg-primary py-16 text-primary-foreground md:py-24">
-      <div className="mx-auto max-w-6xl px-6">
+    <header className="relative overflow-hidden border-b border-border bg-primary py-16 text-primary-foreground md:py-24">
+      <FallingLeaves tone="light" />
+      <PumpkinMark className="pointer-events-none absolute bottom-6 right-6 hidden h-10 w-10 text-primary-foreground/25 md:block" />
+      <div className="relative mx-auto max-w-6xl px-6">
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground/75">Tourismus im Westallgäu</p>
         <h1 className="max-w-4xl font-serif text-4xl font-normal leading-tight md:text-6xl">Euer Stopp am Bodensee-Königssee-Radweg in Hergatz</h1>
         <p className="mt-6 max-w-2xl text-lg font-light leading-8 text-primary-foreground/85">Radfahrer, Wanderer, Camper und Tagesgäste im Westallgäu erholen sich bei uns auf der schattigen Terrasse oder an einem warmen Platz im Bistro in Hergatz-Wohmbrechts und starten frisch in die nächste Etappe, zwischen Wangen im Allgäu, Lindenberg und dem Bodensee.</p>
@@ -51,7 +54,7 @@ const BlogRadwegHergatz = () => (
 
     <section className="bg-secondary/40 py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
-        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-bronze">Pause im Westallgäu</p>
+        <SeasonalLabel className="mb-3">Pause im Westallgäu</SeasonalLabel>
         <h2 className="font-serif text-3xl font-normal text-foreground md:text-5xl">Darum lohnt sich der Boxenstopp am Allgäu-Radweg</h2>
         <div className="mt-10 grid gap-px bg-border sm:grid-cols-2">
           {highlights.map((item) => (

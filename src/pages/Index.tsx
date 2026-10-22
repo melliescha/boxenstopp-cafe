@@ -17,6 +17,7 @@ import heroAllgaeuVideo from "@/assets/hero-allgaeu-wangen-motion.mp4.asset.json
 import { socialLinks } from "@/config/social";
 import VacationNotice from "@/components/VacationNotice";
 import AiBadge from "@/components/AiBadge";
+import { FallingLeaves, SeasonalLabel } from "@/components/AutumnMotifs";
 import { localBusinessSchema } from "@/lib/schema";
 
 
@@ -258,6 +259,7 @@ const Index = () => {
           <source src={heroAllgaeuVideo.url} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-primary/55" />
+        <FallingLeaves className="z-[5]" />
         <AiBadge variant="overlay" />
         <div className="relative z-10 w-full px-4 pb-8 pt-24 min-[360px]:px-5 sm:px-8 sm:pb-12 lg:px-12 lg:pb-16">
           <div className="mx-auto max-w-6xl">
@@ -295,7 +297,7 @@ const Index = () => {
       <section className="border-b border-border bg-background py-16 md:py-24">
         <Reveal>
           <div className="container mx-auto max-w-6xl px-6 text-center">
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-bronze">Warum Boxenstopp</p>
+            <SeasonalLabel center className="mb-4">Warum Boxenstopp</SeasonalLabel>
             <h2 className="mx-auto max-w-4xl font-serif text-4xl font-normal leading-tight text-foreground md:text-6xl">
               Ein Café, das man nicht erwartet.
               <br className="hidden sm:block" />{" "}
