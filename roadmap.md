@@ -16,3 +16,4 @@
 - [x] Über-uns-Seite: Suchhinweis auf „Inhaberfamilie" angeglichen, Seite und Vorab-Rendering synchron
 - [x] Herbstlook (bis 30.11.) und Halloween-Hinweis (bis 31.10.) mit automatischem Ende
 - [x] Hinweis: am 31. Oktober geschlossen
+- [x] Herbstlook: Kürbis- und Blätter-Motive als feine Linienzeichnungen (Kopfbild, Hinweisbanner, Speisekarte, Tourismus, News)
