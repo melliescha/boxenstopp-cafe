@@ -138,13 +138,15 @@ const DriftShape = ({ shape }: { shape: DriftSpec["shape"] }) => {
  * Rein dekorativ (aria-hidden), ohne Klickfläche und ohne eigene Schriftarten.
  * Bei reduzierter Bewegung bleiben die Motive ruhig stehen.
  * tone="light" für dunkle Flächen, tone="autumn" für helle Flächen.
+ * winterOnly lässt im Herbst nichts fallen, der Schnee im Winter bleibt.
  */
 export const FallingSeason = ({
   className = "",
   tone = "autumn",
-}: MarkProps & { tone?: "autumn" | "light" }) => {
+  winterOnly = false,
+}: MarkProps & { tone?: "autumn" | "light"; winterOnly?: boolean }) => {
   const winter = isWinterActive();
-  if (!winter && !isAutumnActive()) return null;
+  if (!winter && (!isAutumnActive() || winterOnly)) return null;
 
   const specs = winter ? SNOW : LEAVES;
   const darkTone = winter ? "text-primary-foreground/60" : "text-primary-foreground/45";
