@@ -23,4 +23,5 @@
 - [x] Winter-Wonderland-Look für Dezember gebaut, endet automatisch am 06.01.2027
 - [x] Saison-Motive in ein gemeinsames Modul überführt: Blätter und Kürbis im Herbst, Schnee, Stern und Flocke im Winter
 - [x] Winterlook bei 1280 px und 375 px geprüft, Herbst und die Zeit nach dem Winter kontrolliert
+- [x] Keine fallenden Blätter im Kopfbild der Startseite, Schnee im Winter bleibt
 - [ ] Weihnachts- und Neujahrs-Öffnungszeiten (24. bis 26.12., 31.12., 01.01.) bestätigen lassen, dazu passt der Winterlook
