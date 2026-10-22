@@ -29,11 +29,48 @@ describe("Availability from the card supplied on 22 October 2026", () => {
     expect(menuProducts.map((product) => product.id).sort()).toEqual(allowedIds.sort());
   });
 
-  it("keeps the Herbalife shake with the card's two portions", () => {
+  it("keeps the Herbalife shake portions with the card's vegan supplement", () => {
     expect(menuProducts.find((product) => product.id === "protein-shake")?.variants).toEqual([
       { label: "Kinderportion, 200 ml", price: "2,50 €" },
       { label: "Erwachsenenportion, 300 ml", price: "4,50 €" },
+      { label: "Kinderportion vegan, 200 ml", price: "2,80 €" },
+      { label: "Erwachsenenportion vegan, 300 ml", price: "4,80 €" },
     ]);
+  });
+
+  it.each([["wasser", "2,00 €"], ["apfelschorle", "2,50 €"]])(
+    "uses the uploaded card's price for %s",
+    (id, price) => expect(menuProducts.find((product) => product.id === id)?.price).toBe(price),
+  );
+
+  it("offers classic and vegan Matcha at the card's prices", () => {
+    expect(menuProducts.find((product) => product.id === "vegan-matcha-latte")?.variants).toEqual([
+      { label: "Klassisch", price: "3,50 €" },
+      { label: "Vegan", price: "3,80 €" },
+    ]);
+  });
+
+  it.each(["cornetto-eis", "magnum-eis"])("does not invent a fixed price for %s", (id) => {
+    expect(menuProducts.find((product) => product.id === id)?.price).toBe("siehe Eistruhe");
+  });
+
+  it("uses small and large protein bar prices from the card", () => {
+    expect(menuProducts.find((product) => product.id === "proteinriegel")?.variants).toEqual([
+      { label: "Klein", price: "2,50 €" },
+      { label: "Groß", price: "3,90 €" },
+    ]);
+  });
+
+  it.each([
+    ["caffe-latte", ["2,90 €", "3,50 €"]],
+    ["cappuccino", ["2,90 €", "3,50 €"]],
+    ["cappuccino-schoko-vanille", ["3,10 €", "3,70 €"]],
+    ["latte-macchiato", ["3,50 €"]],
+    ["flat-white", ["3,70 €"]],
+    ["kakao", ["2,30 €", "2,90 €"]],
+  ])("applies the card's 0.30 euro vegan supplement to %s", (id, prices) => {
+    const variants = menuProducts.find((product) => product.id === id)?.variants;
+    expect(variants?.filter((variant) => /vegan/i.test(variant.label)).map((variant) => variant.price)).toEqual(prices);
   });
 
   it("shows the card's prices for the items the site was still missing", () => {
