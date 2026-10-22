@@ -1,5 +1,8 @@
 # Roadmap
 
+- [x] Aktuelles Angebot mit der zuletzt gesendeten Karte abgleichen und nicht mehr verfügbare Produkte entfernen
+- [x] Speisekarte, Download und weitere Produktangebote auf übereinstimmende Verfügbarkeit prüfen
+
 - [x] Eigene Nachbarschaftsseite als persönliche Einladung an Hergatz erstellen
 - [x] Navigation, Route und Seitentexte verbinden
 - [x] Darstellung auf Mobilgeräten und Desktop geprüft

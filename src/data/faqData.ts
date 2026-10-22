@@ -61,11 +61,6 @@ export const faqBlocks: FaqBlock[] = [
           "Genau, wir haben uns weiterentwickelt. Davor hatten wir nur Kaffee und Nährshakes. Heute servieren wir auch herzhafte Snacks wie Flammkuchen und unser Hüttenbrot. Damit der Name unsere Karte besser widerspiegelt, ist aus dem Café ein Bistro geworden.",
       },
       {
-        question: "Was ist denn der \"Boxenstopp Spezial\"?",
-        answer:
-          "Das ist unser Signature Drink und ehrlich gesagt das, was wir selbst jeden Tag trinken: ein Kollagen Latte Macchiato mit Roh Kakao und Meersalz. Klingt erstmal ungewöhnlich, aber probiert's. Wir dachten, was uns so gut schmeckt, schmeckt unseren Gästen auch.",
-      },
-      {
         question: "Was ist euer Hüttenbrot?",
         answer:
           "Unsere absolute Spezialität: Hüttenbrot Speck, ein herzhaftes Schwarzbrot belegt mit Knoblauchbutter, Käse, Speck, Zwiebeln und frischem Schnittlauch. Deftig, kräftig, ehrlich. Genau das Richtige nach Radtour, Spaziergang oder einfach gegen den Hunger.",
@@ -133,7 +128,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Was empfehlt IHR eigentlich?",
         answer:
-          "Unser Lieblings Trio: Kaffee von Cup&Cino (wir trinken doppelt so viel Kaffee seit der Eröffnung), das Hüttenbrot und natürlich der Boxenstopp Spezial. Das ist, was wir selbst jeden Tag bestellen.",
+          "Unsere Empfehlungen: Kaffee von Cup&Cino, ofenfrisches Hüttenbrot und Flammkuchen. Die aktuelle Auswahl findet ihr auf unserer Speisekarte.",
       },
       {
         question: "Was kostet ein Kaffee bei euch ungefähr?",
@@ -212,7 +207,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Was bietet ihr Sportlern?",
         answer:
-          "Wir haben Protein und Nährshakes von Herbalife, Mineral und Isogetränke sowie Energie Riegel. Egal ob nach dem Training, nach der Radtour oder zwischendurch, wir versorgen euch.",
+          "Wir haben Milchshakes von Herbalife, Electrolyte und LIFTOFF sowie Proteinriegel. Egal ob nach dem Training, nach der Radtour oder zwischendurch, wir versorgen euch.",
       },
 
       {
@@ -324,7 +319,7 @@ export const faqBlocks: FaqBlock[] = [
           "Ehrlich: Wir backen das Brot nicht selbst. Es kommt handbelegt aus einer deutschen Manufaktur (Perplex, seit über 33 Jahren) und wird bei uns ofenfrisch aufgebacken. Klingt simpel, ist es auch, aber wenn ihr's einmal probiert habt, kommt ihr wieder. Simpel, deftig, einfach gut.",
       },
       {
-        question: "Ein Café mit Eiweißshakes und Kollagen-Kaffee. Ist das nicht Hipster-Quatsch fürs Instagram?",
+        question: "Ein Café mit Herbalife Milchshakes und Matcha. Ist das nicht Hipster-Quatsch fürs Instagram?",
         answer:
           "Ja, klingt erstmal nach Hipster Berlin, wir verstehen die Skepsis komplett. Aber was sollen wir sagen: schmeckt halt und hat einige Vorteile. Da spielt natürlich auch das Ernährungsberater-Herz mit rein. Wenn ihr's nicht runterkriegt, sprecht uns an und wir bringen euch einen normalen Café Crème. Das Gleiche gilt für den Matcha Latte (oder wie wir sagen: Matsche Latsche). Probieren geht über studieren.",
       },

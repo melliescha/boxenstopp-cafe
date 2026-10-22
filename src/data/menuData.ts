@@ -53,10 +53,8 @@ import cappuccinoImage from "@/assets/cappuccino.png";
 import cappuccinoSchokoImage from "@/assets/cappuccino-schoko.png";
 import caffeLatteImage from "@/assets/caffe-latte.png";
 import latteMacchiatoImage from "@/assets/latte-macchiato.png";
-import boxenstoppSpezialImage from "@/assets/boxenstopp-spezial.png";
 import kakaoImage from "@/assets/kakao.png";
 import veganMatchaImage from "@/assets/vegan-matcha.png";
-import latteVanillaImage from "@/assets/latte-vanilla.png";
 import teeImage from "@/assets/tee.png";
 import flammkuchenLachsImage from "@/assets/flammkuchen-lachs.png";
 import flammkuchenElsaesserImage from "@/assets/flammkuchen-elsaesser.png";
@@ -144,30 +142,6 @@ export const menuProducts: MenuProduct[] = [
   },
   // Milchkaffee
   {
-    id: "boxenstopp-spezial",
-    name: "★ Boxenstopp Spezial",
-    price: "4,90 €",
-    description: "Kollagen Latte Macchiato mit einer Prise Salz und Rohkakao, unsere Hausspezialität",
-    category: "Kaffee",
-    allergens: "G",
-    badge: "⭐ Hausspezialität",
-    featured: true,
-    composition: "ca. 45% aufgeschäumte Vollmilch (3,5%), ca. 30% Espresso mit Kollagen, ca. 20% Milchschaum, ca. 5% Rohkakao und Meersalz",
-    ingredients: "**Vollmilch** (3,5% Fett), Wasser, Kaffeebohnen (Cup&Cino Barista-Qualität), Kollagen-Pulver (Rinder-Kollagen), Rohkakao, Meersalz",
-    traceWarning: "Kollagen aus Rinderquelle. Bei Unverträglichkeiten bitte nachfragen.",
-    origin: "Kaffeebohnen von Cup&Cino in Barista-Qualität. Frische Vollmilch mit 3,5% Fettgehalt. Unsere Hausspezialität.",
-    nutrition: [
-      { label: "Brennwert", value: "ca. 500 kJ / 120 kcal" },
-      { label: "Fett", value: "5,5 g" },
-      { label: "davon gesättigte Fettsäuren", value: "3,4 g", indent: true },
-      { label: "Kohlenhydrate", value: "8,0 g" },
-      { label: "davon Zucker", value: "7,5 g", indent: true },
-      { label: "Eiweiß", value: "8,5 g" },
-      { label: "Salz", value: "0,3 g" },
-    ],
-    image: boxenstoppSpezialImage,
-  },
-  {
     id: "caffe-latte",
     name: "Caffè Latte",
     price: "2,60 € bis 3,20 €",
@@ -219,7 +193,7 @@ export const menuProducts: MenuProduct[] = [
   },
   {
     id: "cappuccino-schoko-vanille",
-    name: "Cappuccino Schoko oder Vanille",
+    name: "Cappuccino Schoko",
     price: "2,80 € bis 3,40 €",
     description: "Barista Qualität",
     category: "Kaffee",
@@ -228,8 +202,8 @@ export const menuProducts: MenuProduct[] = [
       { label: "Klein", price: "2,80 €" },
       { label: "Groß", price: "3,40 €" },
     ],
-    composition: "Schoko: ca. 30% Espresso mit Schokolade, ca. 30% aufgeschäumte Vollmilch (3,5%), ca. 30% Milchschaum, ca. 10% Kakaopulver. Vanille: ca. 35% Espresso, ca. 35% Vanille-Vollmilch (3,5%), ca. 30% Milchschaum",
-    ingredients: "**Vollmilch** (3,5% Fett), Wasser, Kaffeebohnen (Cup&Cino Barista-Qualität), Kakaopulver bzw. Vanillesirup (Zucker, Wasser, natürliches Vanillearoma), Zucker",
+    composition: "ca. 30% Espresso mit Schokolade, ca. 30% aufgeschäumte Vollmilch (3,5%), ca. 30% Milchschaum, ca. 10% Kakaopulver",
+    ingredients: "**Vollmilch** (3,5% Fett), Wasser, Kaffeebohnen (Cup&Cino Barista-Qualität), Kakaopulver, Zucker",
     origin: "Kaffeebohnen von Cup&Cino in Barista-Qualität. Frische Vollmilch mit 3,5% Fettgehalt.",
     nutrition: [
       { label: "Brennwert", value: "ca. 340 bis 370 kJ / 81 bis 88 kcal" },
@@ -335,33 +309,6 @@ export const menuProducts: MenuProduct[] = [
     image: kakaoImage,
   },
   {
-    id: "latte-vanilla",
-    name: "Latte Vanilla",
-    price: "2,00 € bis 3,20 €",
-    description: "Vanille-Milchgetränk",
-    category: "Heiße Getränke",
-    allergens: "G",
-    badge: "🧒 Kinder-Liebling",
-    variants: [
-      { label: "Klein", price: "2,00 €" },
-      { label: "Mittel", price: "2,60 €" },
-      { label: "Groß", price: "3,20 €" },
-    ],
-    composition: "ca. 45% Vanille-Vollmilch (3,5%), ca. 30% leichter Kaffee, ca. 25% Milchschaum",
-    ingredients: "**Vollmilch** (3,5% Fett), Wasser, Kaffeebohnen (Cup&Cino Barista-Qualität), Vanillesirup (Zucker, Wasser, natürliches Vanillearoma)",
-    origin: "Kaffeebohnen von Cup&Cino in Barista-Qualität. Frische Vollmilch mit 3,5% Fettgehalt.",
-    nutrition: [
-      { label: "Brennwert", value: "ca. 380 kJ / 91 kcal" },
-      { label: "Fett", value: "3,8 g" },
-      { label: "davon gesättigte Fettsäuren", value: "2,4 g", indent: true },
-      { label: "Kohlenhydrate", value: "9,5 g" },
-      { label: "davon Zucker", value: "9,0 g", indent: true },
-      { label: "Eiweiß", value: "3,8 g" },
-      { label: "Salz", value: "0,1 g" },
-    ],
-    image: latteVanillaImage,
-  },
-  {
     id: "tee",
     name: "Tee (nach Wahl)",
     price: "1,80 €",
@@ -429,13 +376,6 @@ export const menuProducts: MenuProduct[] = [
     category: "Süßspeisen",
     allergens: "G,11",
     image: affogatoImage,
-  },
-  {
-    id: "obst",
-    name: "Obst (verschiedenes)",
-    price: "0,50 €",
-    description: "Frisches Obst",
-    category: "Süßspeisen",
   },
   // Herzhaft & Ofenfrisch, Brote & Baguettes
   {
@@ -757,27 +697,14 @@ export const menuProducts: MenuProduct[] = [
   // Shakes & Sportnahrung
   {
     id: "protein-shake",
-    name: "Protein-Shake",
+    name: "Milchshake Herbalife",
     price: "2,50 € bis 4,50 €",
     description: "Verschiedene Geschmacksrichtungen",
     category: "Shakes & Sportnahrung",
     allergens: "F,G",
     variants: [
-      { label: "Klein", price: "2,50 €" },
-      { label: "Groß", price: "4,50 €" },
-    ],
-    origin: "Herbalife Nutrition: Seed to Feed Qualitätskontrolle",
-  },
-  {
-    id: "naehrshake",
-    name: "Nährshake mit Vitaminen",
-    price: "3,50 € bis 5,00 €",
-    description: "Vollwertiger Shake mit Vitaminen und Mineralstoffen",
-    category: "Shakes & Sportnahrung",
-    allergens: "F,G",
-    variants: [
-      { label: "Klein", price: "3,50 €" },
-      { label: "Groß", price: "5,00 €" },
+      { label: "Kinderportion, 200 ml", price: "2,50 €" },
+      { label: "Erwachsenenportion, 300 ml", price: "4,50 €" },
     ],
     origin: "Herbalife Nutrition: Seed to Feed Qualitätskontrolle",
   },

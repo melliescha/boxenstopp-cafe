@@ -1,4 +1,5 @@
 import { Printer } from "lucide-react";
+import { menuCategories, menuProducts } from "@/data/menuData";
 import logoIcon from "@/assets/logo-icon.png";
 
 
@@ -17,110 +18,24 @@ interface SubSection {
 }
 
 interface PriceCategory {
-  emoji: string;
   title: string;
   items?: PriceItem[];
   subsections?: SubSection[];
 }
 
-const categories: PriceCategory[] = [
-  {
-    emoji: "☕",
-    title: "Kaffee Klassiker",
-    items: [
-      { name: "Espresso", price: "1,90 € bis 2,30 €", note: "Barista Qualität", allergens: "11" },
-      { name: "Americano", price: "2,20 € bis 2,60 €", note: "Barista Qualität", allergens: "11" },
-      { name: "Caffè Crema", price: "2,20 € bis 3,20 €", note: "Barista Qualität", allergens: "11" },
-    ],
-  },
-  {
-    emoji: "☕",
-    title: "Milchkaffee-Varianten",
-    items: [
-      { name: "★ Boxenstopp Spezial", price: "4,90 €", note: "Kollagen Latte Macchiato mit einer Prise Salz und Rohkakao, unsere Hausspezialität", featured: true, allergens: "G,11" },
-      { name: "Caffè Latte (Milchkaffee)", price: "2,40 € bis 3,40 €", note: "Barista Qualität", allergens: "G,11" },
-      { name: "Cappuccino", price: "2,40 € bis 3,40 €", note: "Barista Qualität", allergens: "G,11" },
-      { name: "Cappuccino Schoko oder Vanille", price: "2,60 € bis 3,60 €", note: "Barista Qualität", allergens: "G,11" },
-      { name: "Latte Macchiato", price: "2,60 € bis 3,80 €", note: "Barista Qualität", allergens: "G,11" },
-      { name: "Flat White", price: "2,60 € bis 3,20 €", note: "Barista Qualität", allergens: "G,11" },
-    ],
-  },
-  {
-    emoji: "🍵",
-    title: "Wohlfühlgetränke",
-    items: [
-      { name: "Kakao", price: "2,00 € bis 3,20 €", allergens: "G" },
-      { name: "Latte Vanilla", price: "2,00 € bis 3,20 €", allergens: "G" },
-      { name: "Matcha-Latte", price: "3,50 € bis 3,80 €", note: "auch vegan mit Pflanzenmilch", allergens: "G" },
-      { name: "Vegan Matcha Latte", price: "3,50 € bis 3,80 €", note: "100% vegan mit Pflanzenmilch", allergens: "F" },
-      { name: "Tee (nach Wahl)", price: "1,80 €", note: "in Bio-Qualität" },
-    ],
-  },
-  {
-    emoji: "🍩",
-    title: "Süßes Gebäck & Dessert",
-    items: [
-      { name: "Donut (nach Wahl)", price: "1,80 €", allergens: "A,C,G" },
-      { name: "Muffin (nach Wahl)", price: "2,50 €", allergens: "A,C,G" },
-      { name: "Affogato", price: "3,50 €", note: "Espresso mit Vanilleeis", allergens: "G,11" },
-      { name: "Obst (verschiedenes)", price: "0,50 €" },
-    ],
-  },
-  {
-    emoji: "🥖",
-    title: "Herzhafte Backwaren",
-    subsections: [
-      {
-        subtitle: "Gourmet Baguettes",
-        items: [
-          { name: "Gourmet Baguette Thunfisch", price: "6,20 €", note: "Baguette nach französischer Art mit Thunfisch, Zwiebeln, Gouda, Kräuter und einer Béchamelsauce", allergens: "A,D,G" },
-          { name: "Gourmet Baguette Tomate Mozzarella", price: "6,20 €", note: "Baguette nach französischer Art mit getrockneten Tomaten, Basilikum und einer Béchamel-Tomatensauce", allergens: "A,G" },
-          { name: "Gourmet Baguette Provence", price: "6,20 €", note: "Zutaten folgen in Kürze" },
-          { name: "Gourmet Baguette Rustikal", price: "6,20 €", note: "Zutaten folgen in Kürze" },
-        ],
-      },
-      {
-        subtitle: "Hüttenbrote",
-        items: [
-          { name: "Hüttenbrot Speck", price: "7,40 €", note: "Handgemachtes Schwarzbrot mit Knoblauchbutter, Käse, Speck, Zwiebeln, Schnittlauch und Gewürzen", allergens: "A,G" },
-          { name: "Hüttenbrot Tomate Mozzarella", price: "7,40 €", note: "Handgemachtes Weizenbrot mit Basilikum, Mozzarella, Tomaten und Gewürzen", allergens: "A,G" },
-          { name: "Hüttenbrot Raclette", price: "7,70 €", note: "Handgemachtes Schwarzbrot mit Knoblauchbutter, Raclettekäse, Lauch und Gewürze", allergens: "A,G" },
-        ],
-      },
-      {
-        subtitle: "Flammkuchen",
-        items: [
-          { name: "Flammkuchen Elsässer Art", price: "6,30 €", note: "Flammkuchencreme, Speck und Zwiebeln", allergens: "A,G" },
-          { name: "Flammkuchen Griechische Art", price: "6,30 €", note: "Flammkuchencreme, Peperoni, Hirtenkäse und bunter Pfeffer", allergens: "A,G" },
-          { name: "Flammkuchen Mediterran", price: "6,30 €", note: "Flammkuchencreme, Hirtenkäse, gegrillte Paprika, Zucchini und mediterrane Gewürze", allergens: "A,G" },
-          { name: "Flammkuchen Lachs & Lauch", price: "7,30 €", note: "Flammkuchencreme, Lachs und Lauch", allergens: "A,D,G" },
-        ],
-      },
-    ],
-  },
-  {
-    emoji: "🥤",
-    title: "Getränke",
-    items: [
-      { name: "Apfel- und Fruchtschorle", price: "2,25 €", note: "bei Mitnahme zzgl. Pfand", volume: "0,33l" },
-      { name: "Wasser still / medium / spritzig", price: "1,75 €", note: "bei Mitnahme zzgl. Pfand", volume: "0,5l" },
-      { name: "Säfte (verschiedene Sorten)", price: "2,50 €", volume: "0,25l" },
-      { name: "Alkoholfreies Bier (nach Wahl)", price: "3,00 €", volume: "0,33l" },
-      { name: "Electrolyte (Herbalife-24)", price: "2,90 €" },
-      { name: "Energy (Herbalife LIFTOFF)", price: "3,50 €", allergens: "11" },
-    ],
-  },
-  {
-    emoji: "💚",
-    title: "Nährshakes & Snacks",
-    items: [
-      { name: "Shake Herbalife (versch. Geschmacksrichtungen)", price: "2,50 € bis 4,50 €", note: "Nährshakes mit Vitaminen", allergens: "F,G" },
-      { name: "Proteinriegel (nach Wahl)", price: "2,50 € bis 3,90 €", allergens: "?" },
-      { name: "Müsliriegel Expressmahlzeit (nach Wahl)", price: "3,90 €", allergens: "?" },
-      { name: "Protein-Chips (nach Wahl)", price: "2,40 €", allergens: "?" },
-    ],
-  },
-];
+const categories: PriceCategory[] = menuCategories
+  .filter((category) => category !== "Alle")
+  .map((title) => ({
+    title,
+    items: menuProducts.filter((product) => product.category === title).map((product) => ({
+      name: product.name,
+      price: product.price,
+      note: [product.description, ...(product.variants?.map((variant) => `${variant.label}: ${variant.price}`) ?? [])].join(" · "),
+      allergens: product.allergens,
+      volume: product.volume,
+      featured: product.featured,
+    })),
+  }));
 
 const allergenLegend = [
   { code: "A", name: "Glutenhaltiges Getreide" },
@@ -156,7 +71,7 @@ const additiveLegend = [
 
 const ItemRow = ({ item }: { item: PriceItem }) => (
   <li className={item.featured ? "bg-bronze/5 -mx-3 px-3 py-2 rounded-lg border border-bronze/20" : ""}>
-    <div className="flex items-baseline justify-between gap-2">
+    <div className="flex flex-wrap items-baseline justify-between gap-2">
       <span className={`text-sm sm:text-base ${item.featured ? "text-foreground font-bold" : "text-foreground font-medium"}`}>
         {item.name}
         {item.allergens && (
@@ -166,7 +81,7 @@ const ItemRow = ({ item }: { item: PriceItem }) => (
           <span className="text-xs text-muted-foreground ml-1">{item.volume}</span>
         )}
       </span>
-      <span className="flex-1 border-b border-dotted border-bronze/30 mx-2 min-w-[1.5rem]" />
+      <span className="hidden sm:block flex-1 border-b border-dotted border-bronze/30 mx-2 min-w-[1.5rem]" />
       <span className="text-bronze font-semibold whitespace-nowrap text-sm sm:text-base">{item.price}</span>
     </div>
     {item.note && (
@@ -204,7 +119,6 @@ const PriceList = () => {
         {categories.map((cat) => (
           <div key={cat.title}>
             <div className="text-center mb-6">
-              <span className="text-xl mr-2">{cat.emoji}</span>
               <h3 className="font-serif-italic text-xl md:text-2xl font-semibold text-foreground inline">
                 {cat.title}
               </h3>
