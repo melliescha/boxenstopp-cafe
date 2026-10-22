@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Hochgeladene Textkarte abgleichen, Wasser, Schorle, Matcha, vegane Milchshakes und Eispreise angleichen und prüfen
+- [x] Hochgeladene Textkarte abgeglichen, Wasser, Schorle, Matcha, vegane Milchgetränke und Eispreise angeglichen, 19 Preistests und Listenansicht geprüft
 - [x] Aktuelles Angebot mit der zuletzt gesendeten Karte abgleichen und nicht mehr verfügbare Produkte entfernen
 - [x] Speisekarte, Download und weitere Produktangebote auf übereinstimmende Verfügbarkeit prüfen
 
