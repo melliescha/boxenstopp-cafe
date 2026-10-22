@@ -103,7 +103,7 @@ export const FallingLeaves = ({
       {LEAVES.map((leaf, i) => (
         <span
           key={i}
-          className={`autumn-leaf ${tone === "light" ? "text-primary-foreground/30" : leaf.tone}`}
+          className={`autumn-leaf ${tone === "light" ? "text-primary-foreground/45" : leaf.tone}`}
           style={{
             left: leaf.left,
             top: `${leaf.top}%`,

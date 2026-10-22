@@ -44,7 +44,7 @@ const BlogRadwegHergatz = () => (
 
     <header className="relative overflow-hidden border-b border-border bg-primary py-16 text-primary-foreground md:py-24">
       <FallingLeaves tone="light" />
-      <PumpkinMark className="pointer-events-none absolute bottom-6 right-6 hidden h-10 w-10 text-primary-foreground/15 md:block" />
+      <PumpkinMark className="pointer-events-none absolute bottom-6 right-6 hidden h-10 w-10 text-primary-foreground/25 md:block" />
       <div className="relative mx-auto max-w-6xl px-6">
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground/75">Tourismus im Westallgäu</p>
         <h1 className="max-w-4xl font-serif text-4xl font-normal leading-tight md:text-6xl">Euer Stopp am Bodensee-Königssee-Radweg in Hergatz</h1>

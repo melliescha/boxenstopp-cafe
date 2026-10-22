@@ -6,8 +6,7 @@ import Reveal from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
 import { socialLinks } from "@/config/social";
 import { newsPosts } from "@/data/newsPosts";
-import { SeasonalLabel } from "@/components/AutumnMotifs";
-import { FallingLeaves } from "@/components/AutumnMotifs";
+import { FallingLeaves, SeasonalLabel } from "@/components/AutumnMotifs";
 
 const [featured, ...rest] = newsPosts;
 
