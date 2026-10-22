@@ -90,7 +90,10 @@ const LEAVES: LeafSpec[] = [
  * Nur im Herbstlook, rein dekorativ (aria-hidden) und ohne Klickfläche.
  * Bei reduzierter Bewegung bleiben die Blätter ruhig stehen.
  */
-export const FallingLeaves = ({ className = "" }: MarkProps) => {
+export const FallingLeaves = ({
+  className = "",
+  tone = "autumn",
+}: MarkProps & { tone?: "autumn" | "light" }) => {
   if (!isAutumnActive()) return null;
 
   return (
@@ -98,7 +101,7 @@ export const FallingLeaves = ({ className = "" }: MarkProps) => {
       {LEAVES.map((leaf, i) => (
         <span
           key={i}
-          className={`autumn-leaf ${leaf.tone}`}
+          className={`autumn-leaf ${tone === "light" ? "text-primary-foreground/30" : leaf.tone}`}
           style={{
             left: leaf.left,
             top: `${leaf.top}%`,
