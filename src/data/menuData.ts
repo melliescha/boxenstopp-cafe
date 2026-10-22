@@ -377,6 +377,14 @@ export const menuProducts: MenuProduct[] = [
     allergens: "G,11",
     image: affogatoImage,
   },
+  {
+    id: "kakaogato",
+    name: "Kakaogato",
+    price: "3,50 €",
+    description: "Kakao mit Vanilleeis",
+    category: "Süßspeisen",
+    allergens: "G",
+  },
   // Herzhaft & Ofenfrisch, Brote & Baguettes
   {
     id: "thunfisch-baguette",
@@ -818,6 +826,14 @@ export const menuProducts: MenuProduct[] = [
     category: "Kalte Signatur Drinks",
     badges: ["🥡 Auch zum Mitnehmen", "🥭 Saison"],
   },
+  {
+    id: "iced-mango-matcha-latte-vegan",
+    name: "Iced Mango Matcha Latte, Vegan",
+    price: "4,80 €",
+    description: "Mit Pflanzenmilch, 100% vegan, exotisch mit Mango",
+    category: "Kalte Signatur Drinks",
+    badges: ["🥡 Auch zum Mitnehmen", "🌱 Vegan", "🥭 Saison"],
+  },
   // Salate & Süßspeisen, Quark
   {
     id: "bunter-salat",
@@ -849,6 +865,15 @@ export const menuProducts: MenuProduct[] = [
     price: "3,00 €",
     description: "Cremig gerührter Quark mit Fruchtpüree & Knuspermüsli nach Wahl",
     category: "Süßspeisen",
+    badge: "🥕 Vegetarisch",
+  },
+  {
+    id: "beerentraum-flammkuchen",
+    name: "Beerentraum Flammkuchen",
+    price: "8,30 €",
+    description: "Himbeeren und Wildheidelbeeren, oval, 35x28 cm",
+    category: "Süßspeisen",
+    allergens: "A,G",
     badge: "🥕 Vegetarisch",
   },
 ];
