@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import WelcomeBanner from "./WelcomeBanner";
@@ -10,8 +10,16 @@ import { isAutumnActive, isWinterActive } from "@/lib/season";
 const Layout = ({ children }: { children: ReactNode }) => {
   const seasonClass = isWinterActive() ? "season-winter" : isAutumnActive() ? "season-autumn" : "";
 
+  // Die Saisonfarben müssen auf dem HTML-Element sitzen, sonst erreicht die
+  // Überschreibung den Hintergrund der Seite (body) nicht.
+  useEffect(() => {
+    const root = document.documentElement;
+    root.classList.remove("season-autumn", "season-winter");
+    if (seasonClass) root.classList.add(seasonClass);
+  }, [seasonClass]);
+
   return (
-    <div className={`min-h-dvh flex flex-col ${seasonClass}`}>
+    <div className="min-h-dvh flex flex-col">
       {/* Skip to content link, visible on focus only */}
       <a
         href="#main-content"
