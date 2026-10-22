@@ -35,4 +35,10 @@ describe("Availability from the card supplied on 22 October 2026", () => {
       { label: "Erwachsenenportion, 300 ml", price: "4,50 €" },
     ]);
   });
+
+  it("shows the card's prices for the items the site was still missing", () => {
+    expect(menuProducts.find((product) => product.id === "kakaogato")?.price).toBe("3,50 €");
+    expect(menuProducts.find((product) => product.id === "beerentraum-flammkuchen")?.price).toBe("8,30 €");
+    expect(menuProducts.find((product) => product.id === "iced-mango-matcha-latte-vegan")?.price).toBe("4,80 €");
+  });
 });
