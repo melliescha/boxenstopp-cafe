@@ -65,6 +65,16 @@
     --bronze: 18 45% 32%;
     --border: 28 28% 76%;
   }
+
+  /* Winter-Wonderland: Schnee, Tannengrün und Kerzengold, Blau bleibt Hauptfarbe */
+  .season-winter {
+    --background: 205 40% 97%;
+    --secondary: 203 34% 91%;
+    --muted: 205 26% 90%;
+    --border: 204 22% 78%;
+    --bronze: 162 34% 24%;
+    --warm-gold: 38 64% 44%;
+  }
 }
 
 @layer base {
@@ -207,45 +217,45 @@
   }
 }
 
-/* Herbstlook: fallende Blätter als feine Linienzeichnung */
-.autumn-leaf {
+/* Im Wechsel der Saison: fallende Blätter bzw. Schnee als feine Linienzeichnung */
+.season-drift {
   position: absolute;
   display: block;
   opacity: 0;
-  animation-name: autumn-fall;
+  animation-name: season-fall;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   will-change: transform, opacity;
 }
 
-.autumn-sway {
+.season-sway {
   display: block;
   width: 100%;
   height: 100%;
-  animation-name: autumn-sway;
+  animation-name: season-sway;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
-@keyframes autumn-fall {
+@keyframes season-fall {
   0% { transform: translate3d(0, -40px, 0) rotate(0deg); opacity: 0; }
   12% { opacity: 1; }
   88% { opacity: 1; }
   100% { transform: translate3d(var(--drift, 60px), 900px, 0) rotate(var(--spin, 220deg)); opacity: 0; }
 }
 
-@keyframes autumn-sway {
+@keyframes season-sway {
   from { transform: translateX(-7px) rotate(-16deg); }
   to { transform: translateX(7px) rotate(24deg); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .autumn-leaf {
+  .season-drift {
     animation: none;
     opacity: 1;
   }
-  .autumn-sway {
+  .season-sway {
     animation: none;
   }
 }

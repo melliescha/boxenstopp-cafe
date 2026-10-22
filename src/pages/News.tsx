@@ -6,7 +6,7 @@ import Reveal from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
 import { socialLinks } from "@/config/social";
 import { newsPosts } from "@/data/newsPosts";
-import { FallingLeaves, SeasonalLabel } from "@/components/AutumnMotifs";
+import { FallingSeason, SeasonalLabel } from "@/components/SeasonMotifs";
 
 const [featured, ...rest] = newsPosts;
 
@@ -20,7 +20,7 @@ const News = () => (
     />
 
     <section className="relative overflow-hidden border-b border-border bg-secondary/30 py-16 md:py-24">
-      <FallingLeaves />
+      <FallingSeason />
       <div className="relative mx-auto max-w-6xl px-6">
         <SeasonalLabel className="mb-3">Blog</SeasonalLabel>
         <h1 className="max-w-3xl font-serif text-4xl font-normal leading-tight tracking-[-0.02em] text-foreground md:text-6xl">

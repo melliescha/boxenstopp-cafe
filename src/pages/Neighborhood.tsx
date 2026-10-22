@@ -7,7 +7,7 @@ import houseImage from "@/assets/aussenansicht-haus.jpg";
 import entranceImage from "@/assets/gallery/aussen-terrasse-eingang.jpg";
 import fitesImage from "@/assets/gallery/aussen-fites-fassade.jpg";
 import Wegweiser from "@/components/Wegweiser";
-import { SeasonalLabel } from "@/components/AutumnMotifs";
+import { SeasonalLabel } from "@/components/SeasonMotifs";
 
 interface Nahziel {
   name: string;
