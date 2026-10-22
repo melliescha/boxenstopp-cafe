@@ -9,6 +9,7 @@ import { socialLinks } from "@/config/social";
 import { toast } from "sonner";
 import { menuPageSchema } from "@/lib/schema";
 import { downloadMenuPdf } from "@/lib/menuPdf";
+import { AutumnPair } from "@/components/AutumnMotifs";
 
 const Menu = () => {
   const [downloading, setDownloading] = useState(false);
@@ -101,6 +102,7 @@ const Menu = () => {
 
           {/* Page title */}
           <div className="text-center mb-10">
+            <AutumnPair className="mb-4 text-bronze/70" />
             <p className="text-bronze font-medium tracking-[0.2em] uppercase text-sm mb-2">Unsere Auswahl</p>
             <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">Speisekarte</h1>
             <div className="divider-bronze mb-8" />
