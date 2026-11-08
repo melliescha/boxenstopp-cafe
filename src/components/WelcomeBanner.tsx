@@ -12,20 +12,21 @@ const WelcomeBanner = () => {
 
   if (isWinterBreakActive()) {
     return (
-      <div className="welcome-banner relative bg-wood py-2 pl-3 pr-12 text-center text-xs font-medium leading-5 text-wood-foreground sm:px-14 sm:py-2.5 sm:text-sm">
+      <div className="welcome-banner relative border-y-4 border-warm-gold bg-wood py-4 pl-4 pr-14 text-center text-wood-foreground sm:px-20 sm:py-5">
         <BannerMotifs tone="text-warm-gold/80" />
-        <span>
-          Winterpause: vom <strong className="text-warm-gold">{winterBreak.startLabel}</strong> bis{" "}
-          <strong className="text-warm-gold">{winterBreak.endLabel}</strong> bleibt der Boxenstopp geschlossen.
-          Wir wünschen euch eine besinnliche Weihnachtszeit und einen guten Rutsch. Ab dem{" "}
-          <strong className="text-warm-gold">{winterBreak.reopenLabel}</strong> sind wir wieder da.
-        </span>
+        <p className="font-serif text-lg font-bold leading-snug text-warm-gold sm:text-2xl">
+          Winterpause: geschlossen vom {winterBreak.startLabel} bis {winterBreak.endLabel}
+        </p>
+        <p className="mx-auto mt-1.5 max-w-2xl text-sm font-medium leading-relaxed sm:text-base">
+          Wir wünschen euch eine besinnliche Weihnachtszeit und einen guten Rutsch.
+          Ab dem <strong className="text-warm-gold">{winterBreak.reopenLabel}</strong> sind wir wieder für euch da.
+        </p>
         <button
           onClick={() => setVisible(false)}
-          className="absolute right-1 top-1/2 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center transition-opacity hover:opacity-70 sm:right-2"
+          className="absolute right-2 top-1/2 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center transition-opacity hover:opacity-70 sm:right-4"
           aria-label="Banner schließen"
         >
-          <X size={16} aria-hidden="true" />
+          <X size={20} aria-hidden="true" />
         </button>
       </div>
     );
