@@ -1,6 +1,6 @@
 import { AlertTriangle, Snowflake } from "lucide-react";
 import { isVacationActive, vacation } from "@/lib/vacation";
-import { isWinterBreakActive, winterBreak } from "@/lib/season";
+import { isWinterBreakAnnounced, winterBreak } from "@/lib/season";
 import { socialLinks } from "@/config/social";
 
 /**
@@ -8,7 +8,7 @@ import { socialLinks } from "@/config/social";
  * Verschwindet automatisch ab dem jeweiligen reopenDate.
  */
 const VacationNotice = ({ compact = false }: { compact?: boolean }) => {
-  if (isWinterBreakActive()) {
+  if (isWinterBreakAnnounced()) {
     return (
       <div
         role="alert"
