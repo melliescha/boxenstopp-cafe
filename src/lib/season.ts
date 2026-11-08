@@ -23,3 +23,5 @@ export const isAutumnActive = (now: Date = new Date()) => now <= season.autumnEn
 export const isHalloweenActive = (now: Date = new Date()) => now < season.halloweenEnd;
 export const isWinterActive = (now: Date = new Date()) => now >= season.winterStart && now <= season.winterEnd;
 export const isWinterBreakActive = (now: Date = new Date()) => now >= winterBreak.start && now <= winterBreak.end;
+// Banner oben ersetzt ab sofort den Standard-Hinweis und läuft bis zur Wiedereröffnung.
+export const isWinterBreakAnnounced = (now: Date = new Date()) => now < winterBreak.reopenDate;

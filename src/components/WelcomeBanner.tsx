@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { X } from "lucide-react";
 import { isVacationActive } from "@/lib/vacation";
-import { isHalloweenActive, isWinterBreakActive, season, winterBreak } from "@/lib/season";
+import { isHalloweenActive, isWinterBreakAnnounced, season, winterBreak } from "@/lib/season";
 import { BannerMotifs } from "@/components/SeasonMotifs";
 
 const WelcomeBanner = () => {
@@ -10,7 +10,7 @@ const WelcomeBanner = () => {
 
   if (!visible) return null;
 
-  if (isWinterBreakActive()) {
+  if (isWinterBreakAnnounced()) {
     return (
       <div className="welcome-banner relative border-y-4 border-warm-gold bg-wood py-4 pl-4 pr-14 text-center text-wood-foreground sm:px-20 sm:py-5">
         <BannerMotifs tone="text-warm-gold/80" />
