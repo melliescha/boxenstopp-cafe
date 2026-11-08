@@ -19,8 +19,11 @@ export const winterBreak = {
   reopenLabel: "11.01.2027",
 };
 
-export const isAutumnActive = (now: Date = new Date()) => now <= season.autumnEnd;
-export const isHalloweenActive = (now: Date = new Date()) => now < season.halloweenEnd;
+// Herbst- und Halloween-Look 2026 sind dauerhaft beendet, unabhängig von Uhrzeit oder Zeitzone des Besuchers.
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const isAutumnActive = (_now: Date = new Date()) => false;
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const isHalloweenActive = (_now: Date = new Date()) => false;
 export const isWinterActive = (now: Date = new Date()) => now >= season.winterStart && now <= season.winterEnd;
 export const isWinterBreakActive = (now: Date = new Date()) => now >= winterBreak.start && now <= winterBreak.end;
 // Banner oben ersetzt ab sofort den Standard-Hinweis und läuft bis zur Wiedereröffnung.
