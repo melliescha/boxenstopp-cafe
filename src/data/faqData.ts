@@ -275,6 +275,26 @@ export const faqBlocks: FaqBlock[] = [
           "Spezielle Öffnungszeiten an Feiertagen und unsere Urlaubszeiten geben wir rechtzeitig auf unserer Website, bei Instagram, Facebook und Google bekannt. Schaut da am besten kurz rein.",
       },
       {
+        question: "Habt ihr an Weihnachten geöffnet?",
+        answer:
+          "Nein. Vom 24.12.2026 bis einschließlich 10.01.2027 machen wir Winterpause, der Boxenstopp bleibt geschlossen. Ab dem 11.01.2027 sind wir wieder zu den gewohnten Zeiten für euch da.",
+      },
+      {
+        question: "Habt ihr an Silvester geöffnet?",
+        answer:
+          "Nein, auch an Silvester bleiben wir geschlossen. Wir befinden uns vom 24.12.2026 bis 10.01.2027 in der Winterpause. Ab dem 11.01.2027 geht es wieder los.",
+      },
+      {
+        question: "Habt ihr an Neujahr geöffnet?",
+        answer:
+          "Nein, am 01.01.2027 haben wir geschlossen. Unsere Winterpause läuft vom 24.12.2026 bis 10.01.2027. Ab dem 11.01.2027 sind wir wieder für euch da.",
+      },
+      {
+        question: "Habt ihr zwischen den Feiertagen geöffnet?",
+        answer:
+          "Nein, auch zwischen Weihnachten und Neujahr bleibt der Boxenstopp geschlossen. Die Winterpause gilt durchgehend vom 24.12.2026 bis einschließlich 10.01.2027. Wir wünschen euch eine besinnliche Weihnachtszeit und einen guten Rutsch, ab dem 11.01.2027 freuen wir uns auf euch.",
+      },
+      {
         question: "Wie erreiche ich euch?",
         answer:
           "Telefon: 0171 6226201. Website: bistro-boxenstopp.de. Adresse: Südhang 1, 88145 Hergatz / Wohmbrechts.",
