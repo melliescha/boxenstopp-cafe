@@ -78,9 +78,11 @@ const VacationDialog = () => {
               Vom <strong>{winterBreak.startLabel}</strong> bis{" "}
               <strong>{winterBreak.endLabel}</strong> bleibt der Boxenstopp geschlossen.
               <br />
-              Wir wünschen euch eine besinnliche Weihnachtszeit und einen guten Rutsch.
-              Ab dem <strong>{winterBreak.reopenLabel}</strong> stehen Kaffee und
-              Flammkuchen wieder für euch bereit.
+              Wir bedanken uns von Herzen bei unseren treuen Gästen für ein wunderbares
+              Jahr und wünschen euch eine besinnliche Weihnachtszeit, frohe Festtage und
+              einen guten Rutsch ins neue Jahr. Ab dem{" "}
+              <strong>{winterBreak.reopenLabel}</strong> stehen Kaffee und Flammkuchen
+              wieder für euch bereit, wir freuen uns auf ein Wiedersehen.
             </DialogDescription>
           </DialogHeader>
 

@@ -25,9 +25,12 @@ const VacationNotice = ({ compact = false }: { compact?: boolean }) => {
             <p className="text-sm text-foreground/80 leading-relaxed">
               Vom <strong>{winterBreak.startLabel}</strong> bis einschließlich{" "}
               <strong>{winterBreak.endLabel}</strong> bleibt der Boxenstopp geschlossen.
-              Wir wünschen euch eine besinnliche Weihnachtszeit und einen guten Rutsch.
-              Ab <strong>{winterBreak.reopenLabel}</strong> sind wir wieder zu den
-              gewohnten Zeiten für euch da.
+              Wir bedanken uns von Herzen bei unseren treuen Gästen für ein wunderbares
+              Jahr voller Begegnungen, guter Gespräche und gemütlicher Stunden bei uns.
+              Wir wünschen euch eine besinnliche Weihnachtszeit, frohe Festtage im Kreis
+              eurer Liebsten und einen guten Rutsch ins neue Jahr. Ab dem{" "}
+              <strong>{winterBreak.reopenLabel}</strong> sind wir wieder zu den gewohnten
+              Zeiten für euch da und freuen uns auf ein Wiedersehen.
             </p>
           </div>
         </div>
