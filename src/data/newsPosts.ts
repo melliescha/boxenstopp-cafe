@@ -20,6 +20,20 @@ export type NewsPost = {
  */
 export const newsPosts: NewsPost[] = [
   {
+    slug: "winterpause-2026",
+    title: "Winterpause: Sonderöffnungszeiten über die Feiertage",
+    date: "2026-11-08",
+    dateLabel: "8. November 2026",
+    category: "Öffnungszeiten",
+    excerpt:
+      "Vom 24.12.2026 bis einschließlich 10.01.2027 bleibt der Boxenstopp geschlossen. Wir sagen Danke für ein wunderbares Jahr und wünschen euch eine besinnliche Weihnachtszeit.",
+    body: [
+      "Vom 24.12.2026 bis einschließlich 10.01.2027 machen wir Winterpause, der Boxenstopp bleibt in dieser Zeit geschlossen. Bis einschließlich 23.12.2026 sind wir noch zu den gewohnten Zeiten für euch da, ab dem 11.01.2027 geht es dann wieder normal weiter.",
+      "Wir bedanken uns von Herzen bei unseren treuen Gästen für ein wunderbares Jahr voller Begegnungen, guter Gespräche und gemütlicher Stunden bei uns. Ihr habt den Boxenstopp zu dem gemacht, was er ist: ein Ort für die Nachbarschaft.",
+      "Wir wünschen euch eine besinnliche Weihnachtszeit, frohe Festtage im Kreis eurer Liebsten und einen guten Rutsch ins neue Jahr. Wir freuen uns auf ein Wiedersehen im Januar.",
+    ],
+  },
+  {
     slug: "beeren-flammkuchen",
     title: "Neu bei uns: der Beeren-Flammkuchen",
     date: "2026-09-12",
