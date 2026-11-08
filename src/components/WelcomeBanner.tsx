@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { X } from "lucide-react";
 import { isVacationActive } from "@/lib/vacation";
-import { isHalloweenActive, isWinterBreakActive, season, winterBreak } from "@/lib/season";
+import { isHalloweenActive, isWinterBreakAnnounced, season, winterBreak } from "@/lib/season";
 import { BannerMotifs } from "@/components/SeasonMotifs";
 
 const WelcomeBanner = () => {
