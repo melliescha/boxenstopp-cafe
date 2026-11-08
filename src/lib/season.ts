@@ -4,7 +4,7 @@ export const season = {
   halloweenEnd: new Date(2026, 10, 1), // Halloween-Hinweis bis 31.10.2026
   closedDay: new Date(2026, 9, 31), // 31.10.2026 geschlossen
   closedLabel: "31. Oktober",
-  winterStart: new Date(2026, 10, 8), // Winter-Wonderland-Look ab 08.11.2026
+  winterStart: new Date(2026, 11, 1), // Winter-Wonderland-Look ab 01.12.2026, November bleibt neutral
   winterEnd: new Date(2027, 0, 6, 23, 59), // ... bis 06.01.2027 (Heilige Drei Könige)
 };
 
