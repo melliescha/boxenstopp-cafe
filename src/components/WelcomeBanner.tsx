@@ -10,7 +10,7 @@ const WelcomeBanner = () => {
 
   if (!visible) return null;
 
-  if (isWinterBreakActive()) {
+  if (isWinterBreakAnnounced()) {
     return (
       <div className="welcome-banner relative border-y-4 border-warm-gold bg-wood py-4 pl-4 pr-14 text-center text-wood-foreground sm:px-20 sm:py-5">
         <BannerMotifs tone="text-warm-gold/80" />
