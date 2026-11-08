@@ -12,9 +12,9 @@ const WelcomeBanner = () => {
 
   if (isWinterBreakAnnounced()) {
     return (
-      <div className="welcome-banner relative border-y-4 border-warm-gold bg-wood py-3 pl-4 pr-14 text-center text-wood-foreground sm:px-20">
-        <BannerMotifs tone="text-warm-gold/80" />
-        <p className="font-serif text-base font-bold leading-snug text-warm-gold sm:text-xl">
+      <div className="welcome-banner relative bg-primary py-3 pl-4 pr-14 text-center text-primary-foreground sm:px-20">
+        <BannerMotifs tone="text-primary-foreground/50" />
+        <p className="font-serif text-base font-bold leading-snug sm:text-xl">
           Winterpause: geschlossen vom {winterBreak.startLabel} bis {winterBreak.endLabel}
         </p>
         <button
