@@ -12,14 +12,10 @@ const WelcomeBanner = () => {
 
   if (isWinterBreakAnnounced()) {
     return (
-      <div className="welcome-banner relative border-y-4 border-warm-gold bg-wood py-4 pl-4 pr-14 text-center text-wood-foreground sm:px-20 sm:py-5">
+      <div className="welcome-banner relative border-y-4 border-warm-gold bg-wood py-3 pl-4 pr-14 text-center text-wood-foreground sm:px-20">
         <BannerMotifs tone="text-warm-gold/80" />
-        <p className="font-serif text-lg font-bold leading-snug text-warm-gold sm:text-2xl">
+        <p className="font-serif text-base font-bold leading-snug text-warm-gold sm:text-xl">
           Winterpause: geschlossen vom {winterBreak.startLabel} bis {winterBreak.endLabel}
-        </p>
-        <p className="mx-auto mt-1.5 max-w-2xl text-sm font-medium leading-relaxed sm:text-base">
-          Wir wünschen euch eine besinnliche Weihnachtszeit und einen guten Rutsch.
-          Ab dem <strong className="text-warm-gold">{winterBreak.reopenLabel}</strong> sind wir wieder für euch da.
         </p>
         <button
           onClick={() => setVisible(false)}
