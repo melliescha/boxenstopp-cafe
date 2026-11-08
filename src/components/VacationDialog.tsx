@@ -8,6 +8,7 @@ import { socialLinks } from "@/config/social";
 
 const STORAGE_KEY = "vacation-popup-seen-2026-06";
 const WINTER_STORAGE_KEY = "winter-break-popup-seen-2026-12";
+const WINTER_EXIT_KEY = "winter-break-exit-popup-seen-2026-12";
 
 /**
  * Begrüßungs-Popup, das beim Öffnen der Seite einmal pro Browser-Session
@@ -30,6 +31,24 @@ const VacationDialog = () => {
     const t = window.setTimeout(() => setOpen(true), 600);
     return () => window.clearTimeout(t);
   }, [active, storageKey]);
+
+  // Winterpause: zusätzlich ein Popup, wenn Besucher die Seite verlassen wollen
+  // (Maus bewegt sich aus dem Fenster nach oben). Einmal pro Session.
+  useEffect(() => {
+    if (!winter) return;
+    const onLeave = (e: MouseEvent) => {
+      if (e.clientY > 0) return;
+      try {
+        if (sessionStorage.getItem(WINTER_EXIT_KEY)) return;
+        sessionStorage.setItem(WINTER_EXIT_KEY, "1");
+      } catch {
+        /* ignore */
+      }
+      setOpen(true);
+    };
+    document.addEventListener("mouseleave", onLeave);
+    return () => document.removeEventListener("mouseleave", onLeave);
+  }, [winter]);
 
   const handleClose = (next: boolean) => {
     setOpen(next);
