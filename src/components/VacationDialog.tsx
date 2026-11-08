@@ -3,7 +3,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { Button } from "@/components/ui/button";
 import { Star, Sun, Snowflake } from "lucide-react";
 import { isVacationActive, vacation } from "@/lib/vacation";
-import { isWinterBreakAnnounced, winterBreak } from "@/lib/season";
+import { isWinterBreakActive, winterBreak } from "@/lib/season";
 import { socialLinks } from "@/config/social";
 
 const STORAGE_KEY = "vacation-popup-seen-2026-06";
@@ -17,7 +17,7 @@ const WINTER_EXIT_KEY = "winter-break-exit-popup-seen-2026-12";
  */
 const VacationDialog = () => {
   const [open, setOpen] = useState(false);
-  const winter = isWinterBreakAnnounced();
+  const winter = isWinterBreakActive();
   const active = winter || isVacationActive();
   const storageKey = winter ? WINTER_STORAGE_KEY : STORAGE_KEY;
 
