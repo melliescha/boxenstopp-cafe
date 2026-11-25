@@ -896,4 +896,13 @@ export const menuProducts: MenuProduct[] = [
     allergens: "A,G",
     badge: "🥕 Vegetarisch",
   },
+  {
+    id: "apfel-zimt-flammkuchen",
+    name: "Flammkuchen Apfel Zimt",
+    price: "7,90 €",
+    description: "Neu, süßer Flammkuchen mit Apfel und Zimt",
+    category: "Süßspeisen",
+    badge: "Neuheit",
+    origin: perplexOrigin,
+  },
 ];

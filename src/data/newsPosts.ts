@@ -20,6 +20,19 @@ export type NewsPost = {
  */
 export const newsPosts: NewsPost[] = [
   {
+    slug: "flammkuchen-apfel-zimt",
+    title: "Neu auf der Karte: Flammkuchen Apfel Zimt",
+    date: "2026-11-25",
+    dateLabel: "25. November 2026",
+    category: "Neu auf der Karte",
+    excerpt:
+      "Seit heute steht bei uns der Flammkuchen Apfel Zimt auf der Karte, für 7,90 €. Süß, warm aus dem Ofen und genau das Richtige für die kalten Tage.",
+    body: [
+      "Neu auf unserer Karte: der Flammkuchen Apfel Zimt, für 7,90 €. Er kommt süß aus dem Ofen, mit Apfel und einer feinen Zimt-Note, und ist damit eine warme Empfehlung für die kalten Tage vor der Winterpause.",
+      "Am besten schmeckt er uns mit einem Cappuccino oder einer heißen Schokolade. Kommt vorbei und probiert ihn, wir freuen uns auf euch.",
+    ],
+  },
+  {
     slug: "winterpause-2026",
     title: "Winterpause: Sonderöffnungszeiten über die Feiertage",
     date: "2026-11-08",

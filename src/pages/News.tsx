@@ -14,7 +14,7 @@ const News = () => (
   <Layout>
     <SEO
       title="News & Aktuelles | Bistro Boxenstopp Hergatz"
-      description="Blog und Neuigkeiten aus dem Bistro Boxenstopp in Hergatz: neuer Beeren-Flammkuchen, Sponsoring beim TSV Wohmbrechts und Aktuelles aus der Nachbarschaft."
+      description="Blog und Neuigkeiten aus dem Bistro Boxenstopp in Hergatz: neuer Flammkuchen Apfel Zimt, Winterpause über die Feiertage, Sponsoring beim TSV Wohmbrechts und Aktuelles aus der Nachbarschaft."
       path="/news"
       image="/og-image.jpg"
     />
@@ -36,7 +36,7 @@ const News = () => (
       <section className="border-b border-border bg-background py-14 md:py-20">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
-            <article className="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+            <article className={featured.image ? "grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-center" : "mx-auto max-w-3xl"}>
               {featured.image && (
                 <img
                   src={featured.image}

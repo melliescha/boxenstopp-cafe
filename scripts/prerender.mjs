@@ -62,7 +62,7 @@ const routes = [
     path: "/news",
     title: "News & Aktuelles | Bistro Boxenstopp Hergatz",
     description:
-      "Aktuelles aus dem Bistro Boxenstopp in Hergatz: neuer Beeren-Flammkuchen, Sponsoring beim TSV Wohmbrechts und Neuigkeiten aus der Nachbarschaft.",
+      "Aktuelles aus dem Bistro Boxenstopp in Hergatz: neuer Flammkuchen Apfel Zimt, Winterpause über die Feiertage, Sponsoring beim TSV Wohmbrechts und Neuigkeiten aus der Nachbarschaft.",
     image: `${SITE_URL}/og-image.jpg`,
     imageAlt: "Neuigkeiten aus dem Bistro Boxenstopp in Hergatz",
   },

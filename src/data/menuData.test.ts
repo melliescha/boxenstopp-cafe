@@ -25,6 +25,7 @@ describe("Availability from the card supplied on 22 October 2026", () => {
       "iced-strawberry-matcha-latte-vegan", "iced-mango-matcha-latte",
       "iced-mango-matcha-latte-vegan", "bunter-salat",
       "caprese-salat", "2-in-1-salat", "frucht-quark", "beerentraum-flammkuchen",
+      "apfel-zimt-flammkuchen",
     ];
     expect(menuProducts.map((product) => product.id).sort()).toEqual(allowedIds.sort());
   });
@@ -76,6 +77,14 @@ describe("Availability from the card supplied on 22 October 2026", () => {
   it("shows the card's prices for the items the site was still missing", () => {
     expect(menuProducts.find((product) => product.id === "kakaogato")?.price).toBe("3,50 €");
     expect(menuProducts.find((product) => product.id === "beerentraum-flammkuchen")?.price).toBe("8,30 €");
+    expect(menuProducts.find((product) => product.id === "apfel-zimt-flammkuchen")?.price).toBe("7,90 €");
     expect(menuProducts.find((product) => product.id === "iced-mango-matcha-latte-vegan")?.price).toBe("4,80 €");
+  });
+
+  it("marks the apple cinnamon flammkuchen as a new Perplex item", () => {
+    const product = menuProducts.find((item) => item.id === "apfel-zimt-flammkuchen");
+    expect(product?.badge).toBe("Neuheit");
+    expect(product?.origin).toContain("Perplex");
+    expect(product?.ingredients).toBeUndefined();
   });
 });
