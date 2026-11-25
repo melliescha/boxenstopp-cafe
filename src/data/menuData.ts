@@ -1,3 +1,5 @@
+import { blackFridayOffer, isBlackFridayActive } from "@/lib/menuPromotion";
+
 export interface NutritionInfo {
   label: string;
   value: string;
@@ -914,3 +916,23 @@ export const menuProducts: MenuProduct[] = [
     badge: "Neuheit",
   },
 ];
+
+export const getMenuProducts = (now = new Date()): MenuProduct[] => {
+  if (!isBlackFridayActive(now)) return menuProducts;
+
+  return menuProducts.map((product) => {
+    if (!blackFridayOffer.productIds.some((id) => id === product.id)) return product;
+
+    return {
+      ...product,
+      price: product.price.replace(/^[\d,]+ €/, blackFridayOffer.price),
+      badge: blackFridayOffer.title,
+      description: `${blackFridayOffer.title}: klein ${blackFridayOffer.price}, ${blackFridayOffer.dateLabel}. ${product.description}`,
+      variants: product.variants?.map((variant) => {
+        if (variant.label === "Klein") return { ...variant, price: blackFridayOffer.price };
+        if (variant.label === "Klein vegan") return { ...variant, price: blackFridayOffer.veganPrice };
+        return variant;
+      }),
+    };
+  });
+};

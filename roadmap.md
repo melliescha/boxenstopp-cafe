@@ -1,5 +1,6 @@
 # Roadmap
 
+- [ ] Black-Friday-Aktion vom 25.11. bis einschließlich 30.11.2026 anzeigen, kleinen Caffè Crema und kleinen Cappuccino für je 1,00 € anbieten und danach automatisch die regulären Preise verwenden
 - [x] Hochgeladene Textkarte abgeglichen, Wasser, Schorle, Matcha, vegane Milchgetränke und Eispreise angeglichen, 19 Preistests und Listenansicht geprüft
 - [x] Aktuelles Angebot mit der zuletzt gesendeten Karte abgleichen und nicht mehr verfügbare Produkte entfernen
 - [x] Speisekarte, Download und weitere Produktangebote auf übereinstimmende Verfügbarkeit prüfen

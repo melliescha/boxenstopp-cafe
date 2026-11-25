@@ -1,5 +1,5 @@
 import { jsPDF } from "jspdf";
-import { menuCategories, menuProducts } from "@/data/menuData";
+import { menuCategories, getMenuProducts } from "@/data/menuData";
 
 const MARGIN = 16;
 const PAGE_W = 210;
@@ -18,6 +18,7 @@ const clean = (s: string) =>
     .trim();
 
 export const downloadMenuPdf = () => {
+  const menuProducts = getMenuProducts();
   const pdf = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
   let y = MARGIN;
 

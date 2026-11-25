@@ -9,10 +9,13 @@ import { socialLinks } from "@/config/social";
 import { toast } from "sonner";
 import { menuPageSchema } from "@/lib/schema";
 import { downloadMenuPdf } from "@/lib/menuPdf";
-import { menuCategories, menuProducts } from "@/data/menuData";
+import { menuCategories } from "@/data/menuData";
 import { SeasonPair } from "@/components/SeasonMotifs";
+import BlackFridayOffer from "@/components/BlackFridayOffer";
+import { useMenuPromotion } from "@/hooks/useMenuPromotion";
 
 const Menu = () => {
+  const { products: menuProducts } = useMenuPromotion();
   const [downloading, setDownloading] = useState(false);
   const [view, setView] = useState<"liste" | "kacheln">("kacheln");
 
@@ -54,7 +57,7 @@ const Menu = () => {
       const existing = document.head.querySelector('script[id="menu-schema"]');
       if (existing) document.head.removeChild(existing);
     };
-  }, []);
+  }, [menuProducts]);
 
   return (
     <Layout>
@@ -114,6 +117,8 @@ const Menu = () => {
               </button>
             </div>
           </div>
+
+          <BlackFridayOffer />
 
           {/* Speisekarte */}
           {view === "liste" ? <PriceList /> : <MenuTileView />}

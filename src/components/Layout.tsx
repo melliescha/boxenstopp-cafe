@@ -6,6 +6,7 @@ import CookieBanner from "./CookieBanner";
 import MobileBottomNav from "./MobileBottomNav";
 import VacationDialog from "./VacationDialog";
 import { isAutumnActive, isWinterActive } from "@/lib/season";
+import BlackFridayOffer from "./BlackFridayOffer";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   const seasonClass = isWinterActive() ? "season-winter" : isAutumnActive() ? "season-autumn" : "";
@@ -27,6 +28,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
       >
         Zum Inhalt springen
       </a>
+      <BlackFridayOffer compact />
       <WelcomeBanner />
       <Navbar />
       <main id="main-content" className="flex-1 pb-[64px] lg:pb-0">

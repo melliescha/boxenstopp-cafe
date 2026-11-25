@@ -2,7 +2,8 @@ import { useRef, useState, useCallback } from "react";
 import HTMLFlipBook from "react-pageflip";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { forwardRef } from "react";
-import { menuCategories, menuProducts } from "@/data/menuData";
+import { menuCategories } from "@/data/menuData";
+import { useMenuPromotion } from "@/hooks/useMenuPromotion";
 import AiBadge from "@/components/AiBadge";
 
 
@@ -92,6 +93,7 @@ const ImagePage = ({ src, alt }: { src: string; alt: string }) => (
 export const FLIPBOOK_EXPORT_PAGE_CLASS = "flipbook-export-page";
 
 const FlipbookMenu = () => {
+  const { products: menuProducts } = useMenuPromotion();
   const flipBookRef = useRef<FlipBookApi | null>(null);
   const [currentPage, setCurrentPage] = useState(0);
   const [totalPages, setTotalPages] = useState(14);
@@ -102,7 +104,7 @@ const FlipbookMenu = () => {
 
   const onInit = useCallback((e: FlipInitEvent) => {
     setTotalPages(2 + 1 + menuCategories.filter((category) => category !== "Alle").reduce((count, category) => count + Math.ceil(menuProducts.filter((product) => product.category === category).length / 4), 0));
-  }, []);
+  }, [menuProducts]);
 
   const goNext = () => flipBookRef.current?.pageFlip()?.flipNext();
   const goPrev = () => flipBookRef.current?.pageFlip()?.flipPrev();

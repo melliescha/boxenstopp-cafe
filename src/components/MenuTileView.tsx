@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { useSearchParams, Link } from "react-router-dom";
-import { menuProducts, menuCategories, type MenuProduct } from "@/data/menuData";
+import { menuCategories, type MenuProduct } from "@/data/menuData";
+import { useMenuPromotion } from "@/hooks/useMenuPromotion";
 import ProductDetailOverlay from "@/components/ProductDetailOverlay";
 import FitesHint from "@/components/FitesHint";
 import AiBadge from "@/components/AiBadge";
 
 const MenuTileView = () => {
+  const { products: menuProducts } = useMenuPromotion();
   const [searchParams, setSearchParams] = useSearchParams();
   const [activeCategory, setActiveCategory] = useState("Alle");
   const [selectedProduct, setSelectedProduct] = useState<MenuProduct | null>(null);
@@ -17,7 +19,7 @@ const MenuTileView = () => {
       const found = menuProducts.find((p) => p.id === productId);
       if (found) setSelectedProduct(found);
     }
-  }, [searchParams]);
+  }, [searchParams, menuProducts]);
 
   const filtered =
     activeCategory === "Alle"

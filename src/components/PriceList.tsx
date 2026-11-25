@@ -1,5 +1,6 @@
 import { Printer } from "lucide-react";
-import { menuCategories, menuProducts } from "@/data/menuData";
+import { menuCategories } from "@/data/menuData";
+import { useMenuPromotion } from "@/hooks/useMenuPromotion";
 import logoIcon from "@/assets/logo-icon.png";
 
 
@@ -22,20 +23,6 @@ interface PriceCategory {
   items?: PriceItem[];
   subsections?: SubSection[];
 }
-
-const categories: PriceCategory[] = menuCategories
-  .filter((category) => category !== "Alle")
-  .map((title) => ({
-    title,
-    items: menuProducts.filter((product) => product.category === title).map((product) => ({
-      name: product.name,
-      price: product.price,
-      note: [product.description, ...(product.variants?.map((variant) => `${variant.label}: ${variant.price}`) ?? [])].join(" · "),
-      allergens: product.allergens,
-      volume: product.volume,
-      featured: product.featured,
-    })),
-  }));
 
 const allergenLegend = [
   { code: "A", name: "Glutenhaltiges Getreide" },
@@ -91,6 +78,21 @@ const ItemRow = ({ item }: { item: PriceItem }) => (
 );
 
 const PriceList = () => {
+  const { products: menuProducts } = useMenuPromotion();
+  const categories: PriceCategory[] = menuCategories
+    .filter((category) => category !== "Alle")
+    .map((title) => ({
+      title,
+      items: menuProducts.filter((product) => product.category === title).map((product) => ({
+        name: product.name,
+        price: product.price,
+        note: [product.description, ...(product.variants?.map((variant) => `${variant.label}: ${variant.price}`) ?? [])].join(" · "),
+        allergens: product.allergens,
+        volume: product.volume,
+        featured: product.featured,
+      })),
+    }));
+
   return (
     <div>
       {/* Print button */}

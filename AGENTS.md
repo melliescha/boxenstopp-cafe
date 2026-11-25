@@ -4,6 +4,7 @@ Regeln für dieses Projekt. Werte und Vorlieben des Nutzers stehen im Projektged
 
 ## Rules
 - Current menu availability, names and prices in tile, list, QR and downloadable menus must come from `menuProducts` in `src/data/menuData.ts`, so discontinued products cannot remain in a separate menu view.
+- Resolve time-limited offers through `getMenuProducts`, use `useMenuPromotion` in live menu views and banners, and define explicit German-time boundaries in `src/lib/menuPromotion.ts`, so every format shares prices and restores them automatically.
 - Saisonale Looks sind datengetrieben: Zeitfenster in `src/lib/season.ts`, Motive in `src/components/SeasonMotifs.tsx`. Komponenten enthalten keine harten Daten, damit jeder Look automatisch beginnt und endet.
 - Die Saisonklasse wird in `Layout.tsx` auf `document.documentElement` gesetzt, nicht auf einen inneren Wrapper: `body` liest das `--background`-Token und braucht sonst die Überschreibung nicht.
 - Saison-Deko ist Inline-SVG in `currentColor` mit `aria-hidden` und respektiert `prefers-reduced-motion`. Warum: keine zusätzlichen Bilddateien, keine Emoji-Deko, ruhigere Seite für bewegungsempfindliche Nutzer.
