@@ -27,6 +27,8 @@
 - [x] Keine fallenden Blätter im Kopfbild der Startseite, Schnee im Winter bleibt
 - [x] Preise und Artikel der neuen Karte übernommen: Kakaogato 3,50 €, Beerentraum Flammkuchen 8,30 €, Iced Mango Matcha vegan 4,80 €, Füllmengen der Getränke
 - [x] Neuheit Flammkuchen Apfel Zimt 7,90 € in Speisekarte und News eingetragen, Herkunft Perplex
+- [x] Warme knusprige Brezel 2,20 € in die Speisekarte aufgenommen
+- [x] News-Beitrag zur warmen knusprigen Brezel ergänzt
 - [ ] Etikett-Daten vom Apfel-Zimt-Flammkuchen (Zutaten, Nährwerte, Allergene) von Perplex eintragen, sobald sie vorliegen
 - [ ] Foto vom Apfel-Zimt-Flammkuchen für den News-Beitrag ergänzen
 - [ ] Weihnachts- und Neujahrs-Öffnungszeiten (24. bis 26.12., 31.12., 01.01.) bestätigen lassen, dazu passt der Winterlook

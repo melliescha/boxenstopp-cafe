@@ -905,4 +905,12 @@ export const menuProducts: MenuProduct[] = [
     badge: "Neuheit",
     origin: perplexOrigin,
   },
+  {
+    id: "warme-brezel",
+    name: "Warme knusprige Brezel",
+    price: "2,20 €",
+    description: "Neu, warm und knusprig",
+    category: "Herzhaft & Ofenfrisch",
+    badge: "Neuheit",
+  },
 ];

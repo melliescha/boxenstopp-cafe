@@ -14,7 +14,7 @@ const News = () => (
   <Layout>
     <SEO
       title="News & Aktuelles | Bistro Boxenstopp Hergatz"
-      description="Blog und Neuigkeiten aus dem Bistro Boxenstopp in Hergatz: neuer Flammkuchen Apfel Zimt, Winterpause über die Feiertage, Sponsoring beim TSV Wohmbrechts und Aktuelles aus der Nachbarschaft."
+      description="Blog und Neuigkeiten aus dem Bistro Boxenstopp in Hergatz: neuer Flammkuchen Apfel Zimt, warme knusprige Brezel, Winterpause über die Feiertage, Sponsoring beim TSV Wohmbrechts und Aktuelles aus der Nachbarschaft."
       path="/news"
       image="/og-image.jpg"
     />

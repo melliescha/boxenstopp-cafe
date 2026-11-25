@@ -25,7 +25,7 @@ describe("Availability from the card supplied on 22 October 2026", () => {
       "iced-strawberry-matcha-latte-vegan", "iced-mango-matcha-latte",
       "iced-mango-matcha-latte-vegan", "bunter-salat",
       "caprese-salat", "2-in-1-salat", "frucht-quark", "beerentraum-flammkuchen",
-      "apfel-zimt-flammkuchen",
+      "apfel-zimt-flammkuchen", "warme-brezel",
     ];
     expect(menuProducts.map((product) => product.id).sort()).toEqual(allowedIds.sort());
   });
@@ -78,6 +78,7 @@ describe("Availability from the card supplied on 22 October 2026", () => {
     expect(menuProducts.find((product) => product.id === "kakaogato")?.price).toBe("3,50 €");
     expect(menuProducts.find((product) => product.id === "beerentraum-flammkuchen")?.price).toBe("8,30 €");
     expect(menuProducts.find((product) => product.id === "apfel-zimt-flammkuchen")?.price).toBe("7,90 €");
+    expect(menuProducts.find((product) => product.id === "warme-brezel")?.price).toBe("2,20 €");
     expect(menuProducts.find((product) => product.id === "iced-mango-matcha-latte-vegan")?.price).toBe("4,80 €");
   });
 

@@ -20,6 +20,19 @@ export type NewsPost = {
  */
 export const newsPosts: NewsPost[] = [
   {
+    slug: "warme-knusprige-brezel",
+    title: "Neu bei uns: warme knusprige Brezel",
+    date: "2026-11-25",
+    dateLabel: "25. November 2026",
+    category: "Neu auf der Karte",
+    excerpt:
+      "Seit heute gibt es bei uns die warme knusprige Brezel, für 2,20 €. Außen knusprig, innen warm, für die kurze Pause oder für unterwegs.",
+    body: [
+      "Neu auf unserer Karte: die warme knusprige Brezel, für 2,20 €. Außen knusprig, innen warm, so wie man sie sich nach einer Radtour oder nach dem Training wünscht.",
+      "Sie passt gut zu einem Kaffee oder einer Schorle. Kommt vorbei und probiert sie, wir freuen uns auf euch.",
+    ],
+  },
+  {
     slug: "flammkuchen-apfel-zimt",
     title: "Neu auf der Karte: Flammkuchen Apfel Zimt",
     date: "2026-11-25",
