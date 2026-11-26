@@ -7,6 +7,7 @@ import BestsellerSection from "@/components/BestsellerSection";
 import Wegweiser from "@/components/Wegweiser";
 import InstagramSection from "@/components/InstagramSection";
 import Reveal from "@/components/Reveal";
+import BlackFridayOffer from "@/components/BlackFridayOffer";
 
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 
@@ -227,6 +228,8 @@ const Index = () => {
         imageAlt="Bistro Boxenstopp in Hergatz im Westallgäu, Barista-Kaffee und Flammkuchen"
         jsonLd={localBusinessSchema}
       />
+
+      <BlackFridayOffer prominent />
 
       {/* Video-Einstieg: ruhig, hochwertig und nahbar */}
       <section className="relative flex h-[calc(100svh-125px)] min-h-[500px] max-h-[780px] items-end overflow-hidden sm:h-[72svh] sm:min-h-[610px]">

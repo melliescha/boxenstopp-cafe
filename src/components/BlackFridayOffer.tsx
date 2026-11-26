@@ -2,9 +2,32 @@ import { Link } from "react-router-dom";
 import { useMenuPromotion } from "@/hooks/useMenuPromotion";
 import { Button } from "@/components/ui/button";
 
-const BlackFridayOffer = ({ compact = false }: { compact?: boolean }) => {
+const BlackFridayOffer = ({ compact = false, prominent = false }: { compact?: boolean; prominent?: boolean }) => {
   const { offer } = useMenuPromotion();
   if (!offer) return null;
+
+  if (prominent) {
+    return (
+      <section aria-labelledby="black-friday-home-title" className="bg-primary text-primary-foreground">
+        <div className="mx-auto grid max-w-6xl items-center gap-5 px-5 py-7 sm:px-8 sm:py-10 md:grid-cols-[1fr_auto] md:gap-12 lg:py-12">
+          <div>
+            <p className="mb-2 text-sm font-medium uppercase">Nur bis einschließlich Montag, 30.11.2026</p>
+            <h2 id="black-friday-home-title" className="font-serif text-5xl font-light leading-none sm:text-7xl">BLACK FRIDAY</h2>
+            <p className="mt-4 text-lg leading-relaxed sm:text-2xl">Kleiner Caffè Crema oder kleiner Cappuccino</p>
+            <p className="mt-1 text-sm text-primary-foreground/80">Euer Kaffee, euer Boxenstopp. Kommt vorbei!</p>
+            <Button asChild variant="outline" size="lg" className="mt-5 rounded-none border-primary-foreground bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+              <Link to="/speisekarte#black-friday">Zum Black-Friday-Angebot</Link>
+            </Button>
+          </div>
+          <div className="flex items-baseline gap-3 border-t border-primary-foreground/30 pt-4 md:block md:border-l md:border-t-0 md:pl-12 md:pt-0 md:text-center">
+            <span className="text-lg">je</span>
+            <p className="whitespace-nowrap font-serif text-7xl font-light leading-none tabular-nums sm:text-8xl">{offer.price}</p>
+            <p className="text-xs leading-relaxed text-primary-foreground/80 md:mt-3">Cappuccino vegan {offer.veganPrice}</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   if (compact) {
     return (
