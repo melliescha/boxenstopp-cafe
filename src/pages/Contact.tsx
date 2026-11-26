@@ -40,9 +40,9 @@ const WARM_BROWN = "#6B4A2E";
 const BORDER = "#EDE0D0";
 
 const hours = [
-  { days: "Montag", time: "15:00 bis 20:00 Uhr" },
+  { days: "Montag", time: "16:00 bis 20:00 Uhr" },
   { days: "Dienstag", time: "Ruhetag" },
-  { days: "Mittwoch bis Freitag", time: "15:00 bis 20:00 Uhr" },
+  { days: "Mittwoch bis Freitag", time: "16:00 bis 20:00 Uhr" },
   { days: "Samstag", time: "10:30 bis 15:30 Uhr" },
   { days: "Sonntag", time: "11:00 bis 16:00 Uhr" },
 ];

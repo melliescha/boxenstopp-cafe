@@ -22,9 +22,9 @@ import { localBusinessSchema } from "@/lib/schema";
 
 
 const hours = [
-  { days: "Montag", time: "15:00 bis 20:00 Uhr" },
+  { days: "Montag", time: "16:00 bis 20:00 Uhr" },
   { days: "Dienstag", time: "Ruhetag" },
-  { days: "Mittwoch bis Freitag", time: "15:00 bis 20:00 Uhr" },
+  { days: "Mittwoch bis Freitag", time: "16:00 bis 20:00 Uhr" },
   { days: "Samstag", time: "10:30 bis 15:30 Uhr" },
   { days: "Sonntag", time: "11:00 bis 16:00 Uhr" },
 ];
@@ -53,7 +53,7 @@ const faqs = [
   {
     question: "Wann habt ihr offen?",
     answer:
-      "Montag: 15:00 bis 20:00 Uhr. Dienstag: Ruhetag. Mittwoch bis Freitag: 15:00 bis 20:00 Uhr. Samstag: 10:30 bis 15:30 Uhr. Sonntag: 11:00 bis 16:00 Uhr.",
+      "Montag: 16:00 bis 20:00 Uhr. Dienstag: Ruhetag. Mittwoch bis Freitag: 16:00 bis 20:00 Uhr. Samstag: 10:30 bis 15:30 Uhr. Sonntag: 11:00 bis 16:00 Uhr.",
   },
 ];
 
@@ -175,13 +175,13 @@ const Index = () => {
         {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": "Monday",
-          "opens": "15:00",
+          "opens": "16:00",
           "closes": "20:00",
         },
         {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": ["Wednesday", "Thursday", "Friday"],
-          "opens": "15:00",
+          "opens": "16:00",
           "closes": "20:00",
         },
         {

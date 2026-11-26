@@ -20,8 +20,8 @@ const geo = {
 };
 
 const openingHours = [
-  { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday"], opens: "15:00", closes: "20:00" },
-  { "@type": "OpeningHoursSpecification", dayOfWeek: ["Wednesday", "Thursday", "Friday"], opens: "15:00", closes: "20:00" },
+  { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday"], opens: "16:00", closes: "20:00" },
+  { "@type": "OpeningHoursSpecification", dayOfWeek: ["Wednesday", "Thursday", "Friday"], opens: "16:00", closes: "20:00" },
   { "@type": "OpeningHoursSpecification", dayOfWeek: ["Saturday"], opens: "10:30", closes: "15:30" },
   { "@type": "OpeningHoursSpecification", dayOfWeek: ["Sunday"], opens: "11:00", closes: "16:00" },
 ];

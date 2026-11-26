@@ -262,7 +262,7 @@ export const faqBlocks: FaqBlock[] = [
       {
         question: "Wann habt ihr offen?",
         answer:
-          "Montag: 15:00 bis 20:00 Uhr. Dienstag: Ruhetag. Mittwoch bis Freitag: 15:00 bis 20:00 Uhr. Samstag: 10:30 bis 15:30 Uhr. Sonntag: 11:00 bis 16:00 Uhr.",
+          "Montag: 16:00 bis 20:00 Uhr. Dienstag: Ruhetag. Mittwoch bis Freitag: 16:00 bis 20:00 Uhr. Samstag: 10:30 bis 15:30 Uhr. Sonntag: 11:00 bis 16:00 Uhr.",
       },
       {
         question: "Wünscht ihr euch andere Öffnungszeiten?",

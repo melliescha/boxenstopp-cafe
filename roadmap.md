@@ -33,3 +33,4 @@
 - [ ] Etikett-Daten vom Apfel-Zimt-Flammkuchen (Zutaten, Nährwerte, Allergene) von Perplex eintragen, sobald sie vorliegen
 - [ ] Foto vom Apfel-Zimt-Flammkuchen für den News-Beitrag ergänzen
 - [ ] Weihnachts- und Neujahrs-Öffnungszeiten (24. bis 26.12., 31.12., 01.01.) bestätigen lassen, dazu passt der Winterlook
+- [x] Öffnungszeiten unter der Woche auf 16:00 bis 20:00 Uhr gestellt, Samstag und Sonntag unverändert, in allen Ansichten und im Test geprüft
